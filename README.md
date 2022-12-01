@@ -15,7 +15,7 @@
 | Elevate Data Quality                        | &#x1F6A7;    |            |            |             |             |           |         |           |         |                  |         |                  |                     |                               |                   |                 |
 | [Impact](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact.zip)                                              | &#9989;      |            |            |             | &#9989;     |           |         |           |         |                  |         |                  |                     |                               |                   |                 |
 
-⁰ _Included in all Product packages_
+⁰ _Included in all Product packages_<br>
 ¹ _Included in Canvas LMS report_<br>
 ² _NDA required to release_<br>
 ³ _Covered in Instructure report_
