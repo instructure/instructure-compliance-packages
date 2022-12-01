@@ -1,5 +1,3 @@
-# Instructure Security Packages
-
 | Product                                                                                                              | Architecture | SOC&nbsp;2 | SOC&nbsp;3 | HECVAT Full | HECVAT Lite | PCI SAQ-D | PCI SRM | ISO 27001 | CAIQ    | Cyber Essentials | COI     | Security Program | Business Continuity | Penetration Test&nbsp;Results | Quality Assurance | Data Protection |
 | -------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ---------- | ----------- | ----------- | --------- | ------- | --------- | ------- | ---------------- | ------- | ---------------- | ------------------- | ----------------------------- | ----------------- | --------------- | 
 | AWS⁰                                                                                       |              |            |            | &#9989;     |             |           |         |           | &#9989; | &#9989;          | &#9989; |                  |                     |                               |                   |                 |
