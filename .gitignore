@@ -1,2 +1,18 @@
+# dependencies
+isp-site/node_modules
+isp-site/.pnp
+isp-site/.pnp.js
 
-.DS_Store
+# testing
+isp-site/coverage
+
+# production
+isp-site/build
+
+# misc
+*.DS_Store
+isp-site/.env.local
+isp-site/.env.development.local
+isp-site/.env.test.local
+isp-site/.env.production.local
+isp-site/*log*
