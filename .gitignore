@@ -1,6 +1,0 @@
-isp-site/build
-isp-site/node_modules
-isp-site/public
-.DS_Store
-*.lock
-isp-site/yarn-error.log
