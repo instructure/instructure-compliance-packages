@@ -1,20 +1,41 @@
-import logo from './logo.svg'
-import './App.css'
-import { InstUISettingsProvider, instructure, Link, IconCanvasLogoLine } from '@instructure/ui'
+// Modules
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { InstUISettingsProvider, instructure } from '@instructure/ui'
 
-// URLs
-const canvas_lms = "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms.zip"
+// Components
+import RenderTopNavBar from 'components/RenderTopNavBar'
+
+// Styles
+import './App.css'
+
+// Routes
+import Root from './routes/root'
+import Canvas from './routes/canvas'
+import Mastery from './routes/mastery'
+import Impact from './routes/impact'
+import Elevate from './routes/elevate'
+
+// Variables
+const Brands = ['Canvas', 'Mastery', 'Impact', 'Elevate']
+
+const router = createBrowserRouter(
+  [
+    { path: "/",        element: <Root /> },
+    { path: "canvas",   element: <Canvas /> },
+    { path: "mastery",  element: <Mastery />},
+    { path: "impact",   element: <Impact /> },
+    { path: "elevate",  element: <Elevate /> }
+  ],
+  {
+    basename: "/instructure-security-package"
+  }
+)
 
 function App() { return (
-    <InstUISettingsProvider theme={instructure}>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p> Edit <code>src/App.js</code> and save to reload. </p>
-          <Link href={canvas_lms} renderIcon={<IconCanvasLogoLine size="small" />}>Download the Canvas Security Package</Link>
-        </header>
-      </div>
-    </InstUISettingsProvider>
-  )}
+  <InstUISettingsProvider theme={instructure}>
+    <RenderTopNavBar />
+    <RouterProvider router={router} />
+  </InstUISettingsProvider>
+)}
 
 export default App;
