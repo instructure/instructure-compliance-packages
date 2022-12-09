@@ -1,7 +1,7 @@
 {
   "name": "isp-site",
   "version": "0.1.0",
-  "homepage": "https://thedannywahl.github.io/instructure-security-package",
+  "homepage": "https://thedannywahl.github.io/instructure-security-package/#/",
   "private": true,
   "dependencies": {
     "@instructure/ui": "^8",
