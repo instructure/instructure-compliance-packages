@@ -1,4 +1,4 @@
-[aria-current="page"]::after {
+.active::after {
   content: "";
   position: absolute;
   inset-block-end: 0;

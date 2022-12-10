@@ -1,6 +1,7 @@
 const toggle = (u, n) => {
-    n.forEach(e => { e.removeAttribute('aria-current') })
+    n.forEach(e => { e.removeAttribute('aria-current'); e.classList.remove('active') })
     u.setAttribute('aria-current','page')
+    u.classList.add('active')
     let bg = document.querySelectorAll('[class$="iconContainer"]')[0]
     let c
     switch(u.id) {
@@ -15,7 +16,7 @@ const toggle = (u, n) => {
 
 document.addEventListener("DOMContentLoaded", function(event) {
     let u = document.location.href.split('#')[1]
-    let n = document.querySelectorAll('nav a')
+    let n = document.querySelectorAll('nav ul a')
     if (u !== undefined && u !== "" && u !== null) {
         u = document.getElementById(u.slice(1))
         toggle(u, n)
