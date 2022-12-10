@@ -15,9 +15,12 @@ const toggle = (u, n) => {
 
 document.addEventListener("DOMContentLoaded", function(event) {
     let u = document.location.href.split('#')[1]
-    if (u !== undefined && u !== "" && u !== null) u = document.getElementById(u.slice(1))
+    console.log("DOM NODE U is", u)
     let n = document.querySelectorAll('nav a')
     console.log("Getting Navigation:", n)
-    if (u !== null) toggle(u, n)
+    if (u !== undefined && u !== "" && u !== null) {
+        u = document.getElementById(u.slice(1))
+        toggle(u, n)
+    }
     n.forEach(el => { el.onclick = function() { toggle(el, n) } })
 })
