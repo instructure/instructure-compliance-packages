@@ -5,7 +5,6 @@ const toggle = (u, n) => {
     if(u !== null && u.hash !== "#/") {
         u.setAttribute('aria-current','page')
         u.classList.add('active')
-
         switch(u.id) {
             case 'Canvas':  c = "#E72429"; break
             case 'Mastery': c = "#24A159"; break
@@ -17,7 +16,6 @@ const toggle = (u, n) => {
     } else {
         bg.style.backgroundColor = c
     }
-
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
