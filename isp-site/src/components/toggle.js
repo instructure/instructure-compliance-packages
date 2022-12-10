@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let u = document.location.href.split('#')[1]
     if (u !== undefined && u !== "" && u !== null) u = document.getElementById(u.slice(1))
     let n = document.querySelectorAll('nav a')
+    console.log("Getting Navigation:", n)
     if (u !== null) toggle(u, n)
-    n.forEach(e => { e.onclick = function() { toggle(e, n) } })
+    n.forEach(el => { el.onclick = function() { toggle(el, n) } })
 })
