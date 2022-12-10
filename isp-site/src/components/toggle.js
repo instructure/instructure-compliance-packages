@@ -1,26 +1,16 @@
 const toggle = (u, n) => {
     n.forEach(e => { e.removeAttribute('aria-current') })
-    let bgc
     u.setAttribute('aria-current','page')
     let bg = document.querySelectorAll('[class$="iconContainer"]')[0]
-
+    let c
     switch(u.id) {
-        case 'Canvas':
-            bgc = "#E72429"
-            break
-        case 'Mastery':
-            bgc = "#24A159"
-            break
-        case 'Elevate':
-            bgc = "#0097D3"
-            break
-        case 'Impact':
-            bgc = "#F76400"
-            break
-        default:
-            bgc = "#0D323F"
+        case 'Canvas':  c = "#E72429"; break
+        case 'Mastery': c = "#24A159"; break
+        case 'Elevate': c = "#0097D3"; break
+        case 'Impact':  c = "#F76400"; break
+        default:        c = "#0D323F"
     }
-    bg.style.backgroundColor = bgc
+    bg.style.backgroundColor = c
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
