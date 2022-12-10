@@ -1,12 +1,15 @@
+// Modules
 import { View, TopNavBar, IconInstructureLogoSolid, Text } from '@instructure/ui'
 
+// Variables
 const Brands = ['Canvas', 'Mastery', 'Elevate', 'Impact']
 
+// Component
 export default function RenderTopNavBar() { return(
   <View as="div" margin="0">
     <TopNavBar>
       {() => ( <TopNavBar.Layout
-        navLabel="Main navigation"
+        navLabel="main"
 
         desktopConfig={{
           hideActionsUserSeparator: false
@@ -54,24 +57,24 @@ export default function RenderTopNavBar() { return(
           )}
 
           iconBackground="#0D323F"
-          href="./"
+          href="#/"
         /> )}
 
         renderMenuItems={(
           <TopNavBar.MenuItems
             listLabel="Page navigation"
-            currentPageId="menuItems1Page2"
+            currentPageId=""
             renderHiddenItemsMenuTriggerLabel={(
               hiddenChildrenCount
             ) => `${hiddenChildrenCount} More`}
           >
-            {Brands.map((item) => (
+            {Brands.map((brand) => (
                 <TopNavBar.Item
-                  id={item}
-                  key={item}
-                  href={item}
+                  id={brand}
+                  key={brand}
+                  href={`#/${brand}`}
                 >
-                  {item}
+                  {brand}
                 </TopNavBar.Item>
               ))}
           </TopNavBar.MenuItems>

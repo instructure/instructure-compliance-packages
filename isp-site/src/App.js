@@ -1,9 +1,11 @@
 // Modules
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import { InstUISettingsProvider, instructure } from '@instructure/ui'
 
 // Components
 import RenderTopNavBar from 'components/RenderTopNavBar'
+import 'components/toggle'
+
 
 // Styles
 import './App.css'
@@ -15,27 +17,20 @@ import Mastery from './routes/mastery'
 import Impact from './routes/impact'
 import Elevate from './routes/elevate'
 
-// Variables
-const Brands = ['Canvas', 'Mastery', 'Impact', 'Elevate']
-
-const router = createBrowserRouter(
-  [
-    { path: "/",        element: <Root /> },
-    { path: "canvas",   element: <Canvas /> },
-    { path: "mastery",  element: <Mastery />},
-    { path: "impact",   element: <Impact /> },
-    { path: "elevate",  element: <Elevate /> }
-  ],
-  {
-    basename: "/instructure-security-package"
-  }
-)
-
 function App() { return (
   <InstUISettingsProvider theme={instructure}>
     <RenderTopNavBar />
-    <RouterProvider router={router} />
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Root />}></Route>
+        <Route path="/canvas" element={<Canvas />}></Route>
+        <Route path="/mastery" element={<Mastery />}></Route>
+        <Route path="/impact" element={<Impact />}></Route>
+        <Route path="/elevate" element={<Elevate />}></Route>
+      </Routes>
+    </HashRouter>
   </InstUISettingsProvider>
+  
 )}
 
 export default App;
