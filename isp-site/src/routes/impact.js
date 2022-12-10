@@ -1,5 +1,5 @@
 // Modules
-import { View, Text } from '@instructure/ui'
+import { View, Text, Heading } from '@instructure/ui'
 
 // Components
 
@@ -12,6 +12,7 @@ const impact_url = `${url_prefix}impact${url_postfix}`
 // Page
 export default function Impact() { return (
 <View as="div">
+    <Heading>Impact</Heading>
   <Text>The Impact security package is under construction.</Text>
 </View>
 )}

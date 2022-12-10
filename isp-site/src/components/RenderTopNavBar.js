@@ -1,5 +1,5 @@
 // Modules
-import { View, TopNavBar, IconInstructureLogoSolid, Text } from '@instructure/ui'
+import { View, TopNavBar, IconInstructureLogoSolid, Text, IconQuestionLine } from '@instructure/ui'
 
 // Variables
 const Brands = ['Canvas', 'Mastery', 'Elevate', 'Impact']
@@ -69,15 +69,36 @@ export default function RenderTopNavBar() { return(
             ) => `${hiddenChildrenCount} More`}
           >
             {Brands.map((brand) => (
-                <TopNavBar.Item
-                  id={brand}
-                  key={brand}
-                  href={`#/${brand}`}
-                >
-                  {brand}
-                </TopNavBar.Item>
-              ))}
+              <TopNavBar.Item
+                id={brand}
+                key={brand}
+                href={`#/${brand}`}
+              >
+                {brand}
+              </TopNavBar.Item>
+            ))}
           </TopNavBar.MenuItems>
+        )}
+
+        renderActionItems={(
+          <TopNavBar.ActionItems
+            listLabel="Actions"
+            renderHiddenItemsMenuTriggerLabel={(
+              hiddenChildrenCount
+            ) => `${hiddenChildrenCount} more actions`}
+          >
+          <TopNavBar.Item
+                id="help"
+                variant="icon"
+                tooltip="Help"
+                renderIcon={<IconQuestionLine />}
+                onClick={() => {
+                  console.log('Info')
+                }}
+              >
+                Help
+              </TopNavBar.Item>
+          </TopNavBar.ActionItems>
         )}
 
       />)}

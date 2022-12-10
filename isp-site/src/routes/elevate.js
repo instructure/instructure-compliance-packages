@@ -1,5 +1,5 @@
 // Modules
-import { View, Text } from '@instructure/ui'
+import { View, Text, Heading } from '@instructure/ui'
 
 // Components
 
@@ -12,6 +12,7 @@ const elevate_k12_analytics_url = `${url_prefix}elevate-k12-analytics${url_postf
 // Page
 export default function Elevate() { return (
   <View as="div">
+  <Heading>Elevate</Heading>
     <Text>The Elevate security package is under construction.</Text>
   </View>
 )}
