@@ -10,8 +10,14 @@ const CanvasRoutes = () => (
     <Routes>
       <Route path="*" element={<NotFound />} />
       <Route path="/" element={ <Canvas /> } />
-      <Route path="/lms/vpat" element={ <RedirectTo url={ 'https://www.instructure.com/products/canvas/accessibility' } /> } />
+
+      {/* Canvas Brand */ }
       <Route path="/community" element={ <RedirectTo url={ 'https://community.canvaslms.com/t5/Canvas/ct-p/canvas' } /> } />
+
+      {/* Canvas LMS */}
+      <Route path="/lms" element={ <RedirectTo url={ 'https://www.instructure.com/higher-education/products/canvas/canvas-lms' } /> } />
+      <Route path="/lms/k12" element={ <RedirectTo url={ 'https://www.instructure.com/k12/products/canvas/canvas-lms' } /> } />
+      <Route path="/lms/vpat" element={ <RedirectTo url={ 'https://www.instructure.com/products/canvas/accessibility' } /> } />
     </Routes>
   )
 
