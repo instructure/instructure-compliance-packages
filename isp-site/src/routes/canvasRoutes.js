@@ -10,7 +10,7 @@ const CanvasRoutes = () => (
     <Routes>
       <Route path="*" element={<NotFound />} />
       <Route path="/" element={ <Canvas /> } />
-      <Route path="/a11y" element={ <RedirectTo url={ 'https://www.instructure.com/products/canvas/accessibility' } /> } />
+      <Route path="/lms/vpat" element={ <RedirectTo url={ 'https://www.instructure.com/products/canvas/accessibility' } /> } />
       <Route path="/community" element={ <RedirectTo url={ 'https://community.canvaslms.com/t5/Canvas/ct-p/canvas' } /> } />
     </Routes>
   )

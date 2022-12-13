@@ -25,12 +25,15 @@ function App() { return (
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={ <Root /> } />
-        <Route path="/contact" element={ <RedirectTo url={ 'https://www.instructure.com/contact-us' } /> } />
-        <Route path="/privacy" element={ <RedirectTo url={ 'https://www.instructure.com/canvas/privacy' } /> } />
         <Route path="/canvas/*" element={ <CanvasRoutes /> } />
         <Route path="/mastery/*" element={ <MasteryRoutes /> } />
         <Route path="/impact/*" element={ <ImpactRoutes /> } />
         <Route path="/elevate/*" element={ <ElevateRoutes /> } />
+        <Route path="/contact" element={ <RedirectTo url={ 'https://www.instructure.com/contact-us' } /> } />
+        <Route path="/privacy" element={ <RedirectTo url={ 'https://www.instructure.com/canvas/privacy' } /> } />
+        <Route path="/security" element={ <RedirectTo url={ 'https://www.instructure.com/products/canvas/security' } /> } />
+        <Route path="/a11y" element={ <RedirectTo url={ 'https://www.instructure.com/accessibility' } /> } />
+        <Route path="/community" element={ <RedirectTo url={ 'https://community.canvaslms.com/' } /> } />
       </Routes>
     </HashRouter>
   </InstUISettingsProvider>
