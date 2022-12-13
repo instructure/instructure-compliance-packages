@@ -21,7 +21,7 @@ const toggle = (u, n) => {
 document.addEventListener("DOMContentLoaded", function(event) {
     let u = document.location.href.split('#')[1]
     let n = document.querySelectorAll('nav a')
-    if (u !== undefined && u !== "" && u !== null) {
+    if (u !== undefined && u !== "/" && u !== null) {
         u = document.getElementById(u.slice(1))
         toggle(u, n)
     }
