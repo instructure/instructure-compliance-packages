@@ -8,7 +8,11 @@
         <title>Redirecting...</title>
         <script>
             const prefix = '/#'
-            window.location.href = window.location.host + prefix + window.location.pathname
+            const protocol = window.location.protocol + '//'
+            const host = window.location.hostname
+            const path = window.location.pathname
+            const redirectURL = protocol + host + prefix + path
+            window.location.href = redirectURL
         </script>
     </head>
     <body>
