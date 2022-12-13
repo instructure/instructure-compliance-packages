@@ -24,8 +24,8 @@ export default function Root() {
   })
   
   return (
-  <View as="div">
-    <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
-  </View>
+    <View as="div">
+      <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
+    </View>
   )
 }
