@@ -8,7 +8,7 @@ import Elevate from 'routes/elevate'
 
 const ElevateRoutes = () => (
     <Routes>
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={ <NotFound /> } />
       <Route path="/" element={ <Elevate /> } />
       <Route path="/community" element={ <RedirectTo url={ 'https://community.canvaslms.com/t5/Elevate/ct-p/elevate' } /> } />
     </Routes>

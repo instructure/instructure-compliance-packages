@@ -29,6 +29,7 @@ function App() { return (
         <Route path="/mastery/*" element={ <MasteryRoutes /> } />
         <Route path="/impact/*" element={ <ImpactRoutes /> } />
         <Route path="/elevate/*" element={ <ElevateRoutes /> } />
+        <Route path="/roadmap" element={ <RedirectTo url={ 'https://community.canvaslms.com/t5/Instructure-Roadmap/ct-p/instructure-roadmap' } /> } />
         <Route path="/contact" element={ <RedirectTo url={ 'https://www.instructure.com/contact-us' } /> } />
         <Route path="/privacy" element={ <RedirectTo url={ 'https://www.instructure.com/canvas/privacy' } /> } />
         <Route path="/security" element={ <RedirectTo url={ 'https://www.instructure.com/products/canvas/security' } /> } />

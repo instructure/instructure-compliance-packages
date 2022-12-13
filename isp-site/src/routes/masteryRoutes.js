@@ -9,7 +9,7 @@ import Mastery from 'routes/mastery'
 // Page
 const MasteryRoutes = () => (
   <Routes>
-    <Route path="*" element={<NotFound />} />
+    <Route path="*" element={ <NotFound /> } />
     <Route path="/" element={ <Mastery /> } />
     <Route path="/community" element={ <RedirectTo url={ 'https://community.canvaslms.com/t5/Mastery/ct-p/mastery' } /> } />
   </Routes>
