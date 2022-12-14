@@ -2,10 +2,10 @@
 import { Routes, Route } from 'react-router-dom'
 
 // Routes
-import NotFound from 'routes/notFound'
-import RedirectTo from 'routes/redirectTo'
-import Root from 'routes/root'
-import Links from 'routes/links'
+import NotFound from "routes/notFound"
+import RedirectTo from "routes/redirectTo"
+import Root from "routes/root"
+import LinksTable from "routes/linksTable"
 import CanvasRoutes from "routes/canvasRoutes"
 import MasteryRoutes from "routes/masteryRoutes"
 import ImpactRoutes from "routes/impactRoutes"
@@ -16,7 +16,7 @@ const RootRoutes = () => (
   <Routes>
     <Route path="*"           element={<NotFound />} />
     <Route path="/"           element={ <Root /> } />
-    <Route path="/links"      element={ <Links /> } />
+    <Route path="/links"      element={ <LinksTable /> } />
 
     {/* Product Brands */}
     <Route path="/canvas/*"   element={ <CanvasRoutes /> } />

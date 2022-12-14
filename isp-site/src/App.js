@@ -1,6 +1,6 @@
 // Modules
 import { HashRouter } from "react-router-dom"
-import { InstUISettingsProvider, instructure, View, Link } from '@instructure/ui'
+import { InstUISettingsProvider, canvas, View } from '@instructure/ui'
 
 // Components
 import RenderTopNavBar from 'components/RenderTopNavBar'
@@ -15,7 +15,7 @@ import RootRoutes from "routes/rootRoutes"
 
 // App
 function App() { return (
-  <InstUISettingsProvider theme={instructure}>
+  <InstUISettingsProvider theme={canvas}>
     <View
      as="div"
      minHeight="100vh"
