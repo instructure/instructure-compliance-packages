@@ -38,15 +38,15 @@ export default function RenderTopNavBar() { return(
               >
                 Instructure
               </Text>
-              <Text
-                    as="div"
-                    color="primary-inverse"
-                    size="large"
-                    weight="normal"
-                    lineHeight="condensed"
-                  >
-                    Security Packages
-                  </Text>
+              {/* <Text
+                as="div"
+                color="primary-inverse"
+                size="large"
+                weight="normal"
+                lineHeight="condensed"
+              >
+                Security Packages
+              </Text> */}
             </View>
           )}
 
