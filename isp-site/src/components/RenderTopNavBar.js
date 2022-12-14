@@ -6,7 +6,10 @@ const Brands = ['Canvas', 'Mastery', 'Elevate', 'Impact']
 
 // Component
 export default function RenderTopNavBar() { return(
-  <View as="div" margin="0">
+  <View
+    id="nav"
+    as="div"
+  >
     <TopNavBar>
       {() => ( <TopNavBar.Layout
         navLabel="main"
