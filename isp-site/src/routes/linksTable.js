@@ -20,7 +20,7 @@ export default function LinksTable() {
         <Text>
           This page provides a collection of shortened URLs for use in RFP responses. 
           Each row has a short URL and the original URL. 
-          Click on the copy icon <IconCopyLine title="Copy Icon" /> and the short URL (including 'inst.bid') will be added to your clipboard.
+          Click on the copy icon <IconCopyLine title="Copy Icon" /> and the short URL will be added to your clipboard.
         </Text>
       </View>
       {
