@@ -17,7 +17,11 @@ export default function LinksTable() {
     <View as="div">
       <View as="div" margin="none none x-large">
         <Heading level="h1">Redirect Links</Heading>
-        <Text>This page provides a collection of shortened URLs for use in RFP responses. Each row has a short URL and the original URL click on the copy icon <IconCopyLine title="Copy Icon" /> and the short URL (including 'inst.bid') will be added to your clipboard.</Text>
+        <Text>
+          This page provides a collection of shortened URLs for use in RFP responses. 
+          Each row has a short URL and the original URL. 
+          Click on the copy icon <IconCopyLine title="Copy Icon" /> and the short URL (including 'inst.bid') will be added to your clipboard.
+        </Text>
       </View>
       {
         (Links.data).map( i => {
