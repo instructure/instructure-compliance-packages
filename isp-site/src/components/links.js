@@ -107,6 +107,11 @@ export default [
                 from:   "/canvas/lms/guides",
                 to:     "https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides"
             },
+            {
+                title:  "Release Notes",
+                from:   "canvas/lms/releases",
+                to:     "https://community.canvaslms.com/t5/Canvas-Releases/tkb-p/canvas-release"
+            }
         ]
     },
     {

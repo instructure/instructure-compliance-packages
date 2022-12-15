@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 // Page
 function RedirectTo(props) {
     let url = props.url
+    let brand = props.brand
 
     useEffect(() => {
       window.location.href = url
@@ -14,7 +15,7 @@ function RedirectTo(props) {
     if(url.slice(-4) === ".zip") {
       return (
         <View as="div">
-          <Text>You're downloading a security package!</Text>
+          <Text>You're downloading the {brand} security package!</Text>
           <br />
           <Text size="x-small">Didn't work? <Link href={url}>Try again</Link></Text>
         </View>
