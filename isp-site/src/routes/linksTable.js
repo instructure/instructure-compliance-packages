@@ -72,7 +72,7 @@ export default function LinksTable() {
                                 >
                                   <IconCopyLine />
                                 </IconButton>
-                                </CopyToClipboard>
+                              </CopyToClipboard>
                               </Tooltip>
                               <br />
                               <Text size="small" color="secondary">{link.to}</Text>
