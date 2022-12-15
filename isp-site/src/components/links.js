@@ -3,7 +3,7 @@ export default { data: [
         brand: "General",
         links: [
             {
-                title:  "Security Packages",
+                title:  "Security Packages (Home)",
                 from:   "/",
                 to:     ""
             },
@@ -18,14 +18,34 @@ export default { data: [
         brand: "Canvas",
         links: [
             {
-                title:  "Security Package",
+                title:  "Community",
+                from:   "/canvas/community",
+                to:     "https://community.canvaslms.com/t5/Canvas/ct-p/canvas"
+            },
+            {
+                title:  "Roadmap",
+                from:   "/canvas/roadmap",
+                to:     "https://community.canvaslms.com/t5/Canvas-Product-Roadmap/ct-p/canvas-product-roadmap"
+            }
+        ]
+    },
+    {
+        brand: "Canvas LMS",
+        links: [
+            {
+                title:  "Security Package (Home)",
                 from:   "/canvas",
                 to:     ""
             },
             {
-                title: "Community",
+                title:  "Community",
                 from:   "/canvas/community",
-                to:     ""
+                to:     "https://community.canvaslms.com/t5/Canvas/ct-p/canvas"
+            },
+            {
+                title:  "Roadmap",
+                from:   "/canvas/roadmap",
+                to:     "https://community.canvaslms.com/t5/Canvas-Product-Roadmap/ct-p/canvas-product-roadmap"
             }
         ]
     }

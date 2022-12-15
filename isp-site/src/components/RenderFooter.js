@@ -18,6 +18,7 @@ export default function RenderFooter() { return(
     <Text
         transform="uppercase"
         letterSpacing="expanded"
+        color="secondary"
     >
         Made with <IconHeartLine color="error" title="Love" /> by <Link href="https://www.instructure.com">Instructure</Link>
     </Text>
