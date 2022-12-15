@@ -1,6 +1,6 @@
 // Modules
 import {CopyToClipboard} from 'react-copy-to-clipboard'
-import { View, Table, Heading, Text, Tooltip, IconButton, IconCopyLine } from '@instructure/ui'
+import { View, Table, Heading, Text, Tooltip, IconButton, IconCopyLine, ToggleDetails } from '@instructure/ui'
 
 // Components
 import Links from 'components/links'
@@ -32,12 +32,14 @@ export default function LinksTable() {
               as="div"
               margin="none none xx-large"
             >
-              <Heading
-                level={ globalBrands.includes(brand) ? "h2" : "h3" }
-                id={brand}
-              >
-                {brand}
-              </Heading>
+            <ToggleDetails
+              summary={
+                <Heading level={ globalBrands.includes(brand) ? "h2" : "h3" } id={brand} >
+                  {brand}
+                </Heading>
+              }
+            >
+            {
               <Table hover caption={brand}>
                 <Table.Head>
                   <Table.Row>
@@ -86,6 +88,8 @@ export default function LinksTable() {
                   }
                 </Table.Body>
               </Table>
+            }
+            </ToggleDetails>
             </View>
           )
         })
