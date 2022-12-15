@@ -1,7 +1,6 @@
 // Modules
-import { Text, View } from "@instructure/ui"
+import { Text, View, Link } from "@instructure/ui"
 import { useEffect } from "react"
-import { Link } from "react-router-dom"
 
 // Page
 function RedirectTo(props) {
