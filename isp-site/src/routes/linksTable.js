@@ -6,12 +6,12 @@ import { View, Table, Heading, Text, Tooltip, IconButton, IconCopyLine } from '@
 import Links from 'components/links'
 
 // Variables
-const brands = ["General", "Canvas", "Mastery", "Elevate", "Impact"]
+const globalBrands = ["Instructure", "Canvas", "Mastery", "Elevate", "Impact"]
 
 // Page
 export default function LinksTable() {
 
-  const fromPrefix = 'https://inst.bid'
+  const fromPrefix = 'inst.bid'
 
   return (
     <View as="div">
@@ -24,20 +24,21 @@ export default function LinksTable() {
         </Text>
       </View>
       {
-        (Links.data).map( i => {
+        (Links).map( brands => {
+          let brand = brands.brand
           return(
             <View
-              key={i.brand}
+              key={brand}
               as="div"
               margin="none none xx-large"
             >
               <Heading
-                level={ brands.includes(i.brand) ? "h2" : "h3" }
-                id={ `${i.brand.toLowerCase()}Brand` }
+                level={ globalBrands.includes(brand) ? "h2" : "h3" }
+                id={brand}
               >
-                {i.brand}
+                {brand}
               </Heading>
-              <Table hover caption={i.brand}>
+              <Table hover caption={brand}>
                 <Table.Head>
                   <Table.Row>
                     <Table.ColHeader id="Title" width='25%'>
@@ -50,35 +51,37 @@ export default function LinksTable() {
                 </Table.Head>
                 <Table.Body>
                   {
-                    (i.links).map( link => {
-                      return(
-                        <Table.Row key={link.title}>
-                          <Table.Cell>
-                            <Text>{link.title}</Text>
-                          </Table.Cell>
-                          <Table.Cell>
-                            <Text>{link.from}</Text>&nbsp;&nbsp;
-                            <Tooltip
-                              renderTip="Copy"
-                              on={['hover', 'focus']}
-                              placement="top"
-                              color="primary-inverse"
-                            >
-                              <CopyToClipboard text={ `${fromPrefix}${link.from}` }>
-                                <IconButton
-                                  withBackground={false}
-                                  withBorder={false}
-                                  screenReaderLabel="Copy URL to clipboard"
-                                >
-                                  <IconCopyLine />
-                                </IconButton>
-                              </CopyToClipboard>
-                              </Tooltip>
-                              <br />
-                              <Text size="small" color="secondary">{link.to}</Text>
-                          </Table.Cell>
-                        </Table.Row>
-                      )
+                    (brands.links).map( link => {
+                      if( link.from !== null) {
+                        return(
+                          <Table.Row key={link.title}>
+                            <Table.Cell>
+                              <Text>{link.title}</Text>
+                            </Table.Cell>
+                            <Table.Cell>
+                              <Text>{ `${fromPrefix}${link.from}` }</Text>&nbsp;&nbsp;
+                              <Tooltip
+                                renderTip="Copy"
+                                on={['hover', 'focus']}
+                                placement="top"
+                                color="primary-inverse"
+                              >
+                                <CopyToClipboard text={ `${fromPrefix}${link.from}` }>
+                                  <IconButton
+                                    withBackground={false}
+                                    withBorder={false}
+                                    screenReaderLabel="Copy URL to clipboard"
+                                  >
+                                    <IconCopyLine />
+                                  </IconButton>
+                                </CopyToClipboard>
+                                </Tooltip>
+                                <br />
+                                <Text size="small" color="secondary">{link.to}</Text>
+                            </Table.Cell>
+                          </Table.Row>
+                        )
+                      }
                     })
                   }
                 </Table.Body>

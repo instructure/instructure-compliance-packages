@@ -1,6 +1,6 @@
-export default { data: [
+export default [
     {
-        brand: "General",
+        brand: "Instructure",
         links: [
             {
                 title:  "Security Packages (Home)",
@@ -8,15 +8,65 @@ export default { data: [
                 to:     ""
             },
             {
+                title:  "Roadmap",
+                from:   "/roadmap",
+                to:     "https://community.canvaslms.com/t5/Instructure-Roadmap/ct-p/instructure-roadmap"
+            },
+            {
                 title:  "Accessibility",
                 from:   "/a11y",
                 to:     "https://www.instructure.com/accessibility"
-            }
+            },
+            {
+                title:  "Contact",
+                from:   "/contact",
+                to:     "https://www.instructure.com/contact-us"
+            },
+            {
+                title:  "Privacy",
+                from:   "/privacy",
+                to:     "https://www.instructure.com/canvas/privacy"
+            },
+            {
+                title:  "Security",
+                from:   "/security",
+                to:     "https://www.instructure.com/products/canvas/security"
+            },
+            {
+                title:  "Community",
+                from:   "/community",
+                to:     "https://community.canvaslms.com/"
+            },
+            {
+                title:  "Terms & Conditions",
+                from:   "/tos",
+                to:     "https://www.instructure.com/policies/master-terms-conditions"
+            },
+            {
+                title:  "Global Terms & Conditions",
+                from:   "/tos/global",
+                to:     "https://www.instructure.com/policies/global/master-terms-and-conditions"
+            },
+            {
+                title:  "Acceptable Use Policy",
+                from:   "/aup",
+                to:     "https://www.instructure.com/policies/acceptable-use"
+            },
+            {
+                title:  "Data Privacy Addendum",
+                from:   "/dpa",
+                to:     "https://www.instructure.com/policies/data-processing"
+            },
         ]
     },
     {
         brand: "Canvas",
         links: [
+            {
+                title:  "Security Package (Home)",
+                from:   "/canvas",
+                to:     null
+            },
             {
                 title:  "Community",
                 from:   "/canvas/community",
@@ -27,79 +77,301 @@ export default { data: [
                 from:   "/canvas/roadmap",
                 to:     "https://community.canvaslms.com/t5/Canvas-Product-Roadmap/ct-p/canvas-product-roadmap"
             },
+        ]
+    },
+    {
+        brand: "Canvas LMS",
+        links: [
             {
-                title:  "Security Package (Home)",
-                from:   "/canvas",
-                to:     ""
+                title:  "Security Package (Download)",
+                from:   "/canvas/lms/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms.zip"
+            },
+            {
+                title:  "Home (HE)",
+                from:   "/canvas/lms",
+                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-lms"
+            },
+            {
+                title:  "Home (K12)",
+                from:   "/canvas/lms/k12",
+                to:     "https://www.instructure.com/k12/products/canvas/canvas-lms"
+            },
+            {
+                title:  "VPAT",
+                from:   "/canvas/lms/vpat",
+                to:     "https://www.instructure.com/products/canvas/accessibility"
+            },
+            {
+                title:  "Guides",
+                from:   "/canvas/lms/guides",
+                to:     "https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides"
             },
         ]
     },
-        {
-            brand: "Canvas LMS",
-            links: [
-                {
-                    title:  "Security Package (Download)",
-                    from:   "/canvas/lms/dl",
-                    to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms.zip"
-                },
-                {
-                    title:  "Community",
-                    from:   "/canvas/community",
-                    to:     "https://community.canvaslms.com/t5/Canvas/ct-p/canvas"
-                },
-                {
-                    title:  "Roadmap",
-                    from:   "/canvas/roadmap",
-                    to:     "https://community.canvaslms.com/t5/Canvas-Product-Roadmap/ct-p/canvas-product-roadmap"
-                }
-            ]
-        },
-        {
-            brand: "Canvas Studio",
-            links: [
-                {
-                    title:  "Security Package (Download)",
-                    from:   "/canvas/studio/dl",
-                    to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-studio.zip"
-                }
-            ]
-        },
-        {
-            brand: "Canvas Credentials",
-            links: [
-                {
-                    title:  "Security Package (Download)",
-                    from:   "/canvas/credentials/dl",
-                    to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials.zip"
-                }
-            ]
-        },
-        {
-            brand: "Canvas Catalog",
-            links: [
-                {
-                    title:  "Security Package (Download)",
-                    from:   "/canvas/catalog/dl",
-                    to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-catalog.zip"
-                }
-            ]
-        },
+    {
+        brand: "Canvas Studio",
+        links: [
+            {
+                title:  "Security Package (Download)",
+                from:   "/canvas/studio/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-studio.zip"
+            },
+            {
+                title:  "Home (HE)",
+                from:   "/canvas/studio",
+                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-studio"
+            },
+            {
+                title:  "Home (K12)",
+                from:   "/canvas/studio/k12",
+                to:     "https://www.instructure.com/k12/products/canvas/canvas-studio"
+            },
+            {
+                title:  "VPAT",
+                from:   "/canvas/studio/vpat",
+                to:     "https://www.instructure.com/accessibility/canvas/canvas-studio-vpat"
+            },
+            {
+                title:  "Guides",
+                from:   "/canvas/studio/guides",
+                to:     "https://community.canvaslms.com/t5/Canvas-Studio/ct-p/studio_guides"
+            },
+        ]
+    },
+    {
+        brand: "Canvas Credentials",
+        links: [
+            {
+                title:  "Security Package (Download)",
+                from:   "/canvas/credentials/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials.zip"
+            },
+            {
+                title:  "Home (HE)",
+                from:   "/canvas/credentials",
+                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-credentials-digital-badges"
+            },
+            {
+                title:  "Home (K12)",
+                from:   "/canvas/credentials/k12",
+                to:     "https://www.instructure.com/k12/products/canvas/canvas-credentials-digital-badges"
+            },
+            {
+                title:  "Guides",
+                from:   "/canvas/credentials/guides",
+                to:     "https://community.canvaslms.com/t5/Canvas-Credentials-Badges-Badgr/ct-p/canvas-credentials-badges"
+            },
+        ]
+    },
+    {
+        brand: "Canvas Catalog",
+        links: [
+            {
+                title:  "Security Package (Download)",
+                from:   "/canvas/catalog/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-catalog.zip"
+            },
+            {
+                title:  "Home (HE)",
+                from:   "/canvas/catalog",
+                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-catalog"
+            },
+            {
+                title:  "Home (K12)",
+                from:   "/canvas/catalog/k12",
+                to:     "https://www.instructure.com/k12/products/canvas/canvas-catalog"
+            },
+            {
+                title:  "Guides",
+                from:   "/canvas/catalog/guides",
+                to:     "https://community.canvaslms.com/t5/Canvas-Catalog/ct-p/canvas_catalog"
+            },
+        ]
+    },
     {
         brand: "Mastery",
-        links: []
+        links: [
+            {
+                title:  "Security Package (Home)",
+                from:   "/mastery",
+                to:     null
+            },
+            {
+                title:  "Community",
+                from:   "/mastery/community",
+                to:     "https://community.canvaslms.com/t5/Mastery/ct-p/mastery"
+            },
+            {
+                title:  "Roadmap",
+                from:   "/mastery/roadmap",
+                to:     "https://community.canvaslms.com/t5/Mastery-Product-Roadmap/ct-p/mastery-product-roadmap"
+            },
+        ]
+    },
+    {
+        brand: "Mastery Connect",
+        links: [
+            {
+                title:  "Security Package (Download)",
+                from:   null,
+                to:     null
+            },
+            {
+                title:  "Home",
+                from:   "/mastery/connect",
+                to:     "https://www.instructure.com/k12/products/mastery/mastery-connect"
+            },
+            {
+                title:  "Guides",
+                from:   "/mastery/connect/guides",
+                to:     "https://community.canvaslms.com/t5/Mastery-Connect/ct-p/masteryconnect"
+            },
+        ]
+    },
+    {
+        brand: "Mastery Item Bank",
+        links: [
+            {
+                title:  "Home",
+                from:   "/mastery/itembank",
+                to:     "https://www.instructure.com/k12/products/mastery/mastery-item-bank"
+            },
+            {
+                title:  "Guides",
+                from:   "/mastery/itembank/guides",
+                to:     "https://community.canvaslms.com/t5/Mastery-Item-Bank/ct-p/mastery-item-bank"
+            },
+        ]
+    },
+    {
+        brand: "Mastery View Assessments",
+        links: [
+            {
+                title:  "Formatives Home",
+                from:   "mastery/view/formative",
+                to:     "https://www.instructure.com/k12/products/mastery/mastery-view-formative-assessments"
+            },
+            {
+                title:  "Predictives Home",
+                from:   "/mastery/view/predictive",
+                to:     "https://www.instructure.com/k12/products/mastery/mastery-view-predictive-assessments"
+            },
+        ]
     },
     {
         brand: "Elevate",
-        links:  []
+        links: [
+            {
+                title:  "Security Package (Home)",
+                from:   "/elevate",
+                to:     null
+            },
+            {
+                title:  "Community",
+                from:   "/elevate/community",
+                to:     "https://community.canvaslms.com/t5/Elevate/ct-p/elevate"
+            },
+            {
+                title:  "Roadmap",
+                from:   "/elevate/roadmap",
+                to:     "https://community.canvaslms.com/t5/Elevate-Product-Roadmap/ct-p/elevate-product-roadmap"
+            },
+        ]
+    },
+    {
+        brand: "Elevate K-12 Analytics",
+        links: [
+            {
+                title:  "Security Package (Download)",
+                from:   null,
+                to:     null
+            },
+            {
+                title:  "Home",
+                from:   "/elevate/k12analytics",
+                to:     "https://www.instructure.com/k12/products/elevate/elevate-k12-analytics"
+            },
+            {
+                title:  "Guides",
+                from:   "/elevate/k12analytics/guides",
+                to:     "https://community.canvaslms.com/t5/Elevate-K-12-Analytics/ct-p/videri"
+            },
+        ]
+    },
+    {
+        brand: "Elevate Data Quality",
+        links: [
+            {
+                title:  "Security Package (Download)",
+                from:   null,
+                to:     null
+            },
+            {
+                title:  "Home",
+                from:   "/elevate/dataquality",
+                to:     "https://www.instructure.com/k12/products/elevate/elevate-data-quality"
+            },
+            {
+                title:  "Guides",
+                from:   "/elevate/dataquality/guides",
+                to:     "https://community.canvaslms.com/t5/Elevate-Data-Quality/ct-p/certify"
+            },
+        ]
+    },
+    {
+        brand: "Elevate Data Sync",
+        links:  [
+            {
+                title:  "Security Package (Download)",
+                from:   null,
+                to:     null
+            },
+            {
+                title:  "Home",
+                from:   null,
+                to:     null
+            },
+            {
+                title:  "Guides",
+                from:   "/elevate/datasync/guides",
+                to:     "https://community.canvaslms.com/t5/Elevate-Data-Sync/ct-p/elevate_data_sync"
+            },
+        ]
     },
     {
         brand: "Impact",
         links: [
             {
+                title:  "Security Package (Home)",
+                from:   "/impact",
+                to:     null
+            },
+            {
                 title:  "Security Package (Download)",
                 from:   "/impact/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact.zip"
-            }
+            },
+            {
+                title:  "Home (HE)",
+                from:   "/impact/he",
+                to:     "https://www.instructure.com/higher-education/products/impact"
+            },
+            {
+                title:  "Home (K12)",
+                from:   "/impact/k12",
+                to:     "https://www.instructure.com/k12/products/impact"
+            },
+            {
+                title:  "Community",
+                from:   "/impact/community",
+                to:     "https://community.canvaslms.com/t5/Impact/ct-p/impact"
+            },
+            {
+                title:  "Guides",
+                from:   "/impact/guides",
+                to:     "https://community.canvaslms.com/t5/Impact-Guides/tkb-p/impact_guides"
+            },
         ]
     }
-]}
+]
