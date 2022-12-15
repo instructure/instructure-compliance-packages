@@ -378,5 +378,95 @@ export default [
                 to:     "https://community.canvaslms.com/t5/Impact-Guides/tkb-p/impact_guides"
             },
         ]
-    }
+    },
+    {
+        brand: "Español",
+        links:  [
+            {
+                title:  "Página de inicio (HE)",
+                from:   "/canvas/lms/es",
+                to:     "https://www.instructure.com/es/canvas/educacion-superior"
+            },
+            {
+                title:  "Página de inicio (K12)",
+                from:   "/canvas/lms/es/basica",
+                to:     "https://www.instructure.com/es/educacion-basica"
+            },
+            {
+                title:  "Notas de implementación (Canvas LMS)",
+                from:   "/canvas/lms/publicacion",
+                to:     "https://community.canvaslms.com/t5/Espa%C3%B1ol/tkb-p/canvas-release-espanol"
+            },
+            {
+                title:  "Communidad (Canvas LMS)",
+                from:   "/canvas/lms/communidad",
+                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
+            },
+            {
+                title:  "Guias (Canvas)",
+                from:   "/canvas/guias/es",
+                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
+            },
+            {
+                title:  "Privacidad",
+                from:   "/privicidad",
+                to:     "https://www.instructure.com/es/canvas/privacidad"
+            },
+            {
+                title:  "Contactenos",
+                from:   "/contactenos",
+                to:     "https://www.instructure.com/es/contactenos"
+            },
+            {  
+                title:  "Seguridad",
+                from:   "seguridad",
+                to:     "https://www.instructure.com/es/canvas/seguridad"
+            },
+        ]
+    },
+    {
+        brand: "Portuguesa",
+        links:  [
+            {
+                title:  "Pagina inicial (HE)",
+                from:   "/canvas/lms/pt",
+                to:     "https://www.instructure.com/pt-br/canvas/ensino-superior"
+            },
+            {
+                title:  "Pagina inicial (K12)",
+                from:   "/canvas/lms/pt/basica",
+                to:     "https://www.instructure.com/pt-br/ensino-fundamental-e-medio"
+            },
+            {
+                title:  "Notas de lançamento (Canvas LMS)",
+                from:   "/canvas/lms/lancamentos",
+                to:     "https://community.canvaslms.com/t5/Portugues/tkb-p/canvas-release-portugues"
+            },
+            {
+                title:  "Comunidade (Canvas LMS)",
+                from:   "inst.bid/canvas/comunidade",
+                to:     "https://community.canvaslms.com/t5/Recursos-em-Portugu%C3%AAs-Portuguese/ct-p/portuguese_resources"
+            },
+            {
+                title:  "Guias (Canvas)",
+                from:   "/canvas/guias/pt",
+                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
+            },
+            {
+                title:  "Privacidade",
+                from:   "/privacidade",
+                to:     "https://www.instructure.com/pt-br/canvas/privacidade"
+            },
+            {
+                title:  "Contacto",
+                from:   "/contacto",
+                to:     "https://www.instructure.com/pt-br/contato"
+            },
+            {  
+                title:  "Seguranca",
+                from:   "seguranca",
+                to:     "https://www.instructure.com/pt-br/canvas/seguranca"
+            },
+        ]
+    },
 ]
