@@ -2,7 +2,7 @@
 import { View, TopNavBar, IconInstructureLogoSolid, Text, IconQuestionLine } from '@instructure/ui'
 
 // Variables
-const Brands = ['Canvas', 'Mastery', 'Elevate', 'Impact']
+const Brands = ['canvas', 'mastery', 'elevate', 'impact']
 
 // Component
 export default function RenderTopNavBar() { return(
@@ -75,9 +75,9 @@ export default function RenderTopNavBar() { return(
               <TopNavBar.Item
                 id={brand}
                 key={brand}
-                href={`#/${brand.toLowerCase()}`}
+                href={`#/${brand}`}
               >
-                {brand}
+                {`${brand[0].toUpperCase()}${brand.slice(1)}`}
               </TopNavBar.Item>
             ))}
           </TopNavBar.MenuItems>
