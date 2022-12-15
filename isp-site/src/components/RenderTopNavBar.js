@@ -75,7 +75,7 @@ export default function RenderTopNavBar() { return(
               <TopNavBar.Item
                 id={brand}
                 key={brand}
-                href={`#/${brand}`}
+                href={`#/${brand.toLowerCase()}`}
               >
                 {brand}
               </TopNavBar.Item>
