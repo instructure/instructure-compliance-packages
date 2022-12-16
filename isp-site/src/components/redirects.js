@@ -28,6 +28,41 @@ export default [
                 to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate%20August%202022.pdf"
             },
             {
+                title:  "Home (NA)",
+                from:   "/home",
+                to:     "https://www.instructure.com/"
+            },
+            {
+                title:  "Home (AU)",
+                from:   "/home/au",
+                to:     "https://www.instructure.com/en-au"
+            },
+            {
+                title:  "Home (UK)",
+                from:   "/home/uk",
+                to:     "https://www.instructure.com/en-gb"
+            },
+            {
+                title:  "Home (Spain)",
+                from:   "/home/espana",
+                to:     "https://www.instructure.com/es-es"
+            },
+            {
+                title:  "Home (Germany)",
+                from:   "/home/de",
+                to:     "https://www.instructure.com/de"
+            },
+            {
+                title:  "Home (Netherlands)",
+                from:   "/home/nl",
+                to:     "https://www.instructure.com/nl"
+            },
+            {
+                title:  "Home (Brazil)",
+                from:   "/home/br",
+                to:     "https://www.instructure.com/pt-br"
+            },
+            {
                 title:  "Roadmap",
                 from:   "/roadmap",
                 to:     "https://community.canvaslms.com/t5/Instructure-Roadmap/ct-p/instructure-roadmap"
