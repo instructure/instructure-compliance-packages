@@ -474,7 +474,7 @@ export default [
             },
             {  
                 title:  "Seguridad",
-                from:   "seguridad",
+                from:   "/seguridad",
                 to:     "https://www.instructure.com/es/canvas/seguridad"
             },
         ]
@@ -499,7 +499,7 @@ export default [
             },
             {
                 title:  "Comunidade (Canvas LMS)",
-                from:   "inst.bid/canvas/comunidade",
+                from:   "/canvas/comunidade",
                 to:     "https://community.canvaslms.com/t5/Recursos-em-Portugu%C3%AAs-Portuguese/ct-p/portuguese_resources"
             },
             {
@@ -519,7 +519,7 @@ export default [
             },
             {  
                 title:  "Segurança",
-                from:   "seguranca",
+                from:   "/seguranca",
                 to:     "https://www.instructure.com/pt-br/canvas/seguranca"
             },
         ]
