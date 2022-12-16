@@ -8,6 +8,26 @@ export default [
                 to:     ""
             },
             {
+                title:  "Penetration Test Report",
+                from:   "/pentest/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Penetration%20Test%20Report.pdf"
+            },
+            {
+                title:  "Security White Paper",
+                from:   "/security/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Security.pdf"
+            },
+            {
+                title:  "Business Continuity White Paper",
+                from:   "/bc/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Business%20Continuity%20%26%20Disaster%20Recovery.pdf"
+            },
+            {
+                title:  "ISO 27001 Certificate",
+                from:   "/iso/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate%20August%202022.pdf"
+            },
+            {
                 title:  "Roadmap",
                 from:   "/roadmap",
                 to:     "https://community.canvaslms.com/t5/Instructure-Roadmap/ct-p/instructure-roadmap"
@@ -403,7 +423,7 @@ export default [
                 to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
             },
             {
-                title:  "Guias (Canvas)",
+                title:  "Guías (Canvas)",
                 from:   "/canvas/guias/es",
                 to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
             },
@@ -413,7 +433,7 @@ export default [
                 to:     "https://www.instructure.com/es/canvas/privacidad"
             },
             {
-                title:  "Contactenos",
+                title:  "Contáctenos",
                 from:   "/contactenos",
                 to:     "https://www.instructure.com/es/contactenos"
             },
@@ -425,15 +445,15 @@ export default [
         ]
     },
     {
-        brand: "Portuguesa",
+        brand: "Português",
         links:  [
             {
-                title:  "Pagina inicial (HE)",
+                title:  "Página inicial (HE)",
                 from:   "/canvas/lms/pt",
                 to:     "https://www.instructure.com/pt-br/canvas/ensino-superior"
             },
             {
-                title:  "Pagina inicial (K12)",
+                title:  "Página inicial (K12)",
                 from:   "/canvas/lms/pt/basica",
                 to:     "https://www.instructure.com/pt-br/ensino-fundamental-e-medio"
             },
@@ -458,12 +478,12 @@ export default [
                 to:     "https://www.instructure.com/pt-br/canvas/privacidade"
             },
             {
-                title:  "Contacto",
-                from:   "/contacto",
+                title:  "Contato",
+                from:   "/Contato",
                 to:     "https://www.instructure.com/pt-br/contato"
             },
             {  
-                title:  "Seguranca",
+                title:  "Segurança",
                 from:   "seguranca",
                 to:     "https://www.instructure.com/pt-br/canvas/seguranca"
             },

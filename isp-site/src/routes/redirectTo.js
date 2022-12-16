@@ -6,15 +6,18 @@ import { useEffect } from "react"
 function RedirectTo(props) {
     let url = props.url
     let brand = props.brand
+    let path = props.path
+    let filetype = url.slice(-4)
+    let download = (path.slice(-3) === "/dl")
 
     useEffect(() => {
-      window.location.href = url
+    //  window.location.href = url
     },[])
 
-    if(url.slice(-4) === ".zip") {
+    if(download) {
       return (
         <View as="div">
-          <Text>You're downloading the {brand} security package!</Text>
+          <Text>You're downloading { (filetype === ".zip") ? "the" : "a document from the"  } {brand} security package!</Text>
           <br />
           <Text size="x-small">Didn't work? <Link href={url}>Try again</Link></Text>
         </View>
