@@ -3,13 +3,13 @@ import {CopyToClipboard} from 'react-copy-to-clipboard'
 import { View, Table, Heading, Text, Tooltip, IconButton, IconCopyLine, ToggleDetails } from '@instructure/ui'
 
 // Components
-import Links from 'components/links'
+import Redirects from 'components/redirects'
 
 // Variables
 const globalBrands = ["Instructure", "Canvas", "Mastery", "Elevate", "Impact"]
 
 // Page
-export default function LinksTable() {
+export default function Links() {
 
   const fromPrefix = 'inst.bid'
 
@@ -24,7 +24,7 @@ export default function LinksTable() {
         </Text>
       </View>
       {
-        (Links).map( brands => {
+        (Redirects).map( brands => {
           let brand = brands.brand
           return(
             <View
