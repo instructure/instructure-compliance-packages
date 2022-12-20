@@ -136,7 +136,12 @@ const Links = [
                 title:  "Release Notes",
                 from:   "canvas/lms/releases",
                 to:     "https://community.canvaslms.com/t5/Canvas-Releases/tkb-p/canvas-release"
-            }
+            },
+            {
+                title:  "API",
+                from:   "canvas/lms/api",
+                to:     "https://canvas.instructure.com/doc/api/index.html"
+            },
         ]
     },
     {
@@ -167,6 +172,11 @@ const Links = [
                 from:   "/canvas/studio/guides",
                 to:     "https://community.canvaslms.com/t5/Canvas-Studio/ct-p/studio_guides"
             },
+            {
+                title:  "API",
+                from:   "canvas/studio/api",
+                to:     "https://canvas.instructuremedia.com/api/public/docs/#/"
+            },
         ]
     },
     {
@@ -192,6 +202,11 @@ const Links = [
                 from:   "/canvas/credentials/guides",
                 to:     "https://community.canvaslms.com/t5/Canvas-Credentials-Badges-Badgr/ct-p/canvas-credentials-badges"
             },
+            {
+                title:  "API",
+                from:   "canvas/credentials/api",
+                to:     "https://api.badgr.io/docs/v2/"
+            },
         ]
     },
     {
@@ -216,6 +231,11 @@ const Links = [
                 title:  "Guides",
                 from:   "/canvas/catalog/guides",
                 to:     "https://community.canvaslms.com/t5/Canvas-Catalog/ct-p/canvas_catalog"
+            },
+            {
+                title:  "API",
+                from:   "canvas/catalog/api",
+                to:     "https://api.catalog.instructure.com/api/docs"
             },
         ]
     },
@@ -256,6 +276,11 @@ const Links = [
                 title:  "Guides",
                 from:   "/mastery/connect/guides",
                 to:     "https://community.canvaslms.com/t5/Mastery-Connect/ct-p/masteryconnect"
+            },
+            {
+                title:  "API",
+                from:   "mastery/connect/api",
+                to:     "https://docs.google.com/document/d/19TxyeRzF6nyJDY6ej2dZozbE87JdUygw/edit#heading=h.30j0zll"
             },
         ]
     },
