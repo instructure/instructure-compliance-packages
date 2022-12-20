@@ -1,5 +1,5 @@
 // Modules
-import { View, TopNavBar, IconInstructureLogoSolid, Text, IconQuestionLine } from '@instructure/ui'
+import { View, TopNavBar, IconInstructureLogoSolid, Text, IconQuestionLine, Heading, Link } from '@instructure/ui'
 
 // Variables
 const Brands = ['canvas', 'mastery', 'elevate', 'impact']
@@ -9,6 +9,7 @@ export default function RenderTopNavBar() { return(
   <View
     id="nav"
     as="div"
+    tabIndex={0}
   >
     <TopNavBar>
       {() => ( <TopNavBar.Layout
@@ -95,17 +96,50 @@ export default function RenderTopNavBar() { return(
               hiddenChildrenCount
             ) => `${hiddenChildrenCount} more actions`}
           >
-          <TopNavBar.Item
-                id="help"
-                variant="icon"
-                tooltip="Help"
-                renderIcon={<IconQuestionLine />}
-                onClick={() => {
-                  console.log('Info')
-                }}
-              >
-                Help
-              </TopNavBar.Item>
+            <TopNavBar.Item
+              id="itemPopoverExample"
+              variant="icon"
+              showSubmenuChevron={false}
+              tooltip="Help"
+              renderIcon={<IconQuestionLine />}
+              customPopoverConfig={{
+                on: 'click',
+                placement: 'bottom end',
+                shouldContainFocus: true,
+                children: (
+                  <View
+                    id="help"
+                    as="div"
+                    padding="medium"
+                    width="25rem"
+                    role="dialog"
+                    tabIndex={0}
+                    aria-label="Contact information"
+                    position="relative"
+                    borderRadius="small"
+                  >
+                    <Heading level="h3">Contact information</Heading>
+                    <Text>This site an its contents are maintained by Instructure, inc.</Text>
+                    <hr aria-hidden="true" />
+
+                    <View as="div" margin="medium 0 0">
+                      
+                        <Text weight="bold">Current customers</Text><br />
+                        <Text>Reach out to your designated CSM.</Text>
+                    </View>
+
+                    <View as="div" margin="medium 0 0">
+                        <Text weight="bold">Prospective customers</Text><br />
+                        <Text>Reach out to your sales contact.</Text><br />
+                        <Text>For general inquiries email <Link href="mailto:info@instructure.com">info@instructure.com</Link></Text>
+                    </View>
+
+                  </View>
+                )
+              }}
+            >
+              Help
+            </TopNavBar.Item>
           </TopNavBar.ActionItems>
         )}
 
