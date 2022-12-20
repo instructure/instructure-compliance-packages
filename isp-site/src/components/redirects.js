@@ -28,39 +28,9 @@ const Links = [
                 to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate%20August%202022.pdf"
             },
             {
-                title:  "Home (NA)",
+                title:  "Home",
                 from:   "/home",
                 to:     "https://www.instructure.com/"
-            },
-            {
-                title:  "Home (AU)",
-                from:   "/home/au",
-                to:     "https://www.instructure.com/en-au"
-            },
-            {
-                title:  "Home (UK)",
-                from:   "/home/uk",
-                to:     "https://www.instructure.com/en-gb"
-            },
-            {
-                title:  "Home (Spain)",
-                from:   "/home/espana",
-                to:     "https://www.instructure.com/es-es"
-            },
-            {
-                title:  "Home (Germany)",
-                from:   "/home/de",
-                to:     "https://www.instructure.com/de"
-            },
-            {
-                title:  "Home (Netherlands)",
-                from:   "/home/nl",
-                to:     "https://www.instructure.com/nl"
-            },
-            {
-                title:  "Home (Brazil)",
-                from:   "/home/br",
-                to:     "https://www.instructure.com/pt-br"
             },
             {
                 title:  "Roadmap",
@@ -438,12 +408,17 @@ const Links = [
         brand: "Español",
         links:  [
             {
-                title:  "Página de inicio (HE)",
+                title:  "Página de inicio (Instructure)",
+                from:   "/home/es",
+                to:     "https://www.instructure.com/es"
+            },
+            {
+                title:  "Página de inicio (Canvas HE)",
                 from:   "/canvas/lms/es",
                 to:     "https://www.instructure.com/es/canvas/educacion-superior"
             },
             {
-                title:  "Página de inicio (K12)",
+                title:  "Página de inicio (Canvas K12)",
                 from:   "/canvas/lms/es/basica",
                 to:     "https://www.instructure.com/es/educacion-basica"
             },
@@ -483,12 +458,12 @@ const Links = [
         brand: "Português",
         links:  [
             {
-                title:  "Página inicial (HE)",
+                title:  "Página inicial (Canvas HE)",
                 from:   "/canvas/lms/pt",
                 to:     "https://www.instructure.com/pt-br/canvas/ensino-superior"
             },
             {
-                title:  "Página inicial (K12)",
+                title:  "Página inicial (Canvas K12)",
                 from:   "/canvas/lms/pt/basica",
                 to:     "https://www.instructure.com/pt-br/ensino-fundamental-e-medio"
             },
