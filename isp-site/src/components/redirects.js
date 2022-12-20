@@ -240,6 +240,21 @@ const Links = [
         ]
     },
     {
+        brand: "Canvas Data",
+        links: [
+            {
+                title:  "Guides",
+                from:   "/canvas/data/guides",
+                to:     "https://community.canvaslms.com/t5/Canvas-Data-Users/tkb-p/datatkb-board"
+            },
+            {
+                title:  "API",
+                from:   "canvas/data/api",
+                to:     "https://portal.inshosteddata.com/docs"
+            },
+        ]
+    },
+    {
         brand: "Mastery",
         links: [
             {
