@@ -142,6 +142,8 @@ export default function Links() {
                               </Table.Cell>
                             </Table.Row>
                           )
+                        } else {
+                          return( null )
                         }
                       })
                     }
@@ -149,6 +151,8 @@ export default function Links() {
                 </Table>
               </View>
             )
+          } else {
+            return( null )
           }
         })
       }
