@@ -11,7 +11,7 @@ function RedirectTo(props) {
     let download = (path.slice(-3) === "/dl")
 
     useEffect(() => {
-    //  window.location.href = url
+      window.location.href = url
     },[])
 
     if(download) {
