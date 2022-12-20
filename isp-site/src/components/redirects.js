@@ -244,7 +244,7 @@ const Links = [
         links: [
             {
                 title:  "Home",
-                from:   "/canvas/commons/home",
+                from:   "/canvas/commons",
                 to:     "https://lor.instructure.com/"
             },
             {
@@ -461,6 +461,41 @@ const Links = [
                 title:  "Guides",
                 from:   "/impact/guides",
                 to:     "https://community.canvaslms.com/t5/Impact-Guides/tkb-p/impact_guides"
+            },
+        ]
+    },
+    {
+        brand: "Learn Platform",
+        links: [
+            {
+                title:  "Home",
+                from:   "/learnplatform",
+                to:     "https://learnplatform.com/"
+            },
+            {
+                title:  "Contact",
+                from:   "/learnplatform/contact",
+                to:     "https://learnplatform.com/contact"
+            },
+            {
+                title:  "Terms of Service",
+                from:   "/learnplatform/tos",
+                to:     "https://learnplatform.com/terms-of-service"
+            },
+            {
+                title:  "Privacy",
+                from:   "/learnplatform/privacy",
+                to:     "https://learnplatform.com/privacy-policy"
+            },
+            {
+                title:  "Data Processing Agreement",
+                from:   "/learnplatform/dpa",
+                to:     "https://learnplatform.com/data-processing-agreement"
+            },
+            {
+                title:  "Statement of Neutrality",
+                from:   "/learnplatform/neutrality",
+                to:     "https://learnplatform.com/neutrality"
             },
         ]
     },
