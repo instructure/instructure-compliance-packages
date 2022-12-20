@@ -1,11 +1,23 @@
 // Modules
-import { View, Text } from '@instructure/ui'
+import { Billboard, Text, Link } from '@instructure/ui'
+
+// Components
+const homeText = () => {
+  return(
+    <Text>
+      Uhm... <Link href="./#/">class dismissed</Link>.
+    </Text>
+  )
+}
 
 // Page
 export default function Root() {
   return (
-    <View as="div">
-      <Text>that's a 404.</Text>
-    </View>
+    <Billboard
+      size="medium"
+      heading="Well, that's a 404."
+      headingAs="h1"
+      message={homeText}
+    />
   )
 }
