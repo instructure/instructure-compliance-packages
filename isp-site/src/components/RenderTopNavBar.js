@@ -23,6 +23,11 @@ export default function RenderTopNavBar() { return(
           dropdownMenuLabel: 'Main Menu',
         }}
 
+        themeOverride={{
+          desktopBackground: "#287A9F",
+          smallViewportBackground: "#287A9F"
+        }}
+
         renderBrand={( <TopNavBar.Brand
           screenReaderLabel="Instructure"
           
@@ -59,7 +64,7 @@ export default function RenderTopNavBar() { return(
             />
           )}
 
-          iconBackground="#0D323F"
+          iconBackground="#287A9F"
           href="#/"
         /> )}
 

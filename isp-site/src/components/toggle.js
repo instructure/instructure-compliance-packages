@@ -5,7 +5,7 @@ const toggle = (u, n) => {
     })
 
     let bg = document.querySelectorAll('[class$="iconContainer"]')[0]
-    let c = "#0D323F"
+    let c = "#156380"
 
     if(u !== null && u.hash !== "#/") {
         u.setAttribute('aria-current','page')
@@ -15,7 +15,7 @@ const toggle = (u, n) => {
             case 'mastery': c = "#24A159"; break
             case 'elevate': c = "#0097D3"; break
             case 'impact':  c = "#F76400"; break
-            default:        c = c
+            default:        c = "#156380"
         }
         bg.style.backgroundColor = c 
     } else {
