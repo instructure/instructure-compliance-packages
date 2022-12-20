@@ -240,12 +240,32 @@ const Links = [
         ]
     },
     {
+        brand: "Canvas Commons",
+        links: [
+            {
+                title:  "Home",
+                from:   "/canvas/commons/home",
+                to:     "https://lor.instructure.com/"
+            },
+            {
+                title:  "Guides",
+                from:   "/canvas/data/guides",
+                to:     "https://community.canvaslms.com/t5/Canvas-Commons/tkb-p/commons"
+            },
+            {
+                title:  "API",
+                from:   "canvas/commons/api",
+                to:     "https://lor.instructure.com/docs/api/"
+            },
+        ]
+    },
+    {
         brand: "Canvas Data",
         links: [
             {
                 title:  "Guides",
                 from:   "/canvas/data/guides",
-                to:     "https://community.canvaslms.com/t5/Canvas-Data-Users/tkb-p/datatkb-board"
+                to:     "https://community.canvaslms.com/t5/Canvas-Data-Users/gh-p/data"
             },
             {
                 title:  "API",
