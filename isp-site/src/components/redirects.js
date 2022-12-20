@@ -1,4 +1,4 @@
-export default [
+const Links = [
     {
         brand: "Instructure",
         links: [
@@ -525,3 +525,4 @@ export default [
         ]
     },
 ]
+export default Links
