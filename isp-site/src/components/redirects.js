@@ -82,6 +82,11 @@ const Links = [
                 from:   "/dpa",
                 to:     "https://www.instructure.com/policies/data-processing"
             },
+            {
+                title:  "EduAppCenter",
+                from:   "/apps",
+                to:     "https://www.eduappcenter.com/"
+            },
         ]
     },
     {
@@ -141,6 +146,16 @@ const Links = [
                 title:  "API",
                 from:   "canvas/lms/api",
                 to:     "https://canvas.instructure.com/doc/api/index.html"
+            },
+            {
+                title:  "Mobile Apps (Android)",
+                from:   "canvas/lms/android",
+                to:     "https://play.google.com/store/apps/developer?id=Instructure"
+            },
+            {
+                title:  "Mobile Apps (iOS)",
+                from:   "canvas/lms/ios",
+                to:     "https://apps.apple.com/us/developer/instructure-inc/id418441198"
             },
         ]
     },
@@ -316,6 +331,16 @@ const Links = [
                 title:  "API",
                 from:   "mastery/connect/api",
                 to:     "https://docs.google.com/document/d/19TxyeRzF6nyJDY6ej2dZozbE87JdUygw/edit#heading=h.30j0zll"
+            },
+            {
+                title:  "Mobile App (Android)",
+                from:   "mastery/connect/android",
+                to:     "https://play.google.com/store/apps/dev?id=8869528477632015729&hl=en_US&gl=US"
+            },
+            {
+                title:  "Mobile App (iOS)",
+                from:   "canvas/lms/ios",
+                to:     "https://apps.apple.com/us/developer/masteryconnect/id413937396"
             },
         ]
     },
