@@ -330,7 +330,7 @@ const Links = [
             {
                 title:  "API",
                 from:   "/mastery/connect/api",
-                to:     "https://docs.google.com/document/d/19TxyeRzF6nyJDY6ej2dZozbE87JdUygw/edit#heading=h.30j0zll"
+                to:     "https://docs.google.com/document/d/19TxyeRzF6nyJDY6ej2dZozbE87JdUygw"
             },
             {
                 title:  "Mobile App (Android)",
