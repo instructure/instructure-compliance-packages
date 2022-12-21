@@ -5,7 +5,7 @@ const Links = [
             {
                 title:  "Security Packages (Home)",
                 from:   "/",
-                to:     ""
+                to:     null
             },
             {
                 title:  "Penetration Test Report",
@@ -139,22 +139,22 @@ const Links = [
             },
             {
                 title:  "Release Notes",
-                from:   "canvas/lms/releases",
+                from:   "/canvas/lms/releases",
                 to:     "https://community.canvaslms.com/t5/Canvas-Releases/tkb-p/canvas-release"
             },
             {
                 title:  "API",
-                from:   "canvas/lms/api",
+                from:   "/canvas/lms/api",
                 to:     "https://canvas.instructure.com/doc/api/index.html"
             },
             {
                 title:  "Mobile Apps (Android)",
-                from:   "canvas/lms/android",
+                from:   "/canvas/lms/android",
                 to:     "https://play.google.com/store/apps/developer?id=Instructure"
             },
             {
                 title:  "Mobile Apps (iOS)",
-                from:   "canvas/lms/ios",
+                from:   "/canvas/lms/ios",
                 to:     "https://apps.apple.com/us/developer/instructure-inc/id418441198"
             },
         ]
@@ -189,7 +189,7 @@ const Links = [
             },
             {
                 title:  "API",
-                from:   "canvas/studio/api",
+                from:   "/canvas/studio/api",
                 to:     "https://canvas.instructuremedia.com/api/public/docs/#/"
             },
         ]
@@ -219,7 +219,7 @@ const Links = [
             },
             {
                 title:  "API",
-                from:   "canvas/credentials/api",
+                from:   "/canvas/credentials/api",
                 to:     "https://api.badgr.io/docs/v2/"
             },
         ]
@@ -249,7 +249,7 @@ const Links = [
             },
             {
                 title:  "API",
-                from:   "canvas/catalog/api",
+                from:   "/canvas/catalog/api",
                 to:     "https://api.catalog.instructure.com/api/docs"
             },
         ]
@@ -264,12 +264,12 @@ const Links = [
             },
             {
                 title:  "Guides",
-                from:   "/canvas/data/guides",
+                from:   "/canvas/commons/guides",
                 to:     "https://community.canvaslms.com/t5/Canvas-Commons/tkb-p/commons"
             },
             {
                 title:  "API",
-                from:   "canvas/commons/api",
+                from:   "/canvas/commons/api",
                 to:     "https://lor.instructure.com/docs/api/"
             },
         ]
@@ -284,7 +284,7 @@ const Links = [
             },
             {
                 title:  "API",
-                from:   "canvas/data/api",
+                from:   "/canvas/data/api",
                 to:     "https://portal.inshosteddata.com/docs"
             },
         ]
@@ -329,17 +329,17 @@ const Links = [
             },
             {
                 title:  "API",
-                from:   "mastery/connect/api",
+                from:   "/mastery/connect/api",
                 to:     "https://docs.google.com/document/d/19TxyeRzF6nyJDY6ej2dZozbE87JdUygw/edit#heading=h.30j0zll"
             },
             {
                 title:  "Mobile App (Android)",
-                from:   "mastery/connect/android",
+                from:   "/mastery/connect/android",
                 to:     "https://play.google.com/store/apps/dev?id=8869528477632015729&hl=en_US&gl=US"
             },
             {
                 title:  "Mobile App (iOS)",
-                from:   "canvas/lms/ios",
+                from:   "/canvas/lms/ios",
                 to:     "https://apps.apple.com/us/developer/masteryconnect/id413937396"
             },
         ]
@@ -439,11 +439,6 @@ const Links = [
         links:  [
             {
                 title:  "Security Package (Download)",
-                from:   null,
-                to:     null
-            },
-            {
-                title:  "Home",
                 from:   null,
                 to:     null
             },
