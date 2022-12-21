@@ -11,7 +11,9 @@ export default function RenderTopNavBar() { return(
     as="div"
     tabIndex={0}
   >
-    <TopNavBar>
+    <TopNavBar
+       inverseColor={true}
+    >
       {() => ( <TopNavBar.Layout
         navLabel="main"
 
@@ -35,8 +37,9 @@ export default function RenderTopNavBar() { return(
           renderName={(
             <View as="div" minWidth="7rem">
               <Text
+                themeOverride={{ brandColor: "#333" }}
                 as="div"
-                color="primary-inverse"
+                color="brand"
                 transform="uppercase"
                 size="small"
                 weight="bold"
@@ -44,15 +47,6 @@ export default function RenderTopNavBar() { return(
               >
                 Instructure
               </Text>
-              {/* <Text
-                as="div"
-                color="primary-inverse"
-                size="large"
-                weight="normal"
-                lineHeight="condensed"
-              >
-                Security Packages
-              </Text> */}
             </View>
           )}
 
