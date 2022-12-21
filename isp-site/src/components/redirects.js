@@ -147,15 +147,30 @@ const Links = [
                 from:   "/canvas/lms/api",
                 to:     "https://canvas.instructure.com/doc/api/index.html"
             },
+        ]
+    },
+    {
+        brand: "Canvas Mobile",
+        links: [
             {
                 title:  "Mobile Apps (Android)",
-                from:   "/canvas/lms/android",
+                from:   "/canvas/mobile/android",
                 to:     "https://play.google.com/store/apps/developer?id=Instructure"
             },
             {
                 title:  "Mobile Apps (iOS)",
-                from:   "/canvas/lms/ios",
+                from:   "/canvas/mobile/ios",
                 to:     "https://apps.apple.com/us/developer/instructure-inc/id418441198"
+            },
+            {
+                title:  "Release Notes",
+                from:   "/canvas/mobile/releases",
+                to:     "https://community.canvaslms.com/t5/Canvas-Mobile-Releases/tkb-p/CanvasMobileReleases"
+            },
+            {
+                title:  "Guides",
+                from:   "/canvas/mobile/guides",
+                to:     "https://community.canvaslms.com/t5/Canvas-Mobile-Users/gh-p/mobile"
             },
         ]
     },
@@ -186,6 +201,11 @@ const Links = [
                 title:  "Guides",
                 from:   "/canvas/studio/guides",
                 to:     "https://community.canvaslms.com/t5/Canvas-Studio/ct-p/studio_guides"
+            },
+            {
+                title:  "Release Notes",
+                from:   "/canvas/studio/releases",
+                to:     "https://community.canvaslms.com/t5/Studio-Releases/ct-p/studio_releases"
             },
             {
                 title:  "API",
@@ -246,6 +266,11 @@ const Links = [
                 title:  "Guides",
                 from:   "/canvas/catalog/guides",
                 to:     "https://community.canvaslms.com/t5/Canvas-Catalog/ct-p/canvas_catalog"
+            },
+            {
+                title:  "Release Notes",
+                from:   "/canvas/catalog/releases",
+                to:     "https://community.canvaslms.com/t5/Catalog-Releases/ct-p/catalog_releases"
             },
             {
                 title:  "API",
@@ -328,6 +353,11 @@ const Links = [
                 to:     "https://community.canvaslms.com/t5/Mastery-Connect/ct-p/masteryconnect"
             },
             {
+                title:  "Release Notes",
+                from:   "/mastery/connect/releases",
+                to:     "https://community.canvaslms.com/t5/Mastery-Connect-Releases/tkb-p/masteryconnect"
+            },
+            {
                 title:  "API",
                 from:   "/mastery/connect/api",
                 to:     "https://docs.google.com/document/d/19TxyeRzF6nyJDY6ej2dZozbE87JdUygw"
@@ -408,9 +438,14 @@ const Links = [
                 to:     "https://www.instructure.com/k12/products/elevate/elevate-k12-analytics"
             },
             {
+                title:  "Release Notes",
+                from:   "/elevate/k12analytics/releases",
+                to:     "https://community.canvaslms.com/t5/Mastery-Connect-Releases/tkb-p/masteryconnect"
+            },
+            {
                 title:  "Guides",
                 from:   "/elevate/k12analytics/guides",
-                to:     "https://community.canvaslms.com/t5/Elevate-K-12-Analytics/ct-p/videri"
+                to:     "https://community.canvaslms.com/t5/Elevate-K-12-Analytics-Releases/tkb-p/v_release"
             },
         ]
     },
@@ -481,6 +516,11 @@ const Links = [
                 title:  "Guides",
                 from:   "/impact/guides",
                 to:     "https://community.canvaslms.com/t5/Impact-Guides/tkb-p/impact_guides"
+            },
+            {
+                title:  "Release Notes",
+                from:   "/impact/releases",
+                to:     "https://community.canvaslms.com/t5/Impact-Releases/ct-p/impact_releases"
             },
         ]
     },
