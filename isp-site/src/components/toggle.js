@@ -3,23 +3,10 @@ const toggle = (u, n) => {
         e.removeAttribute('aria-current')
         e.classList.remove('active')
     })
-
-    let bg = document.querySelectorAll('[class$="iconContainer"]')[0]
-    let c = "#287A9F"
-
+    
     if(u !== null && u.hash !== "#/") {
         u.setAttribute('aria-current','page')
         u.classList.add('active')
-        switch(u.id) {
-            case 'canvas':  c = "#E72429"; break
-            case 'mastery': c = "#24A159"; break
-            case 'elevate': c = "#0097D3"; break
-            case 'impact':  c = "#F76400"; break
-            default:        c = "#287A9F"
-        }
-        bg.style.backgroundColor = c 
-    } else {
-        bg.style.backgroundColor = c
     }
 }
 

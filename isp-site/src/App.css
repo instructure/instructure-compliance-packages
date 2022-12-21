@@ -8,3 +8,19 @@
   background: #333;
   display: block;
 }
+
+#canvas.active::after {
+  background: #E72429;
+}
+
+#mastery.active::after {
+  background: #24A159;
+}
+
+#elevate.active::after {
+  background: #0097D3;
+}
+
+#impact.active::after {
+  background: #F76400;
+}

@@ -1,33 +1,38 @@
 const ParentBrands = [
   {
-    brandName:  "Instructure",
-    get title() { return this.brandName.toLowerCase() },
-    route:      "/",
-    readme:     "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README.md"
+    brandName:    "Instructure",
+    get title()   { return this.brandName.toLowerCase() },
+    route:        "/",
+    readme:       "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README.md",
+    color:        "#287A9F"
   },
   {
-    brandName:  "Canvas",
+    brandName:    "Canvas",
     get title()   { return this.brandName.toLowerCase() },
     get route()   { return `/${this.title}` },
-    readme:       `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-Canvas.md`
+    get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+    color:        "#E72429"
   },
   {
-    brandName:  "Mastery",
+    brandName:    "Mastery",
     get title()   { return this.brandName.toLowerCase() },
     get route()   { return `/${this.title}` },
-    get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` }
+    get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+    color:        "#24A159"
   },
   {
-    brandName:  "Elevate",
+    brandName:    "Elevate",
     get title()   { return this.brandName.toLowerCase() },
     get route()   { return `/${this.title}` },
-    get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` }
+    get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+    color:        "#0097D3"
   },
   {
-    brandName:  "Impact",
+    brandName:    "Impact",
     get title()   { return this.brandName.toLowerCase() },
     get route()   { return `/${this.title}` },
-    get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` }
+    get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+    color:        "#F76400"
   },
 ]
 

@@ -79,6 +79,7 @@ function RenderTopNavBar() {
                 id={brand.title}
                 key={brand.title}
                 href={`#${brand.route}`}
+                themeOverride={{ activeIndicatorColor: brand.color }}
               >
                 {brand.brandName}
               </TopNavBar.Item>

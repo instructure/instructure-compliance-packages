@@ -6,7 +6,7 @@ import { View, Link, Text, List } from '@instructure/ui'
 
 // Page
 function Markdown(props) {
-  let md = props.url
+  let md = props.readme
 
   const [content, setContent] = useState('')
 

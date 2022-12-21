@@ -20,7 +20,7 @@ const RootRoutes = () => (
 
     {
       (ParentBrands).map( brand => { return(
-        <Route key={brand.title} path={brand.route} element={ <Markdown url={brand.readme} /> } />
+        <Route key={brand.title} path={brand.route} element={ <Markdown readme={brand.readme} /> } />
       )})
     }
 
