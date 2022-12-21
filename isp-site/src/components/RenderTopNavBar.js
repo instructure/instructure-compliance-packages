@@ -1,11 +1,14 @@
 // Modules
 import { View, TopNavBar, IconInstructureLogoSolid, Text, IconQuestionLine, Heading, Link } from '@instructure/ui'
-
-// Variables
-const Brands = ['canvas', 'mastery', 'elevate', 'impact']
+import ParentBrands from './parentBrands'
 
 // Component
-function RenderTopNavBar() { return(
+function RenderTopNavBar() {
+
+  const Brands = [...ParentBrands]
+  Brands.shift()
+  
+  return(
   <View
     id="nav"
     as="div"
@@ -73,11 +76,11 @@ function RenderTopNavBar() { return(
           >
             {Brands.map((brand) => (
               <TopNavBar.Item
-                id={brand}
-                key={brand}
-                href={`#/${brand}`}
+                id={brand.title}
+                key={brand.title}
+                href={`#${brand.route}`}
               >
-                {`${brand[0].toUpperCase()}${brand.slice(1)}`}
+                {brand.brandName}
               </TopNavBar.Item>
             ))}
           </TopNavBar.MenuItems>

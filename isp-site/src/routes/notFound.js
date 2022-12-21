@@ -2,7 +2,7 @@
 import { Billboard, Text, Link } from '@instructure/ui'
 
 // Page
-function Root() {
+function NotFound() {
   return (
     <Billboard
       size="medium"
@@ -13,4 +13,4 @@ function Root() {
   )
 }
 
-export default Root
+export default NotFound

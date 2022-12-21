@@ -4,15 +4,14 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { View } from '@instructure/ui'
 
-// Variables
-const gh_readme = 'https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-Mastery.md'
-
 // Page
-function Root() {
+function Markdown(props) {
+  let readme = props.url
+
   const [content, setContent] = useState('')
 
   useEffect(() => {
-    fetch(gh_readme)
+    fetch(readme)
       .then((response) => {
         if (response.ok) return response.text()
         else return Promise.reject("Didn't fetch text correctly")
@@ -30,4 +29,4 @@ function Root() {
   )
 }
 
-export default Root
+export default Markdown
