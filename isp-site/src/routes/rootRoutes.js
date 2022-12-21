@@ -41,4 +41,3 @@ const RootRoutes = () => (
 )
 
 export default RootRoutes
-

@@ -8,7 +8,7 @@ import { View } from '@instructure/ui'
 const gh_readme = 'https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-Mastery.md'
 
 // Page
-export default function Root() {
+function Root() {
   const [content, setContent] = useState('')
 
   useEffect(() => {
@@ -29,3 +29,5 @@ export default function Root() {
     </View>
   )
 }
+
+export default Root

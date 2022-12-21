@@ -3,7 +3,7 @@ import { View, Link, Text, IconHeartLine } from '@instructure/ui'
 
 
 // Component
-export default function RenderFooter() { return(
+function RenderFooter() { return(
     <View
         id="footer"
         as="div"
@@ -25,3 +25,5 @@ export default function RenderFooter() { return(
     </Text>
 </View>
 )}
+
+export default RenderFooter

@@ -5,7 +5,7 @@ import { View, TopNavBar, IconInstructureLogoSolid, Text, IconQuestionLine, Head
 const Brands = ['canvas', 'mastery', 'elevate', 'impact']
 
 // Component
-export default function RenderTopNavBar() { return(
+function RenderTopNavBar() { return(
   <View
     id="nav"
     as="div"
@@ -141,3 +141,5 @@ export default function RenderTopNavBar() { return(
     </TopNavBar>
   </View>
 )}
+
+export default RenderTopNavBar
