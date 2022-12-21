@@ -8,11 +8,3 @@
   background: #333;
   display: block;
 }
-
-a {
-  color: rgb(30, 91, 118);
-}
-a:hover,
-a:active {
-  text-decoration: none;
-}
