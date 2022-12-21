@@ -440,12 +440,12 @@ const Links = [
             {
                 title:  "Release Notes",
                 from:   "/elevate/k12analytics/releases",
-                to:     "https://community.canvaslms.com/t5/Mastery-Connect-Releases/tkb-p/masteryconnect"
+                to:     "https://community.canvaslms.com/t5/Elevate-K-12-Analytics-Releases/tkb-p/v_release"
             },
             {
                 title:  "Guides",
                 from:   "/elevate/k12analytics/guides",
-                to:     "https://community.canvaslms.com/t5/Elevate-K-12-Analytics-Releases/tkb-p/v_release"
+                to:     "https://community.canvaslms.com/t5/Elevate-K-12-Analytics/ct-p/videri"
             },
         ]
     },
