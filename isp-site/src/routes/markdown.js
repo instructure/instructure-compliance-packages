@@ -22,21 +22,34 @@ function Markdown(props) {
       .catch((error) => console.error(error));
   })
   
-  return (
+
+  { /* TODO: Items with children don't don't apply their component renders */ }
+
+  return ( 
     <View as="div">
       <ReactMarkdown
         children={content}
         remarkPlugins={[remarkGfm]}
+
+        
+
         components={{
-          a:    ({node, ...props}) => <Link to={node.href} {...props} />,
-          p:    ({node, ...props}) => <Text {...props} />,
-          div:  ({node, ...props}) => <View as="div" {...props} />,
-          li:   ({node, ...props}) => <List.Item {...props} />,
-          h1:   ({node, ...props}) => { delete props.level; return(<Heading level={node.tagName} margin="none none medium" {...props} />) },
-          h2:   ({node, ...props}) => { delete props.level; return(<Heading level={node.tagName} margin="small none small" {...props} />) },
-          h3:   ({node, ...props}) => { delete props.level; return(<Heading level={node.tagName} {...props} />) },
-          h4:   ({node, ...props}) => { delete props.level; return(<Heading level={node.tagName} {...props} />) },
-          h5:   ({node, ...props}) => { delete props.level; return(<Heading level={node.tagName} {...props} />) },
+          a:          ({node, ...props}) => <Link to={node.href} {...props} />,
+
+          p:          ({node, ...props}) => <Text as={node.tagName} {...props} />,
+          span:       ({node, ...props}) => <Text as={node.tagName} {...props} />,
+          blockquote: ({node, ...props}) => <Text as={node.tagName} {...props} />,
+          code:       ({node, ...props}) => <Text as={node.tagName} {...props} />,
+
+          h1:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} margin="none none medium" {...props} /> ) },
+          h2:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} margin="small none small" {...props} /> ) },
+          h3:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} {...props} /> ) },
+          h4:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} {...props} /> ) },
+          h5:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} {...props} /> ) },
+
+          div:        ({node, ...props}) => <View as="div" {...props} />,
+          pre:        ({node, ...props}) => <View as={node.tagName} {...props} />,
+          li:         ({node, ...props}) => <List.Item {...props} />
         }}
       />
     </View>
