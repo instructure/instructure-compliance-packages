@@ -23,7 +23,7 @@ function Markdown(props) {
   })
   
 
-  { /* TODO: Items with children don't don't apply their component renders */ }
+  { /* TODO: Items with children don't apply their component renders to the children */ }
 
   return ( 
     <View as="div">
