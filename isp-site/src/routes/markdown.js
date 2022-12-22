@@ -30,9 +30,6 @@ function Markdown(props) {
       <ReactMarkdown
         children={content}
         remarkPlugins={[remarkGfm]}
-
-        
-
         components={{
           a:          ({node, ...props}) => <Link to={node.href} {...props} />,
 
