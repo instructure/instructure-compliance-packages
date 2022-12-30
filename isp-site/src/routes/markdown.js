@@ -1,5 +1,5 @@
 // Modules
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { View, Link, Text, List, Heading } from '@instructure/ui'
@@ -17,13 +17,17 @@ function Markdown(props) {
         else return Promise.reject("Didn't fetch text correctly")
       })
       .then((text) => {
-        setContent(text);
+        setContent(text)
       })
-      .catch((error) => console.error(error));
+      .catch((error) => console.error(error))
   })
-  
 
-  { /* TODO: Items with children don't apply their component renders to the children */ }
+  const filterChildren = (props) => {
+    const filteredChildren = props.children.filter(
+      (child) => typeof child !== "string",
+    )
+    return filteredChildren
+  }
 
   return ( 
     <View as="div">
@@ -32,20 +36,43 @@ function Markdown(props) {
         remarkPlugins={[remarkGfm]}
         components={{
           a:          ({node, ...props}) => <Link to={node.href} {...props} />,
-
           p:          ({node, ...props}) => <Text as={node.tagName} {...props} />,
           span:       ({node, ...props}) => <Text as={node.tagName} {...props} />,
           blockquote: ({node, ...props}) => <Text as={node.tagName} {...props} />,
           code:       ({node, ...props}) => <Text as={node.tagName} {...props} />,
+          del:        ({node, ...props}) => <Text as={node.tagName} {...props} />,
+          h1:         ({node, ...props}) => {
+                                              props.level = node.tagName
+                                              return <Heading margin="none none medium" {...props} />
+                                            },
+          h2:         ({node, ...props}) => {
+                                              props.level = node.tagName;
+                                              return <Heading margin="small none small" {...props} />
+                                            },
+          h3:         ({node, ...props}) => {
+                                              props.level = node.tagName
+                                              return <Heading {...props} />
+                                            },
+          h4:         ({node, ...props}) => {
+                                              props.level = node.tagName
+                                              return <Heading {...props} />
+                                            },
+          h5:         ({node, ...props}) => {
+                                              props.level = node.tagName
+                                              return <Heading {...props} />
+                                            },
 
-          h1:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} margin="none none medium" {...props} /> ) },
-          h2:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} margin="small none small" {...props} /> ) },
-          h3:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} {...props} /> ) },
-          h4:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} {...props} /> ) },
-          h5:         ({node, ...props}) => { delete props.level; return( <Heading level={node.tagName} {...props} /> ) },
-
-          div:        ({node, ...props}) => <View as="div" {...props} />,
+          div:        ({node, ...props}) => <View as={node.tagName} {...props} />,
           pre:        ({node, ...props}) => <View as={node.tagName} {...props} />,
+
+          ul:         ({node, ...props}) => {
+                                              const fProps = { ...props, children: filterChildren(props) }
+                                              return <List as={node.tagName} {...fProps} />
+                                            },
+          ol:         ({node, ...props}) => {
+                                              const fProps = { ...props, children: filterChildren(props) }
+                                              return <List as={node.tagName} {...fProps} />
+                                            },
           li:         ({node, ...props}) => <List.Item {...props} />
         }}
       />
