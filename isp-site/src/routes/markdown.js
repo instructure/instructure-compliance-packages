@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { View, Link, Text, List, Heading } from '@instructure/ui'
+import { View, Link, Text, List, Heading, SourceCodeEditor } from '@instructure/ui'
 
 // Page
 function Markdown(props) {
@@ -22,9 +22,15 @@ function Markdown(props) {
       .catch((error) => console.error(error))
   })
 
-  const filterChildren = (props) => {
+  const filterChildrenProps = (props) => {
     const filteredChildren = props.children.filter(
       (child) => typeof child !== "string",
+    )
+    return filteredChildren
+  }
+  const filterChildrenNode = (node) => {
+    const filteredChildren = node.children.filter(
+      (child) => child.type !== "text"
     )
     return filteredChildren
   }
@@ -63,17 +69,43 @@ function Markdown(props) {
                                             },
 
           div:        ({node, ...props}) => <View as={node.tagName} {...props} />,
-          pre:        ({node, ...props}) => <View as={node.tagName} {...props} />,
+          pre:        ({node, ...props}) => {
+                                              if (node.children.length === 1 && node.children[0].tagName === 'code') {
+                                                let content = node.children[0].children[0].value
+                                                if (content.endsWith("\n")) {
+                                                  content = content.slice(0, -1)
+                                                }
+                                                return (
+                                                  <SourceCodeEditor
+                                                    label='editable code editor'
+                                                    lineNumbers={true}
+                                                    foldGutter={true}
+                                                    highlightActiveLineGutter={true}
+                                                    editable={true}
+                                                    readOnly={true}
+                                                    defaultValue={content}
+                                                  />
+                                                )
+                                              } else {
+                                                return <View as={node.tagName} {...props} />
+                                              }
+                                            },
 
           ul:         ({node, ...props}) => {
-                                              const fProps = { ...props, children: filterChildren(props) }
-                                              return <List as={node.tagName} {...fProps} />
+                                              node = {...node, children: filterChildrenNode(node)}
+                                              props = { ...props, children: filterChildrenProps(props) }
+                                              return <List as={node.tagName} {...props} />
                                             },
           ol:         ({node, ...props}) => {
-                                              const fProps = { ...props, children: filterChildren(props) }
-                                              return <List as={node.tagName} {...fProps} />
+                                              node = {...node, children: filterChildrenNode(node)}
+                                              props = { ...props, children: filterChildrenProps(props) }
+                                              return <List as={node.tagName} {...props} />
                                             },
-          li:         ({node, ...props}) => <List.Item {...props} />
+          li:         ({node, ...props}) => {
+                                              return(
+                                                <List.Item {...props} />
+                                              )
+                                            }
         }}
       />
     </View>
