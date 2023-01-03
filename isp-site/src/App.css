@@ -24,3 +24,7 @@
 #impact.active::after {
   background: #F76400;
 }
+
+li input[type="checkbox"] {
+  margin-left: 1.35em;
+}
