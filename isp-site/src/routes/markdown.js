@@ -53,7 +53,6 @@ function Markdown(props) {
                                               const quoteArr = props.children[0].props.children[0].split("--", 2)
                                               const quote = quoteArr[0]
                                               const author = (quoteArr.length > 1) ? quoteArr[1] : null
-                                              console.log(quoteArr)
                                               return(
                                                   <Byline {...props} description={quote}  title={author} margin="medium 0" >
                                                     { author ? <Avatar name={author} /> : null}
@@ -106,18 +105,25 @@ function Markdown(props) {
           ul:         ({node, ...props}) => {
                                               node = {...node, children: filterChildrenNode(node)}
                                               props = { ...props, children: filterChildrenProps(props) }
-                                              return <List as={node.tagName} {...props} />
+                                              const tl = (props.className === "contains-task-list") ? true : false
+                                              return <List isUnstyled={tl} {...props} />
                                             },
           ol:         ({node, ...props}) => {
                                               node = {...node, children: filterChildrenNode(node)}
                                               props = { ...props, children: filterChildrenProps(props) }
-                                              return <List as={node.tagName} {...props} />
+                                              return <List as={node.tagName}  {...props} />
                                             },
           li:         ({node, ...props}) => {
                                               return(
                                                 <List.Item {...props} />
                                               )
-                                            }
+                                            },
+
+          table:      ({node, ...props}) => {
+                                              console.log("Node:", node)
+                                              console.log("Props:", props)
+                                              return <table {...props} />
+          }
         }}
       />
     </View>
