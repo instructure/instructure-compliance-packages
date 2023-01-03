@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { View, Link, Text, List, Heading, SourceCodeEditor } from '@instructure/ui'
+import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar } from '@instructure/ui'
 
 // Page
 function Markdown(props) {
@@ -44,9 +44,22 @@ function Markdown(props) {
           a:          ({node, ...props}) => <Link to={node.href} {...props} />,
           p:          ({node, ...props}) => <Text as={node.tagName} {...props} />,
           span:       ({node, ...props}) => <Text as={node.tagName} {...props} />,
-          blockquote: ({node, ...props}) => <Text as={node.tagName} {...props} />,
           code:       ({node, ...props}) => <Text as={node.tagName} {...props} />,
           del:        ({node, ...props}) => <Text as={node.tagName} {...props} />,
+          blockquote: ({node, ...props}) => { 
+
+                                              node = {...node, children: filterChildrenNode(node)}
+                                              props = { ...props, children: filterChildrenProps(props) }
+                                              const quoteArr = props.children[0].props.children[0].split("--", 2)
+                                              const quote = quoteArr[0]
+                                              const author = (quoteArr.length > 1) ? quoteArr[1] : null
+                                              console.log(quoteArr)
+                                              return(
+                                                  <Byline {...props} description={quote}  title={author} margin="medium 0" >
+                                                    { author ? <Avatar name={author} /> : null}
+                                                  </Byline>
+                                              )
+                                            },
           h1:         ({node, ...props}) => {
                                               props.level = node.tagName
                                               return <Heading margin="none none medium" {...props} />
@@ -80,7 +93,6 @@ function Markdown(props) {
                                                     label='editable code editor'
                                                     lineNumbers={true}
                                                     foldGutter={true}
-                                                    highlightActiveLineGutter={true}
                                                     editable={true}
                                                     readOnly={true}
                                                     defaultValue={content}
