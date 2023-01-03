@@ -14,11 +14,9 @@
 <details><summary>CLICK ME</summary>
 <p>
 
-#### We can hide anything, even code!
+#### We can hide anything
 
-```ruby
-   puts "Hello World"
-```
+Hello world!
 
 </p>
 </details>
@@ -38,15 +36,13 @@ git add
 git commit
 ```
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+```javascript
+const msg = `you need to know about ${err}.`
+alert(msg)
+console.warn("User alerted:", msg)
 ```
 
-```math
-\sqrt{3}
-```
+<pre>This is some preformatted text, but it is NOT code</pre>
 
 ## Lists
 
@@ -64,13 +60,3 @@ puts markdown.to_html
 
 ## Emoji
 @octocat :+1: This PR looks great - it's ready to merge! :shipit:
-
-## Charts
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
