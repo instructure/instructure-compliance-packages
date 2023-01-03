@@ -23,7 +23,7 @@ Hello world!
 
 ## Quotes
 
-> Text that is a quote
+> Text that is a quote -- Author Name
 
 ## Code
 
