@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkGemoji from 'remark-gemoji'
 import rehypeRaw from 'rehype-raw'
-import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup, Img } from '@instructure/ui'
+import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup, Img, Table } from '@instructure/ui'
 
 // Components
 import allowedElements from 'components/allowedElements'
@@ -143,7 +143,15 @@ function Markdown(props) {
                 <View display="block" padding="small" {...props} />
               </ToggleGroup>
             )
-          }
+          },
+          /*
+            td: ({node, ...props}) => <Table.Cell {...props} />,
+            th: ({node, ...props}) => <Table.ColHeader {...props} />,
+            tr: ({node, ...props}) => <Table.Row {...props} />,
+            table: ({node, ...props}) => <Table caption="" {...props} />,
+            thead: ({node, ...props}) => <Table.Head {...props} />,
+            tbody: ({node, ...props}) => <Table.Body {...props} />,
+          */
         }}
       />
     </View>
