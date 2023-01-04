@@ -4,8 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkGemoji from 'remark-gemoji'
 import rehypeRaw from 'rehype-raw'
-import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup } from '@instructure/ui'
-
+import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup, Img } from '@instructure/ui'
 
 // Components
 import allowedElements from 'components/allowedElements'
@@ -15,7 +14,7 @@ function Markdown(props) {
   let md = props.readme
 
   const [content, setContent] = useState('')
-  
+
   useEffect(() => {
     fetch(md)
       .then((response) => {
@@ -62,7 +61,7 @@ function Markdown(props) {
             props = { ...props, children: filterChildrenProps(props) }
             const quoteArr = props.children[0].props.children[0].split("--", 2)
             const quote = quoteArr[0]
-            const author = (quoteArr.length > 1) ? quoteArr[1] : null
+            const author = (quoteArr.length > 1) ? quoteArr[1] : false
             return(
                 <Byline description={quote}  title={author} margin="medium 0" {...props}  >
                   <>{ author ? <Avatar name={author} /> : null}</>
@@ -93,6 +92,7 @@ function Markdown(props) {
             props.level = 'h5'
             return <Heading as="h6" {...props} />
           },
+          img: ({node, ...props}) => <Img {...props} />,
           div: ({node, ...props}) => <View as={node.tagName} {...props} />,
           pre: ({node, ...props}) => {
             if (node.children.length === 1 && node.children[0].tagName === 'code') {
