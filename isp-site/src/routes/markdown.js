@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkGemoji from 'remark-gemoji'
 import rehypeRaw from 'rehype-raw'
-import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar } from '@instructure/ui'
+import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup } from '@instructure/ui'
 
 // Page
 function Markdown(props) {
@@ -134,6 +134,19 @@ function Markdown(props) {
                                                 default:
                                                   return <node.tagName {...props} />
                                               }
+                                            },
+          details:    ({node, ...props}) => {
+                                              node = {...node, children: filterChildrenNode(node)}
+                                              props = { ...props, children: filterChildrenProps(props) }
+                                              const label = props.children.shift()
+                                              return(
+                                                <ToggleGroup
+                                                toggleLabel="Click for details"
+                                                summary={label}
+                                                >
+                                                  <View display="block" padding="small" {...props} />
+                                                </ToggleGroup>
+                                              )
                                             }
         }}
       />
