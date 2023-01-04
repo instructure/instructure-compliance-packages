@@ -47,7 +47,6 @@ function Markdown(props) {
           code:       ({node, ...props}) => <Text as={node.tagName} {...props} />,
           del:        ({node, ...props}) => <Text as={node.tagName} {...props} />,
           blockquote: ({node, ...props}) => { 
-
                                               node = {...node, children: filterChildrenNode(node)}
                                               props = { ...props, children: filterChildrenProps(props) }
                                               const quoteArr = props.children[0].props.children[0].split("--", 2)
@@ -117,6 +116,13 @@ function Markdown(props) {
                                                 <List.Item {...props} />
                                               )
                                             },
+
+          input:      ({node, ...props}) => {
+                                              switch(props.type) {
+                                                default:
+                                                  return <node.tagName {...props} />
+                                              }
+                                            }
         }}
       />
     </View>
