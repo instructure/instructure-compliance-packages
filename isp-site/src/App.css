@@ -28,3 +28,7 @@
 li input[type="checkbox"] {
   margin-left: 1.35em;
 }
+
+pre {
+  font-family: Menlo, Consolas, Monaco, "Andale Mono", monospace !important;
+}

@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkGemoji from 'remark-gemoji'
+import rehypeRaw from 'rehype-raw'
 import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar } from '@instructure/ui'
 
 // Page
@@ -35,11 +37,21 @@ function Markdown(props) {
     return filteredChildren
   }
 
+  const allowedEls = [
+    'a', 'p', 'span', 'code', 'del', 'blockquote',
+    'h1', 'h2', 'h3', 'h4', 'h5', 'img',
+    'ul', 'li', 'div', 'pre', 'ul', 'ol', 'li', 'input',
+    'details', 'summary', 'br', 'em', 'strong', 'hr',
+    'table', 'tbody', 'thead', 'td', 'th', 'tr'
+  ]
+
   return ( 
     <View as="div">
       <ReactMarkdown
         children={content}
-        remarkPlugins={[remarkGfm]}
+        remarkPlugins={[remarkGfm, remarkGemoji]}
+        rehypePlugins={[rehypeRaw]}
+        allowedElements={allowedEls}
         components={{
           a:          ({node, ...props}) => <Link to={node.href} {...props} />,
           p:          ({node, ...props}) => <Text as={node.tagName} {...props} />,
