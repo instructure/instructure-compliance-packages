@@ -64,5 +64,15 @@ console.warn("User alerted:", msg)
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
 
-## Emoji
-@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+## Text
+
+Emoji: @octocat :+1: This PR looks great - it's ready to merge! :shipit:
+
+Text style: *italic* **bold** ~struck~
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
