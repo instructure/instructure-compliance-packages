@@ -175,10 +175,10 @@ function Markdown(props) {
             return(
               <Table margin="medium none" hover={true} caption="" {...tableProps}>
                 {children.map((node, i) => {
+                  var {children, ...thbProps} = node.props
                   if (node.type === "thead") {
-                    var {children, ...theadProps} = node.props
                     return (
-                      <Table.Head key={i} {...theadProps}>
+                      <Table.Head key={i} {...thbProps}>
                         {children.map((node, i) => {
                           var {children, ...trProps} = node.props
                           return (
@@ -193,9 +193,8 @@ function Markdown(props) {
                       </Table.Head>
                     )
                   } else {
-                    var {children, ...tbodyProps} = node.props
                     return (
-                      <Table.Body key={i} {...tbodyProps}>
+                      <Table.Body key={i} {...thbProps}>
                         {children.map((node, i) => {
                           var {children, ...trProps} = node.props
                           return (
@@ -229,13 +228,6 @@ function Markdown(props) {
               </Table>
             )
           }
-          /*
-          th: ({node, ...props}) => {
-            return(
-              <Table.ColHeader id={`${node.position.start.line}${node.position.start.offset}`} {...props} />
-            )
-          },
-          */
         }}
       />
     </View>
