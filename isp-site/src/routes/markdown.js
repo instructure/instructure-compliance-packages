@@ -124,7 +124,7 @@ function Markdown(props) {
                 {children.map((node, i) => {
                   if (tasklist) {
                     var {children, ...childfProps} = node.props
-                    const inp = children.shift()
+                    children.shift()
                     const check = (childfProps.checked) ? true : false
                     return(
                       <List.Item key={i} margin="0 0 small small" {...childfProps} >
