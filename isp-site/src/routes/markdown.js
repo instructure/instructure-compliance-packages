@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkGemoji from 'remark-gemoji'
 import rehypeRaw from 'rehype-raw'
-import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup, Img, Table } from '@instructure/ui'
+import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup, Img, Table, Checkbox } from '@instructure/ui'
 
 // Components
 import allowedElements from 'components/allowedElements'
@@ -117,12 +117,38 @@ function Markdown(props) {
           ul: ({node, ...props}) => {
             node = {...node, children: filterChildrenNode(node)}
             props = { ...props, children: filterChildrenProps(props) }
-            return <List isUnstyled={(props.className === "contains-task-list") ? true : false} {...props} />
+            var {children, ...fProps} = props
+            var tasklist = (props.className === "contains-task-list")
+            return (
+              <List isUnstyled={(tasklist) ? true : false} {...fProps} >
+                {children.map((node, i) => {
+                  if (tasklist) {
+                    var {children, ...childfProps} = node.props
+                    const inp = children.shift()
+                    const check = (childfProps.checked) ? true : false
+                    return(
+                      <List.Item key={i} margin="0 0 small small" {...childfProps} >
+                        <Checkbox label={children} disabled={true} defaultChecked={check} />
+                      </List.Item>
+                    )
+                  } else {
+                    return <List.Item key={i} {...node.props} />
+                  }
+                })}
+              </List>
+            )
           },
           ol: ({node, ...props}) => {
             node = {...node, children: filterChildrenNode(node)}
             props = { ...props, children: filterChildrenProps(props) }
-            return <List as={node.tagName}  {...props} />
+            var {children, ...fProps} = props
+            return (
+              <List as={node.tagName} {...fProps} >
+                {children.map((node, i) => {
+                  return <List.Item key={i}  {...node.props} />
+                })}
+              </List>
+            )
           },
           li: ({node, ...props}) => <List.Item {...props} />,
           input:  ({node, ...props}) => {

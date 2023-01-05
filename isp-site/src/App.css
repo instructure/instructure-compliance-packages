@@ -1,3 +1,5 @@
+/* TopNavBar */
+
 .active::after {
   content: "";
   position: absolute;
@@ -25,8 +27,10 @@
   background: #F76400;
 }
 
-li input[type="checkbox"] {
-  margin-left: 1.35em;
+/* Instructure UI overrides */
+
+li [data-cid="Checkbox"] {
+  opacity: inherit;
 }
 
 pre {
