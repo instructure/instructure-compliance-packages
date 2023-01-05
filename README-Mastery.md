@@ -4,10 +4,25 @@
 
 ## Tables
 
+### Normal table
+
 | First Header     | Second Header    |
 | ---------------- | ---------------- |
 | Content Cell A1  | Content Cell B1  |
 | Content Cell A2  | Content Cell B2  |
+
+### Table with fancy formatting
+
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
+### Table with columnar alignment
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
 
 ## Details
 
