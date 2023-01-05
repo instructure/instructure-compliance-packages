@@ -74,11 +74,11 @@ function Markdown(props) {
           },
           h2: ({node, ...props}) => {
             props.level = node.tagName;
-            return <Heading margin="small none small" {...props} />
+            return <Heading margin="small none" {...props} />
           },
           h3: ({node, ...props}) => {
             props.level = node.tagName
-            return <Heading {...props} />
+            return <Heading margin="small none" {...props} />
           },
           h4: ({node, ...props}) => {
             props.level = node.tagName
@@ -117,17 +117,17 @@ function Markdown(props) {
           ul: ({node, ...props}) => {
             node = {...node, children: filterChildrenNode(node)}
             props = { ...props, children: filterChildrenProps(props) }
-            var {children, ...fProps} = props
+            var {children, ...ulProps} = props
             var tasklist = (props.className === "contains-task-list")
             return (
-              <List isUnstyled={(tasklist) ? true : false} {...fProps} >
+              <List isUnstyled={(tasklist) ? true : false} {...ulProps} >
                 {children.map((node, i) => {
                   if (tasklist) {
-                    var {children, ...childfProps} = node.props
+                    var {children, ...liProps} = node.props
                     children.shift()
-                    const check = (childfProps.checked) ? true : false
+                    const check = (liProps.checked) ? true : false
                     return(
-                      <List.Item key={i} margin="0 0 small small" {...childfProps} >
+                      <List.Item key={i} margin="0 0 small small" {...liProps} >
                         <Checkbox label={children} disabled={true} defaultChecked={check} />
                       </List.Item>
                     )
@@ -170,13 +170,71 @@ function Markdown(props) {
               </ToggleGroup>
             )
           },
+          table: ({node, ...props}) => {
+            var {children, ...tableProps} = props
+            return(
+              <Table margin="medium none" hover={true} caption="" {...tableProps}>
+                {children.map((node, i) => {
+                  if (node.type === "thead") {
+                    var {children, ...theadProps} = node.props
+                    return (
+                      <Table.Head key={i} {...theadProps}>
+                        {children.map((node, i) => {
+                          var {children, ...trProps} = node.props
+                          return (
+                            <Table.Row key={i} {...trProps}>
+                              {children.map((node, i) => {
+
+                                return <Table.ColHeader key={i} id={i.toString()} {...node.props} />
+                              })}
+                            </Table.Row>
+                          )
+                        })}
+                      </Table.Head>
+                    )
+                  } else {
+                    var {children, ...tbodyProps} = node.props
+                    return (
+                      <Table.Body key={i} {...tbodyProps}>
+                        {children.map((node, i) => {
+                          var {children, ...trProps} = node.props
+                          return (
+                            <Table.Row key={i} {...trProps}>
+                              {children.map((node, i) => {
+                                if(node.props.hasOwnProperty("style")) {
+                                  var align = "start"
+                                  switch (node.props.style.textAlign) {
+                                    case "left":
+                                      align = "start"
+                                      break;
+                                    case "center":
+                                      align = "center"
+                                      break;
+                                    case "right":
+                                      align = "end"
+                                      break;
+                                    default:
+                                        align = "start"
+                                  }
+                                }
+                                return <Table.Cell textAlign={align} key={i} {...node.props} />
+                              })}
+                            </Table.Row>
+                          )
+                        })}
+                      </Table.Body>
+                    )
+                  }
+                })}
+              </Table>
+            )
+          }
           /*
-            td: ({node, ...props}) => <Table.Cell {...props} />,
-            th: ({node, ...props}) => <Table.ColHeader {...props} />,
-            tr: ({node, ...props}) => <Table.Row {...props} />,
-            table: ({node, ...props}) => <Table caption="" {...props} />,
-            thead: ({node, ...props}) => <Table.Head {...props} />,
-            tbody: ({node, ...props}) => <Table.Body {...props} />,
+          th: ({node, ...props}) => {
+            return(
+              <Table.ColHeader id={`${node.position.start.line}${node.position.start.offset}`} {...props} />
+            )
+          },
           */
         }}
       />
