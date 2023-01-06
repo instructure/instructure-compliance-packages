@@ -10,6 +10,7 @@ import NotFound from "routes/notFound"
 import RedirectTo from "routes/redirectTo"
 import Links from "routes/links"
 import Markdown from 'routes/markdown'
+import MDUI from 'routes/MDUI'
 
 
 // Page
@@ -17,6 +18,7 @@ const RootRoutes = () => (
   <Routes>
     <Route path="*"         element={ <NotFound /> } />
     <Route path="/links"    element={ <Links /> } />
+    <Route path="/mdui"    element={ <MDUI /> } />
 
     {
       (ParentBrands).map( brand => { return(
