@@ -10,8 +10,9 @@ Current packages include:
 - [Canvas Student Pathways](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-student-pathways.zip)
 - [Canvas Credentials](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials.zip)
 - [Impact by Instructure](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact.zip)
+- [Mastery Connect](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/mastery-connect.zip)
 
 Packages in development include:
 - Elevate K-12 Analytics
 - Elevate Data Quality
-- Mastery Connect
+
