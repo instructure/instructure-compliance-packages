@@ -339,8 +339,8 @@ const Links = [
         links: [
             {
                 title:  "Security Package (Download)",
-                from:   null,
-                to:     null
+                from:   "/mastery/connect/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/mastery-connect.zip"
             },
             {
                 title:  "Home",
