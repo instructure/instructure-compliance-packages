@@ -35,13 +35,6 @@ function MDUI() {
     return filteredChildren
   }
 
-  const filterChildrenNode = (node) => {
-    const filteredChildren = node.children.filter(
-      (child) => child.type !== "text"
-    )
-    return filteredChildren
-  }
-
 
   return (
     <Grid startAt="large">
@@ -61,7 +54,6 @@ function MDUI() {
 							code: ({node, ...props}) => <Text as={node.tagName} {...props} />,
 							del: ({node, ...props}) => <Text as={node.tagName} {...props} />,
 							blockquote: ({node, ...props}) => { 
-								node = {...node, children: filterChildrenNode(node)}
 								props = { ...props, children: filterChildrenProps(props) }
 								const quoteArr = props.children[0].props.children[0].split("--", 2)
 								const quote = quoteArr[0]
@@ -119,7 +111,6 @@ function MDUI() {
 								}
 							},
 							ul: ({node, ...props}) => {
-								node = {...node, children: filterChildrenNode(node)}
 								props = { ...props, children: filterChildrenProps(props) }
 								var {children, ...ulProps} = props
 								var tasklist = (props.className === "contains-task-list")
@@ -143,7 +134,6 @@ function MDUI() {
 								)
 							},
 							ol: ({node, ...props}) => {
-								node = {...node, children: filterChildrenNode(node)}
 								props = { ...props, children: filterChildrenProps(props) }
 								var {children, ...fProps} = props
 								return (
@@ -162,7 +152,6 @@ function MDUI() {
 								}
 							},
 							details: ({node, ...props}) => {
-								node = {...node, children: filterChildrenNode(node)}
 								props = {...props, children: filterChildrenProps(props)}
 								const label = props.children.shift()
 								return(
