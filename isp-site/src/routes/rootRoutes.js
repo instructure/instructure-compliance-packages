@@ -30,7 +30,9 @@ const RootRoutes = () => (
         (brand.links).map( path => {
           if(path.from !== null && path.to !== null) { return(
             <Route path={path.from} element={ <RedirectTo path={path.from} brand={brand.brand} url={path.to} /> } />
-          )}
+          )} else {
+            return null
+          }
         })
       )})
     }      
