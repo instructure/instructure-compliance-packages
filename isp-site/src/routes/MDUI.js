@@ -14,7 +14,7 @@ import markdownSample from 'components/markdownSample.md'
 function MDUI() {
   let md = markdownSample
 
-  const [content, setContent] = useState('')
+  const [content, setContent] = useState('Loading...')
 
   useEffect(() => {
     fetch(md)
@@ -26,7 +26,7 @@ function MDUI() {
         setContent(text)
       })
       .catch((error) => console.error(error))
-  })
+  }, [])
 
   const filterChildrenProps = (props) => {
     const filteredChildren = props.children.filter(
@@ -34,7 +34,6 @@ function MDUI() {
     )
     return filteredChildren
   }
-
 
   return (
     <Grid startAt="large">
@@ -235,7 +234,10 @@ function MDUI() {
 						highlightActiveLine={true}
 						lineWrapping={true}
 						/* TODO figure out why ${content} isn't carrying through. */
-						defaultValue={null}
+						value={content}
+						onChange={(value) => {
+							this.setState({ value })
+						}}
 					/>
         </Grid.Col>
 			</Grid.Row>
