@@ -33,12 +33,21 @@ function RedirectTo(props) {
   }
   
   return (
-    <Billboard
-      size="medium"
-      heading={(download) ? "Downloading" : "Redirecting"}
-      headingAs="h1"
-      message={billboardText}
-    />
+    <View
+      id="main"
+      as="div"
+      padding="medium medium xx-large"
+      minWidth="20rem"
+      maxWidth="59.25rem"
+      margin="0 auto" 
+    >
+      <Billboard
+        size="medium"
+        heading={(download) ? "Downloading" : "Redirecting"}
+        headingAs="h1"
+        message={billboardText}
+      />
+    </View>
   )
 }
 

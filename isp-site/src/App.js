@@ -21,19 +21,10 @@ function App() { return (
      minHeight="100vh"
      position="relative"
     >
-      <RenderTopNavBar />
-      <View
-        id="main"
-        as="div"
-        padding="medium medium xx-large"
-        minWidth="20rem"
-        maxWidth="59.25rem"
-        margin="0 auto"
-      >
-        <HashRouter>
-            <RootRoutes />
-        </HashRouter>
-      </View>
+    <RenderTopNavBar />
+      <HashRouter>
+          <RootRoutes />
+      </HashRouter>
       <RenderFooter />
     </View>
   </InstUISettingsProvider>

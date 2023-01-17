@@ -15,9 +15,9 @@ import MDUI from 'routes/MDUI'
 // Page
 const RootRoutes = () => (
   <Routes>
-    <Route path="*"         element={ <NotFound /> } />
-    <Route path="/links"    element={ <Links /> } />
-    <Route path="/mdui"    element={ <MDUI /> } />
+    <Route path="*"       element={ <NotFound /> } />
+    <Route path="/links"  element={ <Links /> } />
+    <Route path="/mdui"   element={ <MDUI /> } />
 
     {
       (ParentBrands).map( brand => { return(

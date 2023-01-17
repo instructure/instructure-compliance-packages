@@ -30,36 +30,45 @@ function MDUI() {
   }, [])
 
   return (
-    <Grid startAt="large">
-    	<Grid.Row>
-    		<Grid.Col>
-					<ReactMarkdown
+		<View
+			id="main"
+			as="div"
+			padding="medium medium xx-large"
+			minWidth="20rem"
+			maxWidth="100vw"
+			margin="0 auto" 
+		>
+			<Grid startAt="large">
+				<Grid.Row>
+					<Grid.Col>
+						<ReactMarkdown
 							children={content}
 							remarkPlugins={[remarkGfm, remarkGemoji]}
 							rehypePlugins={[rehypeRaw]}
 							allowedElements={allowedElements}
 							components={mdtoui}
-					/>
-				</Grid.Col>
-				<Grid.Col>
-					<SourceCodeEditor
-						label='Markdown Source'
-						language="markdown"
-						readOnly={true}
-						editable={true}
-						lineNumbers={true}
-						foldGutter={true}
-						highlightActiveLineGutter={true}
-						highlightActiveLine={true}
-						lineWrapping={true}
-						value={content}
-						onChange={(value) => {
-							this.setState({ value })
-						}}
-					/>
-        </Grid.Col>
-			</Grid.Row>
-    </Grid>
+						/>
+					</Grid.Col>
+					<Grid.Col>
+						<SourceCodeEditor
+							label='Markdown Source'
+							language="markdown"
+							readOnly={true}
+							editable={true}
+							lineNumbers={true}
+							foldGutter={true}
+							highlightActiveLineGutter={true}
+							highlightActiveLine={true}
+							lineWrapping={true}
+							value={content}
+							onChange={(value) => {
+								this.setState({ value })
+							}}
+						/>
+					</Grid.Col>
+				</Grid.Row>
+			</Grid>
+		</View>
 	)
 }
 

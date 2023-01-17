@@ -54,7 +54,14 @@ export default function Links() {
   }
 
   return (
-    <View as="div">
+    <View
+      id="main"
+      as="div"
+      padding="medium medium xx-large"
+      minWidth="20rem"
+      maxWidth="59.25rem"
+      margin="0 auto" 
+    >
       <View as="div" margin="none none x-large">
         <Heading level="h1">Redirect Links</Heading>
         <Text>
@@ -106,7 +113,7 @@ export default function Links() {
                         Title
                       </Table.ColHeader>
                       <Table.ColHeader id="URLs">
-                        Links
+                        Link
                       </Table.ColHeader>
                     </Table.Row>
                   </Table.Head>

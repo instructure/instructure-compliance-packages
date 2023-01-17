@@ -29,7 +29,14 @@ function Markdown(props) {
   })
 
   return ( 
-    <View as="div">
+    <View
+      id="main"
+      as="div"
+      padding="medium medium xx-large"
+      minWidth="20rem"
+      maxWidth="59.25rem"
+      margin="0 auto" 
+    >
       <ReactMarkdown
         children={content}
         remarkPlugins={[remarkGfm, remarkGemoji]}
