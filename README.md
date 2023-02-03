@@ -10,7 +10,7 @@ Current packages include:
 - [Canvas Credentials](https://inst.bid/canvas/credentials/dl)
 - [Impact by Instructure](https://inst.bid/impact/dl)
 - [Mastery Connect](https://inst.bid/mastery/connect/dl)
-- [Elevate K-12 Analytics](inst.bid/elevate/k12analytics/dl)
+- [Elevate K-12 Analytics](https://inst.bid/elevate/k12analytics/dl)
 
 Packages in development include:
 - Elevate Data Quality
