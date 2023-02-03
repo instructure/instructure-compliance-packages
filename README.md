@@ -4,15 +4,14 @@ The Instructure Security Packages are a collection of industry standard papers, 
 The content in the security packages is public information. It can be shared to any customer or prospect and does not require an NDA.
 
 Current packages include:
-- [Canvas LMS](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms.zip)
-- [Canvas Studio](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-studio.zip)
-- [Canvas Catalog](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-catalog.zip)
-- [Canvas Student Pathways](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-student-pathways.zip)
-- [Canvas Credentials](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials.zip)
-- [Impact by Instructure](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact.zip)
-- [Mastery Connect](https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/mastery-connect.zip)
+- [Canvas LMS](https://inst.bid/canvas/lms/dl)
+- [Canvas Studio](https://inst.bid/canvas/studio/dl)
+- [Canvas Catalog](https://inst.bid/canvas/catalog/dl)
+- [Canvas Credentials](https://inst.bid/canvas/credentials/dl)
+- [Impact by Instructure](https://inst.bid/impact/dl)
+- [Mastery Connect](https://inst.bid/mastery/connect/dl)
+- [Elevate K-12 Analytics](inst.bid/elevate/k12analytics/dl)
 
 Packages in development include:
-- Elevate K-12 Analytics
 - Elevate Data Quality
 
