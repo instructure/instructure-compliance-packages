@@ -429,8 +429,8 @@ const Links = [
         links: [
             {
                 title:  "Security Package (Download)",
-                from:   null,
-                to:     null
+                from:   "/elevate/k12analytics/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/elevate-k12-analytics.zip"
             },
             {
                 title:  "Home",
