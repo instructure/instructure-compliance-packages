@@ -1,7 +1,7 @@
 // Modules
 import { useState } from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard'
-import { View, Table, Heading, Text, Tooltip, IconButton, IconCopyLine, TextInput, IconSearchLine, IconTroubleLine  } from '@instructure/ui'
+import { View, Table, Heading, Text, Tooltip, IconButton, IconCopyLine, TextInput, IconSearchLine, IconTroubleLine, Link } from '@instructure/ui'
 
 // Components
 import Redirects from 'components/redirects'
@@ -127,7 +127,7 @@ export default function Links() {
                                 <Text>{link.title}</Text>
                               </Table.Cell>
                               <Table.Cell>
-                                <Text>{ `${fromPrefix}${link.from}` }</Text>&nbsp;&nbsp;
+                                <Link href={ `https://${fromPrefix}${link.from}` }>{ `${fromPrefix}${link.from}` }</Link>&nbsp;&nbsp;
                                 <Tooltip
                                   renderTip="Copy"
                                   on={['hover', 'focus']}
