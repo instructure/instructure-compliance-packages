@@ -22,7 +22,7 @@ export default function Links() {
       .map(brands => ({
       ...brands,
       links: brands.links
-        .filter(link => `${brands.brand + link.title}`.toLowerCase().includes(e.target.value.toLowerCase()))
+        .filter(link => `${brands.brand + " " + link.title}`.toLowerCase().includes(e.target.value.toLowerCase()))
     }))
     .filter(brands => brands.links.length > 0)
 
