@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "1677273108",
+  "version": "1.0.0+0",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "dependencies": {
