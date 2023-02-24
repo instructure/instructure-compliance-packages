@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -atx -d build && git pull -q",
+    "deploy": "jq --arg ver \"$(date +%s)\" '.version = $ver' package.json | sponge package.bak.json && gh-pages -atx -d build && git pull -q",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
