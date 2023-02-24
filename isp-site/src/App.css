@@ -29,7 +29,8 @@
 
 /* Instructure UI overrides */
 
-li [data-cid="Checkbox"] {
+li [data-cid="Checkbox"],
+li [class$="checkbox"] {
   opacity: inherit;
 }
 
