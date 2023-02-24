@@ -38,19 +38,19 @@ export default function Links() {
   }
 
   const renderClearButton = (e) => {
-    if (!query.search.length) return
-
-    return (
-      <IconButton
-          type="button"
-          size="small"
-          withBackground={false}
-          withBorder={false}
-          screenReaderLabel="Clear filter"
-          onClick={handleClear}>
-        <IconTroubleLine />
-      </IconButton>
-    )
+    if (query.search.length) {
+      return (
+        <IconButton
+            type="button"
+            size="small"
+            withBackground={false}
+            withBorder={false}
+            screenReaderLabel="Clear filter"
+            onClick={handleClear}>
+          <IconTroubleLine />
+        </IconButton>
+      )
+    }
   }
 
   return (
