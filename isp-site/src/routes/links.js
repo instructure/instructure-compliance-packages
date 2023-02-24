@@ -120,38 +120,34 @@ export default function Links() {
                   <Table.Body>
                     {
                       (brands.links).map( link => {
-                        if( link.from !== null) {
-                          return(
-                            <Table.Row key={link.title}>
-                              <Table.Cell>
-                                <Text>{link.title}</Text>
-                              </Table.Cell>
-                              <Table.Cell>
-                                <Link href={ `https://${fromPrefix}${link.from}` }>{ `${fromPrefix}${link.from}` }</Link>&nbsp;&nbsp;
-                                <Tooltip
-                                  renderTip="Copy"
-                                  on={['hover', 'focus']}
-                                  placement="top"
-                                  color="primary-inverse"
-                                >
-                                  <CopyToClipboard text={ `${fromPrefix}${link.from}` }>
-                                    <IconButton
-                                      withBackground={false}
-                                      withBorder={false}
-                                      screenReaderLabel="Copy URL to clipboard"
-                                    >
-                                      <IconCopyLine />
-                                    </IconButton>
-                                  </CopyToClipboard>
-                                  </Tooltip>
-                                  <br />
-                                  <Text size="small" color="secondary">{link.to}</Text>
-                              </Table.Cell>
-                            </Table.Row>
-                          )
-                        } else {
-                          return( null )
-                        }
+                        return(
+                          <Table.Row key={link.title}>
+                            <Table.Cell>
+                              <Text>{link.title}</Text>
+                            </Table.Cell>
+                            <Table.Cell>
+                              <Link href={ `https://${fromPrefix}${link.from}` }>{ `${fromPrefix}${link.from}` }</Link>&nbsp;&nbsp;
+                              <Tooltip
+                                renderTip="Copy"
+                                on={['hover', 'focus']}
+                                placement="top"
+                                color="primary-inverse"
+                              >
+                                <CopyToClipboard text={ `${fromPrefix}${link.from}` }>
+                                  <IconButton
+                                    withBackground={false}
+                                    withBorder={false}
+                                    screenReaderLabel="Copy URL to clipboard"
+                                  >
+                                    <IconCopyLine />
+                                  </IconButton>
+                                </CopyToClipboard>
+                                </Tooltip>
+                                <br />
+                                <Text size="small" color="secondary">{link.to}</Text>
+                            </Table.Cell>
+                          </Table.Row>
+                        )
                       })
                     }
                   </Table.Body>
