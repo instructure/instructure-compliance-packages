@@ -1,7 +1,20 @@
 // Modules
 import { useState } from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard'
-import { View, Table, Heading, Text, Tooltip, IconButton, IconCopyLine, TextInput, IconSearchLine, IconTroubleLine, Link } from '@instructure/ui'
+import {  View,
+          Table,
+          Heading,
+          Text,
+          Tooltip,
+          IconButton,
+          IconCopyLine,
+          TextInput,
+          IconSearchLine,
+          IconTroubleLine,
+          Link,
+          FormField,
+          CheckboxGroup
+        } from '@instructure/ui'
 
 // Components
 import Redirects from 'components/redirects'
