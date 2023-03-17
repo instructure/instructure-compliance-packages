@@ -12,8 +12,8 @@ import {  View,
           IconSearchLine,
           IconTroubleLine,
           Link,
-          FormFieldGroup,
-          CheckboxGroup
+          RadioInput,
+          RadioInputGroup
         } from '@instructure/ui'
 
 // Components
@@ -26,28 +26,50 @@ const globalBrands = ["Instructure", "Canvas", "Mastery", "Elevate", "Impact"]
 export default function Links() {
 
   const fromPrefix = 'inst.bid'
-  const [query, setquery] = useState({
-    search:  "",
-    list:   Redirects
+
+  const [query, setQuery] = useState({
+    search: ""
   })
-  const handleChange = (e) => {
-    const results = Redirects
-      .map(brands => ({
+
+  const [lang, setLang] = useState({
+    code: "EN"
+  })
+
+  const [links, setLinks] = useState({
+    list: Redirects
+  })
+
+  const handleQueryChange = (e, v) => {
+    setQuery({
+      search: v
+    })
+    handleChange(lang.code, v)
+  }
+
+  const handleLangChange = function (e, v) {
+    setLang({
+      code: v
+    })
+    handleChange(v, query.search)
+  }
+
+  const handleQueryClear = (e) => {
+    e.stopPropagation()
+    handleQueryChange(e, "")
+  }
+
+  const handleChange = (l, q) => {
+      const filteredLinks = Redirects.map(brands => ({
       ...brands,
       links: brands.links
-        .filter(link => `${brands.brand + " " + link.title}`.toLowerCase().includes(e.target.value.toLowerCase()))
+       .filter(link => `${brands.brand + " " + link.title}`.toLowerCase().includes(q.toLowerCase()))
+       .filter(link => link.lang.includes(l))
     }))
     .filter(brands => brands.links.length > 0)
 
-    setquery({
-      search: e.target.value,
-      list: results
+    setLinks({
+      list: filteredLinks
     })
-  }
-
-  const handleClear = (e) => {
-    e.stopPropagation()
-    handleChange(e, "")
   }
 
   const renderClearButton = (e) => {
@@ -59,7 +81,7 @@ export default function Links() {
             withBackground={false}
             withBorder={false}
             screenReaderLabel="Clear filter"
-            onClick={handleClear}>
+            onClick={handleQueryClear}>
           <IconTroubleLine />
         </IconButton>
       )
@@ -94,16 +116,29 @@ export default function Links() {
               type="search"
               renderLabel="Filter"
               placeholder="community"
-              onChange={handleChange}
+              onChange={handleQueryChange}
               renderBeforeInput={<IconSearchLine inline={false} />}
               renderAfterInput={renderClearButton}
               value={query.search}
             />
+            <br/>
+            <RadioInputGroup
+              name="language"
+              description="Language"
+              defaultValue="EN"
+              layout="columns"
+              variant="toggle"
+              onChange={handleLangChange}
+            >
+              <RadioInput label="English" value="EN" context="off" />
+              <RadioInput label="Español" value="ES_LA" context="off" />
+              <RadioInput label="Português" value="PT_BR" context="off" />
+            </RadioInputGroup>
           </form>
         </View>
       </View>
       {
-        (query.list).map( brands => {
+       (links.list).map( brands => {
           if (brands.links.length) {
             let brand = brands.brand
             return(
@@ -170,7 +205,7 @@ export default function Links() {
           } else {
             return( null )
           }
-        })
+       })
       }
     </View>
   )
