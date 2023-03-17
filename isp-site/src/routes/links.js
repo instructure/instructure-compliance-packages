@@ -12,7 +12,7 @@ import {  View,
           IconSearchLine,
           IconTroubleLine,
           Link,
-          FormField,
+          FormFieldGroup,
           CheckboxGroup
         } from '@instructure/ui'
 
@@ -87,7 +87,7 @@ export default function Links() {
           margin="large none none"
         >
           <form
-            name="autoActivatedSearchExample"
+            name="searchFilters"
             autoComplete="off"
           >
             <TextInput
