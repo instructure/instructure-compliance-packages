@@ -33,6 +33,11 @@ const Links = [
                 to:     "https://www.instructure.com/"
             },
             {
+                title:  "Página de inicio (Instructure)",
+                from:   "/es-la/home",
+                to:     "https://www.instructure.com/es"
+            },
+            {
                 title:  "Roadmap",
                 from:   "/roadmap",
                 to:     "https://community.canvaslms.com/t5/Instructure-Roadmap/ct-p/instructure-roadmap"
@@ -48,14 +53,29 @@ const Links = [
                 to:     "https://www.instructure.com/contact-us"
             },
             {
+                title:  "Contáctenos",
+                from:   "/es-la/contactenos",
+                to:     "https://www.instructure.com/es/contactenos"
+            },
+            {
                 title:  "Privacy",
                 from:   "/privacy",
                 to:     "https://www.instructure.com/canvas/privacy"
             },
             {
+                title:  "Privacidad",
+                from:   "/es-la/privicidad",
+                to:     "https://www.instructure.com/es/canvas/privacidad"
+            },
+            {
                 title:  "Security",
                 from:   "/security",
                 to:     "https://www.instructure.com/products/canvas/security"
+            },
+            {  
+                title:  "Seguridad",
+                from:   "/es-la/seguridad",
+                to:     "https://www.instructure.com/es/canvas/seguridad"
             },
             {
                 title:  "Community",
@@ -103,6 +123,11 @@ const Links = [
                 to:     "https://community.canvaslms.com/t5/Canvas/ct-p/canvas"
             },
             {
+                title:  "Communidad ES_LA",
+                from:   "/es-la/canvas/lms/communidad",
+                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
+            },
+            {
                 title:  "Roadmap",
                 from:   "/canvas/roadmap",
                 to:     "https://community.canvaslms.com/t5/Canvas-Product-Roadmap/ct-p/canvas-product-roadmap"
@@ -123,9 +148,19 @@ const Links = [
                 to:     "https://www.instructure.com/higher-education/products/canvas/canvas-lms"
             },
             {
+                title:  "Página de inicio (HE) ES_LA",
+                from:   "/es-la/canvas/lms",
+                to:     "https://www.instructure.com/es/canvas/educacion-superior"
+            },
+            {
                 title:  "Home (K12)",
                 from:   "/canvas/lms/k12",
                 to:     "https://www.instructure.com/k12/products/canvas/canvas-lms"
+            },
+            {
+                title:  "Página de inicio (K12) ES_LA",
+                from:   "/es-la/canvas/lms/basica",
+                to:     "https://www.instructure.com/es/educacion-basica"
             },
             {
                 title:  "VPAT",
@@ -138,9 +173,19 @@ const Links = [
                 to:     "https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides"
             },
             {
+                title:  "Guías ES_LA",
+                from:   "/es-la/canvas/guias",
+                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
+            },
+            {
                 title:  "Release Notes",
                 from:   "/canvas/lms/releases",
                 to:     "https://community.canvaslms.com/t5/Canvas-Releases/tkb-p/canvas-release"
+            },
+            {
+                title:  "Notas de implementación ES_LA",
+                from:   "/es-la/canvas/lms/publicacion",
+                to:     "https://community.canvaslms.com/t5/Espa%C3%B1ol/tkb-p/canvas-release-espanol"
             },
             {
                 title:  "API",
@@ -562,51 +607,6 @@ const Links = [
     {
         brand: "Español",
         links:  [
-            {
-                title:  "Página de inicio (Instructure)",
-                from:   "/home/es",
-                to:     "https://www.instructure.com/es"
-            },
-            {
-                title:  "Página de inicio (Canvas HE)",
-                from:   "/canvas/lms/es",
-                to:     "https://www.instructure.com/es/canvas/educacion-superior"
-            },
-            {
-                title:  "Página de inicio (Canvas K12)",
-                from:   "/canvas/lms/es/basica",
-                to:     "https://www.instructure.com/es/educacion-basica"
-            },
-            {
-                title:  "Notas de implementación (Canvas LMS)",
-                from:   "/canvas/lms/publicacion",
-                to:     "https://community.canvaslms.com/t5/Espa%C3%B1ol/tkb-p/canvas-release-espanol"
-            },
-            {
-                title:  "Communidad (Canvas LMS)",
-                from:   "/canvas/lms/communidad",
-                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
-            },
-            {
-                title:  "Guías (Canvas)",
-                from:   "/canvas/guias/es",
-                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources"
-            },
-            {
-                title:  "Privacidad",
-                from:   "/privicidad",
-                to:     "https://www.instructure.com/es/canvas/privacidad"
-            },
-            {
-                title:  "Contáctenos",
-                from:   "/contactenos",
-                to:     "https://www.instructure.com/es/contactenos"
-            },
-            {  
-                title:  "Seguridad",
-                from:   "/seguridad",
-                to:     "https://www.instructure.com/es/canvas/seguridad"
-            },
         ]
     },
     {
