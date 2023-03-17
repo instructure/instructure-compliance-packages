@@ -170,9 +170,9 @@ const Links = [
             },
             {
                 title:  "Security Package (Download)",
-                from:   "/canvas/lms/dl",
+                from:   "/es-la/canvas/lms/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/canvas-lms-ES_LA.zip",
-                lang:   "EN"
+                lang:   "ES_LA"
             },
             {
                 title:  "Home (HE)",
