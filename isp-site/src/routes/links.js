@@ -69,10 +69,12 @@ export default function Links() {
 
   const handleBrandChange =  (e, v) => {
     var arr = []
-    if(v === "All") {
+    if (v === "All") {
       arr = globalSubBrands
     } else {
-      arr.push(v)
+      arr = globalSubBrands.filter(brand => 
+        brand.toLowerCase().includes(v.toLowerCase())
+      )
     }
     setBrands({
       list: arr
