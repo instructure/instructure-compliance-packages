@@ -605,11 +605,6 @@ const Links = [
         ]
     },
     {
-        brand: "Español",
-        links:  [
-        ]
-    },
-    {
         brand: "Português",
         links:  [
             {
