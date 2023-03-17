@@ -13,7 +13,9 @@ import {  View,
           IconTroubleLine,
           Link,
           RadioInput,
-          RadioInputGroup
+          RadioInputGroup,
+          CheckboxGroup,
+          Checkbox
         } from '@instructure/ui'
 
 // Components
@@ -121,6 +123,18 @@ export default function Links() {
               renderAfterInput={renderClearButton}
               value={query.search}
             />
+            <br/>
+            <CheckboxGroup name="sports" size="small"
+              layout="columns"
+              onChange={function (value) { console.log(value) }}
+              defaultValue={globalBrands}
+              description="Brands"
+            >
+              <Checkbox label="Football" value="football" />
+              <Checkbox label="Basketball" value="basketball" />
+              <Checkbox label="Volleyball" value="volleyball" />
+              <Checkbox label="Other" value="other" />
+              </CheckboxGroup>
             <br/>
             <RadioInputGroup
               name="language"
