@@ -37,3 +37,7 @@ li [class$="checkbox"] {
 pre {
   font-family: Menlo, Consolas, Monaco, "Andale Mono", monospace !important;
 }
+
+#toggleFilters {
+  display: none;
+}

@@ -14,8 +14,8 @@ import {  View,
           Link,
           RadioInput,
           RadioInputGroup,
-          CheckboxGroup,
-          Checkbox
+          ToggleDetails,
+          Button
         } from '@instructure/ui'
 
 // Components
@@ -23,6 +23,9 @@ import Redirects from 'components/redirects'
 
 // Variables
 const globalBrands = ["Instructure", "Canvas", "Mastery", "Elevate", "Impact"]
+const globalSubBrands = Redirects.map( brands => {
+  return brands.brand
+})
 
 // Page
 export default function Links() {
@@ -37,41 +40,69 @@ export default function Links() {
     code: "EN"
   })
 
+  const [brands, setBrands] = useState({
+    list: globalSubBrands
+  })
+
   const [links, setLinks] = useState({
     list: Redirects
+  })
+
+  const [toggle, setExpanded] = useState({
+    expanded: false,
+    text:     "Show"
   })
 
   const handleQueryChange = (e, v) => {
     setQuery({
       search: v
     })
-    handleChange(lang.code, v)
+    handleChange(lang.code, v, brands.list)
   }
 
-  const handleLangChange = function (e, v) {
+  const handleLangChange = (e, v) => {
     setLang({
       code: v
     })
-    handleChange(v, query.search)
+    handleChange(v, query.search, brands.list)
   }
 
-  const handleQueryClear = (e) => {
-    e.stopPropagation()
-    handleQueryChange(e, "")
+  const handleBrandChange =  (e, v) => {
+    var arr = []
+    if(v === "All") {
+      arr = globalSubBrands
+    } else {
+      arr.push(v)
+    }
+    setBrands({
+      list: arr
+    })
+    handleChange(lang.code, query.search, arr)
   }
 
-  const handleChange = (l, q) => {
+  const handleChange = (l, q, b) => {
       const filteredLinks = Redirects.map(brands => ({
       ...brands,
       links: brands.links
        .filter(link => `${brands.brand + " " + link.title}`.toLowerCase().includes(q.toLowerCase()))
        .filter(link => link.lang.includes(l))
+       
     }))
     .filter(brands => brands.links.length > 0)
+    .filter(brands => b.includes(brands.brand))
 
     setLinks({
       list: filteredLinks
     })
+  }
+
+  const handleToggleChange = () => {
+    let t = (toggle.expanded) ? "Show" : "Hide"
+    setExpanded({
+      expanded: !toggle.expanded,
+      text: t
+    })
+
   }
 
   const renderClearButton = (e) => {
@@ -82,12 +113,17 @@ export default function Links() {
             size="small"
             withBackground={false}
             withBorder={false}
-            screenReaderLabel="Clear filter"
+            screenReaderLabel="Clear search"
             onClick={handleQueryClear}>
           <IconTroubleLine />
         </IconButton>
       )
     }
+  }
+
+  const handleQueryClear = (e) => {
+    e.stopPropagation()
+    handleQueryChange(e, "")
   }
 
   return (
@@ -106,6 +142,17 @@ export default function Links() {
           Each row has a short URL and the original URL. 
           Click on the copy icon <IconCopyLine title="Copy Icon" /> and the short URL will be added to your clipboard.
         </Text>
+        <br/>
+        <br/>
+        <Button onClick={handleToggleChange}>
+          {toggle.text  + " Filters"}
+        </Button>
+        <ToggleDetails
+          id="toggleFilters"
+          summary="Filters"
+          onToggle={handleToggleChange}
+          expanded={toggle.expanded}
+        >
         <View
           as="div"
           margin="large none none"
@@ -116,7 +163,7 @@ export default function Links() {
           >
             <TextInput
               type="search"
-              renderLabel="Filter"
+              renderLabel="Search"
               placeholder="community"
               onChange={handleQueryChange}
               renderBeforeInput={<IconSearchLine inline={false} />}
@@ -124,17 +171,31 @@ export default function Links() {
               value={query.search}
             />
             <br/>
-            <CheckboxGroup name="sports" size="small"
-              layout="columns"
-              onChange={function (value) { console.log(value) }}
-              defaultValue={globalBrands}
+            <RadioInputGroup
+              name="brand"
               description="Brands"
+              defaultValue="All"
+              layout="columns"
+              variant="toggle"
+              onChange={handleBrandChange}
             >
-              <Checkbox label="Football" value="football" />
-              <Checkbox label="Basketball" value="basketball" />
-              <Checkbox label="Volleyball" value="volleyball" />
-              <Checkbox label="Other" value="other" />
-              </CheckboxGroup>
+              <RadioInput
+                key="All"
+                value="All"
+                label="All"
+                context="off"
+              />
+
+              {globalBrands.map( brand => 
+                <RadioInput
+                  key={brand}
+                  value={brand}
+                  label={brand}
+                  context="off"
+                />
+              )}
+
+            </RadioInputGroup>
             <br/>
             <RadioInputGroup
               name="language"
@@ -150,6 +211,7 @@ export default function Links() {
             </RadioInputGroup>
           </form>
         </View>
+        </ToggleDetails>
       </View>
       {
        (links.list).map( brands => {
