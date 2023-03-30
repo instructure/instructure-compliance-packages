@@ -169,10 +169,16 @@ const Links = [
                 lang:   "EN"
             },
             {
-                title:  "Security Package (Descargar)",
+                title:  "Security Package (ES_LA)",
                 from:   "/es-la/canvas/lms/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/canvas-lms-ES_LA.zip",
                 lang:   "ES_LA"
+            },
+            {
+                title:  "Security Package (PT_BR)",
+                from:   "/pt-br/canvas/lms/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms-PT_BR.zip",
+                lang:   "PT_BR"
             },
             {
                 title:  "Home (HE)",
