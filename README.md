@@ -11,7 +11,3 @@ Current packages include:
 - [Impact by Instructure](https://inst.bid/impact/dl)
 - [Mastery Connect](https://inst.bid/mastery/connect/dl)
 - [Elevate K-12 Analytics](https://inst.bid/elevate/k12analytics/dl)
-
-Packages in development include:
-- Elevate Data Quality
-- Learn Platform
