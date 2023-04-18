@@ -1,5 +1,5 @@
-# Mastery Connect
+# Mastery
 
-Mastery Connect is the K–12 digital assessment management system that makes data-driven instruction a no-brainer. Clearly see students’ mastery of standards in an intuitive, visual way and get real-time actionable data on their understanding of what’s been taught and assessed—at the class, school, or district level.
+The Mastery Product Family brings together assessment tools and quality content educators need to drive learning outcomes. With thoughtful assessment comes real, positive impact, and the better teachers understand where students are, the better they can help them succeed.
 
 [Mastery Connect Security Package](https://inst.bid/mastery/connect/dl)
