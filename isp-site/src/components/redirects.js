@@ -9,12 +9,6 @@ const Links = [
                 lang:   "EN"
             },
             {
-                title:  "Penetration Test Report",
-                from:   "/pentest/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Penetration%20Test%20Report.pdf",
-                lang:   "EN"
-            },
-            {
                 title:  "Security White Paper",
                 from:   "/security/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Security.pdf",
@@ -137,6 +131,12 @@ const Links = [
                 title:  "Security Package (Home)",
                 from:   "/canvas",
                 to:     null,
+                lang:   "EN"
+            },
+            {
+                title:  "Security Audit Report",
+                from:   "/canvas/audit/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/blob/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf",
                 lang:   "EN"
             },
             {
