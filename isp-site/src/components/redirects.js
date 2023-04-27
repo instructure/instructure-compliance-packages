@@ -136,7 +136,7 @@ const Links = [
             {
                 title:  "Security Audit Report",
                 from:   "/canvas/audit/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/blob/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf",
                 lang:   "EN"
             },
             {
