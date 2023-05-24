@@ -678,7 +678,7 @@ const Links = [
         ]
     },
     {
-        brand: "Learn Platform",
+        brand: "LearnPlatform",
         links: [
             {
                 title:  "Home",
