@@ -22,7 +22,7 @@ import {  View,
 import Redirects from 'components/redirects'
 
 // Variables
-const globalBrands = ["Instructure", "Canvas", "Mastery", "Elevate", "Impact"]
+const globalBrands = ["Instructure", "Canvas", "Mastery", "Elevate", "Impact", "LearnPlatform"]
 const globalSubBrands = Redirects.map( brands => {
   return brands.brand
 })

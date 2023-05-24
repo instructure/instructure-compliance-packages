@@ -11,7 +11,7 @@ const Links = [
             {
                 title:  "Security White Paper",
                 from:   "/security/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Security.pdf",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Security%20Overview.pdf",
                 lang:   "EN"
             },
             {
@@ -684,6 +684,12 @@ const Links = [
                 title:  "Home",
                 from:   "/learnplatform",
                 to:     "https://learnplatform.com/",
+                lang:   "EN"
+            },
+            {
+                title:  "Security Package (Download)",
+                from:   "/learnplatform/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/learn-platform.zip",
                 lang:   "EN"
             },
             {
