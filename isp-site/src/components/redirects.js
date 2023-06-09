@@ -23,7 +23,7 @@ const Links = [
             {
                 title:  "ISO 27001 Certificate",
                 from:   "/iso/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate%20August%202022.pdf",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate.pdf",
                 lang:   "EN"
             },
             {
