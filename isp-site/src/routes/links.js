@@ -19,8 +19,8 @@ import {  View,
         } from '@instructure/ui'
 
 // Components
-import Redirects from 'components/redirects'
-import { globalBrands, globalSubBrands } from 'components/brands'
+import Redirects from 'components/Redirects'
+import { globalBrands, globalSubBrands } from 'variables/brands'
 
 // Page
 export default function Links() {

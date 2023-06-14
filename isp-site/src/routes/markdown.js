@@ -7,7 +7,7 @@ import rehypeRaw from 'rehype-raw'
 import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup, Img, Table, Checkbox } from '@instructure/ui'
 
 // Components
-import allowedElements from 'components/allowedElements'
+import allowedElements from 'variables/allowedElements'
 import mdtoui from 'components/mdtoui'
 
 // Page

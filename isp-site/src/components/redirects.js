@@ -1,4 +1,4 @@
-const Links = [
+let Links = [
     {
         brand: "Instructure",
         links: [
@@ -11,7 +11,7 @@ const Links = [
             {
                 title:  "Security White Paper",
                 from:   "/security/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Security.pdf",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Security%20Overview.pdf",
                 lang:   "EN"
             },
             {
@@ -23,7 +23,7 @@ const Links = [
             {
                 title:  "ISO 27001 Certificate",
                 from:   "/iso/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate%20August%202022.pdf",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate.pdf",
                 lang:   "EN"
             },
             {
@@ -136,7 +136,7 @@ const Links = [
             {
                 title:  "Security Audit Report",
                 from:   "/canvas/audit/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/blob/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf",
+                to:     "https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf",
                 lang:   "EN"
             },
             {
@@ -678,12 +678,18 @@ const Links = [
         ]
     },
     {
-        brand: "Learn Platform",
+        brand: "LearnPlatform",
         links: [
             {
                 title:  "Home",
                 from:   "/learnplatform",
                 to:     "https://learnplatform.com/",
+                lang:   "EN"
+            },
+            {
+                title:  "Security Package (Download)",
+                from:   "/learnplatform/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/learn-platform.zip",
                 lang:   "EN"
             },
             {
