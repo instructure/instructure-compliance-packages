@@ -1,6 +1,6 @@
 // Modules
-import { useState } from 'react';
-import {CopyToClipboard} from 'react-copy-to-clipboard'
+import { useState } from 'react'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import {  View,
           Table,
           Heading,
@@ -20,12 +20,7 @@ import {  View,
 
 // Components
 import Redirects from 'components/redirects'
-
-// Variables
-const globalBrands = ["Instructure", "Canvas", "Mastery", "Elevate", "Impact"]
-const globalSubBrands = Redirects.map( brands => {
-  return brands.brand
-})
+import { globalBrands, globalSubBrands } from 'components/brands'
 
 // Page
 export default function Links() {

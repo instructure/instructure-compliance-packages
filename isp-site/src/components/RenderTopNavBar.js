@@ -1,6 +1,6 @@
 // Modules
 import { View, TopNavBar, IconInstructureLogoSolid, Text, IconQuestionLine, Heading, Link } from '@instructure/ui'
-import ParentBrands from './parentBrands'
+import { ParentBrands } from './brands'
 
 // Component
 function RenderTopNavBar() {

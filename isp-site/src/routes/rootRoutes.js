@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 
 //Components
 import Redirects from 'components/redirects'
-import ParentBrands from 'components/parentBrands'
+import { ParentBrands } from 'components/brands'
 
 // Routes
 import NotFound from "routes/notFound"
@@ -11,6 +11,9 @@ import RedirectTo from "routes/redirectTo"
 import Links from "routes/links"
 import Markdown from 'routes/markdown'
 import MDUI from 'routes/MDUI'
+import Foo from 'components/Foo'
+
+
 
 // Page
 const RootRoutes = () => (
