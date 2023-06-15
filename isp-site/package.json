@@ -18,12 +18,14 @@
     "rehype-raw": "^6.1.1",
     "remark-gemoji": "^7.0.1",
     "remark-gfm": "^3.0.1",
+    "source-map-explorer": "^2.5.3",
     "web-vitals": "^2.1.0",
     "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "yarn build; make all",
     "deploy": "gh-pages -atx -d build",
     "test": "react-scripts test",
