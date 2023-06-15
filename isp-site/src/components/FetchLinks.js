@@ -1,5 +1,5 @@
 // Modules
-import * as XLSX from 'xlsx'
+import { read, utils } from '../../node_modules/xlsx/dist/xlsx.mini.min.js'
 
 export default async function FetchLinks() {
     // https://docs.google.com/spreadsheets/d/157IxGbgA2UayS-hYRJnRhrtpGp5nXdNuKpN96RRBbbE
@@ -8,13 +8,13 @@ export default async function FetchLinks() {
 
     const data = await fetch(sheetURL)
     const buffer = await data.arrayBuffer()
-    const workbook = XLSX.read(buffer, {type:"buffer"})
+    const workbook = read(buffer, {type:"buffer"})
 
     if (workbook.hasOwnProperty('Sheets')) {
         workbook.SheetNames.forEach(sheet => {
             Links.push({
             brand: sheet,
-            links: XLSX.utils.sheet_to_json(workbook.Sheets[sheet], {defval: null})
+            links: utils.sheet_to_json(workbook.Sheets[sheet], {defval: null})
             })
         })
     }
