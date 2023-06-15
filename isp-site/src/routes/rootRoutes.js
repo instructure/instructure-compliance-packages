@@ -15,7 +15,7 @@ import MDUI from 'routes/MDUI'
 // Page
 const Redirects = await FetchLinks()
 
-const RootRoutes = () => (
+export default function rootRoutes() { return(
   <Routes>
     <Route path="*"       element={ <NotFound /> } />
     <Route path="/links"  element={ <Links /> } />
@@ -39,6 +39,4 @@ const RootRoutes = () => (
       )})
     }      
   </Routes>
-)
-
-export default RootRoutes
+)}
