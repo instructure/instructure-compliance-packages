@@ -3,7 +3,7 @@ import { Text, View, Link, Billboard } from "@instructure/ui"
 import { useEffect } from "react"
 
 // Page
-function RedirectTo(props) {
+export default function RedirectTo(props) {
   let url = props.url
   let brand = props.brand
   let path = props.path
@@ -50,5 +50,3 @@ function RedirectTo(props) {
     </View>
   )
 }
-
-export default RedirectTo

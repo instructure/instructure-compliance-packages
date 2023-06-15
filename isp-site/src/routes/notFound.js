@@ -2,7 +2,7 @@
 import { View, Billboard, Text, Link } from '@instructure/ui'
 
 // Page
-function NotFound() {
+export default function NotFound() {
   return (
     <View
       id="main"
@@ -21,5 +21,3 @@ function NotFound() {
     </View>
   )
 }
-
-export default NotFound

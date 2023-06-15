@@ -14,7 +14,7 @@ import './App.css'
 import RootRoutes from "routes/rootRoutes"
 
 // App
-function App() { return (
+function App() { return(
   <InstUISettingsProvider theme={canvas}>
     <View
      as="div"
@@ -22,7 +22,7 @@ function App() { return (
      position="relative"
     >
     <RenderTopNavBar />
-      <HashRouter>
+      <HashRouter future={{ v7_startTransition: true }}>
           <RootRoutes />
       </HashRouter>
       <RenderFooter />

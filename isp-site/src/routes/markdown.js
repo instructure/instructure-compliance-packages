@@ -7,11 +7,11 @@ import rehypeRaw from 'rehype-raw'
 import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup, Img, Table, Checkbox } from '@instructure/ui'
 
 // Components
-import allowedElements from 'components/allowedElements'
+import allowedElements from 'variables/allowedElements'
 import mdtoui from 'components/mdtoui'
 
 // Page
-function Markdown(props) {
+export default function Markdown(props) {
   let md = props.readme
 
   const [content, setContent] = useState('')
@@ -47,5 +47,3 @@ function Markdown(props) {
     </View>
   )
 }
-
-export default Markdown
