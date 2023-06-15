@@ -19,7 +19,7 @@ import {  View,
         } from '@instructure/ui'
 
 // Components
-import Redirects from 'components/Redirects'
+import Redirects from 'variables/Redirects'
 import { globalBrands, globalSubBrands } from 'variables/brands'
 
 // Page

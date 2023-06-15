@@ -2,8 +2,9 @@
 import { Routes, Route } from 'react-router-dom'
 
 //Components
-import Redirects from 'components/Redirects'
+import Redirects from 'variables/Redirects'
 import { ParentBrands } from 'variables/brands'
+import FetchLinks from 'components/FetchLinks'
 
 // Routes
 import NotFound from "routes/notFound"
