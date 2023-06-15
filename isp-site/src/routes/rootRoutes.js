@@ -2,7 +2,6 @@
 import { Routes, Route } from 'react-router-dom'
 
 //Components
-import Redirects from 'variables/Redirects'
 import { ParentBrands } from 'variables/brands'
 import FetchLinks from 'components/FetchLinks'
 
@@ -14,8 +13,8 @@ import Markdown from 'routes/markdown'
 import MDUI from 'routes/MDUI'
 
 // Page
-const Redirects2 = FetchLinks()
-console.log("Redirects2: ", Redirects2)
+const Redirects = await FetchLinks()
+
 const RootRoutes = () => (
   <Routes>
     <Route path="*"       element={ <NotFound /> } />

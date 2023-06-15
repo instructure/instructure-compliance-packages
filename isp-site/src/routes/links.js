@@ -19,11 +19,15 @@ import {  View,
         } from '@instructure/ui'
 
 // Components
-import Redirects from 'variables/Redirects'
 import { globalBrands, globalSubBrands } from 'variables/brands'
+import FetchLinks from 'components/FetchLinks'
 
 // Page
+const Redirects = await FetchLinks()
+
 export default function Links() {
+
+
 
   const fromPrefix = 'inst.bid'
 

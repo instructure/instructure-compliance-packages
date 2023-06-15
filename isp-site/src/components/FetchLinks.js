@@ -2,38 +2,21 @@
 import * as XLSX from 'xlsx'
 
 const FetchLinks = async() => {
-    return ['foo']
- }
-export default FetchLinks
+    const sheetURL = `https://docs.google.com/spreadsheets/d/e/2PACX-1vSlg8ZxUu1k62DS_PO2pIOenMQozmET4WrivgfAXKv0ctbOXaAZ9CyUbB1gfGVwEoHlNalcMeIHMvh7/pub?output=ods`
+    let Links = []
 
-
-
-// https://docs.google.com/spreadsheets/d/157IxGbgA2UayS-hYRJnRhrtpGp5nXdNuKpN96RRBbbE
-/* 
-const sheetURL = `https://docs.google.com/spreadsheets/d/e/2PACX-1vSlg8ZxUu1k62DS_PO2pIOenMQozmET4WrivgfAXKv0ctbOXaAZ9CyUbB1gfGVwEoHlNalcMeIHMvh7/pub?output=ods`
-let Redirects = []
-
-const fetchWorkbook = async(url) => {
-    const data = await fetch(url)
+    const data = await fetch(sheetURL)
     const buffer = await data.arrayBuffer()
     const workbook = XLSX.read(buffer, {type:"buffer"})
-    return workbook
-}
-const workbook = fetchWorkbook(sheetURL)
 
-if (workbook.hasOwnProperty('Sheets')) {
-    console.log("Workbook has sheets")
-    workbook.SheetNames.forEach(sheet => {
-        console.log("Sheet: ", sheet)
-        Redirects.push({
-        brand: sheet,
-        links: XLSX.utils.sheet_to_json(workbook.Sheets[sheet], {defval: null})
+    if (workbook.hasOwnProperty('Sheets')) {
+        workbook.SheetNames.forEach(sheet => {
+            Links.push({
+            brand: sheet,
+            links: XLSX.utils.sheet_to_json(workbook.Sheets[sheet], {defval: null})
+            })
         })
-    })
-} else {
-    console.log("Workbook does not have sheets")
-}
-
-
-export default Redirects
-*/
+    }
+    return Links
+ }
+export default FetchLinks
