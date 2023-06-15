@@ -27,8 +27,6 @@ const Redirects = await FetchLinks()
 
 export default function Links() {
 
-
-
   const fromPrefix = 'inst.bid'
 
   const [query, setQuery] = useState({
