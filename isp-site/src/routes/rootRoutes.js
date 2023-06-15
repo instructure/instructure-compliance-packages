@@ -14,6 +14,8 @@ import Markdown from 'routes/markdown'
 import MDUI from 'routes/MDUI'
 
 // Page
+const Redirects2 = FetchLinks()
+console.log("Redirects2: ", Redirects2)
 const RootRoutes = () => (
   <Routes>
     <Route path="*"       element={ <NotFound /> } />

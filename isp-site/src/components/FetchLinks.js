@@ -2,7 +2,7 @@
 import * as XLSX from 'xlsx'
 
 const FetchLinks = async() => {
-    return []
+    return ['foo']
  }
 export default FetchLinks
 
