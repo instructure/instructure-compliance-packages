@@ -1,3 +1,5 @@
+const readmePrefix = `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README`
+
 export const globalBrands = [
     "Instructure",
     "Canvas",
@@ -29,44 +31,42 @@ export const ParentBrands = [
       brandName:    globalBrands[0],
       get title()   { return this.brandName.toLowerCase() },
       route:        "/",
-      readme:       "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README.md",
+      readme:       `${readmePrefix}.md`,
       color:        "#287A9F"
     },
     {
       brandName:    globalBrands[1],
       get title()   { return this.brandName.toLowerCase() },
       get route()   { return `/${this.title}` },
-      get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+      get readme()  { return `${readmePrefix}-${this.brandName}.md` },
       color:        "#E72429"
     },
     {
       brandName:    globalBrands[2],
       get title()   { return this.brandName.toLowerCase() },
       get route()   { return `/${this.title}` },
-      get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+      get readme()  { return `${readmePrefix}-${this.brandName}.md` },
       color:        "#24A159"
     },
     {
       brandName:    globalBrands[3],
       get title()   { return this.brandName.toLowerCase() },
       get route()   { return `/${this.title}` },
-      get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+      get readme()  { return `${readmePrefix}-${this.brandName}.md` },
       color:        "#0097D3"
     },
     {
       brandName:    globalBrands[4],
       get title()   { return this.brandName.toLowerCase() },
       get route()   { return `/${this.title}` },
-      get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+      get readme()  { return `${readmePrefix}-${this.brandName}.md` },
       color:        "#F76400"
     },
     {
       brandName:    globalBrands[5],
       get title()   { return this.brandName.toLowerCase() },
       get route()   { return `/${this.title}` },
-      get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
+      get readme()  { return `${readmePrefix}-${this.brandName}.md` },
       color:        "#0077CC"
     },
   ]
-
-

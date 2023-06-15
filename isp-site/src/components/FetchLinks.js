@@ -4,7 +4,7 @@ import { read, utils } from '../../node_modules/xlsx/dist/xlsx.mini.min.js'
 export default async function FetchLinks() {
     // https://docs.google.com/spreadsheets/d/157IxGbgA2UayS-hYRJnRhrtpGp5nXdNuKpN96RRBbbE
     const sheetURL = `https://docs.google.com/spreadsheets/d/e/2PACX-1vSlg8ZxUu1k62DS_PO2pIOenMQozmET4WrivgfAXKv0ctbOXaAZ9CyUbB1gfGVwEoHlNalcMeIHMvh7/pub?output=ods`
-    let Links = []
+    const Links = []
 
     const data = await fetch(sheetURL)
     const buffer = await data.arrayBuffer()
