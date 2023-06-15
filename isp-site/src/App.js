@@ -22,7 +22,7 @@ function App() { return (
      position="relative"
     >
     <RenderTopNavBar />
-      <HashRouter>
+      <HashRouter future={{ v7_startTransition: true }}>
           <RootRoutes />
       </HashRouter>
       <RenderFooter />
