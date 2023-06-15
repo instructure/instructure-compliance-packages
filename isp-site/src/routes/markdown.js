@@ -11,7 +11,7 @@ import allowedElements from 'variables/allowedElements'
 import mdtoui from 'components/mdtoui'
 
 // Page
-function Markdown(props) {
+export default function Markdown(props) {
   let md = props.readme
 
   const [content, setContent] = useState('')
@@ -47,5 +47,3 @@ function Markdown(props) {
     </View>
   )
 }
-
-export default Markdown

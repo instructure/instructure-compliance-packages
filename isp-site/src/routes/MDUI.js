@@ -12,7 +12,7 @@ import markdownSample from 'variables/markdownSample.md'
 import mdtoui from 'components/mdtoui'
 
 // Page
-function MDUI() {
+export default function MDUI() {
   let md = markdownSample
 
   const [content, setContent] = useState('Loading...')
@@ -71,5 +71,3 @@ function MDUI() {
 		</View>
 	)
 }
-
-export default MDUI
