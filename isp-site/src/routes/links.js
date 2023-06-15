@@ -1,6 +1,6 @@
 // Modules
-import { useState } from 'react';
-import {CopyToClipboard} from 'react-copy-to-clipboard'
+import { useState } from 'react'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import {  View,
           Table,
           Heading,
@@ -19,15 +19,12 @@ import {  View,
         } from '@instructure/ui'
 
 // Components
-import Redirects from 'components/redirects'
-
-// Variables
-const globalBrands = ["Instructure", "Canvas", "Mastery", "Elevate", "Impact", "LearnPlatform"]
-const globalSubBrands = Redirects.map( brands => {
-  return brands.brand
-})
+import { globalBrands, globalSubBrands } from 'variables/brands'
+import FetchLinks from 'components/FetchLinks'
 
 // Page
+const Redirects = await FetchLinks()
+
 export default function Links() {
 
   const fromPrefix = 'inst.bid'
