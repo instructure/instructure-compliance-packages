@@ -61,7 +61,7 @@ export const ParentBrands = [
       color:        "#F76400"
     },
     {
-      brandName:    globalBrands[4],
+      brandName:    globalBrands[5],
       get title()   { return this.brandName.toLowerCase() },
       get route()   { return `/${this.title}` },
       get readme()  { return `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README-${this.brandName}.md` },
