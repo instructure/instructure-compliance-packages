@@ -27,6 +27,10 @@
   background: #F76400;
 }
 
+#learnplatform.active::after {
+  background: #07c;
+}
+
 /* Instructure UI overrides */
 
 li [data-cid="Checkbox"],
