@@ -117,7 +117,7 @@ function RenderTopNavBar() {
                     borderRadius="small"
                   >
                     <Heading level="h3">Contact information</Heading>
-                    <Text>This site an its contents are maintained by Instructure, inc.</Text>
+                    <Text>This site and its contents are maintained by Instructure, inc.</Text>
                     <hr aria-hidden="true" />
 
                     <View as="div" margin="medium 0 0">
