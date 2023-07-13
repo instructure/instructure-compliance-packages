@@ -11,4 +11,5 @@ Current packages include:
 - [Impact by Instructure](https://inst.bid/impact/dl)
 - [Mastery Connect](https://inst.bid/mastery/connect/dl)
 - [Elevate K-12 Analytics](https://inst.bid/elevate/k12-analytics/dl)
+- [Elevate Standards Alignment Security Package](https://inst.bid/elevate/standards-alignment/dl)
 - [LearnPlatform](https://inst.bid/learnplatform/dl)
