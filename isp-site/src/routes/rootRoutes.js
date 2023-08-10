@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 
 //Components
 import { ParentBrands } from 'variables/brands'
-import FetchLinks from 'components/FetchLinks'
+import Redirects from 'variables/redirects'
 
 // Routes
 import NotFound from "routes/notFound"
@@ -13,8 +13,6 @@ import Markdown from 'routes/markdown'
 import MDUI from 'routes/MDUI'
 
 // Page
-const Redirects = await FetchLinks()
-
 export default function rootRoutes() { return(
   <Routes>
     <Route path="*"       element={ <NotFound /> } />

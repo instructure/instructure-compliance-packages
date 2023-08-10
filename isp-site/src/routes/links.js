@@ -20,11 +20,9 @@ import {  View,
 
 // Components
 import { globalBrands, globalSubBrands } from 'variables/brands'
-import FetchLinks from 'components/FetchLinks'
+import Redirects from 'variables/redirects'
 
 // Page
-const Redirects = await FetchLinks()
-
 export default function Links() {
 
   const fromPrefix = 'inst.bid'
