@@ -15,8 +15,7 @@
     "rehype-raw": "^6.1.1",
     "remark-gemoji": "^7.0.1",
     "remark-gfm": "^3.0.1",
-    "web-vitals": "^2.1.0",
-    "xlsx": "^0.18.5"
+    "web-vitals": "^2.1.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
