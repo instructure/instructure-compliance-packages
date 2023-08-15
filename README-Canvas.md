@@ -10,7 +10,8 @@ The Canvas platform enriches, supports, and connects every aspect of teaching an
 
 [Canvas Credentials Security Package](https://inst.bid/canvas/credentials/dl)
 
-Alternate Language Versions
+
+**Alternate Language Versions**
 
 [Canvas LMS Security Package (Portuguese)](https://inst.bid/pt-br/canvas/lms/dl)
 
