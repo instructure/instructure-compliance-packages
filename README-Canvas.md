@@ -13,6 +13,6 @@ The Canvas platform enriches, supports, and connects every aspect of teaching an
 
 **Alternate Language Versions**
 
-[Canvas LMS Security Package (Portuguese)](https://inst.bid/pt-br/canvas/lms/dl)
+[Canvas LMS Security Package (Brazilian Portuguese)](https://inst.bid/pt-br/canvas/lms/dl)
 
 [Canvas LMS Security Package (Spanish)](https://inst.bid/es-la/canvas/lms/dl)
