@@ -17,6 +17,6 @@ The Canvas platform enriches, supports, and connects every aspect of teaching an
 
 [Canvas LMS Security Package (Spanish)](https://inst.bid/es-la/canvas/lms/dl)
 
-Canvas Credentials Security Package (Brazilian Portuguese) (https://inst.bid/pt-br/canvas/credentials/dl)
+[Canvas Credentials Security Package (Brazilian Portuguese)] (https://inst.bid/pt-br/canvas/credentials/dl)
 
 Canvas Credentials Security Package (Spanish) (Coming Soon)
