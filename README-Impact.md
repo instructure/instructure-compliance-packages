@@ -8,6 +8,6 @@ Impact by Instructure helps institutions improve technology adoption and evaluat
 
 [Impact Security Package (Brazilian Portuguese)](https://inst.bid/pt-br/impact/dl)
 
-[Impact Security Package (Spanish)] (Coming Soon) 
+Impact Security Package (Spanish) (Coming Soon) 
 
 <!-- (https://inst.bid/es-la/impact/dl) -->
