@@ -1,5 +1,5 @@
 # Instructure Security Packages
-The Instructure Security Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services, [Instructure](https://www.instructure.com?src=inst_bid/) as a company, and each of our products. These packages address the majority of questions we receive from customers.
+The Instructure Security Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services, [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) as a company, and each of our products. These packages address the majority of questions we receive from customers.
 
 The content in the security packages is public information. It can be shared to any customer or prospect and does not require an NDA.
 
