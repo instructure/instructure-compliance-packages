@@ -689,7 +689,7 @@ const Links = [
             {
                 title:  "Home",
                 from:   "/learnplatform",
-                to:     "https://learnplatform.com/",
+                to:     "https://www.instructure.com/k12/products/learnplatform/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -699,33 +699,27 @@ const Links = [
                 lang:   "EN"
             },
             {
-                title:  "Contact",
-                from:   "/learnplatform/contact",
-                to:     "https://learnplatform.com/contact",
-                lang:   "EN"
-            },
-            {
                 title:  "Terms of Service",
                 from:   "/learnplatform/tos",
-                to:     "https://learnplatform.com/terms-of-service",
+                to:     "https://www.instructure.com/policies/learnplatform-terms-of-service/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Privacy",
                 from:   "/learnplatform/privacy",
-                to:     "https://learnplatform.com/privacy-policy",
+                to:     "https://www.instructure.com/policies/privacy-learnplatform/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Data Processing Agreement",
                 from:   "/learnplatform/dpa",
-                to:     "https://learnplatform.com/data-processing-agreement",
+                to:     "https://www.instructure.com/policies/learnplatform-data-processing-agreement/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Statement of Neutrality",
                 from:   "/learnplatform/neutrality",
-                to:     "https://learnplatform.com/neutrality",
+                to:     "https://www.instructure.com/policies/learnplatform-neutrality/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
         ]
