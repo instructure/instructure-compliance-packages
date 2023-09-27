@@ -364,6 +364,12 @@ const Links = [
                 lang:   "EN"
             },
             {
+                title:  "Release Notes",
+                from:   "/canvas/credentials/releases",
+                to:     "https://community.canvaslms.com/t5/Badges-Credentials-Releases/tkb-p/badges-release",
+                lang:   "EN"
+            },
+            {
                 title:  "API",
                 from:   "/canvas/credentials/api",
                 to:     "https://api.badgr.io/docs/v2/",
