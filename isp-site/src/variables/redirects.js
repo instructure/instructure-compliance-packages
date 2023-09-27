@@ -125,7 +125,25 @@ const Links = [
             {
                 title:  "Investor Relations",
                 from:   "/investors",
-                to:    "https://ir.instructure.com/overview/default.aspx",
+                to:     "https://ir.instructure.com/overview/default.aspx",
+                lang:   "EN"
+            },
+            {
+                title:  "Status",
+                from:   "/status",
+                to:     "https://status.instructure.com/",
+                lang:   "EN"
+            },
+            {
+                title:  "CSA Star Registration",
+                from:   "/csa",
+                to:     "https://cloudsecurityalliance.org/star/registry/instructure/",
+                lang:   "EN"
+            },
+            {
+                title:  "1EdTech Registrations",
+                from:   "/1edtech",
+                to:     "https://site.imsglobal.org/certifications?query=instructure",
                 lang:   "EN"
             },
             {
