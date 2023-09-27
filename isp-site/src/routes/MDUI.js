@@ -17,7 +17,7 @@ export default function MDUI() {
 
   const [content, setContent] = useState('Loading...')
 
-  useEffect((md) => {
+  useEffect(() => {
     fetch(md)
       .then((response) => {
         if (response.ok) return response.text()
