@@ -87,6 +87,12 @@ const Links = [
                 lang:   "ES_LA"
             },
             {
+                title:  "Trust Center",
+                from:   "/trust",
+                to:     "https://www.instructure.com/trust-center",
+                lang:   "EN"
+            },
+            {
                 title:  "Community",
                 from:   "/community",
                 to:     "https://community.canvaslms.com/",
