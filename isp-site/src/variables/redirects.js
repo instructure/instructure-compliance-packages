@@ -123,6 +123,12 @@ const Links = [
                 lang:   "EN"
             },
             {
+                title:  "Investor Relations",
+                from:   "/investors",
+                to:    "https://ir.instructure.com/overview/default.aspx",
+                lang:   "EN"
+            },
+            {
                 title:  "EduAppCenter",
                 from:   "/apps",
                 to:     "https://www.eduappcenter.com/",
