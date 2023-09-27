@@ -141,6 +141,18 @@ const Links = [
                 lang:   "EN"
             },
             {
+                title:  "Our Story",
+                from:   "/story",
+                to:     "https://www.instructure.com/about/our-story",
+                lang:   "EN"
+            },
+            {
+                title:  "Try Canvas (FFT)",
+                from:   "/try-canvas",
+                to:     "https://www.instructure.com/try-canvas",
+                lang:   "EN"
+            },
+            {
                 title:  "EduAppCenter",
                 from:   "/apps",
                 to:     "https://www.eduappcenter.com/",
