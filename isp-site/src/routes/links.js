@@ -265,7 +265,7 @@ export default function Links() {
                                 </CopyToClipboard>
                                 </Tooltip>
                                 <br />
-                                <Text size="small" color="secondary">{link.to}</Text>
+                                <Text size="small" color="secondary">{link.to.split(`?`)[0]}</Text>
                             </Table.Cell>
                           </Table.Row>
                         )

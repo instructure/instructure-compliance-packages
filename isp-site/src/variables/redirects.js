@@ -3,12 +3,6 @@ const Links = [
         brand: "Instructure",
         links: [
             {
-                title:  "Security Packages (Home)",
-                from:   "/",
-                to:     null,
-                lang:   "EN"
-            },
-            {
                 title:  "Security White Paper",
                 from:   "/security/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Security%20Overview.pdf",
@@ -157,12 +151,6 @@ const Links = [
     {
         brand: "Canvas",
         links: [
-            {
-                title:  "Security Package (Home)",
-                from:   "/canvas",
-                to:     null,
-                lang:   "EN"
-            },
             {
                 title:  "Security Audit Report",
                 from:   "/canvas/audit/dl",
@@ -468,12 +456,6 @@ const Links = [
         brand: "Mastery",
         links: [
             {
-                title:  "Security Package (Home)",
-                from:   "/mastery",
-                to:     null,
-                lang:   "EN"
-            },
-            {
                 title:  "Community",
                 from:   "/mastery/community",
                 to:     "https://community.canvaslms.com/t5/Mastery/ct-p/mastery",
@@ -572,12 +554,6 @@ const Links = [
         brand: "Elevate",
         links: [
             {
-                title:  "Security Package (Home)",
-                from:   "/elevate",
-                to:     null,
-                lang:   "EN"
-            },
-            {
                 title:  "Community",
                 from:   "/elevate/community",
                 to:     "https://community.canvaslms.com/t5/Elevate/ct-p/elevate",
@@ -624,12 +600,6 @@ const Links = [
         brand: "Elevate Data Quality",
         links: [
             {
-                title:  "Security Package (Download)",
-                from:   null,
-                to:     null,
-                lang:   "EN"
-            },
-            {
                 title:  "Home",
                 from:   "/elevate/dataquality",
                 to:     "https://www.instructure.com/k12/products/elevate/elevate-data-quality/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
@@ -647,12 +617,6 @@ const Links = [
         brand: "Elevate Data Sync",
         links:  [
             {
-                title:  "Security Package (Download)",
-                from:   null,
-                to:     null,
-                lang:   "EN"
-            },
-            {
                 title:  "Guides",
                 from:   "/elevate/datasync/guides",
                 to:     "https://community.canvaslms.com/t5/Elevate-Data-Sync/ct-p/elevate_data_sync",
@@ -663,12 +627,6 @@ const Links = [
     {
         brand: "Impact",
         links: [
-            {
-                title:  "Security Package (Home)",
-                from:   "/impact",
-                to:     null,
-                lang:   "EN"
-            },
             {
                 title:  "Security Package (Download)",
                 from:   "/impact/dl",
