@@ -29,13 +29,13 @@ const Links = [
             {
                 title:  "Home",
                 from:   "/home",
-                to:     "https://www.instructure.com/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Página de inicio",
                 from:   "/es-la/home",
-                to:     "https://www.instructure.com/es/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/es/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "ES_LA"
             },
             {
@@ -47,49 +47,49 @@ const Links = [
             {
                 title:  "Accessibility",
                 from:   "/a11y",
-                to:     "https://www.instructure.com/accessibility/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/accessibility/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Contact",
                 from:   "/contact",
-                to:     "https://www.instructure.com/contact-us/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/contact-us/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Contáctenos",
                 from:   "/es-la/contactenos",
-                to:     "https://www.instructure.com/es/contactenos/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/es/contactenos/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "ES_LA"
             },
             {
                 title:  "Privacy",
                 from:   "/privacy",
-                to:     "https://www.instructure.com/canvas/privacy/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/canvas/privacy/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Privacidad",
                 from:   "/es-la/privicidad",
-                to:     "https://www.instructure.com/es/canvas/privacidad/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/es/canvas/privacidad/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "ES_LA"
             },
             {
                 title:  "Security",
                 from:   "/security",
-                to:     "https://www.instructure.com/products/canvas/security/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/products/canvas/security/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {  
                 title:  "Seguridad",
                 from:   "/es-la/seguridad",
-                to:     "https://www.instructure.com/es/canvas/seguridad/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/es/canvas/seguridad/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "ES_LA"
             },
             {
                 title:  "Trust Center",
                 from:   "/trust",
-                to:     "https://www.instructure.com/trust-center/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/trust-center/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -101,25 +101,25 @@ const Links = [
             {
                 title:  "Terms & Conditions",
                 from:   "/tos",
-                to:     "https://www.instructure.com/policies/master-terms-conditions/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/policies/master-terms-conditions/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Global Terms & Conditions",
                 from:   "/tos/global",
-                to:     "https://www.instructure.com/policies/global/master-terms-and-conditions/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/policies/global/master-terms-and-conditions/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Acceptable Use Policy",
                 from:   "/aup",
-                to:     "https://www.instructure.com/policies/acceptable-use/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/policies/acceptable-use/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Data Privacy Addendum",
                 from:   "/dpa",
-                to:     "https://www.instructure.com/policies/data-processing/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/policies/data-processing/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -189,31 +189,31 @@ const Links = [
             {
                 title:  "Home (HE)",
                 from:   "/canvas/lms",
-                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-lms/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-lms/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Página de inicio (HE)",
                 from:   "/es-la/canvas/lms",
-                to:     "https://www.instructure.com/es/canvas/educacion-superior/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/es/canvas/educacion-superior/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "ES_LA"
             },
             {
                 title:  "Home (K12)",
                 from:   "/canvas/lms/k12",
-                to:     "https://www.instructure.com/k12/products/canvas/canvas-lms/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/canvas/canvas-lms/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Página de inicio (K12)",
                 from:   "/es-la/canvas/lms/basica",
-                to:     "https://www.instructure.com/es/educacion-basica/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/es/educacion-basica/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "ES_LA"
             },
             {
                 title:  "VPAT",
                 from:   "/canvas/lms/vpat",
-                to:     "https://www.instructure.com/products/canvas/accessibility/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/products/canvas/accessibility/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -289,19 +289,19 @@ const Links = [
             {
                 title:  "Home (HE)",
                 from:   "/canvas/studio",
-                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-studio/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-studio/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Home (K12)",
                 from:   "/canvas/studio/k12",
-                to:     "https://www.instructure.com/k12/products/canvas/canvas-studio/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/canvas/canvas-studio/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "VPAT",
                 from:   "/canvas/studio/vpat",
-                to:     "https://www.instructure.com/accessibility/canvas/canvas-studio-vpat/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/accessibility/canvas/canvas-studio-vpat/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -336,13 +336,13 @@ const Links = [
             {
                 title:  "Home (HE)",
                 from:   "/canvas/credentials",
-                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-credentials-digital-badges/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-credentials-digital-badges/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Home (K12)",
                 from:   "/canvas/credentials/k12",
-                to:     "https://www.instructure.com/k12/products/canvas/canvas-credentials-digital-badges/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/canvas/canvas-credentials-digital-badges/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -371,13 +371,13 @@ const Links = [
             {
                 title:  "Home (HE)",
                 from:   "/canvas/catalog",
-                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-catalog/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/higher-education/products/canvas/canvas-catalog/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Home (K12)",
                 from:   "/canvas/catalog/k12",
-                to:     "https://www.instructure.com/k12/products/canvas/canvas-catalog/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/canvas/canvas-catalog/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -516,13 +516,13 @@ const Links = [
             {
                 title:  "Home",
                 from:   "/mastery/itembank",
-                to:     "https://www.instructure.com/k12/products/mastery/mastery-item-bank/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/mastery/mastery-item-bank/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Guides",
                 from:   "/mastery/itembank/guides",
-                to:     "https://community.canvaslms.com/t5/Mastery-Item-Bank/ct-p/mastery-item-bank/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://community.canvaslms.com/t5/Mastery-Item-Bank/ct-p/mastery-item-bank/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
         ]
@@ -533,13 +533,13 @@ const Links = [
             {
                 title:  "Formatives Home",
                 from:   "mastery/view/formative",
-                to:     "https://www.instructure.com/k12/products/mastery/mastery-view-formative-assessments/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/mastery/mastery-view-formative-assessments/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Predictives Home",
                 from:   "/mastery/view/predictive",
-                to:     "https://www.instructure.com/k12/products/mastery/mastery-view-predictive-assessments/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/mastery/mastery-view-predictive-assessments/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
         ]
@@ -608,7 +608,7 @@ const Links = [
             {
                 title:  "Home",
                 from:   "/elevate/dataquality",
-                to:     "https://www.instructure.com/k12/products/elevate/elevate-data-quality/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/elevate/elevate-data-quality/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -654,13 +654,13 @@ const Links = [
             {
                 title:  "Home (HE)",
                 from:   "/impact/he",
-                to:     "https://www.instructure.com/higher-education/products/impact/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/higher-education/products/impact/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
                 title:  "Home (K12)",
                 from:   "/impact/k12",
-                to:     "https://www.instructure.com/k12/products/impact/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/k12/products/impact/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "EN"
             },
             {
@@ -736,13 +736,13 @@ const Links = [
             {
                 title:  "Página inicial (Canvas HE)",
                 from:   "/canvas/lms/pt",
-                to:     "https://www.instructure.com/pt-br/canvas/ensino-superior/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/pt-br/canvas/ensino-superior/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "PT_BR"
             },
             {
                 title:  "Página inicial (Canvas K12)",
                 from:   "/canvas/lms/pt/basica",
-                to:     "https://www.instructure.com/pt-br/ensino-fundamental-e-medio/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/pt-br/ensino-fundamental-e-medio/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "PT_BR"
             },
             {
@@ -766,19 +766,19 @@ const Links = [
             {
                 title:  "Privacidade",
                 from:   "/privacidade",
-                to:     "https://www.instructure.com/pt-br/canvas/privacidade/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/pt-br/canvas/privacidade/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "PT_BR"
             },
             {
                 title:  "Contato",
                 from:   "/Contato",
-                to:     "https://www.instructure.com/pt-br/contato/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/pt-br/contato/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "PT_BR"
             },
             {  
                 title:  "Segurança",
                 from:   "/seguranca",
-                to:     "https://www.instructure.com/pt-br/canvas/seguranca/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK",
+                to:     "https://www.instructure.com/pt-br/canvas/seguranca/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "PT_BR"
             },
         ]
