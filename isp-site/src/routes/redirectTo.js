@@ -5,6 +5,7 @@ import { useEffect } from "react"
 // Page
 export default function RedirectTo(props) {
   let url = props.url
+  let urlRoot = url.split(`?`)[0]
   let brand = props.brand
   let path = props.path
   let filetype = url.slice(-4)
@@ -26,7 +27,7 @@ export default function RedirectTo(props) {
     } else {
       return (
         <View as="div">
-          <Text>Redirecting you to <Link href={url}>{url}</Link></Text>
+          <Text>Redirecting you to <Link href={url}>{urlRoot}</Link></Text>
         </View>
       )
     }
