@@ -153,6 +153,12 @@ const Links = [
                 lang:   "EN"
             },
             {
+                title:  "Study Hall",
+                from:   "/resources",
+                to:     "https://www.instructure.com/resources/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+                lang:   "EN"
+            },
+            {
                 title:  "EduAppCenter",
                 from:   "/apps",
                 to:     "https://www.eduappcenter.com/",
