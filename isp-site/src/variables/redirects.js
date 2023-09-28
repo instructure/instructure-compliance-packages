@@ -187,6 +187,12 @@ const Links = [
                 to:     "https://community.canvaslms.com/t5/Canvas-Product-Roadmap/ct-p/canvas-product-roadmap",
                 lang:   "EN"
             },
+            {
+                title:  "Ideas",
+                from:   "/canvas/ideas",
+                to:     "https://community.canvaslms.com/t5/Canvas-Ideas-and-Themes/ct-p/canvas-ideas-themes?tab=identified",
+                lang:   "EN"
+            },
         ]
     },
     {
