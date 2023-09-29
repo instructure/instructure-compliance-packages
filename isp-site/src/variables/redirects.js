@@ -57,6 +57,12 @@ const Links = [
                 lang:   "ES_LA"
             },
             {
+                title:  "Contato",
+                from:   "/Contato",
+                to:     "https://www.instructure.com/pt-br/contato/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+                lang:   "PT_BR"
+            },
+            {
                 title:  "Privacy",
                 from:   "/privacy",
                 to:     "https://www.instructure.com/canvas/privacy/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
@@ -69,6 +75,12 @@ const Links = [
                 lang:   "ES_LA"
             },
             {
+                title:  "Privacidade",
+                from:   "/privacidade",
+                to:     "https://www.instructure.com/pt-br/canvas/privacidade/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+                lang:   "PT_BR"
+            },
+            {
                 title:  "Security",
                 from:   "/security",
                 to:     "https://www.instructure.com/products/canvas/security/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
@@ -79,6 +91,12 @@ const Links = [
                 from:   "/es-la/seguridad",
                 to:     "https://www.instructure.com/es/canvas/seguridad/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "ES_LA"
+            },
+            {  
+                title:  "Segurança",
+                from:   "/seguranca",
+                to:     "https://www.instructure.com/pt-br/canvas/seguranca/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+                lang:   "PT_BR"
             },
             {
                 title:  "Trust Center",
@@ -188,6 +206,12 @@ const Links = [
                 lang:   "ES_LA"
             },
             {
+                title:  "Comunidade",
+                from:   "/canvas/comunidade",
+                to:     "https://community.canvaslms.com/t5/Recursos-em-Portugu%C3%AAs-Portuguese/ct-p/portuguese_resources",
+                lang:   "PT_BR"
+            },
+            {
                 title:  "Roadmap",
                 from:   "/canvas/roadmap",
                 to:     "https://community.canvaslms.com/t5/Canvas-Product-Roadmap/ct-p/canvas-product-roadmap",
@@ -235,6 +259,12 @@ const Links = [
                 lang:   "ES_LA"
             },
             {
+                title:  "Página inicial (HE)",
+                from:   "/canvas/lms/pt",
+                to:     "https://www.instructure.com/pt-br/canvas/ensino-superior/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+                lang:   "PT_BR"
+            },
+            {
                 title:  "Home (K12)",
                 from:   "/canvas/lms/k12",
                 to:     "https://www.instructure.com/k12/products/canvas/canvas-lms/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
@@ -245,6 +275,12 @@ const Links = [
                 from:   "/es-la/canvas/lms/basica",
                 to:     "https://www.instructure.com/es/educacion-basica/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "ES_LA"
+            },
+            {
+                title:  "Página inicial (K12)",
+                from:   "/canvas/lms/pt/basica",
+                to:     "https://www.instructure.com/pt-br/ensino-fundamental-e-medio/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+                lang:   "PT_BR"
             },
             {
                 title:  "VPAT",
@@ -265,6 +301,12 @@ const Links = [
                 lang:   "ES_LA"
             },
             {
+                title:  "Guias",
+                from:   "/canvas/guias/pt",
+                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources",
+                lang:   "PT_BR"
+            },
+            {
                 title:  "Release Notes",
                 from:   "/canvas/lms/releases",
                 to:     "https://community.canvaslms.com/t5/Canvas-Releases/tkb-p/canvas-release",
@@ -275,6 +317,12 @@ const Links = [
                 from:   "/es-la/canvas/lms/publicacion",
                 to:     "https://community.canvaslms.com/t5/Espa%C3%B1ol/tkb-p/canvas-release-espanol",
                 lang:   "ES_LA"
+            },
+            {
+                title:  "Notas de lançamento (Canvas LMS)",
+                from:   "/canvas/lms/lancamentos",
+                to:     "https://community.canvaslms.com/t5/Portugues/tkb-p/canvas-release-portugues",
+                lang:   "PT_BR"
             },
             {
                 title:  "API",
@@ -735,60 +783,7 @@ const Links = [
                 lang:   "EN"
             },
         ]
-    },
-    {
-        brand: "Português",
-        links:  [
-            {
-                title:  "Página inicial (Canvas HE)",
-                from:   "/canvas/lms/pt",
-                to:     "https://www.instructure.com/pt-br/canvas/ensino-superior/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
-                lang:   "PT_BR"
-            },
-            {
-                title:  "Página inicial (Canvas K12)",
-                from:   "/canvas/lms/pt/basica",
-                to:     "https://www.instructure.com/pt-br/ensino-fundamental-e-medio/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
-                lang:   "PT_BR"
-            },
-            {
-                title:  "Notas de lançamento (Canvas LMS)",
-                from:   "/canvas/lms/lancamentos",
-                to:     "https://community.canvaslms.com/t5/Portugues/tkb-p/canvas-release-portugues",
-                lang:   "PT_BR"
-            },
-            {
-                title:  "Comunidade (Canvas LMS)",
-                from:   "/canvas/comunidade",
-                to:     "https://community.canvaslms.com/t5/Recursos-em-Portugu%C3%AAs-Portuguese/ct-p/portuguese_resources",
-                lang:   "PT_BR"
-            },
-            {
-                title:  "Guias (Canvas)",
-                from:   "/canvas/guias/pt",
-                to:     "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources",
-                lang:   "PT_BR"
-            },
-            {
-                title:  "Privacidade",
-                from:   "/privacidade",
-                to:     "https://www.instructure.com/pt-br/canvas/privacidade/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
-                lang:   "PT_BR"
-            },
-            {
-                title:  "Contato",
-                from:   "/Contato",
-                to:     "https://www.instructure.com/pt-br/contato/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
-                lang:   "PT_BR"
-            },
-            {  
-                title:  "Segurança",
-                from:   "/seguranca",
-                to:     "https://www.instructure.com/pt-br/canvas/seguranca/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
-                lang:   "PT_BR"
-            },
-        ]
-    },
+    }
 ]
 
 export default Links
