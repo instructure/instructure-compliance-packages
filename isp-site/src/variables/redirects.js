@@ -58,7 +58,7 @@ const Links = [
             },
             {
                 title:  "Contato",
-                from:   "/Contato",
+                from:   "/contato",
                 to:     "https://www.instructure.com/pt-br/contato/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
                 lang:   "PT_BR"
             },
