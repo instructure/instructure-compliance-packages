@@ -418,6 +418,18 @@ const Links = [
                 lang:   "EN"
             },
             {
+                title:  "Security Package (Descargar)",
+                from:   "/es-la/canvas/credentials/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials-ES_LA.zip",
+                lang:   "ES_LA"
+            },
+            {
+                title:  "Security Package (O Download)",
+                from:   "/pt-br/canvas/credentials/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials-PT_BR.zip",
+                lang:   "PT_BR"
+            },
+            {
                 title:  "Home (HE)",
                 from:   "/canvas/credentials",
                 to:     "https://www.instructure.com/higher-education/products/canvas/canvas-credentials-digital-badges/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
