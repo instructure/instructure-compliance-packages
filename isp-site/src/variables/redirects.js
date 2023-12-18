@@ -726,13 +726,13 @@ const Links = [
             {
                 title:  "Security Package (ES-LA)",
                 from:   "/es-la/impact/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/tree/archive/refs/heads/impact-ES_LA.zip",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact-ES_LA.zip",
                 lang:   "ES_LA"
             },
             {
                 title:  "Security Package (PT-BR)",
                 from:   "/pt-br/impact/dl",
-                to:     "https://github.com/thedannywahl/instructure-security-package/tree/archive/refs/heads/impact-PT_BR.zip",
+                to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact-PT_BR.zip",
                 lang:   "PT_BR"
             },
             {
