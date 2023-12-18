@@ -15,3 +15,5 @@ Current packages include:
 - [LearnPlatform](https://inst.bid/learnplatform/dl)
 
 *Some language translated versions available, please see the relevant product family page (top navigaton).
+
+For a comprehensive look at our Security, Privacy and Compliance Programs, please see the [Instructure Trust Center](https://www.instructure.com/trust-center).
