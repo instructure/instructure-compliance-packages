@@ -229,19 +229,19 @@ const Links = [
         brand: "Canvas LMS",
         links: [
             {
-                title:  "Security Package (Download)",
+                title:  "Security Package (EN)",
                 from:   "/canvas/lms/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms.zip",
                 lang:   "EN"
             },
             {
-                title:  "Security Package (ES_LA)",
+                title:  "Security Package (ES-LA)",
                 from:   "/es-la/canvas/lms/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/canvas-lms-ES_LA.zip",
                 lang:   "ES_LA"
             },
             {
-                title:  "Security Package (PT_BR)",
+                title:  "Security Package (PT-BR)",
                 from:   "/pt-br/canvas/lms/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms-PT_BR.zip",
                 lang:   "PT_BR"
@@ -365,7 +365,7 @@ const Links = [
         brand: "Canvas Studio",
         links: [
             {
-                title:  "Security Package (Download)",
+                title:  "Security Package (EN)",
                 from:   "/canvas/studio/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-studio.zip",
                 lang:   "EN"
@@ -412,19 +412,19 @@ const Links = [
         brand: "Canvas Credentials",
         links: [
             {
-                title:  "Security Package (Download)",
+                title:  "Security Package (EN)",
                 from:   "/canvas/credentials/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials.zip",
                 lang:   "EN"
             },
             {
-                title:  "Security Package (Descargar)",
+                title:  "Security Package (ES-LA)",
                 from:   "/es-la/canvas/credentials/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials-ES_LA.zip",
                 lang:   "ES_LA"
             },
             {
-                title:  "Security Package (O Download)",
+                title:  "Security Package (PT-BR)",
                 from:   "/pt-br/canvas/credentials/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials-PT_BR.zip",
                 lang:   "PT_BR"
@@ -465,7 +465,7 @@ const Links = [
         brand: "Canvas Catalog",
         links: [
             {
-                title:  "Security Package (Download)",
+                title:  "Security Package (EN)",
                 from:   "/canvas/catalog/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-catalog.zip",
                 lang:   "EN"
@@ -563,7 +563,7 @@ const Links = [
         brand: "Mastery Connect",
         links: [
             {
-                title:  "Security Package (Download)",
+                title:  "Security Package (EN)",
                 from:   "/mastery/connect/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/mastery-connect.zip",
                 lang:   "EN"
@@ -661,7 +661,7 @@ const Links = [
         brand: "Elevate K-12 Analytics",
         links: [
             {
-                title:  "Security Package (Download)",
+                title:  "Security Package (EN)",
                 from:   "/elevate/k12-analytics/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/elevate-k12-analytics.zip",
                 lang:   "EN"
@@ -718,10 +718,22 @@ const Links = [
         brand: "Impact",
         links: [
             {
-                title:  "Security Package (Download)",
+                title:  "Security Package (EN)",
                 from:   "/impact/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact.zip",
                 lang:   "EN"
+            },
+            {
+                title:  "Security Package (ES-LA)",
+                from:   "/es-la/impact/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/tree/archive/refs/heads/impact-ES_LA.zip",
+                lang:   "ES_LA"
+            },
+            {
+                title:  "Security Package (PT-BR)",
+                from:   "/pt-br/impact/dl",
+                to:     "https://github.com/thedannywahl/instructure-security-package/tree/archive/refs/heads/impact-PT_BR.zip",
+                lang:   "PT_BR"
             },
             {
                 title:  "Home (HE)",
@@ -765,7 +777,7 @@ const Links = [
                 lang:   "EN"
             },
             {
-                title:  "Security Package (Download)",
+                title:  "Security Package (EN)",
                 from:   "/learnplatform/dl",
                 to:     "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/learn-platform.zip",
                 lang:   "EN"
