@@ -14,4 +14,4 @@ Current packages include:
 - [Elevate Standards Alignment](https://inst.bid/elevate/standards-alignment/dl)
 - [LearnPlatform](https://inst.bid/learnplatform/dl)
 
-*Some language translated versions available, please see the relevant prouct family page (top navigaton).
+*Some language translated versions available, please see the relevant product family page (top navigaton).
