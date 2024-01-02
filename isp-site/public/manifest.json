@@ -15,6 +15,9 @@
   "display": "standalone",
   "theme_color": "#287A9F",
   "background_color": "#ffffff",
+  "display_override": [
+    "window-controls-overlay"
+  ],
   "shortcuts": [
     {
       "name": "Links",
