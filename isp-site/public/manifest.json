@@ -18,6 +18,13 @@
   "display_override": [
     "window-controls-overlay"
   ],
+  "shortcuts": [
+    {
+      "name": "Links",
+      "url": "/#/links",
+      "description": "Redirect Links"
+    }
+  ],
   "icons": [
     {
       "src": "favicon.ico",
