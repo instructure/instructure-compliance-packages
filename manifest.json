@@ -15,8 +15,20 @@
   "display": "standalone",
   "theme_color": "#287A9F",
   "background_color": "#ffffff",
-  "display_override": [
-    "window-controls-overlay"
+  "shortcuts": [
+    {
+      "name": "Links",
+      "url": "/#/links",
+      "description": "Redirect Links",
+      "icons": [
+        {
+          "src": "logo96.png",
+          "type": "image/png",
+          "sizes": "96x96",
+          "purpose": "any"
+        }
+      ]
+    }
   ],
   "icons": [
     {
@@ -32,22 +44,10 @@
       "purpose": "any"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "maskable"
-    },
-    {
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
     }
   ],
   "screenshots": [
