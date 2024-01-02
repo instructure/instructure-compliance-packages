@@ -1,25 +1,66 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "manifest_version": 3,
+  "id": "com.instructure.instbid",
+  "short_name": "inst.bid",
+  "name": "Instructure Compliance Package",
+  "version": "1.1.0",
+  "author": "Gary Denne",
+  "developer": {
+    "name": "Danny Wahl",
+    "url": "https://www.instructure.com"
+  },
+  "start_url": "/#/",
+  "scope": "/",
+  "orientation": "any",
+  "display": "standalone",
+  "theme_color": "#287A9F",
+  "background_color": "#ffffff",
+  "display_override": [
+    "window-controls-overlay"
+  ],
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "sizes": "48x48",
+      "type": "image/x-icon",
+      "purpose": "any"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1280x672",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot.png",
+      "sizes": "596x833",
+      "type": "image/png"
+    }
+  ]
 }
