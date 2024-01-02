@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "1.0.0+1704228418",
+  "version": "1.1.0+1704228418",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "dependencies": {
@@ -28,8 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "predeploy": "yarn build; make all",
-    "deploy": "gh-pages -atx -d build",
+    "predeploy": "yarn build && make all",
+    "deploy": "yarn predeploy && gh-pages -atx -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
