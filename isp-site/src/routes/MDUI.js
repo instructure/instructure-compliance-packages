@@ -1,42 +1,56 @@
 // Modules
-import React, { useState, useEffect } from 'react'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import remarkGemoji from 'remark-gemoji'
-import rehypeRaw from 'rehype-raw'
-import { View, Link, Text, List, Heading, SourceCodeEditor, Byline, Avatar, ToggleGroup, Img, Table, Checkbox, Grid } from '@instructure/ui'
+import React, { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import remarkGemoji from "remark-gemoji";
+import rehypeRaw from "rehype-raw";
+import {
+	View,
+	Link,
+	Text,
+	List,
+	Heading,
+	SourceCodeEditor,
+	Byline,
+	Avatar,
+	ToggleGroup,
+	Img,
+	Table,
+	Checkbox,
+	Grid,
+} from "@instructure/ui";
 
 // Components
-import allowedElements from 'variables/allowedElements'
-import markdownSample from 'variables/markdownSample.md'
-import mdtoui from 'components/mdtoui'
+import allowedElements from "variables/allowedElements";
+import markdownSample from "variables/markdownSample.md";
+import mdtoui from "components/mdtoui";
 
 // Page
 export default function MDUI() {
-  let md = markdownSample
+	let md = markdownSample;
 
-  const [content, setContent] = useState('Loading...')
+	const [content, setContent] = useState("Loading...");
 
-  useEffect(() => {
-    fetch(md)
-      .then((response) => {
-        if (response.ok) return response.text()
-        else return Promise.reject("Didn't fetch text correctly")
-      })
-      .then((text) => {
-        setContent(text)
-      })
-      .catch((error) => console.error(error))
-  }, [])
+	useEffect(() => {
+		fetch(md)
+			.then((response) => {
+				if (response.ok) return response.text();
+				else return Promise.reject("Didn't fetch text correctly");
+			})
+			.then((text) => {
+				setContent(text);
+			})
+			.catch((error) => console.error(error));
+	}, []);
 
-  return (
+	return (
 		<View
 			id="main"
 			as="div"
 			padding="medium medium xx-large"
 			minWidth="20rem"
 			maxWidth="100vw"
-			margin="0 auto" 
+			margin="0 auto"
 		>
 			<Grid startAt="large">
 				<Grid.Row>
@@ -51,7 +65,7 @@ export default function MDUI() {
 					</Grid.Col>
 					<Grid.Col>
 						<SourceCodeEditor
-							label='Markdown Source'
+							label="Markdown Source"
 							language="markdown"
 							readOnly={true}
 							editable={true}
@@ -62,12 +76,12 @@ export default function MDUI() {
 							lineWrapping={true}
 							value={content}
 							onChange={(value) => {
-								this.setState({ value })
+								this.setState({ value });
 							}}
 						/>
 					</Grid.Col>
 				</Grid.Row>
 			</Grid>
 		</View>
-	)
+	);
 }
