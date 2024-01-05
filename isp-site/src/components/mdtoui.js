@@ -8,7 +8,6 @@ import {
 	SourceCodeEditor,
 	Byline,
 	Avatar,
-	ToggleGroup,
 	Img,
 	Table,
 	Checkbox,
