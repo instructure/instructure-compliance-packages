@@ -1,7 +1,8 @@
 import { globalBrands } from "variables/brands";
-const body = document.querySelector("body");
 
 const toggle = (u, n) => {
+	const body = document.querySelector("body");
+
 	for (const e of n) {
 		e.removeAttribute("aria-current");
 		e.classList.remove("active");
@@ -12,9 +13,12 @@ const toggle = (u, n) => {
 		u.classList.add("active");
 	}
 
-	//TODO ADD Brand to body classList
 	body.classList.remove(...globalBrands.map((brand) => brand.toLowerCase()));
-	if (u.id.length) body.classList.add(u.id);
+	if (u.id.length) {
+		body.classList.add(u.id);
+	} else {
+		body.classList.add("instructure");
+	}
 };
 
 document.addEventListener("DOMContentLoaded", () => {

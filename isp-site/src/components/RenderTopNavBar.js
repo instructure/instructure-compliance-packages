@@ -35,21 +35,6 @@ function RenderTopNavBar() {
 						renderBrand={
 							<TopNavBar.Brand
 								screenReaderLabel="Instructure"
-								renderName={
-									<View as="div" minWidth="7rem">
-										<Text
-											themeOverride={{ brandColor: "#333" }}
-											as="div"
-											color="brand"
-											transform="uppercase"
-											size="small"
-											weight="bold"
-											lineHeight="condensed"
-										>
-											Instructure
-										</Text>
-									</View>
-								}
 								renderIcon={
 									<IconInstructureLogoSolid
 										size="small"
