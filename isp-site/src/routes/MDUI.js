@@ -13,7 +13,7 @@ import {
 	SourceCodeEditor,
 	Byline,
 	Avatar,
-	ToggleGroup,
+	ToggleDetails,
 	Img,
 	Table,
 	Checkbox,
