@@ -41,7 +41,7 @@ export default function MDUI() {
 				setContent(text);
 			})
 			.catch((error) => console.error(error));
-	}, []);
+	}, [md]);
 
 	return (
 		<View
