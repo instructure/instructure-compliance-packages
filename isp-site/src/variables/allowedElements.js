@@ -32,5 +32,6 @@ const allowedElements = [
 	"del",
 	"span",
 	"code",
+	"button",
 ];
 export default allowedElements;

@@ -15,7 +15,7 @@ const toggle = (u, n) => {
 
 	body.classList.remove(...globalBrands.map((brand) => brand.toLowerCase()));
 
-	if (u.id.length) {
+	if (u?.id.length) {
 		body.classList.add(u.id);
 		const brand = globalBrands.find((brand) => brand.toLowerCase() === u.id);
 		document.title = `${brand} Compliance Package`;

@@ -12,6 +12,7 @@
   #main {
     background: #fff;
     margin-top: 3rem;
+    margin-bottom: 8rem;
     padding: 3rem;
     box-shadow: 0 1.25rem 3rem .66rem rgb(20 61 80 / 15%);
     border-radius: 2rem;
@@ -21,6 +22,7 @@
 
 #footer {
   background-color: #287A9F;
+  margin-bottom: -8rem;
 }
 
 /* TopNavBar */
@@ -110,4 +112,19 @@ pre {
 
 #toggleFilters {
   display: none;
+}
+
+/* markdown styles */
+
+.markdown [class$="toggleDetails__details"] {
+  padding-left: 0 !important;
+}
+
+.markdown [class$="toggleDetails__content"] {
+  border: 1px solid rgb(199, 205, 209);
+  border-radius: 1rem 0;
+}
+
+.markdown h2 {
+  margin-top: 3rem !important;
 }

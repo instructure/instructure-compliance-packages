@@ -12,6 +12,8 @@ import {
 	Img,
 	Table,
 	Checkbox,
+	Button,
+	ToggleDetails,
 } from "@instructure/ui";
 
 const filterChildrenProps = (props) => {
@@ -23,6 +25,7 @@ const filterChildrenProps = (props) => {
 
 const mdtoui = {
 	a: ({ node, ...props }) => <Link to={node.href} {...props} />,
+	button: ({ node, ...props }) => <Button withBackground={false} {...props} />,
 	p: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
 	em: ({ node, ...props }) => <Text fontStyle="italic" {...props} />,
 	strong: ({ node, ...props }) => <Text weight="bold" {...props} />,
@@ -135,9 +138,9 @@ const mdtoui = {
 		props = { ...props, children: filterChildrenProps(props) };
 		const label = props.children.shift();
 		return (
-			<ToggleGroup toggleLabel="Click for details" summary={label}>
+			<ToggleDetails toggleLabel="Click for details" summary={label}>
 				<View display="block" padding="small" {...props} />
-			</ToggleGroup>
+			</ToggleDetails>
 		);
 	},
 	table: ({ node, ...props }) => {

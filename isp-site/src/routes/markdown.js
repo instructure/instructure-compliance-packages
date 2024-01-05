@@ -50,13 +50,15 @@ export default function Markdown(props) {
 			maxWidth="59.25rem"
 			margin="0 auto"
 		>
-			<ReactMarkdown
-				children={content}
-				remarkPlugins={[remarkGfm, remarkGemoji]}
-				rehypePlugins={[rehypeRaw]}
-				allowedElements={allowedElements}
-				components={mdtoui}
-			/>
+			<div className="markdown">
+				<ReactMarkdown
+					children={content}
+					remarkPlugins={[remarkGfm, remarkGemoji]}
+					rehypePlugins={[rehypeRaw]}
+					allowedElements={allowedElements}
+					components={mdtoui}
+				/>
+			</div>
 		</View>
 	);
 }
