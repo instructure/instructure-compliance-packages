@@ -137,7 +137,7 @@ const mdtoui = {
 		props = { ...props, children: filterChildrenProps(props) };
 		const label = props.children.shift();
 		return (
-			<ToggleDetails toggleLabel="Click for details" summary={label}>
+			<ToggleDetails summary={label}>
 				<View display="block" padding="small" {...props} />
 			</ToggleDetails>
 		);
