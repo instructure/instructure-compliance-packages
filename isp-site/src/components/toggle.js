@@ -21,7 +21,7 @@ const toggle = (u, n) => {
 		document.title = `${brand} Compliance Package`;
 	} else {
 		body.classList.add("instructure");
-		document.title = "Instructure Compliance Package";
+		document.title = "Instructure Compliance Packages";
 	}
 };
 
