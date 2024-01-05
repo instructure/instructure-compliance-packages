@@ -4,6 +4,8 @@ The Canvas platform enriches, supports, and connects every aspect of teaching an
 
 ## Canvas LMS
 
+_The World's #1 Teaching and Learning Software_
+
 💾 Download:
 [English](https://inst.bid/canvas/lms/dl) | [Español](https://inst.bid/es-la/canvas/lms/dl) | [Português](https://inst.bid/pt-br/canvas/lms/dl)
 
@@ -44,13 +46,19 @@ The Canvas platform enriches, supports, and connects every aspect of teaching an
 
 ## Canvas Credentials
 
+_The All-In-One Digital Badging For Higher Education_
+
 💾 Download:
 [English](https://inst.bid/canvas/credentials/dl) | [Español](https://inst.bid/es-la/canvas/credentials/dl) | [Português](https://inst.bid/pt-br/canvas/credentials/dl)
 
 ## Canvas Studio
 
+_The next-generation video education platform for higher ed teaching and learning._
+
 💾 Download: [English](https://inst.bid/canvas/studio/dl)
 
 ## Canvas Catalog
+
+_A simple, modern, elegant course catalog and a branded marketplace for all of your institution’s course offerings._
 
 💾 Download: [English](https://inst.bid/canvas/catalog/dl)
