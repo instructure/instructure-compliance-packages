@@ -25,7 +25,7 @@ const toggle = (u, n) => {
 	}
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
 	let u = document.location.href.split("#")[1];
 	const n = document.querySelectorAll("nav a");
 
