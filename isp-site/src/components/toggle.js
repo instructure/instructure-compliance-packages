@@ -14,10 +14,14 @@ const toggle = (u, n) => {
 	}
 
 	body.classList.remove(...globalBrands.map((brand) => brand.toLowerCase()));
+
 	if (u.id.length) {
 		body.classList.add(u.id);
+		const brand = globalBrands.find((brand) => brand.toLowerCase() === u.id);
+		document.title = `${brand} Compliance Package`;
 	} else {
 		body.classList.add("instructure");
+		document.title = "Instructure Compliance Package";
 	}
 };
 
