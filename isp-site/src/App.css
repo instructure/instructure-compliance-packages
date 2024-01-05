@@ -9,10 +9,13 @@
     background-repeat: no-repeat;
   }
 
+  #root>div {
+    padding-bottom: 8rem;
+  }
+
   #main {
     background: #fff;
     margin-top: 3rem;
-    margin-bottom: 8rem;
     padding: 3rem;
     box-shadow: 0 1.25rem 3rem .66rem rgb(20 61 80 / 15%);
     border-radius: 2rem;
@@ -22,7 +25,6 @@
 
 #footer {
   background-color: #287A9F;
-  margin-bottom: -8rem;
 }
 
 /* TopNavBar */
