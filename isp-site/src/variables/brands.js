@@ -1,4 +1,5 @@
-const readmePrefix = `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README`;
+const readmePrefix =
+	"https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README";
 
 export const globalBrands = [
 	"Instructure",
