@@ -40,7 +40,7 @@ _The World's #1 Teaching and Learning Software_
 | HECVAT Full v3.0.4  | [Canvas LMS HECVAT Full.xlsx](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20LMS%20HECVAT%20Full.xlsx)
 | SOC 3 | [Canvas LMS SOC 3.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20LMS%20SOC%203.pdf)
 | TX-RAMP Certificate | [Canvas LMS TX-RAMP Level 2 Certification.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20LMS%20TX-RAMP%20Level%202%20Certification.pdf)
-| Security Audit White Paper | [Canvas Security Audit Report.pdf](https://github.com/thedannywahl/instructure-security-package/blob/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf)
+| Security Audit Report | [Canvas Security Audit Report.pdf](https://github.com/thedannywahl/instructure-security-package/blob/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf)
 
 </details>
 
