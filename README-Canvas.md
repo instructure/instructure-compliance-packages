@@ -1,4 +1,4 @@
-# Canvas Compliance Packages
+# Canvas
 
 The Canvas platform enriches, supports, and connects every aspect of teaching and learning in one seamless experience. Reliable, intuitive, and born in the cloud, our flagship Canvas LMS is one of the most widely used learning management systems, and the fastest growing LMS worldwide.
 
