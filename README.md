@@ -1,7 +1,7 @@
 # Instructure Compliance Packages
 The Instructure Compliance Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) as a company, and each of our [products](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). These packages address the majority of questions we receive from customers and prospects.
 
-The content in the compliance packages is public information. It can be shared to any customer or prospect and does not require an NDA.
+The content in the compliance packages is public information. It is available for both current and prospective customers and does not require an NDA.
 
 Current packages include:
 - [Canvas LMS*](https://inst.bid/canvas/lms/dl)
