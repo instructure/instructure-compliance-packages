@@ -1,7 +1,7 @@
 # Instructure Compliance Packages
-The Instructure Compliance Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) as a company, and each of our [products](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). These packages address the majority of questions we receive from customers and prospects.
+The Instructure Compliance Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) as a company, and each of our [products](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). These packages address the majority of questions we receive from both current and prospective customers.
 
-The content in the compliance packages is public information. It is available for both current and prospective customers and does not require an NDA.
+The content in the compliance packages is public information. It is available for both current and prospective customers and does not require a Non-Disclosure Agreement (NDA). Our SOC 2 Report (which does require a NDA agreement), may be requested by using this [Contact Form](https://www.instructure.com/contact-us).
 
 Current packages include:
 - [Canvas LMS*](https://inst.bid/canvas/lms/dl)
