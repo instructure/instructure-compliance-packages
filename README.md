@@ -16,4 +16,4 @@ Current packages include:
 
 For a comprehensive look at our Security, Privacy and Compliance Programs, please see the [Instructure Trust Center](https://www.instructure.com/trust-center).
 
-The content in the compliance packages is public information. It is available for both current and prospective customers and does not require a Non-Disclosure Agreement (NDA). Our SOC 2 Reports (which do require a NDA agreement), may be requested by using this [Contact Form](https://www.instructure.com/contact-us).
+The content in the compliance packages is public information. It is available for both current and prospective customers and does not require a Non-Disclosure Agreement (NDA). Our SOC 2 Reports (which do require a NDA agreement), may be requested via your CSM or by using this [Contact Form](https://www.instructure.com/contact-us).
