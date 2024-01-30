@@ -239,7 +239,9 @@ export default function Links() {
 														placement="top"
 														color="primary-inverse"
 													>
-														<CopyToClipboard text={`${fromPrefix}${link.from}`}>
+														<CopyToClipboard
+															text={`https://${fromPrefix}${link.from}`}
+														>
 															<IconButton
 																withBackground={false}
 																withBorder={false}
