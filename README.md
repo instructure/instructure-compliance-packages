@@ -1,3 +1,4 @@
+<div class="lang EN">
 # Instructure Compliance Packages
 The Instructure Compliance Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) as a company, and each of our [products](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). These packages address the majority of questions we receive from both current and prospective customers.
 
@@ -17,3 +18,25 @@ Current packages include:
 For a comprehensive look at our Security, Privacy and Compliance Programs, please see the [Instructure Trust Center](https://www.instructure.com/trust-center).
 
 The content in the compliance packages is public information. It is available for both current and prospective customers and does not require a Non-Disclosure Agreement (NDA). Our SOC 2 Reports (which do require a NDA agreement), may be requested via your CSM or by using this [Contact Form](https://www.instructure.com/contact-us).
+</div>
+<div class="lang ES_LA">
+# Paquetes de cumplimiento de infraestructura
+Los paquetes de cumplimiento de Instructure son una colección de documentos, cuestionarios y certificaciones estándar de la industria que cubren Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) como empresa. y cada uno de nuestros [productos](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). Estos paquetes abordan la mayoría de las preguntas que recibimos de clientes actuales y potenciales.
+
+Los paquetes actuales incluyen:
+- [Canvas LMS*](https://inst.bid/canvas/lms/dl)
+- [Estudio de lienzo](https://inst.bid/canvas/studio/dl)
+- [Catálogo de lienzos](https://inst.bid/canvas/catalog/dl)
+- [Credenciales de Canvas*](https://inst.bid/canvas/credentials/dl)
+- [Impacto por infraestructura*](https://inst.bid/impact/dl)
+- [Conexión de dominio](https://inst.bid/mastery/connect/dl)
+- [Elevate K-12 Analytics](https://inst.bid/elevate/k12-analytics/dl)
+- [Elevar la alineación de estándares](https://inst.bid/elevate/standards-alignment/dl)
+- [Plataforma de aprendizaje](https://inst.bid/learnplatform/dl)
+
+*Algunas versiones traducidas a idiomas están disponibles; consulte la página de la familia de productos correspondiente (navegación superior).
+
+Para obtener una visión completa de nuestros programas de seguridad, privacidad y cumplimiento, consulte el [Centro de confianza de Instructure] (https://www.instructure.com/trust-center).
+
+El contenido de los paquetes de cumplimiento es información pública. Está disponible para clientes actuales y potenciales y no requiere un acuerdo de confidencialidad (NDA). Nuestros informes SOC 2 (que requieren un acuerdo de NDA) se pueden solicitar a través de su CSM o mediante este [formulario de contacto] (https://www.instructure.com/contact-us).
+</div>
