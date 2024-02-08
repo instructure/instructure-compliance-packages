@@ -1,5 +1,7 @@
 // Modules
 import { useState } from "react";
+import { useParams } from "react-router-dom";
+
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import {
 	View,
@@ -21,10 +23,20 @@ import {
 
 // Components
 import { globalBrands, globalSubBrands } from "variables/brands";
+import {
+	globalLangs,
+	globalLangDetails,
+	getLang,
+	getStrings,
+} from "variables/langs";
+import { strings } from "strings/links";
 import Redirects from "variables/redirects";
 
 // Page
 export default function Links() {
+	const l = getLang(useParams().language);
+	const s = getStrings(strings, l);
+
 	const fromPrefix = "inst.bid";
 
 	const [query, setQuery] = useState({
@@ -32,7 +44,7 @@ export default function Links() {
 	});
 
 	const [lang, setLang] = useState({
-		code: "EN",
+		codes: l,
 	});
 
 	const [brands, setBrands] = useState({
@@ -40,41 +52,56 @@ export default function Links() {
 	});
 
 	const [links, setLinks] = useState({
-		list: Redirects,
+		list: Redirects.map((brands) => ({
+			...brands,
+			links: brands.links.filter((link) => link.lang.toUpperCase() === l),
+		})),
 	});
 
 	const [toggle, setExpanded] = useState({
 		expanded: false,
-		text: "Show",
+		text: s.toggleShow,
 	});
 
 	const handleQueryChange = (e, v) => {
 		setQuery({
 			search: v,
 		});
-		handleChange(lang.code, v, brands.list);
+		handleChange(lang.codes, v, brands.list);
 	};
 
 	const handleLangChange = (e, v) => {
+		const arr = [];
+		if (v === "all") {
+			arr.push(...globalLangs);
+		} else {
+			arr.push(
+				...globalLangs.filter((lang) =>
+					lang.toUpperCase().includes(v.toUpperCase()),
+				),
+			);
+		}
 		setLang({
-			code: v,
+			codes: arr,
 		});
-		handleChange(v, query.search, brands.list);
+		handleChange(arr, query.search, brands.list);
 	};
 
 	const handleBrandChange = (e, v) => {
-		var arr = [];
-		if (v === "All") {
-			arr = globalSubBrands;
+		const arr = [];
+		if (v === "all") {
+			arr.push(...globalSubBrands);
 		} else {
-			arr = globalSubBrands.filter((brand) =>
-				brand.toLowerCase().includes(v.toLowerCase()),
+			arr.push(
+				...globalSubBrands.filter((brand) =>
+					brand.toLowerCase().includes(v.toLowerCase()),
+				),
 			);
 		}
 		setBrands({
 			list: arr,
 		});
-		handleChange(lang.code, query.search, arr);
+		handleChange(lang.codes, query.search, arr);
 	};
 
 	const handleChange = (l, q, b) => {
@@ -82,11 +109,11 @@ export default function Links() {
 			...brands,
 			links: brands.links
 				.filter((link) =>
-					`${brands.brand + " " + link.title}`
+					`${`${brands.brand} ${link.title}`}`
 						.toLowerCase()
 						.includes(q.toLowerCase()),
 				)
-				.filter((link) => link.lang.includes(l)),
+				.filter((link) => l.includes(link.lang.toUpperCase())),
 		}))
 			.filter((brands) => brands.links.length > 0)
 			.filter((brands) => b.includes(brands.brand));
@@ -97,7 +124,7 @@ export default function Links() {
 	};
 
 	const handleToggleChange = () => {
-		let t = toggle.expanded ? "Show" : "Hide";
+		const t = toggle.expanded ? s.toggleShow : s.toggleHide;
 		setExpanded({
 			expanded: !toggle.expanded,
 			text: t,
@@ -112,7 +139,7 @@ export default function Links() {
 					size="small"
 					withBackground={false}
 					withBorder={false}
-					screenReaderLabel="Clear search"
+					screenReaderLabel={s.clearSearch}
 					onClick={handleQueryClear}
 				>
 					<IconTroubleLine />
@@ -136,19 +163,25 @@ export default function Links() {
 			margin="0 auto"
 		>
 			<View as="div" margin="none none x-large">
-				<Heading level="h1">Redirect Links</Heading>
-				<Text>
-					This page provides a collection of shortened URLs for use in RFP
-					responses. Each row has a short URL and the original URL. Click on the
-					copy icon <IconCopyLine title="Copy Icon" /> and the short URL will be
-					added to your clipboard.
-				</Text>
+				<Heading level="h1">{s.header}</Heading>
+				<Text>{s.description}</Text>
 				<br />
 				<br />
-				<Button onClick={handleToggleChange}>{toggle.text + " Filters"}</Button>
+				<div id="content">
+					<div lang="EN" class="lang EN">
+						This is english
+					</div>
+					<br />
+					<div lang="ES_LA" class="lang ES_LA">
+						This is spanish
+					</div>
+				</div>
+				<br />
+				<br />
+				<Button onClick={handleToggleChange}>{toggle.text}</Button>
 				<ToggleDetails
 					id="toggleFilters"
-					summary="Filters"
+					summary={s.filters}
 					onToggle={handleToggleChange}
 					expanded={toggle.expanded}
 				>
@@ -156,8 +189,8 @@ export default function Links() {
 						<form name="searchFilters" autoComplete="off">
 							<TextInput
 								type="search"
-								renderLabel="Search"
-								placeholder="community"
+								renderLabel={s.search}
+								placeholder={s.placeholder}
 								onChange={handleQueryChange}
 								renderBeforeInput={<IconSearchLine inline={false} />}
 								renderAfterInput={renderClearButton}
@@ -166,13 +199,13 @@ export default function Links() {
 							<br />
 							<RadioInputGroup
 								name="brand"
-								description="Brands"
-								defaultValue="All"
+								description={s.brands}
+								defaultValue="all"
 								layout="columns"
 								variant="toggle"
 								onChange={handleBrandChange}
 							>
-								<RadioInput key="All" value="All" label="All" context="off" />
+								<RadioInput key="all" value="all" label="All" context="off" />
 
 								{globalBrands.map((brand) => (
 									<RadioInput
@@ -186,15 +219,21 @@ export default function Links() {
 							<br />
 							<RadioInputGroup
 								name="language"
-								description="Language"
-								defaultValue="EN"
+								description={s.language}
+								defaultValue={l}
 								layout="columns"
 								variant="toggle"
 								onChange={handleLangChange}
 							>
-								<RadioInput label="English" value="EN" context="off" />
-								<RadioInput label="Español" value="ES_LA" context="off" />
-								<RadioInput label="Português" value="PT_BR" context="off" />
+								<RadioInput key="all" value="all" label="All" context="off" />
+								{globalLangDetails.map((lang) => (
+									<RadioInput
+										key={lang.code}
+										value={lang.code}
+										label={lang.local}
+										context="off"
+									/>
+								))}
 							</RadioInputGroup>
 						</form>
 					</View>
@@ -202,7 +241,7 @@ export default function Links() {
 			</View>
 			{links.list.map((brands) => {
 				if (brands.links.length) {
-					let brand = brands.brand;
+					const brand = brands.brand;
 					return (
 						<View key={brand} as="div" margin="none none xx-large">
 							<Heading
@@ -216,9 +255,9 @@ export default function Links() {
 								<Table.Head>
 									<Table.Row>
 										<Table.ColHeader id="Title" width="25%">
-											Title
+											{s.title}
 										</Table.ColHeader>
-										<Table.ColHeader id="URLs">Link</Table.ColHeader>
+										<Table.ColHeader id="URLs">{s.link}</Table.ColHeader>
 									</Table.Row>
 								</Table.Head>
 								<Table.Body>
@@ -253,7 +292,7 @@ export default function Links() {
 													</Tooltip>
 													<br />
 													<Text size="small" color="secondary">
-														{link.to.split(`?`)[0]}
+														{link.to.split("?")[0]}
 													</Text>
 												</Table.Cell>
 											</Table.Row>
@@ -263,9 +302,8 @@ export default function Links() {
 							</Table>
 						</View>
 					);
-				} else {
-					return null;
 				}
+				return null;
 			})}
 		</View>
 	);
