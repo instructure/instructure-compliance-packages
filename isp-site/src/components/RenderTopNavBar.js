@@ -8,10 +8,10 @@ import {
 	Heading,
 	Link,
 } from "@instructure/ui";
-import { ParentBrands } from "../variables/brands";
+import { ParentBrands } from "variables/brands";
 
 // Component
-function RenderTopNavBar() {
+function RenderTopNavBar(props) {
 	const Brands = [...ParentBrands];
 	Brands.shift();
 
