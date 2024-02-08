@@ -1,5 +1,5 @@
 // Modules
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 //Components
 import { ParentBrands } from "variables/brands";
@@ -13,23 +13,33 @@ import Markdown from "routes/markdown";
 import MDUI from "routes/MDUI";
 
 // Page
-export default function rootRoutes() {
+export default function rootRoutes(lang) {
 	return (
 		<Routes>
 			<Route path="*" element={<NotFound />} />
-			<Route path="/links" element={<Links />} />
+			<Route path="/links/:language" element={<Links l={lang} />} />
+			<Route path="/links" element={<Links l={lang} />} />
 			<Route path="/mdui" element={<MDUI />} />
-
 			{ParentBrands.map((brand) => {
 				return (
 					<Route
 						key={brand.title}
 						path={brand.route}
 						element={<Markdown readme={brand.readme} />}
+						lang={lang}
 					/>
 				);
 			})}
-
+			{ParentBrands.map((brand) => {
+				return (
+					<Route
+						key={brand.title}
+						path={`${brand.route}/:language`}
+						element={<Markdown readme={brand.readme} />}
+						lang={lang}
+					/>
+				);
+			})}
 			{Redirects.map((brand) => {
 				return brand.links.map((path) => {
 					if (path.from !== null && path.to !== null) {
@@ -45,9 +55,8 @@ export default function rootRoutes() {
 								}
 							/>
 						);
-					} else {
-						return null;
 					}
+					return null;
 				});
 			})}
 		</Routes>
