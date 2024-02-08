@@ -19,6 +19,9 @@ import {
 	Checkbox,
 	Grid,
 } from "@instructure/ui";
+import { useParams } from "react-router-dom";
+import { getStrings } from "variables/langs";
+import { strings } from "strings/footer";
 
 // Components
 import allowedElements from "variables/allowedElements";
@@ -27,21 +30,22 @@ import mdtoui from "components/mdtoui";
 
 // Page
 export default function MDUI() {
-	let md = markdownSample;
+	const s = getStrings(strings, useParams().language);
+	const md = markdownSample;
 
-	const [content, setContent] = useState("Loading...");
+	const [content, setContent] = useState(s.loading);
 
 	useEffect(() => {
 		fetch(md)
 			.then((response) => {
 				if (response.ok) return response.text();
-				else return Promise.reject("Didn't fetch text correctly");
+				return Promise.reject(s.fetch_fail);
 			})
 			.then((text) => {
 				setContent(text);
 			})
 			.catch((error) => console.error(error));
-	}, [md]);
+	}, [md, s.fetch_fail]);
 
 	return (
 		<View
