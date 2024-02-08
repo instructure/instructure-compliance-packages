@@ -24,7 +24,6 @@ function App() {
 			<style>{css}</style>
 			<InstUISettingsProvider theme={canvas}>
 				<View as="div" minHeight="100vh" position="relative">
-					<div>lang: {lang}</div>
 					<RenderTopNavBar l={lang} />
 					<HashRouter future={{ v7_startTransition: true }}>
 						<RootRoutes l={lang} />
