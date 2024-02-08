@@ -25,7 +25,7 @@ import mdtoui from "components/mdtoui";
 
 // Page
 export default function Markdown(props) {
-	let md = props.readme;
+	const md = props.readme;
 
 	const [content, setContent] = useState("");
 
@@ -33,7 +33,7 @@ export default function Markdown(props) {
 		fetch(md)
 			.then((response) => {
 				if (response.ok) return response.text();
-				else return Promise.reject("Didn't fetch text correctly");
+				return Promise.reject("Didn't fetch text correctly");
 			})
 			.then((text) => {
 				setContent(text);
