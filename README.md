@@ -15,7 +15,7 @@ Current packages include:
 - [Elevate Standards Alignment](https://inst.bid/elevate/standards-alignment/dl)
 - [LearnPlatform](https://inst.bid/learnplatform/dl)
 
-*Some language translated versions available, please see the relevant product family page (top navigaton).
+_*Some language translated versions available, please see the relevant product family page (top navigaton)._
 
 For a comprehensive look at our Security, Privacy and Compliance Programs, please see the [Instructure Trust Center](https://www.instructure.com/trust-center).
 
@@ -39,10 +39,10 @@ Los paquetes actuales incluyen:
 - [Elevar la alineación de estándares](https://inst.bid/elevate/standards-alignment/dl)
 - [Plataforma de aprendizaje](https://inst.bid/learnplatform/dl)
 
-*Algunas versiones traducidas a idiomas están disponibles; consulte la página de la familia de productos correspondiente (navegación superior).
+_*Algunas versiones traducidas a idiomas están disponibles; consulte la página de la familia de productos correspondiente (navegación superior)._
 
-Para obtener una visión completa de nuestros programas de seguridad, privacidad y cumplimiento, consulte el [Centro de confianza de Instructure] (https://www.instructure.com/trust-center).
+Para obtener una visión completa de nuestros programas de seguridad, privacidad y cumplimiento, consulte el [Centro de confianza de Instructure](https://www.instructure.com/trust-center).
 
-El contenido de los paquetes de cumplimiento es información pública. Está disponible para clientes actuales y potenciales y no requiere un acuerdo de confidencialidad (NDA). Nuestros informes SOC 2 (que requieren un acuerdo de NDA) se pueden solicitar a través de su CSM o mediante este [formulario de contacto] (https://www.instructure.com/contact-us).
+El contenido de los paquetes de cumplimiento es información pública. Está disponible para clientes actuales y potenciales y no requiere un acuerdo de confidencialidad (NDA). Nuestros informes SOC 2 (que requieren un acuerdo de NDA) se pueden solicitar a través de su CSM o mediante este [formulario de contacto](https://www.instructure.com/contact-us).
 
 </div>
