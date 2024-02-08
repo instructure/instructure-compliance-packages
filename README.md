@@ -1,5 +1,6 @@
 <div class="lang EN">
 # Instructure Compliance Packages
+  
 The Instructure Compliance Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) as a company, and each of our [products](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). These packages address the majority of questions we receive from both current and prospective customers.
 
 Current packages include:
@@ -21,6 +22,7 @@ The content in the compliance packages is public information. It is available fo
 </div>
 <div class="lang ES_LA">
 # Paquetes de cumplimiento de infraestructura
+
 Los paquetes de cumplimiento de Instructure son una colección de documentos, cuestionarios y certificaciones estándar de la industria que cubren Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) como empresa. y cada uno de nuestros [productos](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). Estos paquetes abordan la mayoría de las preguntas que recibimos de clientes actuales y potenciales.
 
 Los paquetes actuales incluyen:
