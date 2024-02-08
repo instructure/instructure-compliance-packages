@@ -15,7 +15,7 @@ Current packages include:
 - [Elevate Standards Alignment](https://inst.bid/elevate/standards-alignment/dl)
 - [LearnPlatform](https://inst.bid/learnplatform/dl)
 
-_*Some language translated versions available, please see the relevant product family page (top navigaton)._
+_*Some language translated versions available, please see the relevant product family page (top navigation)._
 
 For a comprehensive look at our Security, Privacy and Compliance Programs, please see the [Instructure Trust Center](https://www.instructure.com/trust-center).
 
