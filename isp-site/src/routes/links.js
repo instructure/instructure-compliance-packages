@@ -164,20 +164,7 @@ export default function Links() {
 		>
 			<View as="div" margin="none none x-large">
 				<Heading level="h1">{s.header}</Heading>
-				<Text>{s.description}</Text>
-				<br />
-				<br />
-				<div id="content">
-					<div lang="EN" class="lang EN">
-						This is english
-					</div>
-					<br />
-					<div lang="ES_LA" class="lang ES_LA">
-						This is spanish
-					</div>
-				</div>
-				<br />
-				<br />
+				<Text as="p">{s.description}</Text>
 				<Button onClick={handleToggleChange}>{toggle.text}</Button>
 				<ToggleDetails
 					id="toggleFilters"
