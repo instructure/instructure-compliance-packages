@@ -72,7 +72,7 @@ O conteúdo dos pacotes de conformidade é informação pública. Está disponí
 </div>
 <div class="lang DE">
 
-# Compliance-Pakete strukturieren
+# Compliance-Pakete Instructure
 
 Die Instructure Compliance Packages sind eine Sammlung branchenüblicher Dokumente, Fragebögen und Zertifizierungen, die Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) als Unternehmen abdecken , und jedes unserer [Produkte](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). Diese Pakete beantworten die meisten Fragen, die wir von aktuellen und potenziellen Kunden erhalten.
 
