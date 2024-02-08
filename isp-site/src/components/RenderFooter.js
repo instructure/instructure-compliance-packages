@@ -1,8 +1,11 @@
 // Modules
 import { View, Link, Text, IconHeartLine } from "@instructure/ui";
+import { getStrings } from "variables/langs";
+import { strings } from "strings/footer";
 
 // Component
-function RenderFooter() {
+function RenderFooter(props) {
+	const s = getStrings(strings, props.l);
 	return (
 		<View
 			id="footer"
@@ -21,7 +24,8 @@ function RenderFooter() {
 				color="primary-inverse"
 				size="small"
 			>
-				Made with <IconHeartLine color="primary-inverse" title="Love" /> by{" "}
+				{s.made_with} <IconHeartLine color="primary-inverse" title={s.love} />{" "}
+				{s.by}{" "}
 				<Link color="link-inverse" href="https://www.instructure.com">
 					Instructure
 				</Link>
