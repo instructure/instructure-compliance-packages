@@ -7,7 +7,7 @@ LearnPlatform is a proven K-12 SaaS solution that empowers state and local educa
 [LearnPlatform Compliance Package](https://inst.bid/learnplatform/dl)
 
 </div>
-<div class="lang ES">
+<div class="lang ES_LA">
 
 # LearnPlatform
 
@@ -18,7 +18,7 @@ LearnPlatform es una solución SaaS K-12 comprobada que permite a las agencias e
 _*Esta versión sólo está disponible en inglés._
 
 </div>
-<div class="lang PT">
+<div class="lang PT_BR">
 
 # LearnPlatform
 
