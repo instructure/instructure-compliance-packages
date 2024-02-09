@@ -69,6 +69,12 @@ routes.push({
 routes.push({
 	path: "*",
 	element: <ErrorPage />,
+	children: [
+		{
+			path: ":language",
+			element: <ErrorPage />,
+		},
+	],
 });
 
 /*{
