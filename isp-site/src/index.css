@@ -146,3 +146,13 @@ pre {
 .markdown h2 {
   margin-top: 3rem !important;
 }
+
+/* Language styles */
+
+#language .lang,
+#language .lang:hover,
+#language .lang:focus #language .lang:active {
+  color: inherit;
+  display: block;
+  text-decoration: inherit;
+}

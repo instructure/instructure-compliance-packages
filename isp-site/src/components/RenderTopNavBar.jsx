@@ -7,18 +7,20 @@ import {
 	IconQuestionLine,
 	Heading,
 	Link,
-	IconSettingsLine,
+	IconDiscussionLine,
+	Drilldown
 } from "@instructure/ui";
 
 import "components/toggle";
 import { ParentBrands } from "variables/brands";
-import { getStrings } from "variables/langs";
+import { getStrings, globalLangDetails } from "variables/langs";
 import { strings } from "strings/header";
 import { Link as Anchor } from "react-router-dom";
 
 // Component
 function RenderTopNavBar({ lang }) {
-	const s = getStrings(strings, lang);
+	const l = lang
+	const s = getStrings(strings, l);
 	const Brands = [...ParentBrands];
 	Brands.shift();
 
@@ -52,7 +54,7 @@ function RenderTopNavBar({ lang }) {
 								}
 								iconBackground="#287A9F"
 								href={`#/${
-									lang === "EN" ? "" : lang.toLowerCase().split("_")[0]
+									l === "EN" ? "" : l.toLowerCase().split("_")[0]
 								}`}
 							/>
 						}
@@ -68,10 +70,11 @@ function RenderTopNavBar({ lang }) {
 									<TopNavBar.Item
 										id={brand.title}
 										key={brand.title}
+										children={brand.brandName}
 										href={`#${brand.route}${
-											lang === "EN"
+											l === "EN"
 												? ""
-												: `/${lang.toLowerCase().split("_")[0]}`
+												: `/${l.toLowerCase().split("_")[0]}`
 										}`}
 										themeOverride={{ activeIndicatorColor: brand.color }}
 									>
@@ -89,10 +92,9 @@ function RenderTopNavBar({ lang }) {
 							>
 								<TopNavBar.Item
 									id="langSwitcher"
-									variant="icon"
-									showSubmenuChevron={false}
+									showSubmenuChevron={true}
 									tooltip={s.language}
-									renderIcon={<IconSettingsLine />}
+									renderIcon={<IconDiscussionLine />}
 									customPopoverConfig={{
 										on: "click",
 										placement: "bottom end",
@@ -101,33 +103,35 @@ function RenderTopNavBar({ lang }) {
 											<View
 												id="language"
 												as="div"
-												padding="small"
-												width="auto"
-												role="dialog"
+												width="10rem"
+												role="menu"
 												tabIndex={0}
-												aria-label={s.language}
+												aria-label={s.contact_info}
 												position="relative"
 												borderRadius="small"
 											>
-												<Text as="p">
-													<Anchor to={"./"}>English</Anchor>
-												</Text>
-												<Text as="p">
-													<Anchor to={"./es"}>Español</Anchor>
-												</Text>
-												<Text as="p">
-													<Anchor to={"./pt"}>Português</Anchor>
-												</Text>
-												<Text as="p">
-													<Anchor to={"./de"}>Deutsch</Anchor>
-												</Text>
+											<Drilldown rootPageId="root">
+											<Drilldown.Page id="root">
+											{globalLangDetails.map((language) => (
+												<Drilldown.Option
+													id={language.lang}
+													key={language.code}
+													disabled={language.code === l ? true : false}
+												>
+													{language.code === l
+													? language.local										
+													: <Anchor class="lang" to={`./${language.code.toLowerCase().split("_")[0]}`}>{language.local}</Anchor>
+													}
+												</Drilldown.Option>
+											))}
+											</Drilldown.Page>
+											</Drilldown>
 											</View>
 										),
 									}}
-								/>
+								>{s.language}</TopNavBar.Item>
 								<TopNavBar.Item
-									id="itemPopoverExample"
-									variant="icon"
+									id="info"
 									showSubmenuChevron={false}
 									tooltip={s.help}
 									renderIcon={<IconQuestionLine />}
