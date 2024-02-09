@@ -1,6 +1,6 @@
 export const strings = {
 	made_with: {
-		EN: "Made with extra ",
+		EN: "Made with",
 		ES_LA: "Hecho con",
 		PT_BR: "Feito com",
 		DE: "Mit",
