@@ -45,11 +45,15 @@ _The World's #1 Teaching and Learning Software_
 
 </details>
 
+_*Some language translated versions available._
+
 ## Canvas Credentials
 
 _The All-In-One Digital Badging For Higher Education_
 
 💾 [Download](https://inst.bid/canvas/credentials/dl)
+
+_*Some language translated versions available._
 
 ## Canvas Studio
 
