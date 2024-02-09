@@ -8,7 +8,7 @@ import {
 	Heading,
 	Link,
 	IconDiscussionLine,
-	Drilldown
+	Drilldown,
 } from "@instructure/ui";
 
 import "components/toggle";
@@ -19,7 +19,7 @@ import { Link as Anchor } from "react-router-dom";
 
 // Component
 function RenderTopNavBar({ lang }) {
-	const l = lang
+	const l = lang;
 	const s = getStrings(strings, l);
 	const Brands = [...ParentBrands];
 	Brands.shift();
@@ -53,9 +53,7 @@ function RenderTopNavBar({ lang }) {
 									/>
 								}
 								iconBackground="#287A9F"
-								href={`#/${
-									l === "EN" ? "" : l.toLowerCase().split("_")[0]
-								}`}
+								href={`#/${l === "EN" ? "" : l.toLowerCase().split("_")[0]}`}
 							/>
 						}
 						renderMenuItems={
@@ -72,9 +70,7 @@ function RenderTopNavBar({ lang }) {
 										key={brand.title}
 										children={brand.brandName}
 										href={`#${brand.route}${
-											l === "EN"
-												? ""
-												: `/${l.toLowerCase().split("_")[0]}`
+											l === "EN" ? "" : `/${l.toLowerCase().split("_")[0]}`
 										}`}
 										themeOverride={{ activeIndicatorColor: brand.color }}
 									>
@@ -95,41 +91,35 @@ function RenderTopNavBar({ lang }) {
 									showSubmenuChevron={true}
 									tooltip={s.language}
 									renderIcon={<IconDiscussionLine />}
-									customPopoverConfig={{
-										on: "click",
-										placement: "bottom end",
-										shouldContainFocus: true,
-										children: (
-											<View
-												id="language"
-												as="div"
-												width="10rem"
-												role="menu"
-												tabIndex={0}
-												aria-label={s.contact_info}
-												position="relative"
-												borderRadius="small"
-											>
-											<Drilldown rootPageId="root">
-											<Drilldown.Page id="root">
-											{globalLangDetails.map((language) => (
-												<Drilldown.Option
-													id={language.lang}
-													key={language.code}
-													disabled={language.code === l ? true : false}
-												>
-													{language.code === l
-													? language.local										
-													: <Anchor class="lang" to={`./${language.code.toLowerCase().split("_")[0]}`}>{language.local}</Anchor>
-													}
-												</Drilldown.Option>
-											))}
+									renderSubmenu={
+										<Drilldown id="language" rootPageId="language">
+											<Drilldown.Page id="language">
+												{globalLangDetails.map((language) => (
+													<Drilldown.Option
+														id={language.lang}
+														key={language.code}
+														disabled={language.code === l ? true : false}
+													>
+														{language.code === l ? (
+															language.local
+														) : (
+															<Anchor
+																class="lang"
+																to={`./${
+																	language.code.toLowerCase().split("_")[0]
+																}`}
+															>
+																{language.local}
+															</Anchor>
+														)}
+													</Drilldown.Option>
+												))}
 											</Drilldown.Page>
-											</Drilldown>
-											</View>
-										),
-									}}
-								>{s.language}</TopNavBar.Item>
+										</Drilldown>
+									}
+								>
+									{s.language}
+								</TopNavBar.Item>
 								<TopNavBar.Item
 									id="info"
 									showSubmenuChevron={false}

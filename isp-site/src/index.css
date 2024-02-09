@@ -156,3 +156,17 @@ pre {
   display: block;
   text-decoration: inherit;
 }
+
+#language [id$="__label"] {
+  padding: 0.5rem 1rem;
+}
+
+#language [role="menuitem"] {
+  padding: 0;
+}
+
+#language,
+[class$="view-drilldown__container"] {
+  width: 10rem;
+  min-width: 10rem !important;
+}
