@@ -1,11 +1,12 @@
 // Modules
 import { View, Link, Text, IconHeartLine } from "@instructure/ui";
-import { getStrings } from "variables/langs";
-import { strings } from "strings/footer";
+import { getStrings } from "utils/langs";
+import strings from "strings/footer";
 
 // Component
-function RenderFooter({ lang }) {
-	const s = getStrings(strings, lang);
+function RenderFooter({ language }) {
+	const l = language;
+	const s = getStrings(strings, l);
 	return (
 		<View
 			id="footer"

@@ -52,7 +52,7 @@ export default function MDUI() {
 
 	return (
 		<>
-			<RenderTopNavBar lang={l} />
+			<RenderTopNavBar language={l} />
 			<View
 				id="main"
 				as="div"
@@ -74,7 +74,7 @@ export default function MDUI() {
 						</Grid.Col>
 						<Grid.Col>
 							<SourceCodeEditor
-								label="Markdown Source"
+								label={`${s.markdown_source}`}
 								language="markdown"
 								readOnly={true}
 								editable={true}
@@ -92,7 +92,7 @@ export default function MDUI() {
 					</Grid.Row>
 				</Grid>
 			</View>
-			<RenderFooter lang={l} />
+			<RenderFooter language={l} />
 		</>
 	);
 }

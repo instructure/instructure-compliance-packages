@@ -17,6 +17,7 @@ import {
 	Img,
 	Table,
 	Checkbox,
+	IconCloudDownloadLine,
 } from "@instructure/ui";
 import RenderTopNavBar from "components/RenderTopNavBar";
 import RenderFooter from "components/RenderFooter";
@@ -25,21 +26,23 @@ import RenderFooter from "components/RenderFooter";
 import allowedElements from "variables/allowedElements";
 import mdtoui from "components/mdtoui";
 import { useParams } from "react-router-dom";
-import { getLang } from "variables/langs";
+import strings from "strings/markdown";
+import { getStrings, getLang } from "utils/langs";
 
 // Page
 export default function Markdown({ readme }) {
 	const l = getLang(useParams().language);
+	const s = getStrings(strings, l);
 	const css = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
 	const md = readme;
 
-	const [content, setContent] = useState("");
+	const [content, setContent] = useState(`${s.loading}`);
 
 	useEffect(() => {
 		fetch(md)
 			.then((response) => {
 				if (response.ok) return response.text();
-				return Promise.reject("Didn't fetch text correctly");
+				return Promise.reject(s.fetch_fail);
 			})
 			.then((text) => {
 				setContent(text);
@@ -49,7 +52,7 @@ export default function Markdown({ readme }) {
 
 	return (
 		<>
-			<RenderTopNavBar lang={l} />
+			<RenderTopNavBar language={l} />
 			<View
 				id="main"
 				as="div"
@@ -69,7 +72,7 @@ export default function Markdown({ readme }) {
 					/>
 				</div>
 			</View>
-			<RenderFooter lang={l} />
+			<RenderFooter language={l} />
 		</>
 	);
 }

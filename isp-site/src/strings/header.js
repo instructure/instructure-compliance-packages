@@ -1,4 +1,4 @@
-export const strings = {
+const strings = {
 	language: {
 		EN: "Language",
 		ES_LA: "Idioma",
@@ -90,3 +90,4 @@ export const strings = {
 		DE: "Für allgemeine Anfragen senden Sie eine E-Mail an",
 	},
 };
+export default strings;

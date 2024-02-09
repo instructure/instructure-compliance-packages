@@ -11,15 +11,16 @@ import {
 	Drilldown,
 } from "@instructure/ui";
 
-import "components/toggle";
+import "utils/toggle";
 import { ParentBrands } from "variables/brands";
-import { getStrings, globalLangDetails } from "variables/langs";
-import { strings } from "strings/header";
+import { globalLangDetails } from "variables/langs";
+import strings from "strings/header";
+import { getStrings } from "utils/langs";
 import { Link as Anchor } from "react-router-dom";
 
 // Component
-function RenderTopNavBar({ lang }) {
-	const l = lang;
+function RenderTopNavBar({ language }) {
+	const l = language;
 	const s = getStrings(strings, l);
 	const Brands = [...ParentBrands];
 	Brands.shift();
@@ -104,7 +105,7 @@ function RenderTopNavBar({ lang }) {
 															language.local
 														) : (
 															<Anchor
-																class="lang"
+																className="lang"
 																to={`./${
 																	language.code.toLowerCase().split("_")[0]
 																}`}

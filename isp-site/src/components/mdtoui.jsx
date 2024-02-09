@@ -14,6 +14,8 @@ import {
 	Button,
 	ToggleDetails,
 } from "@instructure/ui";
+import { useParams } from "react-router-dom";
+import { getStrings, getLang } from "utils/langs";
 
 const filterChildrenProps = (props) => {
 	const filteredChildren = props.children.filter(
@@ -76,7 +78,7 @@ const mdtoui = {
 			}
 			return (
 				<SourceCodeEditor
-					label="editable code editor"
+					label={props.title}
 					lineNumbers={true}
 					foldGutter={true}
 					editable={true}
@@ -84,19 +86,18 @@ const mdtoui = {
 					defaultValue={preContent}
 				/>
 			);
-		} else {
-			return <View as={node.tagName} {...props} />;
 		}
+		return <View as={node.tagName} {...props} />;
 	},
 	ul: ({ node, ...props }) => {
 		props = { ...props, children: filterChildrenProps(props) };
-		var { children, ...ulProps } = props;
-		var tasklist = props.className === "contains-task-list";
+		const { children, ...ulProps } = props;
+		const tasklist = props.className === "contains-task-list";
 		return (
 			<List isUnstyled={tasklist ? true : false} {...ulProps}>
 				{children.map((node, i) => {
 					if (tasklist) {
-						var { children, ...liProps } = node.props;
+						const { children, ...liProps } = node.props;
 						children.shift();
 						const check = liProps.checked ? true : false;
 						return (
@@ -108,16 +109,15 @@ const mdtoui = {
 								/>
 							</List.Item>
 						);
-					} else {
-						return <List.Item key={i} {...node.props} />;
 					}
+					return <List.Item key={i} {...node.props} />;
 				})}
 			</List>
 		);
 	},
 	ol: ({ node, ...props }) => {
 		props = { ...props, children: filterChildrenProps(props) };
-		var { children, ...fProps } = props;
+		const { children, ...fProps } = props;
 		return (
 			<List as={node.tagName} {...fProps}>
 				{children.map((node, i) => {
@@ -143,16 +143,16 @@ const mdtoui = {
 		);
 	},
 	table: ({ node, ...props }) => {
-		var { children, ...tableProps } = props;
+		const { children, ...tableProps } = props;
 		return (
 			<Table margin="medium none" hover={true} caption="" {...tableProps}>
 				{children.map((node, i) => {
-					var { children, ...thbProps } = node.props;
+					const { children, ...thbProps } = node.props;
 					if (node.type === "thead") {
 						return (
 							<Table.Head key={i} {...thbProps}>
 								{children.map((node, i) => {
-									var { children, ...trProps } = node.props;
+									const { children, ...trProps } = node.props;
 									return (
 										<Table.Row key={i} {...trProps}>
 											{children.map((node, i) => {
@@ -169,44 +169,39 @@ const mdtoui = {
 								})}
 							</Table.Head>
 						);
-					} else {
-						return (
-							<Table.Body key={i} {...thbProps}>
-								{children.map((node, i) => {
-									var { children, ...trProps } = node.props;
-									return (
-										<Table.Row key={i} {...trProps}>
-											{children.map((node, i) => {
-												if (node.props.hasOwnProperty("style")) {
-													var align = "start";
-													switch (node.props.style.textAlign) {
-														case "left":
-															align = "start";
-															break;
-														case "center":
-															align = "center";
-															break;
-														case "right":
-															align = "end";
-															break;
-														default:
-															align = "start";
-													}
-												}
-												return (
-													<Table.Cell
-														textAlign={align}
-														key={i}
-														{...node.props}
-													/>
-												);
-											})}
-										</Table.Row>
-									);
-								})}
-							</Table.Body>
-						);
 					}
+					return (
+						<Table.Body key={i} {...thbProps}>
+							{children.map((node, i) => {
+								const { children, ...trProps } = node.props;
+								return (
+									<Table.Row key={i} {...trProps}>
+										{children.map((node, i) => {
+											if (Object.hasOwn(node.props, "style")) {
+												var align = "start";
+												switch (node.props.style.textAlign) {
+													case "left":
+														align = "start";
+														break;
+													case "center":
+														align = "center";
+														break;
+													case "right":
+														align = "end";
+														break;
+													default:
+														align = "start";
+												}
+											}
+											return (
+												<Table.Cell textAlign={align} key={i} {...node.props} />
+											);
+										})}
+									</Table.Row>
+								);
+							})}
+						</Table.Body>
+					);
 				})}
 			</Table>
 		);

@@ -1,4 +1,4 @@
-export const strings = {
+const strings = {
 	made_with: {
 		EN: "Made with",
 		ES_LA: "Hecho con",
@@ -18,3 +18,4 @@ export const strings = {
 		DE: "gemacht von",
 	},
 };
+export default strings;

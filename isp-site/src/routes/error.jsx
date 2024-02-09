@@ -1,8 +1,8 @@
 // Modules
 import { useParams, useRouteError } from "react-router-dom";
 import { View, Billboard, Text, Link } from "@instructure/ui";
-import { strings } from "strings/error";
-import { getLang, getStrings } from "variables/langs";
+import strings from "strings/error";
+import { getLang, getStrings } from "utils/langs";
 import RenderTopNavBar from "components/RenderTopNavBar";
 import RenderFooter from "components/RenderFooter";
 
@@ -13,15 +13,15 @@ export default function ErrorPage() {
 	const err = useRouteError();
 	console.error(err);
 	let msg = s.not_your_fault;
-	if(err) {
+	if (err) {
 		msg = `
 			${err.status ? `${err.status} ${err.statusText}<br/>` : ""}
 			${err.message ? err.message : s.not_your_fault}
-		`
+		`;
 	}
 	return (
 		<>
-			<RenderTopNavBar lang={l} />
+			<RenderTopNavBar language={l} />
 			<View
 				id="main"
 				as="div"
@@ -46,7 +46,7 @@ export default function ErrorPage() {
 					}
 				/>
 			</View>
-			<RenderFooter lang={l} />
+			<RenderFooter language={l} />
 		</>
 	);
 }

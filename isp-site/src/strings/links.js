@@ -1,4 +1,4 @@
-export const strings = {
+const strings = {
 	header: {
 		EN: "Redirect Links",
 		ES_LA: "Enlaces de Redirección",
@@ -86,3 +86,4 @@ export const strings = {
 		DE: "Kopieren Sie die URL in die Zwischenablage",
 	},
 };
+export default strings;

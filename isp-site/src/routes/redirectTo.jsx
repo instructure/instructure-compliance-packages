@@ -2,8 +2,8 @@
 import { Text, View, Link, Billboard } from "@instructure/ui";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getStrings, getLang } from "variables/langs";
-import { strings } from "strings/redirectTo";
+import { getStrings, getLang } from "utils/langs";
+import strings from "strings/redirectTo";
 import RenderFooter from "components/RenderFooter";
 import RenderTopNavBar from "components/RenderTopNavBar";
 
@@ -46,7 +46,7 @@ export default function RedirectTo({ path, brand, url }) {
 
 	return (
 		<>
-			<RenderTopNavBar lang={l} />
+			<RenderTopNavBar language={l} />
 			<View
 				id="main"
 				as="div"
@@ -62,7 +62,7 @@ export default function RedirectTo({ path, brand, url }) {
 					message={billboardText}
 				/>
 			</View>
-			<RenderFooter lang={l} />
+			<RenderFooter language={l} />
 		</>
 	);
 }

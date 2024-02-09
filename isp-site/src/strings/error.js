@@ -1,4 +1,4 @@
-export const strings = {
+const strings = {
 	awkward: {
 		EN: "Well, this is awkward.",
 		ES_LA: "Esto es incómodo.",
@@ -26,3 +26,4 @@ export const strings = {
 		DE: "Klasse entlassen",
 	},
 };
+export default strings;

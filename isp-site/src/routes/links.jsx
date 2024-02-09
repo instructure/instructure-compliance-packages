@@ -24,13 +24,9 @@ import {
 import RenderTopNavBar from "components/RenderTopNavBar";
 import RenderFooter from "components/RenderFooter";
 import { globalBrands, globalSubBrands } from "variables/brands";
-import {
-	globalLangs,
-	globalLangDetails,
-	getLang,
-	getStrings,
-} from "variables/langs";
-import { strings } from "strings/links";
+import { globalLangs, globalLangDetails } from "variables/langs";
+import { getLang, getStrings } from "utils/langs";
+import strings from "strings/links";
 import Redirects from "variables/redirects";
 
 // Page
@@ -156,7 +152,7 @@ export default function Links() {
 
 	return (
 		<>
-			<RenderTopNavBar lang={l} />
+			<RenderTopNavBar language={l} />
 			<View
 				id="main"
 				as="div"
@@ -296,7 +292,7 @@ export default function Links() {
 					return null;
 				})}
 			</View>
-			<RenderFooter lang={l} />
+			<RenderFooter language={l} />
 		</>
 	);
 }

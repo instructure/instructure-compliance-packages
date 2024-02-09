@@ -1,4 +1,4 @@
-export const strings = {
+const strings = {
 	downloading: {
 		EN: "Downloading",
 		ES_LA: "Descargando",
@@ -48,3 +48,4 @@ export const strings = {
 		DE: "Weiterleitung zu",
 	},
 };
+export default strings;
