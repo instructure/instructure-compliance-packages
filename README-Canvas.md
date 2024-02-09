@@ -82,13 +82,13 @@ _El software de enseñanza y aprendizaje número uno del mundo_
 
 ## Canvas Credentials
 
-_The All-In-One Digital Badging For Higher Education_
+_La credencial digital todo en uno para la educación superior_
 
 💾 [Descargar](https://inst.bid/es-la/canvas/credentials/dl/es)
 
 ## Canvas Studio
 
-_La credencial digital todo en uno para la educación superior._
+_La plataforma educativa en vídeo de próxima generación para la enseñanza y el aprendizaje en educación superior._
 
 💾 [Descargar*](https://inst.bid/canvas/studio/dl/es)
 
