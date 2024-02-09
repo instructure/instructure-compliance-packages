@@ -7,11 +7,18 @@ import {
 	IconQuestionLine,
 	Heading,
 	Link,
+	IconSettingsLine,
 } from "@instructure/ui";
+
+import "components/toggle";
 import { ParentBrands } from "variables/brands";
+import { getStrings } from "variables/langs";
+import { strings } from "strings/header";
+import { Link as Anchor } from "react-router-dom";
 
 // Component
-function RenderTopNavBar(props) {
+function RenderTopNavBar({ lang }) {
+	const s = getStrings(strings, lang);
 	const Brands = [...ParentBrands];
 	Brands.shift();
 
@@ -25,8 +32,8 @@ function RenderTopNavBar(props) {
 							hideActionsUserSeparator: false,
 						}}
 						smallViewportConfig={{
-							dropdownMenuToggleButtonLabel: "Toggle Menu",
-							dropdownMenuLabel: "Main Menu",
+							dropdownMenuToggleButtonLabel: s.toggle_menu,
+							dropdownMenuLabel: s.main_menu,
 						}}
 						themeOverride={{
 							desktopBackground: "#287A9F",
@@ -44,22 +51,28 @@ function RenderTopNavBar(props) {
 									/>
 								}
 								iconBackground="#287A9F"
-								href="#/"
+								href={`#/${
+									lang === "EN" ? "" : lang.toLowerCase().split("_")[0]
+								}`}
 							/>
 						}
 						renderMenuItems={
 							<TopNavBar.MenuItems
-								listLabel="Page navigation"
+								listLabel={s.page_navigation}
 								currentPageId=""
 								renderHiddenItemsMenuTriggerLabel={(hiddenChildrenCount) =>
-									`${hiddenChildrenCount} More`
+									`${hiddenChildrenCount} ${s.more}`
 								}
 							>
 								{Brands.map((brand) => (
 									<TopNavBar.Item
 										id={brand.title}
 										key={brand.title}
-										href={`#${brand.route}`}
+										href={`#${brand.route}${
+											lang === "EN"
+												? ""
+												: `/${lang.toLowerCase().split("_")[0]}`
+										}`}
 										themeOverride={{ activeIndicatorColor: brand.color }}
 									>
 										{brand.brandName}
@@ -69,16 +82,54 @@ function RenderTopNavBar(props) {
 						}
 						renderActionItems={
 							<TopNavBar.ActionItems
-								listLabel="Actions"
+								listLabel={s.actions}
 								renderHiddenItemsMenuTriggerLabel={(hiddenChildrenCount) =>
-									`${hiddenChildrenCount} more actions`
+									`${hiddenChildrenCount} ${s.more_actions}`
 								}
 							>
+								<TopNavBar.Item
+									id="langSwitcher"
+									variant="icon"
+									showSubmenuChevron={false}
+									tooltip={s.language}
+									renderIcon={<IconSettingsLine />}
+									customPopoverConfig={{
+										on: "click",
+										placement: "bottom end",
+										shouldContainFocus: true,
+										children: (
+											<View
+												id="language"
+												as="div"
+												padding="small"
+												width="auto"
+												role="dialog"
+												tabIndex={0}
+												aria-label={s.language}
+												position="relative"
+												borderRadius="small"
+											>
+												<Text as="p">
+													<Anchor to={"./"}>English</Anchor>
+												</Text>
+												<Text as="p">
+													<Anchor to={"./es"}>Español</Anchor>
+												</Text>
+												<Text as="p">
+													<Anchor to={"./pt"}>Português</Anchor>
+												</Text>
+												<Text as="p">
+													<Anchor to={"./de"}>Deutsch</Anchor>
+												</Text>
+											</View>
+										),
+									}}
+								/>
 								<TopNavBar.Item
 									id="itemPopoverExample"
 									variant="icon"
 									showSubmenuChevron={false}
-									tooltip="Help"
+									tooltip={s.help}
 									renderIcon={<IconQuestionLine />}
 									customPopoverConfig={{
 										on: "click",
@@ -92,30 +143,27 @@ function RenderTopNavBar(props) {
 												width="25rem"
 												role="dialog"
 												tabIndex={0}
-												aria-label="Contact information"
+												aria-label={s.contact_info}
 												position="relative"
 												borderRadius="small"
 											>
-												<Heading level="h3">Contact information</Heading>
-												<Text>
-													This site and its contents are maintained by
-													Instructure, inc.
-												</Text>
-												<hr aria-hidden="true" />
+												<Heading level="h3">{s.contact_info}</Heading>
+												<Text>{s.info_overview}</Text>
+												<hr />
 
 												<View as="div" margin="medium 0 0">
-													<Text weight="bold">Current customers</Text>
+													<Text weight="bold">{s.current_customers}</Text>
 													<br />
-													<Text>Reach out to your designated CSM.</Text>
+													<Text>{s.contact_csm}</Text>
 												</View>
 
 												<View as="div" margin="medium 0 0">
-													<Text weight="bold">Prospective customers</Text>
+													<Text weight="bold">{s.prospects}</Text>
 													<br />
-													<Text>Reach out to your sales contact.</Text>
+													<Text>{s.contact_sales}</Text>
 													<br />
 													<Text>
-														For general inquiries email{" "}
+														{s.contact_general}{" "}
 														<Link href="mailto:info@instructure.com">
 															info@instructure.com
 														</Link>
@@ -125,7 +173,7 @@ function RenderTopNavBar(props) {
 										),
 									}}
 								>
-									Help
+									{s.help}
 								</TopNavBar.Item>
 							</TopNavBar.ActionItems>
 						}

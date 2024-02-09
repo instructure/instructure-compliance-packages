@@ -74,6 +74,12 @@ export const strings = {
 		DE: "Link",
 	},
 	copy: {
+		EN: "Copy",
+		ES_LA: "Copiar",
+		PT_BR: "Copiar",
+		DE: "Kopieren",
+	},
+	copy_url: {
 		EN: "Copy URL to clipboard",
 		ES_LA: "Copiar URL al portapapeles",
 		PT_BR: "Copiar URL para a área de transferência",

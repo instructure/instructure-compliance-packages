@@ -4,8 +4,8 @@ import { getStrings } from "variables/langs";
 import { strings } from "strings/footer";
 
 // Component
-function RenderFooter(props) {
-	const s = getStrings(strings, props.l);
+function RenderFooter({ lang }) {
+	const s = getStrings(strings, lang);
 	return (
 		<View
 			id="footer"

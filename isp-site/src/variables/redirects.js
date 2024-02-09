@@ -33,6 +33,18 @@ const Links = [
 				lang: "ES_LA",
 			},
 			{
+				title: "Pagina inicial",
+				from: "/pt-br/home",
+				to: "https://www.instructure.com/pt-br/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+				lang: "PT_BR",
+			},
+			{
+				title: "Startseite",
+				from: "/de/home",
+				to: "https://www.instructure.com/de?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+				lang: "DE",
+			},
+			{
 				title: "Roadmap",
 				from: "/roadmap",
 				to: "https://community.canvaslms.com/t5/Instructure-Roadmap/ct-p/instructure-roadmap/",
@@ -58,9 +70,15 @@ const Links = [
 			},
 			{
 				title: "Contato",
-				from: "/contato",
+				from: "/pt-br/contato",
 				to: "https://www.instructure.com/pt-br/contato/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
 				lang: "PT_BR",
+			},
+			{
+				title: "Kontakt",
+				from: "/kontakt",
+				to: "https://www.instructure.com/de/contact-us?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+				lang: "DE",
 			},
 			{
 				title: "Privacy",
@@ -76,7 +94,7 @@ const Links = [
 			},
 			{
 				title: "Privacidade",
-				from: "/privacidade",
+				from: "/pt-br/privacidade",
 				to: "https://www.instructure.com/pt-br/canvas/privacidade/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
 				lang: "PT_BR",
 			},
@@ -94,7 +112,7 @@ const Links = [
 			},
 			{
 				title: "Segurança",
-				from: "/seguranca",
+				from: "/pt-br/seguranca",
 				to: "https://www.instructure.com/pt-br/canvas/seguranca/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
 				lang: "PT_BR",
 			},
@@ -165,6 +183,18 @@ const Links = [
 				lang: "EN",
 			},
 			{
+				title: "Nuestra Historia",
+				from: "/es-la/historia",
+				to: "https://www.instructure.com/es/sobre/nuestra-historia",
+				lang: "ES_LA",
+			},
+			{
+				title: "Nossa História",
+				from: "/pt-br/historia",
+				to: "https://www.instructure.com/pt-br/sobre/nossa-historia",
+				lang: "PT_BR",
+			},
+			{
 				title: "Try Canvas (FFT)",
 				from: "/try-canvas",
 				to: "https://www.instructure.com/try-canvas",
@@ -207,9 +237,15 @@ const Links = [
 			},
 			{
 				title: "Comunidade",
-				from: "/canvas/comunidade",
+				from: "/pt-br/canvas/comunidade",
 				to: "https://community.canvaslms.com/t5/Recursos-em-Portugu%C3%AAs-Portuguese/ct-p/portuguese_resources",
 				lang: "PT_BR",
+			},
+			{
+				title: "Gemeinschaft",
+				from: "/de/canvas/gemeinschaft",
+				to: "https://community.canvaslms.com/t5/Ressourcen-auf-Deutsch-German/ct-p/german_resources",
+				lang: "DE",
 			},
 			{
 				title: "Roadmap",
@@ -265,6 +301,12 @@ const Links = [
 				lang: "PT_BR",
 			},
 			{
+				title: "Startseite",
+				from: "/de/canvas/lms",
+				to: "https://www.instructure.com/de/hochschule/produkt/canvas/canvas-lms/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
+				lang: "DE",
+			},
+			{
 				title: "Home (K12)",
 				from: "/canvas/lms/k12",
 				to: "https://www.instructure.com/k12/products/canvas/canvas-lms/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
@@ -302,9 +344,15 @@ const Links = [
 			},
 			{
 				title: "Guias",
-				from: "/canvas/guias/pt",
+				from: "/pt-br/canvas/guias",
 				to: "https://community.canvaslms.com/t5/Recursos-en-Espa%C3%B1ol-Spanish/ct-p/espanol_resources",
 				lang: "PT_BR",
+			},
+			{
+				title: "Handbücher",
+				from: "/de/canvas/handbuch",
+				to: "https://community.canvaslms.com/t5/Ressourcen-auf-Deutsch-German/ct-p/german_resources",
+				lang: "DE",
 			},
 			{
 				title: "Release Notes",
@@ -412,19 +460,19 @@ const Links = [
 		brand: "Canvas Credentials",
 		links: [
 			{
-				title: "Security Package (EN)",
+				title: "Security Package",
 				from: "/canvas/credentials/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials.zip",
 				lang: "EN",
 			},
 			{
-				title: "Security Package (ES-LA)",
+				title: "Security Package",
 				from: "/es-la/canvas/credentials/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials-ES_LA.zip",
 				lang: "ES_LA",
 			},
 			{
-				title: "Security Package (PT-BR)",
+				title: "Security Package",
 				from: "/pt-br/canvas/credentials/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials-PT_BR.zip",
 				lang: "PT_BR",
@@ -465,7 +513,7 @@ const Links = [
 		brand: "Canvas Catalog",
 		links: [
 			{
-				title: "Security Package (EN)",
+				title: "Security Package",
 				from: "/canvas/catalog/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-catalog.zip",
 				lang: "EN",
@@ -563,7 +611,7 @@ const Links = [
 		brand: "Mastery Connect",
 		links: [
 			{
-				title: "Security Package (EN)",
+				title: "Security Package",
 				from: "/mastery/connect/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/mastery-connect.zip",
 				lang: "EN",
@@ -661,7 +709,7 @@ const Links = [
 		brand: "Elevate K-12 Analytics",
 		links: [
 			{
-				title: "Security Package (EN)",
+				title: "Security Package",
 				from: "/elevate/k12-analytics/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/elevate-k12-analytics.zip",
 				lang: "EN",
@@ -718,19 +766,19 @@ const Links = [
 		brand: "Impact",
 		links: [
 			{
-				title: "Security Package (EN)",
+				title: "Security Package",
 				from: "/impact/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact.zip",
 				lang: "EN",
 			},
 			{
-				title: "Security Package (ES-LA)",
+				title: "Security Package",
 				from: "/es-la/impact/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact-ES_LA.zip",
 				lang: "ES_LA",
 			},
 			{
-				title: "Security Package (PT-BR)",
+				title: "Security Package",
 				from: "/pt-br/impact/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact-PT_BR.zip",
 				lang: "PT_BR",
@@ -777,7 +825,7 @@ const Links = [
 				lang: "EN",
 			},
 			{
-				title: "Security Package (EN)",
+				title: "Security Package",
 				from: "/learnplatform/dl",
 				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/learn-platform.zip",
 				lang: "EN",
