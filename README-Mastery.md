@@ -15,6 +15,8 @@ La familia de productos Mastery reúne herramientas de evaluación y contenido d
 
 [Paquete de cumplimiento de Mastery Connect*](https://inst.bid/mastery/connect/dl/es)
 
+_*Esta versión sólo está disponible en inglés._
+
 </div>
 <div class="lang PT">
 
@@ -24,6 +26,8 @@ A família de produtos Mastery reúne ferramentas de avaliação e conteúdo de 
 
 [Pacote de conformidade do Mastery Connect*](https://inst.bid/mastery/connect/dl/pt)
 
+_*Esta versão está disponível apenas em inglês._
+
 </div>
 <div class="lang DE">
 
@@ -32,5 +36,7 @@ A família de produtos Mastery reúne ferramentas de avaliação e conteúdo de 
 Die Mastery-Produktfamilie vereint Bewertungstools und hochwertige Inhalte, die Pädagogen benötigen, um Lernergebnisse zu erzielen. Eine durchdachte Beurteilung hat echte, positive Auswirkungen, und je besser Lehrer verstehen, wo sich die Schüler befinden, desto besser können sie ihnen zum Erfolg verhelfen.
 
 [Mastery Connect Compliance-Paket*](https://inst.bid/mastery/connect/dl/de)
+
+_*Diese Version ist nur auf Englisch verfügbar._
 
 </div>
