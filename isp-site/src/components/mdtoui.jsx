@@ -14,8 +14,6 @@ import {
 	Button,
 	ToggleDetails,
 } from "@instructure/ui";
-import { useParams } from "react-router-dom";
-import { getStrings, getLang } from "utils/langs";
 
 const filterChildrenProps = (props) => {
 	const filteredChildren = props.children.filter(
