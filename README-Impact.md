@@ -9,7 +9,7 @@ Impact by Instructure helps institutions improve technology adoption and evaluat
 *Some language translated versions available, please see the relevant product family page (top navigation).
 
 </div>
-<div class="lang ES">
+<div class="lang ES_LA">
 
 # Impact
 
@@ -18,7 +18,7 @@ Impact by Instructure ayuda a las instituciones a mejorar la adopción de tecnol
 [Paquete de cumplimiento de Impact](https://inst.bid/es-la/impact/dl/es) 
 
 </div>
-<div class="lang PT">
+<div class="lang PT_BR">
 
 # Impact
 
