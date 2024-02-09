@@ -7,7 +7,7 @@ The Mastery Product Family brings together assessment tools and quality content 
 [Mastery Connect Compliance Package](https://inst.bid/mastery/connect/dl)
 
 </div>
-<div class="lang ES">
+<div class="lang ES_LA">
 
 # Mastery
 
@@ -18,7 +18,7 @@ La familia de productos Mastery reúne herramientas de evaluación y contenido d
 _*Esta versión sólo está disponible en inglés._
 
 </div>
-<div class="lang PT">
+<div class="lang PT_BR">
 
 # Mastery
 
