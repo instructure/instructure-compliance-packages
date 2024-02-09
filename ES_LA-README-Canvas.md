@@ -1,1 +1,0 @@
-Canvas Readme (SPANISH) Test
