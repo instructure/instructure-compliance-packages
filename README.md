@@ -79,13 +79,13 @@ Die Instructure Compliance Packages sind eine Sammlung branchenüblicher Dokumen
 Aktuelle Pakete umfassen:
 - [Canvas LMS*](https://inst.bid/canvas/lms/dl/de)
 - [Canvas Studio*](https://inst.bid/canvas/studio/dl/de)
-- [Canvas Catalog](https://inst.bid/canvas/catalog/dl/de)
+- [Canvas Catalog*](https://inst.bid/canvas/catalog/dl/de)
 - [Canvas Credentials*](https://inst.bid/canvas/credentials/dl/de)
 - [Impact*](https://inst.bid/impact/dl/de)
 - [Mastery Connect*](https://inst.bid/mastery/connect/dl/de)
 - [Elevate K-12 Analytics*](https://inst.bid/elevate/k12-analytics/dl/de)
 - [Elevate Standards Alignment*](https://inst.bid/elevate/standards-alignment/dl/de)
-- [LearnPlatform](https://inst.bid/learnplatform/dl/de)
+- [LearnPlatform*](https://inst.bid/learnplatform/dl/de)
 
 _*Diese Version ist nur auf Englisch verfügbar._
 
