@@ -6,6 +6,8 @@ Impact by Instructure helps institutions improve technology adoption and evaluat
 
 [Impact Compliance Package](https://inst.bid/impact/dl)
 
+*Some language translated versions available, please see the relevant product family page (top navigation).
+
 </div>
 <div class="lang ES">
 
