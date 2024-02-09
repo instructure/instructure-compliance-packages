@@ -157,7 +157,8 @@ pre {
   text-decoration: inherit;
 }
 
-#language [id$="__label"] {
+#language [id$="__label"]:not(:has(a)),
+#language [id$="__label"] a {
   padding: 0.5rem 1rem;
 }
 
