@@ -99,7 +99,7 @@ function RenderTopNavBar({ language }) {
 													<Drilldown.Option
 														id={language.lang}
 														key={language.code}
-														disabled={language.code === l ? true : false}
+														disabled={language.code === l}
 													>
 														{language.code === l ? (
 															language.local
