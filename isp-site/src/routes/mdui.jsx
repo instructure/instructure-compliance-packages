@@ -20,8 +20,8 @@ import {
 	Grid,
 } from "@instructure/ui";
 import { useParams } from "react-router-dom";
-import { getStrings, getLang } from "variables/langs";
-import { strings } from "strings/mdui";
+import { getStrings, getLang } from "utils/langs";
+import strings from "strings/mdui";
 
 // Components
 import RenderTopNavBar from "components/RenderTopNavBar";

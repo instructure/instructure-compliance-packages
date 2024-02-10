@@ -16,10 +16,7 @@ import {
 } from "@instructure/ui";
 
 const filterChildrenProps = (props) => {
-	const filteredChildren = props.children.filter(
-		(child) => typeof child !== "string",
-	);
-	return filteredChildren;
+	return props.children.filter((child) => typeof child !== "string");
 };
 
 const mdtoui = {
@@ -33,9 +30,8 @@ const mdtoui = {
 	del: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
 	blockquote: ({ node, ...props }) => {
 		props = { ...props, children: filterChildrenProps(props) };
-		const quoteArr = props.children[0].props.children[0].split("--", 2);
-		const quote = quoteArr[0];
-		const author = quoteArr.length > 1 ? quoteArr[1] : false;
+		const [quote, author] =
+			props.children[0].props.children.split("--", 2) || false;
 		return (
 			<Byline description={quote} title={author} margin="medium 0" {...props}>
 				{author ? <Avatar name={author} /> : <></>}
@@ -76,7 +72,7 @@ const mdtoui = {
 			}
 			return (
 				<SourceCodeEditor
-					label={props.title}
+					label="Code"
 					lineNumbers={true}
 					foldGutter={true}
 					editable={true}
@@ -95,20 +91,23 @@ const mdtoui = {
 			<List isUnstyled={tasklist ? true : false} {...ulProps}>
 				{children.map((node, i) => {
 					if (tasklist) {
+						const label = [...node.props.children];
 						const { children, ...liProps } = node.props;
-						children.shift();
-						const check = liProps.checked ? true : false;
 						return (
-							<List.Item key={i} margin="0 0 small small" {...liProps}>
+							<List.Item
+								key={i.toString()}
+								margin="0 0 small small"
+								{...liProps}
+							>
 								<Checkbox
-									label={children}
+									label={label.shift()}
 									disabled={true}
-									defaultChecked={check}
+									defaultChecked={liProps.node.children[0].properties.checked}
 								/>
 							</List.Item>
 						);
 					}
-					return <List.Item key={i} {...node.props} />;
+					return <List.Item key={i.toString()} {...node.props} />;
 				})}
 			</List>
 		);
@@ -119,7 +118,7 @@ const mdtoui = {
 		return (
 			<List as={node.tagName} {...fProps}>
 				{children.map((node, i) => {
-					return <List.Item key={i} {...node.props} />;
+					return <List.Item key={i.toString()} {...node.props} />;
 				})}
 			</List>
 		);
@@ -145,55 +144,29 @@ const mdtoui = {
 		return (
 			<Table margin="medium none" hover={true} caption="" {...tableProps}>
 				{children.map((node, i) => {
-					const { children, ...thbProps } = node.props;
 					if (node.type === "thead") {
+						const { children, ...theadProps } = node.props;
 						return (
-							<Table.Head key={i} {...thbProps}>
-								{children.map((node, i) => {
-									const { children, ...trProps } = node.props;
-									return (
-										<Table.Row key={i} {...trProps}>
-											{children.map((node, i) => {
-												return (
-													<Table.ColHeader
-														key={i}
-														id={i.toString()}
-														{...node.props}
-													/>
-												);
-											})}
-										</Table.Row>
-									);
-								})}
+							<Table.Head key={i.toString()} {...theadProps}>
+								<Table.Row key={children.key}>
+									{children.props.children.map((node, i) => {
+										return (
+											<Table.ColHeader key={i.toString()} {...node.props} />
+										);
+									})}
+								</Table.Row>
 							</Table.Head>
 						);
 					}
+					const { children, ...tbodyProps } = node.props;
 					return (
-						<Table.Body key={i} {...thbProps}>
+						<Table.Body key={i.toString()} {...tbodyProps}>
 							{children.map((node, i) => {
 								const { children, ...trProps } = node.props;
 								return (
-									<Table.Row key={i} {...trProps}>
+									<Table.Row key={i.toString()} {...trProps}>
 										{children.map((node, i) => {
-											if (Object.hasOwn(node.props, "style")) {
-												var align = "start";
-												switch (node.props.style.textAlign) {
-													case "left":
-														align = "start";
-														break;
-													case "center":
-														align = "center";
-														break;
-													case "right":
-														align = "end";
-														break;
-													default:
-														align = "start";
-												}
-											}
-											return (
-												<Table.Cell textAlign={align} key={i} {...node.props} />
-											);
+											return <Table.Cell key={i.toString()} {...node.props} />;
 										})}
 									</Table.Row>
 								);

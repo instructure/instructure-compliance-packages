@@ -7,7 +7,7 @@ import "./index.css";
 
 import { InstUISettingsProvider, canvas, View } from "@instructure/ui";
 import Links from "routes/links";
-// import MDUI from "routes/mdui";
+import MDUI from "routes/mdui";
 import Markdown from "routes/markdown";
 import ErrorPage from "routes/error";
 import { ParentBrands } from "variables/brands";
@@ -65,6 +65,19 @@ routes.push({
 	],
 });
 
+// Markdown to InstructureUI showcase
+routes.push({
+	path: "/mdui",
+	element: <MDUI />,
+	// errorElement: <ErrorPage />,
+	children: [
+		{
+			path: ":language",
+			element: <MDUI />,
+		},
+	],
+});
+
 // All others
 routes.push({
 	path: "*",
@@ -76,18 +89,6 @@ routes.push({
 		},
 	],
 });
-
-/*{
-		path: "/mdui",
-		element: <MDUI />,
-		errorElement: <ErrorPage />,
-		children: [
-			{
-				path: ":language",
-				element: <MDUI />,
-			},
-		],
-	},*/
 
 const router = createHashRouter(routes);
 
