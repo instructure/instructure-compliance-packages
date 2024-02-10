@@ -107,7 +107,9 @@ function RenderTopNavBar({ language }) {
 															<Anchor
 																className="lang"
 																to={`./${
-																	language.code.toLowerCase().split("_")[0]
+																	language.code !== "EN"
+																		? language.code.toLowerCase().split("_")[0]
+																		: ""
 																}`}
 															>
 																{language.local}
