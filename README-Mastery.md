@@ -6,6 +6,8 @@ The Mastery Product Family brings together assessment tools and quality content 
 
 [Mastery Connect Compliance Package](https://inst.bid/mastery/connect/dl)
 
+<div class="contents mastery-connect"></div>
+
 </div>
 <div class="lang ES_LA">
 
