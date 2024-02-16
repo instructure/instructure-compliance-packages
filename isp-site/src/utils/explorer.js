@@ -1,24 +1,24 @@
+import global from "variables/globals";
 import strings from "strings/markdown";
-import { getStrings, getLang } from "utils/langs";
+import { getStrings } from "utils/langs";
 
 async function getGithubRepoContents(owner, repo, branch) {
-	const apiUrl = `https://api.github.com/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`;
+	const apiUrl = `${global.api}/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`;
 
 	try {
 		const response = await fetch(apiUrl);
 		const data = await response.json();
 
-		return data.tree || [];
+		return data.tree || null;
 	} catch (error) {
 		console.error(`Error: ${error.message}`);
-		return [];
+		return null;
 	}
 }
 
-function formatGithubContents(contents, name, language) {
-	const l = getLang(language);
+function formatGithubContents(contents, owner, repo, name, language) {
+	const l = language;
 	const s = getStrings(strings, l);
-	const dlUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${name}/`;
 	const dirs = contents.filter((item) => item.type === "tree"); // TODO: Sort
 	const files = contents
 		.filter((item) => item.type === "blob")
@@ -35,7 +35,9 @@ function formatGithubContents(contents, name, language) {
 				htmlTable += `\r\n| [${file.path.replace(
 					`${dir.path}/`,
 					"",
-				)}](${encodeURI(dlUrl + file.path)}) | |`;
+				)}](${encodeURI(
+					`${global.raw}/${owner}/${repo}/${name}/${file.path}`,
+				)}) | |`;
 			}
 		}
 		if (i < dirs.length - 1) htmlTable += "\r\n\r\n";
@@ -47,12 +49,17 @@ function formatGithubContents(contents, name, language) {
 }
 
 export async function Explorer(page, branch, language) {
-	const owner = "thedannywahl";
-	const repo = "instructure-security-package";
+	const l = language;
+	const owner = global.owner;
+	const repo = global.repo;
 	const name = [...branch.classList].filter((c) => ~c.indexOf(page)).toString();
 
-	const contents = await getGithubRepoContents(owner, repo, name);
-
-	const mdTable = formatGithubContents(contents, owner, repo, name, language);
-	return mdTable;
+	if (name) {
+		const contents = await getGithubRepoContents(owner, repo, name);
+		if (contents) {
+			const mdTable = formatGithubContents(contents, owner, repo, name, l);
+			return mdTable;
+		}
+	}
+	return null;
 }
