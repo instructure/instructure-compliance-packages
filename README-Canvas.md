@@ -6,7 +6,7 @@ The Canvas platform enriches, supports, and connects every aspect of teaching an
 
 ## Canvas LMS
 
-_The World's #1 Teaching and Learning Software_
+The World's #1 Teaching and Learning Software
 
 💾 [Download](https://inst.bid/canvas/lms/dl)
 
@@ -16,7 +16,7 @@ _*Some language translated versions available._
 
 ## Canvas Credentials
 
-_The All-In-One Digital Badging For Higher Education_
+The All-In-One Digital Badging For Higher Education
 
 💾 [Download](https://inst.bid/canvas/credentials/dl)
 
@@ -26,7 +26,7 @@ _*Some language translated versions available._
 
 ## Canvas Studio
 
-_The next-generation video education platform for higher ed teaching and learning._
+The next-generation video education platform for higher ed teaching and learning.
 
 💾 [Download](https://inst.bid/canvas/studio/dl)
 
@@ -34,7 +34,7 @@ _The next-generation video education platform for higher ed teaching and learnin
 
 ## Canvas Catalog
 
-_A simple, modern, elegant course catalog and a branded marketplace for all of your institution’s course offerings._
+A simple, modern, elegant course catalog and a branded marketplace for all of your institution’s course offerings.
 
 💾 [Download](https://inst.bid/canvas/catalog/dl)
 
@@ -49,7 +49,7 @@ La plataforma Canvas enriquece, respalda y conecta todos los aspectos de la ense
 
 ## Canvas LMS
 
-_El software de enseñanza y aprendizaje número uno del mundo_
+El software de enseñanza y aprendizaje número uno del mundo
 
 💾 [Descargar](https://inst.bid/es-ls/canvas/lms/dl/es)
 
@@ -57,7 +57,7 @@ _El software de enseñanza y aprendizaje número uno del mundo_
 
 ## Canvas Credentials
 
-_La credencial digital todo en uno para la educación superior_
+La credencial digital todo en uno para la educación superior
 
 💾 [Descargar](https://inst.bid/es-la/canvas/credentials/dl/es)
 
@@ -65,7 +65,7 @@ _La credencial digital todo en uno para la educación superior_
 
 ## Canvas Studio
 
-_La plataforma educativa en vídeo de próxima generación para la enseñanza y el aprendizaje en educación superior._
+La plataforma educativa en vídeo de próxima generación para la enseñanza y el aprendizaje en educación superior.
 
 💾 [Descargar*](https://inst.bid/canvas/studio/dl/es)
 
@@ -75,7 +75,7 @@ _*Esta versión sólo está disponible en inglés._
 
 ## Canvas Catalog
 
-_Un catálogo de cursos simple, moderno y elegante y un mercado de marca para todas las ofertas de cursos de su institución._
+Un catálogo de cursos simple, moderno y elegante y un mercado de marca para todas las ofertas de cursos de su institución.
 
 💾 [Descargar*](https://inst.bid/canvas/catalog/dl/es)
 
@@ -92,7 +92,7 @@ A plataforma Canvas enriquece, apoia e conecta todos os aspectos do ensino e da 
 
 ## Canvas LMS
 
-_O software de ensino e aprendizagem nº 1 do mundo_
+O software de ensino e aprendizagem nº 1 do mundo
 
 💾 [Download](https://inst.bid/pt-br/canvas/lms/dl/pt)
 
@@ -100,7 +100,7 @@ _O software de ensino e aprendizagem nº 1 do mundo_
 
 ## Canvas Credentials
 
-_O selo digital multifuncional para o ensino superior_
+O selo digital multifuncional para o ensino superior
 
 💾 [Download](https://inst.bid/pt-br/canvas/credentials/dl/pt)
 
@@ -109,7 +109,7 @@ _O selo digital multifuncional para o ensino superior_
 
 ## Canvas Studio
 
-_A plataforma de educação em vídeo de última geração para ensino e aprendizagem no ensino superior._
+A plataforma de educação em vídeo de última geração para ensino e aprendizagem no ensino superior.
 
 💾 [Download*](https://inst.bid/canvas/studio/dl/pt)
 
@@ -119,7 +119,7 @@ _*Esta versão está disponível apenas em inglês._
 
 ## Canvas Catalog
 
-_Um catálogo de cursos simples, moderno e elegante e um mercado de marca para todas as ofertas de cursos da sua instituição._
+Um catálogo de cursos simples, moderno e elegante e um mercado de marca para todas as ofertas de cursos da sua instituição.
 
 💾 [Download*](https://inst.bid/canvas/catalog/dl/pt)
 
@@ -136,7 +136,7 @@ Die Canvas-Plattform bereichert, unterstützt und verbindet jeden Aspekt des Leh
 
 ## Canvas LMS
 
-_Die weltweit führende Lehr- und Lernsoftware_
+Die weltweit führende Lehr- und Lernsoftware
 
 💾 [Herunterladen*](https://inst.bid/canvas/lms/dl/de)
 
@@ -146,7 +146,7 @@ _*Diese Version ist nur auf Englisch verfügbar._
 
 ## Canvas Credentials
 
-_Das digitale All-in-One-Badging für die Hochschulbildung_
+Das digitale All-in-One-Badging für die Hochschulbildung
 
 💾 [Herunterladen*](https://inst.bid/canvas/credentials/dl/de)
 
@@ -156,7 +156,7 @@ _*Diese Version ist nur auf Englisch verfügbar._
 
 ## Canvas Studio
 
-_Die Video-Bildungsplattform der nächsten Generation für das Lehren und Lernen im Hochschulbereich._
+Die Video-Bildungsplattform der nächsten Generation für das Lehren und Lernen im Hochschulbereich.
 
 💾 [Herunterladen*](https://inst.bid/canvas/studio/dl/de)
 
@@ -166,7 +166,7 @@ _*Diese Version ist nur auf Englisch verfügbar._
 
 ## Canvas Catalog
 
-_Ein einfacher, moderner und eleganter Kurskatalog und ein Marken-Marktplatz für alle Kursangebote Ihrer Institution._
+Ein einfacher, moderner und eleganter Kurskatalog und ein Marken-Marktplatz für alle Kursangebote Ihrer Institution.
 
 💾 [Herunterladen*](https://inst.bid/canvas/catalog/dl/de)
 
