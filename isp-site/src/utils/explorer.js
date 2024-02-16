@@ -18,7 +18,7 @@ async function getGithubRepoContents(owner, repo, branch) {
 function formatGithubContents(contents, name, language) {
 	const l = getLang(language);
 	const s = getStrings(strings, l);
-	const dlUrl = `https://raw.githubusercontent.com/thedannywahl/instructure-security-package/${name}/`;
+	const dlUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${name}/`;
 	const dirs = contents.filter((item) => item.type === "tree"); // TODO: Sort
 	const files = contents
 		.filter((item) => item.type === "blob")
@@ -53,6 +53,6 @@ export async function Explorer(page, branch, language) {
 
 	const contents = await getGithubRepoContents(owner, repo, name);
 
-	const mdTable = formatGithubContents(contents, name, language);
+	const mdTable = formatGithubContents(contents, owner, repo, name, language);
 	return mdTable;
 }
