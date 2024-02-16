@@ -27,6 +27,8 @@ La familia de productos Elevate mejora el uso de datos y tecnología para ayudar
 
 💾 [Descargar*](https://inst.bid/elevate/k12-analytics/dl/es)
 
+_*Esta versión sólo está disponible en inglés._
+
 <div class="contents elevate-k12-analytics"></div>
 
 ## Elevate Standards Alignment
@@ -34,6 +36,8 @@ La familia de productos Elevate mejora el uso de datos y tecnología para ayudar
 💾 [Descargar*](https://inst.bid/elevate/standards-alignment/dl/es)
 
 _*Esta versión sólo está disponible en inglés._
+
+<div class="contents elevate-standards-alignment"></div>
 
 </div>
 <div class="lang PT_BR">
@@ -46,6 +50,8 @@ A família de produtos Elevate melhora o uso de dados e tecnologia para ajudar a
 
 💾 [Download*](https://inst.bid/elevate/k12-analytics/dl/pt)
 
+_*Esta versão está disponível apenas em inglês._
+
 <div class="contents elevate-k12-analytics"></div>
 
 ## Elevate Standards Alignment
@@ -53,6 +59,8 @@ A família de produtos Elevate melhora o uso de dados e tecnologia para ajudar a
 💾 [Download*](https://inst.bid/elevate/standards-alignment/dl/pt)
 
 _*Esta versão está disponível apenas em inglês._
+
+<div class="contents elevate-standards-alignment"></div>
 
 </div>
 <div class="lang DE">
@@ -64,6 +72,8 @@ Die Elevate-Produktfamilie verbessert den Einsatz von Daten und Technologie, um 
 ## Elevate K-12 Analytics
 
 💾 [Herunterladen*](https://inst.bid/elevate/k12-analytics/dl/de)
+
+_*Diese Version ist nur auf Englisch verfügbar._
 
 <div class="contents elevate-k12-analytics"></div>
 
