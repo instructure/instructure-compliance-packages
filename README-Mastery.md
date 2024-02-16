@@ -4,7 +4,7 @@
 
 The Mastery Product Family brings together assessment tools and quality content educators need to drive learning outcomes. With thoughtful assessment comes real, positive impact, and the better teachers understand where students are, the better they can help them succeed.
 
-[Mastery Connect Compliance Package](https://inst.bid/mastery/connect/dl)
+💾 [Download](https://inst.bid/mastery/connect/dl)
 
 <div class="contents mastery-connect"></div>
 
@@ -15,7 +15,7 @@ The Mastery Product Family brings together assessment tools and quality content 
 
 La familia de productos Mastery reúne herramientas de evaluación y contenido de calidad que los educadores necesitan para impulsar los resultados del aprendizaje. Una evaluación reflexiva genera un impacto real y positivo, y cuanto mejor comprendan los maestros dónde están los estudiantes, mejor podrán ayudarlos a tener éxito.
 
-[Paquete de cumplimiento de Mastery Connect*](https://inst.bid/mastery/connect/dl/es)
+💾 [Descargar](https://inst.bid/mastery/connect/dl/es)
 
 _*Esta versión sólo está disponible en inglés._
 
@@ -26,7 +26,7 @@ _*Esta versión sólo está disponible en inglés._
 
 A família de produtos Mastery reúne ferramentas de avaliação e conteúdo de qualidade que os educadores precisam para gerar resultados de aprendizagem. Com uma avaliação cuidadosa, surge um impacto real e positivo, e quanto melhor os professores compreenderem onde os alunos estão, melhor poderão ajudá-los a ter sucesso.
 
-[Pacote de conformidade do Mastery Connect*](https://inst.bid/mastery/connect/dl/pt)
+💾 [Download](https://inst.bid/mastery/connect/dl/pt)
 
 _*Esta versão está disponível apenas em inglês._
 
@@ -37,7 +37,7 @@ _*Esta versão está disponível apenas em inglês._
 
 Die Mastery-Produktfamilie vereint Bewertungstools und hochwertige Inhalte, die Pädagogen benötigen, um Lernergebnisse zu erzielen. Eine durchdachte Beurteilung hat echte, positive Auswirkungen, und je besser Lehrer verstehen, wo sich die Schüler befinden, desto besser können sie ihnen zum Erfolg verhelfen.
 
-[Mastery Connect Compliance-Paket*](https://inst.bid/mastery/connect/dl/de)
+💾 [Herunterladen](https://inst.bid/mastery/connect/dl/pt)
 
 _*Diese Version ist nur auf Englisch verfügbar._
 
