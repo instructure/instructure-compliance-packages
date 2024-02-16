@@ -151,7 +151,11 @@ const mdtoui = {
 								<Table.Row key={children.key}>
 									{children.props.children.map((node, i) => {
 										return (
-											<Table.ColHeader key={i.toString()} {...node.props} />
+											<Table.ColHeader
+												key={i.toString()}
+												id={i.toString()}
+												{...node.props}
+											/>
 										);
 									})}
 								</Table.Row>
