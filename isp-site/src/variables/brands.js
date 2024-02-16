@@ -1,5 +1,6 @@
-const readmePrefix =
-	"https://raw.githubusercontent.com/thedannywahl/instructure-security-package/main/README";
+import global from "variables/globals";
+
+const readmePrefix = `${global.raw}/${global.owner}/${global.repo}/${global.branch}/README`;
 
 export const globalBrands = [
 	"Instructure",

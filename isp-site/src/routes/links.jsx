@@ -1,4 +1,5 @@
 // Modules
+import global from "variables/globals";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -34,7 +35,7 @@ export default function Links() {
 	const l = getLang(useParams().language);
 	const s = getStrings(strings, l);
 
-	const fromPrefix = "inst.bid";
+	const fromPrefix = global.url.replace("https://", "");
 
 	const [query, setQuery] = useState({
 		search: "",
