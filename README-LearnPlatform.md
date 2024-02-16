@@ -6,7 +6,7 @@ LearnPlatform is a proven K-12 SaaS solution that empowers state and local educa
 
 💾 [Download](https://inst.bid/learnplatform/dl)
 
-<div class="contents learnplatform>Loading...</div>
+<div class="contents learn-platform"></div>
 
 </div>
 <div class="lang ES_LA">
