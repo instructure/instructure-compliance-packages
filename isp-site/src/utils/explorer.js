@@ -6,7 +6,15 @@ async function getGithubRepoContents(owner, repo, branch) {
 	const apiUrl = `${global.api}/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`;
 
 	try {
-		const response = await fetch(apiUrl);
+		const response = await fetch(apiUrl, {
+			method: "GET",
+			headers: {
+				Accept: "application/vnd.github.v3+json",
+				Authorization: process.env.REACT_APP_GITHUB_TOKEN
+					? `token ${process.env.REACT_APP_GITHUB_TOKEN}`
+					: "",
+			},
+		});
 		const data = await response.json();
 
 		return data.tree || null;
