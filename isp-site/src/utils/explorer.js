@@ -17,11 +17,31 @@ async function getGithubRepoContents(owner, repo, branch) {
 		});
 		const data = await response.json();
 
-		return data.tree || null;
+		return data.tree.sort(sortProduct).reverse() || null;
 	} catch (error) {
 		console.error(`Error: ${error.message}`);
 		return null;
 	}
+}
+
+function sortProduct(a, b) {
+	const getPriorityIndex = (path) => {
+		const uPath = path.toLocaleUpperCase();
+		const index = priorityStrings.findIndex((str) =>
+			uPath.startsWith(str.toLocaleUpperCase()),
+		);
+		return index !== -1 ? index : priorityStrings.length;
+	};
+
+	const priorityStrings = ["Amazon Web Services", "Instructure"];
+
+	const priorityA = getPriorityIndex(a.path);
+	const priorityB = getPriorityIndex(b.path);
+
+	if (priorityA !== priorityB) {
+		return priorityA - priorityB;
+	}
+	return a.path.localeCompare(b.path);
 }
 
 function formatGithubContents(contents, owner, repo, name, language) {
