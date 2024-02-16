@@ -1,5 +1,6 @@
 // Modules
 import React, { useState, useEffect } from "react";
+import reactDOM from "react-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkGemoji from "remark-gemoji";
@@ -28,6 +29,7 @@ import mdtoui from "components/mdtoui";
 import { useParams } from "react-router-dom";
 import strings from "strings/markdown";
 import { getStrings, getLang } from "utils/langs";
+import { Explorer } from "utils/explorer";
 
 // Page
 export default function Markdown({ readme }) {
@@ -48,6 +50,26 @@ export default function Markdown({ readme }) {
 				setContent(text);
 			})
 			.catch((error) => console.error(error));
+	});
+
+	useEffect(() => {
+		const page = document.getElementsByTagName("body")[0].classList[0];
+		const branches = document.querySelectorAll(".markdown .contents");
+
+		for (const branch of branches) {
+			Explorer(page, branch, l).then((table) => {
+				reactDOM.render(
+					<ReactMarkdown
+						children={table}
+						remarkPlugins={[remarkGfm, remarkGemoji]}
+						rehypePlugins={[rehypeRaw]}
+						allowedElements={allowedElements}
+						components={mdtoui}
+					/>,
+					branch,
+				);
+			});
+		}
 	});
 
 	return (
