@@ -10,42 +10,9 @@ _The World's #1 Teaching and Learning Software_
 
 💾 [Download](https://inst.bid/canvas/lms/dl)
 
-<details>
-<summary>🕵️ Explore</summary>
-
-| Amazon Web Services | |
-| ---------------- | - |
-| CSA CAIQ | [AWS CAIQ v4.0.2.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Amazon%20Web%20Services/AWS%20CAIQ%20v4.0.2.pdf)
-| Cyber Essentials Plus Certificate  | [AWS CE Plus Certificate.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Amazon%20Web%20Services/AWS%20CE%20Plus%20Certificate.pdf)
-| CSA Star Level 2 Certificate | [AWS CSA Star Level 2 Certificate.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Amazon%20Web%20Services/AWS%20CSA%20Star%20Level%202%20Certificate.pdf)
-| ISO 27001 Certificate | [AWS ISO 27001 Certificate.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Amazon%20Web%20Services/AWS%20ISO%2027001%20Certificate.pdf)
-| ISO 9001 Certificate | [AWS ISO 9001 Certificate.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Amazon%20Web%20Services/AWS%20ISO%209001%20Certificate.pdf)
-| SOC 3 | [AWS SOC 3.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Amazon%20Web%20Services/AWS%20SOC%203.pdf)
-
-
-| Instructure | |
-| ---------------- | - |
-| Business Continuity White Paper  | [Instructure Business Continuity & Disaster Recovery.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20Business%20Continuity%20%26%20Disaster%20Recovery.pdf)
-| CAIQ | [Instructure CAIQ.xlsx](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20CAIQ.xlsx)
-| CSA Star Certificate | [Instructure CSA Star Certificate.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20CSA%20STAR%20Certificate.pdf)
-| Cyber Essentials+ Certificate | [Instructure Cyber Essentials Plus.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20Cyber%20Essentials%20Plus.pdf)
-| Certificate of Insurance (global) | [Instructure Global COI.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20Global%20COI.pdf)
-| Certificate of Insurance (US) | [Instructure Inc COI.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20Inc%20COI.pdf)
-| ISO 27001 Certificate | [Instructure ISO 27001 Compliance Certificate.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate.pdf)
-| Quality Assurance White Paper | [Instructure Quality Assurance Program.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20Quality%20Assurance%20Program.pdf)
-| Security White Paper | [Instructure Security Overview.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Instructure/Instructure%20Security%20Overview.pdf)
-
-| Canvas LMS | |
-| ---------------- | - |
-| Architecture White Paper | [Canvas LMS Architecture.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20LMS%20Architecture.pdf)
-| HECVAT Full v3.0.4  | [Canvas LMS HECVAT Full.xlsx](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20LMS%20HECVAT%20Full.xlsx)
-| SOC 3 | [Canvas LMS SOC 3.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20LMS%20SOC%203.pdf)
-| TX-RAMP Certificate | [Canvas LMS TX-RAMP Level 2 Certification.pdf](https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20LMS%20TX-RAMP%20Level%202%20Certification.pdf)
-| Security Audit Report | [Canvas Security Audit Report.pdf](https://github.com/thedannywahl/instructure-security-package/blob/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf)
-
-</details>
-
 _*Some language translated versions available._
+
+<div class="contents canvas-lms"></div>
 
 ## Canvas Credentials
 
@@ -55,17 +22,23 @@ _The All-In-One Digital Badging For Higher Education_
 
 _*Some language translated versions available._
 
+<div class="contents canvas-credentials"></div>
+
 ## Canvas Studio
 
 _The next-generation video education platform for higher ed teaching and learning._
 
 💾 [Download](https://inst.bid/canvas/studio/dl)
 
+<div class="contents canvas-studio"></div>
+
 ## Canvas Catalog
 
 _A simple, modern, elegant course catalog and a branded marketplace for all of your institution’s course offerings._
 
 💾 [Download](https://inst.bid/canvas/catalog/dl)
+
+<div class="contents canvas-catalog"></div>
 
 </div>
 <div class="lang ES_LA">
@@ -80,17 +53,25 @@ _El software de enseñanza y aprendizaje número uno del mundo_
 
 💾 [Descargar](https://inst.bid/es-ls/canvas/lms/dl/es)
 
+<div class="contents canvas-lms-ES_LA"></div>
+
 ## Canvas Credentials
 
 _La credencial digital todo en uno para la educación superior_
 
 💾 [Descargar](https://inst.bid/es-la/canvas/credentials/dl/es)
 
+<div class="contents canvas-credentials-ES_LA"></div>
+
 ## Canvas Studio
 
 _La plataforma educativa en vídeo de próxima generación para la enseñanza y el aprendizaje en educación superior._
 
 💾 [Descargar*](https://inst.bid/canvas/studio/dl/es)
+
+_*Esta versión sólo está disponible en inglés._
+
+<div class="contents canvas-studio"></div>
 
 ## Canvas Catalog
 
@@ -99,6 +80,8 @@ _Un catálogo de cursos simple, moderno y elegante y un mercado de marca para to
 💾 [Descargar*](https://inst.bid/canvas/catalog/dl/es)
 
 _*Esta versión sólo está disponible en inglés._
+
+<div class="contents canvas-catalog"></div>
 
 </div>
 <div class="lang PT_BR">
@@ -113,25 +96,36 @@ _O software de ensino e aprendizagem nº 1 do mundo_
 
 💾 [Download](https://inst.bid/pt-br/canvas/lms/dl/pt)
 
+<div class="contents canvas-lms-PT_BR"></div>
+
 ## Canvas Credentials
 
 _O selo digital multifuncional para o ensino superior_
 
 💾 [Download](https://inst.bid/pt-br/canvas/credentials/dl/pt)
 
+
+<div class="contents canvas-credentials-PT_BR"></div>
+
 ## Canvas Studio
 
 _A plataforma de educação em vídeo de última geração para ensino e aprendizagem no ensino superior._
 
-💾 [Download*](https://inst.bid/canvas/studio/dl)
+💾 [Download*](https://inst.bid/canvas/studio/dl/pt)
+
+_*Esta versão está disponível apenas em inglês._
+
+<div class="contents canvas-studio"></div>
 
 ## Canvas Catalog
 
 _Um catálogo de cursos simples, moderno e elegante e um mercado de marca para todas as ofertas de cursos da sua instituição._
 
-💾 [Download*](https://inst.bid/canvas/catalog/dl)
+💾 [Download*](https://inst.bid/canvas/catalog/dl/pt)
 
 _*Esta versão está disponível apenas em inglês._
+
+<div class="contents canvas-catalog"></div>
 
 </div>
 <div class="lang DE">
@@ -146,17 +140,29 @@ _Die weltweit führende Lehr- und Lernsoftware_
 
 💾 [Herunterladen*](https://inst.bid/canvas/lms/dl/de)
 
+_*Diese Version ist nur auf Englisch verfügbar._
+
+<div class="contents canvas-lms"></div>
+
 ## Canvas Credentials
 
 _Das digitale All-in-One-Badging für die Hochschulbildung_
 
 💾 [Herunterladen*](https://inst.bid/canvas/credentials/dl/de)
 
+_*Diese Version ist nur auf Englisch verfügbar._
+
+<div class="contents canvas-credentials"></div>
+
 ## Canvas Studio
 
 _Die Video-Bildungsplattform der nächsten Generation für das Lehren und Lernen im Hochschulbereich._
 
 💾 [Herunterladen*](https://inst.bid/canvas/studio/dl/de)
+
+_*Diese Version ist nur auf Englisch verfügbar._
+
+<div class="contents canvas-studio"></div>
 
 ## Canvas Catalog
 
@@ -165,5 +171,7 @@ _Ein einfacher, moderner und eleganter Kurskatalog und ein Marken-Marktplatz fü
 💾 [Herunterladen*](https://inst.bid/canvas/catalog/dl/de)
 
 _*Diese Version ist nur auf Englisch verfügbar._
+
+<div class="contents canvas-catalog"></div>
 
 </div>
