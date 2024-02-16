@@ -1,6 +1,6 @@
 // Modules
 import React, { useState, useEffect } from "react";
-import reactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkGemoji from "remark-gemoji";
@@ -56,19 +56,20 @@ export default function Markdown({ readme }) {
 		const page = document.getElementsByTagName("body")[0].classList[0];
 		const branches = document.querySelectorAll(".markdown .contents");
 
-		for (const branch of branches) {
-			Explorer(page, branch, l).then((table) => {
-				reactDOM.render(
-					<ReactMarkdown
-						children={table}
-						remarkPlugins={[remarkGfm, remarkGemoji]}
-						rehypePlugins={[rehypeRaw]}
-						allowedElements={allowedElements}
-						components={mdtoui}
-					/>,
-					branch,
-				);
-			});
+		if (branches.length > 0) {
+			for (const branch of branches) {
+				Explorer(page, branch, l).then((table) => {
+					ReactDOM.createRoot(branch).render(
+						<ReactMarkdown
+							children={table}
+							remarkPlugins={[remarkGfm, remarkGemoji]}
+							rehypePlugins={[rehypeRaw]}
+							allowedElements={allowedElements}
+							components={mdtoui}
+						/>,
+					);
+				});
+			}
 		}
 	});
 
