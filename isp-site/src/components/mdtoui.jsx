@@ -1,3 +1,5 @@
+import { Children } from "react";
+
 // Modules
 import {
 	View,
@@ -143,34 +145,38 @@ const mdtoui = {
 		const { children, ...tableProps } = props;
 		return (
 			<Table margin="medium none" hover={true} caption="" {...tableProps}>
-				{children.map((node, i) => {
-					if (node.type === "thead") {
-						const { children, ...theadProps } = node.props;
+				{Children.map(children, (child) => {
+					const { children, ...tProps } = child.props;
+					if (child.type === "thead") {
 						return (
-							<Table.Head key={i.toString()} {...theadProps}>
-								<Table.Row key={children.key}>
-									{children.props.children.map((node, i) => {
-										return (
-											<Table.ColHeader
-												key={i.toString()}
-												id={i.toString()}
-												{...node.props}
-											/>
-										);
-									})}
-								</Table.Row>
+							<Table.Head {...tProps}>
+								{Children.map(children, (child) => {
+									const { children, ...thrProps } = child.props;
+									return (
+										<Table.Row {...thrProps}>
+											{Children.map(children, (child) => {
+												return (
+													<Table.ColHeader
+														key={child.toString()}
+														id={child.toString()}
+														{...child.props}
+													/>
+												);
+											})}
+										</Table.Row>
+									);
+								})}
 							</Table.Head>
 						);
 					}
-					const { children, ...tbodyProps } = node.props;
 					return (
-						<Table.Body key={i.toString()} {...tbodyProps}>
-							{children.map((node, i) => {
-								const { children, ...trProps } = node.props;
+						<Table.Body {...tProps}>
+							{Children.map(children, (child) => {
+								const { children, ...tbrProps } = child.props;
 								return (
-									<Table.Row key={i.toString()} {...trProps}>
-										{children.map((node, i) => {
-											return <Table.Cell key={i.toString()} {...node.props} />;
+									<Table.Row {...tbrProps}>
+										{Children.map(children, (child) => {
+											return <Table.Cell {...child.props} />;
 										})}
 									</Table.Row>
 								);
