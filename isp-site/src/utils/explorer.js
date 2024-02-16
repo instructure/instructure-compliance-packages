@@ -17,7 +17,7 @@ async function getGithubRepoContents(owner, repo, branch) {
 		});
 		const data = await response.json();
 
-		return data.tree.sort(sortProduct).reverse() || null;
+		return data.tree.sort(sortProduct) || null;
 	} catch (error) {
 		console.error(`Error: ${error.message}`);
 		return null;
@@ -39,7 +39,7 @@ function sortProduct(a, b) {
 	const priorityB = getPriorityIndex(b.path);
 
 	if (priorityA !== priorityB) {
-		return priorityA - priorityB;
+		return priorityB - priorityA;
 	}
 	return a.path.localeCompare(b.path);
 }
@@ -47,7 +47,7 @@ function sortProduct(a, b) {
 function formatGithubContents(contents, owner, repo, name, language) {
 	const l = language;
 	const s = getStrings(strings, l);
-	const dirs = contents.filter((item) => item.type === "tree"); // TODO: Sort
+	const dirs = contents.filter((item) => item.type === "tree");
 	const files = contents
 		.filter((item) => item.type === "blob")
 		.filter((item) => item.path !== ".gitignore");
