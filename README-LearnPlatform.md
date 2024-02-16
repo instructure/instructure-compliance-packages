@@ -19,6 +19,8 @@ LearnPlatform es una solución SaaS K-12 comprobada que permite a las agencias e
 
 _*Esta versión sólo está disponible en inglés._
 
+<div class="contents learn-platform"></div>
+
 </div>
 <div class="lang PT_BR">
 
@@ -30,6 +32,8 @@ LearnPlatform é uma solução SaaS comprovada de ensino fundamental e médio qu
 
 _*Esta versão está disponível apenas em inglês._
 
+<div class="contents learn-platform"></div>
+
 </div>
 <div class="lang DE">
 
@@ -40,5 +44,7 @@ LearnPlatform ist eine bewährte K-12-SaaS-Lösung, die es staatlichen und lokal
 💾 [Herunterladen*](https://inst.bid/learnplatform/dl/de)
 
 _*Diese Version ist nur auf Englisch verfügbar._
+
+<div class="contents learn-platform"></div>
 
 </div>
