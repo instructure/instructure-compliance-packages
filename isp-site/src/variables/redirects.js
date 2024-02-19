@@ -212,6 +212,12 @@ const Links = [
 				to: "https://www.eduappcenter.com/",
 				lang: "EN",
 			},
+			{
+				title: "ESG Report",
+				from: "/esg",
+				to: "https://instructure.com/esg-report",
+				lang: "EN",
+			},
 		],
 	},
 	{
@@ -732,10 +738,41 @@ const Links = [
 				to: "https://community.canvaslms.com/t5/Elevate-K-12-Analytics/ct-p/videri",
 				lang: "EN",
 			},
+			
 		],
 	},
 	{
-		brand: "Elevate Data Quality",
+		brand: "Elevate Standards Alignment",
+		links: [
+			{
+				title: "Compliance Package",
+				from: "/elevate/standards-alignment/dl",
+				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/elevate-standards-alignment.zip",
+				lang: "EN",
+			},
+			{
+				title: "Home",
+				from: "/elevate/standards-alignment",
+				to: "https://www.instructure.com/corporate-education/products/elevate/elevate-standards-alignment",
+				lang: "EN",
+			},
+			{
+				title: "Release Notes",
+				from: "/elevate/standards-alignment/releases",
+				to: "https://community.canvaslms.com/t5/Elevate-Standards-Alignment/tkb-p/esa_releases",
+				lang: "EN",
+			},
+			{
+				title: "Guides",
+				from: "/elevate/standards-alignment/guides",
+				to: "https://community.canvaslms.com/t5/Elevate-Standards-Alignment/tkb-p/ab_basics",
+				lang: "EN",
+			},
+			
+		],
+	},
+		
+	{brand: "Elevate Data Quality",
 		links: [
 			{
 				title: "Home",
