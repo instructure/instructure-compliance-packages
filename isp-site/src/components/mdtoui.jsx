@@ -22,6 +22,17 @@ const filterChildrenProps = (props) => {
 };
 
 const mdtoui = {
+	hr: ({ node, ...props }) => (
+		<View
+			as={node.tagName}
+			shadow="topmost"
+			borderWidth="small"
+			margin="small none"
+			padding="none"
+			borderColor="primary"
+			{...props}
+		/>
+	),
 	a: ({ node, ...props }) => <Link to={node.href} {...props} />,
 	button: ({ node, ...props }) => <Button withBackground={false} {...props} />,
 	p: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
