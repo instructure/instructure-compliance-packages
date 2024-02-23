@@ -9,6 +9,7 @@ import {
 	Link,
 	IconDiscussionLine,
 	Drilldown,
+	InlineList,
 } from "@instructure/ui";
 
 import "utils/toggle";
@@ -146,7 +147,6 @@ function RenderTopNavBar({ language }) {
 											>
 												<Heading level="h3">{s.contact_info}</Heading>
 												<Text>{s.info_overview}</Text>
-												<hr />
 
 												<View as="div" margin="medium 0 0">
 													<Text weight="bold">{s.current_customers}</Text>
@@ -159,13 +159,60 @@ function RenderTopNavBar({ language }) {
 													<br />
 													<Text>{s.contact_sales}</Text>
 													<br />
-													<Text>
-														{s.contact_general}{" "}
-														<Link href="mailto:info@instructure.com">
-															info@instructure.com
-														</Link>
-													</Text>
+													<Text>{s.contact_general} </Text>
 												</View>
+												<View
+													as="hr"
+													shadow="topmost"
+													borderWidth="small"
+													margin="small none"
+													padding="none"
+													borderColor="primary"
+												/>
+												<InlineList
+													delimiter="pipe"
+													size="small"
+													textAlign="center"
+												>
+													<InlineList.Item>
+														<Anchor
+															to={`/links${
+																l !== "EN"
+																	? `/${l.toLowerCase().split("_")[0]}`
+																	: ""
+															}`}
+														>
+															{s.redirects}
+														</Anchor>
+													</InlineList.Item>
+													<InlineList.Item>
+														<Anchor
+															to={`/releases${
+																l !== "EN"
+																	? `/${l.toLowerCase().split("_")[0]}`
+																	: ""
+															}`}
+														>
+															{s.releases}
+														</Anchor>
+													</InlineList.Item>
+													<InlineList.Item>
+														<Anchor
+															to={`/mdui${
+																l !== "EN"
+																	? `/${l.toLowerCase().split("_")[0]}`
+																	: ""
+															}`}
+														>
+															MDUI
+														</Anchor>
+													</InlineList.Item>
+													<InlineList.Item>
+														<Link href="mailto:info@instructure.com">
+															{s.contact}
+														</Link>
+													</InlineList.Item>
+												</InlineList>
 											</View>
 										),
 									}}

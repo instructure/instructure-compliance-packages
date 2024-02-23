@@ -89,5 +89,23 @@ const strings = {
 		PT_BR: "Para perguntas gerais, envie um e-mail para",
 		DE: "Für allgemeine Anfragen senden Sie eine E-Mail an",
 	},
+	redirects: {
+		EN: "Redirects",
+		ES_LA: "Redirecciones",
+		PT_BR: "Redirecionamentos",
+		DE: "Weiterleitungen",
+	},
+	releases: {
+		EN: "Releases",
+		ES_LA: "Lanzamientos",
+		PT_BR: "Lançamentos",
+		DE: "Veröffentlichungen",
+	},
+	contact: {
+		EN: "Contact",
+		ES_LA: "Contacto",
+		PT_BR: "Contato",
+		DE: "Kontakt",
+	},
 };
 export default strings;
