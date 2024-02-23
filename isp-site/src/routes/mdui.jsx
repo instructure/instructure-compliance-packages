@@ -18,6 +18,7 @@ import {
 	Table,
 	Checkbox,
 	Grid,
+	Alert,
 } from "@instructure/ui";
 import { useParams } from "react-router-dom";
 import { getStrings, getLang } from "utils/langs";
@@ -35,26 +36,39 @@ export default function MDUI() {
 	const l = getLang(useParams().language);
 	const s = getStrings(strings, l);
 	const md = markdownSample;
+	let init = true;
 
-	const [content, setContent] = useState(s.loading);
+	const [content, setContent] = useState(`${s.loading}`);
 
-	useEffect(() => {
-		fetch(md)
-			.then((response) => {
-				if (response.ok) return response.text();
-				return Promise.reject(s.fetch_fail);
-			})
-			.then((text) => {
-				setContent(text);
-			})
-			.catch((error) => console.error(error));
-	}, [md, s.fetch_fail]);
+	useEffect(
+		(text) => {
+			if (init) {
+				init = false;
+				const getMD = async () => {
+					await fetch(md)
+						.then((response) => {
+							if (response.ok) return response.text();
+							return Promise.reject(s.fetch_fail);
+						})
+						.then((text) => {
+							setContent(text);
+						})
+						.catch((error) => console.error(error));
+				};
+				getMD();
+				return;
+			}
+			setContent(text);
+		},
+		[md, init, s.fetch_fail],
+	);
 
 	return (
 		<>
 			<RenderTopNavBar language={l} />
 			<View
 				id="main"
+				className="mdui"
 				as="div"
 				padding="medium medium xx-large"
 				minWidth="20rem"
@@ -73,10 +87,17 @@ export default function MDUI() {
 							/>
 						</Grid.Col>
 						<Grid.Col>
+							<Alert
+								variant="info"
+								renderCloseButtonLabel={`${s.close}`}
+								margin="none none medium"
+							>
+								{s.try_editor}
+							</Alert>
 							<SourceCodeEditor
 								label={`${s.markdown_source}`}
 								language="markdown"
-								readOnly={true}
+								readOnly={false}
 								editable={true}
 								lineNumbers={true}
 								foldGutter={true}
@@ -85,7 +106,7 @@ export default function MDUI() {
 								lineWrapping={true}
 								value={content}
 								onChange={(value) => {
-									this.setState({ value });
+									setContent(value);
 								}}
 							/>
 						</Grid.Col>

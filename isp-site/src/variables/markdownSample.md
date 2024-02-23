@@ -2,6 +2,8 @@
 
 This page is rendered from [github-flavored markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) and passing the content through [react-markdown](https://github.com/remarkjs/react-markdown) to [Instructure UI](https://instructure.design/).  The result is accessible, well styled, and modular content created simply with markdown.
 
+<hr />
+
 ## Tables
 
 ### Normal table
@@ -19,6 +21,7 @@ This page is rendered from [github-flavored markdown](https://docs.github.com/en
 | `git diff` | Show file differences that **haven't been** staged |
 
 ### Table with columnar alignment
+
 | Left-aligned | Center-aligned | Right-aligned |
 | :---         |     :---:      |          ---: |
 | git status   | git status     | git status    |

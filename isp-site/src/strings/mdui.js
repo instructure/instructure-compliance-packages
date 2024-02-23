@@ -17,5 +17,17 @@ const strings = {
 		PT_BR: "Fonte de Markdown",
 		DE: "Markdown-Quelle",
 	},
+	try_editor: {
+		EN: "Try editing the markdown below.",
+		ES_LA: "Intenta editar el markdown abajo.",
+		PT_BR: "Tente editar o markdown abaixo.",
+		DE: "Versuche den Markdown unten zu bearbeiten.",
+	},
+	close: {
+		EN: "Close",
+		ES_LA: "Cerrar",
+		PT_BR: "Fechar",
+		DE: "Schließen",
+	},
 };
 export default strings;
