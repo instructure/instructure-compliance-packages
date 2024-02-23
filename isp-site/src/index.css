@@ -172,3 +172,10 @@ pre {
   width: 10rem;
   min-width: 10rem !important;
 }
+
+/* MDUI overrides */
+
+#main.mdui {
+  box-shadow: none;
+  border: 0 none
+}

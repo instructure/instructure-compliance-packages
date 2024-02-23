@@ -169,43 +169,39 @@ function RenderTopNavBar({ language }) {
 													padding="none"
 													borderColor="primary"
 												/>
-												<InlineList
-													delimiter="pipe"
-													size="small"
-													textAlign="center"
-												>
+												<InlineList delimiter="pipe" size="small">
 													<InlineList.Item>
-														<Anchor
-															to={`/links${
+														<Link
+															href={`#/links${
 																l !== "EN"
 																	? `/${l.toLowerCase().split("_")[0]}`
 																	: ""
 															}`}
 														>
 															{s.redirects}
-														</Anchor>
+														</Link>
 													</InlineList.Item>
 													<InlineList.Item>
-														<Anchor
-															to={`/releases${
+														<Link
+															href={`#/releases${
 																l !== "EN"
 																	? `/${l.toLowerCase().split("_")[0]}`
 																	: ""
 															}`}
 														>
 															{s.releases}
-														</Anchor>
+														</Link>
 													</InlineList.Item>
 													<InlineList.Item>
-														<Anchor
-															to={`/mdui${
+														<Link
+															href={`#/mdui${
 																l !== "EN"
 																	? `/${l.toLowerCase().split("_")[0]}`
 																	: ""
 															}`}
 														>
 															MDUI
-														</Anchor>
+														</Link>
 													</InlineList.Item>
 													<InlineList.Item>
 														<Link href="mailto:info@instructure.com">
