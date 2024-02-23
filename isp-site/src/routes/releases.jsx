@@ -34,7 +34,7 @@ export default function Releases() {
 
 	const atom = `https://github.com/${global.owner}/${global.repo}/releases.atom`;
 
-	const css = `hr {border: 1px solid currentColor;} .markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
+	const css = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
 
 	const [content, setContent] = useState(`${s.loading}`);
 	useEffect(() => {
