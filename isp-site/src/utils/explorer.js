@@ -56,7 +56,7 @@ function formatGithubContents(contents, owner, repo, name, language) {
     <summary>🕵️ ${s.explore}</summary>\r\n\r\n`;
 
 	for (const [i, dir] of dirs.entries()) {
-		htmlTable += `| ${dir.path} | |\r\n| ---------------- | - |`;
+		htmlTable += `| ${dir.path} |\r\n| ---------------- |`;
 
 		for (const file of files) {
 			if (file.path.startsWith(dir.path)) {
@@ -65,7 +65,7 @@ function formatGithubContents(contents, owner, repo, name, language) {
 					"",
 				)}](${encodeURI(
 					`${global.raw}/${owner}/${repo}/${name}/${file.path}`,
-				)}) | |`;
+				)}) |`;
 			}
 		}
 		if (i < dirs.length - 1) htmlTable += "\r\n\r\n";
