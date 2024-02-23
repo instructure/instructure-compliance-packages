@@ -9,6 +9,7 @@ import { InstUISettingsProvider, canvas, View } from "@instructure/ui";
 import Links from "routes/links";
 import MDUI from "routes/mdui";
 import Markdown from "routes/markdown";
+import Releases from "routes/releases";
 import ErrorPage from "routes/error";
 import { ParentBrands } from "variables/brands";
 import RedirectTo from "routes/redirectTo";
@@ -74,6 +75,18 @@ routes.push({
 		{
 			path: ":language",
 			element: <MDUI />,
+		},
+	],
+});
+
+// Release notes page
+routes.push({
+	path: "/releases",
+	element: <Releases />,
+	children: [
+		{
+			path: ":language",
+			element: <Releases />,
 		},
 	],
 });

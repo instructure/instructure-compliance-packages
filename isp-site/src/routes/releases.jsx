@@ -1,10 +1,9 @@
-// Modules
 import React, { useState, useEffect } from "react";
-import * as ReactDOM from "react-dom/client";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkGemoji from "remark-gemoji";
 import rehypeRaw from "rehype-raw";
+import global from "variables/globals";
 import {
 	View,
 	Link,
@@ -19,57 +18,31 @@ import {
 	Table,
 	Checkbox,
 } from "@instructure/ui";
-import RenderTopNavBar from "components/RenderTopNavBar";
-import RenderFooter from "components/RenderFooter";
-
-// Components
+import { IconRssLine } from "@instructure/ui-icons";
 import allowedElements from "variables/allowedElements";
 import mdtoui from "components/mdtoui";
 import { useParams } from "react-router-dom";
-import strings from "strings/markdown";
+import strings from "strings/releases";
 import { getStrings, getLang } from "utils/langs";
-import { Explorer } from "utils/explorer";
+import RenderFooter from "components/RenderFooter";
+import RenderTopNavBar from "components/RenderTopNavBar";
+import { printReleases } from "utils/releases";
 
-// Page
-export default function Markdown({ readme }) {
+export default function Releases() {
 	const l = getLang(useParams().language);
 	const s = getStrings(strings, l);
-	const css = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
-	const md = readme;
+
+	const atom = `https://github.com/${global.owner}/${global.repo}/releases.atom`;
+
+	const css = "hr {border: 1px solid currentColor;}";
 
 	const [content, setContent] = useState(`${s.loading}`);
-
 	useEffect(() => {
-		fetch(md)
-			.then((response) => {
-				if (response.ok) return response.text();
-				return Promise.reject(s.fetch_fail);
-			})
+		printReleases()
 			.then((text) => {
 				setContent(text);
 			})
 			.catch((error) => console.error(error));
-	});
-
-	useEffect(() => {
-		const page = document.getElementsByTagName("body")[0].classList[0];
-		const branches = document.querySelectorAll(".markdown .contents");
-
-		if (branches.length > 0) {
-			for (const branch of branches) {
-				Explorer(page, branch, l).then((table) => {
-					ReactDOM.createRoot(branch).render(
-						<ReactMarkdown
-							children={table}
-							remarkPlugins={[remarkGfm, remarkGemoji]}
-							rehypePlugins={[rehypeRaw]}
-							allowedElements={allowedElements}
-							components={mdtoui}
-						/>,
-					);
-				});
-			}
-		}
 	});
 
 	return (
@@ -83,6 +56,12 @@ export default function Markdown({ readme }) {
 				maxWidth="59.25rem"
 				margin="0 auto"
 			>
+				<Heading level="h1">
+					<Link href={atom}>
+						<IconRssLine size="small" color="warning" title={s.subscribe} />
+					</Link>{" "}
+					{s.releases}
+				</Heading>
 				<style>{css}</style>
 				<View as="div" className="markdown">
 					<ReactMarkdown
@@ -94,7 +73,7 @@ export default function Markdown({ readme }) {
 					/>
 				</View>
 			</View>
-			<RenderFooter language={l} />
+			<RenderFooter language={l} />,
 		</>
 	);
 }
