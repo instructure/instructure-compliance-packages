@@ -18,7 +18,9 @@ import {
 } from "@instructure/ui";
 
 const filterChildrenProps = (props) => {
-	return props.children.filter((child) => typeof child !== "string");
+	return Children.map(props.children, (child) =>
+		typeof child !== "string" ? child : null,
+	);
 };
 
 const mdtoui = {
