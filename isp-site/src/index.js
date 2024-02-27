@@ -21,12 +21,12 @@ const routes = [];
 ParentBrands.map((brand) => {
 	routes.push({
 		path: `${brand.route}`,
-		element: <Markdown readme={brand.readme} />,
+		element: <Markdown readme={brand.readme} brand={brand.brandName} />,
 		errorElement: <ErrorPage />,
 		children: [
 			{
 				path: ":language",
-				element: <Markdown readme={brand.readme} />,
+				element: <Markdown readme={brand.readme} brand={brand.brandName} />,
 			},
 		],
 	});

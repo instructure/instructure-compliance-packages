@@ -31,13 +31,17 @@ import { getStrings, getLang } from "utils/langs";
 import { Explorer } from "utils/explorer";
 
 // Page
-export default function Markdown({ readme }) {
+export default function Markdown({ readme, brand }) {
 	const l = getLang(useParams().language);
 	const s = getStrings(strings, l);
 	const css = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
 	const md = readme;
 
 	const [content, setContent] = useState(`${s.loading}`);
+
+	useEffect(() => {
+		document.title = `${brand} Compliance Packages`;
+	});
 
 	useEffect(() => {
 		fetch(md)
@@ -52,12 +56,11 @@ export default function Markdown({ readme }) {
 	});
 
 	useEffect(() => {
-		const page = document.getElementsByTagName("body")[0].classList[0];
 		const branches = document.querySelectorAll(".markdown .contents");
 
 		if (branches.length > 0) {
 			for (const branch of branches) {
-				Explorer(page, branch, l).then((table) => {
+				Explorer(brand.toLowerCase(), branch, l).then((table) => {
 					ReactDOM.createRoot(branch).render(
 						<ReactMarkdown
 							children={table}
