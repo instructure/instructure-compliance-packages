@@ -44,13 +44,19 @@ const mdtoui = {
 	code: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
 	del: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
 	blockquote: ({ node, ...props }) => {
-		props = { ...props, children: filterChildrenProps(props) };
+		props = {
+			...props,
+			children: filterChildrenProps(props),
+		};
 		const [quote, author] =
-			props.children[0].props.children.split("--", 2) || false;
-		return (
+			Children.toArray(props.children)[0]?.props.children.split("--", 2) ??
+			undefined;
+		return author ? (
 			<Byline description={quote} title={author} margin="medium 0" {...props}>
-				{author ? <Avatar name={author} /> : <></>}
+				<Avatar name={author} />
 			</Byline>
+		) : (
+			<Byline description={quote} margin="medium 0" />
 		);
 	},
 	h1: ({ node, ...props }) => {
