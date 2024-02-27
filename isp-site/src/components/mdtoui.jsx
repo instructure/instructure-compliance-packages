@@ -49,8 +49,9 @@ const mdtoui = {
 			children: filterChildrenProps(props),
 		};
 		const [quote, author] =
-			Children.toArray(props.children)[0]?.props.children.split("--", 2) ??
-			undefined;
+			Children.toArray(props.children)[0]
+				?.props.children.toString()
+				.split("--", 2) ?? undefined;
 		return author ? (
 			<Byline description={quote} title={author} margin="medium 0" {...props}>
 				<Avatar name={author} />
