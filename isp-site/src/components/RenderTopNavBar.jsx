@@ -204,7 +204,17 @@ function RenderTopNavBar({ language }) {
 														</Link>
 													</InlineList.Item>
 													<InlineList.Item>
-														<Link href="mailto:info@instructure.com">
+														<Link
+															href={
+																{
+																	EN: "https://www.instructure.com/contact-us",
+																	ES_LA:
+																		"https://www.instructure.com/es/contact-us",
+																	PT: "https://www.instructure.com/pt-br/contato",
+																	DE: "https://www.instructure.com/de/contact-us",
+																}[l]
+															}
+														>
 															{s.contact}
 														</Link>
 													</InlineList.Item>
