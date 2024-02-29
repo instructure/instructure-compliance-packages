@@ -210,7 +210,8 @@ function RenderTopNavBar({ language }) {
 																	EN: "https://www.instructure.com/contact-us",
 																	ES_LA:
 																		"https://www.instructure.com/es/contact-us",
-																	PT: "https://www.instructure.com/pt-br/contato",
+																	PT_BR:
+																		"https://www.instructure.com/pt-br/contato",
 																	DE: "https://www.instructure.com/de/contact-us",
 																}[l]
 															}

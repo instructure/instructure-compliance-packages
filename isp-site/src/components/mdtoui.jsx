@@ -196,7 +196,14 @@ const mdtoui = {
 								return (
 									<Table.Row {...tbrProps}>
 										{Children.map(children, (child) => {
-											return <Table.Cell {...child.props} />;
+											const { children, ...tdProps } = child.props;
+											return (
+												<Table.Cell {...tdProps}>
+													{Children.map(children, (child) => {
+														return child;
+													})}
+												</Table.Cell>
+											);
 										})}
 									</Table.Row>
 								);
