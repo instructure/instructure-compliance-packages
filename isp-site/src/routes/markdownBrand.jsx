@@ -1,7 +1,6 @@
-// Modules
 import React, { useState, useEffect } from "react";
 import * as ReactDOM from "react-dom/client";
-import ReactMarkdown from "react-markdown";
+import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkGemoji from "remark-gemoji";
 import rehypeRaw from "rehype-raw";
@@ -18,12 +17,11 @@ import { getStrings, getLang } from "utils/langs";
 import { Explorer } from "utils/explorer";
 
 // Page
-export default function Markdown({ readme, brand }) {
+export default function MarkdownBrand({ readme, brand }) {
 	const l = getLang(useParams().language);
 	const s = getStrings(strings, l);
 	const css = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
 	const md = readme;
-
 	const [content, setContent] = useState(`${s.loading}`);
 
 	useEffect(() => {
@@ -44,12 +42,11 @@ export default function Markdown({ readme, brand }) {
 
 	useEffect(() => {
 		const branches = document.querySelectorAll(".markdown .contents");
-
 		if (branches.length > 0) {
 			for (const branch of branches) {
 				Explorer(brand.toLowerCase(), branch, l).then((table) => {
 					ReactDOM.createRoot(branch).render(
-						<ReactMarkdown
+						<Markdown
 							children={table}
 							remarkPlugins={[remarkGfm, remarkGemoji]}
 							rehypePlugins={[rehypeRaw]}
@@ -74,8 +71,9 @@ export default function Markdown({ readme, brand }) {
 				margin="0 auto"
 			>
 				<style>{css}</style>
+
 				<View as="div" className="markdown">
-					<ReactMarkdown
+					<Markdown
 						children={content}
 						remarkPlugins={[remarkGfm, remarkGemoji]}
 						rehypePlugins={[rehypeRaw]}

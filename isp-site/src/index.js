@@ -8,7 +8,7 @@ import "./index.css";
 import { InstUISettingsProvider, canvas, View } from "@instructure/ui";
 import Links from "routes/links";
 import MDUI from "routes/mdui";
-import Markdown from "routes/markdown";
+import MarkdownBrand from "routes/markdownBrand";
 import Releases from "routes/releases";
 import ErrorPage from "routes/error";
 import { ParentBrands } from "variables/brands";
@@ -22,12 +22,14 @@ const routes = [];
 for (const brand of ParentBrands) {
 	routes.push({
 		path: `${brand.route}`,
-		element: <Markdown readme={brand.readme} brand={brand.brandName} />,
+		element: <MarkdownBrand readme={brand.readme} brand={brand.brandName} />,
 		errorElement: <ErrorPage />,
 		children: [
 			{
 				path: ":language",
-				element: <Markdown readme={brand.readme} brand={brand.brandName} />,
+				element: (
+					<MarkdownBrand readme={brand.readme} brand={brand.brandName} />
+				),
 			},
 		],
 	});
