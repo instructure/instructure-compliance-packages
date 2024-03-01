@@ -1,5 +1,5 @@
 // Modules
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkGemoji from "remark-gemoji";
@@ -21,7 +21,7 @@ export default function MDUI() {
 	const l = getLang(useParams().language);
 	const s = getStrings(strings, l);
 	const md = markdownSample;
-	let init = true;
+	const init = useRef(true);
 
 	useEffect(() => {
 		document.title = "Markdown to Instructure UI";
@@ -31,8 +31,8 @@ export default function MDUI() {
 
 	useEffect(
 		(text) => {
-			if (init) {
-				init = false;
+			if (init.current) {
+				init.current = false;
 				const getMD = async () => {
 					await fetch(md)
 						.then((response) => {
@@ -49,7 +49,7 @@ export default function MDUI() {
 			}
 			setContent(text);
 		},
-		[md, init, s.fetch_fail],
+		[md, s.fetch_fail],
 	);
 
 	return (
