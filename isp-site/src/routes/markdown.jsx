@@ -5,20 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkGemoji from "remark-gemoji";
 import rehypeRaw from "rehype-raw";
-import {
-	View,
-	Link,
-	Text,
-	List,
-	Heading,
-	SourceCodeEditor,
-	Byline,
-	Avatar,
-	ToggleGroup,
-	Img,
-	Table,
-	Checkbox,
-} from "@instructure/ui";
+import { View } from "@instructure/ui";
 import RenderTopNavBar from "components/RenderTopNavBar";
 import RenderFooter from "components/RenderFooter";
 
