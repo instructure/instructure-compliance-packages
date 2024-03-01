@@ -18,7 +18,8 @@ import Redirects from "variables/redirects";
 const routes = [];
 
 // Brands
-ParentBrands.map((brand) => {
+
+for (const brand of ParentBrands) {
 	routes.push({
 		path: `${brand.route}`,
 		element: <Markdown readme={brand.readme} brand={brand.brandName} />,
@@ -30,28 +31,28 @@ ParentBrands.map((brand) => {
 			},
 		],
 	});
-});
+}
 
 // Redirects
-Redirects.map((brand) => {
-	brand.links.map((link) => {
+for (const redirect of Redirects) {
+	for (const link of redirect.links) {
 		routes.push({
 			path: link.from,
 			element: (
-				<RedirectTo path={link.from} brand={brand.brand} url={link.to} />
+				<RedirectTo path={link.from} brand={redirect.brand} url={link.to} />
 			),
 			errorElement: <ErrorPage />,
 			children: [
 				{
 					path: ":language",
 					element: (
-						<RedirectTo path={link.from} brand={brand.brand} url={link.to} />
+						<RedirectTo path={link.from} brand={redirect.brand} url={link.to} />
 					),
 				},
 			],
 		});
-	});
-});
+	}
+}
 
 // Links
 routes.push({
