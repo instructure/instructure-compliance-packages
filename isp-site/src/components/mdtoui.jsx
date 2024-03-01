@@ -114,11 +114,7 @@ const mdtoui = {
 					if (tasklist && children) {
 						let checked;
 						return (
-							<List.Item
-								key={child.toString()}
-								margin="0 0 small small"
-								{...liProps}
-							>
+							<List.Item key={child.key} margin="0 0 small small" {...liProps}>
 								{Children.map(children, (child) => {
 									if (child?.props?.type === "checkbox")
 										checked = child?.props?.checked ?? false;
@@ -141,7 +137,7 @@ const mdtoui = {
 							</List.Item>
 						);
 					}
-					return <List.Item key={child} {...child.props} />;
+					return <List.Item key={child.key} {...child.props} />;
 				})}
 			</List>
 		);
@@ -151,8 +147,8 @@ const mdtoui = {
 		const { children, ...fProps } = props;
 		return (
 			<List as={node.tagName} {...fProps}>
-				{children.map((node, i) => {
-					return <List.Item key={i.toString()} {...node.props} />;
+				{Children.map(children, (child) => {
+					return <List.Item key={child.key} {...child.props} />;
 				})}
 			</List>
 		);
@@ -189,8 +185,8 @@ const mdtoui = {
 											{Children.map(children, (child) => {
 												return (
 													<Table.ColHeader
-														key={child.toString()}
-														id={child.toString()}
+														key={child.key}
+														id={child.key}
 														{...child.props}
 													/>
 												);
