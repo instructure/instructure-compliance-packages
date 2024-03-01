@@ -38,6 +38,10 @@ export default function MDUI() {
 	const md = markdownSample;
 	let init = true;
 
+	useEffect(() => {
+		document.title = "Markdown to Instructure UI";
+	});
+
 	const [content, setContent] = useState(`${s.loading}`);
 
 	useEffect(
