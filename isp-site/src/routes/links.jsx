@@ -2,7 +2,6 @@
 import global from "variables/globals";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import {
 	View,
 	Table,
@@ -151,6 +150,14 @@ export default function Links() {
 		handleQueryChange(e, "");
 	};
 
+	async function copy(text) {
+		try {
+			await navigator.clipboard.writeText(text);
+		} catch (error) {
+			console.error(error.message);
+		}
+	}
+
 	return (
 		<>
 			<RenderTopNavBar language={l} />
@@ -265,17 +272,16 @@ export default function Links() {
 															placement="top"
 															color="primary-inverse"
 														>
-															<CopyToClipboard
-																text={`https://${fromPrefix}${link.from}`}
+															<IconButton
+																withBackground={false}
+																withBorder={false}
+																screenReaderLabel={s.copy_url}
+																onClick={() => {
+																	copy(`https://${fromPrefix}${link.from}`);
+																}}
 															>
-																<IconButton
-																	withBackground={false}
-																	withBorder={false}
-																	screenReaderLabel={s.copy_url}
-																>
-																	<IconCopyLine />
-																</IconButton>
-															</CopyToClipboard>
+																<IconCopyLine />
+															</IconButton>
 														</Tooltip>
 														<br />
 														<Text size="small" color="secondary">
