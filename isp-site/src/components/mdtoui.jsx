@@ -106,28 +106,37 @@ const mdtoui = {
 	ul: ({ node, ...props }) => {
 		props = { ...props, children: filterChildrenProps(props) };
 		const { children, ...ulProps } = props;
-		const tasklist = props.className === "contains-task-list";
+		const tasklist = ulProps?.className === "contains-task-list" ?? false;
 		return (
-			<List isUnstyled={tasklist ? true : false} {...ulProps}>
-				{children.map((node, i) => {
-					if (tasklist) {
-						const label = [...node.props.children];
-						const { children, ...liProps } = node.props;
+			<List isUnstyled={tasklist} {...ulProps}>
+				{Children.map(children, (child) => {
+					const { children, ...liProps } = child.props;
+					if (tasklist && children) {
+						let checked;
 						return (
 							<List.Item
-								key={i.toString()}
+								key={child.toString()}
 								margin="0 0 small small"
 								{...liProps}
 							>
-								<Checkbox
-									label={label.shift()}
-									disabled={true}
-									defaultChecked={liProps.node.children[0].properties.checked}
-								/>
+								{Children.map(children, (child) => {
+									if (child?.props?.type === "checkbox")
+										checked = child?.props?.checked ?? false;
+
+									if (child?.props?.type !== "checkbox" && child !== " ") {
+										return (
+											<Checkbox
+												label={child}
+												disabled={true}
+												defaultChecked={checked}
+											/>
+										);
+									}
+								})}
 							</List.Item>
 						);
 					}
-					return <List.Item key={i.toString()} {...node.props} />;
+					return <List.Item key={child} {...child.props} />;
 				})}
 			</List>
 		);
