@@ -52,12 +52,10 @@ const mdtoui = {
 			Children.toArray(props.children)[0]
 				?.props.children.toString()
 				.split("--", 2) ?? undefined;
-		return author ? (
+		return (
 			<Byline description={quote} title={author} margin="medium 0" {...props}>
-				<Avatar name={author} />
+				{author ? <Avatar name={author} /> : <></>}
 			</Byline>
-		) : (
-			<Byline description={quote} margin="medium 0" />
 		);
 	},
 	h1: ({ node, ...props }) => {
