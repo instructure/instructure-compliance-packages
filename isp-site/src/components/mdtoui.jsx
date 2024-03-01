@@ -152,7 +152,6 @@ const mdtoui = {
 			</List>
 		);
 	},
-	li: ({ node, ...props }) => <List.Item {...props} />,
 	input: ({ node, ...props }) => <node.tagName {...props} />,
 	details: ({ node, ...props }) => {
 		props = { ...props, children: filterChildrenProps(props) };
