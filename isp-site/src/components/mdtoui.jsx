@@ -40,7 +40,7 @@ const mdtoui = {
 	p: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
 	em: ({ node, ...props }) => <Text fontStyle="italic" {...props} />,
 	strong: ({ node, ...props }) => <Text weight="bold" {...props} />,
-	span: ({ node, ...props }) => <Text {...props} />,
+	span: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
 	code: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
 	del: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
 	blockquote: ({ node, ...props }) => {
@@ -196,14 +196,7 @@ const mdtoui = {
 								return (
 									<Table.Row {...tbrProps}>
 										{Children.map(children, (child) => {
-											const { children, ...tdProps } = child.props;
-											return (
-												<Table.Cell {...tdProps}>
-													{Children.map(children, (child) => {
-														return child;
-													})}
-												</Table.Cell>
-											);
+											return <Table.Cell {...child.props} />;
 										})}
 									</Table.Row>
 								);
