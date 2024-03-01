@@ -4,22 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkGemoji from "remark-gemoji";
 import rehypeRaw from "rehype-raw";
-import {
-	View,
-	Link,
-	Text,
-	List,
-	Heading,
-	SourceCodeEditor,
-	Byline,
-	Avatar,
-	ToggleDetails,
-	Img,
-	Table,
-	Checkbox,
-	Grid,
-	Alert,
-} from "@instructure/ui";
+import { View, SourceCodeEditor, Grid, Alert } from "@instructure/ui";
 import { useParams } from "react-router-dom";
 import { getStrings, getLang } from "utils/langs";
 import strings from "strings/mdui";
