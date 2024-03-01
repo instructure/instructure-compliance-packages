@@ -123,7 +123,12 @@ const mdtoui = {
 									if (child?.props?.type === "checkbox")
 										checked = child?.props?.checked ?? false;
 
-									if (child?.props?.type !== "checkbox" && child !== " ") {
+									if (
+										child?.props?.type !== "checkbox" &&
+										child !== " " &&
+										child !== "[ ]" &&
+										child !== "[X]"
+									) {
 										return (
 											<Checkbox
 												label={child}
