@@ -51,7 +51,7 @@ const mdtoui = {
 		const [quote, author] =
 			Children.toArray(props.children)[0]
 				?.props.children.toString()
-				.split("--", 2) ?? undefined;
+				.split("--", 2) ?? false;
 		return (
 			<Byline description={quote} title={author} margin="medium 0" {...props}>
 				{author ? <Avatar name={author} /> : <></>}
@@ -87,9 +87,8 @@ const mdtoui = {
 	pre: ({ node, ...props }) => {
 		if (node.children.length === 1 && node.children[0].tagName === "code") {
 			let preContent = node.children[0].children[0].value;
-			if (preContent.endsWith("\n")) {
-				preContent = preContent.slice(0, -1);
-			}
+			if (preContent.endsWith("\n")) preContent = preContent.slice(0, -1);
+
 			return (
 				<SourceCodeEditor
 					label="Code"
