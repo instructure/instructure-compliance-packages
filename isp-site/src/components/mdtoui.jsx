@@ -153,12 +153,7 @@ const mdtoui = {
 		);
 	},
 	li: ({ node, ...props }) => <List.Item {...props} />,
-	input: ({ node, ...props }) => {
-		switch (props.type) {
-			default:
-				return <node.tagName {...props} />;
-		}
-	},
+	input: ({ node, ...props }) => <node.tagName {...props} />,
 	details: ({ node, ...props }) => {
 		props = { ...props, children: filterChildrenProps(props) };
 		const label = props.children.shift();
