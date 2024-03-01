@@ -23,6 +23,14 @@ const filterChildrenProps = (props) => {
 	);
 };
 
+const alignStr = (p) => {
+	return (
+		p?.style?.textAlign.replace(/\b(left|right)\b/, (s) =>
+			s === "left" ? "start" : "end",
+		) ?? "start"
+	);
+};
+
 const mdtoui = {
 	hr: ({ node, ...props }) => (
 		<View
@@ -180,6 +188,7 @@ const mdtoui = {
 													<Table.ColHeader
 														key={child.key}
 														id={child.key}
+														textAlign={alignStr(child.props)}
 														{...child.props}
 													/>
 												);
@@ -197,7 +206,12 @@ const mdtoui = {
 								return (
 									<Table.Row {...tbrProps}>
 										{Children.map(children, (child) => {
-											return <Table.Cell {...child.props} />;
+											return (
+												<Table.Cell
+													textAlign={alignStr(child.props)}
+													{...child.props}
+												/>
+											);
 										})}
 									</Table.Row>
 								);
