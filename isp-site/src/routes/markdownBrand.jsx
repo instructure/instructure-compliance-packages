@@ -1,5 +1,6 @@
 // Modules
 import React, { useState, useEffect } from "react";
+import * as ReactDOM from "react-dom/client";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkGemoji from "remark-gemoji";
@@ -48,7 +49,7 @@ export default function MarkdownBrand({ readme, brand }) {
 		if (branches.length > 0) {
 			for (const branch of branches) {
 				Explorer(brand.toLowerCase(), branch, l).then((table) => {
-					createPortal(
+					ReactDOM.createRoot(branch).render(
 						<Markdown
 							children={table}
 							remarkPlugins={[remarkGfm, remarkGemoji]}
