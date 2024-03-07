@@ -2,3 +2,5 @@
 .DS_Store
 .env.*
 isp-site/.yarn/install-state.gz
+node_modules
+.yarn

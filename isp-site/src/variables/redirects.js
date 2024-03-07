@@ -738,7 +738,6 @@ const Links = [
 				to: "https://community.canvaslms.com/t5/Elevate-K-12-Analytics/ct-p/videri",
 				lang: "EN",
 			},
-			
 		],
 	},
 	{
@@ -768,11 +767,11 @@ const Links = [
 				to: "https://community.canvaslms.com/t5/Elevate-Standards-Alignment/tkb-p/ab_basics",
 				lang: "EN",
 			},
-			
 		],
 	},
-		
-	{brand: "Elevate Data Quality",
+
+	{
+		brand: "Elevate Data Quality",
 		links: [
 			{
 				title: "Home",
@@ -864,7 +863,7 @@ const Links = [
 			{
 				title: "Compliance Package",
 				from: "/learnplatform/dl",
-				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/learn-platform.zip",
+				to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/learnplatform.zip",
 				lang: "EN",
 			},
 			{
