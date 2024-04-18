@@ -11,7 +11,6 @@ Current packages include:
 - [Canvas Credentials*](https://inst.bid/canvas/credentials/dl)
 - [Impact*](https://inst.bid/impact/dl)
 - [Mastery Connect](https://inst.bid/mastery/connect/dl)
-- [Elevate K-12 Analytics](https://inst.bid/elevate/k12-analytics/dl)
 - [Elevate Standards Alignment](https://inst.bid/elevate/standards-alignment/dl)
 - [LearnPlatform](https://inst.bid/learnplatform/dl)
 
@@ -35,7 +34,6 @@ Los paquetes actuales incluyen:
 - [Canvas Studio*](https://inst.bid/canvas/studio/dl/es)
 - [Canvas Catalog*](https://inst.bid/canvas/catalog/dl/es)
 - [Mastery Connect*](https://inst.bid/mastery/connect/dl/es)
-- [Elevate K-12 Analytics*](https://inst.bid/elevate/k12-analytics/dl/es)
 - [Elevate Standards Alignment*](https://inst.bid/elevate/standards-alignment/dl/es)
 - [LearnPlatform*](https://inst.bid/learnplatform/dl/es)
 
@@ -59,7 +57,6 @@ Os pacotes atuais incluem:
 - [Canvas Studio*](https://inst.bid/canvas/studio/dl/pt)
 - [Canvas Catalog*](https://inst.bid/canvas/catalog/dl/pt)
 - [Mastery Connect*](https://inst.bid/mastery/connect/dl/pt)
-- [Elevate K-12 Analytics*](https://inst.bid/elevate/k12-analytics/dl/pt)
 - [Elevate Standards Alignment*](https://inst.bid/elevate/standards-alignment/dl/pt)
 - [LearnPlatform*](https://inst.bid/learnplatform/dl/es)
 
@@ -83,7 +80,6 @@ Aktuelle Pakete umfassen:
 - [Canvas Credentials*](https://inst.bid/canvas/credentials/dl/de)
 - [Impact*](https://inst.bid/impact/dl/de)
 - [Mastery Connect*](https://inst.bid/mastery/connect/dl/de)
-- [Elevate K-12 Analytics*](https://inst.bid/elevate/k12-analytics/dl/de)
 - [Elevate Standards Alignment*](https://inst.bid/elevate/standards-alignment/dl/de)
 - [LearnPlatform*](https://inst.bid/learnplatform/dl/de)
 
