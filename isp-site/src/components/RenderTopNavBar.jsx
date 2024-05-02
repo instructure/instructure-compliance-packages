@@ -40,8 +40,8 @@ function RenderTopNavBar({ language }) {
 							dropdownMenuLabel: s.main_menu,
 						}}
 						themeOverride={{
-							desktopBackground: "#287A9F",
-							smallViewportBackground: "#287A9F",
+							desktopBackgroundInverse: "#FFF",
+							smallViewportBackgroundInverse: "#FFF",
 						}}
 						renderBrand={
 							<TopNavBar.Brand
