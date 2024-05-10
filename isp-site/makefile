@@ -8,5 +8,5 @@ jq:
 	
 git:
 	git add .
-	git commit -m "Deploying version $(SEMVER)+$(BUILD)"
-	git push
+	git commit -m "Building version $(SEMVER)+$(BUILD)"
+	
