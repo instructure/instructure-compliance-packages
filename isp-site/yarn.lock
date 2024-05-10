@@ -1812,18 +1812,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@biomejs/biome@npm:^1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/biome@npm:1.7.2"
+"@biomejs/biome@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/biome@npm:1.7.3"
   dependencies:
-    "@biomejs/cli-darwin-arm64": "npm:1.7.2"
-    "@biomejs/cli-darwin-x64": "npm:1.7.2"
-    "@biomejs/cli-linux-arm64": "npm:1.7.2"
-    "@biomejs/cli-linux-arm64-musl": "npm:1.7.2"
-    "@biomejs/cli-linux-x64": "npm:1.7.2"
-    "@biomejs/cli-linux-x64-musl": "npm:1.7.2"
-    "@biomejs/cli-win32-arm64": "npm:1.7.2"
-    "@biomejs/cli-win32-x64": "npm:1.7.2"
+    "@biomejs/cli-darwin-arm64": "npm:1.7.3"
+    "@biomejs/cli-darwin-x64": "npm:1.7.3"
+    "@biomejs/cli-linux-arm64": "npm:1.7.3"
+    "@biomejs/cli-linux-arm64-musl": "npm:1.7.3"
+    "@biomejs/cli-linux-x64": "npm:1.7.3"
+    "@biomejs/cli-linux-x64-musl": "npm:1.7.3"
+    "@biomejs/cli-win32-arm64": "npm:1.7.3"
+    "@biomejs/cli-win32-x64": "npm:1.7.3"
   dependenciesMeta:
     "@biomejs/cli-darwin-arm64":
       optional: true
@@ -1843,62 +1843,62 @@ __metadata:
       optional: true
   bin:
     biome: bin/biome
-  checksum: 10c0/c0fb7b653db6df2e2338f84c1105847713e60ec5c3737f3bbc7df2dd4b1b02e981af81290808806fe0342e9a530b2a83b1550adf9b96f4cab0d13c188070aaef
+  checksum: 10c0/05c95bb4b1fbf1b252cf2124f012f69a00ff5599ecac002b7e3004bfcd927e3d7b5f4935739096b5184653ec96b44ddcc36809d059682e5378bde20c836fb111
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-arm64@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/cli-darwin-arm64@npm:1.7.2"
+"@biomejs/cli-darwin-arm64@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/cli-darwin-arm64@npm:1.7.3"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-x64@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/cli-darwin-x64@npm:1.7.2"
+"@biomejs/cli-darwin-x64@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/cli-darwin-x64@npm:1.7.3"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-arm64-musl@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/cli-linux-arm64-musl@npm:1.7.2"
+"@biomejs/cli-linux-arm64-musl@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/cli-linux-arm64-musl@npm:1.7.3"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-arm64@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/cli-linux-arm64@npm:1.7.2"
+"@biomejs/cli-linux-arm64@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/cli-linux-arm64@npm:1.7.3"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-x64-musl@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/cli-linux-x64-musl@npm:1.7.2"
+"@biomejs/cli-linux-x64-musl@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/cli-linux-x64-musl@npm:1.7.3"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-x64@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/cli-linux-x64@npm:1.7.2"
+"@biomejs/cli-linux-x64@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/cli-linux-x64@npm:1.7.3"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-arm64@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/cli-win32-arm64@npm:1.7.2"
+"@biomejs/cli-win32-arm64@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/cli-win32-arm64@npm:1.7.3"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-x64@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@biomejs/cli-win32-x64@npm:1.7.2"
+"@biomejs/cli-win32-x64@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@biomejs/cli-win32-x64@npm:1.7.3"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -2431,1386 +2431,1386 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@instructure/canvas-high-contrast-theme@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/canvas-high-contrast-theme@npm:8.55.1"
+"@instructure/canvas-high-contrast-theme@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/canvas-high-contrast-theme@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/theme-registry": "npm:8.55.1"
-    "@instructure/ui-theme-tokens": "npm:8.55.1"
-  checksum: 10c0/5707cf94e43aef0dd5a6312e94a1f1f18a3e24253ceba4cd4f5e654cef0b1ad04de3475e8ef9fba05bc24cc3a653c2ddb80bf13268e7f49f43b6c5e4de348e1a
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/theme-registry": "npm:9.0.1"
+    "@instructure/ui-theme-tokens": "npm:9.0.1"
+  checksum: 10c0/91e1536b186670bbf62d90d56fec7cc88992acec0a1e1b9ae746eefdb3f1b7e38167540f5d3554c292065c2fa4de6545d6b506db46d520689a4f3094aab37a70
   languageName: node
   linkType: hard
 
-"@instructure/canvas-theme@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/canvas-theme@npm:8.55.1"
+"@instructure/canvas-theme@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/canvas-theme@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/theme-registry": "npm:8.55.1"
-    "@instructure/ui-theme-tokens": "npm:8.55.1"
-  checksum: 10c0/b0190aaf537d281e3ffbdd076ce98332c312e3a49b6c98a564ec248a9957a499f04ffec3d0e5a42f6b8a504ab4807eb61f444a2da1cc3649d9c36ee39d00465d
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/theme-registry": "npm:9.0.1"
+    "@instructure/ui-theme-tokens": "npm:9.0.1"
+  checksum: 10c0/ae902bf2864794aad324512141f5efe1b08cb0056f8301b57f88b78c15b4e6b8b42567ddafc3b32925f38ce9830237412d9c6316ab97e7f7e8eb72f17f2d41b9
   languageName: node
   linkType: hard
 
-"@instructure/console@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/console@npm:8.55.1"
+"@instructure/console@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/console@npm:9.0.1"
   dependencies:
     "@babel/helper-annotate-as-pure": "npm:^7.22.5"
     "@babel/helper-module-imports": "npm:^7.22.15"
     babel-plugin-macros: "npm:^3.1.0"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/cbc55335f3279daa7a28d8da71c561866fc9284c498a75cdfebd832bcf52f63cdd9a01c766102bba4335848cdf1463b0434595fa9b1089bdf1918a81c4729d2a
+  checksum: 10c0/00bfecf4294bbe66217d16499965e3bd7e8946745282300f5517e312c4978472ae5c048564e39e766aec2dcae9276db9f9f6b8da6cba4371ffcbffd223fb9953
   languageName: node
   linkType: hard
 
-"@instructure/debounce@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/debounce@npm:8.55.1"
+"@instructure/debounce@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/debounce@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-  checksum: 10c0/bcaf0a1c18a68f4093225c73f8d34eca6eeb668115ab9d3264b130614ef9d6559101508724ccde7a364dea0bb39f2fb1e595356d6db2f06c3400ddf07a9fc0e8
+  checksum: 10c0/40ca9d3cf452231e8d8e254469224aa5b72064fc6aacb294906b24eaefc420708f24583e8deac10287162e788a8a8432ec1f6a633be605402c67c52590c9be43
   languageName: node
   linkType: hard
 
-"@instructure/emotion@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/emotion@npm:8.55.1"
+"@instructure/emotion@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/emotion@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
     "@emotion/react": "npm:^11.11.1"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/theme-registry": "npm:8.55.1"
-    "@instructure/ui-decorator": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-themes": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/theme-registry": "npm:9.0.1"
+    "@instructure/ui-decorator": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-themes": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     hoist-non-react-statics: "npm:^3.3.2"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/ad976964673fd0fb9c98e637d28e8779e9f7c0fbef49f0ad31efe5bbe823fcbea81ac2fafdd9d46ef87b83c433528fff9675852690eb125617e64d475cad65e1
+  checksum: 10c0/466f7d2dc06803944a4b8e4dd20b5a320bb1248620851e485f5ad39e9bfbb362d5ea64154cea13b2ae0832db615ee447eba3ffe49e483fa9fc03068ff9a31011
   languageName: node
   linkType: hard
 
-"@instructure/instructure-theme@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/instructure-theme@npm:8.55.1"
+"@instructure/instructure-theme@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/instructure-theme@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/theme-registry": "npm:8.55.1"
-    "@instructure/ui-theme-tokens": "npm:8.55.1"
-  checksum: 10c0/f22125c895a5035e3b4b4c328ee5aec2b86904b74869a020e800b49f483a72acbc94f34e12d9437691dfab5f0e39866ad0b09110393e747a7c502362ff7b85cc
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/theme-registry": "npm:9.0.1"
+    "@instructure/ui-theme-tokens": "npm:9.0.1"
+  checksum: 10c0/198ea036ccd4371980bfcfc0124e531785f8faff7961b3736bc037d9985ad1b318ce0174441bbce37240bd1a7cd4810a68bd59f1e23a134c7f4958914c521b6c
   languageName: node
   linkType: hard
 
-"@instructure/shared-types@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/shared-types@npm:8.55.1"
+"@instructure/shared-types@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/shared-types@npm:9.0.1"
   dependencies:
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/33a8cb510f999acfb30c29e01861355ad20dff53e53afe12278129768236a24488b66f90bce6d21cba4037e4b6ec2a2aeee278483c598c521ac577457ca9fbab
+  checksum: 10c0/75f4d8aff180684563a26079a3b22450c3ac61ad595201fd184f33c891603deb03775aa66e655ed2bf9094524b866f648e6db5e2184150454fa888591607e006
   languageName: node
   linkType: hard
 
-"@instructure/theme-registry@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/theme-registry@npm:8.55.1"
+"@instructure/theme-registry@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/theme-registry@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-  checksum: 10c0/02b7bc30731b9b5633870f2092db7681fae980e46f41d320ef1c0b19991ed045e535db62976355f66bb2370d5cb4a451281925809032d08bfad66f33248283e1
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+  checksum: 10c0/dd04829c1b05e7f1f030b86edc495bed28190b7cee2421632bfb53bcd193b5c4b70f3001cbcc7411e9b61302af4072f5565b79ca6886df68fa266a6533a39dfd
   languageName: node
   linkType: hard
 
-"@instructure/ui-a11y-content@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-a11y-content@npm:8.55.1"
+"@instructure/ui-a11y-content@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-a11y-content@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/e6be39b01ebdaef840df4310833686ee234c450f09bb27661137a5efae11c15a543d29aa217fb41d2757c1317cee01e3c830203ef42702d79ef345d6367a4ab9
+  checksum: 10c0/46b56f218b3ea85ad6f8b84d889d83d9f6fbf928a7a3e20278dd94faf8ede24d87497cf5795e5b675e320b124fb217be91cab73d8cc8cd2636d3dc90075723a0
   languageName: node
   linkType: hard
 
-"@instructure/ui-a11y-utils@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-a11y-utils@npm:8.55.1"
+"@instructure/ui-a11y-utils@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-a11y-utils@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/1e3e8577bce63a232678c27c758182a7ab6d69fec177413b5de2286fd745b8455cca45b14f745636c7a05b8a5dc63f4b7478a87d10acc4b6e38867000cae5aef
+  checksum: 10c0/672dd34617f0752f22c64cd2e1c1350d875c773c12db658c1a35e700f95eb7cf208883c985b29c8ec9611b110f4141dfdb6205e8cb3af35f79c508ee728f4805
   languageName: node
   linkType: hard
 
-"@instructure/ui-alerts@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-alerts@npm:8.55.1"
+"@instructure/ui-alerts@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-alerts@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-themes": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-themes": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/55d7bbb8ec81bca8e41e2829b3b79dbf7b85f5e76101717250d847ea5c85c744aada703dddb95d630ed021ffa96d151f4dfce84d18bf1c3a1b5ee0fd4dd253f2
+  checksum: 10c0/86a1c8a8325368e7ce14465c575283475d585a86c81bb9ea39d514665a0ce65f6b2e78683286284606de8fa964337dde02dac5d8d27270423e1a2ce55a4a5632
   languageName: node
   linkType: hard
 
-"@instructure/ui-avatar@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-avatar@npm:8.55.1"
+"@instructure/ui-avatar@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-avatar@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/c084faa349732b4365ac47ec25a47513dd43580d17ed236173804dddf5eefad243e6cef224c0b3cbde5fd0fcb2e55e77a6dc1de3af8414267c50e3075b683c7a
+  checksum: 10c0/197a7f13488f34bbef5f585ea9b04cc2c8057dc59335b4cb3832b8f56e3a86cb864e54f82caa0f026232a6c0d4f9fb9eec4163e28fad861ff2d37e3178ee7b15
   languageName: node
   linkType: hard
 
-"@instructure/ui-axe-check@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-axe-check@npm:8.55.1"
+"@instructure/ui-axe-check@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-axe-check@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
     axe-core: "npm:^4.8.2"
-  checksum: 10c0/c86474d4ba700cc8b7580135d46c285f3fced8bdd1b00f463f288854d40c9cdcb796206c19a9ee1d3c781c4a40ebd0a04dcd679b8088488200e28eb83bba33b4
+  checksum: 10c0/c3e231dd33ca79f6524f86ecfac1aadd655c2b2017d0d93e63a89103e85879fe4007506f17f5d7963ac3bb9ed70b4fe4c67bb08437bfc7efc96bcc9721e6236a
   languageName: node
   linkType: hard
 
-"@instructure/ui-badge@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-badge@npm:8.55.1"
+"@instructure/ui-badge@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-badge@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/3976b26c3c539c89ce5541d09edfe2af4583d612bb489becabedeab1e9a3c542d482dd99985d1f870c2adc0a9333e7f0d1d886bfb4d0cb63918783585b47f035
+  checksum: 10c0/1e5ec75a0a49a73acc4b8786830a057d2b342027c4e8b8a943bb62e1ca368f013c6a1b42a0f1720897064ac244cd11d66da0dc044903a1663abafab7299cd8a8
   languageName: node
   linkType: hard
 
-"@instructure/ui-billboard@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-billboard@npm:8.55.1"
+"@instructure/ui-billboard@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-billboard@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-heading": "npm:8.55.1"
-    "@instructure/ui-img": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-heading": "npm:9.0.1"
+    "@instructure/ui-img": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/5a2cdfe3c64fddcb5101bfbce3a75289c5617cd661e2f972d2734bec3e8f490dc3f0f11469d026173cd34f96f48bd0eedc14b40c37919d9587352b4f81539872
+  checksum: 10c0/b6c45645ba0a1e4664bba4d45ae1a34e1f0a5c00ae9d91aee6ff3462bd698478016c9bccf98a3d75ab956053a6b6141c4515f76a73e345f878a9ee4a065c3ed2
   languageName: node
   linkType: hard
 
-"@instructure/ui-breadcrumb@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-breadcrumb@npm:8.55.1"
+"@instructure/ui-breadcrumb@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-breadcrumb@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-link": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-truncate-text": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-link": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-truncate-text": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/4bab3063f97e94fb371f9cb6990a88d7d43c7f3f2bde830cd2a6028203a249f1fb4156464704687f45850a834f6b34af42cbf2e32968e0afd7ee757da51f9a1f
+  checksum: 10c0/88b6c3b810f31e943c79163952be963db27975c47cc69ad0fe9dfb1091a61421c4f6d2f07b4b469319801a423553983400fdac55493eb2d4059a4319f530014e
   languageName: node
   linkType: hard
 
-"@instructure/ui-buttons@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-buttons@npm:8.55.1"
+"@instructure/ui-buttons@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-buttons@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/35cb814a65abece138aa3989feeb84a0726c074a91c78952916f9dbec2730e340f147c4e455f9642d99d803402875a5562182046f51421a790ef0fea17079338
+  checksum: 10c0/7489d88122027ab935e45d5d88500bf69fce607cc9a5cd95ecea598234da56087b751accc1386bfa938eb771199e7e2351aa7b9d2620300e482685ab045e88f9
   languageName: node
   linkType: hard
 
-"@instructure/ui-byline@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-byline@npm:8.55.1"
+"@instructure/ui-byline@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-byline@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/7fcdb0142e9cc8545bfe95b72ff9a4675fabadaba6448063c78f9d64fb81be4b56ccfc51bda134f8b612e87eecc2755cc7f11f639519840a71558e5346b39a1c
+  checksum: 10c0/6b5054e64cf0c810f17d2d9626398bbfd89875d03ad450e2f0e1ce043ec2cd62897ccbedc6b971d4cc44ef0bbdd7950a30e7e8987b0ac47419fc30d31b92cd86
   languageName: node
   linkType: hard
 
-"@instructure/ui-calendar@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-calendar@npm:8.55.1"
+"@instructure/ui-calendar@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-calendar@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/9c424856bcb237ed9202b546e7f72a5a329eadb6c67a5b66b3f86e59fb72a2bbdd1c944db537c97387db9eabd97d544245aac7538d9ba7838b84059052b45641
+  checksum: 10c0/ba4a16ca6ebc6453f75f51e3c2dda4dbb4e0bae2ced1e7098f0b9e89dff06e5829058177942fe4b76ef5b2bd0e6de6f29dd9a4783971de8198be664e9f4c8ee1
   languageName: node
   linkType: hard
 
-"@instructure/ui-checkbox@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-checkbox@npm:8.55.1"
+"@instructure/ui-checkbox@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-checkbox@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-svg-images": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-svg-images": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/b7775406aed1bd0dde5eea906647d3df124bed34283d2599fb9d120663a276b0ecfd222ab16300a97dfaed2e926d92709409d9d6ea8f69b119944935b8e0feb9
+  checksum: 10c0/a9bcde276ec5c845145117b1c16d4a7feb1ae3bf9f1f0ba782fac423deebf5c7a37b3fbb5434021787ef4ff0a9f9fa625386e09cf2886c9bcf4dd104eb07390a
   languageName: node
   linkType: hard
 
-"@instructure/ui-code-editor@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-code-editor@npm:8.55.1"
+"@instructure/ui-code-editor@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-code-editor@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-test-locator": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-test-locator": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     codemirror: "npm:5.65.13"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/b2bda586b9913ecb2b3faa220f5a74ee8fd1e33e9ece229938d2c28ab6e57210c0193a7304fb7194b08bb4c295e79d376794fc9fd6e42b9f57274f3f2842461d
+  checksum: 10c0/bc613e94dd9ef413c4222512a4fb85103c6b75753db1df19590989905d33d358f61110d399e7181aa2d03fb8699db48b4bccba2ef10a73ac2baaf1d95d16ca77
   languageName: node
   linkType: hard
 
-"@instructure/ui-color-picker@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-color-picker@npm:8.55.1"
+"@instructure/ui-color-picker@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-color-picker@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-drilldown": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-pill": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-text": "npm:8.55.1"
-    "@instructure/ui-text-input": "npm:8.55.1"
-    "@instructure/ui-themes": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-drilldown": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-pill": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-text": "npm:9.0.1"
+    "@instructure/ui-text-input": "npm:9.0.1"
+    "@instructure/ui-themes": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/825b85174d238432ab1fb1646d6dcbdbf78317f68179cf226abdcc8a42bd1e1c19272b142f58533ae934ef8d1d0b393fb0d0dec2a6012899f8082dbadb4fed7d
+  checksum: 10c0/57208ff64c3dd8744ba5953054130dd0c15b7003d164a3e1b84f00feea6cd2513ed9c71dc9d512ae3e3524d2c736ae880f427c90cc2978b6953a1786a4b21ab3
   languageName: node
   linkType: hard
 
-"@instructure/ui-color-utils@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-color-utils@npm:8.55.1"
+"@instructure/ui-color-utils@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-color-utils@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
     tinycolor2: "npm:^1.6.0"
-  checksum: 10c0/dbc28b57ca15592e2b1211c6ac6b73f0ad7f0b64aa0e67ade972f8cc7c7ec193878730648f33d5d23a079d18a0f918eef621b6bac7e55b872ea72c313a3aae37
+  checksum: 10c0/037634460dd1d6342ff9435d9f3fd10f61ee7675a02ee257abf28dfe1475e638c4feb268ffc5f6caa2dacf7cf090483f6ad78adbe6cfa7499c8266ed4b2aa11f
   languageName: node
   linkType: hard
 
-"@instructure/ui-date-input@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-date-input@npm:8.55.1"
+"@instructure/ui-date-input@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-date-input@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/ui-calendar": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-selectable": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-text-input": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/ui-calendar": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-selectable": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-text-input": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/659ecf8f082e3a9135d4e0e926854c8c6fa1cd920da25b50e7de0fc79d4818753cc32296f263498c5ea22b8877c948e621e513b50dd20d4429fa00815dc7e297
+  checksum: 10c0/13a0bccb50c7b4abd6d29c50367b31c7f6ed6eba5e280db65808cc9defcbfedd115634b16b687c925cd295b47dc45a2b0aa0a6db3f9bab15ec52f1b4b07d8ef0
   languageName: node
   linkType: hard
 
-"@instructure/ui-date-time-input@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-date-time-input@npm:8.55.1"
+"@instructure/ui-date-time-input@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-date-time-input@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-calendar": "npm:8.55.1"
-    "@instructure/ui-date-input": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-time-select": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-calendar": "npm:9.0.1"
+    "@instructure/ui-date-input": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-time-select": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/606dceb86c98844294842d97033afc83d6188ec0e76e93d0412067ce5f1f89e03878fc98c4db542a74c871b52b9fc14fe89279232d03061bfa69a53dc9bd24ca
+  checksum: 10c0/12f72639a50e696a6d99943eac776a85fafad81bcca56d752698bac9e4bdc576dd226b4c07cf1f1c0fea9c30868719a82fbab655c10ee13511818e53ed985c81
   languageName: node
   linkType: hard
 
-"@instructure/ui-decorator@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-decorator@npm:8.55.1"
+"@instructure/ui-decorator@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-decorator@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-  checksum: 10c0/8a7d57f64c63d21ffd81a9541df52915e3f401c7b2f60d56d1a53423897f9862f90beece472f9b3c8bddc183effd5ccb3094ce92a76212527a1053df71ac53c6
+  checksum: 10c0/8edc6add11f558c8560e22bd48a9774dc7ea95ecfb4632139ccf00532a833906b5563f4d451ef63fc3a77092e3815e3254b6eb9c11557bd4be6df1f50d5ba412
   languageName: node
   linkType: hard
 
-"@instructure/ui-dialog@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-dialog@npm:8.55.1"
+"@instructure/ui-dialog@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-dialog@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/517996a985161e0b6d626c9d08ecd5052c3700a4cf6a5c2dc554714b46e70090ecb6d61b9e22228d3bd37d117342b92aeb4c730cb4c080e9036bb9605c2b933c
+  checksum: 10c0/d07995d08943af5c7142e3b841d6146a99b7ea49f719a8fb08b820b7a7f77fa63a87daf0435fab738391764b5edee3aabb06edfcb813468da0f4b06fd80d1010
   languageName: node
   linkType: hard
 
-"@instructure/ui-dom-utils@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-dom-utils@npm:8.55.1"
+"@instructure/ui-dom-utils@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-dom-utils@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/f0f67946d2d758d1fabae710782de29e0b825f10524f154cc1f38c9652aeafad2e06fe35c0667189b172e282c5ee61460ccce28570eaa70ef0b2caae1b24ac75
+  checksum: 10c0/25bf49f27eaf0b7554ed3163743c7be7573a835f075ab9e2c4ef9efeb8a7a29ffbd19bd739e8f912f594b1a64529367807c7ee07c8e2043cf076f5c9c9ed5115
   languageName: node
   linkType: hard
 
-"@instructure/ui-drawer-layout@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-drawer-layout@npm:8.55.1"
+"@instructure/ui-drawer-layout@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-drawer-layout@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dialog": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-portal": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-test-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dialog": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-portal": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-test-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/54778cf832de88e62ccd8dd53b4ab56c87916ea0c102fbb74d60e72e522e1dd95da09961f586eaca0310718b24b365446e51ea1c84b35a1aae52a776c999655f
+  checksum: 10c0/140b7fbe3b65c33d9cac1c7c8298b0ad472c788410e2eff7ea479f562eded3fc34aa76e059604e7eb470b13450fe7b631c438dd75a6bb4f0aec180bc42e51de7
   languageName: node
   linkType: hard
 
-"@instructure/ui-drilldown@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-drilldown@npm:8.55.1"
+"@instructure/ui-drilldown@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-drilldown@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-options": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-selectable": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-options": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-selectable": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/ad52591fcd64c9608817f7c542409c678b24cabd44f2b5f32dd8b3ccbfee4c935afa3ac8ea56817f1dd7588b60c04ecb4555fe2d5883eebba95ea171d144f58e
+  checksum: 10c0/6b9e7ffedf10f8fc7810c100a5bef2041ddb99ec41d649527edade6637dbe2cf18d2e36da445810442a07387cb2101ed53ce933c4f69ff87df865aba2526a921
   languageName: node
   linkType: hard
 
-"@instructure/ui-editable@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-editable@npm:8.55.1"
+"@instructure/ui-editable@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-editable@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-flex": "npm:8.55.1"
-    "@instructure/ui-focusable": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-flex": "npm:9.0.1"
+    "@instructure/ui-focusable": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/87a565e1161f1fd2fe62e45a4ba239534314d9e891de9e746f91636dab5aff27bf49323f794ee17449c214444ebd3a93ad876e8d5c0c81c300bab7e9f42ae840
+  checksum: 10c0/1611a237df93d8f5351b62d1de067d9d25daec6467e1869c8f03d1280be5f56672bac30d2ed8db3641932caf15ff727d104ee739a5ff4454d7c8a5625c730071
   languageName: node
   linkType: hard
 
-"@instructure/ui-expandable@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-expandable@npm:8.55.1"
+"@instructure/ui-expandable@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-expandable@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/8a8a97fa8980508e3dc26e2212fc6fcae8020b5c6aaa1f600121079e20950a41b9087f08ad1780a91a15cc8b92e0cc6f7a61c40b075fbbbe72b662d34ecdfa6c
+  checksum: 10c0/73fb3732b758185a360ac1405e255e24a2d206309960bc375fa54baf63f91544da2c66aac858a29468fb5a0a617c415d13fb0e91db94efa914268d930d84c3d6
   languageName: node
   linkType: hard
 
-"@instructure/ui-file-drop@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-file-drop@npm:8.55.1"
+"@instructure/ui-file-drop@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-file-drop@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/4aaf673c8f986cb34dc29d6382fda923f4633e1105af99245a212f7ce73ad596dd3ba02cc8ab02346dc905025f3b7bcc9f96af42fcc9aa571bc25b602922ea9f
+  checksum: 10c0/88563e30df2c8be0a136932920fdb7861d8dde81cef05bf9936333674ed21c68eb082e36e21b6e78a90d946282c15bfcfd084dde56df6f6a3717073afe26dcb8
   languageName: node
   linkType: hard
 
-"@instructure/ui-flex@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-flex@npm:8.55.1"
+"@instructure/ui-flex@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-flex@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/48410742319e1c36f73ba62f37b775437e7096e49512999376975112c634c9d7f4ac876e16b60300ad84edb6b52ac7816b44706c72044a719898f8cee7111467
+  checksum: 10c0/bc3529498d733e019669474be3528413184f2d0ea3b7a85496ea9b6bda1ca8ae95f8c8f9a0b062e6c1f5a29c5628ecb0409eec0becd160d6fee98d71c7d12004
   languageName: node
   linkType: hard
 
-"@instructure/ui-focusable@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-focusable@npm:8.55.1"
+"@instructure/ui-focusable@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-focusable@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/8f8dedfcac8b5b85dfd511163accf8a3c9f40a2219550de02f8f9f65148e252f1816f4281e5c0976c667c204f9aa6d671c949e9cdbc0c9dd8372aa331e6ad76f
+  checksum: 10c0/d41f1609f02b0bf4a97bf5b2335775bf5da95673d7edaae0135e501ffe95f029548e41aec2b661d094f3c7b24119785a0a73870d578d24a0af5e399965405858
   languageName: node
   linkType: hard
 
-"@instructure/ui-form-field@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-form-field@npm:8.55.1"
+"@instructure/ui-form-field@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-form-field@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-grid": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-grid": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/852b1bea006bee0bcadb71bf79edd359d35f534a9342534ca97a671c02809530dd96c9232371cbd257c66cf5ac721e0c807eba321d903ad212193f515ee11b51
+  checksum: 10c0/51bf3bd9a21c2bf7f1618c7335a8d64dbb00f6e61f8015d105597955e4a50b619857c9cfae7e7189bca5b8f986d2a6f8db558b4bdaad4e1a6e89d29753820fbe
   languageName: node
   linkType: hard
 
-"@instructure/ui-grid@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-grid@npm:8.55.1"
+"@instructure/ui-grid@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-grid@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/46d94a7045da0fa77807b6e2390b8c3c954e8c692825838d3a7d45cb5092f275b5ccdcf5ebf39142d7d4e851c16f2d2b12e93921ab2498d96a71081cfb639737
+  checksum: 10c0/6a898d91da0905c42548c83d237c18cf5c48429b40c321e27e38c7c047d99711d30f2940dac3c4a4b2aee767b19f3ec68cfa93fe41c422cf9423397cd4a5ac82
   languageName: node
   linkType: hard
 
-"@instructure/ui-heading@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-heading@npm:8.55.1"
+"@instructure/ui-heading@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-heading@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/84a3e0bd00e6b73508ef034684d20497807f07b2550e663bb39c4a5ab8c735ef89e3f067312e7ea681dc78077814d252fcb3eb74e1cd25613ace9591a1969bbf
+  checksum: 10c0/dc660c6c410341de88991ff6ab77c026fb83afa9fdef62d13b080799ed0f0274ae2d100650046755fa9e12379bb2af958f7fa8b16e1094fa6c256291c46c6a09
   languageName: node
   linkType: hard
 
-"@instructure/ui-i18n@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-i18n@npm:8.55.1"
+"@instructure/ui-i18n@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-i18n@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-decorator": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-decorator": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     hoist-non-react-statics: "npm:^3.3.2"
     moment-timezone: "npm:^0.5.43"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/0af7f4c6fbea24f5be70ad8dcf58a6e51c9e2a1ff73893eb53c0a46761f22fbb980be7de374d49f99d605c416b4acda5eb77d928adb7cd8fe5f1a0b712675190
+  checksum: 10c0/3b2f3eb9ddd843cb8fa759125b394bd677de7a85498c5e8d55619b309177034ee1a9daa5c6f3d5e3ac5db5613fed0012ce9ee048e8151f0793170e56fe71a430
   languageName: node
   linkType: hard
 
-"@instructure/ui-icons@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-icons@npm:8.55.1"
+"@instructure/ui-icons@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-icons@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/ui-svg-images": "npm:8.55.1"
+    "@instructure/ui-svg-images": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/6ea4dae1ef843368b2aea600bafc38a5477372fc0179cbf7f36aa292a272e4bd61df5ca53604851fdbb82c05fb65ecefd750f580cdb906310ae800307ffc8c53
+  checksum: 10c0/13cf85ad13aa3166abdbd65d2dc5b24b46097665adeb73d74861cc09317654ad553c4c1b32414ed3f21445d1ef9efa7447a792403c8c9e77d1ad6382bd87146f
   languageName: node
   linkType: hard
 
-"@instructure/ui-img@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-img@npm:8.55.1"
+"@instructure/ui-img@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-img@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/729d757185007d21f196e81eb47a8a1dfe7cab6c35cd224e7bd0f1ad0da266bde01fc712f50ba9f76be8a285d66c36ddc563681233d26d12f18da7331043282d
+  checksum: 10c0/1eda3b5a6773fb7386deb60b1ac67104397cafbbe32e7f8c164383822230175c859eeef07c82190877209c8c892d488955ae5b88fca2840aef712ea81f973faa
   languageName: node
   linkType: hard
 
-"@instructure/ui-link@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-link@npm:8.55.1"
+"@instructure/ui-link@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-link@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/e2e2b0def2741f670f55c6512c74e975c54ba65d2f625021de1db7e6988538b83679176bfc072f9746b2f59b0a668aa4ef88d80d31ccb1096f39552c0cbbff6d
+  checksum: 10c0/170c41e6f235263af19d0bba54e97a126cca725fb8204ec79414a6106627d7e3c34de6268c964b905be5a1f241480b77bc8a751bd02d6b4951a31e67d4c58151
   languageName: node
   linkType: hard
 
-"@instructure/ui-list@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-list@npm:8.55.1"
+"@instructure/ui-list@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-list@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/66f5e3952624af66ab3310d7e91c0e7f872604c45629b0bf873cc6df13a6c1203f156e7c2af150f808bdafdc7bd0b18bd7cce7ba14d96b8088637dd3f8e94631
+  checksum: 10c0/9f232081bbb584fb53826bd1241de27a7d2533f267066e17c688573dc5bac490a196b8309c1f9e77b14d3f5f5c9c96fc74435ad525c4fdacbc6594f7a3d17251
   languageName: node
   linkType: hard
 
-"@instructure/ui-menu@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-menu@npm:8.55.1"
+"@instructure/ui-menu@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-menu@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/f7f9389b8d697c90c48157d4af7a190e2f715aae2acb762ff91ce0e49517314df5c0f971b2d05d87d8a392bb742b5be5c6b3e6b1dff39d97a1892cb2ca661c49
+  checksum: 10c0/d3d1155211627754a6f9c0cb97cd159e77dd02401ce06bb0fe7ce2491b3207e27a06162651fb7bc2630250e718d2788935c315f4ab9471f31cf2d75a75737444
   languageName: node
   linkType: hard
 
-"@instructure/ui-metric@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-metric@npm:8.55.1"
+"@instructure/ui-metric@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-metric@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/bab01bca3a9cddb9aa594886315ddf3d543b9372d7ea0715ea2a1f483bd6e3473a67f822d56e5fd207ad1fe2ac5680811ab01cd3d7ccd52758d78f930e720a90
+  checksum: 10c0/6139f1566f56cdda0b95e2831563d1955aa42809219a6ae81cce72b3e01f398b8a94d16cbf21e9c832f86c9dab7caed61dcd6a9057b03c045c78dbe91b59e092
   languageName: node
   linkType: hard
 
-"@instructure/ui-modal@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-modal@npm:8.55.1"
+"@instructure/ui-modal@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-modal@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-dialog": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-overlays": "npm:8.55.1"
-    "@instructure/ui-portal": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-dialog": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-overlays": "npm:9.0.1"
+    "@instructure/ui-portal": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/1fdb75139317d95b0339f72619a5a13cb1704291852bf5ec855260c0c49b96b7a64acb862005ba3ca94a9b1c5e59a78a22b7f2adead114c79dc19c10fc04c0fc
+  checksum: 10c0/de86c10a9b50e3076aedb8681257b7e46f0fdd723671383ff217bfebc20af84ba9d34436f7c1d8859fbc0228f6e04b1bdd2b5b7a283a85e41432971dd4a51ccd
   languageName: node
   linkType: hard
 
-"@instructure/ui-motion@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-motion@npm:8.55.1"
+"@instructure/ui-motion@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-motion@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/28e3fed3d72412016f9986b1f3d579fd66a0948df3a2f94cf8935ade74b76ca23b4a7ea9189f852a473163cd4c57e026c63b3f3fab1fb6242d1b6d3702a85343
+  checksum: 10c0/e17bc627ada4d9a31109fa4adb34f01c4df0fc9e2d3c4dd129f812df86f7c84313f4faa63229e11680d7406fcd8d15b27c8669a801cc58eb1f6bfc1d44d8f578
   languageName: node
   linkType: hard
 
-"@instructure/ui-navigation@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-navigation@npm:8.55.1"
+"@instructure/ui-navigation@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-navigation@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-badge": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-focusable": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-menu": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-truncate-list": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-badge": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-focusable": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-menu": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-truncate-list": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/68321ff4f3b82883bfb2dc7c2b527e962d56822563f154873919eb4e3c19989a8fbd520d4c8082a4f1327b745f59f640a451f8d1041e79dc971ec1f59d7c7f0e
+  checksum: 10c0/2be16ae98f9f49b1a3056551367d36d68d629e9a54d65984a76ee21e31ea0746180196ac48f9f6c20f3b6e6e704ef3097745f1e4cf3692f81b3239898415a2db
   languageName: node
   linkType: hard
 
-"@instructure/ui-number-input@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-number-input@npm:8.55.1"
+"@instructure/ui-number-input@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-number-input@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/e358d8bbf99207175c8cbfcec04414eae45d086ef105854eb05f1f02be0bc772817c14d592fa3c51bb906fd05417612198d9343508457b65a680eee86e441311
+  checksum: 10c0/9c9f812c64520f9805144b4982fe832bc1a634f9d9a45b62d621d213d84fab4ebceb2984a949b7b39c015dd0743f295246a4632c6ddbc4c48170e27b6f647c86
   languageName: node
   linkType: hard
 
-"@instructure/ui-options@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-options@npm:8.55.1"
+"@instructure/ui-options@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-options@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/714d51b00d0eee49f6412e2fef5594532051d0f4c3d10b67db3055dd01c1746746fd3170b8ed5284eee56560ca48addbdcf617408427ce284aca6396e382ce9c
+  checksum: 10c0/9dd3c469f9e6a4a183d7f34f0713e02260128b10758f9d66ecf04795e7d5496dcdacdc1e13a5d0a9d5addf7c1b2d6cc86fda42b63b7ccd74fb7b28eacd1af1da
   languageName: node
   linkType: hard
 
-"@instructure/ui-overlays@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-overlays@npm:8.55.1"
+"@instructure/ui-overlays@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-overlays@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-dialog": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-focusable": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-portal": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-dialog": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-focusable": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-portal": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     no-scroll: "npm:^2.1.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/f0a17669c94a36406ef9a92fed7b3a71da4818488fc75d3c91b0a53923544f66cf05811a66f1f1cb88566d06dfd81fe4e78eb74ee7c6a6c664b0f2a45f83cb32
+  checksum: 10c0/105edf088c99731e28a15ea68daa39e250668b77803a02fa6b7948485ed43db8adc54666e89cdaec791f5db27dd0f7b8d72981b79fb30900b0ce07846ac18fd7
   languageName: node
   linkType: hard
 
-"@instructure/ui-pages@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-pages@npm:8.55.1"
+"@instructure/ui-pages@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-pages@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/8cc4214d6446bf4e362b6a1f6116c1a7119dd4f2c5b232a4da1bac4c41e22d1e2fe6c3db2ecd443a4f69af8908d44c6cd5a93e3be86a906fbc7532491c832000
+  checksum: 10c0/3ac752f435f31395f85183fde97d98aa9e570a6138b9fb536012e2f9d19a7ef735be9d2e5b82248205101b59c3603fd1a05d34e4fca5819af210025f37639300
   languageName: node
   linkType: hard
 
-"@instructure/ui-pagination@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-pagination@npm:8.55.1"
+"@instructure/ui-pagination@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-pagination@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-number-input": "npm:8.55.1"
-    "@instructure/ui-portal": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-number-input": "npm:9.0.1"
+    "@instructure/ui-portal": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/337ed73cddfdb11ee6a4f2a65b846ce0e99f7e5318537248f6ebfc5039e45f535308218884088057d60f7d2462f9b9e46ea6e67184df0d952b91b6c7231a19bb
+  checksum: 10c0/a1d07506c4c50b95d1decbcec16da5a251eb6fb11859e2c6f6b1302709edc4ae14207fbfc51fe84ed5d7eb366fd28fe85cf75c720b3a1afb5b701b147da0ca49
   languageName: node
   linkType: hard
 
-"@instructure/ui-pill@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-pill@npm:8.55.1"
+"@instructure/ui-pill@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-pill@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-truncate-text": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-truncate-text": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/3845b49afccf026593323a1297c378767f09215720a6b76f7ab6eb48ca559ab9ab61192c9609d0ed77c22f8a3a4ffef191156e28506fc25b2bdce70c703a82a6
+  checksum: 10c0/b095d8762545c48a2c180414aa59a162e9841b369442c50eb4f885d98dc5d6e7bcbd18c7d79ea53df3125688a26b75739602ed1f3a7213a47db8766ab2e4d35d
   languageName: node
   linkType: hard
 
-"@instructure/ui-popover@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-popover@npm:8.55.1"
+"@instructure/ui-popover@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-popover@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-dialog": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-dialog": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/a41e63ea7367f0266ee6e70d9ba2e01fc1556c33c0d72f2c9f98fb8d18b582973b67de74d68fbfbe8be06cabaec1d0ea33283bc4c1c36284242bad8ed5dab958
+  checksum: 10c0/ca27f6e7ef3d704234e6aac81b824a447de5f5d5d11ed1366be12bc41e2ba0a040792528d1a6c5688bc12fbea0e74fb3ca08249b70614d19745bc62758154822
   languageName: node
   linkType: hard
 
-"@instructure/ui-portal@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-portal@npm:8.55.1"
+"@instructure/ui-portal@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-portal@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/8b9562d2c7e6aada20ba45b7a4810bae14ea9ed2caf1fbf525a9722ca2c5e6b537f5c55b9e341cef2fb1bbf387eae6bb58206914e11b6e9741c3f0c33920a779
+  checksum: 10c0/3bd3b25f20faea604d63c1b229895bf12f9313a797ca47b92c3fafaedfe048358848ed74cef40e9b678aa64e6e5ff20a612ef3fb428096801ab6e6d584ce57da
   languageName: node
   linkType: hard
 
-"@instructure/ui-position@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-position@npm:8.55.1"
+"@instructure/ui-position@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-position@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-portal": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-portal": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/c2f9425dcd4e8caf0319cbc3a33bf8898934c882fd85ab3d1bc1139c98d5a2017195c3c487acfb3e2dcf88a4b9390b9e733ad5eac66fe717a33e7ffb4ef1fefc
+  checksum: 10c0/7ed63733a84b278378fe8903531d638c37dc2eb6ca63e36b1987a3fc6674bffbc032f7672e5e088db0ba8887e6a6bc96493c7cf1d861fb1b05592c94189b0484
   languageName: node
   linkType: hard
 
-"@instructure/ui-progress@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-progress@npm:8.55.1"
+"@instructure/ui-progress@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-progress@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/e8a2a5b57bbd328dd883d8d472ff880578f607208070932acb8fe499fa7a911d83700ec415e29752f188b68b041b6e1facdf71d75d069013cb839e9528cfd6ad
+  checksum: 10c0/21c8856827ca286e7be588acbbe2786aa6b79fb6d6b6965cd6bf295df78892b6bfcdb1e6349119ddf4f690bb00d1ce20a94ca51b1b2b7ce9c97195f21c6fcdcb
   languageName: node
   linkType: hard
 
-"@instructure/ui-prop-types@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-prop-types@npm:8.55.1"
+"@instructure/ui-prop-types@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-prop-types@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/047b06b01f7a47dae6be248b654c3daab9ca3636b8c8353b8493cca19feb73320301939a220f67c9390de3101511c094d77c65753b54238ce6279f2a676fbe1d
+  checksum: 10c0/1b0304b8839ecd4e6c9e4e3a4fda03890bd7c8d829354e8f9e561a4978660d6a32618a78a2bd4cbfbc9c78d2fda0e9d25ab6f721a7c1d7f06a6596ae2ff566fe
   languageName: node
   linkType: hard
 
-"@instructure/ui-radio-input@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-radio-input@npm:8.55.1"
+"@instructure/ui-radio-input@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-radio-input@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/484cfe65bd405a8109df5e06bf4a8bb857cc2258961e283823bb2eb6bdec3632959dfa5a3fb2baf3e2ef240bf4e10846d40addf40dbffb41cbfc8634e8fe7720
+  checksum: 10c0/744a558c88ffdd02d6c1f0a4ba27b756669e6b4f0d24c58ecd77064c4f7c6bd09759a4f19970a19a003d9cbec108dad58f49635883999c26ab6dd22873df92ba
   languageName: node
   linkType: hard
 
-"@instructure/ui-range-input@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-range-input@npm:8.55.1"
+"@instructure/ui-range-input@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-range-input@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/1eda70921b2a0b0c7bd4f58ff5059676cd2a783f633c137adb4e51baeb0665be98170cf87ff92a79485cd3e992c13d14241956ac73295e7ec33e46aa65c31436
+  checksum: 10c0/f5de2f24215444a6a6d387ef1da1c4a8f50c5c0b8f2234b79d5c5786311f0230e3366a1a923b243bf96480acfcec4284791804335049c13ac9e5910e19e1b6d1
   languageName: node
   linkType: hard
 
-"@instructure/ui-rating@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-rating@npm:8.55.1"
+"@instructure/ui-rating@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-rating@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/5286f5515907db4081ab654321f062a9bc8ee995fc397adb826f494be3f5a039cf59a5331290a1975edf16330153622ce5ab9bdbbec3e08df99364ebd3cf8d83
+  checksum: 10c0/0bcb11c4a383e5eb3a6f1455e6a94d268e799d0512b2a88c66336c207ff0b21e12b2b7841a74aa931b29c44ca4f7145ee74ca1a54e40bf187e522c27b89fa453
   languageName: node
   linkType: hard
 
-"@instructure/ui-react-utils@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-react-utils@npm:8.55.1"
+"@instructure/ui-react-utils@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-react-utils@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
     "@emotion/is-prop-valid": "npm:^1.2.1"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-decorator": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-decorator": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     hoist-non-react-statics: "npm:^3.3.2"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/c3e657cf958e11e8f0e344a521a8d8d83c53094ad205158791a110c23726419903e238cbcfcaf28d56fef9bc7758e2e16d6a825dee31740c40499447f4462635
+  checksum: 10c0/6555249159178737f58b85b6c1e7d43f7bfd68eca84fcb7541af18458717c795024c64aa30d1e5f5b807af3154f1aff5dedf4e183363af26020b014438b1aed8
   languageName: node
   linkType: hard
 
-"@instructure/ui-responsive@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-responsive@npm:8.55.1"
+"@instructure/ui-responsive@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-responsive@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/29befc24af15c1eea9388fd778faad23e7bd5969b15818da51550a7fa0b08f1a92cf35a9c68ca08f18f86e850a230953925d2e15a32f1e13787e78763622cfcd
+  checksum: 10c0/eb4b4bd1532b8b89253862da4cd60305c1d49aaa72613ff5365751399d45550af657f71b47940901da4e9f68029d224e1951cad1b56766e8927f874ac9cc1d11
   languageName: node
   linkType: hard
 
-"@instructure/ui-select@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-select@npm:8.55.1"
+"@instructure/ui-select@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-select@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-options": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-selectable": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-text-input": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-options": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-selectable": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-text-input": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/6a0bad845b2c9334eb3d00dcc2ca12f12a9535c8e52c33a879ee5e76da80d0abcb16c89a5d61d079d7058dea55ee1cbeebd89feb1110a98045427d214ac67340
+  checksum: 10c0/66819ce8bfb2dec5206e2c82beed30b1c84b2465fc9cfb53d7415d402e4b7d54fad8937e62c142245d0c8a87019c60a4e7acab97f6477a13745f9cc1020d0171
   languageName: node
   linkType: hard
 
-"@instructure/ui-selectable@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-selectable@npm:8.55.1"
+"@instructure/ui-selectable@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-selectable@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/19421ea87d81c3f878610017f8b513563a8ba5bb35070f157ad66e46fbfe8b991e68af408fd0476096fd14e6ed02cb74bc4f146d45e976bdda253473d88888be
+  checksum: 10c0/7daa6aa6c5e2cc076618589e6217948a151fbef77fa3aac5bf9237e5931e0e8847b063deb16df28ca54ac647578ea4e1770998e381b779bc5478a9d2c2f8e5fd
   languageName: node
   linkType: hard
 
-"@instructure/ui-side-nav-bar@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-side-nav-bar@npm:8.55.1"
+"@instructure/ui-side-nav-bar@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-side-nav-bar@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-a11y-utils": "npm:8.55.1"
-    "@instructure/ui-badge": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-focusable": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-menu": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-truncate-list": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-a11y-utils": "npm:9.0.1"
+    "@instructure/ui-badge": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-focusable": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-menu": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-truncate-list": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/bcd9d81c206e3b44bb317e2a74ee6d500a809a6b280f3092e68f10a670960121be3114c693a13e38ea76e7afe78e1946ceb24f73ed7aebc806d02e7a60a72bed
+  checksum: 10c0/dca8b590330c8c07140e841bdb71ab590568417d9d6ab76fc8387c0ad5c78f6210b10a86e0035ea02161b08e205845355ff01da6ca1cdee50b721e87904ae900
   languageName: node
   linkType: hard
 
-"@instructure/ui-simple-select@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-simple-select@npm:8.55.1"
+"@instructure/ui-simple-select@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-simple-select@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-select": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-select": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/ac4a7cde7d1ac232d65dd266504a8b9bbad6bb98e9dd2e9b9b028cd7dfcc3b1b3cadf71f736362ff8c3e156a5359624b57711fe613c2bc2784d0a0e287ada574
+  checksum: 10c0/ec7008935f125405218c82d98c90e92df56e5e8fe6493db4942cc11eddd5d2ce719ec20e3f9de2e9591d0ec593fe64fceda9d2cd27a2424eb40bb1fb38cf43ba
   languageName: node
   linkType: hard
 
-"@instructure/ui-source-code-editor@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-source-code-editor@npm:8.55.1"
+"@instructure/ui-source-code-editor@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-source-code-editor@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
     "@codemirror/autocomplete": "npm:^6.10.2"
@@ -3826,183 +3826,183 @@ __metadata:
     "@codemirror/search": "npm:^6.5.4"
     "@codemirror/state": "npm:^6.3.0"
     "@codemirror/view": "npm:^6.21.3"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-test-locator": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-text-input": "npm:8.55.1"
-    "@instructure/ui-themes": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-test-locator": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-text-input": "npm:9.0.1"
+    "@instructure/ui-themes": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     "@lezer/highlight": "npm:1.1.6"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/38d8e6092a0773e08dd1348a56c3633ba43c654a9986e06ce92a66c0e561d7e899f325beca2ab134767a0f7d01d4b2a36ddd77e88aa4e4f803b2963b3944a5ee
+  checksum: 10c0/72d1c5e33e8cc7170df27b88102672ce86f3ff67b4502ee7d9e91b55b66039785929b8432cde838bd1545bd04ee1b078d25550e8bfaa85482e30cbffa288eaa2
   languageName: node
   linkType: hard
 
-"@instructure/ui-spinner@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-spinner@npm:8.55.1"
+"@instructure/ui-spinner@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-spinner@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/5b016aa50088791a312a30411841167838d80c8b37be271eae0c64d06c89525f57f79955ba2c50826c9d365b019171e1b02cc3000ec4e19b78a3f0ffadf7b732
+  checksum: 10c0/765f385af603832d691feec544ca8bf388b74e63afa232cc166b6a02b32e4de2df30e288a1acf0470f093d7e5018c18645d7b034a0ca1fe69260de03ecf5da84
   languageName: node
   linkType: hard
 
-"@instructure/ui-svg-images@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-svg-images@npm:8.55.1"
+"@instructure/ui-svg-images@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-svg-images@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/1e44ac2f5853f102ec192bb67447da5c4f95f01985ba807b933a64c34f2d5d25a015122464bc37ce7681da4d3c6088d3d998fd850b93e9388c4bd02610974066
+  checksum: 10c0/4dec870c1903ac160f28016b0431e7dc951f489974060565d7807e23e9fdff45fce75f6c70b0aaab4da360e8b9751057ec9a10b6d007ff770ce4967e2474763b
   languageName: node
   linkType: hard
 
-"@instructure/ui-table@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-table@npm:8.55.1"
+"@instructure/ui-table@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-table@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-simple-select": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-simple-select": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/485e57c12e8186a226132a01a4968e7d98d7aae8479a5c096921cf2ea911a5fa6497bb6eb5bd85304e06d7664ce829c22bbe88b6b84ab776818a034b2dfd15ce
+  checksum: 10c0/de103fcf5fdd02b76ad7d88da1cdc66903d4d44da4dc64f132103f9a60e006eeb824e84c7edcac3adde37d171da6d7ea1d4636521bcdf900473a098196b2a8cd
   languageName: node
   linkType: hard
 
-"@instructure/ui-tabs@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-tabs@npm:8.55.1"
+"@instructure/ui-tabs@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-tabs@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-focusable": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-focusable": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/2d8fa8ff85f77a72ad65d9bef238a81ff4b1b65d3a0933195b0648a1c5211dfaf6689b595b17b0d1dbdb6200671c101608b7d4734a56db9dcac7829e4632dbb5
+  checksum: 10c0/3527f074e8a67d5da67713d24000fbba35a1a61e03a3f582e9de14c0f5f4b0251c0f27342931580918fa2e1a40e55148b08d4c9f24fda5cf47c8a9a0b37e0213
   languageName: node
   linkType: hard
 
-"@instructure/ui-tag@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-tag@npm:8.55.1"
+"@instructure/ui-tag@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-tag@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/f0f38fe22500d6a52748ec69aed4e6ba92d903ebeda29fb2446028cc83719d76e6108e537bae594b82cc09e2c60f60e1b298f4fee46200424d012da904909651
+  checksum: 10c0/999e020dfea0b8aa24e492fe5f666c2c6adaea45045148f9c86dd23c22cd72d5cdaa71749cfed21b596ad91800ea94d7962841cca43a24aa10ff9065c2900a32
   languageName: node
   linkType: hard
 
-"@instructure/ui-test-locator@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-test-locator@npm:8.55.1"
+"@instructure/ui-test-locator@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-test-locator@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/ui-test-queries": "npm:8.55.1"
-  checksum: 10c0/d524f3a6659af20ea7d485fec97b8346be0c1e3c4fc010862a38ecc614210a1f4f526c4dd19d36acf123440adb3cac6b3890656d2176ae8474c76f6e2caf1292
+    "@instructure/ui-test-queries": "npm:9.0.1"
+  checksum: 10c0/9fbfb18dd6a9f8be23de29428f7c7b22573cdc637afef1a53e86729bd17b62d2ac5be9430b1898f2c6b0e76d3a4f2b3d27ac32e69b59aa0481539f3d6e3afdc4
   languageName: node
   linkType: hard
 
-"@instructure/ui-test-queries@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-test-queries@npm:8.55.1"
+"@instructure/ui-test-queries@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-test-queries@npm:9.0.1"
   dependencies:
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/ui-axe-check": "npm:8.55.1"
-    "@instructure/ui-test-sandbox": "npm:8.55.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/ui-axe-check": "npm:9.0.1"
+    "@instructure/ui-test-sandbox": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     pretty-format: "npm:^29.7.0"
     sizzle: "npm:^2.3.10"
-  checksum: 10c0/a834f43b87fa620361d12620e54229668cbdf8b8e8a723f0a5c2b3798b5c375f638f01f850db6ebe4bf63ee313811a7e01af1dbf0aa8042b6e01cd74f72f1d01
+  checksum: 10c0/203bdb5d2cdc67d920a86e74ad62621acc15d0b573efa908fe0c335f3faafd8bda5d7bdaf52d22d7bf401d7f83e4c9e1ee0b79711de10017c29f53b9412582e2
   languageName: node
   linkType: hard
 
-"@instructure/ui-test-sandbox@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-test-sandbox@npm:8.55.1"
+"@instructure/ui-test-sandbox@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-test-sandbox@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
     sinon: "npm:^15.2.0"
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/ea89c9e0c938ac5809e1bc9df8ebf665cd62fdc3567e73213cf296251444fa272c4b31d5c6c081f2f3053883b6d270b0337e2c78fe261eedaea583600c48993c
+  checksum: 10c0/2dc640f3be7ed6f7a4b34cf5bcdf6ca663cb379c621ac3f25a29fcf8e76ec72c28dd4fa148c586e8764e7a65c62043304d5337ff0d4ad31041170b636ec747eb
   languageName: node
   linkType: hard
 
-"@instructure/ui-test-utils@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-test-utils@npm:8.55.1"
+"@instructure/ui-test-utils@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-test-utils@npm:9.0.1"
   dependencies:
-    "@instructure/ui-test-locator": "npm:8.55.1"
-    "@instructure/ui-test-queries": "npm:8.55.1"
-    "@instructure/ui-test-sandbox": "npm:8.55.1"
+    "@instructure/ui-test-locator": "npm:9.0.1"
+    "@instructure/ui-test-queries": "npm:9.0.1"
+    "@instructure/ui-test-sandbox": "npm:9.0.1"
     "@sheerun/mutationobserver-shim": "npm:^0.3.3"
     chai: "npm:^4.3.10"
     chai-as-promised: "npm:^7.1.1"
@@ -4015,302 +4015,302 @@ __metadata:
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/756d76ce643590d432e7b964b31a7a9d35d4e611a01e9310f6d42c353e4277e1f3396663422aa1f8a7885b23d18c3ec345109983e74c928f23cb42b1a59be035
+  checksum: 10c0/6a1e45ec1b9317445a05e19e5b269c19630d2f6af3d7516ff1433be9da31c1ab082ba383b6fbc4284bf63345f9f36536afdd43f432fdba255268c6d14581ae8d
   languageName: node
   linkType: hard
 
-"@instructure/ui-testable@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-testable@npm:8.55.1"
+"@instructure/ui-testable@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-testable@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/ui-decorator": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
+    "@instructure/ui-decorator": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/91dff8b707cf66779c457dde027da3a7a44cdc3af26061c2e08330947661850ca21fcdb5743d7b0979f3a1298c25a3ed83a5d5a65adf0df4767d6aa1ead0670e
+  checksum: 10c0/d170ea2fa1a017817b8f9ffceb18e92e75c44c01ff921d453947c72d0503455b98b0834e9dc2d4824beea8db02c7d242686c863f5cc4235ee889565a3334cf0d
   languageName: node
   linkType: hard
 
-"@instructure/ui-text-area@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-text-area@npm:8.55.1"
+"@instructure/ui-text-area@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-text-area@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/fb1a59e9092778bdbc5a7d5a0019feb1a8a1d697f6a9c6a05a9116ccb283d4bfd7b2238ddd0d2cdb4cb4b1853aae8707fa1237afd59ef65df51e11190f439235
+  checksum: 10c0/88920fbb96e76c0e1bfcac84d1091a6cc8d725462291009e178bf3a42d648083059fbb78f6abb3323ee206dfd229f28baa0c468e7b2d44ecabcf70bcb246d1e0
   languageName: node
   linkType: hard
 
-"@instructure/ui-text-input@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-text-input@npm:8.55.1"
+"@instructure/ui-text-input@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-text-input@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-tag": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-tag": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/77a9eff859633f0dc6a50cb54de7e78543b2fb23e6335b4375f075ac99b388f3d86b5c95579a277485cfaf00a0f266ae7ac5ec43141e25ad2398c7f7d23f23db
+  checksum: 10c0/2eeef8059588bb8e08860dc45a81935df49cc8243dba0c34d3f7367a647298087e3cfc2dff83497b4f307eccbade3a791c44e75f127c5a8a727b46320471073c
   languageName: node
   linkType: hard
 
-"@instructure/ui-text@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-text@npm:8.55.1"
+"@instructure/ui-text@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-text@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/b309a0bce6384fe6dc0832c1f1d12bdebeaa3be4a1d4fce904bc0450dc6642fc57f2b23e9408d0a2aa598eb623d0a77e0e105d85b3f4c87735c4e182a77617d9
+  checksum: 10c0/9da74c98022f9161b3b6aafa89f688730580a9b90061ab9149d34b060b5bf0567ad2d84caa87cd4db8403848c752809c70d84072ed9faeae73b9bd8dea46727f
   languageName: node
   linkType: hard
 
-"@instructure/ui-theme-tokens@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-theme-tokens@npm:8.55.1"
+"@instructure/ui-theme-tokens@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-theme-tokens@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-  checksum: 10c0/c1d8b87707db3ba7c3a9d68e13fe5c8fecf528f783ac1bafc9f362ebc28363915f6e6853a809d6267a7b2c6fc083210bc543ab5e20c672d71f4386706b6377da
+    "@instructure/shared-types": "npm:9.0.1"
+  checksum: 10c0/6c4ce531212223c1beb987c21bc6b639aff1ae4eee397d52344d06aee556d7206d89c1444409314787277b626f7820330311108feabd23583a2826173f87d590
   languageName: node
   linkType: hard
 
-"@instructure/ui-themes@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-themes@npm:8.55.1"
+"@instructure/ui-themes@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-themes@npm:9.0.1"
   dependencies:
-    "@instructure/canvas-high-contrast-theme": "npm:8.55.1"
-    "@instructure/canvas-theme": "npm:8.55.1"
-    "@instructure/instructure-theme": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-  checksum: 10c0/8fc492037382f8fbf980d268d48b3221e1884c1d68bf01c57cc423a93a16e6298a7da00defef339517c8e7dfd6cf7e584f9da4edd36355aeeeb085c8bfd69062
+    "@instructure/canvas-high-contrast-theme": "npm:9.0.1"
+    "@instructure/canvas-theme": "npm:9.0.1"
+    "@instructure/instructure-theme": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+  checksum: 10c0/3a214633f265b1c8a35b26efa870ad9b65e6674754013fd4eafe612d40355575173b1d0cfb75fe17ad42ef4abd295cfe6c39a1f457e9adc837ad72708ea533c8
   languageName: node
   linkType: hard
 
-"@instructure/ui-time-select@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-time-select@npm:8.55.1"
+"@instructure/ui-time-select@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-time-select@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-select": "npm:8.55.1"
-    "@instructure/ui-test-locator": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-select": "npm:9.0.1"
+    "@instructure/ui-test-locator": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/560687d504c226ecb6dafeba290f3d82002e5598f0ad550b77c2f06896b2336502d9545abdd122f1be69761adbd3fc200e3baa9843fe449bf1ef5516ba47f4d6
+  checksum: 10c0/d68311186c02cdc6f39efd60c6f2695fd8419c637805d5985051e28337c7e931582573b228302ae50591333a87ae7f57a2b6667045e98248f8da853619aadd93
   languageName: node
   linkType: hard
 
-"@instructure/ui-toggle-details@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-toggle-details@npm:8.55.1"
+"@instructure/ui-toggle-details@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-toggle-details@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-expandable": "npm:8.55.1"
-    "@instructure/ui-flex": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-menu": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
-    "@instructure/uid": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-expandable": "npm:9.0.1"
+    "@instructure/ui-flex": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-menu": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
+    "@instructure/uid": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/c464890a4eb0eaaddd2fcfed97cf5a49bd013654ed88728def5ace72228ceeac94e97f200b57d9d2e57c02e5e0cea0259b1f3e9351c6a8a2241e2cc5a4babcd9
+  checksum: 10c0/c77b3b005e1d70a2081f7865235b3a5b47710b56b7f77285b70fc7b4b0d248859a571840321624dee442de13ba0b88904c1151225340eca634bac8697f5864db
   languageName: node
   linkType: hard
 
-"@instructure/ui-tooltip@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-tooltip@npm:8.55.1"
+"@instructure/ui-tooltip@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-tooltip@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/7ca0884a280e81e74d8083c6966e1dec2eb0b8f0e694ce1f2a40074626abf9233c7ac1fae068845263d19e11e7136af5c50156600254b483a96b4f1330f259fa
+  checksum: 10c0/fafd1297efde8c357e75afc8528ba82f8547f92bd7b19b67f90e347f0b5417f3b11e2f369a86406dd81f655899b8d1666814ecb163817b1795b5d7802ffc18fd
   languageName: node
   linkType: hard
 
-"@instructure/ui-top-nav-bar@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-top-nav-bar@npm:8.55.1"
+"@instructure/ui-top-nav-bar@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-top-nav-bar@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-avatar": "npm:8.55.1"
-    "@instructure/ui-breadcrumb": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-dialog": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-drilldown": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-link": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-responsive": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-tray": "npm:8.55.1"
-    "@instructure/ui-truncate-list": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-avatar": "npm:9.0.1"
+    "@instructure/ui-breadcrumb": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-dialog": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-drilldown": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-link": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-responsive": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-tray": "npm:9.0.1"
+    "@instructure/ui-truncate-list": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/4d38e4191bdda72f363a9d994c21087b9c5d6cba09aba34ddf0f941c1b95efed60251db09517d4a4824aaa6889463534d67120f6d34e325201bee6aee769f678
+  checksum: 10c0/f0ff46b08776d3fce3753e8c03841d024587dcc2fe378534d44e4b017d635c3d6cc4d2364b1e49177a49aa98d58c52644d9815fd38d9de47210fbc7433a12d8f
   languageName: node
   linkType: hard
 
-"@instructure/ui-tray@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-tray@npm:8.55.1"
+"@instructure/ui-tray@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-tray@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dialog": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-portal": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dialog": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-portal": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/0ba91f43341046471286bb889ea1ed0a655d070e079854176a40347e4cfa0bc931965e34c9b57d651263d25b932218730b9b964c6add2b08e507a236ffcd21bf
+  checksum: 10c0/7c06e24651bbc1895e61f3e857fcb3c569730772950cacea10dead4a50177aa4e1803c097e066e1476ccba3cac2b9fa8f60e736f2a90b690cf07e719414d332b
   languageName: node
   linkType: hard
 
-"@instructure/ui-tree-browser@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-tree-browser@npm:8.55.1"
+"@instructure/ui-tree-browser@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-tree-browser@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-img": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-img": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     keycode: "npm:^2.2.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/73679fb37e7062587becaf78a5ab44a43c7f2c4345fa1ef25e6d7fb8d75c29aa5c88fd55d888b25e6142b48085211ded2c16a44baa5f2518818d72dfef4dcc7b
+  checksum: 10c0/0d7ea2e08ffb8407ab0e5baa40973fb333cb75bcf76075787898616839d56655a765724fe88d229861d0ab9c7dac07036289b1f1974e4a636c0f9251d4074493
   languageName: node
   linkType: hard
 
-"@instructure/ui-truncate-list@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-truncate-list@npm:8.55.1"
+"@instructure/ui-truncate-list@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-truncate-list@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/ee4c12dff6ee969dc52a31947d56b3b3182af40d539661d22923847d079c47610f63a4ec64519157d03f01016ad1db42415d740007d19256bfe410452c1cb268
+  checksum: 10c0/56a84bfa5108083dfae103ee0555ece5bafaa702d2874964585669cb566b6c8ba5d40cb9b5bd56090da3ee79ea83fdeffcd4ddb1f2a68caf625787ad0f785b44
   languageName: node
   linkType: hard
 
-"@instructure/ui-truncate-text@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-truncate-text@npm:8.55.1"
+"@instructure/ui-truncate-text@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-truncate-text@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/debounce": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
-    "@instructure/ui-testable": "npm:8.55.1"
-    "@instructure/ui-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/debounce": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
+    "@instructure/ui-testable": "npm:9.0.1"
+    "@instructure/ui-utils": "npm:9.0.1"
     escape-html: "npm:^1.0.3"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/0b464ce7a9fb89179d2662a7f82da0aedf737ce8c93305a8259010d3279e4cdea6897486cb55b26028ed4cfd7f30dce9905cf623624779ccaf3d0aa71b2e43f8
+  checksum: 10c0/bf9385fc687a69dab3fd599375d90e35a433423fbb1e371a18d5f9f87dbe8173e23d53b31b658de9aa4f8960c91c4d7b93f28d6b20e50e30c969b0e8fdbc31b7
   languageName: node
   linkType: hard
 
-"@instructure/ui-utils@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-utils@npm:8.55.1"
+"@instructure/ui-utils@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-utils@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
     "@types/ua-parser-js": "npm:^0.7.37"
     bowser: "npm:^2.11.0"
     fast-deep-equal: "npm:^3.1.3"
@@ -4320,122 +4320,122 @@ __metadata:
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: 10c0/9df34306daaf0cf0f73586a7a162db703bae6c91ed454900e5ad7309d6e336c0197778837a1375faa5e23c9eb0ffd88902072fc4925cfa8f2a6fe93d8d6f080e
+  checksum: 10c0/b3e78a33b4a824de3a289750196d2661b94c4fae7e68d03de082f1840c54fe4eae0384342d1b33cdb80351fcbd992db5b7966e68276b877d9047063a13347b09
   languageName: node
   linkType: hard
 
-"@instructure/ui-view@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui-view@npm:8.55.1"
+"@instructure/ui-view@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui-view@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/console": "npm:8.55.1"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/shared-types": "npm:8.55.1"
-    "@instructure/ui-color-utils": "npm:8.55.1"
-    "@instructure/ui-dom-utils": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-prop-types": "npm:8.55.1"
-    "@instructure/ui-react-utils": "npm:8.55.1"
+    "@instructure/console": "npm:9.0.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/shared-types": "npm:9.0.1"
+    "@instructure/ui-color-utils": "npm:9.0.1"
+    "@instructure/ui-dom-utils": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-prop-types": "npm:9.0.1"
+    "@instructure/ui-react-utils": "npm:9.0.1"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 10c0/df7880b55c741589bfb6b7f5819e095d6a39e3bf60046a85f4c0a852a6abceabdee84d192df0683d9d96b47d1b45f191171f4421a1bddc11f1e8fc1b4d682f45
+  checksum: 10c0/42e33becb7173b946817a7fd63f013672258116967287a35f7fe137d5aa18bb08f651b16f60da279986ea13fab300eed593d73ee0d88f5959929418cad2ab80f
   languageName: node
   linkType: hard
 
-"@instructure/ui@npm:^8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/ui@npm:8.55.1"
+"@instructure/ui@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/ui@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-    "@instructure/emotion": "npm:8.55.1"
-    "@instructure/ui-a11y-content": "npm:8.55.1"
-    "@instructure/ui-alerts": "npm:8.55.1"
-    "@instructure/ui-avatar": "npm:8.55.1"
-    "@instructure/ui-badge": "npm:8.55.1"
-    "@instructure/ui-billboard": "npm:8.55.1"
-    "@instructure/ui-breadcrumb": "npm:8.55.1"
-    "@instructure/ui-buttons": "npm:8.55.1"
-    "@instructure/ui-byline": "npm:8.55.1"
-    "@instructure/ui-calendar": "npm:8.55.1"
-    "@instructure/ui-checkbox": "npm:8.55.1"
-    "@instructure/ui-code-editor": "npm:8.55.1"
-    "@instructure/ui-color-picker": "npm:8.55.1"
-    "@instructure/ui-date-input": "npm:8.55.1"
-    "@instructure/ui-date-time-input": "npm:8.55.1"
-    "@instructure/ui-dialog": "npm:8.55.1"
-    "@instructure/ui-drawer-layout": "npm:8.55.1"
-    "@instructure/ui-drilldown": "npm:8.55.1"
-    "@instructure/ui-editable": "npm:8.55.1"
-    "@instructure/ui-expandable": "npm:8.55.1"
-    "@instructure/ui-file-drop": "npm:8.55.1"
-    "@instructure/ui-flex": "npm:8.55.1"
-    "@instructure/ui-focusable": "npm:8.55.1"
-    "@instructure/ui-form-field": "npm:8.55.1"
-    "@instructure/ui-grid": "npm:8.55.1"
-    "@instructure/ui-heading": "npm:8.55.1"
-    "@instructure/ui-i18n": "npm:8.55.1"
-    "@instructure/ui-icons": "npm:8.55.1"
-    "@instructure/ui-img": "npm:8.55.1"
-    "@instructure/ui-link": "npm:8.55.1"
-    "@instructure/ui-list": "npm:8.55.1"
-    "@instructure/ui-menu": "npm:8.55.1"
-    "@instructure/ui-metric": "npm:8.55.1"
-    "@instructure/ui-modal": "npm:8.55.1"
-    "@instructure/ui-motion": "npm:8.55.1"
-    "@instructure/ui-navigation": "npm:8.55.1"
-    "@instructure/ui-number-input": "npm:8.55.1"
-    "@instructure/ui-options": "npm:8.55.1"
-    "@instructure/ui-overlays": "npm:8.55.1"
-    "@instructure/ui-pages": "npm:8.55.1"
-    "@instructure/ui-pagination": "npm:8.55.1"
-    "@instructure/ui-pill": "npm:8.55.1"
-    "@instructure/ui-popover": "npm:8.55.1"
-    "@instructure/ui-portal": "npm:8.55.1"
-    "@instructure/ui-position": "npm:8.55.1"
-    "@instructure/ui-progress": "npm:8.55.1"
-    "@instructure/ui-radio-input": "npm:8.55.1"
-    "@instructure/ui-range-input": "npm:8.55.1"
-    "@instructure/ui-rating": "npm:8.55.1"
-    "@instructure/ui-responsive": "npm:8.55.1"
-    "@instructure/ui-select": "npm:8.55.1"
-    "@instructure/ui-selectable": "npm:8.55.1"
-    "@instructure/ui-side-nav-bar": "npm:8.55.1"
-    "@instructure/ui-simple-select": "npm:8.55.1"
-    "@instructure/ui-source-code-editor": "npm:8.55.1"
-    "@instructure/ui-spinner": "npm:8.55.1"
-    "@instructure/ui-svg-images": "npm:8.55.1"
-    "@instructure/ui-table": "npm:8.55.1"
-    "@instructure/ui-tabs": "npm:8.55.1"
-    "@instructure/ui-tag": "npm:8.55.1"
-    "@instructure/ui-text": "npm:8.55.1"
-    "@instructure/ui-text-area": "npm:8.55.1"
-    "@instructure/ui-text-input": "npm:8.55.1"
-    "@instructure/ui-themes": "npm:8.55.1"
-    "@instructure/ui-time-select": "npm:8.55.1"
-    "@instructure/ui-toggle-details": "npm:8.55.1"
-    "@instructure/ui-tooltip": "npm:8.55.1"
-    "@instructure/ui-top-nav-bar": "npm:8.55.1"
-    "@instructure/ui-tray": "npm:8.55.1"
-    "@instructure/ui-tree-browser": "npm:8.55.1"
-    "@instructure/ui-truncate-list": "npm:8.55.1"
-    "@instructure/ui-truncate-text": "npm:8.55.1"
-    "@instructure/ui-view": "npm:8.55.1"
+    "@instructure/emotion": "npm:9.0.1"
+    "@instructure/ui-a11y-content": "npm:9.0.1"
+    "@instructure/ui-alerts": "npm:9.0.1"
+    "@instructure/ui-avatar": "npm:9.0.1"
+    "@instructure/ui-badge": "npm:9.0.1"
+    "@instructure/ui-billboard": "npm:9.0.1"
+    "@instructure/ui-breadcrumb": "npm:9.0.1"
+    "@instructure/ui-buttons": "npm:9.0.1"
+    "@instructure/ui-byline": "npm:9.0.1"
+    "@instructure/ui-calendar": "npm:9.0.1"
+    "@instructure/ui-checkbox": "npm:9.0.1"
+    "@instructure/ui-code-editor": "npm:9.0.1"
+    "@instructure/ui-color-picker": "npm:9.0.1"
+    "@instructure/ui-date-input": "npm:9.0.1"
+    "@instructure/ui-date-time-input": "npm:9.0.1"
+    "@instructure/ui-dialog": "npm:9.0.1"
+    "@instructure/ui-drawer-layout": "npm:9.0.1"
+    "@instructure/ui-drilldown": "npm:9.0.1"
+    "@instructure/ui-editable": "npm:9.0.1"
+    "@instructure/ui-expandable": "npm:9.0.1"
+    "@instructure/ui-file-drop": "npm:9.0.1"
+    "@instructure/ui-flex": "npm:9.0.1"
+    "@instructure/ui-focusable": "npm:9.0.1"
+    "@instructure/ui-form-field": "npm:9.0.1"
+    "@instructure/ui-grid": "npm:9.0.1"
+    "@instructure/ui-heading": "npm:9.0.1"
+    "@instructure/ui-i18n": "npm:9.0.1"
+    "@instructure/ui-icons": "npm:9.0.1"
+    "@instructure/ui-img": "npm:9.0.1"
+    "@instructure/ui-link": "npm:9.0.1"
+    "@instructure/ui-list": "npm:9.0.1"
+    "@instructure/ui-menu": "npm:9.0.1"
+    "@instructure/ui-metric": "npm:9.0.1"
+    "@instructure/ui-modal": "npm:9.0.1"
+    "@instructure/ui-motion": "npm:9.0.1"
+    "@instructure/ui-navigation": "npm:9.0.1"
+    "@instructure/ui-number-input": "npm:9.0.1"
+    "@instructure/ui-options": "npm:9.0.1"
+    "@instructure/ui-overlays": "npm:9.0.1"
+    "@instructure/ui-pages": "npm:9.0.1"
+    "@instructure/ui-pagination": "npm:9.0.1"
+    "@instructure/ui-pill": "npm:9.0.1"
+    "@instructure/ui-popover": "npm:9.0.1"
+    "@instructure/ui-portal": "npm:9.0.1"
+    "@instructure/ui-position": "npm:9.0.1"
+    "@instructure/ui-progress": "npm:9.0.1"
+    "@instructure/ui-radio-input": "npm:9.0.1"
+    "@instructure/ui-range-input": "npm:9.0.1"
+    "@instructure/ui-rating": "npm:9.0.1"
+    "@instructure/ui-responsive": "npm:9.0.1"
+    "@instructure/ui-select": "npm:9.0.1"
+    "@instructure/ui-selectable": "npm:9.0.1"
+    "@instructure/ui-side-nav-bar": "npm:9.0.1"
+    "@instructure/ui-simple-select": "npm:9.0.1"
+    "@instructure/ui-source-code-editor": "npm:9.0.1"
+    "@instructure/ui-spinner": "npm:9.0.1"
+    "@instructure/ui-svg-images": "npm:9.0.1"
+    "@instructure/ui-table": "npm:9.0.1"
+    "@instructure/ui-tabs": "npm:9.0.1"
+    "@instructure/ui-tag": "npm:9.0.1"
+    "@instructure/ui-text": "npm:9.0.1"
+    "@instructure/ui-text-area": "npm:9.0.1"
+    "@instructure/ui-text-input": "npm:9.0.1"
+    "@instructure/ui-themes": "npm:9.0.1"
+    "@instructure/ui-time-select": "npm:9.0.1"
+    "@instructure/ui-toggle-details": "npm:9.0.1"
+    "@instructure/ui-tooltip": "npm:9.0.1"
+    "@instructure/ui-top-nav-bar": "npm:9.0.1"
+    "@instructure/ui-tray": "npm:9.0.1"
+    "@instructure/ui-tree-browser": "npm:9.0.1"
+    "@instructure/ui-truncate-list": "npm:9.0.1"
+    "@instructure/ui-truncate-text": "npm:9.0.1"
+    "@instructure/ui-view": "npm:9.0.1"
   peerDependencies:
     react: ">= 16.8 <= 18"
     react-dom: ">= 16.8 <= 18"
-  checksum: 10c0/0c3589f706f2bd98e3d1dae4a5197f0734d52e3c571ea8efea8b3908ea4f811f656b03cf6325bf251d7ea45b5c77e6c459eb695b762475248abab6a4742fe7d1
+  checksum: 10c0/3cfabcc928838413d1f539de885b5b67799fbd0aa3399e8f6ecfbf0eb3d741ce728a141874cb3df87809b81f91d109b97e394e74f6a7386181d11d25e2ed0df2
   languageName: node
   linkType: hard
 
-"@instructure/uid@npm:8.55.1":
-  version: 8.55.1
-  resolution: "@instructure/uid@npm:8.55.1"
+"@instructure/uid@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@instructure/uid@npm:9.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-  checksum: 10c0/948c2363153fb9009fa90e5aeb7a868603a2e9c3eafa2fa964d451225372baa171373e7a745fbe5fe28763e5718e5062c67d68dec7b86d1b44f3064f14098521
+  checksum: 10c0/19ece889a252f4ca492fa9c38995c41f5c2bfe4bbe0070c464ce452f8455ec62bf97b01b75c520a97169966808710570694d742c407093b75c7a967b3ba03f01
   languageName: node
   linkType: hard
 
@@ -5307,9 +5307,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^6.4.2":
-  version: 6.4.2
-  resolution: "@testing-library/jest-dom@npm:6.4.2"
+"@testing-library/jest-dom@npm:^6.4.5":
+  version: 6.4.5
+  resolution: "@testing-library/jest-dom@npm:6.4.5"
   dependencies:
     "@adobe/css-tools": "npm:^4.3.2"
     "@babel/runtime": "npm:^7.9.2"
@@ -5317,7 +5317,7 @@ __metadata:
     chalk: "npm:^3.0.0"
     css.escape: "npm:^1.5.1"
     dom-accessibility-api: "npm:^0.6.3"
-    lodash: "npm:^4.17.15"
+    lodash: "npm:^4.17.21"
     redent: "npm:^3.0.0"
   peerDependencies:
     "@jest/globals": ">= 28"
@@ -5336,13 +5336,13 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10c0/e7eba527b34ce30cde94424d2ec685bdfed51daaafb7df9b68b51aec6052e99a50c8bfe654612dacdf857a1eb81d68cf294fc89de558ee3a992bf7a6019fffcc
+  checksum: 10c0/4cfdd44e2abab2b9d399c47cbfe686729bb65160d7df0f9e2329aaaea7702f6e852a9eefb29b468f00c1e5a5274b684f8cac76959d33299dfa909ba007ea191d
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^15.0.6":
-  version: 15.0.6
-  resolution: "@testing-library/react@npm:15.0.6"
+"@testing-library/react@npm:^15.0.7":
+  version: 15.0.7
+  resolution: "@testing-library/react@npm:15.0.7"
   dependencies:
     "@babel/runtime": "npm:^7.12.5"
     "@testing-library/dom": "npm:^10.0.0"
@@ -5354,7 +5354,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/3705a2272f929f2f848f5d7e6ac9829bf7ecc1725a35733ffae7e7a261d4bdab470b080558e8544edb1f9ba25db9fbc4232527df9b4ec6ab6ae4462a902a7f95
+  checksum: 10c0/ac8ee8968e81949ecb35f7ee34741c2c043f73dd7fee2247d56f6de6a30de4742af94f25264356863974e54387485b46c9448ecf3f6ca41cf4339011c369f2d4
   languageName: node
   linkType: hard
 
@@ -10964,11 +10964,11 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.24.5"
     "@babel/plugin-proposal-private-property-in-object": "npm:^7.21.11"
-    "@biomejs/biome": "npm:^1.7.2"
-    "@instructure/ui": "npm:^8.55.1"
+    "@biomejs/biome": "npm:^1.7.3"
+    "@instructure/ui": "npm:^9.0.1"
     "@testing-library/dom": "npm:^10.1.0"
-    "@testing-library/jest-dom": "npm:^6.4.2"
-    "@testing-library/react": "npm:^15.0.6"
+    "@testing-library/jest-dom": "npm:^6.4.5"
+    "@testing-library/react": "npm:^15.0.7"
     "@testing-library/user-event": "npm:^14.5.2"
     "@types/react": "npm:^18.3.1"
     gh-pages: "npm:^6.1.1"
@@ -12099,7 +12099,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
+"lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
