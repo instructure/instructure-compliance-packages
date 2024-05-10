@@ -32,9 +32,6 @@ function RenderTopNavBar({ language }) {
 				{() => (
 					<TopNavBar.Layout
 						navLabel="main"
-						desktopConfig={{
-							hideActionsUserSeparator: false,
-						}}
 						smallViewportConfig={{
 							dropdownMenuToggleButtonLabel: s.toggle_menu,
 							dropdownMenuLabel: s.main_menu,
