@@ -1,6 +1,6 @@
 {
   "name": "instructure-compliance-package-site",
-  "version": "2.1.2+1715359936",
+  "version": "2.1.2+1715360150",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "dependencies": {
