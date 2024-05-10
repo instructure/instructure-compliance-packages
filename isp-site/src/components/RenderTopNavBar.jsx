@@ -67,7 +67,6 @@ function RenderTopNavBar({ language }) {
 									<TopNavBar.Item
 										id={brand.title}
 										key={brand.title}
-										children={brand.brandName}
 										href={`#${brand.route}${
 											l === "EN" ? "" : `/${l.toLowerCase().split("_")[0]}`
 										}`}
