@@ -1,5 +1,5 @@
 {
-  "name": "isp-site",
+  "name": "instructure-compliance-package-site",
   "version": "2.1.2+1715357691",
   "homepage": "https://inst.bid/#/",
   "private": true,
@@ -27,11 +27,12 @@
     "@testing-library/user-event": "^14.5.2"
   },
   "scripts": {
+    "app": "echo $npm_package_name v$npm_package_version",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "yarn build && make all",
-    "deploy": "yarn predeploy && gh-pages -atx -d build",
+    "deploy": "yarn predeploy && gh-pages -ax -m \"Deploying $(yarn app)\" -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
