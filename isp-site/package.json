@@ -27,7 +27,7 @@
     "@testing-library/user-event": "^14.5.2"
   },
   "scripts": {
-    "app": "echo $npm_package_name v$npm_package_version",
+    "app": "echo v$npm_package_version",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
