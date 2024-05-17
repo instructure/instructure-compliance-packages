@@ -116,6 +116,6 @@ export const ParentBrands = [
 		get readme() {
 			return `${readmePrefix}-${this.brandName}.md`;
 		},
-		color: "#005789",
+		color: "#0093b2",
 	},
 ];
