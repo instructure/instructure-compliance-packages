@@ -10,7 +10,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "pnpm build && make all",
-    "push": "pnpm predeploy && gh-pages -atx -m \"Deploy $(pnpm app)\" -b gh-pages2 -d dist",
+    "push": "pnpm predeploy && gh-pages -atx -m \"Deploy $(pnpm -s app)\" -b gh-pages2 -d dist",
     "biome-apply": "pnpm lint && pnpm check && pnpm format",
     "lint": "biome lint ./",
     "check": "biome check --apply ./",
