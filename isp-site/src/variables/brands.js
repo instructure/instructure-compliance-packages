@@ -9,6 +9,7 @@ export const globalBrands = [
 	"Elevate",
 	"Impact",
 	"LearnPlatform",
+	"Parchment",
 ];
 
 export const globalSubBrands = [
@@ -103,5 +104,18 @@ export const ParentBrands = [
 			return `${readmePrefix}-${this.brandName}.md`;
 		},
 		color: "#0077CC",
+	},
+	{
+		brandName: globalBrands[6],
+		get title() {
+			return this.brandName.toLowerCase();
+		},
+		get route() {
+			return `/${this.title}`;
+		},
+		get readme() {
+			return `${readmePrefix}-${this.brandName}.md`;
+		},
+		color: "#0093b2",
 	},
 ];

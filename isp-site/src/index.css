@@ -107,6 +107,16 @@ code {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='150 0 120 120'%3E%3Cpath d='M241.379 98.9456C223.856 111.884 199.97 112.01 182.311 99.2565L184.886 95.6974C168.637 84.0554 161.776 63.2564 167.914 44.2414L172.098 45.0347C177.865 28.0031 193.884 16.5634 211.877 16.6267V0C186.554 0.0280841 164.128 16.3459 156.328 40.42C148.528 64.4941 157.126 90.8494 177.628 105.703C198.129 120.557 225.87 120.532 246.344 105.64C266.818 90.7487 275.368 64.3777 267.523 40.3179L263.672 41.5722C271.129 64.0298 263.211 88.7287 244.083 102.676'/%3E%3C/svg%3E");
 }
 
+.parchment .active::after,
+.parchment [class$="topNavBarBrand__iconContainer"],
+.parchment #footer {
+  background-color: #0093b2;
+}
+
+.parchment [class$="topNavBarBrand__iconContainer"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -3 29 31.68'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ffffff; stroke-width: 0px; %7D %3C/style%3E%3C/defs%3E%3Cg data-name='Logo Artwork'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpolygon class='cls-1' points='26.87 21.98 2.44 21.98 2.44 2.44 19.54 2.44 19.54 0 0 0 0 24.43 29.31 24.43 29.31 9.77 26.87 9.77 26.87 21.98'/%3E%3Crect class='cls-1' x='26.87' y='4.89' width='2.44' height='2.44'/%3E%3Crect class='cls-1' x='21.98' width='2.44' height='2.44'/%3E%3Crect class='cls-1' x='26.87' width='2.44' height='2.44'/%3E%3Cg%3E%3Cpath class='cls-1' d='M9.38,13.2c-.5,0-.62.37-.62.71v1.53c0,.4.23.69.66.69.36,0,.55-.21.55-.69v-1.53c0-.42-.13-.71-.58-.71Z'/%3E%3Cpath class='cls-1' d='M9.15,11.01c-2.36,0-4.27,1.91-4.27,4.27s1.91,4.27,4.27,4.27,4.27-1.91,4.27-4.27-1.91-4.27-4.27-4.27ZM10.86,15.4c0,.81-.54,1.44-1.27,1.44-.31,0-.84-.14-.84-.38v1.87c0,.14-.18.23-.3.23h-.3c-.13,0-.31-.08-.31-.23v-5.53c0-.14.18-.28.31-.28h.31c.13,0,.29.13.29.28v.05c0-.18.44-.36.8-.36.8,0,1.31.5,1.31,1.48v1.43Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+}
+
 body:not(.instructure) [class$="topNavBarBrand__iconContainer"] svg {
   visibility: hidden;
 }

@@ -8,5 +8,5 @@ jq:
 	
 git:
 	git add .
-	git commit -m "Building version $(SEMVER)+$(BUILD)"
+	git commit -m "Build v$(SEMVER)+$(BUILD)"
 	
