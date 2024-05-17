@@ -1,4 +1,4 @@
-import global from "variables/globals";
+import global from "../variables/globals";
 
 const readmePrefix = `${global.raw}/${global.owner}/${global.repo}/${global.branch}/README`;
 
