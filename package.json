@@ -8,7 +8,7 @@
     "app": "echo v$npm_package_version",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite build && vite preview",
     "predeploy": "pnpm build && make all",
     "push": "pnpm predeploy && gh-pages -atx -m \"Deploy $(pnpm -s app)\" -b gh-pages2 -d dist",
     "biome-apply": "pnpm lint && pnpm check && pnpm format",
