@@ -8,33 +8,33 @@
     "app": "echo v$npm_package_version",
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "pnpm build && make all",
     "deploy": "pnpm predeploy && gh-pages -atx -m \"Deploy $(pnpm app)\" -b gh-pages2 -d dist",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "biome-apply": "pnpm lint && pnpm check && pnpm format",
+    "lint": "biome lint ./",
+    "check": "biome check --apply ./",
+    "format": "biome format --write ./",
+    "rage": "biome rage"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
     "@instructure/ui": "^9.0.1",
     "gh-pages": "^6.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "^5.0.1",
     "rehype-raw": "^7.0.0",
     "remark-gemoji": "^8.0.0",
     "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
+    "@biomejs/biome": "1.7.3",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "vite": "^5.2.0"
+    "vite": "^5.2.11"
   },
   "engines": {
     "node": ">=22.0.0",
