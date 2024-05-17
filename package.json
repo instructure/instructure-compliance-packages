@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "pnpm build && make all",
-    "deploy": "pnpm predeploy && gh-pages -atx -m \"Deploy $(pnpm app)\" -d dist",
+    "deploy": "pnpm predeploy && gh-pages -atx -m \"Deploy $(pnpm app)\" -b gh-pages2 -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

@@ -9,4 +9,5 @@ jq:
 git:
 	git add .
 	git commit -m "Build v$(SEMVER)+$(BUILD)"
+	git push
 	
