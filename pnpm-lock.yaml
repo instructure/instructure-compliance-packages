@@ -1323,8 +1323,8 @@ packages:
     peerDependencies:
       chai: '>=2.2.1 <5'
 
-  electron-to-chromium@1.4.774:
-    resolution: {integrity: sha512-132O1XCd7zcTkzS3FgkAzKmnBuNJjK8WjcTtNuoylj7MYbqw5eXehjQ5OK91g0zm7OTKIPeaAG4CPoRfD9M1Mg==}
+  electron-to-chromium@1.4.775:
+    resolution: {integrity: sha512-JpOfl1aNAiZ88wFzjPczTLwYIoPIsij8S9/XQH9lqMpiJOf23kxea68B8wje4f68t4rOIq4Bh+vP4I65njiJBw==}
 
   email-addresses@5.0.0:
     resolution: {integrity: sha512-4OIPYlA6JXqtVn8zpHpGiI7vE6EQOAg16aGnDMIAlZVinnoZ8208tW1hAbjWydgN/4PLTT9q+O1K6AH/vALJGw==}
@@ -4484,7 +4484,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001620
-      electron-to-chromium: 1.4.774
+      electron-to-chromium: 1.4.775
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
@@ -4612,7 +4612,7 @@ snapshots:
     dependencies:
       chai: 4.4.1
 
-  electron-to-chromium@1.4.774: {}
+  electron-to-chromium@1.4.775: {}
 
   email-addresses@5.0.0: {}
 
