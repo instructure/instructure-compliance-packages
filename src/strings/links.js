@@ -55,6 +55,12 @@ const strings = {
     PT_BR: "Marcas",
     DE: "Marken",
   },
+  products: {
+    EN: "Products",
+    ES_LA: "Productos",
+    PT_BR: "Produtos",
+    DE: "Produkte",
+  },
   language: {
     EN: "Language",
     ES_LA: "Idioma",

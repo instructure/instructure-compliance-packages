@@ -142,6 +142,19 @@ pre {
     display: none;
 }
 
+[data-cid="ToggleDetails"] [class$="gridCol"] {
+    margin-bottom: 0.75em;
+}
+
+[data-cid="RadioInputGroup"] [class$="formFieldGroup"] [class$="gridRow"] {
+    flex-wrap: wrap;
+}
+
+[data-cid="RadioInputGroup"] [class$="formFieldGroup"] [class$="gridCol"] {
+    margin-bottom: 0.75em;
+}
+
+
 /* markdown styles */
 
 .markdown [class$="toggleDetails__details"] {

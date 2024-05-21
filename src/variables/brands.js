@@ -13,6 +13,7 @@ export const globalBrands = [
 ];
 
 export const globalSubBrands = [
+  ...globalBrands,
   "Canvas LMS",
   "Canvas Mobile",
   "Canvas Studio",
@@ -27,7 +28,6 @@ export const globalSubBrands = [
   "Elevate Data Quality",
   "Elevate Data Sync",
   "Learn Platform",
-  ...globalBrands,
 ];
 
 export const ParentBrands = [

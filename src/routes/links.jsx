@@ -1,5 +1,6 @@
 import {
   Button,
+  FormFieldGroup,
   Heading,
   IconButton,
   IconCopyLine,
@@ -44,8 +45,16 @@ export default function Links() {
     codes: l,
   });
 
+  const [activeBrand, setActiveBrand] = useState("all");
+
   const [brands, setBrands] = useState({
     list: globalSubBrands,
+  });
+
+  const [activeProduct, setActiveProduct] = useState("all");
+
+  const [products, setProducts] = useState({
+    list: globalBrands,
   });
 
   const [links, setLinks] = useState({
@@ -64,13 +73,14 @@ export default function Links() {
     setQuery({
       search: v,
     });
-    handleChange(lang.codes, v, brands.list);
+    handleChange(lang.codes, v, brands.list, activeProduct);
   };
 
   const handleLangChange = (e, v) => {
     const arr = [];
     if (v === "all") {
       arr.push(...globalLangs);
+      handleProductChange(e, "all");
     } else {
       arr.push(
         ...globalLangs.filter((lang) =>
@@ -81,7 +91,12 @@ export default function Links() {
     setLang({
       codes: arr,
     });
-    handleChange(arr, query.search, brands.list);
+    handleChange(arr, query.search, brands.list, activeProduct);
+  };
+
+  const handleProductChange = (e, v) => {
+    setActiveProduct(v);
+    handleChange(lang.codes, query.search, brands.list, v);
   };
 
   const handleBrandChange = (e, v) => {
@@ -90,18 +105,23 @@ export default function Links() {
       arr.push(...globalSubBrands);
     } else {
       arr.push(
-        ...globalSubBrands.filter((brand) =>
+        ...["AWS", ...globalSubBrands].filter((brand) =>
           brand.toLowerCase().includes(v.toLowerCase()),
         ),
       );
     }
+    setActiveBrand(v);
     setBrands({
       list: arr,
     });
-    handleChange(lang.codes, query.search, arr);
+    handleProductChange(e, "all");
+    setProducts({
+      list: arr,
+    });
+    handleChange(lang.codes, query.search, arr, "all");
   };
 
-  const handleChange = (l, q, b) => {
+  const handleChange = (l, q, b, p) => {
     const filteredLinks = Redirects.map((brands) => ({
       ...brands,
       links: brands.links
@@ -113,8 +133,12 @@ export default function Links() {
         .filter((link) => l.includes(link.lang.toUpperCase())),
     }))
       .filter((brands) => brands.links.length > 0)
-      .filter((brands) => b.includes(brands.brand));
-
+      .filter((brands) => b.includes(brands.brand))
+      .filter((brands) =>
+        p !== "all"
+          ? brands.brand === products.list[0] || brands.brand === p
+          : true,
+      );
     setLinks({
       list: filteredLinks,
     });
@@ -181,54 +205,95 @@ export default function Links() {
           >
             <View as="div" margin="large none none">
               <form name="searchFilters" autoComplete="off">
-                <TextInput
-                  type="search"
-                  renderLabel={s.search}
-                  placeholder={s.placeholder}
-                  onChange={handleQueryChange}
-                  renderBeforeInput={<IconSearchLine inline={false} />}
-                  renderAfterInput={renderClearButton}
-                  value={query.search}
-                />
-                <br />
-                <RadioInputGroup
-                  name="brand"
-                  description={s.brands}
-                  defaultValue="all"
-                  layout="columns"
-                  variant="toggle"
-                  onChange={handleBrandChange}
-                >
-                  <RadioInput key="all" value="all" label="All" context="off" />
+                <FormFieldGroup label="" description="" layout="stacked">
+                  <TextInput
+                    type="search"
+                    renderLabel={s.search}
+                    placeholder={s.placeholder}
+                    onChange={handleQueryChange}
+                    renderBeforeInput={<IconSearchLine inline={false} />}
+                    renderAfterInput={renderClearButton}
+                    value={query.search}
+                  />
+                  <RadioInputGroup
+                    name="brand"
+                    description={s.brands}
+                    defaultValue="all"
+                    layout="columns"
+                    variant="toggle"
+                    onChange={handleBrandChange}
+                  >
+                    <RadioInput
+                      key="all"
+                      value="all"
+                      label="All"
+                      context="off"
+                    />
+                    {["AWS", ...globalBrands].map((brand) => (
+                      <RadioInput
+                        key={brand}
+                        value={brand}
+                        label={brand}
+                        context="off"
+                      />
+                    ))}
+                  </RadioInputGroup>
+                  {activeBrand !== "all" && products.list.length > 1 && (
+                    <RadioInputGroup
+                      name="product"
+                      description={s.products}
+                      defaultValue="all"
+                      layout="columns"
+                      variant="toggle"
+                      onChange={handleProductChange}
+                    >
+                      <RadioInput
+                        key="all"
+                        value="all"
+                        label="All"
+                        context="off"
+                        id="allProducts"
+                        checked={activeProduct === "all"}
+                      />
 
-                  {globalBrands.map((brand) => (
+                      {products.list
+                        .filter((product) => product !== activeBrand)
+                        .map((product) => {
+                          return (
+                            <RadioInput
+                              key={product}
+                              value={product}
+                              label={product}
+                              context="off"
+                            />
+                          );
+                        })}
+                    </RadioInputGroup>
+                  )}
+                  <RadioInputGroup
+                    name="language"
+                    description={s.language}
+                    defaultValue={l}
+                    layout="columns"
+                    variant="toggle"
+                    onChange={handleLangChange}
+                  >
                     <RadioInput
-                      key={brand}
-                      value={brand}
-                      label={brand}
+                      key="all"
+                      value="all"
+                      label="All"
                       context="off"
                     />
-                  ))}
-                </RadioInputGroup>
-                <br />
-                <RadioInputGroup
-                  name="language"
-                  description={s.language}
-                  defaultValue={l}
-                  layout="columns"
-                  variant="toggle"
-                  onChange={handleLangChange}
-                >
-                  <RadioInput key="all" value="all" label="All" context="off" />
-                  {globalLangDetails.map((lang) => (
-                    <RadioInput
-                      key={lang.code}
-                      value={lang.code}
-                      label={lang.local}
-                      context="off"
-                    />
-                  ))}
-                </RadioInputGroup>
+                    {globalLangDetails.map((lang) => (
+                      <RadioInput
+                        key={lang.code}
+                        value={lang.code}
+                        label={lang.local}
+                        context="off"
+                      />
+                    ))}
+                  </RadioInputGroup>
+                </FormFieldGroup>
               </form>
             </View>
           </ToggleDetails>
