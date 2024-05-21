@@ -1,5 +1,46 @@
 const Links = [
   {
+    brand: "AWS",
+    links: [
+      {
+        title: "CAIQ",
+        from: "/aws/caiq/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20CAIQ%20v4.0.2.pdf",
+        lang: "EN",
+      },
+      {
+        title: "Cyber Essentials+ Certificate",
+        from: "/aws/ce/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20CE%20Plus%20Certificate.pdf",
+        lang: "EN",
+      },
+      {
+        title: "CSA Star Level 2 Certificate",
+        from: "/aws/csa/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20CSA%20Star%20Level%202%20Certificate.pdf",
+        lang: "EN",
+      },
+      {
+        title: "ISO 27001 Certificate",
+        from: "/aws/iso/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20ISO%2027001%20Certificate.pdf",
+        lang: "EN",
+      },
+      {
+        title: "ISO 9001 Certificate",
+        from: "/aws/iso9001/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20ISO%209001%20Certificate.pdf",
+        lang: "EN",
+      },
+      {
+        title: "SOC 3 Report",
+        from: "/aws/soc/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20SOC%203.pdf",
+        lang: "EN",
+      },
+    ],
+  },
+  {
     brand: "Instructure",
     links: [
       {
@@ -15,9 +56,51 @@ const Links = [
         lang: "EN",
       },
       {
+        title: "CAIQ",
+        from: "/caiq/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20ESG%20Report%20FY2023.pdf",
+        lang: "EN",
+      },
+      {
+        title: "CSA Star Certificate",
+        from: "/csa/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20CSA%20STAR%20Certificate.pdf",
+        lang: "EN",
+      },
+      {
+        title: "Cyber Essentials+ Certificate",
+        from: "/ce/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20Cyber%20Essentials%20Plus.pdf",
+        lang: "EN",
+      },
+      {
+        title: "Environmental, Social, and Governance Report",
+        from: "/esg/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20ESG%20Report%20FY2023.pdf",
+        lang: "EN",
+      },
+      {
+        title: "Instructure, Inc. Certificate of Insurance",
+        from: "/coi/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20Inc%20COI.pdf",
+        lang: "EN",
+      },
+      {
+        title: "Instructure Global Certificate of Insurance",
+        from: "/coi-global/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20Global%20COI.pdf",
+        lang: "EN",
+      },
+      {
         title: "ISO 27001 Certificate",
         from: "/iso/dl",
         to: "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate.pdf",
+        lang: "EN",
+      },
+      {
+        title: "Quality Assurance Program",
+        from: "/qa/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20Quality%20Assurance%20Program.pdf",
         lang: "EN",
       },
       {
@@ -195,12 +278,6 @@ const Links = [
         lang: "PT_BR",
       },
       {
-        title: "Try Canvas (FFT)",
-        from: "/try-canvas",
-        to: "https://www.instructure.com/try-canvas",
-        lang: "EN",
-      },
-      {
         title: "Study Hall",
         from: "/resources",
         to: "https://www.instructure.com/resources/?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyAxAAK",
@@ -213,7 +290,7 @@ const Links = [
         lang: "EN",
       },
       {
-        title: "ESG Report",
+        title: "ESG Report (online)",
         from: "/esg",
         to: "https://instructure.com/esg-report",
         lang: "EN",
@@ -227,6 +304,12 @@ const Links = [
         title: "Security Audit Report",
         from: "/canvas/audit/dl",
         to: "https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf",
+        lang: "EN",
+      },
+      {
+        title: "Try Canvas (FFT)",
+        from: "/try-canvas",
+        to: "https://www.instructure.com/try-canvas",
         lang: "EN",
       },
       {
@@ -274,6 +357,36 @@ const Links = [
         title: "Compliance Package (EN)",
         from: "/canvas/lms/dl",
         to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms.zip",
+        lang: "EN",
+      },
+      {
+        title: "Architecture Paper",
+        from: "/canvas/lms/architecture/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20Architecture.pdf",
+        lang: "EN",
+      },
+      {
+        title: "HECVAT",
+        from: "/canvas/lms/hecvat/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20HECVAT%20Full.xlsx",
+        lang: "EN",
+      },
+      {
+        title: "K12CVAT",
+        from: "/canvas/lms/k12cvat/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20K12CVAT%20Full.xlsx",
+        lang: "EN",
+      },
+      {
+        title: "SOC 3 Report",
+        from: "/canvas/lms/soc/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20SOC%203.pdf",
+        lang: "EN",
+      },
+      {
+        title: "TX-RAMP Level 2 Certificate",
+        from: "/canvas/lms/txramp/dl",
+        to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20TX-RAMP%20Level%202%20Certification.pdf",
         lang: "EN",
       },
       {
