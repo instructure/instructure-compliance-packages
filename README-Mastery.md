@@ -10,8 +10,6 @@ Mastery Connect is the K–12 digital assessment management system that makes da
 
 💾 [Download](https://inst.bid/mastery/connect/dl)
 
-<div class="contents mastery-connect"></div>
-
 </div>
 <div class="lang ES_LA">
 
@@ -26,8 +24,6 @@ Mastery Connect es el sistema de gestión de evaluaciones digitales K-12 que hac
 💾 [Descargar*](https://inst.bid/mastery/connect/dl/es)
 
 _*Esta versión sólo está disponible en inglés._
-
-<div class="contents mastery-connect"></div>
 
 </div>
 <div class="lang PT_BR">
@@ -44,8 +40,6 @@ Mastery Connect é o sistema de gerenciamento de avaliação digital de ensino f
 
 _*Esta versão está disponível apenas em inglês._
 
-<div class="contents mastery-connect"></div>
-
 </div>
 <div class="lang DE">
 
@@ -61,6 +55,6 @@ Mastery Connect ist das digitale Bewertungsmanagementsystem für K-12, das daten
 
 _*Diese Version ist nur auf Englisch verfügbar._
 
-<div class="contents mastery-connect"></div>
-
 </div>
+
+<div class="contents mastery-connect"></div>
