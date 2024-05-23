@@ -5,8 +5,8 @@ import rehypeRaw from "rehype-raw";
 import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
 
-import { Explorer } from "../utils/explorer";
 import mdtoui from "../components/mdtoui";
+import { Explorer } from "../utils/explorer";
 
 import allowedElements from "../variables/allowedElements";
 
