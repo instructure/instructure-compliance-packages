@@ -1,6 +1,6 @@
-<div class="lang EN">
-
 # Parchment
+
+<div class="lang EN">
 
 Parchment credentials go beyond transcripts and diplomas to share a learner’s holistic story within a digital, dynamic, and comprehensive platform.
 
@@ -9,8 +9,6 @@ Parchment credentials go beyond transcripts and diplomas to share a learner’s 
 </div>
 <div class="lang ES_LA">
 
-# Parchment
-
 Las credenciales de Parchment van más allá de expedientes académicos y diplomas para compartir la historia integral de un alumno dentro de una plataforma digital, dinámica e integral.
 
 🚧 Los paquetes de cumplimiento para Parchment se encuentran actualmente en construcción. Mire la página [Lanzamientos](https://inst.bid/#/releases) para obtener actualizaciones.
@@ -18,16 +16,12 @@ Las credenciales de Parchment van más allá de expedientes académicos y diplom
 </div>
 <div class="lang PT_BR">
 
-# Parchment
-
 As credenciais de Parchment vão além de transcrições e diplomas para compartilhar a história holística do aluno em uma plataforma digital, dinâmica e abrangente.
 
 🚧 Os pacotes de conformidade para Parchment estão atualmente em construção. Confira a página [Lançamentos](https://inst.bid/#/releases) para atualizações.
 
 </div>
 <div class="lang DE">
-
-# Parchment
 
 Parchment-Zeugnisse gehen über Zeugnisse und Diplome hinaus und vermitteln die ganzheitliche Geschichte eines Lernenden auf einer digitalen, dynamischen und umfassenden Plattform.
 
