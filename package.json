@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "3.0.0+1716487808",
+  "version": "3.0.0+1716487900",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -43,8 +43,7 @@
   "packageManager": "pnpm@9.1.2+sha256.19c17528f9ca20bd442e4ca42f00f1b9808a9cb419383cd04ba32ef19322aba7",
   "pnpm": {
     "overrides": {
-      "@instructure/ui-test-sandbox>sinon": "^17.0.1",
-      "gh-pages>globby": "^14.0.1"
+      "@instructure/ui-test-sandbox>sinon": "^17.0.1"
     }
   },
   "browserslist": [
