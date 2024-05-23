@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "3.0.0+1716489141",
+  "version": "3.0.0+1716493254",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -10,7 +10,7 @@
     "build": "vite build",
     "preview": "vite build && vite preview",
     "predeploy": "pnpm build && make all",
-    "push": "pnpm predeploy && gh-pages -atx -m \"Deploy $(pnpm -s app)\" -b gh-pages -d dist",
+    "push": "pnpm predeploy && gh-pages -atx -m \"Deploy v$npm_package_version\" -b gh-pages -d dist",
     "biome-apply": "pnpm lint && pnpm check && pnpm format",
     "lint": "biome lint ./",
     "check": "biome check --apply ./",
