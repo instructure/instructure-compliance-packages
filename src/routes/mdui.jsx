@@ -1,3 +1,4 @@
+import { Grid, SourceCodeEditor, View } from "@instructure/ui";
 // Modules
 import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
@@ -5,10 +6,9 @@ import { useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
+import RenderFooter from "../components/RenderFooter";
 import strings from "../strings/mdui";
 import { getLang, getStrings } from "../utils/langs";
-import RenderFooter from "../components/RenderFooter";
-import { Grid, SourceCodeEditor, View } from "@instructure/ui";
 
 // Components
 import RenderTopNavBar from "../components/RenderTopNavBar";
