@@ -1,10 +1,16 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.0...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.1...isp-site)
+
+## [3.1.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.0...isp-site-v3.1.1)
 
 ### Added
 
 * [CHANGELOG.md](https://github.com/thedannywahl/instructure-security-package/blob/isp-site/CHANGELOG.md)
+
+### Changed
+
+* Use "A+" Learnplatform logo
 
 ## [3.1.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.0.1...isp-site-v3.1.0)
 
