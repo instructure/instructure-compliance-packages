@@ -5,6 +5,26 @@ const EN = [
     to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials.zip",
   },
   {
+    title: "VPAT",
+    from: "/canvas/credentials/vpat/dl",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-credentials/Canvas%20Credentials/Canvas%20Credentials%20(formerly%20Badgr)%20VPAT.pdf",
+  },
+  {
+    title: "Architecture Paper",
+    from: "/canvas/credentials/architecture/dl",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-credentials/Canvas%20Credentials/Canvas%20Credentials%20Architecture.pdf",
+  },
+  {
+    title: "HECVAT",
+    from: "/canvas/credentials/hecvat/dl",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-credentials/Canvas%20Credentials/Canvas%20Credentials%20HECVAT%20Full.xlsx",
+  },
+  {
+    title: "TX-RAMP Certification",
+    from: "/canvas/credentials/tx-ramp/dl",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-credentials/Canvas%20Credentials/Canvas%20Credentials%20TX-RAMP%20Level%202%20Certification.pdf",
+  },
+  {
     title: "Home (HE)",
     from: "/canvas/credentials",
     to: "https://www.instructure.com/higher-education/products/canvas/canvas-credentials-digital-badges/",

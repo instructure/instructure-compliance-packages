@@ -5,6 +5,11 @@ const EN = [
     to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/elevate-standards-alignment.zip",
   },
   {
+    title: "HECVAT Lite",
+    from: "/elevate/standards-alignment/hecvat/dl",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/elevate-standards-alignment/Elevate%20Standards%20Alignment/Elevate%20Standards%20Alignment%20HECVAT%20Lite.xlsx",
+  },
+  {
     title: "Home",
     from: "/elevate/standards-alignment",
     to: "https://www.instructure.com/corporate-education/products/elevate/elevate-standards-alignment",

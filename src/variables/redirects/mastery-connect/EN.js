@@ -5,6 +5,16 @@ const EN = [
     to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/mastery-connect.zip",
   },
   {
+    title: "Architecture Paper",
+    from: "/mastery/connect/architecture/dl",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/mastery-connect/Mastery%20Connect/Mastery%20Connect%20Architecture.pdf",
+  },
+  {
+    title: "HECVAT Lite",
+    from: "/mastery/connect/hecvat/dl",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/mastery-connect/Mastery%20Connect/Mastery%20Connect%20HECVAT%20Lite.xlsx",
+  },
+  {
     title: "Home",
     from: "/mastery/connect",
     to: "https://www.instructure.com/k12/products/mastery/mastery-connect",
