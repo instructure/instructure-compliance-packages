@@ -2,6 +2,7 @@ import { Children } from "react";
 
 // Modules
 import {
+  Alert,
   Avatar,
   Button,
   Byline,
@@ -56,10 +57,28 @@ const mdtoui = {
       ...props,
       children: filterChildrenProps(props),
     };
+    const alertRegex = /\[\!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/;
+    const alertTypes = {
+      NOTE: "info",
+      TIP: "success",
+      IMPORTANT: "info",
+      WARNING: "warning",
+      CAUTION: "error",
+    };
     const [quote, author] =
       Children.toArray(props.children)[0]
         ?.props.children.toString()
         .split("--", 2) ?? false;
+    const alert = quote.match(alertRegex);
+    if (alert) {
+      console.log("alertType: ", alert);
+
+      return (
+        <Alert variant={alertTypes[alert[1]]}>
+          {quote.replace(`${alert[0]}`, "")}
+        </Alert>
+      );
+    }
     return (
       <Byline description={quote} title={author} margin="medium 0" {...props}>
         {author ? <Avatar name={author} /> : <></>}

@@ -1,6 +1,5 @@
-import { Alert, Grid, SourceCodeEditor, View } from "@instructure/ui";
 // Modules
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
@@ -8,8 +7,9 @@ import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
 import strings from "../strings/mdui";
 import { getLang, getStrings } from "../utils/langs";
-
 import RenderFooter from "../components/RenderFooter";
+import { Grid, SourceCodeEditor, View } from "@instructure/ui";
+
 // Components
 import RenderTopNavBar from "../components/RenderTopNavBar";
 import mdtoui from "../components/mdtoui";
@@ -21,7 +21,6 @@ export default function MDUI() {
   const l = getLang(useParams().language);
   const s = getStrings(strings, l);
   const md = markdownSample;
-  const init = useRef(true);
 
   useEffect(() => {
     document.title = "Markdown to Instructure UI";
@@ -29,28 +28,9 @@ export default function MDUI() {
 
   const [content, setContent] = useState(`${s.loading}`);
 
-  useEffect(
-    (text) => {
-      if (init.current) {
-        init.current = false;
-        const getMD = async () => {
-          await fetch(md)
-            .then((response) => {
-              if (response.ok) return response.text();
-              return Promise.reject(s.fetch_fail);
-            })
-            .then((text) => {
-              setContent(text);
-            })
-            .catch((error) => console.error(error));
-        };
-        getMD();
-        return;
-      }
-      setContent(text);
-    },
-    [md, s.fetch_fail],
-  );
+  useEffect(() => {
+    setContent(md);
+  }, [md]);
 
   return (
     <>
@@ -77,13 +57,6 @@ export default function MDUI() {
               </ReactMarkdown>
             </Grid.Col>
             <Grid.Col>
-              <Alert
-                variant="info"
-                renderCloseButtonLabel={`${s.close}`}
-                margin="none none medium"
-              >
-                {s.try_editor}
-              </Alert>
               <SourceCodeEditor
                 label={`${s.markdown_source}`}
                 language="markdown"

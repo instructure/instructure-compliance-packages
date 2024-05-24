@@ -1,5 +1,8 @@
 # Markdown to Instructure UI
 
+> [!NOTE]
+> Try editing the markdown on this page.
+
 This page is rendered from [github-flavored markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) and passing the content through [react-markdown](https://github.com/remarkjs/react-markdown) to [Instructure UI](https://instructure.design/).  The result is accessible, well styled, and modular content created simply with markdown.
 
 :arrow_right: [Github](https://github.com/thedannywahl/instructure-security-package/blob/gh-pages/isp-site/src/components/mdtoui.jsx)
@@ -48,6 +51,23 @@ Hello world!
 > Tri-tip ham hock ball tip, frankfurter bacon buffalo hamburger chuck turkey filet mignon andouille rump ground round doner short ribs. 
 > Fatback short ribs bresaola, turducken ball tip drumstick meatloaf t-bone venison pork belly pig landjaeger chicken salami hamburger. 
 > Jowl pork shank t-bone short loin.
+
+### Alerts
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 
 ## Code
 
