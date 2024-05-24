@@ -16,7 +16,7 @@ importers:
         version: 2.0.0
       '@instructure/ui':
         specifier: ^9.0.1
-        version: 9.0.1(@lezer/common@1.2.1)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)
+        version: 9.0.1(@lezer/common@1.2.1)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)
       gh-pages:
         specifier: ^6.1.1
         version: 6.1.1
@@ -28,7 +28,7 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-markdown:
         specifier: ^9.0.1
-        version: 9.0.1(@types/react@18.3.2)(react@18.3.1)
+        version: 9.0.1(@types/react@18.3.3)(react@18.3.1)
       react-router-dom:
         specifier: ^6.23.1
         version: 6.23.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -46,8 +46,8 @@ importers:
         specifier: 1.7.3
         version: 1.7.3
       '@types/react':
-        specifier: ^18.3.2
-        version: 18.3.2
+        specifier: ^18.3.3
+        version: 18.3.3
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.0
@@ -1118,8 +1118,8 @@ packages:
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
 
-  '@types/react@18.3.2':
-    resolution: {integrity: sha512-Btgg89dAnqD4vV7R3hlwOxgqobUQKgx3MmrQRi0yYbs/P0ym8XozIAlkqVilPqHQwXs4e9Tf63rrCgl58BcO4w==}
+  '@types/react@18.3.3':
+    resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
 
   '@types/ua-parser-js@0.7.39':
     resolution: {integrity: sha512-P/oDfpofrdtF5xw433SPALpdSchtJmY7nsJItf8h3KXqOslkbySh8zq4dSWXH2oTjRvJ5PczVEoCZPow6GicLg==}
@@ -1323,8 +1323,8 @@ packages:
     peerDependencies:
       chai: '>=2.2.1 <5'
 
-  electron-to-chromium@1.4.780:
-    resolution: {integrity: sha512-NPtACGFe7vunRYzvYqVRhQvsDrTevxpgDKxG/Vcbe0BTNOY+5+/2mOXSw2ls7ToNbE5Bf/+uQbjTxcmwMozpCw==}
+  electron-to-chromium@1.4.782:
+    resolution: {integrity: sha512-JUfU61e8tr+i5Y1FKXcKs+Xe+rJ+CEqm4cgv1kMihPE2EvYHmYyVr3Im/+1+Z5B29Be2EEGCZCwAc6Tazdl1Yg==}
 
   email-addresses@5.0.0:
     resolution: {integrity: sha512-4OIPYlA6JXqtVn8zpHpGiI7vE6EQOAg16aGnDMIAlZVinnoZ8208tW1hAbjWydgN/4PLTT9q+O1K6AH/vALJGw==}
@@ -2436,7 +2436,7 @@ snapshots:
 
   '@emotion/memoize@0.8.1': {}
 
-  '@emotion/react@11.11.4(@types/react@18.3.2)(react@18.3.1)':
+  '@emotion/react@11.11.4(@types/react@18.3.3)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@emotion/babel-plugin': 11.11.0
@@ -2448,7 +2448,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.2
+      '@types/react': 18.3.3
 
   '@emotion/serialize@1.1.4':
     dependencies:
@@ -2572,10 +2572,10 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.24.5
 
-  '@instructure/emotion@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/emotion@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@emotion/react': 11.11.4(@types/react@18.3.2)(react@18.3.1)
+      '@emotion/react': 11.11.4(@types/react@18.3.3)(react@18.3.1)
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/theme-registry': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2616,11 +2616,11 @@ snapshots:
       - react
       - react-dom
 
-  '@instructure/ui-a11y-content@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-a11y-content@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
@@ -2634,11 +2634,11 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-a11y-utils@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-a11y-utils@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2650,20 +2650,20 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-alerts@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-alerts@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-themes': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -2672,16 +2672,16 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@instructure/ui-avatar@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-avatar@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
@@ -2693,75 +2693,75 @@ snapshots:
       '@babel/runtime': 7.24.5
       axe-core: 4.9.1
 
-  '@instructure/ui-badge@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-badge@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-billboard@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-billboard@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-heading': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-img': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-heading': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-img': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-breadcrumb@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-breadcrumb@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-link': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-link': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-truncate-text': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-truncate-text': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-buttons@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-buttons@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       keycode: 2.2.1
       prop-types: 15.8.1
       react: 18.3.1
@@ -2769,35 +2769,35 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-byline@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-byline@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-calendar@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-calendar@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       prop-types: 15.8.1
       react: 18.3.1
@@ -2805,21 +2805,21 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-checkbox@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-checkbox@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-svg-images': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-svg-images': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -2828,12 +2828,12 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-code-editor@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-code-editor@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2847,29 +2847,29 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-color-picker@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-color-picker@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-drilldown': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-pill': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-drilldown': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-pill': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-text': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-text': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-themes': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
@@ -2881,21 +2881,21 @@ snapshots:
       '@babel/runtime': 7.24.5
       tinycolor2: 1.6.0
 
-  '@instructure/ui-date-input@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-date-input@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-calendar': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-calendar': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-selectable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
@@ -2903,23 +2903,23 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-date-time-input@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-date-time-input@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-calendar': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-date-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-calendar': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-date-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-time-select': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-time-select': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
@@ -2931,11 +2931,11 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.24.5
 
-  '@instructure/ui-dialog@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-dialog@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2953,25 +2953,25 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@instructure/ui-drawer-layout@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)':
+  '@instructure/ui-drawer-layout@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-portal': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-test-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       prop-types: 15.8.1
       react: 18.3.1
@@ -2980,42 +2980,42 @@ snapshots:
       - react-dom
       - sinon
 
-  '@instructure/ui-drilldown@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-drilldown@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-options': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-options': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-selectable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-editable@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-editable@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-flex': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-flex': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -3036,18 +3036,18 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@instructure/ui-file-drop@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-file-drop@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -3056,44 +3056,44 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-flex@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-flex@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-focusable@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-focusable@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-form-field@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-form-field@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-grid': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-grid': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
@@ -3103,13 +3103,13 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-grid@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-grid@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3120,16 +3120,16 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-heading@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-heading@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
@@ -3152,79 +3152,79 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@instructure/ui-icons@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-icons@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/ui-svg-images': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-svg-images': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-img@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-img@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-link@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-link@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-list@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-list@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-menu@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-menu@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3236,11 +3236,11 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-metric@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-metric@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3251,33 +3251,33 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-modal@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-modal@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-overlays': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-overlays': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-portal': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-motion@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-motion@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3289,40 +3289,40 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-navigation@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-navigation@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-badge': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-badge': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-menu': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-menu': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-truncate-list': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-truncate-list': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-number-input@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-number-input@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3334,43 +3334,43 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-options@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-options@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-overlays@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-overlays@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-portal': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       no-scroll: 2.1.1
       prop-types: 15.8.1
@@ -3379,41 +3379,41 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-pages@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-pages@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-pagination@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-pagination@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-number-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-number-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-portal': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -3422,39 +3422,39 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-pill@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-pill@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-truncate-text': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-truncate-text': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-popover@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-popover@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -3475,11 +3475,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@instructure/ui-position@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-position@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-portal': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3494,17 +3494,17 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-progress@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-progress@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
@@ -3517,13 +3517,13 @@ snapshots:
       prop-types: 15.8.1
       react: 18.3.1
 
-  '@instructure/ui-radio-input@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-radio-input@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3533,21 +3533,21 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-range-input@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-range-input@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       prop-types: 15.8.1
       react: 18.3.1
@@ -3555,19 +3555,19 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-rating@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-rating@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
@@ -3603,24 +3603,24 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@instructure/ui-select@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-select@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-options': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-options': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-selectable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       prop-types: 15.8.1
       react: 18.3.1
@@ -3643,43 +3643,43 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@instructure/ui-side-nav-bar@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-side-nav-bar@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-badge': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-utils': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-badge': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-menu': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-menu': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-truncate-list': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-truncate-list': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-simple-select@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-simple-select@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-select': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-select': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
@@ -3687,7 +3687,7 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-source-code-editor@9.0.1(@lezer/common@1.2.1)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-source-code-editor@9.0.1(@lezer/common@1.2.1)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@codemirror/autocomplete': 6.16.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.26.3)(@lezer/common@1.2.1)
@@ -3703,18 +3703,18 @@ snapshots:
       '@codemirror/search': 6.5.6
       '@codemirror/state': 6.4.1
       '@codemirror/view': 6.26.3
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-test-locator': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-themes': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@lezer/highlight': 1.1.6
@@ -3725,17 +3725,17 @@ snapshots:
       - '@lezer/common'
       - '@types/react'
 
-  '@instructure/ui-spinner@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-spinner@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       prop-types: 15.8.1
       react: 18.3.1
@@ -3743,10 +3743,10 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-svg-images@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-svg-images@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3758,42 +3758,42 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-table@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-table@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-simple-select': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-simple-select': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-tabs@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-tabs@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -3802,18 +3802,18 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-tag@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-tag@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
@@ -3874,14 +3874,14 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@instructure/ui-text-area@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-text-area@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3893,17 +3893,17 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-text-input@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-text-input@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tag': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tag': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
@@ -3911,11 +3911,11 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-text@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-text@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3942,16 +3942,16 @@ snapshots:
       - react
       - react-dom
 
-  '@instructure/ui-time-select@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-time-select@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-select': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-select': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-test-locator': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3961,23 +3961,23 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-toggle-details@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-toggle-details@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-expandable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-flex': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-menu': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-flex': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-menu': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/uid': 9.0.1
       prop-types: 15.8.1
       react: 18.3.1
@@ -3985,13 +3985,13 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-tooltip@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-tooltip@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4002,48 +4002,48 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-top-nav-bar@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-top-nav-bar@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-avatar': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-breadcrumb': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-avatar': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-breadcrumb': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-drilldown': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-link': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-drilldown': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-link': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-responsive': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tray': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-truncate-list': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tray': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-truncate-list': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-tray@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-tray@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-portal': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4054,13 +4054,13 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-tree-browser@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-tree-browser@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-img': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-img': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-testable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4072,12 +4072,12 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-truncate-list@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-truncate-list@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4089,12 +4089,12 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui-truncate-text@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-truncate-text@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
       '@instructure/debounce': 9.0.1
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4121,16 +4121,16 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       ua-parser-js: 1.0.37
 
-  '@instructure/ui-view@9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@instructure/ui-view@9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@instructure/console': 9.0.1(react@18.3.1)
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/shared-types': 9.0.1(react@18.3.1)
       '@instructure/ui-color-utils': 9.0.1
       '@instructure/ui-dom-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-prop-types': 9.0.1(react@18.3.1)
       '@instructure/ui-react-utils': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       prop-types: 15.8.1
@@ -4139,82 +4139,82 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@instructure/ui@9.0.1(@lezer/common@1.2.1)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)':
+  '@instructure/ui@9.0.1(@lezer/common@1.2.1)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@instructure/emotion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-alerts': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-avatar': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-badge': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-billboard': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-breadcrumb': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-byline': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-calendar': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-checkbox': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-code-editor': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-color-picker': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-date-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-date-time-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-drawer-layout': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)
-      '@instructure/ui-drilldown': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-editable': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-alerts': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-avatar': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-badge': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-billboard': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-breadcrumb': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-buttons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-byline': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-calendar': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-checkbox': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-code-editor': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-color-picker': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-date-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-date-time-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-dialog': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-drawer-layout': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sinon@18.0.0)
+      '@instructure/ui-drilldown': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-editable': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-expandable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-file-drop': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-flex': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-grid': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-heading': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-file-drop': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-flex': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-focusable': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-form-field': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-grid': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-heading': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-i18n': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-icons': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-img': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-link': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-list': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-menu': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-metric': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-modal': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-motion': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-navigation': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-number-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-options': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-overlays': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-pages': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-pagination': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-pill': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-popover': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-icons': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-img': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-link': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-list': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-menu': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-metric': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-modal': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-motion': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-navigation': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-number-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-options': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-overlays': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-pages': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-pagination': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-pill': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-popover': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-portal': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-position': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-progress': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-radio-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-range-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-rating': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-position': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-progress': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-radio-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-range-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-rating': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-responsive': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-select': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-select': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-selectable': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-side-nav-bar': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-simple-select': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-source-code-editor': 9.0.1(@lezer/common@1.2.1)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-spinner': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-svg-images': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-table': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tabs': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tag': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-text': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-text-area': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-side-nav-bar': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-simple-select': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-source-code-editor': 9.0.1(@lezer/common@1.2.1)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-spinner': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-svg-images': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-table': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tabs': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tag': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-text': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-text-area': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-text-input': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@instructure/ui-themes': 9.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-time-select': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-toggle-details': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-top-nav-bar': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tray': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-tree-browser': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-truncate-list': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-truncate-text': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@instructure/ui-view': 9.0.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-time-select': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-toggle-details': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tooltip': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-top-nav-bar': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tray': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-tree-browser': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-truncate-list': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-truncate-text': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@instructure/ui-view': 9.0.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -4418,9 +4418,9 @@ snapshots:
 
   '@types/react-dom@18.3.0':
     dependencies:
-      '@types/react': 18.3.2
+      '@types/react': 18.3.3
 
-  '@types/react@18.3.2':
+  '@types/react@18.3.3':
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
@@ -4485,7 +4485,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001621
-      electron-to-chromium: 1.4.780
+      electron-to-chromium: 1.4.782
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
@@ -4613,7 +4613,7 @@ snapshots:
     dependencies:
       chai: 4.4.1
 
-  electron-to-chromium@1.4.780: {}
+  electron-to-chromium@1.4.782: {}
 
   email-addresses@5.0.0: {}
 
@@ -5423,10 +5423,10 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-markdown@9.0.1(@types/react@18.3.2)(react@18.3.1):
+  react-markdown@9.0.1(@types/react@18.3.3)(react@18.3.1):
     dependencies:
       '@types/hast': 3.0.4
-      '@types/react': 18.3.2
+      '@types/react': 18.3.3
       devlop: 1.1.0
       hast-util-to-jsx-runtime: 2.3.0
       html-url-attributes: 3.0.0
