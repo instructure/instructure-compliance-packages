@@ -8,7 +8,7 @@
 
 * Broken release tags
 
-## [3.1.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.1...isp-site-v3.1.1)
+## [3.1.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.1...isp-site-v3.1.3)
 
 ### Added
 
