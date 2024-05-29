@@ -2,6 +2,13 @@
 
 ## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.3...isp-site)
 
+### Roadmap
+
+* JSX => TSX
+* Add MDX support to markdown renderer
+* Additional contexts (language detection, UI detection, frame detection)
+* Node 19 compiler support
+
 ## [3.1.3](https://github.com/thedannywahl/instructure-security-package/compare/f10e243eb0eaa93bfc64df30624200ce6942660f...isp-site-v3.1.3)
 
 ### Fixed
