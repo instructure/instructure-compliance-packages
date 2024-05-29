@@ -1,6 +1,16 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.1...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.2...isp-site)
+
+## [3.1.2]https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.1...isp-site-v3.1.2
+
+### Added
+
+* `push-test` script for testing deploying builds to a non-prod branch (`test-gh-pages`).
+
+### Fixed
+
+* `inflight` dependency deprecation via PNPM override over `gh-pages>globby@latest`.
 
 ## [3.1.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.0...isp-site-v3.1.1)
 
