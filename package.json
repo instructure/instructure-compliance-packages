@@ -45,7 +45,7 @@
   "pnpm": {
     "overrides": {
       "@instructure/ui-test-sandbox>sinon": "^17.0.1",
-      "gh-pages>globby": "^14.0.1"
+      "gh-pages>globby": "11.1.0"
     }
   },
   "browserslist": [
