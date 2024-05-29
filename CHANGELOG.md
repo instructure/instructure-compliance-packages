@@ -4,6 +4,7 @@
 
 ### Roadmap
 
+* Code chunking with `lazy()`
 * JSX => TSX
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
