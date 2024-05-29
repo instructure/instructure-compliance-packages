@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "3.1.1+1716988548",
+  "version": "3.1.1+1716988659",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -11,7 +11,7 @@
     "preview": "vite build && vite preview",
     "predeploy": "make all && pnpm build",
     "push": "pnpm predeploy && gh-pages -t -m \"Deploy v$(pnpm -s app)\" -d dist",
-    "push-test": "pnpm predeploy && gh-pages -t -m \"Deploy v$(pnpm -s app)\" -b test-gh-pages -d dist",
+    "push-test": "pnpm predeploy && gh-pages -t -m \"Deploy test v$(pnpm -s app)\" -b test-gh-pages -d dist",
     "biome-apply": "pnpm lint && pnpm check && pnpm format",
     "lint": "biome lint ./",
     "check": "biome check --apply ./",
@@ -45,7 +45,7 @@
   "pnpm": {
     "overrides": {
       "@instructure/ui-test-sandbox>sinon": "^17.0.1",
-      "gh-pages>globby": "11.1.0"
+      "gh-pages>globby": "^14.0.1"
     }
   },
   "browserslist": [
