@@ -2,7 +2,7 @@
 
 ## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.2...isp-site)
 
-## [3.1.2]https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.1...isp-site-v3.1.2
+## [3.1.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.1...isp-site-v3.1.2)
 
 ### Added
 
