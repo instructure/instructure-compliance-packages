@@ -8,6 +8,11 @@
 
 * `push-test` script for testing deploying builds to a non-prod branch (`test-gh-pages`).
 
+### Changed
+
+* Update Vite to [5.2.12](https://github.com/vitejs/vite/blob/v5.2.12/packages/vite/CHANGELOG.md#5212-2024-05-28)
+* Update PNPM to [9.1.3](https://github.com/pnpm/pnpm/releases/tag/v9.1.3)
+
 ### Fixed
 
 * `inflight` dependency deprecation via PNPM override of `gh-pages>globby@11.1.0`.
