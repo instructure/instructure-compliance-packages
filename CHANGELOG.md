@@ -10,7 +10,7 @@
 
 ### Fixed
 
-* `inflight` dependency deprecation via PNPM override over `gh-pages>globby@11.1.0`.
+* `inflight` dependency deprecation via PNPM override of `gh-pages>globby@11.1.0`.
 
 ## [3.1.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.0...isp-site-v3.1.1)
 
