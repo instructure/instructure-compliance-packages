@@ -23,6 +23,7 @@
 ### Fixed
 
 * Task lists were not resolving correctly in MDUI components with github-flavored markdown.
+* Incorrect calls to `process.env` instead of `import.meta.env` in Releases. 
 
 ## [3.1.3](https://github.com/thedannywahl/instructure-security-package/compare/f10e243eb0eaa93bfc64df30624200ce6942660f...isp-site-v3.1.3)
 
