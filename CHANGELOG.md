@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.3...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.2.0...isp-site)
 
 ### Roadmap
 
@@ -8,7 +8,21 @@
 * JSX => TSX
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
-* Node 19 compiler support
+
+## [3.2.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.3...isp-site-v3.2.0)
+
+### Changed
+
+* Switched to React 19 RC and [react-compiler](https://react.dev/learn/react-compiler).
+* Rewrite package.json Scripts:
+  * add `env:` scripts: `env:package`, `env:biome`, and `env:app`
+  * add evaluation biome scripts and rename scripts that write (`check`/`check:apply`, `format`/`format:apply`, `lint`/`lint:apply`, `biome`/`biome:apply`)
+  * Use [node-jq](https://www.npmjs.com/package/node-jq) for a bundled version of jq (used in Scripts and makefile)
+
+
+### Fixed
+
+* Task lists were not resolving correctly in MDUI components with github-flavored markdown.
 
 ## [3.1.3](https://github.com/thedannywahl/instructure-security-package/compare/f10e243eb0eaa93bfc64df30624200ce6942660f...isp-site-v3.1.3)
 
