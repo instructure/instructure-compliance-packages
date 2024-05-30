@@ -132,7 +132,7 @@ const mdtoui = {
   ul: ({ node, ...props }) => {
     props = { ...props, children: filterChildrenProps(props) };
     const { children, ...ulProps } = props;
-    const tasklist = ulProps?.className === "contains-task-list" ?? false;
+    const tasklist = ulProps?.className === "contains-task-list" || false;
     return (
       <List isUnstyled={tasklist} {...ulProps}>
         {Children.map(children, (child) => {
