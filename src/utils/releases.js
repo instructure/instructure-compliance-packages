@@ -7,8 +7,8 @@ async function getGithubReleases(owner, repo) {
       method: "GET",
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: process.env.REACT_APP_GITHUB_TOKEN
-          ? `token ${process.env.REACT_APP_GITHUB_TOKEN}`
+        Authorization: import.meta.env?.VITE_GITHUB_TOKEN
+          ? `token ${import.meta.env.VITE_GITHUB_TOKEN}`
           : "",
       },
     });
