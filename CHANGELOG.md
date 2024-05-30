@@ -17,7 +17,7 @@
 * Rewrite package.json Scripts:
   * add `env:` scripts: `env:package`, `env:biome`, and `env:app`
   * add evaluation biome scripts and rename scripts that write (`check`/`check:apply`, `format`/`format:apply`, `lint`/`lint:apply`, `biome`/`biome:apply`)
-  * Use [node-jq](https://www.npmjs.com/package/node-jq) for a bundled version of jq (used in Scripts and makefile)
+* Use [node-jq](https://www.npmjs.com/package/node-jq) for a bundled version of jq (used in Scripts and makefile)
 
 
 ### Fixed
