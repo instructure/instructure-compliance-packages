@@ -71,8 +71,6 @@ const mdtoui = {
         .split("--", 2) ?? false;
     const alert = quote.match(alertRegex);
     if (alert) {
-      console.log("alertType: ", alert);
-
       return (
         <Alert variant={alertTypes[alert[1]]}>
           {quote.replace(`${alert[0]}`, "")}
