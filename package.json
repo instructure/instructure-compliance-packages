@@ -23,8 +23,8 @@
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
     "@instructure/ui": "^9.0.1",
     "gh-pages": "^6.1.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "19.0.0-rc-9d4fba0788-20240530",
+    "react-dom": "19.0.0-rc-9d4fba0788-20240530",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.23.1",
     "rehype-raw": "^7.0.0",
@@ -46,8 +46,12 @@
   "packageManager": "pnpm@9.1.4+sha256.30a1801ac4e723779efed13a21f4c39f9eb6c9fbb4ced101bce06b422593d7c9",
   "pnpm": {
     "overrides": {
+      "react": "^19.0.0-rc-9d4fba0788-20240530",
+      "react-dom": "^19.0.0-rc-9d4fba0788-20240530",
       "@instructure/ui-test-sandbox>sinon": "^17.0.1",
-      "gh-pages>globby": "11.1.0"
+      "gh-pages>globby": "11.1.0",
+      "node-jq>tempfile": "^5.0.0",
+      "bin-build>tempfile": "^5.0.0"
     }
   },
   "browserslist": [
