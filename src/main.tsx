@@ -1,9 +1,15 @@
-// Modules
+/**
+ * @module main
+ */
+
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import {
+  type RouteObject,
+  RouterProvider,
+  createHashRouter,
+} from "react-router-dom";
 import "./index.css";
-
 import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
 import ErrorPage from "./routes/error";
 import Links from "./routes/links";
@@ -14,13 +20,15 @@ import Releases from "./routes/releases";
 import { ParentBrands } from "./variables/brands";
 import Redirects from "./variables/redirects";
 
-const routes = [];
-
-// Brands
+/**
+ * An array to hold the routes for the application.
+ */
+const routes: RouteObject[] = [];
 
 for (const brand of ParentBrands) {
   routes.push({
     path: `${brand.route}`,
+
     element: <MarkdownBrand readme={brand.readme} brand={brand.brandName} />,
     errorElement: <ErrorPage />,
     children: [
@@ -34,11 +42,11 @@ for (const brand of ParentBrands) {
   });
 }
 
-// Redirects
 for (const redirect of Redirects) {
   for (const link of redirect.links) {
     routes.push({
       path: link.from,
+
       element: (
         <RedirectTo path={link.from} brand={redirect.brand} url={link.to} />
       ),
@@ -55,7 +63,6 @@ for (const redirect of Redirects) {
   }
 }
 
-// Links
 routes.push({
   path: "/links",
   element: <Links />,
@@ -68,11 +75,10 @@ routes.push({
   ],
 });
 
-// Markdown to InstructureUI showcase
 routes.push({
   path: "/mdui",
   element: <MDUI />,
-  // errorElement: <ErrorPage />,
+  errorElement: <ErrorPage />,
   children: [
     {
       path: ":language",
@@ -81,7 +87,6 @@ routes.push({
   ],
 });
 
-// Release notes page
 routes.push({
   path: "/releases",
   element: <Releases />,
@@ -93,7 +98,6 @@ routes.push({
   ],
 });
 
-// All others
 routes.push({
   path: "*",
   element: <ErrorPage />,
@@ -105,9 +109,23 @@ routes.push({
   ],
 });
 
+/**
+ * Create a hash router with the defined routes.
+ */
 const router = createHashRouter(routes);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+/**
+ * Get the root element from the DOM.
+ */
+const root: HTMLElement | null = document.getElementById("root");
+if (!root) {
+  throw new Error("Root element not found");
+}
+
+/**
+ * Render the application to the root element.
+ */
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <InstUISettingsProvider theme={canvas}>
       <View as="div" minHeight="100vh" position="relative">
