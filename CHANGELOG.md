@@ -9,6 +9,10 @@
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Fixed
+
+* Menu Item CSS selector broke between INSTUI v8 and v9. (e536d4466143de9ea8b08ae9ae2f6404ea00fb4a)
+
 ## [3.2.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.3...isp-site-v3.2.0)
 
 ### Changed
