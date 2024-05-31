@@ -4,14 +4,18 @@
 
 ### Roadmap
 
-* Code chunking with `lazy()`
+* 🚧 Code chunking with `lazy()`
 * 🚧 JSX => TSX
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Changed
+
+* Implement TypeScript ([b1726a1](https://github.com/thedannywahl/instructure-security-package/commit/b1726a1c7044152fd7943c6c1fc9cf65d69502ea))
+
 ### Fixed
 
-* Menu Item CSS selector broke between INSTUI v8 and v9. (e536d4466143de9ea8b08ae9ae2f6404ea00fb4a)
+* Menu Item CSS selector broke between INSTUI v8 and v9. ([e536d44](https://github.com/thedannywahl/instructure-security-package/commit/e536d4466143de9ea8b08ae9ae2f6404ea00fb4a))
 
 ## [3.2.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.3...isp-site-v3.2.0)
 
