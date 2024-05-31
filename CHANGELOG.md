@@ -16,6 +16,7 @@
 ### Fixed
 
 * Menu Item CSS selector broke between INSTUI v8 and v9. ([e536d44](https://github.com/thedannywahl/instructure-security-package/commit/e536d4466143de9ea8b08ae9ae2f6404ea00fb4a))
+* URL for favicon. ([1a57bfe](https://github.com/thedannywahl/instructure-security-package/commit/1a57bfebb4b61b019201ef9a9c26d09f68e8aa84))
 
 ## [3.2.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.1.3...isp-site-v3.2.0)
 
