@@ -18,19 +18,15 @@ import {
 } from "@instructure/ui";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-// Modules
 import global from "../variables/globals";
 
 import RenderFooter from "../components/RenderFooter";
-// Components
 import RenderTopNavBar from "../components/RenderTopNavBar";
 import strings from "../strings/links";
 import { getLang, getStrings } from "../utils/langs";
 import { globalBrands, globalSubBrands } from "../variables/brands";
 import { globalLangDetails, globalLangs } from "../variables/langs";
 import Redirects from "../variables/redirects";
-
-// Page
 export default function Links() {
   const l = getLang(useParams().language);
   const s = getStrings(strings, l);
