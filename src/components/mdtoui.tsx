@@ -48,9 +48,7 @@ const mdtoui: MarkdownCustomRenderer = {
   button: ({ node, ...props }) => <Button withBackground={false} {...props} />,
   p: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
   em: ({ node, ...props }) => <Text fontStyle="italic" {...props} />,
-  strong: ({ node, ...props }: { node: Text }) => (
-    <Text weight="bold" {...props} />
-  ),
+  strong: ({ node, ...props }) => <Text weight="bold" {...props} />,
   span: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
   code: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
   del: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
