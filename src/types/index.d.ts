@@ -11,7 +11,7 @@ declare module "*?raw" {
  * https://stackoverflow.com/questions/66628783/react-markdown-type-for-paragraph-renderer
  *
  */
-declare type MarkdownNodeToProps<T> = {
+type MarkdownNodeToProps<T> = {
   node: T;
   children: T extends { children: unknown } ? ReactNode : never;
 };
