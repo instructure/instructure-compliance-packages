@@ -1,8 +1,4 @@
-import type { Endpoints } from "@octokit/types";
 import global from "../variables/globals.ts";
-
-type GithubReleasesAPI =
-  Endpoints["GET /repos/{owner}/{repo}/releases"]["response"];
 
 /**
  * Fetches the GitHub releases for a given repository.
@@ -27,7 +23,6 @@ async function getGithubReleases(
       },
     });
     const data = await response.json();
-
     return data.map(buildRelease).join("\r\n\r\n").slice(0, -3) || null;
   } catch (error) {
     if (error instanceof Error) {
@@ -45,18 +40,14 @@ async function getGithubReleases(
  * @param release - The GitHub API release to build the string for.
  * @returns A Markdown representation of the GitHub release.
  */
-function buildRelease(response: GithubReleasesAPI): string {
-  if (Array.isArray(response.data)) {
-    return response.data
-      .map(
-        (release) => `
-## ${release.tag_name}\r\n
-${release.body}\r\n
----`,
-      )
-      .join("\n");
-  }
-  return "";
+function buildRelease(response: GithubRelease): string {
+  console.log("response: ", response)
+    return `
+## ${response.name}\r\n
+> ${response.tag_name}${response?.author?.login ? ` -- ${response.author.login}` : null}\r\n
+
+${response.body}\r\n
+---`
 }
 
 /**
