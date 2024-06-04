@@ -19,7 +19,6 @@ import {
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import global from "../variables/globals.ts";
-
 import RenderFooter from "../components/RenderFooter.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
 import strings from "../strings/links.ts";
@@ -31,47 +30,30 @@ export default function Links() {
   const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
 
-  const fromPrefix = global.url.replace("https://", "");
+  const fromPrefix: string = global.url.replace("https://", "");
 
-  const [query, setQuery] = useState({
-    search: "",
+  const [toggle, setExpanded] = useState<{ expanded: boolean; text: string }>({
+    expanded: false,
+    text: s.toggleShow,
   });
+  const handleToggleChange = () => {
+    const t = toggle.expanded ? s.toggleShow : s.toggleHide;
+    setExpanded({
+      expanded: !toggle.expanded,
+      text: t,
+    });
+  };
+
+  const [query, setQuery] = useState<string>("");
+
+  const handleQueryChange = (e, v) => {
+    setQuery(v);
+    handleChange(lang.codes, v, brands.list, activeProduct);
+  };
 
   const [lang, setLang] = useState({
     codes: l,
   });
-
-  const [activeBrand, setActiveBrand] = useState("all");
-
-  const [brands, setBrands] = useState({
-    list: globalSubBrands,
-  });
-
-  const [activeProduct, setActiveProduct] = useState("all");
-
-  const [products, setProducts] = useState({
-    list: globalBrands,
-  });
-
-  const [links, setLinks] = useState({
-    list: Redirects.map((brands) => ({
-      ...brands,
-      links: brands.links.filter((link) => link.lang.toUpperCase() === l),
-    })),
-  });
-
-  const [toggle, setExpanded] = useState({
-    expanded: false,
-    text: s.toggleShow,
-  });
-
-  const handleQueryChange = (e, v) => {
-    setQuery({
-      search: v,
-    });
-    handleChange(lang.codes, v, brands.list, activeProduct);
-  };
-
   const handleLangChange = (e, v) => {
     const arr = [];
     if (v === "all") {
@@ -87,14 +69,22 @@ export default function Links() {
     setLang({
       codes: arr,
     });
-    handleChange(arr, query.search, brands.list, activeProduct);
+    handleChange(arr, query, brands.list, activeProduct);
   };
 
+  const [activeProduct, setActiveProduct] = useState("all");
+  const [products, setProducts] = useState({
+    list: globalBrands,
+  });
   const handleProductChange = (e, v) => {
     setActiveProduct(v);
-    handleChange(lang.codes, query.search, brands.list, v);
+    handleChange(lang.codes, query, brands.list, v);
   };
 
+  const [activeBrand, setActiveBrand] = useState("all");
+  const [brands, setBrands] = useState({
+    list: globalSubBrands,
+  });
   const handleBrandChange = (e, v) => {
     const arr = [];
     if (v === "all") {
@@ -114,10 +104,16 @@ export default function Links() {
     setProducts({
       list: arr,
     });
-    handleChange(lang.codes, query.search, arr, "all");
+    handleChange(lang.codes, query, arr, "all");
   };
 
-  const handleChange = (l, q, b, p) => {
+  const [links, setLinks] = useState({
+    list: Redirects.map((brands) => ({
+      ...brands,
+      links: brands.links.filter((link) => link.lang.toUpperCase() === l),
+    })),
+  });
+  const handleChange = (l, q: string, b, p) => {
     const filteredLinks = Redirects.map((brands) => ({
       ...brands,
       links: brands.links
@@ -137,14 +133,6 @@ export default function Links() {
       );
     setLinks({
       list: filteredLinks,
-    });
-  };
-
-  const handleToggleChange = () => {
-    const t = toggle.expanded ? s.toggleShow : s.toggleHide;
-    setExpanded({
-      expanded: !toggle.expanded,
-      text: t,
     });
   };
 
@@ -209,7 +197,7 @@ export default function Links() {
                     onChange={handleQueryChange}
                     renderBeforeInput={<IconSearchLine inline={false} />}
                     renderAfterInput={renderClearButton}
-                    value={query.search}
+                    value={query}
                   />
                   <RadioInputGroup
                     name="brand"
