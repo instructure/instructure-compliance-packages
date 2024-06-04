@@ -29,5 +29,20 @@
       }
     },
     "include": ["src/*"]
+  },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineWidth": 80,
+      "lineEnding": "lf"
+    },
+    "parser": {
+      "cssModules": true
+    },
+    "linter": {
+      "enabled": true
+    }
   }
 }

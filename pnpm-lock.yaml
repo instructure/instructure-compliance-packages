@@ -51,8 +51,8 @@ importers:
         specifier: ^7.24.6
         version: 7.24.6(@babel/core@7.24.6)
       '@biomejs/biome':
-        specifier: 1.7.3
-        version: 1.7.3
+        specifier: 1.8.0
+        version: 1.8.0
       '@instructure/shared-types':
         specifier: ^9.0.1
         version: 9.0.1(react@19.0.0-rc-f994737d14-20240522)
@@ -207,55 +207,55 @@ packages:
     resolution: {integrity: sha512-WaMsgi6Q8zMgMth93GvWPXkhAIEobfsIkLTacoVZoK1J0CevIPGYY2Vo5YvJGqyHqXM6P4ppOYGsIRU8MM9pFQ==}
     engines: {node: '>=6.9.0'}
 
-  '@biomejs/biome@1.7.3':
-    resolution: {integrity: sha512-ogFQI+fpXftr+tiahA6bIXwZ7CSikygASdqMtH07J2cUzrpjyTMVc9Y97v23c7/tL1xCZhM+W9k4hYIBm7Q6cQ==}
+  '@biomejs/biome@1.8.0':
+    resolution: {integrity: sha512-34xcE2z8GWrIz1sCFEmlHT/+4d+SN7YOqqvzlAKXKvaWPRJ2/NUwxPbRsP01P9QODkQ5bvGvc9rpBihmP+7RJQ==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@1.7.3':
-    resolution: {integrity: sha512-eDvLQWmGRqrPIRY7AIrkPHkQ3visEItJKkPYSHCscSDdGvKzYjmBJwG1Gu8+QC5ed6R7eiU63LEC0APFBobmfQ==}
+  '@biomejs/cli-darwin-arm64@1.8.0':
+    resolution: {integrity: sha512-dBAYzfIJ1JmWigKlWourT3sJ3I60LZPjqNwwlsyFjiv5AV7vPeWlHVVIImV2BpINwNjZQhpXnwDfVnGS4vr7AA==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@1.7.3':
-    resolution: {integrity: sha512-JXCaIseKRER7dIURsVlAJacnm8SG5I0RpxZ4ya3dudASYUc68WGl4+FEN03ABY3KMIq7hcK1tzsJiWlmXyosZg==}
+  '@biomejs/cli-darwin-x64@1.8.0':
+    resolution: {integrity: sha512-ZTTSD0bP0nn9UpRDGQrQNTILcYSj+IkxTYr3CAV64DWBDtQBomlk2oVKWzDaA1LOhpAsTh0giLCbPJaVk2jfMQ==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@1.7.3':
-    resolution: {integrity: sha512-c8AlO45PNFZ1BYcwaKzdt46kYbuP6xPGuGQ6h4j3XiEDpyseRRUy/h+6gxj07XovmyxKnSX9GSZ6nVbZvcVUAw==}
+  '@biomejs/cli-linux-arm64-musl@1.8.0':
+    resolution: {integrity: sha512-+ee/pZWsvhDv6eRI00krRNSgAg8DKSxzOv3LUsCjto6N1VzqatTASeQv2HRfG1nitf79rRKM75LkMJbqEfiKww==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-arm64@1.7.3':
-    resolution: {integrity: sha512-phNTBpo7joDFastnmZsFjYcDYobLTx4qR4oPvc9tJ486Bd1SfEVPHEvJdNJrMwUQK56T+TRClOQd/8X1nnjA9w==}
+  '@biomejs/cli-linux-arm64@1.8.0':
+    resolution: {integrity: sha512-cx725jTlJS6dskvJJwwCQaaMRBKE2Qss7ukzmx27Rn/DXRxz6tnnBix4FUGPf1uZfwrERkiJlbWM05JWzpvvXg==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64-musl@1.7.3':
-    resolution: {integrity: sha512-UdEHKtYGWEX3eDmVWvQeT+z05T9/Sdt2+F/7zmMOFQ7boANeX8pcO6EkJPK3wxMudrApsNEKT26rzqK6sZRTRA==}
+  '@biomejs/cli-linux-x64-musl@1.8.0':
+    resolution: {integrity: sha512-VPA4ocrAOak50VYl8gOAVnjuFFDpIUolShntc/aWM0pZfSIMbRucxnrfUfp44EVwayxjK6ruJTR5xEWj93WvDA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64@1.7.3':
-    resolution: {integrity: sha512-vnedYcd5p4keT3iD48oSKjOIRPYcjSNNbd8MO1bKo9ajg3GwQXZLAH+0Cvlr+eMsO67/HddWmscSQwTFrC/uPA==}
+  '@biomejs/cli-linux-x64@1.8.0':
+    resolution: {integrity: sha512-cmgmhlD4QUxMhL1VdaNqnB81xBHb3R7huVNyYnPYzP+AykZ7XqJbPd1KcWAszNjUk2AHdx0aLKEBwCOWemxb2g==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-win32-arm64@1.7.3':
-    resolution: {integrity: sha512-unNCDqUKjujYkkSxs7gFIfdasttbDC4+z0kYmcqzRk6yWVoQBL4dNLcCbdnJS+qvVDNdI9rHp2NwpQ0WAdla4Q==}
+  '@biomejs/cli-win32-arm64@1.8.0':
+    resolution: {integrity: sha512-J31spvlh39FfRHQacYXxJX9PvTCH/a8+2Jx9D1lxw+LSF0JybqZcw/4JrlFUWUl4kF3yv8AuYUK0sENScc3g9w==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@1.7.3':
-    resolution: {integrity: sha512-ZmByhbrnmz/UUFYB622CECwhKIPjJLLPr5zr3edhu04LzbfcOrz16VYeNq5dpO1ADG70FORhAJkaIGdaVBG00w==}
+  '@biomejs/cli-win32-x64@1.8.0':
+    resolution: {integrity: sha512-uPHHvu76JC1zYe9zZDcOU9PAg+1MZmPuNgWkb5jljaDeATvzLFPB+0nuJTilf603LXL+E8IdPQAO61Wy2VuEJA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -301,8 +301,8 @@ packages:
   '@codemirror/state@6.4.1':
     resolution: {integrity: sha512-QkEyUiLhsJoZkbumGZlswmAhA7CBU02Wrz7zvH4SrcifbsqwlXShVXg65f3v/ts57W3dqyamEriMhij1Z3Zz4A==}
 
-  '@codemirror/view@6.26.3':
-    resolution: {integrity: sha512-gmqxkPALZjkgSxIeeweY/wGQXBfwTUaLs8h7OKtSwfbj9Ct3L11lD+u1sS7XHppxFQoMDiMDp07P9f3I2jWOHw==}
+  '@codemirror/view@6.26.4':
+    resolution: {integrity: sha512-JzhDclps1MKrqqcoZNb9i+C2kxPktaRGESwG0IBA6F/MkiwhwhXllyyx98dijDrPvq1O42VhIyrVTdfCnTbqpg==}
 
   '@emotion/babel-plugin@11.11.0':
     resolution: {integrity: sha512-m4HEDZleaaCH+XgDDsPF15Ht6wTLsgDTeR3WYj9Q/k76JtWhrJjcP4+/XlG8LGT/Rol9qUfOIztXeA84ATpqPQ==}
@@ -1503,8 +1503,8 @@ packages:
   duplexer3@0.1.5:
     resolution: {integrity: sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==}
 
-  electron-to-chromium@1.4.788:
-    resolution: {integrity: sha512-ubp5+Ev/VV8KuRoWnfP2QF2Bg+O2ZFdb49DiiNbz2VmgkIqrnyYaqIOqj8A6K/3p1xV0QcU5hBQ1+BmB6ot1OA==}
+  electron-to-chromium@1.4.789:
+    resolution: {integrity: sha512-0VbyiaXoT++Fi2vHGo2ThOeS6X3vgRCWrjPeO2FeIAWL6ItiSJ9BqlH8LfCXe3X1IdcG+S0iLoNaxQWhfZoGzQ==}
 
   email-addresses@5.0.0:
     resolution: {integrity: sha512-4OIPYlA6JXqtVn8zpHpGiI7vE6EQOAg16aGnDMIAlZVinnoZ8208tW1hAbjWydgN/4PLTT9q+O1K6AH/vALJGw==}
@@ -2835,58 +2835,58 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.6
       to-fast-properties: 2.0.0
 
-  '@biomejs/biome@1.7.3':
+  '@biomejs/biome@1.8.0':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 1.7.3
-      '@biomejs/cli-darwin-x64': 1.7.3
-      '@biomejs/cli-linux-arm64': 1.7.3
-      '@biomejs/cli-linux-arm64-musl': 1.7.3
-      '@biomejs/cli-linux-x64': 1.7.3
-      '@biomejs/cli-linux-x64-musl': 1.7.3
-      '@biomejs/cli-win32-arm64': 1.7.3
-      '@biomejs/cli-win32-x64': 1.7.3
+      '@biomejs/cli-darwin-arm64': 1.8.0
+      '@biomejs/cli-darwin-x64': 1.8.0
+      '@biomejs/cli-linux-arm64': 1.8.0
+      '@biomejs/cli-linux-arm64-musl': 1.8.0
+      '@biomejs/cli-linux-x64': 1.8.0
+      '@biomejs/cli-linux-x64-musl': 1.8.0
+      '@biomejs/cli-win32-arm64': 1.8.0
+      '@biomejs/cli-win32-x64': 1.8.0
 
-  '@biomejs/cli-darwin-arm64@1.7.3':
+  '@biomejs/cli-darwin-arm64@1.8.0':
     optional: true
 
-  '@biomejs/cli-darwin-x64@1.7.3':
+  '@biomejs/cli-darwin-x64@1.8.0':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@1.7.3':
+  '@biomejs/cli-linux-arm64-musl@1.8.0':
     optional: true
 
-  '@biomejs/cli-linux-arm64@1.7.3':
+  '@biomejs/cli-linux-arm64@1.8.0':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@1.7.3':
+  '@biomejs/cli-linux-x64-musl@1.8.0':
     optional: true
 
-  '@biomejs/cli-linux-x64@1.7.3':
+  '@biomejs/cli-linux-x64@1.8.0':
     optional: true
 
-  '@biomejs/cli-win32-arm64@1.7.3':
+  '@biomejs/cli-win32-arm64@1.8.0':
     optional: true
 
-  '@biomejs/cli-win32-x64@1.7.3':
+  '@biomejs/cli-win32-x64@1.8.0':
     optional: true
 
-  '@codemirror/autocomplete@6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.3)(@lezer/common@1.2.1)':
+  '@codemirror/autocomplete@6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.4)(@lezer/common@1.2.1)':
     dependencies:
       '@codemirror/language': 6.10.2
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       '@lezer/common': 1.2.1
 
   '@codemirror/commands@6.5.0':
     dependencies:
       '@codemirror/language': 6.10.2
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       '@lezer/common': 1.2.1
 
-  '@codemirror/lang-css@6.2.1(@codemirror/view@6.26.3)':
+  '@codemirror/lang-css@6.2.1(@codemirror/view@6.26.4)':
     dependencies:
-      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.3)(@lezer/common@1.2.1)
+      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.4)(@lezer/common@1.2.1)
       '@codemirror/language': 6.10.2
       '@codemirror/state': 6.4.1
       '@lezer/common': 1.2.1
@@ -2896,23 +2896,23 @@ snapshots:
 
   '@codemirror/lang-html@6.4.9':
     dependencies:
-      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.3)(@lezer/common@1.2.1)
-      '@codemirror/lang-css': 6.2.1(@codemirror/view@6.26.3)
+      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.4)(@lezer/common@1.2.1)
+      '@codemirror/lang-css': 6.2.1(@codemirror/view@6.26.4)
       '@codemirror/lang-javascript': 6.2.2
       '@codemirror/language': 6.10.2
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       '@lezer/common': 1.2.1
       '@lezer/css': 1.1.8
       '@lezer/html': 1.3.10
 
   '@codemirror/lang-javascript@6.2.2':
     dependencies:
-      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.3)(@lezer/common@1.2.1)
+      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.4)(@lezer/common@1.2.1)
       '@codemirror/language': 6.10.2
       '@codemirror/lint': 6.8.0
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       '@lezer/common': 1.2.1
       '@lezer/javascript': 1.4.16
 
@@ -2923,18 +2923,18 @@ snapshots:
 
   '@codemirror/lang-markdown@6.2.5':
     dependencies:
-      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.3)(@lezer/common@1.2.1)
+      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.4)(@lezer/common@1.2.1)
       '@codemirror/lang-html': 6.4.9
       '@codemirror/language': 6.10.2
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       '@lezer/common': 1.2.1
       '@lezer/markdown': 1.3.0
 
   '@codemirror/language@6.10.2':
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       '@lezer/common': 1.2.1
       '@lezer/highlight': 1.1.6
       '@lezer/lr': 1.4.1
@@ -2947,18 +2947,18 @@ snapshots:
   '@codemirror/lint@6.8.0':
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       crelt: 1.0.6
 
   '@codemirror/search@6.5.6':
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       crelt: 1.0.6
 
   '@codemirror/state@6.4.1': {}
 
-  '@codemirror/view@6.26.3':
+  '@codemirror/view@6.26.4':
     dependencies:
       '@codemirror/state': 6.4.1
       style-mod: 4.1.2
@@ -4254,9 +4254,9 @@ snapshots:
   '@instructure/ui-source-code-editor@9.0.1(@lezer/common@1.2.1)(@types/react@18.3.3)(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)':
     dependencies:
       '@babel/runtime': 7.24.6
-      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.3)(@lezer/common@1.2.1)
+      '@codemirror/autocomplete': 6.16.2(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.26.4)(@lezer/common@1.2.1)
       '@codemirror/commands': 6.5.0
-      '@codemirror/lang-css': 6.2.1(@codemirror/view@6.26.3)
+      '@codemirror/lang-css': 6.2.1(@codemirror/view@6.26.4)
       '@codemirror/lang-html': 6.4.9
       '@codemirror/lang-javascript': 6.2.2
       '@codemirror/lang-json': 6.0.1
@@ -4266,7 +4266,7 @@ snapshots:
       '@codemirror/lint': 6.8.0
       '@codemirror/search': 6.5.6
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.26.3
+      '@codemirror/view': 6.26.4
       '@instructure/emotion': 9.0.1(@types/react@18.3.3)(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)
       '@instructure/shared-types': 9.0.1(react@19.0.0-rc-f994737d14-20240522)
       '@instructure/ui-a11y-content': 9.0.1(@types/react@18.3.3)(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)
@@ -5129,7 +5129,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001627
-      electron-to-chromium: 1.4.788
+      electron-to-chromium: 1.4.789
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
@@ -5367,7 +5367,7 @@ snapshots:
 
   duplexer3@0.1.5: {}
 
-  electron-to-chromium@1.4.788: {}
+  electron-to-chromium@1.4.789: {}
 
   email-addresses@5.0.0: {}
 
