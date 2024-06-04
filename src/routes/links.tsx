@@ -16,7 +16,7 @@ import {
   Tooltip,
   View,
 } from "@instructure/ui";
-import { lazy, Suspense, useState } from "react";
+import { Suspense, lazy, useState } from "react";
 import { useParams } from "react-router-dom";
 import RenderFooter from "../components/RenderFooter.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";

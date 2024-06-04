@@ -34,7 +34,7 @@ declare type RedirectLinkPartial = {
 
 declare type RedirectLink = RedirectLinkPartial & {
   lang: string;
-}
+};
 
 declare type RedirectBrand = {
   brand: string;
@@ -111,7 +111,7 @@ declare type GithubFile = {
   sha?: string;
   size?: number;
   url?: string;
-}
+};
 
 declare interface GithubFilesAPI {
   sha: string;

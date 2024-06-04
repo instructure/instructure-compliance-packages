@@ -1,5 +1,5 @@
 import { View } from "@instructure/ui";
-import { Suspense, lazy, useState, useEffect } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Markdown from "react-markdown";
 import { useLoaderData, useParams } from "react-router-dom";
@@ -15,7 +15,10 @@ import { getLang, getStrings } from "../utils/langs.ts";
 import allowedElements from "../variables/allowedElements.ts";
 
 export function Component(): React.ReactElement {
-  const { readme, brand } = useLoaderData() as { readme: string; brand: GlobalBrand };
+  const { readme, brand } = useLoaderData() as {
+    readme: string;
+    brand: GlobalBrand;
+  };
   const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
   const css: string = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;

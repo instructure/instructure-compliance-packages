@@ -11,7 +11,6 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
-import RedirectTo from "./routes/redirectTo.tsx";
 import { ParentBrands } from "./variables/brands.ts";
 import Redirects from "./variables/redirects/index.js";
 
@@ -44,12 +43,16 @@ for (const redirect of Redirects) {
     routes.push({
       path: link.from,
       lazy: () => import("./routes/redirectTo.tsx"),
-      loader: () => ({path: link.from, brand: redirect.brand, url: link.to}),
+      loader: () => ({ path: link.from, brand: redirect.brand, url: link.to }),
       children: [
         {
           path: ":language",
           lazy: () => import("./routes/redirectTo.tsx"),
-          loader: () => ({path: link.from, brand: redirect.brand, url: link.to})
+          loader: () => ({
+            path: link.from,
+            brand: redirect.brand,
+            url: link.to,
+          }),
         },
       ],
     });

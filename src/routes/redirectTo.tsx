@@ -1,6 +1,6 @@
 // Modules
 import { Billboard, Link, Text, View } from "@instructure/ui";
-import { lazy, Suspense, useEffect } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import RenderFooter from "../components/RenderFooter.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
@@ -9,7 +9,11 @@ import { getLang, getStrings } from "../utils/langs.ts";
 
 // Page
 export function Component() {
-  const { path, brand, url } = useLoaderData() as { path: string; brand: GlobalBrand, url: string };
+  const { path, brand, url } = useLoaderData() as {
+    path: string;
+    brand: GlobalBrand;
+    url: string;
+  };
 
   const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
