@@ -194,7 +194,7 @@ export default function Links() {
       } else if (typeof error === "string") {
         msg = error;
       }
-      console.error(error);
+      console.error(msg);
     }
   }
 
