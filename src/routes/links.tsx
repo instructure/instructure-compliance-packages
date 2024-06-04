@@ -46,13 +46,13 @@ export default function Links() {
 
   const [query, setQuery] = useState<string>("");
 
-  const handleQueryChange = (e, v: string) => {
+  const handleQueryChange = (e, v: string): void => {
     setQuery(v);
     handleChange(lang, v, brands.list, activeProduct);
   };
 
   const [lang, setLang] = useState(l);
-  const handleLangChange = (e, v) => {
+  const handleLangChange = (e, v): void => {
     const arr = [];
     if (v === "all") {
       arr.push(...globalLangs);
@@ -72,7 +72,7 @@ export default function Links() {
   const [products, setProducts] = useState({
     list: globalBrands,
   });
-  const handleProductChange = (e, v) => {
+  const handleProductChange = (e, v): void => {
     setActiveProduct(v);
     handleChange(lang, query, brands.list, v);
   };
@@ -81,7 +81,7 @@ export default function Links() {
   const [brands, setBrands] = useState({
     list: globalSubBrands,
   });
-  const handleBrandChange = (e, v) => {
+  const handleBrandChange = (e, v): void => {
     const arr = [];
     if (v === "all") {
       arr.push(...globalSubBrands);
@@ -109,7 +109,7 @@ export default function Links() {
       links: brands.links.filter((link) => link.lang.toUpperCase() === l),
     })),
   });
-  const handleChange = (l, q: string, b, p) => {
+  const handleChange = (l, q: string, b, p): void => {
     const filteredLinks = Redirects.map((brands) => ({
       ...brands,
       links: brands.links
@@ -132,7 +132,7 @@ export default function Links() {
     });
   };
 
-  const renderClearButton = (e) => {
+  const renderClearButton = (e): React.ReactElement | null => {
     if (query.search.length) {
       return (
         <IconButton
@@ -147,14 +147,15 @@ export default function Links() {
         </IconButton>
       );
     }
+    return null;
   };
 
-  const handleQueryClear = (e) => {
+  const handleQueryClear = (e): void => {
     e.stopPropagation();
     handleQueryChange(e, "");
   };
 
-  async function copy(text) {
+  async function copy(text: string): Promise<void> {
     try {
       await navigator.clipboard.writeText(text);
     } catch (error) {
