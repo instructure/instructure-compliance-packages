@@ -55,6 +55,35 @@ export default function Links() {
     handleChange(lang, v, brands.list, activeProduct);
   };
 
+  /**
+   *
+   * @TODO: event type as specified in Instructure UI docs throws an error
+   * Event: React.KeyboardEvent<ViewProps> | React.MouseEvent<ViewProps>
+   */
+  // @ts-ignore
+  const handleQueryClear = (e): void => {
+    e.stopPropagation();
+    handleQueryChange(e, "");
+  };
+
+  const renderQueryClearButton = (): React.ReactElement | null => {
+    if (query.search.length) {
+      return (
+        <IconButton
+          type="button"
+          size="small"
+          withBackground={false}
+          withBorder={false}
+          screenReaderLabel={s.clearSearch}
+          onClick={handleQueryClear}
+        >
+          <IconXSolid />
+        </IconButton>
+      );
+    }
+    return null;
+  };
+
   const [lang, setLang] = useState<LangCode[]>([l]);
   const handleLangChange = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -138,35 +167,6 @@ export default function Links() {
     });
   };
 
-  const renderClearButton = (): React.ReactElement | null => {
-    if (query.search.length) {
-      return (
-        <IconButton
-          type="button"
-          size="small"
-          withBackground={false}
-          withBorder={false}
-          screenReaderLabel={s.clearSearch}
-          onClick={handleQueryClear}
-        >
-          <IconXSolid />
-        </IconButton>
-      );
-    }
-    return null;
-  };
-
-  /**
-   *
-   * @TODO: event type as specified in Instructure UI docs throws an error
-   * Event: React.KeyboardEvent<ViewProps> | React.MouseEvent<ViewProps>
-   */
-  // @ts-ignore
-  const handleQueryClear = (e): void => {
-    e.stopPropagation();
-    handleQueryChange(e, "");
-  };
-
   async function copy(text: string): Promise<void> {
     try {
       await navigator.clipboard.writeText(text);
@@ -211,7 +211,7 @@ export default function Links() {
                     placeholder={s.placeholder}
                     onChange={handleQueryChange}
                     renderBeforeInput={<IconSearchLine inline={false} />}
-                    renderAfterInput={renderClearButton}
+                    renderAfterInput={renderQueryClearButton}
                     value={query}
                   />
                   <RadioInputGroup
