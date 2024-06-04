@@ -55,7 +55,7 @@ export default function Links() {
     handleChange(lang, v, brands.list, activeProduct);
   };
 
-  const [lang, setLang] = useState([l]);
+  const [lang, setLang] = useState<LangCode[]>([l]);
   const handleLangChange = (
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
@@ -77,9 +77,7 @@ export default function Links() {
   };
 
   const [activeProduct, setActiveProduct] = useState("all");
-  const [products, setProducts] = useState({
-    list: globalBrands,
-  });
+  const [products, setProducts] = useState(globalBrands);
   const handleProductChange = (
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
@@ -105,9 +103,7 @@ export default function Links() {
       );
     }
     setActiveBrand(v);
-    setBrands({
-      list: arr,
-    });
+    setBrands(arr);
     handleProductChange(e, "all");
     setProducts({
       list: arr,
@@ -135,9 +131,7 @@ export default function Links() {
       .filter((brands) => brands.links.length > 0)
       .filter((brands) => b.includes(brands.brand))
       .filter((brands) =>
-        p !== "all"
-          ? brands.brand === products.list[0] || brands.brand === p
-          : true,
+        p !== "all" ? brands.brand === products[0] || brands.brand === p : true,
       );
     setLinks({
       list: filteredLinks,
@@ -162,6 +156,12 @@ export default function Links() {
     return null;
   };
 
+  /**
+   *
+   * @TODO: event type as specified in Instructure UI docs throws an error
+   * Event: React.KeyboardEvent<ViewProps> | React.MouseEvent<ViewProps>
+   */
+  // @ts-ignore
   const handleQueryClear = (e): void => {
     e.stopPropagation();
     handleQueryChange(e, "");
@@ -237,7 +237,7 @@ export default function Links() {
                       />
                     ))}
                   </RadioInputGroup>
-                  {activeBrand !== "all" && products.list.length > 1 && (
+                  {activeBrand !== "all" && products.length > 1 && (
                     <RadioInputGroup
                       name="product"
                       description={s.products}
@@ -255,7 +255,7 @@ export default function Links() {
                         checked={activeProduct === "all"}
                       />
 
-                      {products.list
+                      {products
                         .filter((product) => product !== activeBrand)
                         .map((product) => {
                           return (
