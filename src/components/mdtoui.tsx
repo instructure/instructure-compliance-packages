@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Children } from "react";
 import {
   Alert,
@@ -18,7 +18,7 @@ import {
 } from "@instructure/ui";
 import type { AsElementType } from "@instructure/shared-types";
 
-const filterChildrenProps = (props: { children: unknown }) => {
+const filterChildrenProps = (props: { children: unknown }): unknown => {
   return Children.map(props.children, (child) =>
     typeof child !== "string" ? child : null,
   );

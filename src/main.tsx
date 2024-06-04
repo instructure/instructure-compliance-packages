@@ -2,8 +2,8 @@
  * @module main
  */
 
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import {
   type RouteObject,
   RouterProvider,
@@ -11,14 +11,11 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
-import ErrorPage from "./routes/error";
-import Links from "./routes/links";
-import MarkdownBrand from "./routes/markdownBrand";
-import MDUI from "./routes/mdui";
-import RedirectTo from "./routes/redirectTo";
-import Releases from "./routes/releases";
-import { ParentBrands } from "./variables/brands";
-import Redirects from "./variables/redirects";
+import Links from "./routes/links.jsx";
+import MarkdownBrand from "./routes/markdownBrand.tsx";
+import RedirectTo from "./routes/redirectTo.tsx";
+import { ParentBrands } from "./variables/brands.ts";
+import Redirects from "./variables/redirects/index.js";
 
 /**
  * An array to hold the routes for the application.
@@ -28,9 +25,7 @@ const routes: RouteObject[] = [];
 for (const brand of ParentBrands) {
   routes.push({
     path: `${brand.route}`,
-
     element: <MarkdownBrand readme={brand.readme} brand={brand.brandName} />,
-    errorElement: <ErrorPage />,
     children: [
       {
         path: ":language",
@@ -50,7 +45,6 @@ for (const redirect of Redirects) {
       element: (
         <RedirectTo path={link.from} brand={redirect.brand} url={link.to} />
       ),
-      errorElement: <ErrorPage />,
       children: [
         {
           path: ":language",
@@ -66,7 +60,6 @@ for (const redirect of Redirects) {
 routes.push({
   path: "/links",
   element: <Links />,
-  errorElement: <ErrorPage />,
   children: [
     {
       path: ":language",
@@ -77,34 +70,33 @@ routes.push({
 
 routes.push({
   path: "/mdui",
-  element: <MDUI />,
-  errorElement: <ErrorPage />,
+  lazy: () => import("./routes/mdui.tsx"),
   children: [
     {
       path: ":language",
-      element: <MDUI />,
+      lazy: () => import("./routes/mdui.tsx"),
     },
   ],
 });
 
 routes.push({
   path: "/releases",
-  element: <Releases />,
+  lazy: () => import("./routes/releases.tsx"),
   children: [
     {
       path: ":language",
-      element: <Releases />,
+      lazy: () => import("./routes/releases.tsx"),
     },
   ],
 });
 
 routes.push({
   path: "*",
-  element: <ErrorPage />,
+  lazy: () => import("./routes/error.tsx"),
   children: [
     {
       path: ":language",
-      element: <ErrorPage />,
+      lazy: () => import("./routes/error.tsx"),
     },
   ],
 });
