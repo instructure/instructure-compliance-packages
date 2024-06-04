@@ -36,7 +36,7 @@ export default function Links() {
     expanded: false,
     text: s.toggleShow,
   });
-  const handleToggleChange = () => {
+  const handleToggleChange = (): void => {
     const t = toggle.expanded ? s.toggleShow : s.toggleHide;
     setExpanded({
       expanded: !toggle.expanded,
