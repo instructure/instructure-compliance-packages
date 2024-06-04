@@ -1,17 +1,51 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.2.0...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.0...isp-site)
 
 ### Roadmap
 
-* 🚧 Code chunking with `lazy()`
-* 🚧 JSX => TSX
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Known Issues
+
+* `/utils/toggle.ts` no longer an IIFE. Until it gets fixed, brand colors won't change.
+* Redirect Links filters sometimes don't behave properly.
+
+## [4.0.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.2.0...isp-site-v4.0.0)
+
+### Added
+
+* Author and Name to Releases.
+* Releases page now displays 3 most recent Releases, w/ link to more.
+
 ### Changed
 
-* Implement TypeScript ([b1726a1](https://github.com/thedannywahl/instructure-security-package/commit/b1726a1c7044152fd7943c6c1fc9cf65d69502ea))
+* Full conversion to TypeScript. 🙌
+* Implement code chunking with react-router [`lazy`](https://reactrouter.com/en/main/route/lazy#lazy).
+
+```
+Before:
+dist/index.html                            1.31 kB │ gzip:   0.59 kB
+dist/assets/banner-Dl8io6Qq.webp         163.78 kB
+dist/assets/index-9AL1K8pI.css            15.54 kB │ gzip:   6.26 kB
+dist/assets/index-BGBpAMfR.js          1,733.08 kB │ gzip: 543.97 kB
+
+Aafter:
+dist/index.html                            1.31 kB │ gzip:   0.59 kB
+dist/assets/banner-Dl8io6Qq.webp         163.78 kB
+dist/assets/index-DXft5ptw.css            15.54 kB │ gzip:   6.26 kB
+dist/assets/error-khoKcG1q.js              2.49 kB │ gzip:   1.36 kB
+dist/assets/redirectTo-DL16hFgT.js         3.56 kB │ gzip:   1.62 kB
+dist/assets/releases-B2U3Nq7U.js           4.85 kB │ gzip:   2.63 kB
+dist/assets/markdownBrand-BaosrPVo.js      5.18 kB │ gzip:   2.69 kB
+dist/assets/mdui-Cnx4ZaSO.js               7.33 kB │ gzip:   3.45 kB
+dist/assets/links-xmvbtdnr.js             19.24 kB │ gzip:   6.58 kB
+dist/assets/index-DhdQIOzm.js             97.47 kB │ gzip:  26.69 kB
+dist/assets/RenderTopNavBar-CIF88TF3.js  270.11 kB │ gzip:  72.60 kB
+dist/assets/index-NclIL3Cn.js            333.30 kB │ gzip: 103.77 kB
+dist/assets/mdtoui-B7dhu_zY.js           997.21 kB │ gzip: 334.78 kB
+```
 
 ### Fixed
 
