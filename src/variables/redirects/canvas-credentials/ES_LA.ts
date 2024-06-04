@@ -1,4 +1,4 @@
-const ES_LA: RedirectLink[] = [
+const ES_LA: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/es-la/canvas/credentials/dl",

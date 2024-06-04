@@ -26,12 +26,15 @@ declare type MarkdownCustomRenderer = {
   ) => ReactElement;
 };
 
-declare type RedirectLink = {
+declare type RedirectLinkPartial = {
   title: string;
   from: string;
   to: string;
-  lang: string;
 };
+
+declare type RedirectLink = RedirectLinkPartial & {
+  lang: string;
+}
 
 declare type RedirectBrand = {
   brand: string;

@@ -1,4 +1,4 @@
-const EN: RedirectLink[] = [
+const EN: RedirectLinkPartial[] = [
   {
     title: "Security Audit Report",
     from: "/canvas/audit/dl",

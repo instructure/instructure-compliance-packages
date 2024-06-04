@@ -1,4 +1,4 @@
-const ES_LA: RedirectLink[] = [
+const ES_LA: RedirectLinkPartial[] = [
   {
     title: "Página de inicio",
     from: "/es-la/home",

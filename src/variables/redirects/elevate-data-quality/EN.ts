@@ -1,4 +1,4 @@
-const EN: RedirectLink[] = [
+const EN: RedirectLinkPartial[] = [
   {
     title: "Home",
     from: "/elevate/dataquality",

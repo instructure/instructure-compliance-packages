@@ -1,9 +1,8 @@
-const ES_LA: RedirectLink[] = [
+const ES_LA: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/es-la/impact/dl",
     to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact-ES_LA.zip",
-    lang: "ES_LA",
   },
   {
     title: "Papel de Arquitectura",

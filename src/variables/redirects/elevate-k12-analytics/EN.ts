@@ -1,4 +1,4 @@
-const EN: RedirectLink[] = [
+const EN: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/elevate/k12-analytics/dl",

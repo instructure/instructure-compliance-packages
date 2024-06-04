@@ -1,4 +1,4 @@
-const DE: RedirectLink[] = [
+const DE: RedirectLinkPartial[] = [
   {
     title: "Startseite",
     from: "/de/canvas/lms",

@@ -1,4 +1,4 @@
-const EN: RedirectLink[] = [
+const EN: RedirectLinkPartial[] = [
   {
     title: "Mobile Apps (Android)",
     from: "/canvas/mobile/android",

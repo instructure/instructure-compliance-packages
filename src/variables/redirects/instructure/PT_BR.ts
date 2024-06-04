@@ -1,4 +1,4 @@
-const PT_BR: RedirectLink[] = [
+const PT_BR: RedirectLinkPartial[] = [
   {
     title: "Pagina inicial",
     from: "/pt-br/home",
