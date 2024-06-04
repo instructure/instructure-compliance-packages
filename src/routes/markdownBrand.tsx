@@ -1,8 +1,8 @@
 import { View } from "@instructure/ui";
-import { useState, useEffect } from "react";
+import { Suspense, lazy, useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Markdown from "react-markdown";
-import { useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
@@ -14,7 +14,8 @@ import strings from "../strings/markdown.ts";
 import { getLang, getStrings } from "../utils/langs.ts";
 import allowedElements from "../variables/allowedElements.ts";
 
-export default function MarkdownBrand({ readme, brand }: { readme: string; brand: GlobalBrand}): React.ReactElement {
+export function Component(): React.ReactElement {
+  const { readme, brand } = useLoaderData() as { readme: string; brand: GlobalBrand };
   const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
   const css: string = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
@@ -78,3 +79,16 @@ export default function MarkdownBrand({ readme, brand }: { readme: string; brand
     </>
   );
 }
+Component.displayName = "Route.MarkdownBrand";
+
+export function ErrorBoundary() {
+  const ErrorPage = lazy(() =>
+    import("./error.tsx").then((module) => ({ default: module.Component })),
+  );
+  return (
+    <Suspense fallback={<h1>Error.</h1>}>
+      <ErrorPage />
+    </Suspense>
+  );
+}
+ErrorBoundary.displayName = "Error.MarkdownBrand";

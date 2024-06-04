@@ -3,27 +3,6 @@ import global from "../variables/globals.ts";
 import { getStrings } from "./langs.ts";
 
 /**
- * @TODO: Octokit API types are throwing errors
- * import type { Endpoints } from "@octokit/types";
- * Endpoints["GET /repos/{owner}/{repo}/git/trees/{tree_sha}"]["response"];
- * Property 'tree' does not exist on type 'OctokitResponse<GitGetTreeResponseData>'
- */
-type GithubFile = {
-  path?: string;
-  mode?: string;
-  type?: string;
-  sha?: string;
-  size?: number;
-  url?: string;
-}
-
-interface GithubFilesAPI {
-  sha: string;
-  url: string;
-  tree: GithubFile[];
-}
-
-/**
  * Fetches the contents of a GitHub repository.
  *
  * @param owner - The username of the owner of the repository.

@@ -12,7 +12,6 @@ import {
 import "./index.css";
 import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
 import Links from "./routes/links.jsx";
-import MarkdownBrand from "./routes/markdownBrand.tsx";
 import RedirectTo from "./routes/redirectTo.tsx";
 import { ParentBrands } from "./variables/brands.ts";
 import Redirects from "./variables/redirects/index.js";
@@ -25,13 +24,19 @@ const routes: RouteObject[] = [];
 for (const brand of ParentBrands) {
   routes.push({
     path: `${brand.route}`,
-    element: <MarkdownBrand readme={brand.readme} brand={brand.brandName} />,
+    lazy: () => import("./routes/markdownBrand.tsx"),
+    /**
+     * A function that returns the data to be passed to the markdownBrand component.
+     * This function is created by a closure that captures the current brand object.
+     */
+    loader: (() => {
+      return () => {
+        return { readme: brand.readme, brand: brand.brandName };
+      };
+    })(),
     children: [
       {
         path: ":language",
-        element: (
-          <MarkdownBrand readme={brand.readme} brand={brand.brandName} />
-        ),
       },
     ],
   });

@@ -97,3 +97,24 @@ declare type BrandDetail = {
   readme: string;
   color: `#${string}`;
 };
+
+/**
+ * @TODO: Octokit API types are throwing errors
+ * import type { Endpoints } from "@octokit/types";
+ * Endpoints["GET /repos/{owner}/{repo}/git/trees/{tree_sha}"]["response"];
+ * Property 'tree' does not exist on type 'OctokitResponse<GitGetTreeResponseData>'
+ */
+declare type GithubFile = {
+  path?: string;
+  mode?: string;
+  type?: string;
+  sha?: string;
+  size?: number;
+  url?: string;
+}
+
+declare interface GithubFilesAPI {
+  sha: string;
+  url: string;
+  tree: GithubFile[];
+}
