@@ -46,14 +46,12 @@ export default function Links() {
 
   const [query, setQuery] = useState<string>("");
 
-  const handleQueryChange = (e, v) => {
+  const handleQueryChange = (e, v: string) => {
     setQuery(v);
-    handleChange(lang.codes, v, brands.list, activeProduct);
+    handleChange(lang, v, brands.list, activeProduct);
   };
 
-  const [lang, setLang] = useState({
-    codes: l,
-  });
+  const [lang, setLang] = useState(l);
   const handleLangChange = (e, v) => {
     const arr = [];
     if (v === "all") {
@@ -66,9 +64,7 @@ export default function Links() {
         ),
       );
     }
-    setLang({
-      codes: arr,
-    });
+    setLang(arr);
     handleChange(arr, query, brands.list, activeProduct);
   };
 
@@ -78,7 +74,7 @@ export default function Links() {
   });
   const handleProductChange = (e, v) => {
     setActiveProduct(v);
-    handleChange(lang.codes, query, brands.list, v);
+    handleChange(lang, query, brands.list, v);
   };
 
   const [activeBrand, setActiveBrand] = useState("all");
@@ -104,7 +100,7 @@ export default function Links() {
     setProducts({
       list: arr,
     });
-    handleChange(lang.codes, query, arr, "all");
+    handleChange(lang, query, arr, "all");
   };
 
   const [links, setLinks] = useState({
