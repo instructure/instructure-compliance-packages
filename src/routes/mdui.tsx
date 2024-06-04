@@ -1,5 +1,5 @@
 import { Grid, SourceCodeEditor, View } from "@instructure/ui";
-import { useState, useEffect, lazy, Suspense } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";

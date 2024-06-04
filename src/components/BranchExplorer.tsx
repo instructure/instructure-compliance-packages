@@ -1,12 +1,12 @@
 // Modules
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
-import mdtoui from "./mdtoui.tsx";
 import { Explorer } from "../utils/explorer.ts";
 import allowedElements from "../variables/allowedElements.ts";
+import mdtoui from "./mdtoui.tsx";
 
 /**
  * Component that explores a branch of a brand.

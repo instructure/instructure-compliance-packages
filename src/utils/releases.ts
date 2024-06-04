@@ -1,5 +1,5 @@
-import global from "../variables/globals.ts";
 import type { Endpoints } from "@octokit/types";
+import global from "../variables/globals.ts";
 
 type GithubReleasesAPI =
   Endpoints["GET /repos/{owner}/{repo}/releases"]["response"];

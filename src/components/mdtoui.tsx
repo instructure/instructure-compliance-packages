@@ -1,5 +1,4 @@
-import React from "react";
-import { Children } from "react";
+import type { AsElementType } from "@instructure/shared-types";
 import {
   Alert,
   Avatar,
@@ -16,7 +15,8 @@ import {
   ToggleDetails,
   View,
 } from "@instructure/ui";
-import type { AsElementType } from "@instructure/shared-types";
+import React from "react";
+import { Children } from "react";
 
 const filterChildrenProps = (props: { children: unknown }): unknown => {
   return Children.map(props.children, (child) =>

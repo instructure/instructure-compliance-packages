@@ -1,7 +1,7 @@
-import strings from "../strings/markdown.ts";
-import { getStrings } from "./langs.ts";
-import global from "../variables/globals.ts";
 import type { Endpoints } from "@octokit/types";
+import strings from "../strings/markdown.ts";
+import global from "../variables/globals.ts";
+import { getStrings } from "./langs.ts";
 
 declare type GithubFilesAPI =
   Endpoints["GET /repos/{owner}/{repo}/git/trees/{tree_sha}"]["response"];
