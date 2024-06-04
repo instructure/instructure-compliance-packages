@@ -91,5 +91,11 @@ const strings: PageStrings = {
     PT_BR: "Copiar URL para a área de transferência",
     DE: "Kopieren Sie die URL in die Zwischenablage",
   },
+  copy_error: {
+    EN: "Error copying to clipboard",
+    ES_LA: "Error al copiar al portapapeles",
+    PT_BR: "Erro ao copiar para a área de transferência",
+    DE: "Fehler beim Kopieren in die Zwischenablage",
+  },
 };
 export default strings;

@@ -55,9 +55,12 @@ export default function Links() {
     handleChange(lang, v, brands.list, activeProduct);
   };
 
-  const [lang, setLang] = useState(l);
-  const handleLangChange = (e, v): void => {
-    const arr = [];
+  const [lang, setLang] = useState([l]);
+  const handleLangChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    v: string,
+  ): void => {
+    const arr: LangCode[] = [];
     if (v === "all") {
       arr.push(...globalLangs);
       handleProductChange(e, "all");
@@ -113,7 +116,7 @@ export default function Links() {
       links: brands.links.filter((link) => link.lang.toUpperCase() === l),
     })),
   });
-  const handleChange = (l, q: string, b, p): void => {
+  const handleChange = (l: LangCode[], q: string, b, p): void => {
     const filteredLinks = Redirects.map((brands) => ({
       ...brands,
       links: brands.links
@@ -122,7 +125,7 @@ export default function Links() {
             .toLowerCase()
             .includes(q.toLowerCase()),
         )
-        .filter((link) => l.includes(link.lang.toUpperCase())),
+        .filter((link) => l.includes(link.lang.toUpperCase() as LangCode)),
     }))
       .filter((brands) => brands.links.length > 0)
       .filter((brands) => b.includes(brands.brand))
@@ -163,7 +166,13 @@ export default function Links() {
     try {
       await navigator.clipboard.writeText(text);
     } catch (error) {
-      console.error(error.message);
+      let msg: string = s.copy_error;
+      if (error instanceof Error) {
+        msg = error.message;
+      } else if (typeof error === "string") {
+        msg = error;
+      }
+      console.error(error);
     }
   }
 
