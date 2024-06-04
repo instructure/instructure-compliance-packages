@@ -1,43 +1,40 @@
 import { View } from "@instructure/ui";
-// Modules
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Markdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
-import BranchExplorer from "../components/BranchExplorer";
-import RenderFooter from "../components/RenderFooter";
-import RenderTopNavBar from "../components/RenderTopNavBar";
-import mdtoui from "../components/mdtoui";
-import strings from "../strings/markdown";
-import { getLang, getStrings } from "../utils/langs";
-// Components
-import allowedElements from "../variables/allowedElements";
+import BranchExplorer from "../components/BranchExplorer.tsx";
+import RenderFooter from "../components/RenderFooter.tsx";
+import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
+import mdtoui from "../components/mdtoui.tsx";
+import strings from "../strings/markdown.ts";
+import { getLang, getStrings } from "../utils/langs.ts";
+import allowedElements from "../variables/allowedElements.ts";
 
-// Page
-export default function MarkdownBrand({ readme, brand }) {
-  const l = getLang(useParams().language);
+export default function MarkdownBrand({ readme, brand }: { readme: string; brand: GlobalBrand}): React.ReactElement {
+  const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
-  const css = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
+  const css: string = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
   const md = readme;
 
-  const [content, setContent] = useState(false);
-  const [contentRendered, setContentRendered] = useState(false);
-  const [branches, setBranches] = useState(false);
+  const [content, setContent] = useState<string>("Loading...");
+  const [contentRendered, setContentRendered] = useState<boolean>(false);
+  const [branches, setBranches] = useState<HTMLElement[]>([]);
 
   useEffect(() => {
     document.title = `${brand} Compliance Packages`;
     fetch(md)
-      .then((response) => {
+      .then((response: Response) => {
         if (response.ok) return response.text();
         return Promise.reject(s.fetch_fail);
       })
-      .then((text) => {
+      .then((text: string) => {
         setContent(text);
       })
-      .catch((error) => console.error(error));
+      .catch((error: unknown) => console.error(error));
   });
 
   useEffect(() => {
