@@ -53,7 +53,7 @@ export default function Links() {
   ): void => {
     e.preventDefault();
     setQuery(v);
-    handleChange(lang, v, brands.list, activeProduct);
+    handleChange(lang, v, brands, activeProduct);
   };
 
   /**
@@ -104,7 +104,7 @@ export default function Links() {
       );
     }
     setLang(arr);
-    handleChange(arr, query, brands.list, activeProduct);
+    handleChange(arr, query, brands, activeProduct);
   };
 
   const [activeProduct, setActiveProduct] = useState<"all" | GlobalBrand>(
@@ -122,28 +122,33 @@ export default function Links() {
     } else {
       console.error(`Invalid value for setActiveProduct: ${v}`);
     }
-    handleChange(lang, query, brands.list, v as "all" | GlobalBrand);
+    handleChange(lang, query, brands, v as "all" | GlobalBrand);
   };
 
-  const [activeBrand, setActiveBrand] = useState("all");
-  const [brands, setBrands] = useState({
-    list: globalSubBrands,
-  });
-  const handleBrandChange = (e, v): void => {
-    const arr = [];
+  const [activeBrand, setActiveBrand] = useState<
+    "all" | "AWS" | GlobalSubBrand
+  >("all");
+  const [brands, setBrands] =
+    useState<("AWS" | GlobalSubBrand)[]>(globalSubBrands);
+  const handleBrandChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    v: string,
+  ): void => {
+    e.preventDefault();
+    const arr: ("AWS" | GlobalSubBrand)[] = [];
     if (v === "all") {
-      arr.push(...globalSubBrands);
+      arr.push(...(["AWS", ...globalSubBrands] as ("AWS" | GlobalSubBrand)[]));
     } else {
       arr.push(
-        ...["AWS", ...globalSubBrands].filter((brand) =>
+        ...(["AWS", ...globalSubBrands].filter((brand) =>
           brand.toLowerCase().includes(v.toLowerCase()),
-        ),
+        ) as ("AWS" | GlobalSubBrand)[]),
       );
     }
-    setActiveBrand(v);
+    setActiveBrand(v as "all" | "AWS" | GlobalSubBrand);
     setBrands(arr);
     handleProductChange(e, "all");
-    setProducts(arr);
+    setProducts(arr as GlobalBrand[]);
     handleChange(lang, query, arr, "all");
   };
 
@@ -156,7 +161,7 @@ export default function Links() {
   const handleChange = (
     l: LangCode[],
     q: string,
-    b,
+    b: ("AWS" | GlobalSubBrand)[],
     p: "all" | GlobalBrand,
   ): void => {
     const filteredLinks = Redirects.map((brands) => ({
@@ -170,7 +175,7 @@ export default function Links() {
         .filter((link) => l.includes(link.lang.toUpperCase() as LangCode)),
     }))
       .filter((brands) => brands.links.length > 0)
-      .filter((brands) => b.includes(brands.brand))
+      .filter((brands) => b.includes(brands.brand as "AWS" | GlobalSubBrand))
       .filter((brands) =>
         p !== "all" ? brands.brand === products[0] || brands.brand === p : true,
       );
@@ -315,7 +320,9 @@ export default function Links() {
             return (
               <View key={brand} as="div" margin="none none xx-large">
                 <Heading
-                  level={globalBrands.includes(brand) ? "h2" : "h3"}
+                  level={
+                    globalBrands.includes(brand as GlobalBrand) ? "h2" : "h3"
+                  }
                   id={brand}
                 >
                   {brand}
