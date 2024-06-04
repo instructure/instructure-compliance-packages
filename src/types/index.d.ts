@@ -120,7 +120,7 @@ declare interface GithubFilesAPI {
 }
 
 declare type GithubRelease = {
-  assets?: []
+  assets?: [];
   assets_url?: string;
   author?: {
     avatar_url?: string;
@@ -156,4 +156,4 @@ declare type GithubRelease = {
   upload_url?: string;
   url?: string;
   zipball_url?: string;
-}
+};

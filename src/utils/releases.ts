@@ -23,7 +23,9 @@ async function getGithubReleases(
       },
     });
     const data = await response.json();
-    return data.map(buildRelease).join("\r\n\r\n").slice(0, -3) || null;
+    return data.length > 3
+      ? `${data.slice(0, 3).map(buildRelease).join("\r\n\r\n").slice(0, -3)}---\r\n\r\n[Older Releases](https://github.com/thedannywahl/instructure-security-package/releases)`
+      : data.map(buildRelease).join("\r\n\r\n").slice(0, -3) || null;
   } catch (error) {
     if (error instanceof Error) {
       console.error(`Error: ${error.message}`);
@@ -41,13 +43,19 @@ async function getGithubReleases(
  * @returns A Markdown representation of the GitHub release.
  */
 function buildRelease(response: GithubRelease): string {
-  console.log("response: ", response)
-    return `
+  let author = response?.author?.login || "";
+  if (author === "gdenne") {
+    author = " -- Gary Denne";
+  } else if (author === "thedannywahl") {
+    author = " -- Danny Wahl";
+  }
+
+  return `
 ## ${response.name}\r\n
-> ${response.tag_name}${response?.author?.login ? ` -- ${response.author.login}` : null}\r\n
+> ${response.tag_name}${author}\r\n
 
 ${response.body}\r\n
----`
+---`;
 }
 
 /**
