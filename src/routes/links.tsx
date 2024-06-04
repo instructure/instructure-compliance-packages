@@ -5,7 +5,7 @@ import {
   IconButton,
   IconCopyLine,
   IconSearchLine,
-  IconTroubleLine,
+  IconXSolid,
   Link,
   RadioInput,
   RadioInputGroup,
@@ -47,6 +47,7 @@ export default function Links() {
   const [query, setQuery] = useState<string>("");
 
   const handleQueryChange = (e, v: string): void => {
+    e.preventDefault();
     setQuery(v);
     handleChange(lang, v, brands.list, activeProduct);
   };
@@ -143,7 +144,7 @@ export default function Links() {
           screenReaderLabel={s.clearSearch}
           onClick={handleQueryClear}
         >
-          <IconTroubleLine />
+          <IconXSolid />
         </IconButton>
       );
     }
