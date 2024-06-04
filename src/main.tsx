@@ -11,7 +11,6 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
-import Links from "./routes/links.jsx";
 import RedirectTo from "./routes/redirectTo.tsx";
 import { ParentBrands } from "./variables/brands.ts";
 import Redirects from "./variables/redirects/index.js";
@@ -29,14 +28,12 @@ for (const brand of ParentBrands) {
      * A function that returns the data to be passed to the markdownBrand component.
      * This function is created by a closure that captures the current brand object.
      */
-    loader: (() => {
-      return () => {
-        return { readme: brand.readme, brand: brand.brandName };
-      };
-    })(),
+    loader: () => ({ readme: brand.readme, brand: brand.brandName }),
     children: [
       {
         path: ":language",
+        lazy: () => import("./routes/markdownBrand.tsx"),
+        loader: () => ({ readme: brand.readme, brand: brand.brandName }),
       },
     ],
   });
@@ -46,16 +43,13 @@ for (const redirect of Redirects) {
   for (const link of redirect.links) {
     routes.push({
       path: link.from,
-
-      element: (
-        <RedirectTo path={link.from} brand={redirect.brand} url={link.to} />
-      ),
+      lazy: () => import("./routes/redirectTo.tsx"),
+      loader: () => ({path: link.from, brand: redirect.brand, url: link.to}),
       children: [
         {
           path: ":language",
-          element: (
-            <RedirectTo path={link.from} brand={redirect.brand} url={link.to} />
-          ),
+          lazy: () => import("./routes/redirectTo.tsx"),
+          loader: () => ({path: link.from, brand: redirect.brand, url: link.to})
         },
       ],
     });
@@ -64,11 +58,11 @@ for (const redirect of Redirects) {
 
 routes.push({
   path: "/links",
-  element: <Links />,
+  lazy: () => import("./routes/links.tsx"),
   children: [
     {
       path: ":language",
-      element: <Links />,
+      lazy: () => import("./routes/links.tsx"),
     },
   ],
 });

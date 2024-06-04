@@ -1,15 +1,17 @@
 // Modules
 import { Billboard, Link, Text, View } from "@instructure/ui";
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import RenderFooter from "../components/RenderFooter";
-import RenderTopNavBar from "../components/RenderTopNavBar";
-import strings from "../strings/redirectTo";
-import { getLang, getStrings } from "../utils/langs";
+import { lazy, Suspense, useEffect } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
+import RenderFooter from "../components/RenderFooter.tsx";
+import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
+import strings from "../strings/redirectTo.ts";
+import { getLang, getStrings } from "../utils/langs.ts";
 
 // Page
-export default function RedirectTo({ path, brand, url }) {
-  const l = getLang(useParams().language);
+export function Component() {
+  const { path, brand, url } = useLoaderData() as { path: string; brand: GlobalBrand, url: string };
+
+  const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
   const urlRoot = url.split("?")[0];
   const filetype = url.slice(-4);
@@ -66,3 +68,16 @@ export default function RedirectTo({ path, brand, url }) {
     </>
   );
 }
+Component.displayName = "Route.Redirect";
+
+export function ErrorBoundary() {
+  const ErrorPage = lazy(() =>
+    import("./error.tsx").then((module) => ({ default: module.Component })),
+  );
+  return (
+    <Suspense fallback={<h1>Error.</h1>}>
+      <ErrorPage />
+    </Suspense>
+  );
+}
+ErrorBoundary.displayName = "Error.Redirect";

@@ -16,7 +16,7 @@ import {
   Tooltip,
   View,
 } from "@instructure/ui";
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { useParams } from "react-router-dom";
 import RenderFooter from "../components/RenderFooter.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
@@ -36,7 +36,7 @@ import Redirects from "../variables/redirects/index.ts";
  *
  * @returns A React element that represents the rendered list of links.
  */
-export default function Links() {
+export function Component() {
   const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
 
@@ -511,3 +511,16 @@ export default function Links() {
     </>
   );
 }
+Component.displayName = "Route.Links";
+
+export function ErrorBoundary() {
+  const ErrorPage = lazy(() =>
+    import("./error.tsx").then((module) => ({ default: module.Component })),
+  );
+  return (
+    <Suspense fallback={<h1>Error.</h1>}>
+      <ErrorPage />
+    </Suspense>
+  );
+}
+ErrorBoundary.displayName = "Error.Links";
