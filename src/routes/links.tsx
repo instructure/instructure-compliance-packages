@@ -18,17 +18,17 @@ import {
 } from "@instructure/ui";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import global from "../variables/globals";
+import global from "../variables/globals.ts";
 
-import RenderFooter from "../components/RenderFooter";
-import RenderTopNavBar from "../components/RenderTopNavBar";
-import strings from "../strings/links";
-import { getLang, getStrings } from "../utils/langs";
-import { globalBrands, globalSubBrands } from "../variables/brands";
-import { globalLangDetails, globalLangs } from "../variables/langs";
-import Redirects from "../variables/redirects";
+import RenderFooter from "../components/RenderFooter.tsx";
+import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
+import strings from "../strings/links.ts";
+import { getLang, getStrings } from "../utils/langs.ts";
+import { globalBrands, globalSubBrands } from "../variables/brands.ts";
+import { globalLangDetails, globalLangs } from "../variables/langs.ts";
+import Redirects from "../variables/redirects/index.ts";
 export default function Links() {
-  const l = getLang(useParams().language);
+  const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
 
   const fromPrefix = global.url.replace("https://", "");
