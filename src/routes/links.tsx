@@ -36,6 +36,7 @@ export default function Links() {
     expanded: false,
     text: s.toggleShow,
   });
+
   const handleToggleChange = (): void => {
     const t = toggle.expanded ? s.toggleShow : s.toggleHide;
     setExpanded({
@@ -85,6 +86,7 @@ export default function Links() {
   };
 
   const [lang, setLang] = useState<LangCode[]>([l]);
+
   const handleLangChange = (
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
@@ -105,15 +107,22 @@ export default function Links() {
     handleChange(arr, query, brands.list, activeProduct);
   };
 
-  const [activeProduct, setActiveProduct] = useState("all");
-  const [products, setProducts] = useState(globalBrands);
+  const [activeProduct, setActiveProduct] = useState<"all" | GlobalBrand>(
+    "all",
+  );
+  const [products, setProducts] = useState<GlobalBrand[]>(globalBrands);
+
   const handleProductChange = (
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
   ): void => {
     e.preventDefault();
-    setActiveProduct(v);
-    handleChange(lang, query, brands.list, v);
+    if (v === "all" || globalBrands.includes(v as GlobalBrand)) {
+      setActiveProduct(v as "all" | GlobalBrand);
+    } else {
+      console.error(`Invalid value for setActiveProduct: ${v}`);
+    }
+    handleChange(lang, query, brands.list, v as "all" | GlobalBrand);
   };
 
   const [activeBrand, setActiveBrand] = useState("all");
@@ -134,9 +143,7 @@ export default function Links() {
     setActiveBrand(v);
     setBrands(arr);
     handleProductChange(e, "all");
-    setProducts({
-      list: arr,
-    });
+    setProducts(arr);
     handleChange(lang, query, arr, "all");
   };
 
@@ -146,7 +153,12 @@ export default function Links() {
       links: brands.links.filter((link) => link.lang.toUpperCase() === l),
     })),
   });
-  const handleChange = (l: LangCode[], q: string, b, p): void => {
+  const handleChange = (
+    l: LangCode[],
+    q: string,
+    b,
+    p: "all" | GlobalBrand,
+  ): void => {
     const filteredLinks = Redirects.map((brands) => ({
       ...brands,
       links: brands.links
