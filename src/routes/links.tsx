@@ -46,7 +46,10 @@ export default function Links() {
 
   const [query, setQuery] = useState<string>("");
 
-  const handleQueryChange = (e, v: string): void => {
+  const handleQueryChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    v: string,
+  ): void => {
     e.preventDefault();
     setQuery(v);
     handleChange(lang, v, brands.list, activeProduct);
@@ -133,7 +136,7 @@ export default function Links() {
     });
   };
 
-  const renderClearButton = (e): React.ReactElement | null => {
+  const renderClearButton = (): React.ReactElement | null => {
     if (query.search.length) {
       return (
         <IconButton
