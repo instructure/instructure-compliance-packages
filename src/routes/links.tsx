@@ -60,6 +60,7 @@ export default function Links() {
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
   ): void => {
+    e.preventDefault();
     const arr: LangCode[] = [];
     if (v === "all") {
       arr.push(...globalLangs);
@@ -79,7 +80,11 @@ export default function Links() {
   const [products, setProducts] = useState({
     list: globalBrands,
   });
-  const handleProductChange = (e, v): void => {
+  const handleProductChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    v: string,
+  ): void => {
+    e.preventDefault();
     setActiveProduct(v);
     handleChange(lang, query, brands.list, v);
   };
