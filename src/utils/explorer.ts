@@ -99,6 +99,7 @@ function formatGithubContents(
 ): string {
   const l = language;
   const s = getStrings(strings, l);
+  if (!contents || !contents.tree) return s.error;
   const dirs = contents.tree.filter((item) => item.type === "tree");
   const files = contents.tree
     .filter((item) => item.type === "blob")
