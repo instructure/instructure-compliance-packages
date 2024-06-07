@@ -16,7 +16,7 @@ async function getGithubRepoContents(
   owner: string,
   repo: string,
   branch: string,
-): Promise<GithubFilesAPI | null> {
+): Promise<GithubFilesAPI | []> {
   const apiUrl: string = `${global.api}/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`;
 
   try {
@@ -37,7 +37,7 @@ async function getGithubRepoContents(
     } else {
       console.error(`An unexpected error occurred: ${error}`);
     }
-    return null;
+    return [];
   }
 }
 /**
@@ -99,7 +99,6 @@ function formatGithubContents(
 ): string {
   const l = language;
   const s = getStrings(strings, l);
-  if (!contents || !contents.tree) return s.error;
   const dirs = contents.tree.filter((item) => item.type === "tree");
   const files = contents.tree
     .filter((item) => item.type === "blob")
