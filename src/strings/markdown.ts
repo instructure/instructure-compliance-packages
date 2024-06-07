@@ -17,5 +17,11 @@ const strings: PageStrings = {
     PT_BR: "Explorar",
     DE: "Erkunden",
   },
+  error: {
+    EN: "An error occurred fetching package contents.",
+    ES_LA: "Ocurrió un error al obtener el contenido del paquete.",
+    PT_BR: "Ocorreu um erro ao buscar o conteúdo do pacote.",
+    DE: "Beim Abrufen des Paketinhalts ist ein Fehler aufgetreten.",
+  },
 };
 export default strings;
