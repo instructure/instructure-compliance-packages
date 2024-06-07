@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.0...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.1...isp-site)
 
 ### Roadmap
 
@@ -11,6 +11,12 @@
 
 * `/utils/toggle.ts` no longer an IIFE. Until it gets fixed, brand colors won't change.
 * Redirect Links filters sometimes don't behave properly.
+
+## [4.0.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.0...isp-site-v4.0.1)
+
+### Added
+
+* [Snyk](https://snyk.io/) for SAST
 
 ## [4.0.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v3.2.0...isp-site-v4.0.0)
 
