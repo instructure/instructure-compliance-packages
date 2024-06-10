@@ -71,8 +71,8 @@ const mdtoui: MarkdownCustomRenderer = {
     let quote: string;
     let author: string;
 
-    if (React.isValidElement(firstChild)) {
-      [quote, author] = firstChild.props.children.toString().split("--", 2);
+    if (React.isValidElement<{ children: string }>(firstChild)) {
+      [quote, author] = firstChild.props.children.split("--", 2);
     } else {
       [quote, author] = firstChild.toString().split("--", 2);
     }
