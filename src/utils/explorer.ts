@@ -16,7 +16,7 @@ async function getGithubRepoContents(
   owner: string,
   repo: string,
   branch: string,
-): Promise<GithubFilesAPI | []> {
+): Promise<GithubFilesAPI | null> {
   const apiUrl: string = `${global.api}/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`;
 
   try {
@@ -37,7 +37,7 @@ async function getGithubRepoContents(
     } else {
       console.error(`An unexpected error occurred: ${error}`);
     }
-    return [];
+    return null;
   }
 }
 /**
