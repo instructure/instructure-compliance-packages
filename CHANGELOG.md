@@ -31,6 +31,7 @@
 
 ### Changed
 * Migrate makefile to pnpm run scripts.
+* Use JS shell emulator for cross-platform compatibility.
 
 ## [4.0.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.0...isp-site-v4.0.1)
 
