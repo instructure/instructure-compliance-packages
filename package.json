@@ -38,12 +38,12 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.24.7",
-    "@biomejs/biome": "1.8.0",
+    "@biomejs/biome": "1.8.1",
     "@instructure/shared-types": "^9.0.1",
     "@octokit/types": "^13.5.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.0",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
+    "@vitejs/plugin-react": "^4.3.1",
     "babel-plugin-react-compiler": "0.0.0-experimental-938cd9a-20240601",
     "node-jq": "^4.4.0",
     "snyk": "^1.1291.1",
@@ -53,9 +53,9 @@
   },
   "engines": {
     "node": ">=22.2.0",
-    "pnpm": ">=9.1.4"
+    "pnpm": ">=9.3.0"
   },
-  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771",
+  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631",
   "pnpm": {
     "overrides": {
       "react": "^19.0.0-rc-f994737d14-20240522",
