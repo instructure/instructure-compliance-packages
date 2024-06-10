@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.2...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.3...isp-site)
 
 ### Roadmap
 
@@ -12,6 +12,14 @@
 * `/utils/toggle.ts` no longer an IIFE. Until it gets fixed, brand colors won't change.
 * Redirect Links filters sometimes don't behave properly.
 
+## [4.0.3](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.2...isp-site-v4.0.3)
+
+### Fixed
+* Build version number not matching deploy version number
+
+### Added
+* `build:preview` script used by `pnpm run preview`
+
 ## [4.0.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.1...isp-site-v4.0.2)
 
 ### Fixed
@@ -19,7 +27,10 @@
 * Missing type guards in mdtoui JSX component.
 
 ### Added
-* `sec` scripts for `pnpm audit` and snyk added to build chain.
+* `sec` scripts for `pnpm audit` and snyk to build chain.
+
+### Changed
+* Migrate makefile to pnpm run scripts.
 
 ## [4.0.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.0...isp-site-v4.0.1)
 
