@@ -28,10 +28,10 @@ importers:
         specifier: ^6.1.1
         version: 6.1.1
       react:
-        specifier: ^19.0.0-rc-f994737d14-20240522
+        specifier: 19.0.0-rc-f994737d14-20240522
         version: 19.0.0-rc-f994737d14-20240522
       react-dom:
-        specifier: ^19.0.0-rc-f994737d14-20240522
+        specifier: 19.0.0-rc-f994737d14-20240522
         version: 19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522)
       react-markdown:
         specifier: ^9.0.1
@@ -62,10 +62,10 @@ importers:
         specifier: ^13.5.0
         version: 13.5.0
       '@types/react':
-        specifier: npm:types-react@rc
+        specifier: npm:types-react@19.0.0-rc.0
         version: types-react@19.0.0-rc.0
       '@types/react-dom':
-        specifier: npm:types-react-dom@rc
+        specifier: npm:types-react-dom@19.0.0-rc.0
         version: types-react-dom@19.0.0-rc.0
       '@vitejs/plugin-react':
         specifier: ^4.3.1
