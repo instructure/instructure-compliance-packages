@@ -63,7 +63,9 @@
       "@instructure/ui-test-sandbox>sinon": "^17.0.1",
       "gh-pages>globby": "11.1.0",
       "node-jq>tempfile": "^5.0.0",
-      "bin-build>tempfile": "^5.0.0"
+      "bin-build>tempfile": "^5.0.0",
+      "bin-build>download": "^8.0.0",
+      "download>got": "^14.4.1"
     }
   },
   "browserslist": [
