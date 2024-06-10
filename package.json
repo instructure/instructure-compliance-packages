@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "4.0.2+1718054754",
+  "version": "4.0.2+1718055122",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -25,7 +25,7 @@
     "lint": "biome lint",
     "lint:apply": "biome lint --write",
     "preview": "pnpm build && vite preview",
-    "push": "pnpm build && gh-pages -t -m \"Deploy v$(pnpm -s env:version)\" -d dist",
+    "push": "pnpm build && gh-pages -t -m \"Deploy v$npm_package_version\" -d dist",
     "sec": "pnpm sec:audit && pnpm sec:scan",
     "sec:audit": "snyk test && pnpm audit",
     "sec:scan": "snyk code test"

@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.1...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.2...isp-site)
 
 ### Roadmap
 
@@ -11,6 +11,15 @@
 
 * `/utils/toggle.ts` no longer an IIFE. Until it gets fixed, brand colors won't change.
 * Redirect Links filters sometimes don't behave properly.
+
+## [4.0.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.1...isp-site-v4.0.2)
+
+### Fixed
+* Vulnerabilities is package dependencies with pnpm overrides.
+* Missing type guards in mdtoui JSX component.
+
+### Added
+* `sec` scripts for `pnpm audit` and snyk added to build chain.
 
 ## [4.0.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.0...isp-site-v4.0.1)
 
@@ -37,7 +46,7 @@ dist/assets/banner-Dl8io6Qq.webp         163.78 kB
 dist/assets/index-9AL1K8pI.css            15.54 kB │ gzip:   6.26 kB
 dist/assets/index-BGBpAMfR.js          1,733.08 kB │ gzip: 543.97 kB
 
-Aafter:
+After:
 dist/index.html                            1.31 kB │ gzip:   0.59 kB
 dist/assets/banner-Dl8io6Qq.webp         163.78 kB
 dist/assets/index-DXft5ptw.css            15.54 kB │ gzip:   6.26 kB
