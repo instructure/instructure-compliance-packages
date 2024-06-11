@@ -1,4 +1,3 @@
-// Modules
 import {
   Drilldown,
   Heading,
@@ -11,7 +10,6 @@ import {
   TopNavBar,
   View,
 } from "@instructure/ui";
-import "../utils/toggle.ts";
 import { Link as Anchor } from "react-router-dom";
 import strings from "../strings/header.ts";
 import { getStrings } from "../utils/langs.ts";
@@ -22,17 +20,22 @@ import { globalLangDetails } from "../variables/langs.ts";
  * Component that renders the top navigation bar.
  *
  * @param language - The language code.
+ * @param brand - The current brand name, defaults to Instructure
  * @returns A React node representing the top navigation bar.
  */ function RenderTopNavBar({
   language,
-}: { language: LangCode }): React.ReactElement {
+  brand = "Instructure",
+}: { language: LangCode; brand?: GlobalBrand }): React.ReactElement {
   const l = language;
   const s = getStrings(strings, l);
   const Brands: BrandDetail[] = [...ParentBrands];
   Brands.shift();
 
+  const currentBrand =
+    Brands[Brands.findIndex((b) => b.brandName === brand)] ?? ParentBrands[0];
+
   return (
-    <View id="nav" as="div" tabIndex={0}>
+    <View id="nav" className={`${currentBrand.title}`} as="div" tabIndex={0}>
       <TopNavBar inverseColor={true}>
         {() => (
           <TopNavBar.Layout
@@ -42,12 +45,12 @@ import { globalLangDetails } from "../variables/langs.ts";
               dropdownMenuLabel: s.main_menu,
             }}
             themeOverride={{
-              desktopBackgroundInverse: "#FFF",
-              smallViewportBackgroundInverse: "#FFF",
+              desktopBackgroundInverse: "#ffffff",
+              smallViewportBackgroundInverse: "#ffffff",
             }}
             renderBrand={
               <TopNavBar.Brand
-                screenReaderLabel="Instructure"
+                screenReaderLabel={currentBrand.brandName}
                 renderIcon={
                   <IconInstructureLogoSolid
                     size="small"
@@ -56,7 +59,7 @@ import { globalLangDetails } from "../variables/langs.ts";
                     width="2.5rem"
                   />
                 }
-                iconBackground="#287A9F"
+                iconBackground={currentBrand.color}
                 href={`#/${l === "EN" ? "" : l.toLowerCase().split("_")[0]}`}
               />
             }
@@ -70,12 +73,17 @@ import { globalLangDetails } from "../variables/langs.ts";
               >
                 {Brands.map((brand) => (
                   <TopNavBar.Item
+                    themeOverride={{
+                      activeIndicatorColorInverse: currentBrand.color,
+                    }}
                     id={brand.title}
                     key={brand.title}
                     href={`#${brand.route}${
                       l === "EN" ? "" : `/${l.toLowerCase().split("_")[0]}`
                     }`}
-                    themeOverride={{ activeIndicatorColor: brand.color }}
+                    status={
+                      currentBrand.title === brand.title ? "active" : "default"
+                    }
                   >
                     {brand.brandName}
                   </TopNavBar.Item>

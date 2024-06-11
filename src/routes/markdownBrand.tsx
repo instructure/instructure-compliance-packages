@@ -57,7 +57,7 @@ export function Component(): React.ReactElement {
             branch,
           );
         })}
-      <RenderTopNavBar language={l} />
+      <RenderTopNavBar brand={brand} language={l} />
       <View
         id="main"
         as="div"
