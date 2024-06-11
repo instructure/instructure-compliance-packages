@@ -9,7 +9,6 @@
 
 ### Known Issues
 
-* Redirect Links filters sometimes don't behave properly.
 
 ### Fixed
 
@@ -17,6 +16,7 @@
 * Return type for `getGithubRepoContents()` in utils/explorer.ts if the repo is empty.
 * Stray comma in Releases.
 * Brand toggles in TopNavBar and Footer
+* Redirect Links filters sometimes don't behave properly.
 
 ### Changed
 * Footer now static color.

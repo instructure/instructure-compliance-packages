@@ -81,7 +81,7 @@ export function Component() {
    * and then calls `handleChange` with the current language, the new query value, the current brands, and the active product.
    */
   const handleQueryChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    _e: React.ChangeEvent<HTMLInputElement>,
     v: string,
   ): void => {
     setQuery(v);
@@ -183,7 +183,7 @@ export function Component() {
    * Finally, it calls `handleChange` with the current language, the current query, the current brands, and the new active product.
    */
   const handleProductChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    _e: React.ChangeEvent<HTMLInputElement>,
     v: string,
   ): void => {
     if (v === "all" || globalBrands.includes(v as GlobalBrand)) {
