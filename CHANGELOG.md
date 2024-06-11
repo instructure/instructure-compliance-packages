@@ -15,7 +15,11 @@
 ### Fixed
 
 * `build:git` doesn't re-source `$npm_package_version`, as part of build.  Use `$(pnpm -s env:version)` instead.
-* Return type for `getGithubRepoContents()` in utils/explorer.ts if the repo is empty. 
+* Return type for `getGithubRepoContents()` in utils/explorer.ts if the repo is empty.
+* Stray comma in Releases.
+
+### Changed
+* Footer now static color.
 
 ## [4.0.3](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.2...isp-site-v4.0.3)
 

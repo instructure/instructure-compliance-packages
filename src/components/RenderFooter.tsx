@@ -22,18 +22,16 @@ function RenderFooter({ language }: { language: LangCode }): React.ReactNode {
       margin="0 auto"
       width="100%"
       borderWidth="small none none"
+      background="secondary"
     >
       <Text
+        color="secondary"
         transform="uppercase"
         letterSpacing="expanded"
-        color="primary-inverse"
         size="small"
       >
-        {s.made_with} <IconHeartLine color="primary-inverse" title={s.love} />{" "}
-        {s.by}{" "}
-        <Link color="link-inverse" href="https://www.instructure.com">
-          Instructure
-        </Link>
+        {s.made_with} <IconHeartLine color="error" title={s.love} /> {s.by}{" "}
+        Instructure
       </Text>
     </View>
   );
