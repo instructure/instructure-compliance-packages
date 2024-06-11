@@ -43,50 +43,11 @@ code {
   font-weight: normal !important;
 }
 
-/* Instructure UI overrides */
-
-li [data-cid="Checkbox"],
-li [class$="checkbox"] {
-  opacity: inherit;
-}
-
-pre {
-  font-family: menlo, consolas, monaco, "Andale Mono", monospace !important;
-}
-
-#toggleFilters {
-  display: none;
-}
-
-[data-cid="ToggleDetails"] [class$="gridCol"] {
-  margin-bottom: 0.75em;
-}
-
-[data-cid="RadioInputGroup"] [class$="formFieldGroup"] [class$="gridRow"] {
-  flex-wrap: wrap;
-}
-
-[data-cid="RadioInputGroup"] [class$="formFieldGroup"] [class$="gridCol"] {
-  margin-bottom: 0.75em;
-}
-
-/* markdown styles */
-
-.markdown [class$="toggleDetails__details"] {
-  padding-left: 0 !important;
-}
-
-.markdown [class$="toggleDetails__content"] {
-  border: 1px solid rgb(199, 205, 209);
-  border-radius: 1rem 0;
-}
-
-.markdown h2 {
-  margin-top: 3rem !important;
-}
-
-/* Language styles */
-
+/**
+ * React-router-dom Link (as Anchor) component is used to navigate between pages with hashrouter.
+ * TopNavBar.Item expects an InstructureUI Link component.  These styles are used to make the Anchor
+ * behave like a Link.
+ */
 #language .lang,
 #language .lang:hover,
 #language .lang:focus,
@@ -109,6 +70,52 @@ pre {
 [class$="view-drilldown__container"] {
   width: 10rem;
   min-width: 10rem !important;
+}
+
+/* Instructure UI overrides */
+
+li [data-cid="Checkbox"],
+li [class$="checkbox"] {
+  opacity: inherit;
+}
+
+pre {
+  font-family: menlo, consolas, monaco, "Andale Mono", monospace !important;
+}
+
+#toggleFilters {
+  display: none;
+}
+
+[data-cid="ToggleDetails"] [class$="gridCol"] {
+  margin-bottom: 0.75em;
+}
+
+/**
+ * INSTUI-4070
+ * RadioInputGroup overflows container
+ */
+[data-cid="RadioInputGroup"] [class$="formFieldGroup"] [class$="gridRow"] {
+  flex-wrap: wrap;
+}
+
+[data-cid="RadioInputGroup"] [class$="formFieldGroup"] [class$="gridCol"] {
+  margin-bottom: 0.75em;
+}
+
+/* markdown styles */
+
+.markdown [class$="toggleDetails__details"] {
+  padding-left: 0 !important;
+}
+
+.markdown [class$="toggleDetails__content"] {
+  border: 1px solid rgb(199, 205, 209);
+  border-radius: 1rem 0;
+}
+
+.markdown h2 {
+  margin-top: 3rem !important;
 }
 
 /* MDUI overrides */
