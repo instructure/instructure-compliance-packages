@@ -1,11 +1,21 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.0...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.1...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
+
+## [4.1.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.0...isp-site-v4.1.1)
+
+### Added
+* Auto tagging on on deploys.
+
+### Changed
+
+* TopNavBar icons are now proper InstUI Icons or SVG Icons.  No more CSS hacks.
+* Disable js imports in tsconfig.
 
 ## [4.1.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.3...isp-site-v4.1.0)
 
