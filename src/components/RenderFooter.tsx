@@ -1,4 +1,4 @@
-import { IconHeartLine, Link, Text, View } from "@instructure/ui";
+import { IconHeartLine, Text, View } from "@instructure/ui";
 import strings from "../strings/footer.ts";
 import { getStrings } from "../utils/langs.ts";
 
