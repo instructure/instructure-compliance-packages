@@ -9,7 +9,7 @@
 
 ### Known Issues
 
-* `/utils/toggle.ts` no longer an IIFE. Until it gets fixed, brand colors won't change.
+* 
 * Redirect Links filters sometimes don't behave properly.
 
 ### Fixed
@@ -17,6 +17,7 @@
 * `build:git` doesn't re-source `$npm_package_version`, as part of build.  Use `$(pnpm -s env:version)` instead.
 * Return type for `getGithubRepoContents()` in utils/explorer.ts if the repo is empty.
 * Stray comma in Releases.
+* Brand toggles in TopNavBar and Footer
 
 ### Changed
 * Footer now static color.
