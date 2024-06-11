@@ -1,14 +1,13 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.3...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.0...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
-### Known Issues
-
+## [4.1.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.0.3...isp-site-v4.1.0)
 
 ### Fixed
 
