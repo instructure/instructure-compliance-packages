@@ -22,7 +22,7 @@ import RenderFooter from "../components/RenderFooter.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
 import strings from "../strings/links.ts";
 import { getLang, getStrings } from "../utils/langs.ts";
-import { globalBrands, globalSubBrands } from "../variables/brands.ts";
+import { globalBrands, globalSubBrands } from "../variables/brands.tsx";
 import global from "../variables/globals.ts";
 import { globalLangDetails, globalLangs } from "../variables/langs.ts";
 import Redirects from "../variables/redirects/index.ts";

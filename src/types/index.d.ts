@@ -96,6 +96,7 @@ declare type BrandDetail = {
   route: string;
   readme: string;
   color: `#${string}`;
+  Icon: ReactElement;
 };
 
 /**

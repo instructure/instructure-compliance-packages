@@ -2,7 +2,6 @@ import {
   Drilldown,
   Heading,
   IconDiscussionLine,
-  IconInstructureLogoSolid,
   IconQuestionLine,
   InlineList,
   Link,
@@ -13,7 +12,7 @@ import {
 import { Link as Anchor } from "react-router-dom";
 import strings from "../strings/header.ts";
 import { getStrings } from "../utils/langs.ts";
-import { ParentBrands } from "../variables/brands.ts";
+import { ParentBrands } from "../variables/brands.tsx";
 import { globalLangDetails } from "../variables/langs.ts";
 
 /**
@@ -22,7 +21,8 @@ import { globalLangDetails } from "../variables/langs.ts";
  * @param language - The language code.
  * @param brand - The current brand name, defaults to Instructure
  * @returns A React node representing the top navigation bar.
- */ function RenderTopNavBar({
+ */
+function RenderTopNavBar({
   language,
   brand = "Instructure",
 }: { language: LangCode; brand?: GlobalBrand }): React.ReactElement {
@@ -52,7 +52,7 @@ import { globalLangDetails } from "../variables/langs.ts";
               <TopNavBar.Brand
                 screenReaderLabel={currentBrand.brandName}
                 renderIcon={
-                  <IconInstructureLogoSolid
+                  <currentBrand.Icon
                     size="small"
                     color="primary-inverse"
                     height="2.5rem"
@@ -222,7 +222,7 @@ import { globalLangDetails } from "../variables/langs.ts";
                                   PT_BR:
                                     "https://www.instructure.com/pt-br/contato",
                                   DE: "https://www.instructure.com/de/contact-us",
-                                }[l]
+                                }[l as LangCode]
                               }
                             >
                               {s.contact}

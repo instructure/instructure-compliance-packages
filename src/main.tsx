@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
-import { ParentBrands } from "./variables/brands.ts";
+import { ParentBrands } from "./variables/brands.tsx";
 import Redirects from "./variables/redirects/index.js";
 
 /**
