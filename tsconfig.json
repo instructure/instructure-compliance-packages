@@ -15,8 +15,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    // @TODO: disable after TS migration
-    "allowJs": true,
   },
   "include": [
     "src",
