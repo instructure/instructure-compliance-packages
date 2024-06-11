@@ -9,7 +9,6 @@
 
 ### Known Issues
 
-* 
 * Redirect Links filters sometimes don't behave properly.
 
 ### Fixed

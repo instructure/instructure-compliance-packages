@@ -84,7 +84,6 @@ export function Component() {
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
   ): void => {
-    e.preventDefault();
     setQuery(v);
     handleChange(lang, v, brands, activeProduct);
   };
@@ -145,7 +144,6 @@ export function Component() {
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
   ): void => {
-    e.preventDefault();
     const arr: LangCode[] = [];
     if (v === "all") {
       arr.push(...globalLangs);
@@ -188,7 +186,6 @@ export function Component() {
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
   ): void => {
-    e.preventDefault();
     if (v === "all" || globalBrands.includes(v as GlobalBrand)) {
       setActiveProduct(v as "all" | GlobalBrand);
     } else {
@@ -226,7 +223,6 @@ export function Component() {
     e: React.ChangeEvent<HTMLInputElement>,
     v: string,
   ): void => {
-    e.preventDefault();
     const arr: ("AWS" | GlobalSubBrand)[] = [];
     if (v === "all") {
       arr.push(...(["AWS", ...globalSubBrands] as ("AWS" | GlobalSubBrand)[]));
