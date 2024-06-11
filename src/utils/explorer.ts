@@ -5,12 +5,19 @@ import { getStrings } from "./langs.ts";
 /**
  * Fetches the contents of a GitHub repository.
  *
+ * This asynchronous function attempts to retrieve the contents of a specified GitHub repository by making a GET request to the GitHub API.
+ * It constructs the request URL using the provided repository owner's username, the repository name, and the branch name.
+ * The function returns a promise that resolves to an object representing the repository's contents or `undefined` if an error occurs during the fetch operation.
+ *
+ * The returned object includes properties for each file in the repository, along with a `tree` property. The `tree` property is an array of all the files,
+ * which is sorted by the `sortProduct` function. If the fetch operation fails for any reason (e.g., network issues, invalid credentials, etc.),
+ * the function logs the error to the console and returns `undefined`.
+ *
  * @param owner - The username of the owner of the repository.
  * @param repo - The name of the repository.
  * @param branch - The name of the branch in the repository.
- * @returns A promise that resolves to an object representing the contents of the repository, or null if an error occurs.
- * The object has properties for each file in the repository, and a `tree` property that is an array of all the files, sorted by the `sortProduct` function.
- * If an error occurs during the fetch operation, the function logs the error and returns null.
+ * @returns A promise that resolves to an object representing the contents of the repository, or `undefined` if an error occurs.
+ *          The object includes a `tree` property that is an array of all the files, sorted by the `sortProduct` function.
  */
 async function getGithubRepoContents(
   owner: string,
@@ -39,6 +46,7 @@ async function getGithubRepoContents(
     }
   }
 }
+
 /**
  * Sorts two product objects based on their `path` properties.
  *
