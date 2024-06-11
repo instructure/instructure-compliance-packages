@@ -61,7 +61,7 @@ export function Component(): React.ReactElement {
           </ReactMarkdown>
         </View>
       </View>
-      <RenderFooter language={l} />,
+      <RenderFooter language={l} />
     </>
   );
 }
