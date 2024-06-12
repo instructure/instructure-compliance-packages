@@ -1,22 +1,43 @@
 import type { AsElementType } from "@instructure/shared-types";
-import {
-  Alert,
-  Avatar,
-  Button,
-  Byline,
-  Checkbox,
-  Heading,
-  Img,
-  Link,
-  List,
-  SourceCodeEditor,
-  Table,
-  Text,
-  ToggleDetails,
-  View,
-} from "@instructure/ui";
-import React from "react";
-import { Children } from "react";
+import { List, Table } from "@instructure/ui";
+import React, { lazy, Children } from "react";
+
+const LazyAlert = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Alert })),
+);
+const LazyAvatar = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Avatar })),
+);
+const LazyButton = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Button })),
+);
+const LazyByline = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Byline })),
+);
+const LazyCheckbox = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Checkbox })),
+);
+const LazyHeading = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Heading })),
+);
+const LazyImg = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Img })),
+);
+const LazyLink = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Link })),
+);
+const LazySourceCodeEditor = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.SourceCodeEditor })),
+);
+const LazyText = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.Text })),
+);
+const LazyToggleDetails = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.ToggleDetails })),
+);
+const LazyView = lazy(() =>
+  import("@instructure/ui").then((m) => ({ default: m.View })),
+);
 
 const filterChildrenProps = (props: { children: unknown }): unknown => {
   return Children.map(props.children, (child) =>
@@ -32,9 +53,9 @@ const alignStr = (p: { style?: { textAlign?: string } }): string => {
   );
 };
 
-const mdtoui: MarkdownCustomRenderer = {
+const Mdtoui: MarkdownCustomRenderer = {
   hr: ({ node, ...props }) => (
-    <View
+    <LazyView
       as={node?.tagName as AsElementType}
       shadow="topmost"
       borderWidth="small"
@@ -44,14 +65,16 @@ const mdtoui: MarkdownCustomRenderer = {
       {...props}
     />
   ),
-  a: ({ node, ...props }) => <Link to={node.href} {...props} />,
-  button: ({ node, ...props }) => <Button withBackground={false} {...props} />,
-  p: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
-  em: ({ node, ...props }) => <Text fontStyle="italic" {...props} />,
-  strong: ({ node, ...props }) => <Text weight="bold" {...props} />,
-  span: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
-  code: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
-  del: ({ node, ...props }) => <Text as={node.tagName} {...props} />,
+  a: ({ node, ...props }) => <LazyLink to={node.href} {...props} />,
+  button: ({ node, ...props }) => (
+    <LazyButton withBackground={false} {...props} />
+  ),
+  p: ({ node, ...props }) => <LazyText as={node.tagName} {...props} />,
+  em: ({ node, ...props }) => <LazyText fontStyle="italic" {...props} />,
+  strong: ({ node, ...props }) => <LazyText weight="bold" {...props} />,
+  span: ({ node, ...props }) => <LazyText as={node.tagName} {...props} />,
+  code: ({ node, ...props }) => <LazyText as={node.tagName} {...props} />,
+  del: ({ node, ...props }) => <LazyText as={node.tagName} {...props} />,
   blockquote: ({ node, ...props }) => {
     props = {
       ...props,
@@ -79,37 +102,42 @@ const mdtoui: MarkdownCustomRenderer = {
     const alert = quote.match(alertRegex);
     if (alert) {
       return (
-        <Alert variant={alertTypes[alert[1] as keyof typeof alertTypes]}>
+        <LazyAlert variant={alertTypes[alert[1] as keyof typeof alertTypes]}>
           {quote.replace(`${alert[0]}`, "")}
-        </Alert>
+        </LazyAlert>
       );
     }
     return (
-      <Byline description={quote} title={author} margin="medium 0" {...props}>
-        {author ? <Avatar name={author} /> : <></>}
-      </Byline>
+      <LazyByline
+        description={quote}
+        title={author}
+        margin="medium 0"
+        {...props}
+      >
+        {author ? <LazyAvatar name={author} /> : <></>}
+      </LazyByline>
     );
   },
   h1: ({ node, ...props }) => (
-    <Heading margin="none none medium" level={node.tagName} {...props} />
+    <LazyHeading margin="none none medium" level={node.tagName} {...props} />
   ),
   h2: ({ node, ...props }) => (
-    <Heading margin="small none" level={node.tagName} {...props} />
+    <LazyHeading margin="small none" level={node.tagName} {...props} />
   ),
   h3: ({ node, ...props }) => (
-    <Heading margin="small none" level={node.tagName} {...props} />
+    <LazyHeading margin="small none" level={node.tagName} {...props} />
   ),
-  h4: ({ node, ...props }) => <Heading level={node.tagName} {...props} />,
-  h5: ({ node, ...props }) => <Heading level={node.tagName} {...props} />,
-  h6: ({ node, ...props }) => <Heading as="h6" {...props} />,
-  img: ({ node, ...props }) => <Img src={node.src} {...props} />,
-  div: ({ node, ...props }) => <View as={node.tagName} {...props} />,
+  h4: ({ node, ...props }) => <LazyHeading level={node.tagName} {...props} />,
+  h5: ({ node, ...props }) => <LazyHeading level={node.tagName} {...props} />,
+  h6: ({ node, ...props }) => <LazyHeading as="h6" {...props} />,
+  img: ({ node, ...props }) => <LazyImg src={node.src} {...props} />,
+  div: ({ node, ...props }) => <LazyView as={node.tagName} {...props} />,
   pre: ({ node, ...props }) => {
     if (node.children.length === 1 && node.children[0].tagName === "code") {
       let preContent = node.children[0].children[0].value;
       if (preContent.endsWith("\n")) preContent = preContent.slice(0, -1);
       return (
-        <SourceCodeEditor
+        <LazySourceCodeEditor
           label="Code"
           lineNumbers={true}
           foldGutter={true}
@@ -119,7 +147,7 @@ const mdtoui: MarkdownCustomRenderer = {
         />
       );
     }
-    return <View as={node.tagName} {...props} />;
+    return <LazyView as={node.tagName} {...props} />;
   },
   ul: ({ node, ...props }) => {
     props = { ...props, children: filterChildrenProps(props) };
@@ -149,7 +177,7 @@ const mdtoui: MarkdownCustomRenderer = {
                     child !== "[X]"
                   ) {
                     return (
-                      <Checkbox
+                      <LazyCheckbox
                         label={child}
                         disabled={true}
                         defaultChecked={checked}
@@ -181,9 +209,9 @@ const mdtoui: MarkdownCustomRenderer = {
     props = { ...props, children: filterChildrenProps(props) };
     const label = props.children.shift();
     return (
-      <ToggleDetails summary={label}>
-        <View display="block" padding="small" {...props} />
-      </ToggleDetails>
+      <LazyToggleDetails summary={label}>
+        <LazyView display="block" padding="small" {...props} />
+      </LazyToggleDetails>
     );
   },
   table: ({ node, ...props }) => {
@@ -239,4 +267,4 @@ const mdtoui: MarkdownCustomRenderer = {
     );
   },
 };
-export default mdtoui;
+export default Mdtoui;

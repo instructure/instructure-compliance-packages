@@ -6,7 +6,7 @@ import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
 import { Explorer } from "../utils/explorer.ts";
 import allowedElements from "../variables/allowedElements.ts";
-import mdtoui from "./mdtoui.tsx";
+import mdtoui from "./Mdtoui.tsx";
 
 /**
  * Component that explores a branch of a brand.
