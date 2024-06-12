@@ -1,14 +1,16 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.1...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.0...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+## [4.2.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.1...isp-site-v4.2.0)
+
 ### Changed
-* Rename `push` script to `deploy`.
+* Mdtoui component now uses `React.Lazy`.  React-Markdown calls now only load the relevant Components.
 
 ## [4.1.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.0...isp-site-v4.1.1)
 
