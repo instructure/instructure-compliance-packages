@@ -28,7 +28,7 @@ declare type MarkdownCustomRenderer = {
 
 declare type RedirectLinkPartial = {
   title: string;
-  from: `/${string}`;
+  from: `/${Lowercase<GlobalBrand>}/${string}`;
   to: string;
 };
 
