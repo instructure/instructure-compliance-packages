@@ -1,7 +1,7 @@
 const EN: RedirectLinkPartial[] = [
   {
     title: "Formatives Home",
-    from: "mastery/view/formative",
+    from: "/mastery/view/formative",
     to: "https://www.instructure.com/k12/products/mastery/mastery-view-formative-assessments/",
   },
   {
