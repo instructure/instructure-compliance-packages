@@ -28,12 +28,12 @@ declare type MarkdownCustomRenderer = {
 
 declare type RedirectLinkPartial = {
   title: string;
-  from: string;
+  from: `/${string}`;
   to: string;
 };
 
 declare type RedirectLink = RedirectLinkPartial & {
-  lang: string;
+  lang: LangCode;
 };
 
 declare type RedirectBrand = {
