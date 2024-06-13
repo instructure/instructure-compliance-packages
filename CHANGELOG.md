@@ -1,11 +1,16 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.0...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.1...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
+
+## [4.2.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.0...isp-site-v4.2.1)
+
+### Fixed
+* Add missing contact email in Help menu.
 
 ## [4.2.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.1...isp-site-v4.2.0)
 
