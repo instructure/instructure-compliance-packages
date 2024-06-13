@@ -13,7 +13,6 @@ declare module "*?raw" {
 
 /**
  * https://stackoverflow.com/questions/66628783/react-markdown-type-for-paragraph-renderer
- *
  */
 type MarkdownNodeToProps<T> = {
   node: T;
@@ -28,7 +27,9 @@ declare type MarkdownCustomRenderer = {
 
 declare type RedirectLinkPartial = {
   title: string;
-  from: `/${Lowercase<GlobalBrand>}/${string}`;
+  from:
+    | `/${Lowercase<GlobalBrand>}/${string}`
+    | `/${Lowercase<LangCode>}/${string}`;
   to: string;
 };
 
