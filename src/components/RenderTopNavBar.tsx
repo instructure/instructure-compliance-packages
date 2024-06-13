@@ -168,7 +168,13 @@ function RenderTopNavBar({
                           <br />
                           <Text>{s.contact_sales}</Text>
                           <br />
-                          <Text>{s.contact_general} </Text>
+                          <Text>
+                            {s.contact_general}{" "}
+                            <Link href="mailto:info@instructure.com">
+                              info@instructure.com
+                            </Link>
+                            .
+                          </Text>
                         </View>
                         <View
                           as="hr"
