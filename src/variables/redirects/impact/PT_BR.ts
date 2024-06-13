@@ -21,4 +21,7 @@ const PT_BR: RedirectLinkPartial[] = [
   },
 ];
 
-export default PT_BR.map((links) => ({ ...links, lang: "PT_BR" }));
+export default PT_BR.map((links) => ({
+  ...links,
+  lang: "PT_BR",
+})) as RedirectLink[];

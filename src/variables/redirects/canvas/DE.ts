@@ -6,4 +6,4 @@ const DE: RedirectLinkPartial[] = [
   },
 ];
 
-export default DE.map((links) => ({ ...links, lang: "DE" }));
+export default DE.map((links) => ({ ...links, lang: "DE" })) as RedirectLink[];

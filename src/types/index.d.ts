@@ -25,15 +25,28 @@ declare type MarkdownCustomRenderer = {
   ) => ReactElement;
 };
 
+type RedirectBase = Lowercase<GlobalBrand | "aws" | "es-la" | "pt-br" | "de">;
+
 declare type RedirectLinkPartial = {
   title: string;
-  from:
-    | `/${Lowercase<GlobalBrand>}/${string}`
-    | `/${Lowercase<LangCode>}/${string}`;
+  from: `/${RedirectBase}` | `/${RedirectBase}/${Lowercase<string>}`;
   to: string;
 };
 
-declare type RedirectLink = RedirectLinkPartial & {
+/**
+ * Redirects for "Instructure" are not prefixed with `/instructure` in the
+ * `from` property.
+ */
+declare type UnbrandedRedirectLinkPartial = {
+  title: string;
+  from: `/${Lowercase<string>}`;
+  to: string;
+};
+
+declare type RedirectLink = (
+  | UnbrandedRedirectLinkPartial
+  | RedirectLinkPartial
+) & {
   lang: LangCode;
 };
 

@@ -6,7 +6,7 @@ const EN: RedirectLinkPartial[] = [
   },
   {
     title: "Try Canvas (FFT)",
-    from: "/try-canvas",
+    from: "/canvas/try",
     to: "https://www.instructure.com/try-canvas",
   },
   {
@@ -26,4 +26,4 @@ const EN: RedirectLinkPartial[] = [
   },
 ];
 
-export default EN.map((links) => ({ ...links, lang: "EN" }));
+export default EN.map((links) => ({ ...links, lang: "EN" })) as RedirectLink[];

@@ -30,4 +30,4 @@ const EN: RedirectLinkPartial[] = [
     to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20SOC%203.pdf",
   },
 ];
-export default EN.map((links) => ({ ...links, lang: "EN" }));
+export default EN.map((links) => ({ ...links, lang: "EN" })) as RedirectLink[];

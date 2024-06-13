@@ -26,4 +26,4 @@ const EN: RedirectLinkPartial[] = [
   },
 ];
 
-export default EN.map((links) => ({ ...links, lang: "EN" }));
+export default EN.map((links) => ({ ...links, lang: "EN" })) as RedirectLink[];

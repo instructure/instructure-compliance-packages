@@ -6,4 +6,7 @@ const ES_LA: RedirectLinkPartial[] = [
   },
 ];
 
-export default ES_LA.map((links) => ({ ...links, lang: "ES_LA" }));
+export default ES_LA.map((links) => ({
+  ...links,
+  lang: "ES_LA",
+})) as RedirectLink[];

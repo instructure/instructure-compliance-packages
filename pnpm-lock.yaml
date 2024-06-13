@@ -28,10 +28,10 @@ importers:
         specifier: ^6.1.1
         version: 6.1.1
       react:
-        specifier: ^19.0.0-rc-f994737d14-20240522
+        specifier: 19.0.0-rc-f994737d14-20240522
         version: 19.0.0-rc-f994737d14-20240522
       react-dom:
-        specifier: ^19.0.0-rc-f994737d14-20240522
+        specifier: 19.0.0-rc-f994737d14-20240522
         version: 19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522)
       react-markdown:
         specifier: ^9.0.1

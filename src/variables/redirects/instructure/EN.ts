@@ -1,4 +1,4 @@
-const EN: RedirectLinkPartial[] = [
+const EN: UnbrandedRedirectLinkPartial[] = [
   {
     title: "Security White Paper",
     from: "/security/dl",
@@ -151,4 +151,4 @@ const EN: RedirectLinkPartial[] = [
   },
 ];
 
-export default EN.map((links) => ({ ...links, lang: "EN" }));
+export default EN.map((links) => ({ ...links, lang: "EN" })) as RedirectLink[];
