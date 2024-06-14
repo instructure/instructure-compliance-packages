@@ -7,6 +7,9 @@
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Changed
+* Update to Instructure UI 9.1.0.
+
 ## [4.2.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.1...isp-site-v4.2.2)
 
 ### Fixed

@@ -20,7 +20,7 @@ code {
     background-repeat: no-repeat;
   }
 
-  #root > div {
+  #root>div {
     padding-bottom: 8rem;
   }
 
@@ -39,9 +39,12 @@ code {
  * INSTUI-4085
  * TopNavBar.Item with status="active" bolds Component text which
  * causes the container width to change and Items to "jump" on the screen.
+ * First-pass fix decreased letter spacing on active items, but is still not perfect.
+ * This rule also unsets the letter spacing.
  */
 [class$="topNavBarItem__content"] {
   font-weight: normal !important;
+  letter-spacing: inherit !important;
 }
 
 /**
@@ -58,7 +61,7 @@ code {
   text-decoration: inherit;
 }
 
-#language [id$="__label"]:not(:has( a)),
+#language [id$="__label"]:not(:has(a)),
 #language [id$="__label"] a {
   padding: 0.5rem 1rem;
 }
