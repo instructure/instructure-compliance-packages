@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.24.7",
-    "@biomejs/biome": "1.8.1",
+    "@biomejs/biome": "1.8.2",
     "@instructure/shared-types": "^9.1.0",
     "@octokit/types": "^13.5.0",
     "@types/react": "npm:types-react@19.0.0-rc.0",
