@@ -2,17 +2,17 @@ const EN: RedirectLinkPartial[] = [
   {
     title: "CAIQ",
     from: "/aws/caiq/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20CAIQ%20v4.0.2.pdf",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20CAIQ.pdf",
   },
   {
     title: "Cyber Essentials+ Certificate",
     from: "/aws/ce/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20CE%20Plus%20Certificate.pdf",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20Cyber%20Essentials%20Plus%20Certificate.pdf",
   },
   {
     title: "CSA Star Level 2 Certificate",
     from: "/aws/csa/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20CSA%20Star%20Level%202%20Certificate.pdf",
+    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Amazon%20Web%20Services/AWS%20CSA%20Star%20Certification.pdf",
   },
   {
     title: "ISO 27001 Certificate",
