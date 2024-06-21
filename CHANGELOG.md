@@ -1,14 +1,25 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.2...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.4...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+## [4.2.4](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.2...isp-site-v4.2.4)
+
+### Fixed
+
+* Fixed permalinks to AWS assets.
+* Typing of Parchment redirects.
+
 ### Changed
 * Update to Instructure UI 9.1.0.
+
+## [4.2.3]
+
+* Nothin' to see here 👀
 
 ## [4.2.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.1...isp-site-v4.2.2)
 
