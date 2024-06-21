@@ -1,23 +1,29 @@
+import global from "../../globals.ts";
+
+const branchName = "impact";
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
+
 const EN: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/impact/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact.zip",
+    to: `${repo}/archive/refs/heads/${branchName}.zip`,
   },
   {
     title: "Architecture Paper",
     from: "/impact/architecture/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/impact/Impact/Impact%20Architecture.pdf",
+    to: `${branch}/Impact/Impact%20Architecture.pdf`,
   },
   {
     title: "HECVAT Lite",
     from: "/impact/hecvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/impact/Impact/Impact%20HECVAT%20Lite.xlsx",
+    to: `${branch}/Impact/Impact%20HECVAT%20Lite.xlsx`,
   },
   {
     title: "TX-RAMP Level 2 Certification",
     from: "/impact/tx-ramp/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/impact/Impact/Impact%20TX-RAMP%20Level%202%20Certification.pdf",
+    to: `${branch}/Impact/Impact%20TX-RAMP%20Level%202%20Certification.pdf`,
   },
   {
     title: "Home (HE)",

@@ -1,8 +1,13 @@
+import global from "../../globals.ts";
+
+const branchName = "canvas-lms";
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
 const EN: RedirectLinkPartial[] = [
   {
     title: "Security Audit Report",
     from: "/canvas/audit/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/raw/canvas-lms/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf",
+    to: `${branch}/Canvas%20LMS/Canvas%20Security%20Audit%20Report.pdf`,
   },
   {
     title: "Try Canvas (FFT)",

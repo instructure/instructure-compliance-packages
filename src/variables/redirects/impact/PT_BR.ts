@@ -1,23 +1,29 @@
+import global from "../../globals.ts";
+
+const branchName = "impact-PT_BR";
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
+
 const PT_BR: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/pt-br/impact/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/impact-PT_BR.zip",
+    to: `${repo}/archive/refs/heads/${branchName}.zip`,
   },
   {
     title: "Papel de Arquitetura",
     from: "/pt-br/impact/arquitetura/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/impact-PT_BR/Impact/Impact%20Architecture_PT.pdf",
+    to: `${branch}/Impact/Impact%20Architecture_PT.pdf`,
   },
   {
     title: "HECVAT Lite",
     from: "/pt-br/impact/hecvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/impact-PT_BR/Impact/Impact%20HECVAT%20Lite.xlsx",
+    to: `${branch}/Impact/Impact%20HECVAT%20Lite.xlsx`,
   },
   {
     title: "Certificado de Nível 2 do TX-RAMP",
     from: "/pt-br/impact/tx-ramp/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/impact-PT_BR/Impact/Impact%20TX-RAMP%20Level%202%20Certification.pdf",
+    to: `${branch}/Impact/Impact%20TX-RAMP%20Level%202%20Certification.pdf`,
   },
 ];
 

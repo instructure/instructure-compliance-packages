@@ -1,28 +1,34 @@
+import global from "../../globals.ts";
+
+const branchName = "canvas-credentials";
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
+
 const EN: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/canvas/credentials/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-credentials.zip",
+    to: `${repo}/archive/refs/heads/${branch}.zip`,
   },
   {
     title: "VPAT",
     from: "/canvas/credentials/vpat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-credentials/Canvas%20Credentials/Canvas%20Credentials%20(formerly%20Badgr)%20VPAT.pdf",
+    to: `${branch}/Canvas%20Credentials/Canvas%20Credentials%20(formerly%20Badgr)%20VPAT.pdf`,
   },
   {
     title: "Architecture Paper",
     from: "/canvas/credentials/architecture/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-credentials/Canvas%20Credentials/Canvas%20Credentials%20Architecture.pdf",
+    to: `${branch}/Canvas%20Credentials/Canvas%20Credentials%20Architecture.pdf`,
   },
   {
     title: "HECVAT",
     from: "/canvas/credentials/hecvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-credentials/Canvas%20Credentials/Canvas%20Credentials%20HECVAT%20Full.xlsx",
+    to: `${branch}/Canvas%20Credentials/Canvas%20Credentials%20HECVAT%20Full.xlsx`,
   },
   {
     title: "TX-RAMP Certification",
     from: "/canvas/credentials/tx-ramp/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-credentials/Canvas%20Credentials/Canvas%20Credentials%20TX-RAMP%20Level%202%20Certification.pdf",
+    to: `${branch}/Canvas%20Credentials/Canvas%20Credentials%20TX-RAMP%20Level%202%20Certification.pdf`,
   },
   {
     title: "Home (HE)",

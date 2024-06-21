@@ -1,13 +1,19 @@
+import global from "../../globals.ts";
+
+const branchName = "elevate-standards-alignment";
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
+
 const EN: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/elevate/standards-alignment/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/elevate-standards-alignment.zip",
+    to: `${repo}/archive/refs/heads/${branchName}.zip`,
   },
   {
     title: "HECVAT Lite",
     from: "/elevate/standards-alignment/hecvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/elevate-standards-alignment/Elevate%20Standards%20Alignment/Elevate%20Standards%20Alignment%20HECVAT%20Lite.xlsx",
+    to: `${branch}/Elevate%20Standards%20Alignment/Elevate%20Standards%20Alignment%20HECVAT%20Lite.xlsx`,
   },
   {
     title: "Home",
