@@ -17,7 +17,7 @@
 ### Changed
 * Update to Instructure UI 9.1.0.
 
-## [4.2.3]
+## 4.2.3
 
 * Nothin' to see here 👀
 
