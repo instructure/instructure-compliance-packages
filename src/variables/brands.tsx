@@ -32,7 +32,6 @@ export const globalSubBrands: GlobalSubBrand[] = [
   "Mastery Connect",
   "Mastery Item Bank",
   "Mastery View Assessments",
-  "Elevate K-12 Analytics",
   "Elevate Data Quality",
   "Elevate Data Sync",
   "Learn Platform",
