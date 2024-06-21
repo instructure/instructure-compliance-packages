@@ -39,7 +39,7 @@ export const globalSubBrands: GlobalSubBrand[] = [
 
 export const ParentBrands: BrandDetail[] = [
   {
-    brandName: globalBrands[0],
+    brandName: "Instructure",
     get title() {
       return this.brandName.toLowerCase();
     },
