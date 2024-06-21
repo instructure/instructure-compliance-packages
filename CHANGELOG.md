@@ -7,6 +7,10 @@
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Changed
+
+* Add pnpm-lock.yaml to .gitignore.
+
 ## [4.2.4](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.2...isp-site-v4.2.4)
 
 ### Fixed
