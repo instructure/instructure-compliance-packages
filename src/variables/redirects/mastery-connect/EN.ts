@@ -1,18 +1,24 @@
+import global from "../../globals.ts";
+
+const branchName = "mastery-connect";
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
+
 const EN: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/mastery/connect/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/mastery-connect.zip",
+    to: `${repo}/archive/refs/heads/${branchName}.zip`,
   },
   {
     title: "Architecture Paper",
     from: "/mastery/connect/architecture/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/mastery-connect/Mastery%20Connect/Mastery%20Connect%20Architecture.pdf",
+    to: `${branch}/Mastery%20Connect/Mastery%20Connect%20Architecture.pdf`,
   },
   {
     title: "HECVAT Lite",
     from: "/mastery/connect/hecvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/mastery-connect/Mastery%20Connect/Mastery%20Connect%20HECVAT%20Lite.xlsx",
+    to: `${branch}/Mastery%20Connect/Mastery%20Connect%20HECVAT%20Lite.xlsx`,
   },
   {
     title: "Home",

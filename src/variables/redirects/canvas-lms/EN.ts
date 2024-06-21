@@ -1,33 +1,39 @@
+import global from "../../globals.ts";
+
+const branchName = "canvas-lms";
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
+
 const EN: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/canvas/lms/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms.zip",
+    to: `${repo}/archive/refs/heads/${branchName}.zip`,
   },
   {
     title: "Architecture Paper",
     from: "/canvas/lms/architecture/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20Architecture.pdf",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20Architecture.pdf`,
   },
   {
     title: "HECVAT",
     from: "/canvas/lms/hecvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20HECVAT%20Full.xlsx",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20HECVAT%20Full.xlsx`,
   },
   {
     title: "K12CVAT",
     from: "/canvas/lms/k12cvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20K12CVAT%20Full.xlsx",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20K12CVAT%20Full.xlsx`,
   },
   {
     title: "SOC 3 Report",
     from: "/canvas/lms/soc/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20SOC%203.pdf",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20SOC%203.pdf`,
   },
   {
     title: "TX-RAMP Level 2 Certificate",
     from: "/canvas/lms/txramp/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Canvas%20LMS/Canvas%20LMS%20TX-RAMP%20Level%202%20Certification.pdf",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20TX-RAMP%20Level%202%20Certification.pdf`,
   },
   {
     title: "Home (HE)",

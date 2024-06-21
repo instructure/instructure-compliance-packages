@@ -9,7 +9,6 @@ import CanvasStudio from "./canvas-studio/index.ts";
 import Canvas from "./canvas/index.ts";
 import ElevateDataQuality from "./elevate-data-quality/index.ts";
 import ElevateDataSync from "./elevate-data-sync/index.ts";
-import ElevateK12Analytics from "./elevate-k12-analytics/index.ts";
 import ElevateStandardsAlignment from "./elevate-standards-alignment/index.ts";
 import Elevate from "./elevate/index.ts";
 import Impact from "./impact/index.ts";
@@ -39,7 +38,6 @@ const Links: RedirectBrand[] = [
   Learnplatform,
   Parchment,
   Elevate,
-  ElevateK12Analytics,
   ElevateStandardsAlignment,
   ElevateDataQuality,
   ElevateDataSync,

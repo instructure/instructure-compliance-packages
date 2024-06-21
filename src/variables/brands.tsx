@@ -32,7 +32,6 @@ export const globalSubBrands: GlobalSubBrand[] = [
   "Mastery Connect",
   "Mastery Item Bank",
   "Mastery View Assessments",
-  "Elevate K-12 Analytics",
   "Elevate Data Quality",
   "Elevate Data Sync",
   "Learn Platform",
@@ -40,7 +39,7 @@ export const globalSubBrands: GlobalSubBrand[] = [
 
 export const ParentBrands: BrandDetail[] = [
   {
-    brandName: globalBrands[0],
+    brandName: "Instructure",
     get title() {
       return this.brandName.toLowerCase();
     },

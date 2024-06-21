@@ -1,53 +1,58 @@
+import global from "../../globals.ts";
+
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${global.branch}`;
+
 const EN: UnbrandedRedirectLinkPartial[] = [
   {
     title: "Security White Paper",
     from: "/security/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Security%20Overview.pdf",
+    to: `${branch}/Instructure/Instructure%20Security%20Overview.pdf`,
   },
   {
     title: "Business Continuity White Paper",
     from: "/bc/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20Business%20Continuity%20%26%20Disaster%20Recovery.pdf",
+    to: `${branch}/Instructure/Instructure%20Business%20Continuity%20%26%20Disaster%20Recovery.pdf`,
   },
   {
     title: "CAIQ",
     from: "/caiq/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20ESG%20Report%20FY2023.pdf",
+    to: `${branch}/Instructure/Instructure%20ESG%20Report%20FY2023.pdf`,
   },
   {
     title: "CSA Star Certificate",
     from: "/csa/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20CSA%20STAR%20Certificate.pdf",
+    to: `${branch}/Instructure/Instructure%20CSA%20STAR%20Certificate.pdf`,
   },
   {
     title: "Cyber Essentials+ Certificate",
     from: "/ce/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20Cyber%20Essentials%20Plus.pdf",
+    to: `${branch}/Instructure/Instructure%20Cyber%20Essentials%20Plus.pdf`,
   },
   {
     title: "Environmental, Social, and Governance Report",
     from: "/esg/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20ESG%20Report%20FY2023.pdf",
+    to: `${branch}/Instructure/Instructure%20ESG%20Report%20FY2023.pdf`,
   },
   {
     title: "Instructure, Inc. Certificate of Insurance",
     from: "/coi/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20Inc%20COI.pdf",
+    to: `${branch}/Instructure/Instructure%20Inc%20COI.pdf`,
   },
   {
     title: "Instructure Global Certificate of Insurance",
     from: "/coi-global/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20Global%20COI.pdf",
+    to: `${branch}/Instructure/Instructure%20Global%20COI.pdf`,
   },
   {
     title: "ISO 27001 Certificate",
     from: "/iso/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/raw/main/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate.pdf",
+    to: `${branch}/Instructure/Instructure%20ISO%2027001%20Compliance%20Certificate.pdf`,
   },
   {
     title: "Quality Assurance Program",
     from: "/qa/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms/Instructure/Instructure%20Quality%20Assurance%20Program.pdf",
+    to: `${branch}/Instructure/Instructure%20Quality%20Assurance%20Program.pdf`,
   },
   {
     title: "Home",

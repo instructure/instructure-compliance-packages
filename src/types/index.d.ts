@@ -172,3 +172,12 @@ declare type GithubRelease = {
   url?: string;
   zipball_url?: string;
 };
+
+declare type Global = {
+  owner: string;
+  repo: string;
+  branch: string;
+  url: string;
+  api: string;
+  raw: string;
+};

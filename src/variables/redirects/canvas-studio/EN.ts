@@ -1,18 +1,24 @@
+import global from "../../globals.ts";
+
+const branchName = "canvas-studio";
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
+
 const EN: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/canvas/studio/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-studio.zip",
+    to: `${repo}/archive/refs/heads/${branchName}.zip`,
   },
   {
     title: "Architecture Paper",
     from: "/canvas/studio/architecture/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-studio/Canvas%20Studio/Canvas%20Studio%20Architecture.pdf",
+    to: `${branch}/Canvas%20Studio/Canvas%20Studio%20Architecture.pdf`,
   },
   {
     title: "HECVAT",
     from: "/canvas/studio/hecvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-studio/Canvas%20Studio/Canvas%20Studio%20HECVAT%20Lite.xlsx",
+    to: `${branch}/Canvas%20Studio/Canvas%20Studio%20HECVAT%20Lite.xlsx`,
   },
   {
     title: "Home (HE)",
