@@ -16,9 +16,9 @@ const PT_BR: RedirectLinkPartial[] = [
     to: `${branch}/Impact/Impact%20Architecture_PT.pdf`,
   },
   {
-    title: "HECVAT Lite",
+    title: "HECVAT",
     from: "/pt-br/impact/hecvat/dl",
-    to: `${branch}/Impact/Impact%20HECVAT%20Lite.xlsx`,
+    to: `${branch}/Impact/Impact%20by%20Instructure%20HECVAT%20Full.xlsx`,
   },
   {
     title: "Certificado de Nível 2 do TX-RAMP",
