@@ -1,15 +1,25 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.4...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.3.0...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+## [4.3.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.4...isp-site-v4.3.0)
+
+### Added
+
+* Intelligent Insights
+
 ### Changed
 
 * Add pnpm-lock.yaml to .gitignore.
+
+### Fixed
+
+* git tagging can fail gracefully (allows releases w/o bumping semver).
 
 ## [4.2.4](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.2...isp-site-v4.2.4)
 
@@ -28,6 +38,7 @@
 ## [4.2.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.1...isp-site-v4.2.2)
 
 ### Fixed
+
 * Mastery View Formative short link.
 
 ### Changed
@@ -36,16 +47,19 @@
 ## [4.2.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.0...isp-site-v4.2.1)
 
 ### Fixed
+
 * Add missing contact email in Help menu.
 
 ## [4.2.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.1...isp-site-v4.2.0)
 
 ### Changed
+
 * Mdtoui component now uses `React.Lazy`.  React-Markdown calls now only load the relevant Components.
 
 ## [4.1.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.1.0...isp-site-v4.1.1)
 
 ### Added
+
 * Auto tagging on on deploys.
 
 ### Changed
