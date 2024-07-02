@@ -17,6 +17,7 @@ export const globalBrands: GlobalBrand[] = [
   "Elevate",
   "Impact",
   "LearnPlatform",
+  "Intelligent Insights",
   "Parchment",
 ] as const;
 
@@ -130,6 +131,20 @@ export const ParentBrands: BrandDetail[] = [
         <path d="M219.488 246.567C178.123 277.109 121.739 277.405 80.0539 247.301L86.1316 238.9C47.7742 211.418 31.5805 162.32 46.069 117.435L55.9454 119.307C69.5589 79.1029 107.372 52.0989 149.847 52.2484V13C90.0696 13.0663 37.1326 51.5854 18.7192 108.414C0.305744 165.242 20.6036 227.455 68.998 262.519C117.392 297.583 182.877 297.523 231.207 262.37C279.537 227.218 299.72 164.967 281.203 108.173L272.111 111.134C289.714 164.146 271.022 222.449 225.87 255.373" />
       </SVGIcon>
     ),
+  },
+  {
+    brandName: "Intelligent Insights",
+    get title() {
+      return this.brandName.toLowerCase();
+    },
+    get route() {
+      return `/${this.title.replace(/ /g, "-")}`;
+    },
+    get readme() {
+      return `${readmePrefix}-${this.brandName.replace(/ /g, "-")}.md`;
+    },
+    color: "#287A9F",
+    Icon: IconInstructureLogoLine,
   },
   {
     brandName: "Parchment",

@@ -13,6 +13,7 @@ import ElevateStandardsAlignment from "./elevate-standards-alignment/index.ts";
 import Elevate from "./elevate/index.ts";
 import Impact from "./impact/index.ts";
 import Instructure from "./instructure/index.ts";
+import IntelligentInsights from "./intelligent-insights/index.ts";
 import Learnplatform from "./learnplatform/index.ts";
 import MasteryConnect from "./mastery-connect/index.ts";
 import MasteryItemBank from "./mastery-item-bank/index.ts";
@@ -30,18 +31,19 @@ const Links: RedirectBrand[] = [
   CanvasCatalog,
   CanvasCommons,
   CanvasData,
+  CanvasCredentials,
   Mastery,
   MasteryConnect,
   MasteryItemBank,
   MasteryViewAssessments,
-  CanvasCredentials,
-  Learnplatform,
-  Parchment,
+  Impact,
   Elevate,
   ElevateStandardsAlignment,
   ElevateDataQuality,
   ElevateDataSync,
-  Impact,
+  Learnplatform,
+  IntelligentInsights,
+  Parchment,
 ];
 
 export default Links;

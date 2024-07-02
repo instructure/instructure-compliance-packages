@@ -25,7 +25,17 @@ declare type MarkdownCustomRenderer = {
   ) => ReactElement;
 };
 
-type RedirectBase = Lowercase<GlobalBrand | "aws" | "es-la" | "pt-br" | "de">;
+type RedirectBase = Lowercase<
+  /**
+   * Intelligent Insights includes a space, for redirects we need to replace it with a dash.
+   */
+  | Exclude<GlobalBrand, "Intelligent Insights">
+  | "intelligent-insights"
+  | "aws"
+  | "es-la"
+  | "pt-br"
+  | "de"
+>;
 
 declare type RedirectLinkPartial = {
   title: string;
@@ -85,6 +95,7 @@ declare type GlobalBrand =
   | "Elevate"
   | "Impact"
   | "LearnPlatform"
+  | "Intelligent Insights"
   | "Parchment";
 
 declare type GlobalSubBrand =
