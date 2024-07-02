@@ -26,11 +26,11 @@
     "lint": "biome lint",
     "lint:apply": "biome lint --write",
     "preview": "pnpm build:preview && vite preview",
-    "push": "pnpm build && pnpm tag && gh-pages -t -m \"Deploy v$(pnpm -s env:version)\" -d dist",
+    "push": "pnpm build && {pnpm tag || printf \"git tag already exists.\r\n\"} && gh-pages -t -m \"Deploy v$(pnpm -s env:version)\" -d dist",
     "sec": "pnpm sec:audit && pnpm sec:scan",
     "sec:audit": "snyk test && pnpm audit",
     "sec:scan": "snyk code test",
-    "tag": "git tag isp-site-v$(pnpm -s env:semver) || git push origin isp-site-v$(pnpm -s env:semver)"
+    "tag": "git tag isp-site-v$(pnpm -s env:semver) && git push origin isp-site-v$(pnpm -s env:semver)"
   },
   "dependencies": {
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
