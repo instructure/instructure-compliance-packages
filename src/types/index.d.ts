@@ -189,6 +189,7 @@ declare type Global = {
   repo: string;
   branch: string;
   url: string;
+  gh: string;
   api: string;
   raw: string;
 };

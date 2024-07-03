@@ -5,11 +5,9 @@ const global: Global = {
   repo: "instructure-security-package",
   branch: "main",
   url: packageJson.homepage.replace("/#/", ""),
+  gh: "https://github.com",
   api: "https://api.github.com",
   raw: "https://raw.githubusercontent.com",
 } as const;
 
-const { owner, repo, branch, url, api, raw } = global;
-
 export default global;
-export { owner, repo, branch, url, api, raw };

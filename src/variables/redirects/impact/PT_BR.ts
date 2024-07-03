@@ -1,6 +1,7 @@
 import global from "../../globals.ts";
 
 const branchName = "impact-PT_BR";
+const github = `${global.gh}/${global.owner}/${global.repo}/archive/refs/heads`;
 const repo = `${global.raw}/${global.owner}/${global.repo}`;
 const branch = `${repo}/${branchName}`;
 
@@ -8,7 +9,7 @@ const PT_BR: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/pt-br/impact/dl",
-    to: `${repo}/archive/refs/heads/${branchName}.zip`,
+    to: `${github}/${branchName}.zip`,
   },
   {
     title: "Papel de Arquitetura",

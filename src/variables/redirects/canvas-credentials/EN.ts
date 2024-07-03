@@ -1,6 +1,7 @@
 import global from "../../globals.ts";
 
 const branchName = "canvas-credentials";
+const github = `${global.gh}/${global.owner}/${global.repo}/archive/refs/heads`;
 const repo = `${global.raw}/${global.owner}/${global.repo}`;
 const branch = `${repo}/${branchName}`;
 
@@ -8,7 +9,7 @@ const EN: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/canvas/credentials/dl",
-    to: `${repo}/archive/refs/heads/${branch}.zip`,
+    to: `${github}/${branchName}.zip`,
   },
   {
     title: "VPAT",

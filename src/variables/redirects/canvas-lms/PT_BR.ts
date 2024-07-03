@@ -1,33 +1,40 @@
+import global from "../../globals.ts";
+
+const branchName = "canvas-lms-PT_BR";
+const github = `${global.gh}/${global.owner}/${global.repo}/archive/refs/heads`;
+const repo = `${global.raw}/${global.owner}/${global.repo}`;
+const branch = `${repo}/${branchName}`;
+
 const PT_BR: RedirectLinkPartial[] = [
   {
     title: "Compliance Package",
     from: "/pt-br/canvas/lms/dl",
-    to: "https://github.com/thedannywahl/instructure-security-package/archive/refs/heads/canvas-lms-PT_BR.zip",
+    to: `${github}/${branchName}.zip`,
   },
   {
     title: "Papel de Arquitetura",
     from: "/pt-br/canvas/lms/arquitetura/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms-PT_BR/Canvas%20LMS/Canvas%20LMS%20Architecture_PT.pdf",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20Architecture_PT.pdf`,
   },
   {
     title: "HECVAT",
     from: "/pt-br/canvas/lms/hecvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms-PT_BR/Canvas%20LMS/Canvas%20LMS%20HECVAT%20Full.xlsx",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20HECVAT%20Full.xlsx`,
   },
   {
     title: "K12CVAT",
     from: "/pt-br/canvas/lms/k12cvat/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms-PT_BR/Canvas%20LMS/Canvas%20LMS%20K-12CVAT-Lite.xlsx",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20K-12CVAT-Lite.xlsx`,
   },
   {
     title: "Relatório SOC 3",
     from: "/pt-br/canvas/lms/soc/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms-PT_BR/Canvas%20LMS/Canvas%20LMS%20SOC%203.pdf",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20SOC%203.pdf`,
   },
   {
     title: "Certificado de Nível 2 do TX-RAMP",
     from: "/pt-br/canvas/lms/txramp/dl",
-    to: "https://raw.githubusercontent.com/thedannywahl/instructure-security-package/canvas-lms-PT_BR/Canvas%20LMS/Canvas%20LMS%20TX-RAMP%20Level%202%20Certification.pdf",
+    to: `${branch}/Canvas%20LMS/Canvas%20LMS%20TX-RAMP%20Level%202%20Certification.pdf`,
   },
   {
     title: "Página inicial (HE)",
