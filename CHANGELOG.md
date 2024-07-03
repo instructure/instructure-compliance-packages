@@ -12,6 +12,7 @@
 ### Changed
 
 * Updated redirect links for Impact HECVAT
+* Build script handles existing git tags.
 
 ### Fixed
 
