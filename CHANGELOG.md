@@ -1,11 +1,21 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.3.0...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.3.01...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
+
+## [4.3.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.3.0...isp-site-v4.3.1)
+
+### Changed
+
+* Updated redirect links for Impact HECVAT
+
+### Fixed
+
+* Broken package download links
 
 ## [4.3.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.2.4...isp-site-v4.3.0)
 
