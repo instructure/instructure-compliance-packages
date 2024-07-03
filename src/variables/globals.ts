@@ -6,7 +6,7 @@ const global: Global = {
   branch: "main",
   url: packageJson.homepage.replace("/#/", ""),
   api: "https://api.github.com",
-  raw: "https://github.com",
+  raw: "https://raw.githubusercontent.com",
 } as const;
 
 const { owner, repo, branch, url, api, raw } = global;
