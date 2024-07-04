@@ -14,7 +14,7 @@ const EN: RedirectLinkPartial[] = [
   {
     title: "PCI AOC SAQ",
     from: "/canvas/catalog/aoc/dl",
-    to: `${branch}/Canvas%20Catalog/2023%20Instructure%20PCI%20DSS%20v3.2.1%20AOC%20SAQ-D%20Service%20Provider.pdf`,
+    to: `${branch}/Canvas%20Catalog/2024_Instructure_PCI_DSS_Summary.pdf`,
   },
   {
     title: "Architecture Paper",
