@@ -20,7 +20,7 @@ code {
     background-repeat: no-repeat;
   }
 
-  #root > div {
+  #root>div {
     padding-bottom: 8rem;
   }
 
@@ -34,18 +34,6 @@ code {
 }
 
 /* TopNavBar */
-
-/**
- * INSTUI-4085
- * TopNavBar.Item with status="active" bolds Component text which
- * causes the container width to change and Items to "jump" on the screen.
- * First-pass fix decreased letter spacing on active items, but is still not perfect.
- * This rule also unsets the letter spacing.
- */
-[class$="topNavBarItem__content"] {
-  font-weight: normal !important;
-  letter-spacing: inherit !important;
-}
 
 /**
  * React-router-dom Link (as Anchor) component is used to navigate between pages with hashrouter.
