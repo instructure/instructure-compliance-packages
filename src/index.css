@@ -20,7 +20,7 @@ code {
     background-repeat: no-repeat;
   }
 
-  #root>div {
+  #root > div {
     padding-bottom: 8rem;
   }
 
