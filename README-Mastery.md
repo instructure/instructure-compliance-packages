@@ -40,7 +40,7 @@ Die Mastery-Produktfamilie vereint Bewertungstools und hochwertige Inhalte, die 
 
 Mastery Connect ist das digitale Bewertungsmanagementsystem für K-12, das datengesteuerten Unterricht zum Kinderspiel macht.
 
-💾 [Herunterladen*](https://inst.bid/mastery/connect/dl/pt)
+💾 [Herunterladen*](https://inst.bid/mastery/connect/dl/de)
 
 _*Diese Version ist nur auf Englisch verfügbar._
 
