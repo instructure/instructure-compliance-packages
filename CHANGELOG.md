@@ -7,6 +7,18 @@
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+## [4.4.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.3.1...isp-site-v4.4.0)
+
+### Added
+
+* Intelligent Ingsights Documents
+* Intelligent Insights Redirects
+
+### Changed
+
+* Upgrade Inst-UI to 9.2.0
+* Remove TopNavBar:Active CSS override.
+
 ## [4.3.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.3.0...isp-site-v4.3.1)
 
 ### Changed
