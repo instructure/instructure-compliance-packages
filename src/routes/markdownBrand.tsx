@@ -67,7 +67,10 @@ export function Component(): React.ReactElement {
         margin="0 auto"
       >
         <style>{css}</style>
-        <View as="div" className={`${brand.toLowerCase()} markdown`}>
+        <View
+          as="div"
+          className={`${brand.toLowerCase().replace(" ", "-")} markdown`}
+        >
           <Markdown
             remarkPlugins={[remarkGfm, remarkGemoji]}
             rehypePlugins={[rehypeRaw]}
