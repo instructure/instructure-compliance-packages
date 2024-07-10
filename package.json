@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
-    "@instructure/ui": "^9.1.0",
+    "@instructure/ui": "^9.2.0",
     "gh-pages": "^6.1.1",
     "react": "19.0.0-rc-fb9a90fa48-20240614",
     "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
@@ -47,7 +47,7 @@
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.24.7",
     "@biomejs/biome": "1.8.2",
-    "@instructure/shared-types": "^9.1.0",
+    "@instructure/shared-types": "^9.2.0",
     "@octokit/types": "^13.5.0",
     "@types/react": "npm:types-react@19.0.0-rc.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
@@ -60,10 +60,10 @@
     "vite": "^5.3.3"
   },
   "engines": {
-    "node": ">=22.2.0",
-    "pnpm": ">=9.3.0"
+    "node": ">=22.4.1",
+    "pnpm": ">=9.5.0"
   },
-  "packageManager": "pnpm@9.5.0-beta.0+sha512.c2e60e7ed04e459591c982f2760cd8f7d1f48fe1ca4d46ccbbf8377df1eb2d077ace1e9d334b06250dddf23c03b4562858f77992b9a3bb4a93355aefd173df32",
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
   "pnpm": {
     "overrides": {
       "react": "^19.0.0-rc-f994737d14-20240522",
