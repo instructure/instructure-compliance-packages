@@ -44,7 +44,7 @@ const EN: RedirectLinkPartial[] = [
   {
     title: "Release Notes",
     from: "/intelligent-insights/releases",
-    to: "https://community.canvaslms.com/t5/Intelligent-Insights-Releases/ct-p/intelligent_insights_releases",
+    to: "https://community.canvaslms.com/t5/Intelligent-Insight-Release/tkb-p/intelligent_insights_releases",
   },
 ];
 
