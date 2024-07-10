@@ -10,11 +10,6 @@ const PT_BR: RedirectLinkPartial[] = [
     to: "https://www.instructure.com/pt-br/contato/",
   },
   {
-    title: "Contato",
-    from: "/pt-br/contato",
-    to: "https://www.instructure.com/pt-br/contato/",
-  },
-  {
     title: "Privacidade",
     from: "/pt-br/privacidade",
     to: "https://www.instructure.com/pt-br/canvas/privacidade/",
