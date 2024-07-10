@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.3.01...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.0...isp-site)
 
 ### Roadmap
 
