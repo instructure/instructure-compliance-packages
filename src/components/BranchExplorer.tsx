@@ -26,7 +26,7 @@ const BranchExplorer = ({
 
   // Effect for fetching the explorer content
   useEffect(() => {
-    Explorer(brand.toLowerCase().replace(" ", "-"), branch, l)
+    Explorer(brand.toLowerCase().replace(/\s/g, "-"), branch, l)
       .then((result) => setExplorerContent(result))
       .catch((error) => console.error(error));
   }, [brand, branch, l]);

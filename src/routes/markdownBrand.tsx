@@ -69,7 +69,7 @@ export function Component(): React.ReactElement {
         <style>{css}</style>
         <View
           as="div"
-          className={`${brand.toLowerCase().replace(" ", "-")} markdown`}
+          className={`${brand.toLowerCase().replace(/\s/g, "-")} markdown`}
         >
           <Markdown
             remarkPlugins={[remarkGfm, remarkGemoji]}
