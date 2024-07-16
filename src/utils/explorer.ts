@@ -71,6 +71,7 @@ function sortProduct(a: { path: string }, b: { path: string }): number {
   };
 
   const priorityStrings: string[] = [
+    "Google Cloud Platform",
     "Amazon Web Services",
     "Instructure",
   ] as const;
