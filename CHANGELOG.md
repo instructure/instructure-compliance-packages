@@ -1,11 +1,21 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.1...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.2...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
+
+## [4.4.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.1...isp-site-v4.4.2)
+
+### Fixed
+
+* Change replace function to global regex for Intelligent Insights.
+
+### Changed
+
+* Add Google Cloud Platform to Explorer sort function.
 
 ## [4.4.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.0...isp-site-v4.4.1)
 
