@@ -35,6 +35,7 @@ export const globalSubBrands: GlobalSubBrand[] = [
   "Mastery View Assessments",
   "Elevate Data Quality",
   "Elevate Data Sync",
+  "Elevate Standards Alignment",
   "Learn Platform",
 ] as const;
 

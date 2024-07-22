@@ -113,6 +113,7 @@ declare type GlobalSubBrand =
   | "Elevate K-12 Analytics"
   | "Elevate Data Quality"
   | "Elevate Data Sync"
+  | "Elevate Standards Alignment"
   | "Learn Platform";
 
 declare type BrandDetail = {
