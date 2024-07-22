@@ -7,6 +7,10 @@
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Changed
+
+* Upgrade to INST-UI v10
+
 ## [4.4.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.1...isp-site-v4.4.2)
 
 ### Fixed
