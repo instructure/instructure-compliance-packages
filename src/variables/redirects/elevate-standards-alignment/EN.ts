@@ -31,6 +31,11 @@ const EN: RedirectLinkPartial[] = [
     from: "/elevate/standards-alignment/guides",
     to: "https://community.canvaslms.com/t5/Elevate-Standards-Alignment/tkb-p/ab_basics",
   },
+  {
+    title: "Standards",
+    from: "/elevate/standards-alignment/standards",
+    to: "https://community.canvaslms.com/t5/Elevate-Standards-Alignment/ct-p/ab_standards",
+  },
 ];
 
 export default EN.map((links) => ({ ...links, lang: "EN" })) as RedirectLink[];
