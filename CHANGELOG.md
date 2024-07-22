@@ -1,11 +1,17 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.2...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.3...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
+
+## [4.4.3](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.2...isp-site-v4.4.3)
+
+### Fixed
+
+* Missing ESA redirect links
 
 ### Changed
 
