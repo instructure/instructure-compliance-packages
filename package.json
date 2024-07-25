@@ -56,8 +56,8 @@
     "node-jq": "^4.4.0",
     "snyk": "^1.1292.1",
     "snyk-policy": "^3.0.0",
-    "typescript": "^5.5.3",
-    "vite": "^5.3.4"
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
   },
   "engines": {
     "node": ">=22.4.1",
