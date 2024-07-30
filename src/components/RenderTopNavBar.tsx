@@ -12,13 +12,13 @@ import {
   TopNavBar,
   View,
 } from "@instructure/ui";
+import { useState } from "react";
 import { Link as Anchor, useNavigate } from "react-router-dom";
 import strings from "../strings/header.ts";
 import { getStrings } from "../utils/langs.ts";
 import { ParentBrands } from "../variables/brands.tsx";
 import { globalLangDetails } from "../variables/langs.ts";
 import { useSearchContext } from "./SearchContext.tsx";
-import { useState } from "react";
 
 /**
  * Component that renders the top navigation bar.
@@ -36,7 +36,7 @@ function RenderTopNavBar({
   const Brands: BrandDetail[] = [...ParentBrands];
   Brands.shift();
 
-  const { query, setQuery } = useSearchContext();
+  const { setQuery } = useSearchContext();
   const [tmpQuery, setTmpQuery] = useState<string>("");
 
   const navigate = useNavigate();
