@@ -194,3 +194,41 @@ declare type Global = {
   api: string;
   raw: string;
 };
+
+declare interface SearchContextType {
+  query: string;
+  setQuery: Dispatch<SetStateAction<string>>;
+}
+
+declare type SearchResult =
+  | string
+  | null
+  | { string: string; message?: string; type?: string; status?: string }
+  | Record<string, unknown>;
+
+declare type TextMatch = {
+  fragment: string;
+  matches: [
+    {
+      indices: number[];
+      text: string;
+    },
+  ];
+};
+
+declare type TextMatches = TextMatch[];
+
+declare type IndexObject = {
+  [key: number]: string;
+};
+
+declare type GithubSearchAPI = {
+  total_count: number;
+  incomplete_results: boolean;
+  items: [
+    {
+      name: string;
+      text_matches: TextMatches;
+    },
+  ];
+};

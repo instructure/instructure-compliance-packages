@@ -34,6 +34,7 @@ async function getGithubRepoContents(
         Authorization: import.meta.env?.GITHUB_TOKEN
           ? `token ${import.meta.env.GITHUB_TOKEN}`
           : "",
+        "X-GitHub-Api-Version": "2022-11-28",
       },
     });
     const data = await response.json();

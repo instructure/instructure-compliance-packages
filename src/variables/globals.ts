@@ -11,3 +11,4 @@ const global: Global = {
 } as const;
 
 export default global;
+export const { owner, repo, branch, url, gh, api, raw } = global;

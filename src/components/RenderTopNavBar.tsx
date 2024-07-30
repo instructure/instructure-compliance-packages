@@ -3,17 +3,22 @@ import {
   Heading,
   IconDiscussionLine,
   IconQuestionLine,
+  IconSearchLine,
   InlineList,
   Link,
+  ScreenReaderContent,
   Text,
+  TextInput,
   TopNavBar,
   View,
 } from "@instructure/ui";
-import { Link as Anchor } from "react-router-dom";
+import { Link as Anchor, useNavigate } from "react-router-dom";
 import strings from "../strings/header.ts";
 import { getStrings } from "../utils/langs.ts";
 import { ParentBrands } from "../variables/brands.tsx";
 import { globalLangDetails } from "../variables/langs.ts";
+import { useSearchContext } from "./SearchContext.tsx";
+import { useState } from "react";
 
 /**
  * Component that renders the top navigation bar.
@@ -30,6 +35,26 @@ function RenderTopNavBar({
   const s = getStrings(strings, l);
   const Brands: BrandDetail[] = [...ParentBrands];
   Brands.shift();
+
+  const { query, setQuery } = useSearchContext();
+  const [tmpQuery, setTmpQuery] = useState<string>("");
+
+  const navigate = useNavigate();
+
+  //@TODO: Type the event
+  const handleSearchNavigation = (
+    //@ts-ignore
+    e: React.KeyboardEvent<TextInputOwnProps>,
+  ) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      e.stopPropagation();
+      setQuery(tmpQuery);
+      navigate(
+        `/search${l !== "EN" ? `/${l.toLowerCase().split("_")[0]}` : ""}`,
+      );
+    }
+  };
 
   const currentBrand =
     Brands[Brands.findIndex((b) => b.brandName === brand)] ?? ParentBrands[0];
@@ -98,9 +123,43 @@ function RenderTopNavBar({
                 }
               >
                 <TopNavBar.Item
+                  id="search"
+                  variant="icon"
+                  showSubmenuChevron={false}
+                  tooltip={s.search}
+                  renderIcon={<IconSearchLine />}
+                  customPopoverConfig={{
+                    on: "click",
+                    children: (
+                      <View as="div" padding="x-small">
+                        <TextInput
+                          id="searchInput"
+                          width="100%"
+                          display="block"
+                          renderLabel={
+                            <ScreenReaderContent>
+                              {s.search}
+                            </ScreenReaderContent>
+                          }
+                          renderBeforeInput={() => (
+                            <IconSearchLine inline={false} />
+                          )}
+                          placeholder={`${s.search}...`}
+                          onChange={(_e, v) => setTmpQuery(v)}
+                          onKeyDown={handleSearchNavigation}
+                        />
+                      </View>
+                    ),
+                  }}
+                >
+                  {s.search}
+                </TopNavBar.Item>
+                <TopNavBar.Item
                   id="langSwitcher"
-                  showSubmenuChevron={true}
+                  //@TODO: W/ Chevron enabled the Item width includes the ScreenReaderContent.
+                  showSubmenuChevron={false}
                   tooltip={s.language}
+                  variant="icon"
                   renderIcon={<IconDiscussionLine />}
                   renderSubmenu={
                     <Drilldown id="language" rootPageId="language">
@@ -137,10 +196,10 @@ function RenderTopNavBar({
                   id="info"
                   showSubmenuChevron={false}
                   tooltip={s.help}
+                  variant="icon"
                   renderIcon={<IconQuestionLine />}
                   customPopoverConfig={{
                     on: "click",
-                    placement: "bottom end",
                     shouldContainFocus: true,
                     children: (
                       <View
