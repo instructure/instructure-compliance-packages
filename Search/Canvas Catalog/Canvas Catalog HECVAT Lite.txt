@@ -1,0 +1,1060 @@
+HECVAT - Lite | Vendor Response				Version 3.04																					
+Vendor Response																									
+DATE-01	Date	10/4/24																							
+General Information																									
+"In order to protect the institution and its systems, vendors whose products and/or services will access and/or host institutional data must complete the Higher Education Community Vendor Assessment Toolkit. Throughout this tool, anywhere where the term data is used, this is an all-encompassing term including at least data and metadata. Answers will be reviewed by institution security analysts upon submittal. This process will assist the institution in preventing breaches of protected information and comply with institution policy, state, and federal law. This is intended for use by vendors participating in a Third Party Security Assessment and should be completed by a vendor."																									
+GNRL-01	Vendor Name	Instructure																							
+GNRL-02	Product Name	Canvas Catalog																							
+GNRL-03	Product Description	"Canvas Catalog is a simple, modern, elegant course catalog and a branded marketplace for all of your institution’s course offerings."																							
+GNRL-04	Web Link to Product Privacy Notice	inst.bid/privacy																							
+GNRL-05	Web Link to Accessibility Statement or VPAT	inst.bid/a11y																							
+GNRL-06	Vendor Contact Name	See GNRL-08 for Instructure's contact information.																							
+GNRL-07	Vendor Contact Title	See GNRL-08 for Instructure's contact information.																							
+GNRL-08	Vendor Contact Email	"Please reach out to your designated Customer Success Manager or Sales representative.
+ 
+ For new clients, contact info@instructure.com"																							
+GNRL-09	Vendor Contact Phone Number	"For existing customers, please reach out to your Customer Success Manager or Sales representative. For new clients:
+ 
+ • North America and Latin America: 1.800.203.6755
+ 
+ • Europe, Middle East, and Africa: 0800 358 4330
+ 
+ • Australia and Asia Pacific: 1300 956 763 (+61 2 8038 5069 for callers outside Australia)
+ 
+ • Hong Kong: 800 906 129"																							
+GNRL-10	Vendor Accessibility Contact Name	See GNRL-12 for Instructure's accessibility contact information.																							
+GNRL-11	Vendor Accessibility Contact Title	See GNRL-12 for Instructure's accessibility contact information.																							
+GNRL-12	Vendor Accessibility Contact Email	"Please reach out to your designated Customer Success Manager or Sales representative.
+ 
+ For product accessibility issues, contact accessibility@instructure.com"																							
+GNRL-13	Vendor Accessibility Contact Phone Number	See GNRL-12 for Instructure's accessibility contact information.																							
+GNRL-14	Vendor Hosting Regions	"Instructure serves a broad range of data zones globally including the United States (West & East), Canada, Australia, Singapore, Dublin, and Frankfurt."																							
+GNRL-15	Vendor Work Locations	"With offices in the United States, United Kingdom, Hungary, Australia, Singapore, and Brazil, Instructure serves a broad range of customers globally."																							
+Vendor Instructions																									
+Step 1: Complete each section answering each set of questions in order from top to bottom; the built-in formatting logic relies on this order. Step 2: Submit the completed Higher Education Community Vendor Assessment Toolkit - Lite to the requesting institution.																									
+Company Overview		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+COMP-01	"Describe your organization’s business background and ownership structure, including all parent and subsidiary relationships."	"Instructure, Inc. was founded in 2008 by two enterprising grad students with one mission: to provide an innovative, open, cloud-based teaching and learning platform for institutions and organizations that would deliver a far greater user experience than other learning management systems (LMSs) available at the time. The outcome was Canvas, a ground-breaking LMS that officially launched to market in 2011 and quickly became the fastest growing educational LMS in the US market.
+
+From this strong foundation we developed the Instructure Learning Platform, a set of integrated teaching and learning products built on cloud technology, coupled with service offerings and a thriving partner ecosystem, that together enable the creation and exchange of innovation through our ecosystem.
+Today, Instructure supports nearly 8,000 client institutions and tens of millions of users in more than 100 countries. Higher education institutions, K-12 schools, departments of education, and vocational education providers across the globe now rely on Canvas as the cornerstone of their digital education strategy. For our complete story, please visit inst.bid/story.
+
+Instructure, Inc. is the parent company of all global subsidiaries, including:
+•  Instructure Global Limited (UK)
+•  Instructure Hungary Kft
+•  Instructure Australia Pty Ltd
+•  Instructure Brazil Ltda
+•  Instructure Singapore Pte. Ltd.
+
+The ultimate parent company of Instructure, Inc. is Instructure Holdings, Inc., a company listed on the New York Stock Exchange (stock ticker 'INST') and currently majority held by Thoma Bravo, LLC. Thoma Bravo is a leading private equity firm with a 40-year history, including over $35 billion in investor commitments, and a focus on investing in software and technology companies.
+
+Instructure filings are available online at: https://inst.bid/investors
+
+
+"		N/A	 																				
+COMP-02	Have you had an unplanned disruption to this product/service in the last 12 months?	No	All unplanned disruptions and outages can be tracked via the Instructure Status page located at: https://inst.bid/status. Our annual uptime guarantee is 99.9% uptime.	N/A	 																				
+COMP-03	Do you have a dedicated Information Security staff or office?	Yes	"Instructure has a dedicated security function, which includes a team of security engineers, compliance managers, and a Chief Information Security and Privacy Officer (CISPO) who is responsible for overseeing the security program. The security team consists of members with years of security experience, degrees in security systems, certifications in various security domains, and participation in security-related conferences and trainings. Security isn’t treated as the sole responsibility of our Security team though - we ensure our employees understand that security is everyone’s responsibility. All members of Product and Engineering teams are thoroughly trained on secure coding practices, testing, and conducting thorough peer reviews with a focus on security. Likewise, every employee receives regular training on security and privacy as it pertains to their work in protecting our customers."	"Describe your Information Security Office, including size, talents, resources, etc."	 																				
+COMP-04	"Do you have a dedicated Software and System Development team(s)? (e.g. Customer Support, Implementation, Product Management, etc.)"	Yes	"Our software and system development team in total includes over 300 development engineers, and over 100 product management staff members spanning two global regions. Our engineers are organized into five teams including: Core Development, Mobile Management, Quality Assurance, Operations, and IT. Our product management staff are broken out into Product Management, User Experience, and Research and Education teams.
+ 
+ The Canvas Catalog team is made up of approximately 15 dedicated roles, including Product Management and Engineering teams. Canvas Catalog is supported by various Customer Success roles across the globe."	"Describe the structure and size of your Software and System Development teams. (e.g. Customer Support, Implementation, Product Management, etc.)"	 																				
+COMP-05	Does your product process protected health information (PHI) or any data covered by the Health Insurance Portability and Accountability Act?	No		 	 																				
+COMP-06	Will data regulated by PCI DSS reside in the vended product?	No	"For payments, Canvas Catalog redirects users to integrated payment gateways set up by the client institution, e.g. Stripe. Catalog is compliant with PCI DSS as demonstrated by Instructure's self-assessment questionnaire (SAQ) form D and the Canvas Catalog PCI Responsibility Matrix. These documents are made available in the Canvas Catalog Compliance Package provided by Instructure available at inst.bid/canvas/catalog/dl"	 	 																				
+COMP-07	Use this area to share information about your environment that will assist those who are assessing your company data security program.			Share any details that would help information security analysts assess your product.	 																				
+Documentation		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+DOCU-01	Have you undergone a SSAE 18 / SOC 2 audit?	Yes	"Canvas Catalog is SOC 2 audited and a SOC 2 report can be provided under mutual NDA. 
+
+Instructure's information security policies and standards are independently audited annually on the International Organization for Standardization's (ISO) 27000 suite of standards. We currently hold SOC 2 Type II reports for: Canvas LMS, Canvas Credentials, Canvas Studio, Canvas Catalog, Canvas Student Pathways (previously Portfolium), Elevate and Mastery Connect."	"Provide the date of assessment and include a SOC 2 Type 2 (preferred) or SOC 3 report. If you have a SOC2 or SOC3 report, state how to obtain a copy. Indicate if your hosting provider was the subject of the audit."	 																				
+DOCU-02	Have you completed the Cloud Security Alliance (CSA) CAIQ?	Yes	Instructure's CAIQ and CSA STAR Level 1 certificate are included in the Canvas LMS Compliance Package available at inst.bid/canvas/lms/dl. Our listing can be viewed on the CSA STAR Registry at: inst.bid/csa	Please include a copy with your response and include a URL for the published assessment.	 																				
+DOCU-03	Have you received the Cloud Security Alliance STAR certification?	Yes	Instructure is CSA STAR Level 1 Self Assessed. Our listing can be viewed on the CSA STAR Registry at: inst.bid/csa	"Provide date of certification, any supporting documentation, and a URL for the certification."	 																				
+DOCU-04	"Do you conform with a specific industry standard security framework? (e.g. NIST Cybersecurity Framework, CIS Controls, ISO 27001, etc.)"	Yes	"Instructure has invested in operating a robust information security program which is founded on the guidance provided by the International Organisation for Standardization's (ISO) 27000 suite of standards. Instructure also uses NIST's 800-53 suite of controls as a guide to securing Instructure services where applicable and relevant, as well as following information security best practices as set forth by the AICPA's Trust Service Principles and Criteria."	"Provide documentation on how your organization conforms to your chosen framework and indicate current certification levels, where appropriate."	 																				
+DOCU-05	Can the systems that hold the institution's data be compliant with NIST SP 800-171 and/or CMMC Level 3 standards?	Yes	"Instructure currently has no requirement to conform to NIST SP 800-171 and is not CMMC certified, however, based on our ISO 27001 certification, we believe CMMC Level 3 could be achieved."	"Indicate level, Supplier Performance Risk System ('SPRS') Score or certification information."	 																				
+DOCU-06	Can you provide overall system and/or application architecture diagrams including a full description of the data flow for all components of the system?	Yes	Architecture diagrams are available in our Canvas Catalog Complinance Package available at inst.bid/canvas/catalog/dl	Provide your diagrams (or a valid link to it) upon submission.	 																				
+DOCU-07	Does your organization have a data privacy policy?	Yes	Please see: inst.bid/privacy	Provide your data privacy document (or a valid link to it) upon submission.	 																				
+DOCU-08	"Do you have a documented, and currently implemented, employee onboarding and offboarding policy?"	Yes	"Instructure maintains a number of policies that form our employee onboarding and offboarding policies. This includes IT Acceptable Use, Network Security, Onboarding and Termination checklists, and Induction policies."	Provide a reference to your employee onboarding and offboarding policy and supporting documentation or submit it along with this fully-populated HECVAT.	 																				
+DOCU-09	Do you have a well documented Business Continuity Plan (BCP) that is tested annually?	Yes		Provide a reference to your BCP and supporting documentation or submit it along with this fully-populated HECVAT.	 																				
+DOCU-10	Do you have a well documented Disaster Recovery Plan (DRP) that is tested annually?	Yes		Provide a reference to your DRP and supporting documentation or submit it along with this fully-populated HECVAT.	 																				
+DOCU-11	Do you have a documented change management process?		"A documented change management process is in place, which is in line with ISO 27001 standards. Instructure's ISO 27001 certificate is available in the Canvas Catslog Compliance Package."	 	 																				
+DOCU-12	Has a VPAT or ACR been created or updated for the product and version under consideration within the past year?	No		Please state your plans (when and by whom) to complete a VPAT.	 																				
+DOCU-13	Do you have documentation to support the accessibility features of your product?	No	"Instructure is committed to delivering products that are accessible and inclusive. We target WCAG 2.1 AA standards in our development and have established our own NFR ladders regarding accessibility. We also recognize that software accessibility is often a journey more than it is a destination, and so we acknowledge and commit to continuous improvement.
+ 
+ As part of the development process, new and changed interfaces are evaluated for continued compliance with WCAG 2.1 AA. We employ accessibility experts to go above and beyond the written guidelines to ensure we keep advancing the product toward an enjoyable experience for people with a range of accessibility needs, including those using assistive technologies."	"Provide plans for any documentation that would make accessible content, features and functions easily knowable by end users."	 																				
+IT Accessibility 		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+ITAC-01	Has a third party expert conducted an accessibility audit of the most recent version of your product?	No	"At this time, Catalog has not undergone a WCAG 2.1 external audit. As with all Instructure products, as accessibility issues are discovered they will be prioritized and corrected to ensure ongoing compliance."	"Please provide plans (when and by whom) any audit is planned, if any or rationale if not."	 																				
+ITAC-02	Do you have a documented and implemented process for verifying accessibility conformance?	Yes	"Testing is regularly conducted using automated tools, assistive technology (such as screen readers, keyboard testing, etc.), and coding best practices. Mechanisms are in place for logging and fixing accessibility defects."	Describe your processes and methodologies for validating accessibility conformance.	 																				
+ITAC-03	Have you adopted a technical or legal accessibility standard of conformance for the product in question?	No	"Instructure is committed to delivering products that are accessible and inclusive. We target WCAG 2.1 AA standards in our development and have established our own NFR ladders regarding accessibility. We also recognize that software accessibility is often a journey more than it is a destination, and so we acknowledge and commit to continuous improvement."	Summarize your decision to not adopt a technical or legal standard of conformance for the product in question.	 																				
+ITAC-04	"Can you provide a current, detailed accessibility roadmap with delivery timelines?"	No	"While we do have internal plans and track major initiatives in the accessibility space, we don't have a publicly available roadmap because accessibility is built into every aspect of our products. There are no destinations to reach on a roadmap - accessibility is a permanent and ongoing process from design through to support for our customers and we are constantly working at ensuring our products are accessible and conform to industry frameworks such as WCAG."	Please provide any plans to develop and share an accessibility product roadmap in the future.	 																				
+ITAC-05	Do you expect your staff to maintain a current skill set in IT accessibility?	Yes	"Accessibility is ingrained from Product Design through Engineering, and we have dedicated accessibility staff, subject matter experts, and Product Managers. Internally, from all aspects of the business, we maintain a number of accessibility advocates who meet regularly to raise issues, discuss trends, and maintain skills and knowledge in the accessibility space."	"Provide any further relevant information about how expertise is maintained; include any accessibility certifications staff may hold (e.g., IAAP WAS <https://www.accessibilityassociation.org/certifications> or DHS Trusted Tester <https://section508.gov/test/trusted-tester>."	 																				
+ITAC-06	Do you have a documented and implemented process for reporting and tracking accessibility issues?	Yes	"Any accessibility issues detected during testing or use of Canvas Catalog (internal or external) are filed to our issue-tracking system, Jira. Once entered, they are assigned to the internal accessibility team for triage and assessment. These issues are then tracked through to resolution in accordance with company policy and industry best practice recommendations. Our processes are evaluated against ISO 27001 standards."	Describe the process and any recent examples of fixes as a result of the process.	 																				
+ITAC-07	Do you have documented processes and procedures for implementing accessibility into your development lifecycle?	Yes	"Instructure has a dedicated team of accessibility specialists that support Instructure's accessibility engineering efforts. The team is responsible for Canvas Catalog accessibility needs, development, and testing, along with helping train new engineers on accessible development practices, supporting development projects with design reviews, as well as audits as requested, and interacting with customers, external auditors and stakeholders. Our accessibility team ensures we strive for conformance to standards and features are developed that provide full capabilities and a positive learning and teaching experience to all users."	Provide further details or multiple means in Additional Information.	 																				
+ITAC-08	Can all functions of the application or service be performed using only the keyboard?	Yes	Canvas Catalog supports standard keyboard navigation and ensures that keyboard users cannot be trapped in a subset of content.	State when and on which platform this was verified.	 																				
+ITAC-09	"Does your product rely on activating a special ‘accessibility mode,’ a ‘lite version’ or accessing an alternate interface for accessibility purposes?"	No		 	 																				
+Application/Service Security		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+HLAP-01	"Are access controls for institutional accounts based on structured rules, such as role-based access control (RBAC), attribute-based access control (ABAC) or policy-based access control (PBAC)?"	Yes	"Canvas Catalog follows industry-standard ""authenticate, then authorize"" practice using a role-based access control (RBAC) methodology. Catalog first authenticates a user into the system, then based on their context, performs a role lookup. Catalog roles are simplified to admin, sub-catalog admin and student. Canvas Admins are automatically Catalog admins, sub-catalog admin rights can be granted to any other users via the admin UI and this will restrict their access to one or more sub-catalogs. All other users are considered normal students."	Describe available roles.	 																				
+HLAP-02	"Are access controls for staff within your organization based on structured rules, such as RBAC, ABAC, or PBAC?"	Yes	"Instructure's primary method of assigning and maintaining consistent access controls and access rights is through the implementation of Role-Based Access Control (RBAC). Wherever feasible, rights and restrictions shall be allocated to groups or roles. Individual user accounts may be granted additional permissions as needed with approval from the system owner or authorized party. Instructure shall determine the type and level of access granted to individual users based on the “principle of least privilege.” This principle states that users are only granted the level of access absolutely required to perform their job functions. Permissions and access rights not expressly granted shall be, by default, prohibited."	 	 																				
+HLAP-03	Do you have a documented and currently implemented strategy for securing employee workstations when they work remotely? (i.e. not in a trusted computing environment)	Yes	"Instructure maintains an IT Acceptable Use Policy that addresses the acceptable use of work from home (WFH) devices and outlines prohibited uses such as jailbroken devices, storing of customer data, or using devices without Instructure's DM-profile present. Instructure's DM platforms (Jamf & Azure), can track, manage, and secure Instructure-owned devices remotely on demand."	Provide supporting documentation of your strategy.	 																				
+HLAP-04	Does the system provide data input validation and error messages?	Yes	"Where possible, forms and fields provide helpful messaging to users to assist with accurate and adequate data input. Canvas Catalog is continually being improved to better serve users in user experience and understanding."	Describe how your system(s) provide data input validation and error messages.	 																				
+HLAP-05	Are you using a web application firewall (WAF)?	Yes	Canvas Catalog uses the AWS WAF with a customized ruleset on every external endpoint.	Describe the currently implemented WAF.	 																				
+HLAP-06	"Do you have a process and implemented procedures for managing your software supply chain (e.g. libraries, repositories, frameworks, etc)"	Yes	"Managing our software supply chain forms part of our Vulnerability Management Policy. Instructure's information security policies and standards are based on information security best practices as set forth by the International Organization for Standardization's (ISO) 27000 suite of standards, NIST's 800-53 suite of controls, and the AICPA's Trust Service Principles and Criteria. Instructure maintains ISO 27001 certification."	Provide supporting documentation of your processes.	 																				
+"Authentication, Authorization, and Accounting"		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+HLAA-01	Does your solution support single sign-on (SSO) protocols for user and administrator authentication?	Yes	"Canvas Catalog authentication for users is managed by Canvas LMS. This includes the enabling of SSO solutions. Canvas supports centralised identity management and delegated authentication via integrations with external identity providers (IdPs) including Central Authentication Service (CAS), Clever, Microsoft (Active Directory, Azure AD), OAuth, OpenID Connect, SAML 2.0 and Shibboleth. Canvas supports federated identity management and Single Sign-On (SSO) via integrations with SAML, Shibboleth, CAS, and Microsoft (AD/Azure). Catalog will use the primary Canvas authentication method or a discovery page if configured."	"Describe how strong authentication is enforced (e.g., complex passwords, multifactor tokens, certificates, biometrics, aging requirements, re-use policy)."	 																				
+HLAA-02	Does your organization participate in InCommon or another eduGAIN affiliated trust federation?	Yes	Instructure's InCommon membership may be viewed at: https://incommon.org/community-organization/?id=0015000000m45ZFAAY	List the entityIds registered in the Additional Information column.	 																				
+HLAA-03	Does your application support integration with other authentication and authorization systems?	Yes	"Canvas Catalog authentication for users is managed by Canvas LMS which includes centralised identity management and delegated authentication via integrations with external identity providers (IdPs) including Central Authentication Service (CAS), Clever, Microsoft (Active Directory, Azure AD), OAuth, OpenID Connect, SAML 2.0 and Shibboleth."	"List which systems and versions supported (such as Active Directory, Kerberos, or other LDAP compatible directory) in Additional Info."	 																				
+HLAA-04	"Does your solution support any of the following Web SSO standards? [e.g., SAML2 (with redirect flow), OIDC, CAS, or other]"	Yes	"Canvas Catalog supports SAML2-based (e.g. Shibboleth, Okta) and Oauth2 based-SSO communication (e.g. OpenID) via Canvas LMS LMS authentication methods."	"State the Web SSO standards supported by your solution and provide additional details about your support, including framework(s) in use, how information is exchanged securely, etc."	 																				
+HLAA-05	Do you support differentiation between email address and user identifier?	Yes		 	 																				
+HLAA-06	"Do you allow the customer to specify attribute mappings for any needed information beyond a user identifier? [e.g., Reference eduPerson, ePPA/ePPN/ePE ] "	Yes		 	 																				
+HLAA-07	"Are audit logs available to the institution that include AT LEAST all of the following; login, logout, actions performed, timestamp, and source IP address?"	Yes	"Canvas Catalog can provide User Login, Logout, and IP Address via logging that occurs in Canvas LMS. Some logging, for example, security and application services, is managed by Instructure on behalf of customers. "	 	 																				
+HLAA-08	"If you don't support SSO, does your application and/or user-frontend/portal support multi-factor authentication? (e.g. Duo, Google Authenticator, OTP, etc.)"	Yes	SSO integration is available with IDPs that may be configured to use various MFA techniques. Authentication in Canvas Catalog is managed by Canvas LMS.	"List all supported multi-factor authentication methods, technologies, and/or products and provide a brief summary of each."	 																				
+HLAA-09	Does your application automatically lock the session or log-out an account after a period of inactivity?	Yes		Describe the default behavior of this capability.	 																				
+Systems Management		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+HLSY-01	"Do you have a systems management and configuration strategy that encompasses servers, appliances, cloud services, applications, and mobile devices (company and employee owned)?"	Yes	"Instructure maintains both a Network Security Policy and a IT Acceptable Use Policy which outline procedures, processed and policies for all endpoints on both production and corporate networks. These policies are evaluated against both SOC 2 and ISO 27001 standards. Instructure also maintains a Bring Your Own Device (BYOD) policy which prohibits a number of insecure parameters and ensures BYOD devices only connect through trusted networks."	Summarize your systems management and configuration strategy.	 																				
+HLSY-02	Will the institution be notified of major changes to your environment that could impact the institution's security posture?	Yes	"Instructure emails detailed release notes to our customer’ administrators in advance of the release date (when the release package is deployed to the non-production environment) describing the new features, modified features, and/or bug fixes included in the release package as well as indicating if any downtime is expected when the release is deployed. The update/upgrade release notes are available to all Canvas Catalog users at inst.bid/canvas/catalog/releases"	State how and when the institution will be notified of major changes to your environment.	 																				
+HLSY-03	Are your systems and applications scanned for vulnerabilities [that are then remediated] prior to new releases?	Yes	"Regular vulnerability scans of the Canvas Catalog application and our infrastructure are conducted using third-party tools, custom scripts, and various open source tools. If any vulnerabilities are detected, Instructure's security and engineering teams work together to analyze, design, and develop the required patch."	Provide a brief description.	 																				
+HLSY-04	Have your systems and applications had a third party security assessment completed in the last year?	Yes	"Third-party vulnerability testing occurs year round and is performed by BugCrowd, the results of which we make available for customers. The most recent bug bountry report for the period January 1, 2023 through December 31, 2023 is available by request from your Customer Success Manager."	"Provide the results with this document (link or attached), if possible. State the date of the last completed third party security assessment."	 																				
+HLSY-05	"Do you have policy and procedure, currently implemented, guiding how security risks are mitigated until patches can be applied?"	Yes	"Instructure's Risk Management Policy establishes an approach and process for continually identifying, assessing, mitigating, and monitoring risks that impact Instructure’s people, systems, buildings, and processes. This policy is based on guidance from the National Institute of Standards and Technology’s (NIST) Special Publication (SP) 800-37 and International Organization for Standardization (ISO) 27005: Information Security Risk Management.
+ 
+ In brief, Instructure's policy ensures that our Security team:
+ 1. Identifies threats and risks that may affect our assets (including personnel, systems, data, processes, buildings, and other assets).
+ 2. Assess threats, risks, and vulnerabilities, based on the likelihood (probability) of occurrence and the impact, that would affect the assets identified above. During this process, Instructure assesses a threats likelihood of occurring and the impact of the potential risk. Using this information we assign it an 'Overall Risk' value.
+ 3. Mitigate risks according to each risk's respective Overall Risk value.
+ 4. Monitor mitigation mechanisms to determine the effectiveness of each mitigation plan on each risk over time. Additional mitigation mechanisms may be required to continue to drive down the likelihood and/or impact of each risk."	Summarize the policy and procedure(s) guiding risk mitigation practices before critical patches can be applied.	 																				
+Data		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+HLDA-01	"Does the environment provide for dedicated single-tenant capabilities? If not, describe how your product or environment separates data from different customers (e.g., logically, physically, single tenancy, multi-tenancy)."	No	"Clients are logically separated via horizontal and vertical partitioning within a multi-tenant, single instance web application."	Describe your plan to separate institution data from other customers.	 																				
+HLDA-02	"Is sensitive data encrypted, using secure protocols/algorithms, in transport? (e.g. system-to-client)"	Yes	All data transferred in and out of the Canvas Catalog platform is done via TLS over port 443. Port 80 is open on load balancers and only serves to redirect to port 443.	Summarize your transport encryption strategy	 																				
+HLDA-03	"Is sensitive data encrypted, using secure protocols/algorithms, in storage? (e.g. disk encryption, at-rest, files, and within a running database)"	Yes	All data is encrypted at rest within Canvas Catalog using AES-256.	Summarize your data encryption strategy and state what encryption options are available.	 																				
+HLDA-04	Are involatile backup copies made according to pre-defined schedules and securely stored and protected?	Yes	"Digital-site recovery backups are created and encrypted using the AES-GCM 256-bit algorithm and stored on encrypted AWS EBS volumes, within a highly secured location that provides physical and environmental security measures."	"If your strategy uses different processes for services and data, ensure that all strategies are clearly stated and supported."	 																				
+HLDA-05	Can the Institution extract a full or partial backup of data?	Yes	"In the event of a system level outage or data loss, Instructure's operations teams will restore the system and data. If the client deletes/removes data we recommend engaging our support team which will escalate internally for us to investigate whether restoration is possible. Note, Canvas Catalogs' open API and UI allows admins to export data in CSV and XML formats. Additionally Catalog enrollments, listings, and programs, are all included in Canvas Data along with the associated Canvas tables."	Provide a general summary of how full and partial backups of data can be extracted.	 																				
+HLDA-06	"Do you have a media handling process, that is documented and currently implemented that meets established business needs and regulatory requirements, including end-of-life, repurposing, and data sanitization procedures?"	Yes	"When storage devices have reached end of life, AWS procedures include a decommissioning process that is designed to prevent customer data from being exposed to unauthorized individuals. AWS uses the techniques detailed in DoD 5220.22-M (“National Industrial Security Program Operating Manual “) or NIST SP 800-88 (“Guidelines for Media Sanitization”) to destroy data as part of the decommissioning process. If a hardware device is unable to be decommissioned using these procedures, the device will be degaussed or physically destroyed in accordance with industry-standard practices."	Provide documented details of this process (link or attached).	 																				
+HLDA-07	"Does your staff (or third party) have access to Institutional data (e.g., financial, PHI or other sensitive information) within the application/system?"	Yes	"Various personnel may have access to FERPA directory data within the scope of their roles, and as defined in the agreement between Instructure and the client. Access is only used in the scope of the role and in support of execution of the contract and services."	Summarize what access staff (or third parties) have to institutional data.	 																				
+Datacenter		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+HLDC-01	Does your company manage the physical data center where the institution's data will reside?	No	"Instructure uses Amazon Web Services (AWS) data centers, which are staffed 24x7x365 by professional security staff, as well as monitored by video surveillance, intrusion detection systems, and other electronic means. The data centers are operated in compliance with ISO/IEC 27001:2013 standards. Further detail on AWS data center security can be found at: https://aws.amazon.com/compliance/data-center/controls/"	Provide a detailed description of where the institution's data will reside.	 																				
+HLDC-02	Are you generally able to accomodate storing each institution's data within their geographic region?	Yes	"Canvas Catalog supports storage in the following regions:
+ 
+ For United States and Latin America clients:
+ • Virginia (US-East-1)
+ • Oregon (US-West-1)
+ 
+ For Canadian clients:
+ • Montreal, CA (CA-Central-1)
+ 
+ For European clients:
+ • Dublin (EU-West-1)
+ • Frankfurt (EU-Central-1)
+ 
+ For clients in Asia Pacific:
+ • Singapore (AP-Southeast-1)
+ • Sydney (AP-Southeast-2)"	 	 																				
+HLDC-03	Does the hosting provider have a SOC 2 Type 2 report available?	Yes	Instructure's NDA with AWS does not allow us to distribute their NDA to our clients. Amazon have a SOC 3 report available at https://aws.amazon.com/compliance/	Obtain the report if possible and add it to your submission.	 																				
+HLDC-04	Does your organization have physical security controls and policies in place?	Yes	"At Instructure offices, where no client data is stored, electronic surveillance, physical authentication mechanisms, and reception desks are implemented. AWS physical security controls include but are not limited to perimeter controls such as fencing, walls, security staff, video surveillance, intrusion detection systems and other electronic means. The AWS SOC reports provides additional details on the specific control activities executed by AWS. Refer to ISO 27001 standards; Annex A, domain 11 for further information. AWS has been validated and certified by an independent auditor to confirm alignment with ISO 27001 certification standard.
+ 
+Further, Instructure's physical security controls are evidenced in our Canvas Catalog SOC 2 report, a copy of which is available upon execution of an MNDA."	Describe your physical security strategy.	 																				
+HLDC-05	Do you have physical access control and video surveillance to prevent/detect unauthorized access to your data center?	Yes	"Instructure uses Amazon Web Services (AWS) data centers, which are staffed 24x7x365 by professional security staff, as well as monitored by video surveillance, intrusion detection systems, and other electronic means. The data centers are operated in compliance with ISO/IEC 27001:2013 standards. Further detail on AWS data center security can be found at: https://aws.amazon.com/compliance/data-center/controls/"	Describe how you prevent and detect unauthorized access to your data center.	 																				
+Networking		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+HLNT-01	"Do you enforce network segmentation between trusted and untrusted networks (i.e., Internet, DMZ, Extranet, etc.)?"	Yes		Provide a brief summary of how trusted and untrusted networks are segmented.	 	FIDP-02																			
+HLNT-02	Are you utilizing a stateful packet inspection (SPI) firewall?	Yes	"Canvas Catalog utilizes AWS Security Groups which perform stateful packet inspection on all rules. The AWS SG firewall keeps track of the state of network connections (such as TCP streams, UDP communication) traveling across it."	Describe the currently implemented SPI firewall.	 																				
+HLNT-03	Do you use an automated IDS/IPS system to monitor for intrusions?	Yes	"Instructure employs AWS GuardDuty for native, persistent intrusion detection on all Canvas applications. We review GuardDuty configuration on a quarterly basis and ensure it is applied to and working on all AWS accounts. GuardDuty uses machine learning, anomaly detection, and integrated threat intelligence to identify and prioritize potential and persistent threats. Threat intelligence coupled with machine learning and behavior models help detect activity such as cryptocurrency mining, credential compromise behavior, communication with known command-and-control servers, or API calls from known malicious IPs. Alerts are forwarded to the Instructure Security Team and all output is sent to Instructure's centralized logging management system for further analysis and alert generation."	Describe the currently implemented IDS/IPS.	 																				
+HLNT-04	Are you employing any next-generation persistent threat (NGPT) monitoring?	Yes	"Instructure utilizes AWS’ Security Hub, a cloud security posture management (CSPM) service, that performs security best practice checks, aggregates alerts, and enables automated remediation. We also utilise AWS Inspector for vulnerability scanning, which scans all our instances in near-real time for vulnerabilities and any unintended network exposure. This gives us a much shorter Mean Time to Remediate (MTTR) and expedites vulnerability routing using multiple sources of vulnerability intelligence and current common vulnerabilities and exposures (CVE) information."	Describe your NGPT monitoring strategy.	 																				
+HLNT-05	Do you require connectivity to the Institution's network for support/administration or access into any existing systems for integration purposes?	Yes	Only if optional SSO integration of Canvas LMS is required.	Describe the tools and technical controls implemented to secure remote access.	 																				
+Incident Handling		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+HLIH-01	Do you have a formal incident response plan?	Yes	Instructure maintains a formal Incident Response Policy and Plan which is reviewed at least annually.	Summarize or provide a link to your formal incident response plan.	 																				
+HLIH-02	Do you have an incident response process and reporting in place to investigate any potential incidents and report actual incidents?	Yes	Any incident alerts triggered are sent to the appropriate teams 24x7x365 via PagerDuty for investigation and response.	Summarize your incident response and reporting processes.	 																				
+HLIH-03	"Do you carry cyber-risk insurance to protect against unforeseen service outages, data that is lost or stolen, and security incidents?"	Yes	"Instructure’s general liability insurance includes Cyber Errors & Omissions coverage (referred to as ""Professional Errors & Omission""). Instructure’s certificate of liability insurance is provided with the Canvas Catalog Compliance Package available at inst.bid/canvas/catalog/dl"	Summarize your cyber insurance strategy.	 																				
+HLIH-04	Do you have either an internal incident response team or retain an external team?	Yes	"At the first sign of an incident, Instructure’s Chief Information Security and Privacy Officer will assemble an internal incident response team. The composition and charge of the team will depend upon the type of breach and resulting data exposure. The team conducts a preliminary assessment to help develop a tailored response. Once the incident is contained, this team will also evaluate changes in processes, systems and/or policies to prevent a repeat event."	Summarize your internal approach or reference your third party contractor.	 																				
+HLIH-05	Do you have the capability to respond to incidents on a 24x7x365 basis?	Yes	PagerDuty sends alerts 24x7x365 for investigation and response.	Describe the implemented procedure for 24/7/365 coverage.	 																				
+"Policies, Procedures, and Processes"		Vendor Answers	Additional Information	Guidance	Analyst Notes																				
+HLPP-01	"Can you share the organization chart, mission statement, and policies for your information security unit?"	Yes	"Instructure works diligently to protect our customers, our people, data, and systems. Instructure's security program is overseen by our Chief Information Security Officer who is accountable for the implementation and execution of company policies, audits, and ensuring the security program conforms to the relevant ISO/IEC 27000, AICPA Trust Services Principles and Criteria (as applicable as part of compliance with SOC 1 and SOC 2), NIST SP 800-53 r4 (as applicable), and other applicable security standards. Members of Instructure's security team have many years of experience with security audits by major corporations and government agencies. Our technical staff are dedicated to servicing, managing, and securing operating systems, applications, drivers and hardware devices.
+ 
+Instructure's information security policies and standards are based on information security best practices as set forth by the International Organization for Standardization's (ISO) 27000 suite of standards, NIST's 800-53 suite of controls, and the AICPA's Trust Service Principles and Criteria. Instructure holds a SOC 2 Type II report for Canvas Catalog."	Provide a links to these documents in Additional Information or attach them with your submission.	 																				
+HLPP-02	Are information security principles designed into the product lifecycle?	Yes	"Information security principles are designed into the product lifecycle and are based on the Open Web Application Security Project (OWASP) secure coding practices, security auditing, code review documents, and other community sources on best security practices."	Summarize the information security principles designed into the product lifecycle.	 																				
+HLPP-03	Do you have a documented information security policy?	Yes	"Instructure maintains a documented information security policy which is reviewed at least annually and approved by relevant stakeholders and the Information Security Team. The purpose of the policy is to describe Instructure’s overarching security policy for protecting and securing Instructure's assets. Assets include, but are not limited to data, people, buildings, systems, applications, mechanisms, processes, and use of third parties. The policy also instantiates Instructure’s security program, which is a systematic approach to establishing, implementing, operating, monitoring, reviewing, maintaining, and improving Instructure's security program (and supporting processes). Instructure’s security policy and program are created based on guidance provided by ISO/IEC 27000:2018 and controls described in ISO/IEC 27001:2013. Instructure is ISO 27001:2013 certified and maintains a Canvas Catalog SOC 2 Type II report."	Provide a reference to your information security policy or submit documentation with this fully-populated HECVAT-Lite.	 																				
+Third Party Assessment			Additional Information	Guidance	Analyst Notes																				
+HLTP-01	Will institution data be shared with or hosted by any third parties? (e.g. any entity not wholly-owned by your company is considered a third-party)	Yes	Instructure uses Amazon Web Services (AWS) data centers to host customer data.	State each third party which institutional data will be shared with and/or hosted by and their level of responsibility.	 																				
+HLTP-02	"Do you perform security assessments of third party companies with which you share data? (i.e. hosting providers, cloud services, PaaS, IaaS, SaaS, etc.)."	Yes	"Instructure has a robust third party due diligence process. Prior to using any third party and on an annual basis thereafter, Instructure’s security team performs a security review of these vendors. Included as part of this review, the security team requests a copy of the third party's SOC 2 Type 2 report. If any exceptions or other issues are noted in these reports, the security team follows up as necessary to determine scope and impact. If a SOC 2 Type 2 report is not available, the security team provides the third party with questions related to the types of data, how those data elements are handled, and additional queries related to the status of security controls and processes implemented in the environment where data flow. Lastly, contractual obligations are put in place between Instructure and the third party to ensure security practices are in place and operating effectively."	"Provide a summary of your practices that assures that the third party will be subject to the appropriate standards regarding security, service recoverability, and confidentiality."	 																				
+HLTP-03	Do you have an implemented third party management strategy?	Yes	"The Canvas ecosystem, including Canvas Catalog, provides integration points with various third-party tools and services. The majority of the services integrated into the core of the Canvas ecosystem are done so as modular plugins which leverage the APIs of the remote system. Additionally, Canvas products support integration with external systems via JSON/REST API and LTI. As these integrations are not a part of the core product and require integration and configuration by the end user, they are not addressed here. Additionally, some of the services exposed in Canvas Catalog require opt-in by the end user or remote activation by a third-party service provider upon contract with the Institution (e.g. Payment Gateways)."	Provide additional information that may help analysts better understand your environment and how it relates to third-party solutions.	 																				
+HLTP-04	"Do you have a process and implemented procedures for managing your hardware supply chain? (e.g., telecommunications equipment, export licensing, computing devices)"	Yes	Our processes and procedures cover regions in which we operate.	State what countries and/or regions this process is compliant with.	 																				
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
+																									
