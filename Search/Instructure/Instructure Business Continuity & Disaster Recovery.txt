@@ -10,8 +10,8 @@ Disaster Recovery...............................................................
 Introduction 
 Business Continuity 
 Every organization is subjected to a variety of risks while conducting business. These risks can take shape in the form of serious external threats such as cyber-terrorism or political upheaval to the less serious (yet still important) risks of retaining key personnel or even having to face an angry panda. But whatever the perceived risk, it is critical that an organization identifies, assesses and maintains a Business Continuity Plan (BCP) to prevent and recover from potential or real threats to its most valued assets. At Instructure, our robust risk management processes allow us to identify, assess, and treat these risks on an ongoing basis. To help strengthen our Business Continuity Plan, our Enterprise Risk Steering Committee, comprised of key leaders throughout Instructure, meets regularly and continually identifies and mitigates risks that might impact Instructure, its mission, and its most prized assets. 
-Naturally, at the heart of every business continuity program is a robust incident response planÑa plan that helps effectively guide an organization through incidents that may arise from time to time. At Instructure, we have a detailed, considered, and operational incident response plan which includes preparing for, detecting, assessing, escalating, responding to, communicating the impacts of, and learning from security, availability, privacy, human resources, finance, and other unforeseen incidents (read: angry panda). The incident response plan is the starting point for all incidents and can easily escalateÑdepending on the type and severity of the incidentÑinto a variety of other Instructure plans, including disaster recovery plans, business continuity plans, crisis management plans, evacuation plans, pandemic plans, and other strategic plans to help aid in the effective and efficient recovery of our business operations. 
-One of the risks that impacts all organizations is the ability to keep business operations in-flight by identifying, assessing, and mitigating the threats that might impact business operations. This was clearly evident during the COVID-19 global pandemic which clearly showed usÑand everyoneÑjust how crucial a business continuity plan is in uncertain times. The change and upheaval we saw during this time will likely echo for many years to come, both in terms of educational trends and changes to the way we view work and perhaps where we work from. The purpose of this paper is to set forth how we approach business continuity here at Instructure as part of our ongoing risk management program as we continue our mission to be the industry-leading learning management platform. 
+Naturally, at the heart of every business continuity program is a robust incident response plan—a plan that helps effectively guide an organization through incidents that may arise from time to time. At Instructure, we have a detailed, considered, and operational incident response plan which includes preparing for, detecting, assessing, escalating, responding to, communicating the impacts of, and learning from security, availability, privacy, human resources, finance, and other unforeseen incidents (read: angry panda). The incident response plan is the starting point for all incidents and can easily escalate—depending on the type and severity of the incident—into a variety of other Instructure plans, including disaster recovery plans, business continuity plans, crisis management plans, evacuation plans, pandemic plans, and other strategic plans to help aid in the effective and efficient recovery of our business operations. 
+One of the risks that impacts all organizations is the ability to keep business operations in-flight by identifying, assessing, and mitigating the threats that might impact business operations. This was clearly evident during the COVID-19 global pandemic which clearly showed us—and everyone—just how crucial a business continuity plan is in uncertain times. The change and upheaval we saw during this time will likely echo for many years to come, both in terms of educational trends and changes to the way we view work and perhaps where we work from. The purpose of this paper is to set forth how we approach business continuity here at Instructure as part of our ongoing risk management program as we continue our mission to be the industry-leading learning management platform. 
 
 
 
@@ -24,30 +24,30 @@ Included in this document is an overview of the disaster recovery plan and proce
 
 Business Continuity 
 Building in Resilience and Maintaining Plans to Effectively Recover 
-InstructureÕs approach to business continuity is building resilience into its processes, technology and people. This document describes the different practices Instructure uses to ensure business resilience through the core business functions by ensuring synchronization between the use of technology and applications, infrastructure and cloud service providers, and personnel. This approach is based on industry best practices for SaaS for mitigating downtime caused by common disruption of service vectors for SaaS companies including, but not limited to cyber-attacks, physical security breaches, vendor dependencies, fraud and civil disturbances, pandemics, and natural or man-made disasters. 
+Instructure’s approach to business continuity is building resilience into its processes, technology and people. This document describes the different practices Instructure uses to ensure business resilience through the core business functions by ensuring synchronization between the use of technology and applications, infrastructure and cloud service providers, and personnel. This approach is based on industry best practices for SaaS for mitigating downtime caused by common disruption of service vectors for SaaS companies including, but not limited to cyber-attacks, physical security breaches, vendor dependencies, fraud and civil disturbances, pandemics, and natural or man-made disasters. 
 The practices adopted by Instructure increase the ability to recover from a disruption in service and protect its customers' data, as well as its personnel. These practices involve processes for both preventative and recovery practices that aim to meet the following objectives: 
-¥ 
+• 
 Provide continued service to customers. 
 
-¥ 
+• 
 Reduce risk to core business operations. 
 
-¥ 
+• 
 Maintain clear communication with customers and employees. 
 
 
 
 Processes 
-Instructure has designed and operates the following key processes to support InstructureÕs ongoing (and effective recovery of incidents impacting) business operations: 
-Incident response plans -Instructure has developed, maintains, and operates comprehensive incident response plans. These plans include definitions of incident preparation, detection, assessment of incident criticality, escalation, containment actions to take based on the criticality of the incident, communication methods, testing, and playbooksÑor examples of what to do given certain incidents, and improvement. 
+Instructure has designed and operates the following key processes to support Instructure’s ongoing (and effective recovery of incidents impacting) business operations: 
+Incident response plans -Instructure has developed, maintains, and operates comprehensive incident response plans. These plans include definitions of incident preparation, detection, assessment of incident criticality, escalation, containment actions to take based on the criticality of the incident, communication methods, testing, and playbooks—or examples of what to do given certain incidents, and improvement. 
 Backup and recovery plans -Instructure has developed, maintains, and operates robust backup and disaster recovery plans. These plans include taking daily snapshots (backups) and near-real-time replicating data to a separate, geographically isolated location within the customer's region. Because Instructure uses the world leader in Infrastructure as a Service (IaaS), Amazon Web Services (AWS) to host data in the customer's geographical region, each region has multiple, isolated locations known as Availability Zones where customer data is replicated for disaster recovery purposes. The use of multiple AWS Availability Zones is to ensure that if there is a failure in one physical location, the data is readily available in another geographically separate location. Backups and customer-uploaded objects are stored in Amazon S3, which boasts 99.999999999% uptime and reliability over a given year. Backups are checked for integrity and tested at least once a month. 
 
 
-Vendor Assessments -Instructure operates a robust third-party security risk management program. These practices include managing an accurate inventory of vendors, conducting vendor risk assessments, and reviewing critical vendorsÕ security and availability practices. These reviews include ensuring that the vendors have robust practices for backup, disaster recovery, and business continuity plans. Additionally, Instructure also ensures Service Level Agreements with vendors contain a description of services provided and contain information regarding promised network availability. 
+Vendor Assessments -Instructure operates a robust third-party security risk management program. These practices include managing an accurate inventory of vendors, conducting vendor risk assessments, and reviewing critical vendors’ security and availability practices. These reviews include ensuring that the vendors have robust practices for backup, disaster recovery, and business continuity plans. Additionally, Instructure also ensures Service Level Agreements with vendors contain a description of services provided and contain information regarding promised network availability. 
 Cyber Insurance -Instructure ensures it protects its business from major expenses, business losses, and regulatory fines and penalties should a data breach occur by having cyber insurance coverage. 
 Annual Recovery testing -Instructure tests recovery plans at least once annually using both live scenario tests and tabletop tests. Scenarios include events where service disruptions occur, and personnel included in the tabletop testing are responsible for determining actions used to recover services. 
 Risk Management -Instructure recognizes risk management as a critical component of its operations that helps to verify customer assets are properly protected and incorporates risk management throughout its processes. 
-Strategic Planning -Instructure has an overall strategic plan that is presented to the board of directors. This plan is separated into specific segment plans designed to 'operationalize' what is expected of the segments in order to support InstructureÕs overall objectives. 
+Strategic Planning -Instructure has an overall strategic plan that is presented to the board of directors. This plan is separated into specific segment plans designed to 'operationalize' what is expected of the segments in order to support Instructure’s overall objectives. 
 Communication Channels -Instructure has processes in place to respond to incidents and inform all of its personnel in case of a service disruption or event that needs to be communicated to its personnel. In general, customers will be notified primarily by their respective Customer Success Manager (CSM), who is the main point of contact with all customers. CSMs will use the preferred method(s) of communication identified by the customer. In the event of a widely impacting outage, notifications will also be provided using a more widely available public website with the latest details. For internal communications, Instructure has identified both a primary and a secondary means for communication during an impactful event in order to keep the recovery efforts effective during an incident. 
 
 
@@ -57,16 +57,16 @@ Ownership
 Instructure's Chief Information Security and Privacy Officer (CISPO) is responsible for overseeing business continuity in coordination with the Chief Technology Officer (CTO). We also have a defined disaster recovery team with ultimate escalation to the CTO. On the commercial side, all potential disasters are escalated immediately to the Chief Financial Officer (CFO), who is ultimately responsible for assessing the event and directing notifications. 
 
 Alternate Recovery Site 
-Instructure runs a distributed, largely remote workforce, and all personnel have the capability to work from home (WFH) and/or remotely in case of a disruption that affects their ability to work from one of the Instructure office locations. To ensure this practice is effective, Instructure ensures there are remote working policies in place and communicated to all personnel, security practices are in place for accessing corporate networks, and mass communication notification services in place. Multiple providers are used to supply InstructureÕs offices with connectivityÑallowing for quickly resumption of connectivity if one provider is found unable to provide the level of service required to sustain consistent, continual connectivity. As part of InstructureÕs annual business continuity tabletop testing, use cases can include events that affect remote employees, Instructure offices, and communication procedures. 
+Instructure runs a distributed, largely remote workforce, and all personnel have the capability to work from home (WFH) and/or remotely in case of a disruption that affects their ability to work from one of the Instructure office locations. To ensure this practice is effective, Instructure ensures there are remote working policies in place and communicated to all personnel, security practices are in place for accessing corporate networks, and mass communication notification services in place. Multiple providers are used to supply Instructure’s offices with connectivity—allowing for quickly resumption of connectivity if one provider is found unable to provide the level of service required to sustain consistent, continual connectivity. As part of Instructure’s annual business continuity tabletop testing, use cases can include events that affect remote employees, Instructure offices, and communication procedures. 
 
 Training 
 Instructure has a crisis response team that consists of its Human Resources, Communication, Legal, and Security teams to respond to crisis situations at Instructure office locations. Additionally, Instructure engages in crisis training and exercises including fire drills and emergency evacuations. 
 
 Open-Source Code 
-InstructureÕs commitment to commercially open source its flagship product, Canvas LMS, provides another layer of reassurance to clients in terms of business continuity. The Canvas Learning Management System is available as open source, which means the Canvas LMS code is free, public, and completely open at all times*. Anyone can use the Canvas LMS code without additional cost. Instructure updates the Canvas LMS code on a regular basis, and the code is maintained on Github: https://github.com/instructure/canvas-lms/wiki. 
+Instructure’s commitment to commercially open source its flagship product, Canvas LMS, provides another layer of reassurance to clients in terms of business continuity. The Canvas Learning Management System is available as open source, which means the Canvas LMS code is free, public, and completely open at all times*. Anyone can use the Canvas LMS code without additional cost. Instructure updates the Canvas LMS code on a regular basis, and the code is maintained on Github: https://github.com/instructure/canvas-lms/wiki. 
 
 
-In the unlikely event of any material changes to InstructureÕs normal business operations, our customers have access to the Canvas LMS open-source code to allow for business continuity. This would allow institutions to host, operate, and support the Canvas LMS open-source code on their own servers in the case that Instructure was no longer able to do so. 
+In the unlikely event of any material changes to Instructure’s normal business operations, our customers have access to the Canvas LMS open-source code to allow for business continuity. This would allow institutions to host, operate, and support the Canvas LMS open-source code on their own servers in the case that Instructure was no longer able to do so. 
 In addition to our Canvas LMS open-source code, much of the Instructure Learning Platform provides content export, open RESTful API access, and data access on request. This means our customers always have access to their content and data. 
 *excludes some features, plugins, and extensions that are currently not open source. 
 
@@ -77,12 +77,12 @@ Disaster Recovery
 Key Terms and Assumptions 
 In the Software as a Service (SaaS) space, there are some key terms in relation to Disaster Recovery. 
 1) In the context of a disaster recovery scenario, two terms are commonly used to describe how a recovery process may be affected: Recovery Time Objective (RTO) and Recovery Point Objective (RPO). The RTO represents how long it will take to restore access to data, and the RPO how much data is at risk of being lost. For example, if it takes 8 hours for a service to be recovered, the RTO is 8 hours. If the last 4 hours of data will potentially be lost due to a disaster, the RPO is 4 hours. 
-2) While ÔDisaster RecoveryÕ and ÔHigh AvailabilityÕ are shared concepts in relation to business continuity, they impact disaster recovery planning differently. Disaster Recovery essentially infers there will be some form of downtime involved, measured in hours or days. High Availability, however, is about ensuring ongoing continuity of operations in a disaster recovery scenario, especially through the design of architectural redundancies such as automated failover of components. 
+2) While ‘Disaster Recovery’ and ‘High Availability’ are shared concepts in relation to business continuity, they impact disaster recovery planning differently. Disaster Recovery essentially infers there will be some form of downtime involved, measured in hours or days. High Availability, however, is about ensuring ongoing continuity of operations in a disaster recovery scenario, especially through the design of architectural redundancies such as automated failover of components. 
 Our services are architected to achieve both exceptionally low RPO and RTO in the most common scenarios and High Availability for our customers due to the distributed and resilient nature of our infrastructure. For the vast majority of failure scenarios, the need to failover to another Availability Zone (AZ) is obviated and the impacts to our services will be minimal. 
 The primary assumption of our disaster recovery plan is that it only addresses events that would affect an entire data center or our architecture as a whole. Failures of individual components will be recovered through robust architectural redundancies and failover mechanisms. 
 
 Disaster Recovery in a SaaS World 
-InstructureÕs educational software (and associated data) is hosted in the cloud by Instructure and delivered over the internet through the world's most trusted public cloud provider, Amazon Web Services (AWS). This Software as a Service (SaaS) delivery model means that our customers donÕt have to worry about maintaining server hardware or software, patches, service packs, or, in the context of this document, disaster recovery. 
+Instructure’s educational software (and associated data) is hosted in the cloud by Instructure and delivered over the internet through the world's most trusted public cloud provider, Amazon Web Services (AWS). This Software as a Service (SaaS) delivery model means that our customers don’t have to worry about maintaining server hardware or software, patches, service packs, or, in the context of this document, disaster recovery. 
 Not only do we maintain our own robust disaster recovery plans and procedures, but we also benefit from using AWS, an Infrastructure as a Service (IaaS) world-leader that bakes redundancy into its services by providing numerous regions, availability zones, and data centers that allow us to recovery quickly in the event of an unforeseen disaster. 
 
 
@@ -90,13 +90,13 @@ Given the nature of the SaaS delivery model, Instructure is responsible for prov
 
 Definition of a Disaster 
 A disaster is defined as any disruptive event that has potentially long-term adverse effects on Instructure's services. In general, potential disaster events will be addressed with the highest priority at all levels at Instructure. Such events can be intentional or unintentional, as follows: 
-¥ 
+• 
 Natural disasters: Tornado, earthquake, hurricane, fire, landslide, flood, electrical storm, and tsunami. 
 
-¥ 
+• 
 Supply systems: Utility failures such as severed gas or water lines, communication line failures, electrical power outages/surges, and energy shortage. 
 
-¥ 
+• 
 Human-made/political: Terrorism, theft, disgruntled worker, arson, labor strike, sabotage, riots, war, vandalism, virus, and hacker attacks. 
 
 
@@ -121,19 +121,19 @@ Jon Fletcher, Senior Director of Production Engineering
 
 Disaster Recovery Team 
 The Disaster Recovery Team (DRT) is made up of key engineers and operations employees across all areas of our business. The responsibilities of the DRT include: 
-¥ 
+• 
 Establish communication between the individuals necessary to execute recovery. 
 
-¥ 
+• 
 Determine steps necessary to recover completely from the disaster. 
 
-¥ 
+• 
 Execute the recovery steps. 
 
-¥ 
+• 
 Verify that recovery is complete. 
 
-¥ 
+• 
 Inform the Incident Commander of completion. 
 
 
@@ -142,27 +142,27 @@ Inform the Incident Commander of completion.
 Communication Strategy 
 Notifying Internal Stakeholders 
 The Incident Commander is responsible for making sure the DRT and any other necessary staff are notified of an emergency or disaster and mobilized. 
-The DRT (and other key operational staff) have a scheduled on-call roster and are contactable 24x7 in an emergency or disaster. We use a paging platform that specializes in SaaS incident response which allows us to page key staff to commence activation at a momentÕs notice. 
+The DRT (and other key operational staff) have a scheduled on-call roster and are contactable 24x7 in an emergency or disaster. We use a paging platform that specializes in SaaS incident response which allows us to page key staff to commence activation at a moment’s notice. 
 
 
 
 Notifying Customers 
-¥ 
+• 
 Disaster Declaration: Impacted customers and business partners will be notified immediately if a disaster is declared. The notification will include a description of the event, the effect to the service, and any potential impact to data. 
 
-¥ 
+• 
 Updates throughout Execution Phase: Impacted customers and business partners will be kept up to date throughout the disaster recovery process via phone, messaging, and/or email. We will also post official status updates on status.instructure.com. 
 
-¥ 
+• 
 Completion of Recovery: Once recovery is complete and services have resumed, our customer notifications will include general information about the steps taken to recovery, and any data that may have been impacted. If the recovery is partial and the service is still in a degraded state, notifications will include an estimate of how long the degradation will continue. 
 
 
-If the primary contact(s) for disaster recovery (nominated by the customer) is unavailable, we will notify the alternative contact (also nominated by the customer). If, for any reason, we are unable to contact the customerÕs primary and alternative contacts, we will endeavor to make contact with other representatives of the customerÕs organization. 
+If the primary contact(s) for disaster recovery (nominated by the customer) is unavailable, we will notify the alternative contact (also nominated by the customer). If, for any reason, we are unable to contact the customer’s primary and alternative contacts, we will endeavor to make contact with other representatives of the customer’s organization. 
 
 
 Disaster Resilience 
 Operating Infrastructure 
-InstructureÕs services are based on a multi-tier cloud-based architecture. Each component is redundant with active monitoring for failure detection and automated failover. The different tiers are: 
+Instructure’s services are based on a multi-tier cloud-based architecture. Each component is redundant with active monitoring for failure detection and automated failover. The different tiers are: 
 
 Load Balancers 
 All web traffic to our services is served by load balancers in active/passive configurations. The load balancers are responsible for directing traffic to the next tier. 
@@ -173,18 +173,18 @@ App servers process incoming client requests from the load balancers. App server
 
 
 Caching 
-To improve performance, InstructureÕs software aggressively caches data in a caching layer. The data stored in the caching layer is strictly a performance cache. Any data loss resulting from the loss of any of these servers would be limited to a small number of page view statistics that may not have been flushed to persistent storage. The number of cache servers is variable, and the cache data will be partitioned among all servers. 
+To improve performance, Instructure’s software aggressively caches data in a caching layer. The data stored in the caching layer is strictly a performance cache. Any data loss resulting from the loss of any of these servers would be limited to a small number of page view statistics that may not have been flushed to persistent storage. The number of cache servers is variable, and the cache data will be partitioned among all servers. 
 
 Databases 
-Most structured dataÑcourses, user information, and assignments, for exampleÑis stored in a database. This data is typically sharded between instances based on account and on demand. Each shard has a primary and a secondary database, located in geographically separate sites. The data from each primary is replicated asynchronously in near real-time to its corresponding secondary. Each primary is also backed up completely every 24 hours, and the backup is stored in a third geographically separate site. The infrastructure also includes an internal database proxy layer for the relational databases that enables the Operations Team to perform maintenance on the relational database servers with minimal downtime. 
+Most structured data—courses, user information, and assignments, for example—is stored in a database. This data is typically sharded between instances based on account and on demand. Each shard has a primary and a secondary database, located in geographically separate sites. The data from each primary is replicated asynchronously in near real-time to its corresponding secondary. Each primary is also backed up completely every 24 hours, and the backup is stored in a third geographically separate site. The infrastructure also includes an internal database proxy layer for the relational databases that enables the Operations Team to perform maintenance on the relational database servers with minimal downtime. 
 Third-Party Object Store 
-ContentÑsuch as documents, PDFs, audio, and videoÑis stored in a third-party scalable object store. 
+Content—such as documents, PDFs, audio, and video—is stored in a third-party scalable object store. 
 
 
 
 
 Data Centers 
-Data centers are built in clusters in various global regions where we operate. All data centers are online and continually serving our customers; no data center is Òcold.Ó 
+Data centers are built in clusters in various global regions where we operate. All data centers are online and continually serving our customers; no data center is “cold.” 
 In the case of failure, automated processes move customer data traffic away from the affected area. Our core applications are deployed in an N+1 configuration, so that in the event of a data center failure, there is sufficient capacity to enable traffic to be load-balanced to the remaining sites. N in this context simply refers to the amount of capacity needed to run a service at full load. N+1 indicates an additional, duplicate layer has been added to support primary service failure and therefore provide failover and redundancy at equivalent capacity. 
 As the world leader in Infrastructure as a Service (IaaS), Amazon Web Services (AWS) provides us with the flexibility to place instances and store data within multiple geographic regions as well as across multiple availability zones within each region. 
 Each Availability Zone is designed as an independent failure zone. This means that Availability Zones are physically separated within a typical metropolitan region and are located in lower risk flood plains (specific flood zone categorization varies by region). 
@@ -196,7 +196,7 @@ We architect our AWS usage to take advantage of multiple regions and Availabilit
 
 
 Backup and Recovery Practices 
-Customer data is backed-up automatically both in real-time and on a 24-hour schedule to multiple geographic locations in the customerÕs region, ensuring the security and reliability of data in the event of a disaster or outage of any scale. Database is backed up from one live database to another, with no additional load on our systems. Static files are stored in secure, geographically redundant storage systems. Recovery backups are encrypted using the AES-GCM 256-bit algorithm and stored within a highly secured separate location. The IT Operations team is alerted when backups fail, and any failures are tracked to resolution. These backups are retained in accordance with a defined retention schedule according to product. See Backup Retention. 
+Customer data is backed-up automatically both in real-time and on a 24-hour schedule to multiple geographic locations in the customer’s region, ensuring the security and reliability of data in the event of a disaster or outage of any scale. Database is backed up from one live database to another, with no additional load on our systems. Static files are stored in secure, geographically redundant storage systems. Recovery backups are encrypted using the AES-GCM 256-bit algorithm and stored within a highly secured separate location. The IT Operations team is alerted when backups fail, and any failures are tracked to resolution. These backups are retained in accordance with a defined retention schedule according to product. See Backup Retention. 
 As an example, our Canvas LMS backup and recovery procedures are outlined below: 
 Canvas Production Databases 
 
@@ -221,14 +221,14 @@ Performing Recovery Not applicable
 Backup Retention 
 Canvas 
 Canvas LMS 
-In addition to real-time replication to multiple geographic locations in the customerÕs region ensuring an incredibly low RPO, Instructure retains full database backups (also known as "snapshots") for Canvas customers, totalling 12 months of rolling backup data. Specifically, we retain: 
-¥ 
+In addition to real-time replication to multiple geographic locations in the customer’s region ensuring an incredibly low RPO, Instructure retains full database backups (also known as "snapshots") for Canvas customers, totalling 12 months of rolling backup data. Specifically, we retain: 
+• 
 7 x daily snapshots 
 
-¥ 
+• 
 4 x weekly snapshots 
 
-¥ 
+• 
 and, 12 x monthly snapshots. 
 
 
@@ -239,38 +239,38 @@ Object data such as files, documents, and uploaded media, etc., are recoverable 
 Canvas Credentials 
 Canvas Credentials databases and media (badges) are backed up with Point in Time (PIT) snapshots with a 5-minute granularity. 
 The following backup retention rules apply to pertinent Canvas Credentials information: 
-¥ 
+• 
 Daily incremental backups are saved for 1 week 
 
-¥ 
+• 
 Weekly backups are stored for the previous 4 weeks 
 
-¥ 
+• 
 Monthly backups are stored for the previous 13 months 
 
-¥ 
+• 
 Full backups are saved for 13 months. 
 
 
 Canvas Catalog Canvas Catalog is backed up daily and backups are retained as follows: 
-¥ 
+• 
 Last 60 daily backups retained 
 
-¥ 
+• 
 Last 60 monthly backups retained 
 
 
 Canvas Studio Canvas Studio backups are configured to be retained as follows: 
-¥ 
+• 
 One snapshot for each of the past 7 days 
 
-¥ 
+• 
 One snapshot for each of the prior 4 weeks 
 
-¥ 
+• 
 One snapshot for each of the prior 12 months 
 
-¥ 
+• 
 The most recent snapshot 
 
 
@@ -281,56 +281,56 @@ Student Pathways / Student ePortfolios are configured to be retained for 35 days
 
 Mastery Connect 
 Data backup procedures have been configured within AWS to run a daily full backup snapshot of Mastery Connect databases. Mastery Connect backups are configured to be retained as follows: 
-¥ 
+• 
 Point In Time (PIT) snapshots for 35 days 
 
-¥ 
+• 
 Daily snapshots for 35 days 
 
-¥ 
+• 
 Monthly backups for 1 year 
 
-¥ 
+• 
 Yearly backups for 10 years 
 
 
 
 Impact 
 While Impact does not store or process customer data, backup procedures have been configured within AWS to run a daily full backup snapshot of Impact system databases and configuration. Impact backups are configured to be retained as follows: 
-¥ Daily snapshots for 7 days 
+• Daily snapshots for 7 days 
 
 Elevate 
 Elevate K-12 Analytics 
 Customer data is ingested by Elevate K-12 Analytics for analysis and therefore Elevate K-12 Analytics is not considered a source of truth for customer data. However, we use AWS Backup to create backups of EC2 instances (user configuration, dashboards, and settings, etc.) as follows: 
-¥ 
+• 
 AWS daily backups for 15 days 
 
-¥ 
+• 
 AWS monthly backups for 1 year 
 
 
 Elevate Data Quality 
 Customer data is ingested by Elevate Data Quality for analysis and therefore Elevate Data Quality is not considered a source of truth for customer data. However, we use AWS Backup to create backups of EC2 instances (user configuration, dashboards, and settings, etc.) as follows: 
-¥ AWS monthly backups (currently we do not delete backups; indefinite retention) Elevate Data Hub 
+• AWS monthly backups (currently we do not delete backups; indefinite retention) Elevate Data Hub 
 
 
-¥ 
+• 
 Weekly Long-Term Retention Backups for 6 months 
 
-¥ 
+• 
 Monthly Long-Term Retention Backups for 1 year 
 
-¥ 
+• 
 Yearly Long-Term Retention Backups; Keep week 52 for 3 years. 
 
 
 
 LearnPlatform 
 LearnPlatform has two database backups that occur daily: 
-¥ 
+• 
 AWS RDS -daily, retained for 7 days 
 
-¥ 
+• 
 AWS Redshift -snapshots taken every 30 mins, retained for 1 day. 
 
 
@@ -342,7 +342,7 @@ Disaster Recovery Plan Testing
 A Disaster Recovery Plan is only useful insofar as it is tested regularly. 
 The Incident Commander is responsible for ensuring our Disaster Recovery Plan is reviewed at least annually and in part whenever major components of our architecture are changed. We conduct annual table-top exercises which discuss simulated emergency situations and allow the DRT to discuss our processes and plans to manage both an incident and the aftermath of a natural or human-made disaster. Typically, for our tabletop testing we focus on the more extreme scenarios, such as the loss of an Availability Zone and/or hosting region. Any changes or revisions of a DR response are then captured and updated in our formal Disaster Recovery Plan. 
 Our tabletop DR tests are conducted annually, and a letter of attestation is available on request. 
-We also frequently test our ability to restore from backup as part of our regular release cycle, as non-production sites are populated from production backups. For example, Canvas LMS non-production (beta) instance(s) are restored each week from production backup data, thus testing our ability to recover from data loss each and every week (verifiable in a clientÕs own instance). 
+We also frequently test our ability to restore from backup as part of our regular release cycle, as non-production sites are populated from production backups. For example, Canvas LMS non-production (beta) instance(s) are restored each week from production backup data, thus testing our ability to recover from data loss each and every week (verifiable in a client’s own instance). 
 Functional Testing 
 Instructure has a crisis response team that consists of its Human Resources, Communication, Legal, and Security teams to respond to crisis situations and/or disaster scenarios at Instructure office locations. On an ongoing basis, we engage in crisis training and exercises, that include, for example, fire drills and other disaster scenarios. 
 
@@ -419,6 +419,3 @@ At Instructure, we proactively approach business continuity by building resilien
 
 
 © 2024 Instructure Inc. All rights reserved. 
-
-
-
