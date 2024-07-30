@@ -7,24 +7,24 @@ import {
   IconButton,
   IconSearchLine,
   IconXSolid,
-  TextInput,
-  Text,
-  View,
   Table,
+  Text,
+  TextInput,
+  View,
 } from "@instructure/ui";
 import { Suspense, lazy, useState } from "react";
-import { useParams } from "react-router-dom";
-import RenderFooter from "../components/RenderFooter.tsx";
-import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
-import strings from "../strings/search.ts";
-import { getLang, getStrings } from "../utils/langs.ts";
-import { useSearchContext } from "../components/SearchContext.tsx";
-import { printSearch, highlightMatches } from "../utils/search.ts";
+import React from "react";
 import Markdown from "react-markdown";
+import { useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 import mdtoui from "../components/Mdtoui.tsx";
+import RenderFooter from "../components/RenderFooter.tsx";
+import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
+import { useSearchContext } from "../components/SearchContext.tsx";
+import strings from "../strings/search.ts";
+import { getLang, getStrings } from "../utils/langs.ts";
+import { highlightMatches, printSearch } from "../utils/search.ts";
 import allowedElements from "../variables/allowedElements.ts";
-import React from "react";
 
 /**
  * Main component for the search functionality.

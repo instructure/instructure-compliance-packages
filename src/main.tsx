@@ -11,9 +11,9 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
+import { SearchProvider } from "./components/SearchContext.tsx";
 import { ParentBrands } from "./variables/brands.tsx";
 import Redirects from "./variables/redirects/index.js";
-import { SearchProvider } from "./components/SearchContext.tsx";
 
 /**
  * Get the root element from the DOM.
