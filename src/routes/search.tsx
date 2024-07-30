@@ -103,15 +103,6 @@ export function Component(): JSX.Element {
         message = `${message} ${s.hints}`;
       }
     }
-    if (
-      typeof data !== "string" &&
-      data?.status === "403" &&
-      typeof data?.message === "string" &&
-      data.message.includes("rate limit")
-    ) {
-      heading = s[data.type as keyof typeof s];
-      message = s.rate_limit;
-    }
 
     if (message.length || heading.length) {
       container = (

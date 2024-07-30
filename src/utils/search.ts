@@ -34,7 +34,18 @@ async function getSearchResults(
       },
     });
     const data = await response.json();
+
     if (data?.total_count > 0 && data?.items.length > 0) return data;
+
+    if (
+      typeof data !== "string" &&
+      data?.status === "403" &&
+      typeof data?.message === "string" &&
+      data.message.includes("rate limit")
+    ) {
+      return searchError("rate_limit", data.message.split(" (")[0]);
+    }
+
     return searchError("no_results", "", "sorry");
   } catch (error) {
     if (error instanceof Error) {
