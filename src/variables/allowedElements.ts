@@ -36,5 +36,6 @@ const allowedElements: string[] = [
   "span",
   "code",
   "button",
+  "mark",
 ] as const;
 export default allowedElements;
