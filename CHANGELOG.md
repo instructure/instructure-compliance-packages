@@ -1,11 +1,17 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.5.0...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.5.1...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
+
+## [4.5.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.5.0...isp-site-v4.5.1)
+
+### Fixed
+
+* Handle rate limiting earlier.  Was throwing a "no search results" error instead.
 
 ## [4.5.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.4.3...isp-site-v4.5.0)
 
