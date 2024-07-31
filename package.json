@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
-    "@instructure/ui": "9.5.1-snapshot-0",
+    "@instructure/ui": "9.5.2-snapshot-1",
     "gh-pages": "^6.1.1",
     "react": "19.0.0-rc-fb9a90fa48-20240614",
     "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
