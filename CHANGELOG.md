@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.5.1...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.0...isp-site)
 
 ### Roadmap
 
@@ -11,7 +11,7 @@
 
 * Auth0 integration for search.
 
-## [5.0.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.5.0...isp-site-v4.5.1)
+## [5.0.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.5.1...isp-site-v5.0.0)
 
 ### Changed
 
