@@ -7,6 +7,16 @@
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Added
+
+* Auth0 integration for search.
+
+## [5.0.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.5.0...isp-site-v4.5.1)
+
+### Changed
+
+* Moved repo from `thedannywahl/instructure-security-package` to `instructure/instructure-compliance-packages`
+
 ## [4.5.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v4.5.0...isp-site-v4.5.1)
 
 ### Fixed
