@@ -1,8 +1,8 @@
 import packageJson from "../../package.json" with { type: "json" };
 
 const global: Global = {
-  owner: "thedannywahl",
-  repo: "instructure-security-package",
+  owner: "instructure",
+  repo: "instructure-compliance-packages",
   branch: "main",
   url: packageJson.homepage.replace("/#/", ""),
   gh: "https://github.com",
