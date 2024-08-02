@@ -10,8 +10,10 @@ import {
   createHashRouter,
 } from "react-router-dom";
 import "./index.css";
+import { Auth0Provider } from "@auth0/auth0-react";
 import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
 import { SearchProvider } from "./components/SearchContext.tsx";
+import AuthConfig from "./variables/auth.ts";
 import { ParentBrands } from "./variables/brands.tsx";
 import Redirects from "./variables/redirects/index.js";
 
@@ -148,7 +150,15 @@ const App = () => {
 };
 
 ReactDOM.createRoot(root).render(
-  <SearchProvider>
-    <App />
-  </SearchProvider>,
+  <Auth0Provider
+    domain={AuthConfig.domain}
+    clientId={AuthConfig.clientId}
+    authorizationParams={{
+      redirect_uri: AuthConfig.callback,
+    }}
+  >
+    <SearchProvider>
+      <App />
+    </SearchProvider>
+  </Auth0Provider>,
 );

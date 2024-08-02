@@ -1,3 +1,4 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import {
   Alert,
   Billboard,
@@ -17,6 +18,7 @@ import React from "react";
 import Markdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
+// import Auth from "../components/Auth.tsx";
 import mdtoui from "../components/Mdtoui.tsx";
 import RenderFooter from "../components/RenderFooter.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
@@ -39,6 +41,8 @@ export function Component(): JSX.Element {
   const { query, setQuery } = useSearchContext();
   const [tmpQuery, setTmpQuery] = useState(query);
   const [content, setContent] = useState<JSX.Element | null>(null);
+
+  const { isAuthenticated } = useAuth0();
 
   const css: string =
     '.markdown p br:first-child, .markdown p br:last-child {display: none;} #results [class$="rowHeader"] {vertical-align: top;} mark { color: inherit; background: 0 none; text-decoration: underline wavy 1px;} br { margin-bottom: 1em; }';
@@ -105,8 +109,14 @@ export function Component(): JSX.Element {
     }
 
     if (message.length || heading.length) {
+      // @todo: use new color profiles: colors.UI.textBody
       container = (
-        <Billboard margin="large" message={message} heading={heading} />
+        <Billboard
+          margin="large"
+          themeOverride={{ messageColor: "#273540" }}
+          message={message}
+          heading={heading}
+        />
       );
       setContent(container);
     }
@@ -269,6 +279,7 @@ export function Component(): JSX.Element {
                   value={tmpQuery ? tmpQuery : query}
                   shouldNotWrap
                   maxLength={256}
+                  {...(isAuthenticated ? {} : { disabled: true })}
                 />
               </Flex.Item>
               <Flex.Item>
@@ -276,6 +287,7 @@ export function Component(): JSX.Element {
                   color="primary"
                   margin="0 0 0 small"
                   onClick={handleSearch}
+                  interaction={isAuthenticated ? "enabled" : "disabled"}
                 >
                   {s.search}
                 </Button>

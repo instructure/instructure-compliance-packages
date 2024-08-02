@@ -1,3 +1,4 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import {
   Drilldown,
   Heading,
@@ -40,6 +41,8 @@ function RenderTopNavBar({
   const [tmpQuery, setTmpQuery] = useState<string>("");
 
   const navigate = useNavigate();
+
+  const { isAuthenticated } = useAuth0();
 
   //@TODO: Type the event
   const handleSearchNavigation = (
@@ -122,38 +125,40 @@ function RenderTopNavBar({
                   `${hiddenChildrenCount} ${s.more_actions}`
                 }
               >
-                <TopNavBar.Item
-                  id="search"
-                  variant="icon"
-                  showSubmenuChevron={false}
-                  tooltip={s.search}
-                  renderIcon={<IconSearchLine />}
-                  customPopoverConfig={{
-                    on: "click",
-                    children: (
-                      <View as="div" padding="x-small">
-                        <TextInput
-                          id="searchInput"
-                          width="100%"
-                          display="block"
-                          renderLabel={
-                            <ScreenReaderContent>
-                              {s.search}
-                            </ScreenReaderContent>
-                          }
-                          renderBeforeInput={() => (
-                            <IconSearchLine inline={false} />
-                          )}
-                          placeholder={`${s.search}...`}
-                          onChange={(_e, v) => setTmpQuery(v)}
-                          onKeyDown={handleSearchNavigation}
-                        />
-                      </View>
-                    ),
-                  }}
-                >
-                  {s.search}
-                </TopNavBar.Item>
+                {isAuthenticated ? (
+                  <TopNavBar.Item
+                    id="search"
+                    variant="icon"
+                    showSubmenuChevron={false}
+                    tooltip={s.search}
+                    renderIcon={<IconSearchLine />}
+                    customPopoverConfig={{
+                      on: "click",
+                      children: (
+                        <View as="div" padding="x-small">
+                          <TextInput
+                            id="searchInput"
+                            width="100%"
+                            display="block"
+                            renderLabel={
+                              <ScreenReaderContent>
+                                {s.search}
+                              </ScreenReaderContent>
+                            }
+                            renderBeforeInput={() => (
+                              <IconSearchLine inline={false} />
+                            )}
+                            placeholder={`${s.search}...`}
+                            onChange={(_e, v) => setTmpQuery(v)}
+                            onKeyDown={handleSearchNavigation}
+                          />
+                        </View>
+                      ),
+                    }}
+                  >
+                    {s.search}
+                  </TopNavBar.Item>
+                ) : null}
                 <TopNavBar.Item
                   id="langSwitcher"
                   //@TODO: W/ Chevron enabled the Item width includes the ScreenReaderContent.

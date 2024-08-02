@@ -232,3 +232,8 @@ declare type GithubSearchAPI = {
     },
   ];
 };
+
+declare interface AuthCode {
+  codeVerifier: string;
+  codeChallenge: string;
+}

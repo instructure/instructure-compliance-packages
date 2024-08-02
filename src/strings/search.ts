@@ -6,12 +6,12 @@ const strings: PageStrings = {
     DE: "Suche",
   },
   description: {
-    EN: "This search tool is being actively developed and improved.  It currently searches select content from within the Compliance Packages.",
+    EN: "This search tool is being actively developed and improved.",
     ES_LA:
-      "Esta herramienta de búsqueda se está desarrollando y mejorando activamente. Actualmente busca contenido seleccionado dentro de los Paquetes de Cumplimiento.",
+      "Esta herramienta de búsqueda se está desarrollando y mejorando activamente.",
     PT_BR:
-      "Esta ferramenta de pesquisa está sendo desenvolvida e aprimorada ativamente. Atualmente, ele pesquisa conteúdo selecionado de dentro dos Pacotes de Conformidade.",
-    DE: "Dieses Suchtool wird aktiv entwickelt und verbessert. Es durchsucht derzeit ausgewählte Inhalte innerhalb der Compliance-Pakete.",
+      "Esta ferramenta de pesquisa está sendo desenvolvida e aprimorada ativamente.",
+    DE: "Dieses Suchtool wird aktiv entwickelt und verbessert.",
   },
   hints: {
     EN: "Try using AND, OR, or NOT to refine your search.",
