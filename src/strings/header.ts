@@ -107,11 +107,5 @@ const strings: PageStrings = {
     PT_BR: "Contato",
     DE: "Kontakt",
   },
-  search: {
-    EN: "Search",
-    ES_LA: "Buscar",
-    PT_BR: "Pesquisar",
-    DE: "Suche",
-  },
 };
 export default strings;

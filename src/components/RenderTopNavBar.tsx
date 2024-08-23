@@ -1,25 +1,19 @@
-import { useAuth0 } from "@auth0/auth0-react";
 import {
   Drilldown,
   Heading,
   IconDiscussionLine,
   IconQuestionLine,
-  IconSearchLine,
   InlineList,
   Link,
-  ScreenReaderContent,
   Text,
-  TextInput,
   TopNavBar,
   View,
 } from "@instructure/ui";
-import { useState } from "react";
-import { Link as Anchor, useNavigate } from "react-router-dom";
+import { Link as Anchor } from "react-router-dom";
 import strings from "../strings/header.ts";
 import { getStrings } from "../utils/langs.ts";
 import { ParentBrands } from "../variables/brands.tsx";
 import { globalLangDetails } from "../variables/langs.ts";
-import { useSearchContext } from "./SearchContext.tsx";
 
 /**
  * Component that renders the top navigation bar.
@@ -36,28 +30,6 @@ function RenderTopNavBar({
   const s = getStrings(strings, l);
   const Brands: BrandDetail[] = [...ParentBrands];
   Brands.shift();
-
-  const { setQuery } = useSearchContext();
-  const [tmpQuery, setTmpQuery] = useState<string>("");
-
-  const navigate = useNavigate();
-
-  const { isAuthenticated } = useAuth0();
-
-  //@TODO: Type the event
-  const handleSearchNavigation = (
-    //@ts-ignore
-    e: React.KeyboardEvent<TextInputOwnProps>,
-  ) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      e.stopPropagation();
-      setQuery(tmpQuery);
-      navigate(
-        `/search${l !== "EN" ? `/${l.toLowerCase().split("_")[0]}` : ""}`,
-      );
-    }
-  };
 
   const currentBrand =
     Brands[Brands.findIndex((b) => b.brandName === brand)] ?? ParentBrands[0];
@@ -125,40 +97,6 @@ function RenderTopNavBar({
                   `${hiddenChildrenCount} ${s.more_actions}`
                 }
               >
-                {isAuthenticated ? (
-                  <TopNavBar.Item
-                    id="search"
-                    variant="icon"
-                    showSubmenuChevron={false}
-                    tooltip={s.search}
-                    renderIcon={<IconSearchLine />}
-                    customPopoverConfig={{
-                      on: "click",
-                      children: (
-                        <View as="div" padding="x-small">
-                          <TextInput
-                            id="searchInput"
-                            width="100%"
-                            display="block"
-                            renderLabel={
-                              <ScreenReaderContent>
-                                {s.search}
-                              </ScreenReaderContent>
-                            }
-                            renderBeforeInput={() => (
-                              <IconSearchLine inline={false} />
-                            )}
-                            placeholder={`${s.search}...`}
-                            onChange={(_e, v) => setTmpQuery(v)}
-                            onKeyDown={handleSearchNavigation}
-                          />
-                        </View>
-                      ),
-                    }}
-                  >
-                    {s.search}
-                  </TopNavBar.Item>
-                ) : null}
                 <TopNavBar.Item
                   id="langSwitcher"
                   //@TODO: W/ Chevron enabled the Item width includes the ScreenReaderContent.

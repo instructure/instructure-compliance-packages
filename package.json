@@ -33,7 +33,6 @@
     "tag": "git tag isp-site-v$(pnpm -s env:semver) && git push origin isp-site-v$(pnpm -s env:semver)"
   },
   "dependencies": {
-    "@auth0/auth0-react": "^2.2.4",
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
     "@instructure/ui": "10.0.0",
     "gh-pages": "^6.1.1",
