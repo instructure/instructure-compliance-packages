@@ -2,7 +2,7 @@
  * @module main
  */
 
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import {
   type RouteObject,
@@ -150,15 +150,17 @@ const App = () => {
 };
 
 ReactDOM.createRoot(root).render(
-  <Auth0Provider
-    domain={AuthConfig.domain}
-    clientId={AuthConfig.clientId}
-    authorizationParams={{
-      redirect_uri: AuthConfig.callback,
-    }}
-  >
-    <SearchProvider>
-      <App />
-    </SearchProvider>
-  </Auth0Provider>,
+  <StrictMode>
+    <Auth0Provider
+      domain={AuthConfig.domain}
+      clientId={AuthConfig.clientId}
+      authorizationParams={{
+        redirect_uri: AuthConfig.callback,
+      }}
+    >
+      <SearchProvider>
+        <App />
+      </SearchProvider>
+    </Auth0Provider>
+  </StrictMode>,
 );
