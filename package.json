@@ -37,10 +37,10 @@
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
     "@instructure/ui": "10.0.0",
     "gh-pages": "^6.1.1",
-    "react": "19.0.0-rc-d48603a5-20240813",
-    "react-dom": "19.0.0-rc-d48603a5-20240813",
+    "react": "19.0.0-rc-eb3ad065-20240822",
+    "react-dom": "19.0.0-rc-eb3ad065-20240822",
     "react-markdown": "^9.0.1",
-    "react-router-dom": "^6.26.0",
+    "react-router-dom": "^6.26.1",
     "rehype-raw": "^7.0.0",
     "remark-gemoji": "^8.0.0",
     "remark-gfm": "^4.0.0"
@@ -53,18 +53,18 @@
     "@types/react": "npm:types-react@19.0.0-rc.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "babel-plugin-react-compiler": "0.0.0-experimental-334f00b-20240725",
+    "babel-plugin-react-compiler": "0.0.0-experimental-7d62301-20240822",
     "node-jq": "^4.4.0",
     "snyk": "^1.1292.4",
     "snyk-policy": "^3.0.0",
     "typescript": "^5.5.4",
-    "vite": "^5.4.0"
+    "vite": "^5.4.2"
   },
   "engines": {
     "node": ">=22.6.0",
     "pnpm": ">=9.7.0"
   },
-  "packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247",
+  "packageManager": "pnpm@9.8.0+sha512.8e4c3550fb500e808dbc30bb0ce4dd1eb614e30b1c55245f211591ec2cdf9c611cabd34e1364b42f564bd54b3945ed0f49d61d1bbf2ec9bd74b866fcdc723276",
   "pnpm": {
     "overrides": {
       "react": "^19.0.0-rc-d48603a5-20240813",
