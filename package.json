@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "5.0.0+1723050366",
+  "version": "5.0.1+1724690382",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -36,8 +36,8 @@
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
     "@instructure/ui": "10.2.0",
     "gh-pages": "^6.1.1",
-    "react": "19.0.0-rc-eb3ad065-20240822",
-    "react-dom": "19.0.0-rc-eb3ad065-20240822",
+    "react": "19.0.0-rc-b57d2823-20240822",
+    "react-dom": "19.0.0-rc-b57d2823-20240822",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.26.1",
     "rehype-raw": "^7.0.0",
