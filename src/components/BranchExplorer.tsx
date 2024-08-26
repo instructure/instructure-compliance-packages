@@ -6,7 +6,7 @@ import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
 import { Explorer } from "../utils/explorer.ts";
 import allowedElements from "../variables/allowedElements.ts";
-import mdtoui from "./Mdtoui.tsx";
+import Mdtoui from "./Mdtoui.tsx";
 
 /**
  * Component that explores a branch of a brand.
@@ -36,7 +36,7 @@ const BranchExplorer = ({
       remarkPlugins={[remarkGfm, remarkGemoji]}
       rehypePlugins={[rehypeRaw]}
       allowedElements={allowedElements}
-      components={mdtoui}
+      components={Mdtoui}
     >
       {explorerContent}
     </Markdown>
