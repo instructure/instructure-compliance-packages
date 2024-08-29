@@ -51,6 +51,11 @@ const EN: RedirectLinkPartial[] = [
     from: "/learnplatform/neutrality",
     to: "https://www.instructure.com/policies/learnplatform-neutrality/",
   },
+  {
+    title: "Utah BOE",
+    from: "/learnplatform/utah",
+    to: "https://www.instructure.com/k12/products/learnplatform/",
+  },
 ];
 
 export default EN.map((links) => ({ ...links, lang: "EN" })) as RedirectLink[];
