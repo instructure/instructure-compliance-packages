@@ -34,10 +34,10 @@
   },
   "dependencies": {
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
-    "@instructure/ui": "10.2.0",
+    "@instructure/ui": "10.2.1",
     "gh-pages": "^6.1.1",
-    "react": "19.0.0-rc-7771d3a7-20240827",
-    "react-dom": "19.0.0-rc-7771d3a7-20240827",
+    "react": "19.0.0-rc-a19a8ab4-20240829",
+    "react-dom": "19.0.0-rc-a19a8ab4-20240829",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.26.1",
     "rehype-raw": "^7.0.0",
@@ -49,10 +49,10 @@
     "@biomejs/biome": "1.8.3",
     "@instructure/shared-types": "^9.6.0",
     "@octokit/types": "^13.5.0",
-    "@types/react": "npm:types-react@19.0.0-rc.0",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@vitejs/plugin-react": "^4.3.1",
-    "babel-plugin-react-compiler": "0.0.0-experimental-03b7aef-20240827",
+    "babel-plugin-react-compiler": "0.0.0-experimental-e68eda9-20240829",
     "node-jq": "^4.4.0",
     "snyk": "^1.1293.0",
     "snyk-policy": "^3.0.0",
@@ -60,8 +60,8 @@
     "vite": "^5.4.2"
   },
   "engines": {
-    "node": ">=22.6.0",
-    "pnpm": ">=9.7.0"
+    "node": ">=22.7.0",
+    "pnpm": ">=9.9.0"
   },
   "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
   "pnpm": {
