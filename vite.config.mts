@@ -24,6 +24,9 @@ const config = defineConfig(() => {
             if (id.includes('@instructure/ui-dom-utils') || id.includes('@instructure/ui-focusable')) {
               return 'instructure-utils';
             }
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
           }
         }
       }
