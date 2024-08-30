@@ -17,6 +17,17 @@ const config = defineConfig(() => {
         }
       })
     ],
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('@instructure/ui-dom-utils') || id.includes('@instructure/ui-focusable')) {
+              return 'instructure-utils';
+            }
+          }
+        }
+      }
+    }
   }
 })
 
