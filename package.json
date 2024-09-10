@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "5.0.1+1724942027",
+  "version": "5.0.1+1725031812",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -33,13 +33,11 @@
     "tag": "git tag isp-site-v$(pnpm -s env:semver) && git push origin isp-site-v$(pnpm -s env:semver)"
   },
   "dependencies": {
-    "@instructure/browserslist-config-canvas-lms": "^2.0.0",
     "@instructure/ui": "10.2.1",
-    "gh-pages": "^6.1.1",
-    "react": "19.0.0-rc-a19a8ab4-20240829",
-    "react-dom": "19.0.0-rc-a19a8ab4-20240829",
+    "react": "19.0.0-rc-3dfd5d9e-20240910",
+    "react-dom": "19.0.0-rc-3dfd5d9e-20240910",
     "react-markdown": "^9.0.1",
-    "react-router-dom": "^6.26.1",
+    "react-router-dom": "^6.26.2",
     "rehype-raw": "^7.0.0",
     "remark-gemoji": "^8.0.0",
     "remark-gfm": "^4.0.0"
@@ -47,23 +45,27 @@
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.25.6",
     "@biomejs/biome": "1.8.3",
+    "@instructure/browserslist-config-canvas-lms": "^2.0.0",
     "@instructure/shared-types": "^9.6.0",
     "@octokit/types": "^13.5.0",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@vitejs/plugin-react": "^4.3.1",
     "babel-plugin-react-compiler": "0.0.0-experimental-e68eda9-20240829",
+    "gh-pages": "^6.1.1",
+    "lightningcss": "^1.26.0",
     "node-jq": "^4.4.0",
     "snyk": "^1.1293.0",
     "snyk-policy": "^3.0.0",
-    "typescript": "^5.5.4",
-    "vite": "^5.4.2"
+    "terser": "^5.32.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.3"
   },
   "engines": {
     "node": ">=22.7.0",
     "pnpm": ">=9.9.0"
   },
-  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "pnpm": {
     "overrides": {
       "react": "^19.0.0-rc-d48603a5-20240813",
