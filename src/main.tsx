@@ -10,9 +10,18 @@ import {
   createHashRouter,
 } from "react-router-dom";
 import "./index.css";
-import { InstUISettingsProvider, View, canvas } from "@instructure/ui";
+import { View, canvas } from "@instructure/ui";
 import { ParentBrands } from "./variables/brands.tsx";
 import Redirects from "./variables/redirects/index.js";
+
+canvas.use({
+  overrides: {
+    typography: {
+      fontFamily:
+        'LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif',
+    },
+  },
+});
 
 /**
  * Get the root element from the DOM.
@@ -126,11 +135,9 @@ const App = () => {
 
   return (
     <React.StrictMode>
-      <InstUISettingsProvider theme={canvas}>
-        <View as="div" minHeight="100vh" position="relative">
-          <RouterProvider router={router} />
-        </View>
-      </InstUISettingsProvider>
+      <View as="div" minHeight="100vh" position="relative">
+        <RouterProvider router={router} />
+      </View>
     </React.StrictMode>
   );
 };
