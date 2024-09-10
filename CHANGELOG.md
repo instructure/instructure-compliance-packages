@@ -1,11 +1,23 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.1...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.2...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
+
+## [5.0.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.1...isp-site-v5.0.2)
+
+### Added
+
+* `Lato Extended` font family support.
+
+### Changed
+
+* Custom chunking on rollup.
+* Use esnext as build target.
+* Switch to [terser](https://terser.org/) for mangling.
 
 ## [5.0.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.0...isp-site-v5.0.1)
 

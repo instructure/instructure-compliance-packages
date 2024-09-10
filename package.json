@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "5.0.1+1726000421",
+  "version": "5.0.2+1726001035",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -53,7 +53,6 @@
     "@vitejs/plugin-react": "^4.3.1",
     "babel-plugin-react-compiler": "0.0.0-experimental-e68eda9-20240829",
     "gh-pages": "^6.1.1",
-    "lightningcss": "^1.26.0",
     "node-jq": "^4.4.0",
     "snyk": "^1.1293.0",
     "snyk-policy": "^3.0.0",
