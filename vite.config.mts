@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import {browserslistToTargets} from 'lightningcss';
+import browsersList from '@instructure/browserslist-config-canvas-lms'
 
 const config = defineConfig(() => {
 
@@ -17,9 +19,16 @@ const config = defineConfig(() => {
         }
       })
     ],
+    css: {
+        transformer: 'lightningcss',
+        lightningcss: {
+          targets: browserslistToTargets(browsersList as browsersList)
+        }
+    },
     build: {
       target: 'esnext',
       minify: 'terser',
+      cssMinify: 'lightningcss',
       rollupOptions: {
         output: {
           manualChunks(id) {
