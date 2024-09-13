@@ -33,9 +33,9 @@
     "tag": "git tag isp-site-v$(pnpm -s env:semver) && git push origin isp-site-v$(pnpm -s env:semver)"
   },
   "dependencies": {
-    "@instructure/ui": "10.2.1",
-    "react": "19.0.0-rc-d6cb4e77-20240911",
-    "react-dom": "19.0.0-rc-d6cb4e77-20240911",
+    "@instructure/ui": "10.2.2",
+    "react": "19.0.0-rc-94e652d5-20240912",
+    "react-dom": "19.0.0-rc-94e652d5-20240912",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.26.2",
     "rehype-raw": "^7.0.0",
@@ -51,7 +51,7 @@
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@vitejs/plugin-react": "^4.3.1",
-    "babel-plugin-react-compiler": "0.0.0-experimental-fe484b5-20240911",
+    "babel-plugin-react-compiler": "0.0.0-experimental-fe484b5-20240912",
     "gh-pages": "^6.1.1",
     "lightningcss": "^1.27.0",
     "node-jq": "^4.4.0",
@@ -59,7 +59,7 @@
     "snyk-policy": "^3.0.0",
     "terser": "^5.32.0",
     "typescript": "^5.6.2",
-    "vite": "6.0.0-alpha.24"
+    "vite": "6.0.0-beta.0"
   },
   "engines": {
     "node": ">=22.7.0",
@@ -68,7 +68,7 @@
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "pnpm": {
     "overrides": {
-      "@vitejs/plugin-react>vite": "^6.0.0-alpha.24",
+      "@vitejs/plugin-react>vite": "^6.0.0-beta.0",
       "react": "^19.0.0-rc-3dfd5d9e-20240910",
       "react-dom": "^19.0.0-rc-3dfd5d9e-20240910",
       "@instructure/ui-test-sandbox>sinon": "^18.0.1",
