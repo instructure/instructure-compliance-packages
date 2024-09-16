@@ -23,9 +23,6 @@ export function getStrings(
   lang: LangCode = "EN",
 ): FilteredStrings {
   return Object.fromEntries(
-    Object.entries(strs).map(([key, { [lang]: langValue = strs.EN }]) => [
-      key,
-      langValue,
-    ]),
+    Object.entries(strs).map(([key, value]) => [key, value[lang] || value.EN]),
   ) as FilteredStrings;
 }
