@@ -68,6 +68,12 @@ async function getGithubRepoContents(
  * @returns A negative number if `a` should be sorted before `b`, a positive number if `a` should be sorted after `b`, or 0 if they are equal.
  */
 function sortProduct(a: { path: string }, b: { path: string }): number {
+  const priorityStrings: string[] = [
+    "Google Cloud Platform",
+    "Amazon Web Services",
+    "Instructure",
+  ] as const;
+
   const getPriorityIndex = (path: string) => {
     const uPath = path.toLocaleUpperCase();
     const index = priorityStrings.findIndex((str) =>
@@ -75,12 +81,6 @@ function sortProduct(a: { path: string }, b: { path: string }): number {
     );
     return index !== -1 ? index : priorityStrings.length;
   };
-
-  const priorityStrings: string[] = [
-    "Google Cloud Platform",
-    "Amazon Web Services",
-    "Instructure",
-  ] as const;
 
   const priorityA = getPriorityIndex(a.path);
   const priorityB = getPriorityIndex(b.path);
