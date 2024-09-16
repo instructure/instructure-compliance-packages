@@ -20,6 +20,9 @@ export function getLang(lang: LangCode = "EN"): string {
  */
 export function getStrings(strs: PageStrings, lang: LangCode = "EN") {
   return Object.fromEntries(
-    Object.entries(strs).map(([key, value]) => [key, value[lang] || value.EN]),
+    Object.entries(strs).map(([key, { [lang]: langValue = strs.EN }]) => [
+      key,
+      langValue,
+    ]),
   );
 }
