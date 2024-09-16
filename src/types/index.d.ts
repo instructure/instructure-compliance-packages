@@ -160,12 +160,12 @@ declare type GithubRelease = {
     login?: string;
     node_id?: string;
     organizations_url?: string;
-    repos_url: string;
+    repos_url?: string;
     site_admin?: boolean;
-    starred_url: string;
+    starred_url?: string;
     type?: string;
     url?: string;
-  };
+  } | null;
   body: string;
   created_at?: string;
   draft?: boolean;
