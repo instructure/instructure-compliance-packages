@@ -1,13 +1,20 @@
 import global from "../variables/globals.ts";
 
 /**
- * Fetches the GitHub releases for a given repository.
+ * Fetches the latest GitHub releases for a given repository.
  *
  * @param owner - The owner of the repository.
  * @param repo - The name of the repository.
- * @returns A promise that resolves to a string containing the release information, or null if an error occurred.
+ * @returns A promise that resolves to a string containing the latest releases formatted as a markdown list, or null if an error occurs.
+ *
+ * The function fetches the releases from the GitHub API and formats the first three releases (if available) as a markdown list.
+ * If there are more than three releases, it appends a link to the older releases.
+ *
+ * The GitHub API token is retrieved from the environment variable `VITE_GITHUB_TOKEN`.
+ *
+ * @throws Will log an error message to the console if the fetch operation fails.
  */
-async function getGithubReleases(
+export async function getGithubReleases(
   owner: string,
   repo: string,
 ): Promise<string | null> {
@@ -38,12 +45,16 @@ async function getGithubReleases(
 }
 
 /**
- * Builds a Markdown representation of a GitHub release name and body.
+ * Builds a formatted release note string from a GithubRelease response.
  *
- * @param release - The GitHub API release to build the string for.
- * @returns A Markdown representation of the GitHub release.
+ * @param response - The GithubRelease object containing release information.
+ * @returns A formatted string containing the release name, tag, author, and body.
+ *
+ * The author field is customized for specific usernames:
+ * - "gdenne" is replaced with " -- Gary Denne"
+ * - "thedannywahl" is replaced with " -- Danny Wahl"
  */
-function buildRelease(response: GithubRelease): string {
+export function buildRelease(response: GithubRelease): string {
   let author = response?.author?.login || "";
   if (author === "gdenne") {
     author = " -- Gary Denne";
@@ -60,9 +71,10 @@ ${response.body}\r\n
 }
 
 /**
- * Prints the releases for the repository specified in the global configuration.
+ * Fetches and prints the GitHub releases for the specified repository.
  *
- * @returns A promise that resolves to a string containing the release information, or null if an error occurred.
+ * @returns {Promise<string | null>} A promise that resolves to a string containing the release information,
+ * or null if the releases could not be fetched.
  */
 export async function printReleases(): Promise<string | null> {
   const owner = global.owner;
