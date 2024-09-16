@@ -4,9 +4,9 @@ import { globalLangs } from "../variables/langs.ts";
  * Retrieves the language code from the global language list.
  *
  * @param {LangCode} [lang="EN"] - The language code to search for. Defaults to "EN".
- * @returns {string} The matched language code from the global language list, or "EN" if not found.
+ * @returns {LangCode} The matched language code from the global language list, or "EN" if not found.
  */
-export function getLang(lang: LangCode = "EN"): string {
+export function getLang(lang: LangCode = "EN"): LangCode {
   return globalLangs.find((e) => e.includes(lang.toUpperCase())) || "EN";
 }
 
@@ -16,13 +16,16 @@ export function getLang(lang: LangCode = "EN"): string {
  *
  * @param strs - An object containing strings for different languages.
  * @param lang - The language code to retrieve the strings for. Defaults to "EN".
- * @returns An object with the strings for the specified language.
+ * @returns {FilteredStrings} object with the strings for the specified language.
  */
-export function getStrings(strs: PageStrings, lang: LangCode = "EN") {
+export function getStrings(
+  strs: PageStrings,
+  lang: LangCode = "EN",
+): FilteredStrings {
   return Object.fromEntries(
     Object.entries(strs).map(([key, { [lang]: langValue = strs.EN }]) => [
       key,
       langValue,
     ]),
-  );
+  ) as FilteredStrings;
 }

@@ -13,7 +13,7 @@ export function Component() {
   const l = getLang(useParams().language as LangCode);
   const s = getStrings(strings, l);
   const error: unknown = useRouteError();
-  let msg: string = s.not_your_fault;
+  let msg = s.not_your_fault;
   if (isRouteErrorResponse(error)) {
     msg = `${error.status} ${error.statusText}`;
   } else if (error instanceof Error) {
