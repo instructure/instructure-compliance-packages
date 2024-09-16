@@ -7,10 +7,7 @@ import { globalLangs } from "../variables/langs.ts";
  * @returns {string} The matched language code from the global language list, or "EN" if not found.
  */
 export function getLang(lang: LangCode = "EN"): string {
-  return (
-    globalLangs.find((langEntry) => langEntry.includes(lang.toUpperCase())) ||
-    "EN"
-  );
+  return globalLangs.find((e) => e.includes(lang.toUpperCase())) || "EN";
 }
 
 /**
@@ -23,9 +20,6 @@ export function getLang(lang: LangCode = "EN"): string {
  */
 export function getStrings(strs: PageStrings, lang: LangCode = "EN") {
   return Object.fromEntries(
-    Object.entries(strs).map(([key, { [lang]: langValue = strs.EN }]) => [
-      key,
-      langValue,
-    ]),
+    Object.entries(strs).map(([key, value]) => [key, value[lang] || value.EN]),
   );
 }
