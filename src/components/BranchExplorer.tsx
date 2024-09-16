@@ -4,7 +4,7 @@ import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
-import { Explorer } from "../utils/explorer.ts";
+import { explorer } from "../utils/explorer.ts";
 import allowedElements from "../variables/allowedElements.ts";
 import Mdtoui from "./Mdtoui.tsx";
 
@@ -26,7 +26,7 @@ const BranchExplorer = ({
 
   // Effect for fetching the explorer content
   useEffect(() => {
-    Explorer(brand.toLowerCase().replace(/\s/g, "-"), branch, l)
+    explorer(brand.toLowerCase().replace(/\s/g, "-"), branch, l)
       .then((result) => setExplorerContent(result))
       .catch((error) => console.error(error));
   }, [brand, branch, l]);

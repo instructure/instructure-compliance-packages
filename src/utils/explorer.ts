@@ -3,21 +3,25 @@ import global from "../variables/globals.ts";
 import { getStrings } from "./langs.ts";
 
 /**
- * Fetches the contents of a GitHub repository.
+ * Fetches the contents of a GitHub repository's branch.
  *
- * This asynchronous function attempts to retrieve the contents of a specified GitHub repository by making a GET request to the GitHub API.
- * It constructs the request URL using the provided repository owner's username, the repository name, and the branch name.
- * The function returns a promise that resolves to an object representing the repository's contents or `undefined` if an error occurs during the fetch operation.
+ * @param owner - The owner of the GitHub repository.
+ * @param repo - The name of the GitHub repository.
+ * @param branch - The branch of the repository to fetch contents from.
+ * @returns A promise that resolves to the contents of the repository's branch, or undefined if an error occurs.
  *
- * The returned object includes properties for each file in the repository, along with a `tree` property. The `tree` property is an array of all the files,
- * which is sorted by the `sortProduct` function. If the fetch operation fails for any reason (e.g., network issues, invalid credentials, etc.),
- * the function logs the error to the console and returns `undefined`.
+ * @remarks
+ * This function constructs the GitHub API URL using the provided owner, repo, and branch parameters.
+ * It then makes a GET request to the GitHub API to fetch the repository contents.
+ * The response is expected to be in the GitHub v3 API format.
  *
- * @param owner - The username of the owner of the repository.
- * @param repo - The name of the repository.
- * @param branch - The name of the branch in the repository.
- * @returns A promise that resolves to an object representing the contents of the repository, or `undefined` if an error occurs.
- *          The object includes a `tree` property that is an array of all the files, sorted by the `sortProduct` function.
+ * @throws Will log an error message if the fetch request fails.
+ *
+ * @example
+ * ```typescript
+ * const contents = await getGithubRepoContents('octocat', 'Hello-World', 'main');
+ * console.log(contents);
+ * ```
  */
 async function getGithubRepoContents(
   owner: string,
@@ -57,6 +61,7 @@ async function getGithubRepoContents(
  * # <Product>
  * # Instructure
  * # Amazon Web Services
+ * # Google Cloud Platform
  *
  * @param a - The first product to compare.
  * @param b - The second product to compare.
@@ -149,7 +154,7 @@ function formatGithubContents(
  * @param language - The language code for the language to use for strings in the Markdown.
  * @returns A promise that resolves to a string of HTML representing the contents of the branch, or null if an error occurs or no branch name is found.
  */
-export async function Explorer(
+export async function explorer(
   page: string,
   branch: HTMLElement,
   language: LangCode,
