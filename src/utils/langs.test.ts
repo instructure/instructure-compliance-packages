@@ -1,3 +1,25 @@
+/**
+ * @fileoverview Unit tests for language utility functions.
+ *
+ * This file contains tests for the `getLang` and `getStrings` functions
+ * from the `langs.ts` module. The tests are written using the `vitest`
+ * testing framework.
+ *
+ * The `getLang` function is tested to ensure it:
+ * - Returns the specified language if it exists in `globalLangs`.
+ * - Returns 'EN' if the specified language does not exist in `globalLangs`.
+ * - Defaults to 'EN' if no language is specified.
+ * - Handles case insensitivity.
+ *
+ * The `getStrings` function is tested to ensure it:
+ * - Returns strings for the specified language.
+ * - Returns English strings if the specified language is not available.
+ * - Defaults to English if no language is specified.
+ * - Handles missing keys gracefully.
+ *
+ * @module utils/langs.test
+ */
+
 import { describe, it, expect } from "vitest";
 import { getStrings, getLang } from "./langs.ts";
 
