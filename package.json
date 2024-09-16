@@ -63,7 +63,8 @@
     "terser": "^5.32.0",
     "typescript": "^5.6.2",
     "vite": "6.0.0-beta.0",
-    "vitest": "^2.1.1"
+    "vitest": "^2.1.1",
+    "vitest-browser-react": "^0.0.1"
   },
   "engines": {
     "node": ">=22.7.0",
@@ -73,6 +74,7 @@
   "pnpm": {
     "overrides": {
       "@vitejs/plugin-react>vite": "^6.0.0-beta.0",
+      "vitest-plugin-react>vite": "^6.0.0-beta.0",
       "react": "^19.0.0-rc-3dfd5d9e-20240910",
       "react-dom": "^19.0.0-rc-3dfd5d9e-20240910",
       "@instructure/ui-test-sandbox>sinon": "^18.0.1",
