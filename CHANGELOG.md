@@ -7,6 +7,10 @@
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Added
+
+* [vitest](https://vitest.dev/) for code testing.
+
 ## [5.0.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.1...isp-site-v5.0.2)
 
 ### Added
