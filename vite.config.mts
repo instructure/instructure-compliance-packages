@@ -1,8 +1,8 @@
 /// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import {browserslistToTargets} from 'lightningcss';
-import browsersList from '@instructure/browserslist-config-canvas-lms'
+// import {browserslistToTargets} from 'lightningcss';
+// import browsersList from '@instructure/browserslist-config-canvas-lms'
 
 const config = defineConfig(() => {
 
@@ -49,7 +49,15 @@ const config = defineConfig(() => {
         }
       }
     },
-    test: {}
+    test: {
+      coverage: {
+        enabled: true,
+        provider: 'v8',
+        reporters: ['default', 'html'],
+        include: ['src/**/*.ts', 'src/**/*.tsx'],
+        exclude: ['src/**/*.test.tsx', 'src/**/*.test.ts', 'src/**/*.d.ts']
+      }
+    }
   }
 })
 

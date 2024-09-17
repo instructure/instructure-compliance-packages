@@ -33,6 +33,7 @@
     "tag": "git tag isp-site-v$(pnpm -s env:semver) && git push origin isp-site-v$(pnpm -s env:semver)",
     "test": "vitest run",
     "test:bench": "vitest bench",
+    "test:ui": "vitest --ui",
     "test:watch": "vitest watch"
   },
   "dependencies": {
@@ -54,6 +55,8 @@
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.1.1",
+    "@vitest/ui": "^2.1.1",
     "babel-plugin-react-compiler": "0.0.0-experimental-23b8160-20240916",
     "gh-pages": "^6.1.1",
     "lightningcss": "^1.27.0",
