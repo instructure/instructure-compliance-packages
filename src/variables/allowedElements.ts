@@ -1,7 +1,7 @@
 /**
  * Allowed HTML elements for the `react-markdown` library.
  */
-const allowedElements: string[] = [
+export const allowedElements: string[] = [
   "strong",
   "summary",
   "blockquote",
@@ -16,8 +16,6 @@ const allowedElements: string[] = [
   "h5",
   "h6",
   "input",
-  "ul",
-  "li",
   "div",
   "pre",
   "ul",
