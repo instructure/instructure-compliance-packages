@@ -16,7 +16,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "types": [
-      "vitest/globals"
+      "vitest/globals",
+      "vitest-browser-react",
+      "@vitest/browser/providers/playwright"
     ]
   },
   "include": [
