@@ -56,7 +56,12 @@ const config = defineConfig(() => {
         reporters: ['default', 'html'],
         include: ['src/**/*.ts', 'src/**/*.tsx'],
         exclude: ['src/**/*.test.tsx', 'src/**/*.test.ts', 'src/**/*.d.ts']
-      }
+      },
+      browser: {
+        enabled: true,
+        name: 'chromium',
+        provider: 'playwright',
+      },
     }
   }
 })

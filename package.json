@@ -34,12 +34,13 @@
     "test": "vitest run",
     "test:bench": "vitest bench",
     "test:ui": "vitest --ui",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "test:browser": "vitest --workspace=vitest.workspace.ts"
   },
   "dependencies": {
     "@instructure/ui": "10.2.2",
-    "react": "19.0.0-rc-a99d8e8d-20240916",
-    "react-dom": "19.0.0-rc-a99d8e8d-20240916",
+    "react": "19.0.0-rc-5dcb0097-20240918",
+    "react-dom": "19.0.0-rc-5dcb0097-20240918",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.26.2",
     "rehype-raw": "^7.0.0",
@@ -55,12 +56,14 @@
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/browser": "^2.1.1",
     "@vitest/coverage-v8": "^2.1.1",
     "@vitest/ui": "^2.1.1",
-    "babel-plugin-react-compiler": "0.0.0-experimental-ca8e0be-20240916",
+    "babel-plugin-react-compiler": "0.0.0-experimental-24ec0eb-20240918",
     "gh-pages": "^6.1.1",
     "lightningcss": "^1.27.0",
     "node-jq": "^4.4.0",
+    "playwright": "^1.47.1",
     "snyk": "^1.1293.1",
     "snyk-policy": "^3.0.0",
     "terser": "^5.33.0",
@@ -70,15 +73,15 @@
     "vitest-browser-react": "^0.0.1"
   },
   "engines": {
-    "node": ">=22.7.0",
+    "node": ">=22.9.0",
     "pnpm": ">=9.10.0"
   },
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "pnpm": {
     "overrides": {
       "vite": "^6.0.0-beta.1",
-      "react": "^19.0.0-rc-f2df5694-20240916",
-      "react-dom": "^19.0.0-rc-f2df5694-20240916",
+      "react": "^19.0.0-rc-5dcb0097-20240918",
+      "react-dom": "^19.0.0-rc-5dcb0097-20240918",
       "@instructure/ui-test-sandbox>sinon": "^18.0.1",
       "gh-pages>globby": "11.1.0",
       "node-jq>tempfile": "^5.0.0",
