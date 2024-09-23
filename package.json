@@ -51,7 +51,7 @@
     "@babel/plugin-syntax-import-attributes": "^7.25.6",
     "@biomejs/biome": "1.8.3",
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
-    "@instructure/shared-types": "^9.7.0",
+    "@instructure/shared-types": "^10.2.2",
     "@octokit/types": "^13.5.0",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
