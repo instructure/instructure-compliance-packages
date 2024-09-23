@@ -7,6 +7,10 @@
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
 
+### Fixed
+
+* Incorrect version of @instructure/shared-types.
+
 ### Added
 
 * [vitest](https://vitest.dev/) for code testing.
