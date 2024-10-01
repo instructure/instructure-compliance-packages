@@ -150,7 +150,6 @@ function RenderTopNavBar({
                         as="div"
                         padding="medium"
                         width="25rem"
-                        role="dialog"
                         tabIndex={0}
                         aria-label={s.contact_info}
                         position="relative"

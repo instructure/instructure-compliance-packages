@@ -80,7 +80,7 @@ const Mdtoui: MarkdownCustomRenderer = {
       ...props,
       children: filterChildrenProps(props),
     };
-    const alertRegex = /\[\!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/;
+    const alertRegex = /\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/;
 
     const alertTypes: Record<string, "info" | "success" | "warning" | "error"> =
       {
