@@ -9,7 +9,8 @@
 
 ### Fixed
 
-* Incorrect version of @instructure/shared-types.
+* Incorrect version of `@instructure/shared-types`.
+* Remove `role="dialog"` from help menu (`biome:lint/a11y/useSemanticElements`).
 
 ### Added
 
