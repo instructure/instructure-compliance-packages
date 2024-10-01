@@ -20,8 +20,8 @@
  * @module utils/langs.test
  */
 
-import { describe, it, expect } from "vitest";
-import { getStrings, getLang } from "./langs.ts";
+import { describe, expect, it } from "vitest";
+import { getLang, getStrings } from "./langs.ts";
 
 describe("getLang", () => {
   it("should return the specified language if it exists in globalLangs", () => {

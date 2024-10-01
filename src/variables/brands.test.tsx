@@ -1,5 +1,3 @@
-import { describe, it, expect } from "vitest";
-import { globalBrands, globalSubBrands, ParentBrands } from "./brands.tsx";
 import {
   IconCanvasLogoLine,
   IconElevateLogoLine,
@@ -7,6 +5,8 @@ import {
   IconInstructureLogoLine,
   IconMasteryLogoLine,
 } from "@instructure/ui";
+import { describe, expect, it } from "vitest";
+import { ParentBrands, globalBrands, globalSubBrands } from "./brands.tsx";
 
 describe("globalBrands", () => {
   it("should contain the expected brands", () => {

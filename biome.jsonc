@@ -9,9 +9,7 @@
     "enabled": true
   },
   "files": {
-    "include": [
-      "src/*"
-    ]
+    "include": ["src/*"]
   },
   "formatter": {
     "enabled": true,
@@ -20,9 +18,7 @@
     "lineWidth": 80,
     "lineEnding": "lf",
     "formatWithErrors": true,
-    "include": [
-      "src/*"
-    ]
+    "include": ["src/*"]
   },
   "linter": {
     "enabled": true,
@@ -32,9 +28,7 @@
         "recommended": true
       }
     },
-    "include": [
-      "src/*"
-    ]
+    "include": ["src/*"]
   },
   "css": {
     "formatter": {

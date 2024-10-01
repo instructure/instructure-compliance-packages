@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
 import global, { owner, repo, branch, url, gh, api, raw } from "./globals.ts";
 
 describe("global object", () => {
