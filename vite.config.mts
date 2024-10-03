@@ -1,8 +1,8 @@
 /// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-// import {browserslistToTargets} from 'lightningcss';
-// import browsersList from '@instructure/browserslist-config-instui'
+ import { browserslistToTargets } from 'lightningcss';
+ import browsersList from '@instructure/browserslist-config-instui';
 
 const config = defineConfig(() => {
 
@@ -20,16 +20,16 @@ const config = defineConfig(() => {
         }
       })
     ],
-    /*css: {
+    css: {
         transformer: 'lightningcss',
         lightningcss: {
-          targets: browserslistToTargets(browsersList as browsersList)
+          targets: browserslistToTargets(browsersList),
         }
-    },*/
+    },
     build: {
       target: 'esnext',
       minify: 'terser',
-      // cssMinify: 'lightningcss',
+       cssMinify: 'lightningcss',
       rollupOptions: {
         output: {
           manualChunks(id) {
