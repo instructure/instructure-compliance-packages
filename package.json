@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "5.0.2+1726001035",
+  "version": "5.0.2+1727971171",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -35,7 +35,7 @@
     "test:bench": "vitest bench",
     "test:ui": "vitest --ui",
     "test:watch": "vitest watch",
-    "test:browser": "vitest --workspace=vitest.workspace.ts"
+    "test:browser": "vitest --workspace=vitest.workspace.mts"
   },
   "dependencies": {
     "@instructure/ui": "10.3.0",
