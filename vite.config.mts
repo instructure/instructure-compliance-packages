@@ -24,6 +24,7 @@ const config = defineConfig(() => {
         transformer: 'lightningcss',
         lightningcss: {
           targets: browserslistToTargets(browsersList),
+          cssModules: {}
         }
     },
     build: {
