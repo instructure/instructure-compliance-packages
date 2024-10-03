@@ -54,8 +54,8 @@ const config = defineConfig(() => {
         enabled: true,
         provider: 'v8',
         reporters: ['default', 'html'],
-        include: ['src/**/*.ts', 'src/**/*.tsx'],
-        exclude: ['src/**/*.test.tsx', 'src/**/*.test.ts', 'src/**/*.d.ts']
+        include: ['src/**/*.{ts,tsx}'],
+        exclude: ['src/**/*.test.{ts,tsx}', 'src/**/*.d.ts']
       },
       browser: {
         enabled: true,
