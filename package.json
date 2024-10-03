@@ -50,7 +50,7 @@
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.25.7",
     "@biomejs/biome": "1.9.3",
-    "@instructure/browserslist-config-canvas-lms": "^2.0.0",
+    "@instructure/browserslist-config-instui": "^10.3.0",
     "@instructure/shared-types": "^10.3.0",
     "@octokit/types": "^13.6.0",
     "@types/react": "npm:types-react@19.0.0-rc.1",
@@ -91,6 +91,6 @@
     }
   },
   "browserslist": [
-    "extends @instructure/browserslist-config-canvas-lms"
+    "extends @instructure/browserslist-config-instui"
   ]
 }

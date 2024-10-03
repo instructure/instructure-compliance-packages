@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 // import {browserslistToTargets} from 'lightningcss';
-// import browsersList from '@instructure/browserslist-config-canvas-lms'
+// import browsersList from '@instructure/browserslist-config-instui'
 
 const config = defineConfig(() => {
 
