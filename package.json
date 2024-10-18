@@ -73,15 +73,15 @@
     "vitest-browser-react": "^0.0.1"
   },
   "engines": {
-    "node": ">=22.9.0",
-    "pnpm": ">=9.12.1"
+    "node": ">=23.0.0",
+    "pnpm": ">=9.12.2"
   },
   "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
   "pnpm": {
     "overrides": {
-      "vite": "^6.0.0-beta.2",
-      "react": "^19.0.0-rc-09111202-20241011",
-      "react-dom": "^19.0.0-rc-09111202-20241011",
+      "vite": "^6.0.0-beta.3",
+      "react": "^19.0.0-rc-bf7e210c-20241017",
+      "react-dom": "^19.0.0-rc-bf7e210c-20241017",
       "@instructure/ui-test-sandbox>sinon": "^18.0.1",
       "@bundled-es-modules/cookie>cookie": "^1.0.0"
     }
