@@ -1,11 +1,24 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.2...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.4...isp-site)
 
 ### Roadmap
 
 * Add MDX support to markdown renderer
 * Additional contexts (language detection, UI detection, frame detection)
+
+## [5.0.4](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.3...isp-site-v5.0.4)
+
+### Changed
+
+* Support for Node v23
+* Support for Vite v6
+
+### Fixed
+
+* Add test automation to build process.
+
+## [5.0.3](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.2...isp-site-v5.0.3)
 
 ### Fixed
 
