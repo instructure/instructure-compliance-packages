@@ -83,7 +83,7 @@
       "react": "^19.0.0-rc-cae764ce-20241025",
       "react-dom": "^19.0.0-rc-cae764ce-20241025",
       "@instructure/ui-test-sandbox>sinon": "^18.0.1",
-      "@bundled-es-modules/cookie>cookie": "^1.0.0"
+      "@bundled-es-modules/cookie>cookie": "^1.0.1"
     }
   },
   "browserslist": [
