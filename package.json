@@ -11,7 +11,7 @@
     "build": "pnpm build:preview && pnpm build:git",
     "build:git": "git add . && git commit -m \"Build v$npm_package_version\" && git push",
     "build:js": "vite build",
-    "build:preview": "pnpm biome:apply && pnpm sec && pnpm build:version && pnpm build:ts && pnpm build:js",
+    "build:preview": "pnpm biome:apply && pnpm test && pnpm sec && pnpm build:version && pnpm build:ts && pnpm build:js",
     "build:ts": "tsc",
     "build:version": "node-jq -r '.version=$ARGS.positional[0]+\"+\"+$ARGS.positional[1]' package.json --args \"$(pnpm -s env:semver)\" \"$(date +%s)\" | sponge package.json",
     "check": "biome check",
