@@ -115,6 +115,11 @@ const EN: UnbrandedRedirectLinkPartial[] = [
     to: "https://www.instructure.com/policies/data-processing/",
   },
   {
+    title: "Third-party Service Providers",
+    from: "/subprocessors",
+    to: "https://community.canvaslms.com/t5/Privacy-Articles/Instructure-s-Third-Party-Processing-Guide/ta-p/606339?attachment-id=10429",
+  },
+  {
     title: "Investor Relations",
     from: "/investors",
     to: "https://ir.instructure.com/overview/default.aspx",
