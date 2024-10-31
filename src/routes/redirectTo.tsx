@@ -62,6 +62,7 @@ export function Component() {
         margin="0 auto"
       >
         <Billboard
+          themeOverride={{ messageColor: "primary" }}
           size="medium"
           heading={download ? s.downloading : s.redirecting}
           headingAs="h1"
