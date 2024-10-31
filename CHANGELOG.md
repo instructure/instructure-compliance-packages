@@ -1,26 +1,26 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.2...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.3...isp-site)
 
-### Roadmap
-
-* Add MDX support to markdown renderer
-* Additional contexts (language detection, UI detection, frame detection)
+## [5.0.3](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.2...isp-site-v5.0.3)
 
 ### Fixed
 
 * Incorrect version of `@instructure/shared-types`.
 * Remove `role="dialog"` from help menu (`biome:lint/a11y/useSemanticElements`).
+* Manual chunks in Rollup config causing uncaught error in build.
+* August release tag
 
 ### Added
 
 * [vitest](https://vitest.dev/) for code testing.
-* subprocessors redirect link.
+* Subprocessors redirect link. [inst.bid/subprocessors](https://inst.bid/subprocessors)
 
 ### Changed
 
 * Replaced Canvas LMS browserslist with InstUI browserslist.
-* Switch to [lightningcss](https://lightningcss.dev/) CSS transformer from builtin Vite minifier. 
+* Switch to [lightningcss](https://lightningcss.dev/) CSS transformer from builtin Vite minifier.
+* Simplify error messaging for existing git tags on build.
 
 ## [5.0.2](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.1...isp-site-v5.0.2)
 
