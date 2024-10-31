@@ -15,8 +15,10 @@
 ### Added
 
 * [vitest](https://vitest.dev/) for code testing.
+* subprocessors redirect link.
 
 ### Changed
+
 * Replaced Canvas LMS browserslist with InstUI browserslist.
 * Switch to [lightningcss](https://lightningcss.dev/) CSS transformer from builtin Vite minifier. 
 
