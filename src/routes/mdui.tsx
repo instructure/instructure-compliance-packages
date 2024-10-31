@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 import remarkGemoji from "remark-gemoji";
 import remarkGfm from "remark-gfm";
-import mdtoui from "../components/Mdtoui.tsx";
+import Mdtoui from "../components/Mdtoui.tsx";
 import RenderFooter from "../components/RenderFooter.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
 import strings from "../strings/mdui.ts";
@@ -49,7 +49,7 @@ export function Component(): React.ReactElement {
                 remarkPlugins={[remarkGfm, remarkGemoji]}
                 rehypePlugins={[rehypeRaw]}
                 allowedElements={allowedElements}
-                components={mdtoui}
+                components={Mdtoui}
               >
                 {content}
               </ReactMarkdown>
