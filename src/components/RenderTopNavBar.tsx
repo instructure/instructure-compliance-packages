@@ -2,6 +2,7 @@ import {
   Drilldown,
   Heading,
   IconDiscussionLine,
+  IconInstructureLogoLine,
   IconQuestionLine,
   InlineList,
   Link,
@@ -11,6 +12,7 @@ import {
 } from "@instructure/ui";
 import { Link as Anchor } from "react-router-dom";
 import strings from "../strings/header.ts";
+import { IsApp } from "../utils/frame.ts";
 import { getStrings } from "../utils/langs.ts";
 import { ParentBrands } from "../variables/brands.tsx";
 import { globalLangDetails } from "../variables/langs.ts";
@@ -34,6 +36,22 @@ function RenderTopNavBar({
   const currentBrand =
     Brands[Brands.findIndex((b) => b.brandName === brand)] ?? ParentBrands[0];
 
+  // @TODO: Switch these!
+  const isApp = IsApp();
+
+  const topNavBarThemeOverride = isApp
+    ? {
+        desktopBackgroundInverse: "#ffffff",
+        smallViewportBackgroundInverse: "#ffffff",
+      }
+    : undefined;
+
+  const topNavBarItemThemeOverride = isApp
+    ? {
+        activeIndicatorColorInverse: currentBrand.color,
+      }
+    : undefined;
+
   return (
     <View id="nav" className={`${currentBrand.title}`} as="div" tabIndex={0}>
       <TopNavBar inverseColor={true}>
@@ -44,24 +62,36 @@ function RenderTopNavBar({
               dropdownMenuToggleButtonLabel: s.toggle_menu,
               dropdownMenuLabel: s.main_menu,
             }}
-            themeOverride={{
-              desktopBackgroundInverse: "#ffffff",
-              smallViewportBackgroundInverse: "#ffffff",
-            }}
+            themeOverride={topNavBarThemeOverride}
             renderBrand={
-              <TopNavBar.Brand
-                screenReaderLabel={currentBrand.brandName}
-                renderIcon={
-                  <currentBrand.Icon
-                    size="small"
-                    color="primary-inverse"
-                    height="2.5rem"
-                    width="2.5rem"
-                  />
-                }
-                iconBackground={currentBrand.color}
-                href={`#/${l === "EN" ? "" : l.toLowerCase().split("_")[0]}`}
-              />
+              isApp ? (
+                <TopNavBar.Brand
+                  screenReaderLabel={currentBrand.brandName}
+                  renderIcon={
+                    <currentBrand.Icon
+                      size="small"
+                      color="primary-inverse"
+                      height="2.5rem"
+                      width="2.5rem"
+                    />
+                  }
+                  iconBackground={currentBrand.color}
+                  href={`#/${l === "EN" ? "" : l.toLowerCase().split("_")[0]}`}
+                />
+              ) : (
+                <TopNavBar.Brand
+                  screenReaderLabel={ParentBrands[0].brandName}
+                  renderIcon={
+                    <IconInstructureLogoLine
+                      size="small"
+                      color="primary"
+                      height="2.5rem"
+                      width="2.5rem"
+                    />
+                  }
+                  href={`#/${l === "EN" ? "" : l.toLowerCase().split("_")[0]}`}
+                />
+              )
             }
             renderMenuItems={
               <TopNavBar.MenuItems
@@ -73,9 +103,7 @@ function RenderTopNavBar({
               >
                 {Brands.map((brand) => (
                   <TopNavBar.Item
-                    themeOverride={{
-                      activeIndicatorColorInverse: currentBrand.color,
-                    }}
+                    themeOverride={topNavBarItemThemeOverride}
                     id={brand.title}
                     key={brand.title}
                     href={`#${brand.route}${
@@ -135,113 +163,115 @@ function RenderTopNavBar({
                 >
                   {s.language}
                 </TopNavBar.Item>
-                <TopNavBar.Item
-                  id="info"
-                  showSubmenuChevron={false}
-                  tooltip={s.help}
-                  variant="icon"
-                  renderIcon={<IconQuestionLine />}
-                  customPopoverConfig={{
-                    on: "click",
-                    shouldContainFocus: true,
-                    children: (
-                      <View
-                        id="help"
-                        as="div"
-                        padding="medium"
-                        width="25rem"
-                        tabIndex={0}
-                        aria-label={s.contact_info}
-                        position="relative"
-                        borderRadius="small"
-                      >
-                        <Heading level="h3">{s.contact_info}</Heading>
-                        <Text>{s.info_overview}</Text>
-
-                        <View as="div" margin="medium 0 0">
-                          <Text weight="bold">{s.current_customers}</Text>
-                          <br />
-                          <Text>{s.contact_csm}</Text>
-                        </View>
-
-                        <View as="div" margin="medium 0 0">
-                          <Text weight="bold">{s.prospects}</Text>
-                          <br />
-                          <Text>{s.contact_sales}</Text>
-                          <br />
-                          <Text>
-                            {s.contact_general}{" "}
-                            <Link href="mailto:info@instructure.com">
-                              info@instructure.com
-                            </Link>
-                            .
-                          </Text>
-                        </View>
+                {isApp ? (
+                  <TopNavBar.Item
+                    id="info"
+                    showSubmenuChevron={false}
+                    tooltip={s.help}
+                    variant="icon"
+                    renderIcon={<IconQuestionLine />}
+                    customPopoverConfig={{
+                      on: "click",
+                      shouldContainFocus: true,
+                      children: (
                         <View
-                          as="hr"
-                          shadow="topmost"
-                          borderWidth="small"
-                          margin="small none"
-                          padding="none"
-                          borderColor="primary"
-                        />
-                        <InlineList delimiter="pipe" size="small">
-                          <InlineList.Item>
-                            <Link
-                              href={`#/links${
-                                l !== "EN"
-                                  ? `/${l.toLowerCase().split("_")[0]}`
-                                  : ""
-                              }`}
-                            >
-                              {s.redirects}
-                            </Link>
-                          </InlineList.Item>
-                          <InlineList.Item>
-                            <Link
-                              href={`#/releases${
-                                l !== "EN"
-                                  ? `/${l.toLowerCase().split("_")[0]}`
-                                  : ""
-                              }`}
-                            >
-                              {s.releases}
-                            </Link>
-                          </InlineList.Item>
-                          <InlineList.Item>
-                            <Link
-                              href={`#/mdui${
-                                l !== "EN"
-                                  ? `/${l.toLowerCase().split("_")[0]}`
-                                  : ""
-                              }`}
-                            >
-                              MDUI
-                            </Link>
-                          </InlineList.Item>
-                          <InlineList.Item>
-                            <Link
-                              href={
-                                {
-                                  EN: "https://www.instructure.com/contact-us",
-                                  ES_LA:
-                                    "https://www.instructure.com/es/contact-us",
-                                  PT_BR:
-                                    "https://www.instructure.com/pt-br/contato",
-                                  DE: "https://www.instructure.com/de/contact-us",
-                                }[l as LangCode]
-                              }
-                            >
-                              {s.contact}
-                            </Link>
-                          </InlineList.Item>
-                        </InlineList>
-                      </View>
-                    ),
-                  }}
-                >
-                  {s.help}
-                </TopNavBar.Item>
+                          id="help"
+                          as="div"
+                          padding="medium"
+                          width="25rem"
+                          tabIndex={0}
+                          aria-label={s.contact_info}
+                          position="relative"
+                          borderRadius="small"
+                        >
+                          <Heading level="h3">{s.contact_info}</Heading>
+                          <Text>{s.info_overview}</Text>
+
+                          <View as="div" margin="medium 0 0">
+                            <Text weight="bold">{s.current_customers}</Text>
+                            <br />
+                            <Text>{s.contact_csm}</Text>
+                          </View>
+
+                          <View as="div" margin="medium 0 0">
+                            <Text weight="bold">{s.prospects}</Text>
+                            <br />
+                            <Text>{s.contact_sales}</Text>
+                            <br />
+                            <Text>
+                              {s.contact_general}{" "}
+                              <Link href="mailto:info@instructure.com">
+                                info@instructure.com
+                              </Link>
+                              .
+                            </Text>
+                          </View>
+                          <View
+                            as="hr"
+                            shadow="topmost"
+                            borderWidth="small"
+                            margin="small none"
+                            padding="none"
+                            borderColor="primary"
+                          />
+                          <InlineList delimiter="pipe" size="small">
+                            <InlineList.Item>
+                              <Link
+                                href={`#/links${
+                                  l !== "EN"
+                                    ? `/${l.toLowerCase().split("_")[0]}`
+                                    : ""
+                                }`}
+                              >
+                                {s.redirects}
+                              </Link>
+                            </InlineList.Item>
+                            <InlineList.Item>
+                              <Link
+                                href={`#/releases${
+                                  l !== "EN"
+                                    ? `/${l.toLowerCase().split("_")[0]}`
+                                    : ""
+                                }`}
+                              >
+                                {s.releases}
+                              </Link>
+                            </InlineList.Item>
+                            <InlineList.Item>
+                              <Link
+                                href={`#/mdui${
+                                  l !== "EN"
+                                    ? `/${l.toLowerCase().split("_")[0]}`
+                                    : ""
+                                }`}
+                              >
+                                MDUI
+                              </Link>
+                            </InlineList.Item>
+                            <InlineList.Item>
+                              <Link
+                                href={
+                                  {
+                                    EN: "https://www.instructure.com/contact-us",
+                                    ES_LA:
+                                      "https://www.instructure.com/es/contact-us",
+                                    PT_BR:
+                                      "https://www.instructure.com/pt-br/contato",
+                                    DE: "https://www.instructure.com/de/contact-us",
+                                  }[l as LangCode]
+                                }
+                              >
+                                {s.contact}
+                              </Link>
+                            </InlineList.Item>
+                          </InlineList>
+                        </View>
+                      ),
+                    }}
+                  >
+                    {s.help}
+                  </TopNavBar.Item>
+                ) : null}
               </TopNavBar.ActionItems>
             }
           />
