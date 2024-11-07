@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { View, canvas } from "@instructure/ui";
+import { IsApp } from "./utils/frame.ts";
 import { ParentBrands } from "./variables/brands.tsx";
 import Redirects from "./variables/redirects/index.js";
 
@@ -30,6 +31,13 @@ const root: HTMLElement | null = document.getElementById("root");
 if (!root) {
   throw new Error("Root element not found");
 }
+
+/**
+ * Determine if the application is running in an iframe or as a standalone app.
+ */
+const body: HTMLElement | null = document.body;
+const bodyClass = IsApp() ? "app" : "frame";
+body.classList.add(bodyClass);
 
 /**
  * The main application component.

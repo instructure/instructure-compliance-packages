@@ -13,7 +13,7 @@ code {
 }
 
 @media only screen and (min-width: 1009px) {
-  #root {
+  .app #root {
     background-image: url("./assets/banner.webp");
     background-position: 0% 8rem;
     background-size: 120rem auto;
@@ -28,6 +28,9 @@ code {
     background: #fff;
     margin-top: 3rem;
     padding: 3rem;
+  }
+
+  .app #main {
     box-shadow: 0 1.25rem 3rem .66rem rgb(20 61 80 / 15%);
     border-radius: 2rem;
   }
