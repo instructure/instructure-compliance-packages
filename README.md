@@ -2,7 +2,7 @@
   
 # Instructure Compliance Packages
   
-The Instructure Compliance Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services (AWS), [Instructure](https://www.instructure.com?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) as a company, and each of our [products](https://www.instructure.com/products?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). These packages address the majority of questions we receive from both current and prospective customers.
+The Instructure Compliance Packages are a collection of industry standard papers, questionnaires, and certifications that cover Amazon Web Services (AWS), <a href="https://www.instructure.com" target="_blank">Instructure</a> as a company, and each of our <a href="https://www.instructure.com/products" target="_blank">products</a>. These packages address the majority of questions we receive from both current and prospective customers.
 
 Current packages include:
 - [Canvas LMS*](https://inst.bid/canvas/lms/dl)
@@ -17,16 +17,16 @@ Current packages include:
 
 _*Some language translated versions available, please see the relevant product family page (top navigation)._
 
-For a comprehensive look at our Security, Privacy and Compliance Programs, please see the [Instructure Trust Center](https://www.instructure.com/trust-center).
+For a comprehensive look at our Security, Privacy and Compliance Programs, please see the <a href="https://inst.bid/trust" target="_blank">Instructure Trust Center</a>.
 
-The content in the compliance packages is public information. It is available for both current and prospective customers and does not require a Non-Disclosure Agreement (NDA). Our SOC 2 Reports (which do require a NDA agreement), may be requested via your CSM or by using this [Contact Form](https://www.instructure.com/contact-us).
+The content in the compliance packages is public information. It is available for both current and prospective customers and does not require a Non-Disclosure Agreement (NDA). Our SOC 2 Reports (which do require a NDA agreement), may be requested via your CSM or by using this <a href="https://www.instructure.com/contact-us" target="_blank">contact form</a>.
 
 </div>
 <div class="lang ES_LA">
   
 # Paquetes de cumplimiento de Instructure
 
-Los paquetes de cumplimiento de Instructure son una colección de documentos, cuestionarios y certificaciones estándar de la industria que cubren Amazon Web Services (AWS), [Instructure](https://www.instructure.com/es?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) como empresa. y cada uno de nuestros [productos](https://www.instructure.com/es/productos?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). Estos paquetes abordan la mayoría de las preguntas que recibimos de clientes actuales y potenciales.
+Los paquetes de cumplimiento de Instructure son una colección de documentos, cuestionarios y certificaciones estándar de la industria que cubren Amazon Web Services (AWS), <a href="https://www.instructure.com/es" target="_blank">Instructure</a> como empresa. y cada uno de nuestros <a href="https://www.instructure.com/es/productos" target="_blank">productos</a>. Estos paquetes abordan la mayoría de las preguntas que recibimos de clientes actuales y potenciales.
 
 Los paquetes actuales incluyen:
 - [Canvas LMS](https://inst.bid/es-la/canvas/lms/dl/es)
@@ -41,16 +41,16 @@ Los paquetes actuales incluyen:
 
 _*Esta versión sólo está disponible en inglés._
 
-Para obtener una visión completa de nuestros programas de seguridad, privacidad y cumplimiento, consulte el [Centro de confianza de Instructure](https://inst.bid/trust/es).
+Para obtener una visión completa de nuestros programas de seguridad, privacidad y cumplimiento, consulte el <a href="https://inst.bid/trust/es" target="_blank">Centro de confianza de Instructure</a>.
 
-El contenido de los paquetes de cumplimiento es información pública. Está disponible para clientes actuales y potenciales y no requiere un acuerdo de confidencialidad (NDA). Nuestros informes SOC 2 (que requieren un acuerdo de NDA) se pueden solicitar a través de su CSM o mediante este [formulario de contacto](https://inst.bid/es-la/contactenos/es).
+El contenido de los paquetes de cumplimiento es información pública. Está disponible para clientes actuales y potenciales y no requiere un acuerdo de confidencialidad (NDA). Nuestros informes SOC 2 (que requieren un acuerdo de NDA) se pueden solicitar a través de su CSM o mediante este <a href="https://inst.bid/es-la/contactenos/es" target="_blank">formulario de contacto</a>.
 
 </div>
 <div class="lang PT_BR">
 
 # Instructure pacotes de conformidade
 
-Os pacotes de conformidade da Instructure são uma coleção de documentos, questionários e certificações padrão do setor que cobrem a Amazon Web Services (AWS), [Instructure](https://www.instructure.com/pt-br?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) como uma empresa e cada um de nossos [produtos](https://www.instructure.com/pt-br/produtos?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). Esses pacotes respondem à maioria das perguntas que recebemos de clientes atuais e potenciais.
+Os pacotes de conformidade da Instructure são uma coleção de documentos, questionários e certificações padrão do setor que cobrem a Amazon Web Services (AWS), <a href="https://www.instructure.com/pt-br" target="_blank">Instructure</a> como uma empresa e cada um de nossos <a href="https://www.instructure.com/pt-br/produtos" target="_blank">produtos</a>. Esses pacotes respondem à maioria das perguntas que recebemos de clientes atuais e potenciais.
 
 Os pacotes atuais incluem:
 - [Canvas LMS](https://inst.bid/pt-br/canvas/lms/dl/pt)
@@ -65,16 +65,16 @@ Os pacotes atuais incluem:
 
 _*Esta versão está disponível apenas em inglês._
 
-Para uma visão abrangente de nossos programas de segurança, privacidade e conformidade, consulte o [Instructure Trust Center](https://inst.bid/trust/pt).
+Para uma visão abrangente de nossos programas de segurança, privacidade e conformidade, consulte o <a href="https://inst.bid/trust/pt" target="_blank">Instructure Trust Center</a>.
 
-O conteúdo dos pacotes de conformidade é informação pública. Está disponível para clientes atuais e potenciais e não requer um Acordo de Não Divulgação (NDA). Nossos Relatórios SOC 2 (que exigem um acordo de NDA) podem ser solicitados através do seu CSM ou usando este [Formulário de Contato](https://inst.bid/contato/pt).
+O conteúdo dos pacotes de conformidade é informação pública. Está disponível para clientes atuais e potenciais e não requer um Acordo de Não Divulgação (NDA). Nossos Relatórios SOC 2 (que exigem um acordo de NDA) podem ser solicitados através do seu CSM ou usando este <a href="https://inst.bid/contato/pt" target="_blank">Formulário de Contato</a>.
 
 </div>
 <div class="lang DE">
 
 # Compliance-Pakete Instructure
 
-Die Instructure Compliance Packages sind eine Sammlung branchenüblicher Dokumente, Fragebögen und Zertifizierungen, die Amazon Web Services (AWS), [Instructure](https://www.instructure.com/de?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK) als Unternehmen abdecken , und jedes unserer [Produkte](https://www.instructure.com/de/produkte?utm_source=INST&utm_medium=ER&CampaignID=7013m000001NyB2AAK). Diese Pakete beantworten die meisten Fragen, die wir von aktuellen und potenziellen Kunden erhalten.
+Die Instructure Compliance Packages sind eine Sammlung branchenüblicher Dokumente, Fragebögen und Zertifizierungen, die Amazon Web Services (AWS), <a href="https://www.instructure.com/de" target="_blank">Instructure</a> als Unternehmen abdecken , und jedes unserer <a href="https://www.instructure.com/de/produkte" target="_blank">Produkte</a>. Diese Pakete beantworten die meisten Fragen, die wir von aktuellen und potenziellen Kunden erhalten.
 
 Aktuelle Pakete umfassen:
 - [Canvas LMS*](https://inst.bid/canvas/lms/dl/de)
@@ -89,8 +89,8 @@ Aktuelle Pakete umfassen:
 
 _*Diese Version ist nur auf Englisch verfügbar._
 
-Einen umfassenden Überblick über unsere Sicherheits-, Datenschutz- und Compliance-Programme finden Sie im [Instructure Trust Center](https://inst.bid/trust/de).
+Einen umfassenden Überblick über unsere Sicherheits-, Datenschutz- und Compliance-Programme finden Sie im <a href="https://inst.bid/trust/de" target="_blank">Instructure Trust Center</a>.
 
-Bei den Inhalten der Compliance-Pakete handelt es sich um öffentliche Informationen. Es steht sowohl aktuellen als auch potenziellen Kunden zur Verfügung und erfordert keine Geheimhaltungsvereinbarung (NDA). Unsere SOC 2-Berichte (für die eine NDA-Vereinbarung erforderlich ist) können über Ihren CSM oder über dieses [Kontaktformular](https://inst.bid/kontakt/de) angefordert werden.
+Bei den Inhalten der Compliance-Pakete handelt es sich um öffentliche Informationen. Es steht sowohl aktuellen als auch potenziellen Kunden zur Verfügung und erfordert keine Geheimhaltungsvereinbarung (NDA). Unsere SOC 2-Berichte (für die eine NDA-Vereinbarung erforderlich ist) können über Ihren CSM oder über dieses <a href="https://inst.bid/kontakt/de" target="_blank">Kontaktformular</a> angefordert werden.
 
 </div>
