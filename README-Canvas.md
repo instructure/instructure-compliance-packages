@@ -27,7 +27,7 @@
   
   The World's #1 Teaching and Learning Software
 
-  💾 [Download](https://inst.bid/canvas/lms/dl)
+  💾 [Download](/#/canvas/lms/dl)
 
   <div class="contents canvas-lms"></div>
 
@@ -36,7 +36,7 @@
 
   El software de enseñanza y aprendizaje número uno del mundo
 
-  💾 [Descargar](https://inst.bid/es-ls/canvas/lms/dl/es)
+  💾 [Descargar](/#/es-ls/canvas/lms/dl/es)
 
   <div class="contents canvas-lms-ES_LA"></div>
 
@@ -45,7 +45,7 @@
 
   O software de ensino e aprendizagem nº 1 do mundo
 
-  💾 [Download](https://inst.bid/pt-br/canvas/lms/dl/pt)
+  💾 [Download](/#/pt-br/canvas/lms/dl/pt)
 
   <div class="contents canvas-lms-PT_BR"></div>
 
@@ -54,7 +54,7 @@
 
   Die weltweit führende Lehr- und Lernsoftware
 
-  💾 [Herunterladen*](https://inst.bid/canvas/lms/dl/de)
+  💾 [Herunterladen*](/#/canvas/lms/dl/de)
 
   _*Diese Version ist nur auf Englisch verfügbar._
 
@@ -68,7 +68,7 @@
 
   The All-In-One Digital Badging For Higher Education
 
-  💾 [Download](https://inst.bid/canvas/credentials/dl)
+  💾 [Download](/#/canvas/credentials/dl)
 
   _*Some language translated versions available._
 
@@ -79,7 +79,7 @@
 
   La credencial digital todo en uno para la educación superior
 
-  💾 [Descargar](https://inst.bid/es-la/canvas/credentials/dl/es)
+  💾 [Descargar](/#/es-la/canvas/credentials/dl/es)
 
   <div class="contents canvas-credentials-ES_LA"></div>
 
@@ -88,7 +88,7 @@
 
   O selo digital multifuncional para o ensino superior
 
-  💾 [Download](https://inst.bid/pt-br/canvas/credentials/dl/pt)
+  💾 [Download](/#/pt-br/canvas/credentials/dl/pt)
 
   <div class="contents canvas-credentials-PT_BR"></div>
 
@@ -97,7 +97,7 @@
   
   Das digitale All-in-One-Badging für die Hochschulbildung
 
-  💾 [Herunterladen*](https://inst.bid/canvas/credentials/dl/de)
+  💾 [Herunterladen*](/#/canvas/credentials/dl/de)
 
   _*Diese Version ist nur auf Englisch verfügbar._
 
@@ -111,13 +111,13 @@
 
   The next-generation video education platform for higher ed teaching and learning.
 
-  💾 [Download](https://inst.bid/canvas/studio/dl)
+  💾 [Download](/#/canvas/studio/dl)
 
 </div>
 <div class="lang ES_LA">
   La plataforma educativa en vídeo de próxima generación para la enseñanza y el aprendizaje en educación superior.
 
-  💾 [Descargar*](https://inst.bid/canvas/studio/dl/es)
+  💾 [Descargar*](/#/canvas/studio/dl/es)
 
   _*Esta versión sólo está disponible en inglés._
 
@@ -126,7 +126,7 @@
 
   A plataforma de educação em vídeo de última geração para ensino e aprendizagem no ensino superior.
 
-  💾 [Download*](https://inst.bid/canvas/studio/dl/pt)
+  💾 [Download*](/#/canvas/studio/dl/pt)
 
   _*Esta versão está disponível apenas em inglês._
 
@@ -134,7 +134,7 @@
 <div class="lang DE">
   Die Video-Bildungsplattform der nächsten Generation für das Lehren und Lernen im Hochschulbereich.
 
-  💾 [Herunterladen*](https://inst.bid/canvas/studio/dl/de)
+  💾 [Herunterladen*](/#/canvas/studio/dl/de)
 
   _*Diese Version ist nur auf Englisch verfügbar._
 </div>
@@ -147,14 +147,14 @@
 
   A simple, modern, elegant course catalog and a branded marketplace for all of your institution’s course offerings.
 
-  💾 [Download](https://inst.bid/canvas/catalog/dl)
+  💾 [Download](/#/canvas/catalog/dl)
 
 </div>
 <div class="lang ES_LA">
 
   Un catálogo de cursos simple, moderno y elegante y un mercado de marca para todas las ofertas de cursos de su institución.
 
-  💾 [Descargar*](https://inst.bid/canvas/catalog/dl/es)
+  💾 [Descargar*](/#/canvas/catalog/dl/es)
 
   _*Esta versión sólo está disponible en inglés._
 
@@ -163,7 +163,7 @@
 
   Um catálogo de cursos simples, moderno e elegante e um mercado de marca para todas as ofertas de cursos da sua instituição.
 
-  💾 [Download*](https://inst.bid/canvas/catalog/dl/pt)
+  💾 [Download*](/#/canvas/catalog/dl/pt)
 
   _*Esta versão está disponível apenas em inglês._
 
@@ -172,7 +172,7 @@
 
   Ein einfacher, moderner und eleganter Kurskatalog und ein Marken-Marktplatz für alle Kursangebote Ihrer Institution.
 
-  💾 [Herunterladen*](https://inst.bid/canvas/catalog/dl/de)
+  💾 [Herunterladen*](/#/canvas/catalog/dl/de)
 
   _*Diese Version ist nur auf Englisch verfügbar._
 
