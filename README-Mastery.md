@@ -9,7 +9,7 @@ The Mastery Product Family brings together assessment tools and quality content 
 
 Mastery Connect is the K–12 digital assessment management system that makes data-driven instruction a no-brainer.
 
-💾 [Download](https://inst.bid/mastery/connect/dl)
+💾 [Download](/#/mastery/connect/dl)
 
 </div>
 <div class="lang ES_LA">
@@ -18,7 +18,7 @@ La familia de productos Mastery reúne herramientas de evaluación y contenido d
 
 Mastery Connect es el sistema de gestión de evaluaciones digitales K-12 que hace que la instrucción basada en datos sea una obviedad.
 
-💾 [Descargar*](https://inst.bid/mastery/connect/dl/es)
+💾 [Descargar*](/#/mastery/connect/dl/es)
 
 _*Esta versión sólo está disponible en inglés._
 
@@ -29,7 +29,7 @@ A família de produtos Mastery reúne ferramentas de avaliação e conteúdo de 
 
 Mastery Connect é o sistema de gerenciamento de avaliação digital de ensino fundamental e médio que torna o ensino baseado em dados um acéfalo.
 
-💾 [Download*](https://inst.bid/mastery/connect/dl/pt)
+💾 [Download*](/#/mastery/connect/dl/pt)
 
 _*Esta versão está disponível apenas em inglês._
 
@@ -40,7 +40,7 @@ Die Mastery-Produktfamilie vereint Bewertungstools und hochwertige Inhalte, die 
 
 Mastery Connect ist das digitale Bewertungsmanagementsystem für K-12, das datengesteuerten Unterricht zum Kinderspiel macht.
 
-💾 [Herunterladen*](https://inst.bid/mastery/connect/dl/de)
+💾 [Herunterladen*](/#/mastery/connect/dl/de)
 
 _*Diese Version ist nur auf Englisch verfügbar._
 
