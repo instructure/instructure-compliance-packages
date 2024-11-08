@@ -189,16 +189,15 @@ const App: React.FC<AppProps> = ({ config }) => {
  * This component initializes the configuration and renders the App component
  * with the fetched configuration. If the configuration is not yet available,
  * it displays a loading spinner.
- *
- * @returns {JSX.Element} The rendered component.
  */
-const Main = () => {
+const Main = (): JSX.Element => {
   const [config, setConfig] = useState<Config>({ mode: "LTI" });
 
   useEffect(() => {
     initiate()
       .then((config) => {
         setConfig(config);
+        console.info("Config:", config);
       })
       .catch((error) => {
         console.error("Error initiating config:", error);
