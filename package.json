@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "5.0.3+1730999095",
+  "version": "6.0.0+1731102829",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -58,6 +58,7 @@
     "@octokit/types": "^13.6.1",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
     "@vitejs/plugin-react": "^4.3.3",
     "@vitest/browser": "^2.1.4",
     "@vitest/coverage-v8": "^2.1.4",
@@ -72,6 +73,7 @@
     "terser": "^5.36.0",
     "typescript": "^5.6.3",
     "vite": "6.0.0-beta.9",
+    "vite-plugin-mkcert": "^1.17.6",
     "vitest": "^2.1.4",
     "vitest-browser-react": "^0.0.3"
   },

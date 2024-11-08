@@ -2,7 +2,7 @@
  * @module main
  */
 
-import React, { StrictMode } from "react";
+import React, { StrictMode, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import {
   type RouteObject,
@@ -10,8 +10,8 @@ import {
   createHashRouter,
 } from "react-router-dom";
 import "./index.css";
-import { View, canvas } from "@instructure/ui";
-import { IsApp } from "./utils/frame.ts";
+import { Heading, Spinner, View, canvas } from "@instructure/ui";
+import { IsFrame, LTIConfig } from "./utils/lti.ts";
 import { ParentBrands } from "./variables/brands.tsx";
 import Redirects from "./variables/redirects/index.js";
 
@@ -33,16 +33,26 @@ if (!root) {
 }
 
 /**
- * Determine if the application is running in an iframe or as a standalone app.
+ * Initiates the configuration process.
+ * Checks if running in a frame, and then tries to get LTI configuration.
+ * @returns {Promise<Config>} The configuration object.
  */
-const body: HTMLElement | null = document.body;
-const bodyClass = IsApp() ? "app" : "frame";
-body.classList.add(bodyClass);
+const initiate = async (): Promise<Config> => {
+  let config = { mode: "App" };
+  if (IsFrame()) {
+    const ltiConfig: Config = await LTIConfig();
+    // @ts-ignore
+    if (ltiConfig?.lti?.["lti.getPageSettings"] !== null) {
+      config = ltiConfig;
+    }
+  }
+  return config;
+};
 
 /**
  * The main application component.
  */
-const App = () => {
+const App: React.FC<AppProps> = ({ config }) => {
   /**
    * An array to hold the routes for the application.
    */
@@ -56,12 +66,20 @@ const App = () => {
        * A function that returns the data to be passed to the markdownBrand component.
        * This function is created by a closure that captures the current brand object.
        */
-      loader: () => ({ readme: brand.readme, brand: brand.brandName }),
+      loader: () => ({
+        readme: brand.readme,
+        brand: brand.brandName,
+        config: config,
+      }),
       children: [
         {
           path: ":language",
           lazy: () => import("./routes/markdownBrand.tsx"),
-          loader: () => ({ readme: brand.readme, brand: brand.brandName }),
+          loader: () => ({
+            readme: brand.readme,
+            brand: brand.brandName,
+            config: config,
+          }),
         },
       ],
     });
@@ -76,6 +94,7 @@ const App = () => {
           path: link.from,
           brand: redirect.brand,
           url: link.to,
+          config: config,
         }),
         children: [
           {
@@ -85,6 +104,7 @@ const App = () => {
               path: link.from,
               brand: redirect.brand,
               url: link.to,
+              config: config,
             }),
           },
         ],
@@ -95,10 +115,12 @@ const App = () => {
   routes.push({
     path: "/links",
     lazy: () => import("./routes/links.tsx"),
+    loader: () => ({ config: config }),
     children: [
       {
         path: ":language",
         lazy: () => import("./routes/links.tsx"),
+        loader: () => ({ config: config }),
       },
     ],
   });
@@ -106,10 +128,12 @@ const App = () => {
   routes.push({
     path: "/mdui",
     lazy: () => import("./routes/mdui.tsx"),
+    loader: () => ({ config: config }),
     children: [
       {
         path: ":language",
         lazy: () => import("./routes/mdui.tsx"),
+        loader: () => ({ config: config }),
       },
     ],
   });
@@ -117,10 +141,12 @@ const App = () => {
   routes.push({
     path: "/releases",
     lazy: () => import("./routes/releases.tsx"),
+    loader: () => ({ config: config }),
     children: [
       {
         path: ":language",
         lazy: () => import("./routes/releases.tsx"),
+        loader: () => ({ config: config }),
       },
     ],
   });
@@ -128,10 +154,12 @@ const App = () => {
   routes.push({
     path: "*",
     lazy: () => import("./routes/error.tsx"),
+    loader: () => ({ config: config }),
     children: [
       {
         path: ":language",
         lazy: () => import("./routes/error.tsx"),
+        loader: () => ({ config: config }),
       },
     ],
   });
@@ -143,15 +171,54 @@ const App = () => {
 
   return (
     <React.StrictMode>
-      <View as="div" minHeight="100vh" position="relative">
+      <View
+        as="div"
+        minHeight="100vh"
+        position="relative"
+        className={config.mode.toLowerCase()}
+      >
         <RouterProvider router={router} />
       </View>
     </React.StrictMode>
   );
 };
 
+/**
+ * Main component of the application.
+ *
+ * This component initializes the configuration and renders the App component
+ * with the fetched configuration. If the configuration is not yet available,
+ * it displays a loading spinner.
+ *
+ * @returns {JSX.Element} The rendered component.
+ */
+const Main = () => {
+  const [config, setConfig] = useState<Config>({ mode: "LTI" });
+
+  useEffect(() => {
+    initiate()
+      .then((config) => {
+        setConfig(config);
+      })
+      .catch((error) => {
+        console.error("Error initiating config:", error);
+      });
+  }, []);
+
+  return config ? (
+    <App config={config} />
+  ) : (
+    <View as="div" textAlign="center">
+      <Heading level="h1" as="h1" margin="0 0 x-small">
+        Loading...
+      </Heading>
+      <Spinner renderTitle="Loading" size="medium" />
+    </View>
+  );
+};
+
 ReactDOM.createRoot(root).render(
   <StrictMode>
-    <App />
+    <Main />
   </StrictMode>,
 );

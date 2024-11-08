@@ -47,5 +47,11 @@ const strings: PageStrings = {
     PT_BR: "Redirecionando você para",
     DE: "Weiterleitung zu",
   },
+  back: {
+    EN: "Back",
+    ES_LA: "Atrás",
+    PT_BR: "Voltar",
+    DE: "Zurück",
+  },
 };
 export default strings;

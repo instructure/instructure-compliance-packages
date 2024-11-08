@@ -1,12 +1,13 @@
 /// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
- import { browserslistToTargets } from 'lightningcss';
- import browsersList from '@instructure/browserslist-config-instui';
+import { browserslistToTargets } from 'lightningcss';
+import browsersList from '@instructure/browserslist-config-instui';
+import basicSsl from '@vitejs/plugin-basic-ssl'
+import mkcert from'vite-plugin-mkcert'
+import Mkcert from 'vite-plugin-mkcert/dist/mkcert/index';
 
 const config = defineConfig(() => {
-
-  const ReactCompilerConfig = {}
 
   return {
     plugins: [
@@ -14,11 +15,11 @@ const config = defineConfig(() => {
         babel: {
           plugins: [
             "@babel/plugin-syntax-import-attributes",
-            "babel-plugin-react-compiler",
-            ReactCompilerConfig
+            ["babel-plugin-react-compiler", {}],
           ]
         }
-      })
+      }),
+      mkcert()
     ],
     css: {
         transformer: 'lightningcss',

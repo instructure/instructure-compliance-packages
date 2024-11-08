@@ -1,18 +1,26 @@
 // Modules
-import { Billboard, Link, Text, View } from "@instructure/ui";
+import {
+  Billboard,
+  IconArrowOpenStartLine,
+  Link,
+  Text,
+  View,
+} from "@instructure/ui";
 import { Suspense, lazy, useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import RenderFooter from "../components/RenderFooter.tsx";
+import RenderTabNav from "../components/RenderTabNav.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
 import strings from "../strings/redirectTo.ts";
 import { getLang, getStrings } from "../utils/langs.ts";
 
 // Page
 export function Component() {
-  const { path, brand, url } = useLoaderData() as {
+  const { path, brand, url, config } = useLoaderData() as {
     path: string;
     brand: GlobalBrand;
     url: string;
+    config: Config;
   };
 
   const l = getLang(useParams().language as LangCode);
@@ -21,9 +29,13 @@ export function Component() {
   const filetype = url.slice(-4);
   const download = path.slice(-3) === "/dl";
 
+  const { mode } = config;
+
+  const isApp = mode === "App";
+
   useEffect(() => {
     window.location.href = url;
-  });
+  }, [url]);
 
   const billboardText = () => {
     if (download) {
@@ -52,7 +64,24 @@ export function Component() {
 
   return (
     <>
-      <RenderTopNavBar language={l} />
+      {isApp ? (
+        <RenderTopNavBar language={l} />
+      ) : (
+        <>
+          <RenderTabNav language={l} brand={brand} />
+          <Link
+            href={
+              brand.toLowerCase() === "intelligent insights"
+                ? `/#/${brand.toLowerCase().replace(" ", "-")}/`
+                : `/#/${brand.split(" ")[0].toLowerCase()}/`
+            }
+            margin="0 0 0 large"
+            renderIcon={<IconArrowOpenStartLine size="x-small" />}
+          >
+            {s.back}
+          </Link>
+        </>
+      )}
       <View
         id="main"
         as="div"
@@ -69,7 +98,7 @@ export function Component() {
           message={billboardText}
         />
       </View>
-      <RenderFooter language={l} />
+      {isApp && <RenderFooter language={l} />}
     </>
   );
 }

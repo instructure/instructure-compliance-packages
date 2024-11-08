@@ -194,3 +194,24 @@ declare type Global = {
   api: string;
   raw: string;
 };
+
+declare interface LTIConfig {
+  "lti.getPageSettings"?: unknown;
+  "lti.capabilities"?: unknown;
+}
+
+declare interface Config {
+  mode: string;
+  lti?: {
+    [key in LTIConfig]: unknown;
+  };
+}
+
+declare interface LTIEvent {
+  message_id: string;
+  data: Record<string, unknown>;
+}
+
+declare interface AppProps {
+  config: Config;
+}

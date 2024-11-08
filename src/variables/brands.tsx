@@ -36,7 +36,7 @@ export const globalSubBrands: GlobalSubBrand[] = [
   "Elevate Data Quality",
   "Elevate Data Sync",
   "Elevate Standards Alignment",
-  "Learn Platform",
+  "LearnPlatform",
 ] as const;
 
 export const ParentBrands: BrandDetail[] = [

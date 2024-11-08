@@ -12,8 +12,8 @@ import {
 } from "@instructure/ui";
 import { Link as Anchor } from "react-router-dom";
 import strings from "../strings/header.ts";
-import { IsApp } from "../utils/frame.ts";
 import { getStrings } from "../utils/langs.ts";
+import { IsApp } from "../utils/lti.ts";
 import { ParentBrands } from "../variables/brands.tsx";
 import { globalLangDetails } from "../variables/langs.ts";
 
@@ -36,7 +36,6 @@ function RenderTopNavBar({
   const currentBrand =
     Brands[Brands.findIndex((b) => b.brandName === brand)] ?? ParentBrands[0];
 
-  // @TODO: Switch these!
   const isApp = IsApp();
 
   const topNavBarThemeOverride = isApp
@@ -217,9 +216,9 @@ function RenderTopNavBar({
                           <InlineList delimiter="pipe" size="small">
                             <InlineList.Item>
                               <Link
-                                href={`#/links${
+                                href={`#/links/${
                                   l !== "EN"
-                                    ? `/${l.toLowerCase().split("_")[0]}`
+                                    ? `${l.toLowerCase().split("_")[0]}`
                                     : ""
                                 }`}
                               >
@@ -228,9 +227,9 @@ function RenderTopNavBar({
                             </InlineList.Item>
                             <InlineList.Item>
                               <Link
-                                href={`#/releases${
+                                href={`#/releases/${
                                   l !== "EN"
-                                    ? `/${l.toLowerCase().split("_")[0]}`
+                                    ? `${l.toLowerCase().split("_")[0]}`
                                     : ""
                                 }`}
                               >
@@ -239,9 +238,9 @@ function RenderTopNavBar({
                             </InlineList.Item>
                             <InlineList.Item>
                               <Link
-                                href={`#/mdui${
+                                href={`#/mdui/${
                                   l !== "EN"
-                                    ? `/${l.toLowerCase().split("_")[0]}`
+                                    ? `${l.toLowerCase().split("_")[0]}`
                                     : ""
                                 }`}
                               >

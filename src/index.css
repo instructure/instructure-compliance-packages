@@ -12,15 +12,23 @@ code {
     monospace;
 }
 
+.lti {
+  overflow-x: hidden !important;
+}
+
 @media only screen and (min-width: 1009px) {
-  .app #root {
+  .app {
     background-image: url("./assets/banner.webp");
     background-position: 0% 8rem;
     background-size: 120rem auto;
     background-repeat: no-repeat;
   }
 
-  #root > div {
+  .lti {
+    padding: 36px 24px 0 24px;
+  }
+
+  #root > .app {
     padding-bottom: 8rem;
   }
 
@@ -106,6 +114,9 @@ pre {
 
 .markdown [class$="toggleDetails__content"] {
   border: 1px solid rgb(199, 205, 209);
+}
+
+.app .markdown [class$="toggleDetails__content"] {
   border-radius: 1rem 0;
 }
 

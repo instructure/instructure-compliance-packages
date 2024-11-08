@@ -1,6 +1,16 @@
 # Changelog
 
-## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.3...isp-site)
+## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v6.0.0...isp-site)
+
+## [6.0.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.3...isp-site-v6.0.0)
+
+### Fixed
+
+* Files no longer download twice
+
+### Added
+
+* Support LTI install with [redirect tool](https://www.eduappcenter.com/apps/63).
 
 ## [5.0.3](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.2...isp-site-v5.0.3)
 

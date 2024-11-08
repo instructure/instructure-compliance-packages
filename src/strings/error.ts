@@ -31,5 +31,11 @@ const strings: PageStrings = {
     PT_BR: "Ocorreu um erro desconhecido.",
     DE: "Ein unbekannter Fehler ist aufgetreten.",
   },
+  back: {
+    EN: "Back",
+    ES_LA: "Atrás",
+    PT_BR: "Voltar",
+    DE: "Zurück",
+  },
 };
 export default strings;

@@ -42,7 +42,7 @@ async function getGithubRepoContents(
       },
     });
     const data = await response.json();
-    return data ? { ...data, tree: data.tree.sort(sortProduct) } : null;
+    return data?.tree ? { ...data, tree: data.tree.sort(sortProduct) } : null;
   } catch (error) {
     if (error instanceof Error) {
       console.error(`Error: ${error.message}`);
