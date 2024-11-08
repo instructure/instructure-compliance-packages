@@ -13,7 +13,7 @@ Current packages include:
 - [Impact*](https://inst.bid/impact/dl)
 - [Mastery Connect](https://inst.bid/mastery/connect/dl)
 - [Elevate Standards Alignment](https://inst.bid/elevate/standards-alignment/dl)
-- [LearnPlatform](https://inst.bid/learnplatform/dl)
+- [LearnPlatform](/learnplatform/dl)
 
 _*Some language translated versions available, please see the relevant product family page (top navigation)._
 
