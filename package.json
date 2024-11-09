@@ -38,9 +38,9 @@
     "test:browser": "vitest --workspace=vitest.workspace.mts"
   },
   "dependencies": {
-    "@instructure/ui": "10.4.1",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "@instructure/ui": "^10.5.0",
+    "react": "19.0.0-rc-5c56b873-20241107",
+    "react-dom": "19.0.0-rc-5c56b873-20241107",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.28.0",
     "rehype-raw": "^7.0.0",
@@ -79,12 +79,12 @@
   },
   "engines": {
     "node": ">=23.1.0",
-    "pnpm": ">=9.12.2"
+    "pnpm": ">=9.12.3"
   },
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
   "pnpm": {
     "overrides": {
-      "vite": "^6.0.0-beta.5",
+      "vite": "^6.0.0-beta.9",
       "react": "^19.0.0-rc-02c0e824-20241028",
       "react-dom": "^19.0.0-rc-02c0e824-20241028",
       "@instructure/ui-test-sandbox>sinon": "^18.0.1",
