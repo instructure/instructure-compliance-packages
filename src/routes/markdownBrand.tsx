@@ -1,4 +1,5 @@
-import { View } from "@instructure/ui";
+import { InstUISettingsProvider, View } from "@instructure/ui";
+import { darken } from "@instructure/ui-color-utils";
 import { Suspense, lazy, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Markdown from "react-markdown";
@@ -15,6 +16,7 @@ import strings from "../strings/markdown.ts";
 import { getLang, getStrings } from "../utils/langs.ts";
 import allowedElements from "../variables/allowedElements.ts";
 import { globalLangs } from "../variables/langs.ts";
+import { ParentBrands } from "../variables/brands.tsx";
 
 export function Component(): React.ReactElement {
   const { readme, brand, config } = useLoaderData() as {
@@ -33,6 +35,8 @@ export function Component(): React.ReactElement {
   );
 
   if (matchingGlobalLang) l = matchingGlobalLang;
+
+  const brandColor = ParentBrands.find((b) => b.brandName === brand)?.color;
 
   const s = getStrings(strings, l);
   const css: string = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
@@ -76,30 +80,45 @@ export function Component(): React.ReactElement {
             );
           })}
         <RenderTopNavBar brand={brand} language={l} />
-        <View
-          id="main"
-          as="div"
-          padding="medium medium xx-large"
-          minWidth="20rem"
-          maxWidth="59.25rem"
-          margin="0 auto"
+        <InstUISettingsProvider
+          theme={{
+            componentOverrides: {
+              Link: {
+                color: brandColor,
+                focusOutlineColor: brandColor,
+                hoverColor: darken(brandColor, 10),
+              },
+              TableRow: {
+                hoverBorderColor: brandColor,
+              },
+            },
+          }}
         >
-          <style>{css}</style>
           <View
+            id="main"
             as="div"
-            className={`${brand.toLowerCase().replace(/\s/g, "-")} markdown`}
+            padding="medium medium xx-large"
+            minWidth="20rem"
+            maxWidth="59.25rem"
+            margin="0 auto"
           >
-            <Markdown
-              remarkPlugins={[remarkGfm, remarkGemoji]}
-              rehypePlugins={[rehypeRaw]}
-              allowedElements={allowedElements}
-              components={Mdtoui}
+            <style>{css}</style>
+            <View
+              as="div"
+              className={`${brand.toLowerCase().replace(/\s/g, "-")} markdown`}
             >
-              {content}
-            </Markdown>
+              <Markdown
+                remarkPlugins={[remarkGfm, remarkGemoji]}
+                rehypePlugins={[rehypeRaw]}
+                allowedElements={allowedElements}
+                components={Mdtoui}
+              >
+                {content}
+              </Markdown>
+            </View>
           </View>
-        </View>
-        <RenderFooter language={l} />
+        </InstUISettingsProvider>
+        <RenderFooter brandColor={brandColor} language={l} />
       </>
     );
   }

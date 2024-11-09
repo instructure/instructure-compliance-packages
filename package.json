@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@instructure/ui": "^10.5.0",
+    "@instructure/ui-color-utils": "^10.5.0",
     "react": "19.0.0-rc-5c56b873-20241107",
     "react-dom": "19.0.0-rc-5c56b873-20241107",
     "react-markdown": "^9.0.1",
