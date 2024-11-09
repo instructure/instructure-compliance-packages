@@ -1,5 +1,6 @@
 import { IconHeartLine, Link, Text, View, canvas } from "@instructure/ui";
 import strings from "../strings/footer.ts";
+import { getBrandDetail } from "../utils/brands.ts";
 import { getStrings } from "../utils/langs.ts";
 
 /**
@@ -10,10 +11,10 @@ import { getStrings } from "../utils/langs.ts";
  */
 function RenderFooter({
   language,
-  brandColor,
+  brandColor = getBrandDetail("color"),
 }: {
   language: LangCode;
-  brandColor: BrandDetail["color"] | undefined;
+  brandColor?: BrandDetail["color"];
 }): React.ReactNode {
   const l = language;
   const s = getStrings(strings, l);

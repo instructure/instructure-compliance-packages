@@ -13,10 +13,10 @@ import RenderFooter from "../components/RenderFooter.tsx";
 import RenderPrimaryTabs from "../components/RenderPrimaryTabs.tsx";
 import RenderTopNavBar from "../components/RenderTopNavBar.tsx";
 import strings from "../strings/markdown.ts";
+import { getBrandDetail } from "../utils/brands.ts";
 import { getLang, getStrings } from "../utils/langs.ts";
 import allowedElements from "../variables/allowedElements.ts";
 import { globalLangs } from "../variables/langs.ts";
-import { ParentBrands } from "../variables/brands.tsx";
 
 export function Component(): React.ReactElement {
   const { readme, brand, config } = useLoaderData() as {
@@ -36,7 +36,7 @@ export function Component(): React.ReactElement {
 
   if (matchingGlobalLang) l = matchingGlobalLang;
 
-  const brandColor = ParentBrands.find((b) => b.brandName === brand)?.color;
+  const brandColor = getBrandDetail("color", brand);
 
   const s = getStrings(strings, l);
   const css: string = `.markdown .lang { display: none; } .markdown .lang.${l.toUpperCase()} { display: inherit; }`;
@@ -87,6 +87,9 @@ export function Component(): React.ReactElement {
                 color: brandColor,
                 focusOutlineColor: brandColor,
                 hoverColor: darken(brandColor, 10),
+              },
+              Button: {
+                focusColor: brandColor,
               },
               TableRow: {
                 hoverBorderColor: brandColor,

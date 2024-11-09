@@ -2,6 +2,12 @@
 
 ## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v6.0.0...isp-site)
 
+## [6.0.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v6.0.0...isp-site-v6.0.1)
+
+### Changed
+
+* App: Style brand pages with brand colors.
+
 ## [6.0.0](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v5.0.3...isp-site-v6.0.0)
 
 ### Fixed

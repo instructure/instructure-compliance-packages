@@ -38,6 +38,7 @@ export function Component() {
     console.error(error);
     msg = s.unknown_error;
   }
+
   return (
     <>
       {isApp ? (
