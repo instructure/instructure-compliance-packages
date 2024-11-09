@@ -177,7 +177,12 @@ const App: React.FC<AppProps> = ({ config }) => {
         position="relative"
         className={config.mode.toLowerCase()}
       >
-        <RouterProvider router={router} />
+        <RouterProvider
+          future={{
+            v7_startTransition: true,
+          }}
+          router={router}
+        />
       </View>
     </React.StrictMode>
   );
