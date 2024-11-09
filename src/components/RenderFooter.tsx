@@ -1,4 +1,4 @@
-import { IconHeartLine, Text, View } from "@instructure/ui";
+import { IconHeartLine, Link, Text, View, canvas } from "@instructure/ui";
 import strings from "../strings/footer.ts";
 import { getStrings } from "../utils/langs.ts";
 
@@ -8,7 +8,13 @@ import { getStrings } from "../utils/langs.ts";
  * @param language - The language code.
  * @returns A React node representing the footer.
  */
-function RenderFooter({ language }: { language: LangCode }): React.ReactNode {
+function RenderFooter({
+  language,
+  brandColor,
+}: {
+  language: LangCode;
+  brandColor: BrandDetail["color"] | undefined;
+}): React.ReactNode {
   const l = language;
   const s = getStrings(strings, l);
   return (
@@ -30,8 +36,27 @@ function RenderFooter({ language }: { language: LangCode }): React.ReactNode {
         letterSpacing="expanded"
         size="small"
       >
-        {s.made_with} <IconHeartLine color="error" title={s.love} /> {s.by}{" "}
-        Instructure
+        {s.made_with}{" "}
+        <IconHeartLine
+          color="brand"
+          title={s.love}
+          themeOverride={{ brandColor: brandColor }}
+        />{" "}
+        {s.by}{" "}
+        <Link
+          href="https://instructure.com"
+          themeOverride={{
+            color: canvas.colors.contrasts.grey4570,
+            focusOutlineColor: canvas.colors.contrasts.grey4570,
+            hoverColor: canvas.colors.contrasts.grey4570,
+            textDecorationWithinText: "none",
+            hoverTextDecorationWithinText: "underline",
+            textDecorationOutsideText: "none",
+            hoverTextDecorationOutsideText: "underline",
+          }}
+        >
+          Instructure
+        </Link>
       </Text>
     </View>
   );
