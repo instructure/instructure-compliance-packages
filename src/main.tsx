@@ -202,7 +202,6 @@ const Main = (): JSX.Element => {
     initiate()
       .then((config) => {
         setConfig(config);
-        console.info("Config:", config);
       })
       .catch((error) => {
         console.error("Error initiating config:", error);
