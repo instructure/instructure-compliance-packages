@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v6.0.0...isp-site)
 
+* Fixed: [App] Theme links in portals.
+
 ## [6.0.1](https://github.com/thedannywahl/instructure-security-package/compare/isp-site-v6.0.0...isp-site-v6.0.1)
 
 ### Changed
