@@ -49,6 +49,22 @@ export function Component(): React.ReactElement {
   const [contentRendered, setContentRendered] = useState<boolean>(false);
   const [branches, setBranches] = useState<HTMLElement[]>([]);
 
+  const themeOverride = {
+    componentOverrides: {
+      Link: {
+        color: brandColor,
+        focusOutlineColor: brandColor,
+        hoverColor: darken(brandColor, 10),
+      },
+      Button: {
+        focusColor: brandColor,
+      },
+      TableRow: {
+        hoverBorderColor: brandColor,
+      },
+    },
+  };
+
   useEffect(() => {
     if (mode === "App") document.title = `${brand} Compliance Packages`;
     fetch(md)
@@ -75,28 +91,14 @@ export function Component(): React.ReactElement {
         {contentRendered &&
           branches?.map((branch) => {
             return createPortal(
-              <BranchExplorer brand={brand} branch={branch} l={l} />,
+              <InstUISettingsProvider theme={themeOverride}>
+                <BranchExplorer brand={brand} branch={branch} l={l} />
+              </InstUISettingsProvider>,
               branch,
             );
           })}
         <RenderTopNavBar brand={brand} language={l} />
-        <InstUISettingsProvider
-          theme={{
-            componentOverrides: {
-              Link: {
-                color: brandColor,
-                focusOutlineColor: brandColor,
-                hoverColor: darken(brandColor, 10),
-              },
-              Button: {
-                focusColor: brandColor,
-              },
-              TableRow: {
-                hoverBorderColor: brandColor,
-              },
-            },
-          }}
-        >
+        <InstUISettingsProvider theme={themeOverride}>
           <View
             id="main"
             as="div"
