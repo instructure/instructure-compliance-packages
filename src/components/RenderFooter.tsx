@@ -1,4 +1,4 @@
-import { IconHeartLine, Link, Text, View, canvas } from "@instructure/ui";
+import { IconHeartSolid, Link, Text, View, canvas } from "@instructure/ui";
 import strings from "../strings/footer.ts";
 import { getBrandDetail } from "../utils/brands.ts";
 import { getStrings } from "../utils/langs.ts";
@@ -38,7 +38,7 @@ function RenderFooter({
         size="small"
       >
         {s.made_with}{" "}
-        <IconHeartLine
+        <IconHeartSolid
           color="brand"
           title={s.love}
           themeOverride={{ brandColor: brandColor }}
