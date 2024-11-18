@@ -38,8 +38,8 @@
     "test:browser": "vitest --workspace=vitest.workspace.mts"
   },
   "dependencies": {
-    "@instructure/ui": "^10.5.0",
-    "@instructure/ui-color-utils": "^10.5.0",
+    "@instructure/ui": "^10.6.0",
+    "@instructure/ui-color-utils": "^10.6.0",
     "react": "19.0.0-rc-fb9a90fa48-20240614",
     "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
     "react-markdown": "^9.0.1",
@@ -54,8 +54,8 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@commitlint/types": "^19.5.0",
-    "@instructure/browserslist-config-instui": "^10.5.0",
-    "@instructure/shared-types": "^10.5.0",
+    "@instructure/browserslist-config-instui": "^10.6.0",
+    "@instructure/shared-types": "^10.6.0",
     "@octokit/types": "^13.6.1",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
