@@ -19,7 +19,7 @@ const redirectTo = (url: string) => {
  const csvJSON = (csv: string | null): RedirectLink[] => {
   if (!csv) return [];
 
-  const lines = csv.replaceAll(" ", "").split("\r\n");
+  const lines = csv.replace(/\s/g, "%20").split("\r\n");
   const headers = lines[0].toLowerCase().split(",");
   lines.shift();
   headers.shift();
@@ -57,5 +57,6 @@ const l: string | void = window.location.hash.length
 fetchRedirects(Links).then((links: void | RedirectLink[]) => {
   const redirect: string =
     links?.find((link) => link.from === l)?.to || Conveyor;
-  redirectTo(redirect);
+  // redirectTo(redirect);
+  console.log(redirect);
 });
