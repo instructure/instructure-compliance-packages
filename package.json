@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "7.0.0+318d1e1-1735944273",
+  "version": "8.0.0+d621aee-1736195478",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -11,7 +11,7 @@
     "build": "pnpm build:preview && pnpm build:git",
     "build:git": "git add . && git commit -m \"Build v$npm_package_version\" && git push",
     "build:js": "vite build",
-    "build:preview": "pnpm biome:apply && pnpm sec && pnpm build:version && pnpm build:ts && pnpm build:js",
+    "build:preview": "pnpm biome:apply && pnpm build:version && pnpm build:ts && pnpm build:js",
     "build:ts": "tsc",
     "build:version": "node-jq -r '.version=$ARGS.positional[0]+\"+\"+$ARGS.positional[1]+\"-\"+$ARGS.positional[2]' package.json --args \"$(pnpm -s env:semver)\" \"$(git rev-parse --short head)\" \"$(date +%s)\" | sponge package.json",
     "check": "biome check",
@@ -27,9 +27,6 @@
     "lint:apply": "biome lint --write",
     "preview": "pnpm build:preview && vite preview",
     "push": "pnpm build && {pnpm tag || printf \"\";} && gh-pages -t -m \"Deploy v$(pnpm -s env:version)\" -d dist",
-    "sec": "pnpm sec:audit && pnpm sec:scan",
-    "sec:audit": "snyk test && pnpm audit",
-    "sec:scan": "snyk code test",
     "tag": "git tag isp-site-v$(pnpm -s env:semver) && git push origin isp-site-v$(pnpm -s env:semver)",
     "test": "vitest run --silent",
     "test:bench": "vitest bench",
@@ -38,33 +35,17 @@
     "test:watch": "vitest watch",
     "test:browser": "vitest --workspace=vitest.workspace.mts"
   },
-  "dependencies": {
-    "react-router": "^7.1.1"
-  },
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.26.0",
     "@biomejs/biome": "1.9.4",
-    "@types/react": "^19.0.3",
-    "@types/react-dom": "^19.0.2",
-    "@vitejs/plugin-basic-ssl": "^1.2.0",
-    "@vitejs/plugin-react": "^4.3.4",
     "@vitest/browser": "^2.1.8",
     "@vitest/coverage-v8": "^2.1.8",
-    "@vitest/ui": "^2.1.8",
-    "babel-plugin-react-compiler": "19.0.0-beta-df7b47d-20241124",
     "gh-pages": "^6.3.0",
-    "lightningcss": "^1.28.2",
     "node-jq": "^6.0.1",
-    "playwright": "^1.49.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "snyk": "^1.1294.3",
-    "snyk-policy": "^3.0.0",
     "terser": "^5.37.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.7",
-    "vitest": "^2.1.8",
-    "vitest-browser-react": "^0.0.3"
+    "vitest": "^2.1.8"
   },
   "engines": {
     "node": ">=23.3.0",
