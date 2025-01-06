@@ -5,3 +5,4 @@ dist/
 coverage/
 .dccache
 pnpm-lock.yaml
+tsconfig.tsbuildinfo

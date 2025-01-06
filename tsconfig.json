@@ -1,6 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "composite": true,
+    "allowSyntheticDefaultImports": true,
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "nodenext",
@@ -23,11 +25,8 @@
   },
   "include": [
     "src",
-    "tests",
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
+    "main.tsx",
+    "redirects",
+    "vite.config.mts"
   ]
 }
