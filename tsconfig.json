@@ -19,5 +19,8 @@
     "types": [
       "vitest/globals",
     ]
-  }
+  },
+  "include": [
+    "redirect.ts"
+  ],
 }

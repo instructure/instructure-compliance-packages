@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "8.0.0+f640305-1736216874",
+  "version": "8.0.0+42bc889-1736291022",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -27,26 +27,16 @@
     "lint:apply": "biome lint --write",
     "preview": "pnpm build:preview && vite preview",
     "push": "pnpm build && {pnpm tag || printf \"\";} && gh-pages -t -m \"Deploy v$(pnpm -s env:version)\" -d dist",
-    "tag": "git tag isp-site-v$(pnpm -s env:semver) && git push origin isp-site-v$(pnpm -s env:semver)",
-    "test": "vitest run --silent",
-    "test:bench": "vitest bench",
-    "test:coverage": "vitest --coverage",
-    "test:ui": "vitest --ui",
-    "test:watch": "vitest watch",
-    "test:browser": "vitest --workspace=vitest.workspace.mts"
+    "tag": "git tag isp-site-v$(pnpm -s env:semver) && git push origin isp-site-v$(pnpm -s env:semver)"
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.26.0",
-    "@biomejs/biome": "1.9.4",
-    "@vitest/browser": "^2.1.8",
-    "@vitest/coverage-v8": "^2.1.8",
     "gh-pages": "^6.3.0",
     "html-minifier-terser": "^7.2.0",
     "node-jq": "^6.0.1",
     "terser": "^5.37.0",
     "typescript": "^5.7.2",
-    "vite": "^6.0.7",
-    "vitest": "^2.1.8"
+    "vite": "^6.0.7"
   },
   "engines": {
     "node": ">=23.3.0",
