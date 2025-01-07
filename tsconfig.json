@@ -19,10 +19,5 @@
     "types": [
       "vitest/globals",
     ]
-  },
-  "include": [
-    "src",
-    "main.tsx",
-    "main.ts",
-  ]
+  }
 }

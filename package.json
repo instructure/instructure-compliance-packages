@@ -1,6 +1,6 @@
 {
   "name": "isp-site",
-  "version": "8.0.0+6986cdf-1736204549",
+  "version": "8.0.0+bc60c2e-1736216044",
   "homepage": "https://inst.bid/#/",
   "private": true,
   "type": "module",
@@ -41,6 +41,7 @@
     "@vitest/browser": "^2.1.8",
     "@vitest/coverage-v8": "^2.1.8",
     "gh-pages": "^6.3.0",
+    "html-minifier-terser": "^7.2.0",
     "node-jq": "^6.0.1",
     "terser": "^5.37.0",
     "typescript": "^5.7.2",
