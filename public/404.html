@@ -3,14 +3,14 @@
 
 <head>
   <title>Redirecting</title>
-  <script>const l = location; l.href = `${l.origin}/#${l.pathname}`;</script>
+  <script>location.href = `${location.origin}/#${location.pathname}`;</script>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app. To view compliance information, please visit our <a
-      href="https://app.conveyor.com/profile/b61af872-3391-492e-af74-85cc6ac44701">Trust</a> page.</a></noscript>
-  <div id="root"></div>
-  <script type="module" src="/src/App.tsx"></script>
+  <noscript>
+    You need to enable JavaScript to run this app. To view compliance information, please visit our <a
+      href="https://app.conveyor.com/profile/b61af872-3391-492e-af74-85cc6ac44701">Trust</a> page.
+  </noscript>
 </body>
 
 </html>
