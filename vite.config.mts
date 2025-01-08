@@ -1,4 +1,3 @@
-/// <reference types="vitest/config" />
 import { defineConfig, type UserConfig } from 'vite'
 
 const config: UserConfig = {
