@@ -14,6 +14,7 @@ Current packages include:
 - [Mastery Connect](/#/mastery/connect/dl)
 - [Elevate Standards Alignment](/#/elevate/standards-alignment/dl)
 - [LearnPlatform](/#/learnplatform/dl)
+- [Parchment](/#/parchment)
 
 _*Some language translated versions available, please see the relevant product family page (top navigation)._
 
