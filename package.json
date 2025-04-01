@@ -24,8 +24,8 @@
     "gh-pages": "^6.3.0",
     "node-jq": "^6.0.1",
     "terser": "^5.39.0",
-    "typescript": "^5.7.3",
-    "vite": "^6.1.1"
+    "typescript": "^5.8.2",
+    "vite": "^6.2.4"
   },
   "engines": {
     "node": ">=22.0.0",
@@ -34,6 +34,9 @@
   "pnpm": {
     "overrides": {
       "@bundled-es-modules/cookie>cookie": "^1.0.2"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
