@@ -2,7 +2,7 @@ interface Redirect { from: string; to: string; }
 const LinksCSV: string =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQXWM1qxpmOn2nbubgaf2qncwNvfSpKBkgPpVSBIjloXNTnAlEOqmr9ylgqO82iIC7pEeVfD_TI8xmd/pub?gid=1670948929&single=true&output=csv";
 const Conveyor: string =
-  "https://app.conveyor.com/profile/b61af872-3391-492e-af74-85cc6ac44701";
+  "https://trust.instructure.com/";
  const redirectTo = (url: string) => window.location.href = url;
  const csvJSON = (csv: string): Redirect[] =>
   csv
