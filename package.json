@@ -1,7 +1,7 @@
 {
-  "name": "isp-site",
+  "name": "inst.bid",
   "version": "8.0.0+5463edf-1746213862",
-  "homepage": "https://inst.bid/#/",
+  "homepage": "https://inst.bid/",
   "private": true,
   "type": "module",
   "scripts": {
@@ -36,7 +36,8 @@
       "@bundled-es-modules/cookie>cookie": "^1.0.2"
     },
     "onlyBuiltDependencies": [
-      "esbuild"
+      "esbuild",
+      "node-jq"
     ]
   }
 }
