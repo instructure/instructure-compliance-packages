@@ -1,4 +1,6 @@
-1. `cd` to the `instructure-security-package` folder
+Initialising Deployment Setup for inst.bid short links
+
+1. `cd` to the `instructure-compliance-package` folder
 2. Run `pnpm i` for inital setup
 3. Run `pnpm dev` to start local server
 4. Edit allthethings
